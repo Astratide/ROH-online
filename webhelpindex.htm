@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<title>罗德岛外勤指南RhOH</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function window_resize(){
+if(navigator.userAgent.indexOf("iPad")>-1||navigator.userAgent.indexOf("iPhone")>-1||navigator.userAgent.indexOf("iPod")>-1||navigator.userAgent.indexOf("Android")>-1){
+document.getElementById("Index").style.cssText = "height: auto; width: " + (window.innerWidth-20);
+document.getElementById("keyword").style.cssText = "width: " + (window.innerWidth-20);
+}else if(window.innerHeight){
+document.getElementById("Index").style.cssText = "height: " + (window.innerHeight- 95) + "; width: " + (window.innerWidth-20);
+document.getElementById("keyword").style.cssText = "width: " + (window.innerWidth-20);
+}else{
+document.getElementById("Index").style.cssText = "height: " + (document.body.offsetHeight - 90) + "; width: " + (document.body.offsetWidth - 20);
+document.getElementById("keyword").style.cssText = "width: " + (document.body.offsetWidth - 20);
+}
+}
+
+function keyword_change(k){
+	var i;
+	var str;
+	var found = false;
+	if(k.value!=""){
+		var re = new RegExp(k.value,"i");
+		var re1 = new RegExp(String.fromCharCode(160),"g");
+		for(i=0;i<document.getElementById("Index").options.length;i++){
+			str = document.getElementById("Index").options[i].text.replace(re1, " ");
+			 if(found == false && str.search(re) == 0){
+				document.getElementById("Index").options[i].selected = true;	
+				found = true;
+			 }
+		}
+	}
+}
+
+function writepage(list){
+if(list.length==1){
+	parent.content.location = list[0][1];	
+}else{
+	parent.content.document.write('<h' + 'tml><head><meta http-equiv="Content-Type" content="text/html; charset=Windows-1252"><style type="text/css"><!--div,body { font-family: Tahoma, Verdana; font-size: 12px; }--></style></h' + 'ead><bo' + 'dy>');
+	parent.content.document.write('<b>There are ' + list.length + ' topics for the keyword:</b><p>')
+	for(i=0;i<=list.length-1;i++){
+		parent.content.document.write((i + 1) + '. ' +'<a href="' + list[i][1] + '">' +  list[i][0] + '</a><p>');
+	}
+	parent.content.document.write('</body></html>');
+
+	parent.content.document.close();
+}
+return false;
+}
+
+function display_click(){
+	var i;
+	for(i=0;i<document.getElementById("Index").options.length;i++){
+		 if(document.getElementById("Index").options[i].selected){
+			eval(document.getElementById("Index").options[i].value);
+			break;
+		 }
+	}
+
+
+}
+
+function index_click(){
+	var i;
+	for(i=0;i<document.getElementById("Index").options.length;i++){
+		 if(document.getElementById("Index").options[i].selected){
+			document.getElementById("keyword").value = document.getElementById("Index").options[i].text;
+			break;
+		 }
+	}
+}
+
+</script>
+<script language="JavaScript" src="languages.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body bgcolor="#DCDBD6" leftmargin="5" topmargin="5" marginwidth="5" marginheight="5" onload="window_resize();document.getElementById('keyword').focus();" onresize="window_resize();">
+<form name="form1" method="post" action="">
+  <table width="100%" border="0">
+    <tr>
+      <td><span class="label"><script>document.write(strings['Type in the keyword to find:']);</script></span><br>
+        
+        <input name="keyword" type="text" class="label" id="keyword"  onMouseUp="keyword_change(this);" onKeyUp="keyword_change(this);"> 
+      </td>
+    </tr>
+    <tr> 
+      <td><select name="Index" size="20" class="label" id="Index" onclick="index_click();" ondblclick="display_click();">
+<option value="writepage([['斗士','topics/第一章：职业分支/近卫/斗士.html']]);">近卫, 子职, 斗士</option><option value="writepage([['剑豪','topics/第一章：职业分支/近卫/剑豪.html']]);">近卫, 子职, 剑豪</option><option value="writepage([['解放者','topics/第一章：职业分支/近卫/解放者.html']]);">近卫, 子职, 解放者</option><option value="writepage([['领主','topics/第一章：职业分支/近卫/领主.html']]);">近卫, 子职, 领主</option><option value="writepage([['强攻手','topics/第一章：职业分支/近卫/强攻手.html']]);">近卫, 子职, 强攻手</option><option value="writepage([['收割者','topics/第一章：职业分支/近卫/收割者.html']]);">近卫, 子职, 收割者</option><option value="writepage([['术战者','topics/第一章：职业分支/近卫/术战者.html']]);">近卫, 子职, 术战者</option><option value="writepage([['无畏者','topics/第一章：职业分支/近卫/无畏者.html']]);">近卫, 子职, 无畏者</option><option value="writepage([['武者','topics/第一章：职业分支/近卫/武者.html']]);">近卫, 子职, 武者</option><option value="writepage([['重剑手','topics/第一章：职业分支/近卫/重剑手.html']]);">近卫, 子职, 重剑手</option><option value="writepage([['冲锋手','topics/第一章：职业分支/先锋/冲锋手.html']]);">先锋, 子职, 冲锋手</option><option value="writepage([['尖兵','topics/第一章：职业分支/先锋/尖兵.html']]);">先锋, 子职, 尖兵</option><option value="writepage([['情报官','topics/第一章：职业分支/先锋/情报官.html']]);">先锋, 子职, 情报官</option><option value="writepage([['战术家','topics/第一章：职业分支/先锋/战术家.html']]);">先锋, 子职, 战术家</option><option value="writepage([['执旗手','topics/第一章：职业分支/先锋/执旗手.html']]);">先锋, 子职, 执旗手</option><option value="writepage([['速射手','topics/第一章：职业分支/狙击/速射手.html'],['要塞','topics/第一章：职业分支/重装/要塞.html'],['重射手','topics/第一章：职业分支/狙击/重射手.html'],['攻城手','topics/第一章：职业分支/狙击/攻城手.html'],['神射手','topics/第一章：职业分支/狙击/神射手.html'],['守护者','topics/第一章：职业分支/重装/守护者.html'],['不屈者','topics/第一章：职业分支/重装/不屈者.html']]);">重装, 子职</option><option value="writepage([['哨戒铁卫','topics/第一章：职业分支/重装/哨戒铁卫.html']]);">重装, 子职, 哨戒铁卫</option><option value="writepage([['铁卫','topics/第一章：职业分支/重装/铁卫.html']]);">重装, 子职, 铁卫</option><option value="writepage([['驭法铁卫','topics/第一章：职业分支/重装/驭法铁卫.html']]);">重装, 子职, 驭法铁卫</option><option value="writepage([['中坚术师','topics/第一章：职业分支/术师/中坚术师.html']]);">子职</option> 
+        </select></td>
+    </tr>
+    <tr> 
+      <td align="right"><script>document.write('<input name="display" type="submit" class="label" id="display" onClick="display_click(); return false;" value="' + strings['Display'] + '">')</script></td>
+    </tr>
+  </table>
+
+  </form>
+</body>
+</html>
