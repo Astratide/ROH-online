@@ -1,0 +1,850 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:o = "urn:schemas-microsoft-com:office:office">
+<head>
+<title>可选：密文版</title>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible" content="IE=11">
+<link rel="stylesheet" href="../../_template.css">
+<style>
+.container {
+  width: 40em;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.toggle-area {
+  height: 40px;
+  background-color: #eee;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.container:hover .detail {
+  max-height: 120em; /* 你可以根据内容高度调整这个值 */
+}
+h3.foldartals
+{	
+    padding:5px; 
+    color: white; margin-right: 20px;
+}
+#clan
+{
+    background: rgb(159,44,44);
+}
+#nature
+{
+    background: rgb(31,100,88);
+}
+#soul
+{
+    background: rgb(33,77,110);
+}
+div.foldartals
+{
+    border: 1px solid grey; 
+    margin-right: 20px;
+    padding: 0px 4px 2px;
+}
+p.foldartals
+{
+    margin:0px -4px 2px;
+    padding:4px 4px;
+    background: linear-gradient(to right, 
+    rgb(223, 229, 235) 0%, 
+    rgb(170, 186, 201) 30%, 
+    rgb(183, 199, 212) 70% ,
+    rgb(126, 135, 152) 100%);
+}
+table.foldartals
+{
+	border-collapse: collapse;
+	width: 40em;
+	text-align: center;
+	border: 1px solid rgb(200, 200, 200); 
+  cursor: text;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 2);
+  align-items: center;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+table.foldartals td {
+	border: 1px solid rgb(200, 200, 200); 
+	padding: 10px;
+	color: white; 
+	background-color: rgb(128,127,130); 
+}
+table.foldartals th {
+	border: 1px solid rgb(200, 200, 200);
+	background-color: rgb(159,44,44);
+	color: white;
+	font-weight: bold; 
+	height:2em;
+}
+table.foldartals .merged-vertical {
+	background-color: rgb(70,70,70); 
+}
+table.foldartals td:nth-child(1) {
+  width: 6em;
+}
+table.foldartals td:nth-child(2) {
+  width: 32em;
+}
+table.foldartals td:nth-child(3) {
+  width: 2em;
+}
+
+</style>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<style>
+html {
+	overflow-y:scroll;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto; 
+	FONT-SIZE: 16px;
+    BACKGROUND: transparent;
+    WIDTH: 100%;
+    COLOR: #000000;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: 'Microsoft YaHei',sans-serif;
+}
+#winchm_template_minititle{
+	padding-left: 5px;
+	padding-bottom: 5px;
+	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	BORDER-BOTTOM: #999999 1px solid;
+	BACKGROUND-COLOR: #D8D8D8 ;
+	width: auto;
+}
+#winchm_template_button{
+	float: right;
+	top: 5px;
+	position: relative;
+	text-align: right;
+	right: 10px;
+	height: auto;
+}
+#winchm_template_title{
+	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
+	font-size: 17px;
+	padding: 5px;
+	width: auto;
+	BACKGROUND-COLOR: #D8D8D8 ;
+	text-align: left;
+}
+#winchm_template_content{
+	padding: 0px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #c0c0c0;
+	border-top-style: solid;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	padding-top: 6px;
+	padding-left: 0px;
+	padding-bottom: 20px;
+	padding-right: 0px;
+	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
+	font-size: 9px;
+	color: #909090;
+	text-align: left;	
+	width: auto;	
+}
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
+@media print
+{
+#winchm_template_button{
+visibility:hidden;
+}
+}
+</style>
+</head>
+<body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(292);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../../../index.htm?page=第七章：生物图鉴/探索者的银淞止境/可选：密文版.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div id="winchm_template_title">
+	<div id="winchm_template_button">
+		<A href="坍缩范式.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
+		<A href="坍缩构造体.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
+	</div>
+	PRTS资料库 > <A href="../../第七章：生物图鉴.html">第七章：生物图鉴</A> &gt; 探索者的银淞止境 &gt; <A href="萨米探险指南.html">萨米探险指南</A> &gt;  <b>可选：密文版</b>
+</div>
+<div id="winchm_template_minititle">罗德岛外勤指南：[可选：密文版]</div>
+<div id="winchm_template_content"> 
+<div id="content">
+<div class="ISW">
+    <div class="inner-words">
+    <IMG style="width: auto; height: 2.6em; vertical-align: top; float: right;" src="../../_图片资源/敌人头像/探索者的银淞止境/图标_探索者的银凇止境.png" >
+<b>集成战略#4<br>「探索者的银凇止境」</b>
+    </div>
+</div>
+<ul>
+    <p class="grey">“从语言学角度破译当地人手中的芙尔妲密文板并不是难事，难题在于，它们从何而来，是不是人为雕刻......等等，那是什么声音？”</p>
+</ul>
+<br>
+<h2 id="ISW">密文板 Foldartals</h2>
+<hr>
+
+<p class="para">
+    本章内容为萨米北境冰原探险的背景设定和可选规则，适用于“探索者的银凇止境”集成战略，也可以作为其他涉及坍缩体内容的冒险的参考。
+</p>
+<br>
+<p class="para">密文板（又称芙尔妲密文Foldartals），是从萨米部落的族树上脱落的树皮上记载的信息。它们上面有特定的符文，代表着“祖灵之父”——即萨米本身，想对祂的孩子——萨米人传达的信息。这些信息可能与过去、未来或一些纯粹的情感有关。解释密文很复杂，因为考虑到时间、地点和解密它们的人，即使是相同的符文也可能产生截然不同的含义。</p>
+<p class="para">为了仔细遵循萨米的意志，萨米部落的雪祀和萨满接受过训练，可以解释芙尔妲密文，并根据他们提供预言和指导。他们会将两个密文板拼凑在一起：上面的称为<b>布局</b> （Gera Koma），下面的称为<b>本因</b> 
+（Gera Aesa），并在古老仪式的指引下作出解释，称为<b>宣言</b> （Gera Vaenda）。</p>
+<br>
+<h3 id="ISW">寻获密文板 Find Foldartals</h3>
+<p class="para">每当获得新的密文板时，懂得萨米语的生物可以通过至少1分钟的解读，并进行DC20的<b class="green">奥秘</b>或<b class="green">宗教</b>检定，从而获取到密文板上刻录的具体效果和样式。如果检定成功，则可以进行掷骰，决定新出现的<b>密文板</b>具体为何。一般而言，会先在<b>密文板预兆表</b>上进行d6掷骰，来决定得到的密文板是布局或本因、属于族群、灵魂或是自然。然后再对应到后续的表格，再进行d6或者d8掷骰。</p>
+<p class="para">除了在遭遇随机的密文板，萨米各部族的族树也会定期以剥落树皮的形式，产生密文，以供雪祀解读。根据部族的传统文化，族树产生的所有密文都具有特殊意义，因此会被严谨地记载于部族的<b>树谱</b>上，为以后的密文解读提供参考。当生物能阅读对应族树的树谱的时候，其为解读该族树产生的新的密文而作的检定具有<b class="green">优势</b>。</p>
+<ul>
+    <p class="grey">“眼前古木的表皮在巨响中开裂剥落，错综复杂的纹路浮现其上——有那么一瞬间，你意识到，萨米在与你对话。”</p>
+</ul>
+<br>
+<h3 id="ISW">宣言密文板 Declaration Foldartals</h3>
+<p class="para">如果一个生物集齐了至少两块密文板，其中一块为<b>布局</b>，另一块为<b>本因</b>，则可以借助古老的萨米仪式，以一个<b class="green">动作</b>，将它们组合起来尝试进行解读——这一过程被称为宣言（Declaration）。</p>
+<p class="para"><b>宣言。</b>完成宣言后，你会立即根据组合起来的密文板获得一些特殊效应。生物通过宣言获得的增益只会持续至其完成一次长休。生物完成宣言后，可以选择自己保留这些效应，也可以立即将该效应传递赠送给一个能听懂其语言的生物。宣言完成后，参与宣言的密文板会消散，无法再使用。</p>
+<p class="para"><b>协语。</b>当你宣言两块颜色相同的密文板（例如两块类型都属于族群）时，会触发协语，使得其效果获得增强。</p>
+<br>
+<h3 id="ISW">密文板预兆 Foresight </h3>
+<table class="custom-table" id="left">
+<tbody>
+  <tr>
+    <td>d6</td>
+    <td><b>布局 Layout</b></td>
+    <td>d6</td>
+    <td><b>本因 Source</b></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>族群 Clan</td>
+    <td>4</td>
+    <td>族群 Clan</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>灵魂 Soul</td>
+    <td>5</td>
+    <td>灵魂 Soul</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>自然 Nature</td>
+    <td>6</td>
+    <td>自然 Nature</td>
+  </tr>
+</tbody>
+</table>
+<br>
+<h3 id="ISW"> 布局：艾塔布局&nbsp;The Layout Foldartals</h3>
+<table class="custom-table" id="left">
+<colgroup>
+<col style="width: 2em;">
+<col style="width: 8em;">
+<col style="width: 2em;">
+<col style="width: 8em;">
+<col style="width: 2em;">
+<col style="width: 8em;">
+</colgroup>
+<tbody>
+  <tr>
+    <td>d6</td>
+    <td><b>族群 Clan</b></td>
+    <td>d6</td>
+    <td><b>灵魂 Soul</b></td>
+    <td>d6</td>
+    <td><b>自然 Nature</b></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>黜人 Outcast</td>
+    <td>1</td>
+    <td>树冠 Canopy</td>
+    <td>1</td>
+    <td>源石 Originium</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>猎手 Hunter</td>
+    <td>2</td>
+    <td>水面 Water</td>
+    <td>2</td>
+    <td>乔木 Tree</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>战士 Warrior</td>
+    <td>3</td>
+    <td>眼睛 Eye</td>
+    <td>3</td>
+    <td>砂石 Stonr</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>萨满 Shaman</td>
+    <td>4</td>
+    <td>拱门 Arch</td>
+    <td>4</td>
+    <td>灌木 Shrub</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>雪祀 Snowprist</td>
+    <td>5</td>
+    <td>光芒 Light</td>
+    <td>5</td>
+    <td>兽类 Beast</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>英雄 Hero</td>
+    <td>6</td>
+    <td>大地 Earth</td>
+    <td>6</td>
+    <td>人类 Human</td>
+  </tr>
+</tbody>
+</table>
+<br>
+<h3 id="ISW"> 本因：法玛谋篇 The Source Foldartals</h3>
+<table class="custom-table" id="left">
+<colgroup>
+<col style="width: 2em;">
+<col style="width: 8em;">
+<col style="width: 2em;">
+<col style="width: 8em;">
+<col style="width: 2em;">
+<col style="width: 8em;">
+</colgroup>
+<tbody>
+  <tr>
+    <td>d8*</td>
+    <td><b>族群 Clan</b></td>
+    <td>d8*</td>
+    <td><b>灵魂 Soul</b></td>
+    <td>d8*</td>
+    <td><b>自然 Nature</b></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>歌唱 Sing</td>
+    <td>1</td>
+    <td>喜悦 Delight</td>
+    <td>1</td>
+    <td>巡视 Patrol</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>沉默 Slience</td>
+    <td>2</td>
+    <td>惊讶 Surprise</td>
+    <td>2</td>
+    <td>筑巢 Nest</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>朗诵 Recite</td>
+    <td>3</td>
+    <td>愤怒 Rage</td>
+    <td>3</td>
+    <td>捕猎 Hunt</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>辩论 Debate</td>
+    <td>4</td>
+    <td>疑惑 Doubt</td>
+    <td>4</td>
+    <td>掠夺 Plunder</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>慰藉 Console</td>
+    <td>5</td>
+    <td>憧憬 Anticipate</td>
+    <td>5</td>
+    <td>繁衍 Reproduce</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>呼救 Cry</td>
+    <td>6</td>
+    <td>满足 Satisfy</td>
+    <td>6</td>
+    <td>歇息 Respite</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>告解 Confess</td>
+    <td>7</td>
+    <td>爱恋 Love</td>
+    <td>7</td>
+    <td>迁徙 Migrate</td>
+  </tr>
+</tbody>
+</table>
+<p class="grey">注：若掷出8，则重掷。网团可直接掷D7。</p>
+<br>
+<p class="para">以下是密文板的具体内容：</p>
+ <br>
+
+<div class="container">
+  <div class="toggle-area"><h3 class="effect-box">布局：[族群]</h3></div>
+  <div class="detail">
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[锡克菈 Sekrar]</span>黜人 Outcast</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Outcast.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>万钧罪责无可赦，再无相聚时。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;">直到你完成长休前，当你下一次投掷先攻时，你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[薇狄玛 Veidima]</span>猎手 Hunter</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Hunter.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>引弓捕影风声切，逐猎无终日。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;">直到你完成长休前，当你投掷先攻时，你有一次机会，可以令你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[赫尔玛 Herrma]</span>战士 Warrior</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Warrior.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>坚石高墙起群山，角盔覆冰寒。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;">直到你完成长休前，当你投掷先攻时，你有1d2次机会，可以令你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[瓦菈玛 Valarma]</span> 萨满 Shaman</th>
+      <th>&#x2605;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Shaman.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>启开慧眼识密语，鸣呼驱鬼祟。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;">直到你完成长休前，当你投掷先攻时，你有1d3次机会，可以令你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[姬缇娅 Gydja]</span>雪祀 Snowpriest</th>
+      <th>&#x2605;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Snowpriest.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>卜问天地通万灵，寻求我去路。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>当你投掷先攻时，你有1d4次机会，可以令你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[卡帕莉 Kappalid]</span>英雄 Hero</th>
+      <th>&#x2736;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Hero.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>荆棘丛生枯骸骨，死亡亦归途。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>你每次投掷先攻时，你和你30尺内的盟友获得所述增益，持续一分钟。</td>
+    </tr>
+    </table>
+  </div>
+</div>
+
+<div class="container">
+  <div class="toggle-area"><h3 class="effect-box">本因：[族群]</h3></div>
+  <div class="detail">
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;" 
+        >[崧格珐 Songva]</span>歌唱 Sing</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Sing.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>弹弦高唱声回环，千羽驻林间。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>每个回合你可作出一个额外的动作，但该动作只能用于执行攻击动作（仅一次攻击），或者疾走、撤离、躲藏和操作动作。<br><b>协语：</b>你以此额外动作执行攻击动作时，可以额外进行一次攻击。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;" 
+        >[索格娜 Thoegna]</span>沉默 Silence</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Silence.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>指木问路无回音，山岩自伫立。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>你的生命值上限和当前生命值提高等同于你的等级的两倍。<br><b>协语：</b>你的AC获得+2加值。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;" 
+        >[莱桑狄 Lesandi]</span>朗诵 Recite</th>	 
+      <th>&#x2726;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Recite.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>循诵古训祝亲族，言语定心神。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>你获得2d8点临时生命值。<br><b>协语：</b>你为对抗恐慌或魅惑状态而作的豁免检定具有<b>优势</b>。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;" 
+        >[乌洛妲 Umroda]</span>辩论 Debate</th>
+      <th>&#x2605;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Debate.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>你方唱罢我登场，思维见真知。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>当你生命值降至0而没有立即死亡时，有一次机会可以改为使生命值降至1。<br><b>协语：</b>由DM指定的一个生物成为你们的<b>盟友</b>，以某种方式出现在你们面前。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[胡甘狄 Huggandi]</span>慰藉 Console</th>
+      <th>&#x2605;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Console.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>击鼓燃叶唤先灵，低语解哀戚。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>当你豁免失败时，有一次机会可以将其改为豁免成功。<br><b>协语：</b>你额外获得一次机会。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[海菈嘉 Hlakka]</span>呼救 Cry</th>
+      <th>&#x2736;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Cry.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>凄厉号声震天响，孤木成众林。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>你立即获得等同于一次短休的增益。<br><b>协语：</b>你额外恢复4d8点生命值。</td>
+    </tr>
+    </table>
+
+    <br>
+    <table class="foldartals">
+    <tr>
+      <th>族群 Clan</th>
+      <th><span style="float: left;">[尤珥塔 Jatar]</span>告解 Confess</th>
+      <th>&#x2736;</th>
+    </tr>
+    <tr>
+      <td class="merged-vertical" rowspan="2">
+        <IMG style="width: auto; height: 5.5em; text-align: center;" src ="../../_图片资源/密文板/Clan_Confess.png" >
+      </td>
+      <td colspan="2" style="height: 1.5em;"><em>独见古木诉悔恨，恳请相宽恕。</em></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="height: 3em;"><b>宣言：</b>你立即获得英雄激励。<br><b>协语：</b>DM决定的一件魔法物品以某种方式出现在你们面前。</td>
+    </tr>
+    </table>
+  </div>
+</div>
+<br>
+
+<p class="para">除了将密文板组合起来宣言，你也可以将密文板当成卷轴使用，并用其来模拟某些法术的效果。</p>
+<p class="para">以一个附赠动作，你可以消耗并激活密文板内的力量，释放内部的法术效果。以此施展的法术不需要材料成分也不需要消耗法术位，如果法术需要专注，则其也不需要你来为其维持专注，法术将持续到其的最大时间。以此施展的法术的施法属性为你的智力、感知或魅力。</p>
+
+<table class="custom-table" id="left">
+<tbody>
+<tr>
+  <th>族群</th>
+  <th>法术</th>
+  <th>灵魂</th>
+  <th>法术</th>
+  <th>自然</th>
+  <th>法术</th>
+</tr>
+<tr>
+  <td>黜人：</td>
+  <td><b class="spell">灾祸术</b></td>
+  <td>树冠：</td>
+  <td><b class="spell">纠缠术</b></td>
+  <td>源石：</td>
+  <td><b class="spell">致伤术</b></td>
+</tr>
+<tr>
+  <td>猎手：</td>
+  <td><b class="spell">猎人印记</b></td>
+  <td>水面：</td>
+  <td><b class="spell">安定心神</b></td>
+  <td>乔木：</td>
+  <td><b class="spell">植物交谈</b></td>
+</tr>
+<tr>
+  <td>战士：</td>
+  <td><b class="spell">加速术</b></td>
+  <td>眼睛：</td>
+  <td><b class="spell">鹰眼术</b></td>
+  <td>砂石：</td>
+  <td><b class="spell">土石喷发</b></td>
+</tr>
+<tr>
+  <td>萨满：</td>
+  <td><b class="spell">预言术</b></td>
+  <td>拱门：</td>
+  <td><b class="spell">任意门</b></td>
+  <td>灌木：</td>
+  <td><b class="spell">苍梦树冠*</b></td>
+</tr>
+<tr>
+  <td>雪祀：</td>
+  <td><b class="spell">通神术</b></td>
+  <td>光芒：</td>
+  <td><b class="spell">神圣武器</b></td>
+  <td>兽类：</td>
+  <td><b class="spell">定身怪物</b></td>
+</tr>
+<tr>
+  <td>英雄：</td>
+  <td><b class="spell">英雄宴</b></td>
+  <td>大地：</td>
+  <td><b class="spell">地之骨</b></td>
+  <td>人类：</td>
+  <td><b class="spell">获得易伤*</b></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table class="custom-table" id="left">
+<tbody>
+<tr>
+  <th>族群</th>
+  <th>法术</th>
+  <th>灵魂</th>
+  <th>法术</th>
+  <th>自然</th>
+  <th>法术</th>
+</tr>
+<tr>
+  <td>歌唱：</td>
+  <td><b class="spell">祝福术/繁彩球</b></td>
+  <td>喜悦：</td>
+  <td><b class="spell">魅惑类人/妖火</b></td>
+  <td>巡视：</td>
+  <td><b class="spell">侦测善恶/西风打击</b></td>
+</tr>
+<tr>
+  <td>沉默：</td>
+  <td><b class="spell">沉默术/树肤术</b></td>
+  <td>惊讶：</td>
+  <td><b class="spell">迷踪步/粉碎音波</b></td>
+  <td>筑巢：</td>
+  <td><b class="spell">治疗祷言/警戒箭阵</b></td>
+</tr>
+<tr>
+  <td>朗诵：</td>
+  <td><b class="spell">活力灵光/群体治愈真言</b></td>
+  <td>愤怒：</td>
+  <td><b class="spell">闪电束/火球术</b></td>
+  <td>捕猎：</td>
+  <td><b class="spell">缓慢术/箭如雨下 </b></td>
+</tr>
+<tr>
+  <td>辩论：</td>
+  <td><b class="spell">行动自如/元素召唤术</b></td>
+  <td>疑惑：</td>
+  <td><b class="spell">困惑术/高等隐形术</b></td>
+  <td>掠夺：</td>
+  <td><b class="spell">强迫术/擒抱藤</b></td>
+</tr>
+<tr>
+  <td>慰藉：</td>
+  <td><b class="spell">原力法阵/高等复原术</b></td>
+  <td>憧憬：</td>
+  <td><b class="spell">通晓传奇/造物术</b></td>
+  <td>繁衍：</td>
+  <td><b class="spell">启蒙术/活化物件</b></td>
+</tr>
+<tr>
+  <td>呼救：</td>
+  <td><b class="spell">死者复活/群体疗伤术</b></td>
+  <td>满足：</td>
+  <td><b class="spell">支配类人/托梦术</b></td>
+  <td>歇息：</td>
+  <td><b class="spell">李欧蒙小屋/防活物护罩</b></td>
+</tr>
+<tr>
+  <td>告解：</td>
+  <td><b class="spell">真知术/异界誓盟</b></td>
+  <td>爱恋：</td>
+  <td><b class="spell">摄心目光/医疗术</b></td>
+  <td>迁徙：</td>
+  <td><b class="spell">树跃术/木遁术</b></td>
+</tr>
+</tbody>
+</table>
+
+<br><strong></strong><strong></strong><strong></strong>
+
+<table class="custom-table" id="left">
+<tbody>
+<tr>
+  <th>世相</th>
+  <th>法术</th>
+  <th>世相</th>
+  <th>法术</th>
+</tr>
+<tr>
+  <td>到来：</td>
+  <td><b class="spell">回生术</b></td>
+  <td>离去：</td>
+  <td><b class="spell">移除诅咒</b></td>
+</tr>
+<tr>
+  <td>伤痕：</td>
+  <td><b class="spell">死者交谈</b></td>
+  <td>空无：</td>
+  <td><b class="spell">短讯术</b></td>
+</tr>
+</tbody>
+</table>
+
+<br><br>
+</div></div>
+<div id="winchm_template_footer">罗德岛外勤指南[ROH]</div>
+</body></html>
