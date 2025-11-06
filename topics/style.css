@@ -7,9 +7,6 @@ body {
     width: 100%;
     color: #000000;
     font-family: 'microsoft yahei','sans-serif';
-}
-div#content
-{
     margin: 12px;
     min-width: 400px;
     max-width: 1200px;

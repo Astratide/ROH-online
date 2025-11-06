@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
 <head>
-<title>战技特效</title>
+<title>战技</title>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../style.css">
@@ -126,20 +126,40 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 		<A href="专长/战斗风格专长.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../btn_prev_n.gif" border="0"></a>
 		<A href="战技/正面战技特效.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../btn_next_n.gif" border="0"></a>
 	</div>
-	PRTS资料库 > <A href="../第二章：角色资源.html">第二章：角色资源</A> &gt;  <b>战技特效</b>
+	PRTS资料库 > <A href="../第二章：角色资源.html">第二章：角色资源</A> &gt;  <b>战技</b>
 </div>
-<div id="winchm_template_minititle">罗德岛外勤指南：[战技特效]</div>
+<div id="winchm_template_minititle">罗德岛外勤指南：[战技]</div>
 <div id="winchm_template_content"> 
 <div id="content">
 <br>
 <h1>战技特效丨Battleskill Effects</h1><hr class="sub">
 <p class="para">战技特效适用于使用了本拓展的职业，并习得了至少一项战技的角色。你可以在获得新的职业等级时，给自己的一个来自该职业的战技，应用、替换或移除一项战技特效。如果没有特殊说明，特效的持续时间和作为特效基底的战技一致。战技特效分为正面战技特效、负面战技特效和专属战技特效，效果如下：</p>
-<p class="para"><b>正面战技特效：</b>你可以给每个战技可以应用多项正面战技特效。战技每有一个正面战技特效，则要发动这个战技需要消耗的技力增加1点，有些则会增加更多。</p>
-<p class="para"><b>负面战技特效：</b>你只能给你习得的其中一个战技应用1项负面战技特效。应用了负面特效的战技会减少1点战技的技力消耗（至少1）。</p>
-<p class="para"><b>专属战技特效：</b>你只能给你习得的其中一个战技应用1项专属战技特效。战技应用了专属战技特效后，要发动这个战技需要消耗的技力点增加1点。</p>
-<p class="para"><b>战技持续时间：</b>在本拓展中，战技持续时间分为四个等级，【直到本回合结束前：】―&gt;【直到你下回合开始前：】―&gt;【直到你下回合结束前：】―&gt;【直到战斗结束前：】。</p>
-<p class="para"><b>持续战技：</b>如果战技效果提及了上述时点，那这就是一项持续战技。此类战技持续期间，你不能再发动其他持续战技。不过，如果你同时发动两个触发时机相同的不同战技，则可忽略此限制。</p>
-<p class="para"><b>立即战技：</b>如果战技效果没有提及上述时点，例如只提到了【立即】，那这就是一项立即战技。</p>
+<ul>
+<li><b>正面战技特效：</b>你可以给每个战技可以应用多项正面战技特效。战技每有一个正面战技特效，则要发动这个战技需要消耗的技力增加1点，有些则会增加更多。无论如何，战技的技力消耗不可超过你的熟练加值（不考虑负面战技带来的技力减值）。</li>
+<li><b>负面战技特效：</b>你只能给你习得的其中一个战技应用1项负面战技特效。应用了负面特效的战技会减少1点战技的技力消耗（至少1）。</li>
+<li><b>专属战技特效：</b>你只能给你习得的其中一个战技应用1项专属战技特效。战技应用了专属战技特效后，要发动这个战技需要消耗的技力点增加1点。</li>
+</ul>
+<br>
+<p class="para"><b>战技发动时点：</b>战技的发动时点分为手动触发和自动触发两种。
+<ul>
+<li><div class="cost" style="margin: 0px;"><p class="light" style="font-size: 90%;" 
+ >手动触发</p></div>：你需要执行或消耗描述中提到的动作，才能发动此战技。</li><br>
+<li><div class="cost" id="green" style="margin: 0px;"><p class="light" style="font-size: 90%;" 
+ >自动触发</p></div>：你可以在出现描述的情况后，同时发动此战技。</li><br>
+<li><div class="cost" id="yellow" style="margin: 0px;"><p class="light" style="font-size: 90%;" 
+ >反应触发</p></div>：你可以在出现描述的情况后，采取反应发动此战技。</li><br>
+</ul>
+
+<p class="para"><b>战技持续时间：</b>在本拓展中，战技持续时间分为四个等级。
+<ul>
+  <li><div class="time"><p class="light" style="font-size: 90%;"><IMG class="clock" src="../图片资源/技能图标/图标时间.png">立即</p></div>：此战技只在你发动时持续。</li><br>
+  <li><div class="time"><p class="light" style="font-size: 90%;"><IMG class="clock" src="../图片资源/技能图标/图标时间.png">本回合结束</p></div>：此战技会持续到发动战技的该回合结束。</li><br>
+  <li><div class="time"><p class="light" style="font-size: 90%;"><IMG class="clock" src="../图片资源/技能图标/图标时间.png">下回合开始</p></div>：此战技会持续到<b>你的</b>下回合开始。</li><br>
+  <li><div class="time"><p class="light" style="font-size: 90%;"><IMG class="clock" src="../图片资源/技能图标/图标时间.png">下回合结束</p></div>：此战技会持续到<b>你的</b>下回合结束。</li><br>
+  <li><div class="time"><p class="light" style="font-size: 90%;"><IMG class="clock" src="../图片资源/技能图标/图标时间.png">战斗结束</p></div>：此战技会持续到战斗结束。</li><br>
+</ul>
+<p class="para"><b>立即战技：</b>持续时间为立即的战技，被统称为立即战技。</p>
+<p class="para"><b>持续战技：</b>持续时间为本回合结束或者更久的战技，被统称为持续战技。</p>
 <br>
 <h4>玩家可选变体：重命名战技 Rename Your Battleskills</h4>
 <p class="para">获得或者强化一个战技时，如果你认为它的名字不好听，可以根据自己的意愿，修改它的名字，对实际数据没有任何影响。</p>
@@ -157,11 +177,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>迅捷打击γ丨Swift Strikeγ</h6>
+      <h6>迅捷打击·γ丨Swift Strike·γ</h6>
       <div class="cost">
         <p class="light">附赠动作</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;4&nbsp;技力</p></div>
+        <p class="light">消耗&nbsp;3&nbsp;技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../图片资源/技能图标/图标时间.png"> 
@@ -169,9 +189,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p><b>迅捷打击（+1技力）。</b>你可以附赠动作并消耗4点技力来发动此战技。直到<b>下回合开始</b>前：你执行攻击动作时，可以额外发动一次武器攻击。</p>
-<p><b>持续攻击力提升（+2技力）。</b>你进行的伤害掷骰获得+2d4加值。</p>
-<p><b>延长持续时间（+1.5技力）。</b>此战技一旦发动，直到战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至你下回合开始。</p>
+<p><b>迅捷打击（+1技力）：</b>你可以附赠动作并消耗4点技力来发动此战技。直到<b>下回合开始</b>前：你执行攻击动作时，可以额外发动一次武器攻击。</p>
+<p><b>持续攻击力提升×2（+2技力）：</b>你进行的伤害掷骰获得+2d4加值。</p>
 </div>
 <div class="syntax">
 <table>
@@ -196,7 +215,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p><b>攻击力强化（+1技力）：</b>你可以附赠动作并消耗5点技力来发动此战技。直到<b>下回合开始</b>前：你的攻击检定获得+1d4加值，伤害掷骰可以加上熟练加值。</p>
-<p><b>瞬时攻击力提升（+2技力）：</b>战技持续期间仅一次，你可以在伤害掷骰上获得+20加值。</p>
+<p><b>瞬时攻击力提升×2（+2技力）：</b>战技持续期间仅一次，你可以在伤害掷骰上获得+20加值。</p>
 <p><b>快速启动（+1技力）：</b>你在一场战斗中首次发动此战技时，如果原本需要使用附赠动作来发动，则你可以忽略该限制。你仍不能在无法执行附赠动作的时候以此发动战技。</p>
 <p><b>延长持续时间（+1.5技力）：</b>此战技一旦发动，直到战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至你下回合开始。</p>
 </div>
@@ -223,7 +242,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p><b>激流悍战（+3）：</b>你可以附赠动作并消耗3点技力来发动此战技。你立即获得6d10点临时生命值。直到战斗结束前：你的攻击检定获得+1d4加值，对<b>标记</b>对象的武器攻击额外造成1d10挥砍伤害。</p>
-<p><b>额外攻击力提升（+3）：</b>你进行的伤害掷骰获得+2d10加值。</p>
+<p><b>额外攻击力提升×2（+3）：</b>你进行的伤害掷骰获得+1d10加值。</p>
 </div>
 <div class="syntax">
 <table>
@@ -237,20 +256,20 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>
       <h6>真银斩丨Truesilver Slash</h6>
       <div class="cost">
-        <p class="light">动作</p></div>
+        <p class="light">附赠动作</p></div>
       <div class="trigger">
         <p class="light">消耗&nbsp;5&nbsp;技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../图片资源/技能图标/图标时间.png">
-          立即</p></div>
+          下回合结束</p></div>
     </td>
   </tr>
 </table>
-<p><b>逆流弧光（+2）：</b>你执行攻击动作时，可以消耗2点技力来发动此战技。你立即使这次攻击动作中：每次攻击若命中则额外造成1d8的武器伤害，攻击检定命中时，你同时选择另 1 个可攻击到，且AC不高于原目标的生物，对方受到相同的伤害。</p>
-<p><strong>同时攻击多个敌人（+1）：</strong>你的攻击检定命中时，你同时选择另 1 个可攻击到，且AC不高于原目标的生物，对方受到相同的伤害。</p>
-<p><b>攻击范围扩大（+1）：</b>你的触及范围增加10尺，远程武器和法术的最大射程翻倍。</p>
-<p><b>延长持续时间（+1.5）：</b>此战技一旦发动，直到战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至下回合开始。</p>
+<p><b>逆流弧光（+2）：</b>你可以附赠动作并消耗2点技力来发动此战技。直到你下回合结束前：你的每次攻击若命中则额外造成1d10的武器伤害。命中时，你同时选择另 1 个可攻击到，且AC不高于原目标的生物，对方受到相同的伤害。</p>
+<p><b>同时攻击多个敌人（+1）：</b>你的攻击检定命中时，你同时选择另 1 个可攻击到，且AC不高于原目标的生物，对方受到相同的伤害。</p>
+<p><b>攻击范围扩大（+1）：</b>你的触及范围增加10尺，远程攻击和法术的最大射程翻倍。</p>
+<p><b>额外攻击力提升（+1.5）：</b>你进行的伤害掷骰获得+2d10加值。</p>
 </div>
 <br>
 <br></div>

@@ -125,7 +125,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
 		<A href="轰击术师.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
-		<A href="../辅助.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
+		<A href="阵法术师.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
 	PRTS资料库 > <A href="../../第一章：职业分支.html">第一章：职业分支</A> &gt; <A href="../术师.html">术师</A> &gt;  <b>链术师</b>
 </div>
@@ -138,7 +138,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <b>链术师：</b>你擅长将法术能在目标间传导，通过精妙的能量控制实现对复数敌人的精准控制与连锁打击。
 </div>
 <p class="para">在明日方舟（Arknights）中，<b>链术师</b>（Chain Caster）是术师职业中专注于能量传导与范围控制的分支。链术师干员能够将法术能量如锁链般在敌人之间跳跃传递，对集群目标造成连锁伤害或叠加控制效果。他们擅长在混战中制造能量共振，将单点爆发的法术转化为覆盖战场的战术链条。<br></p>
-<p class="para">在战斗中，链术师通常作为队伍中的群体控制与中距离法术输出力量，通过链式效应瓦解敌方阵型。他们的法术在命中首个目标后会向周围敌人跃迁，形成连锁反应。优秀的链术师能精准计算法术跳转路径，在多重目标间实现伤害最大化或控制效果叠加，但需要对敌人站位有敏锐的洞察力。</p>
+<p class="para">在战斗中，链术师通常作为队伍中的群体控制与中距离法术输出力量，通过链式效应瓦解敌方阵型。他们的法术在命中首个目标后会向周围敌人跃迁，形成连锁反应。优秀的链术师能精准计算法术跳转路径，在多重目标间实现伤害最大化或控制效果叠加，但这种作战方式也要求链术师们需要对敌人站位有敏锐的洞察力。</p>
 <br>
 <h4>链术师特性</h4>
 <table class="custom-table" id="left" style="max-width: 400px;">
@@ -170,11 +170,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>施法风格。</b>你选择一个施法类战斗风格专长并习得之。</p>
 <br>
 <h2>3级：链式法则 Rules of Chain</h2>
-<p class="para">每回合仅一次，当你施展了一个1环或更高的法术时，并应用了<b>链式法术</b>超魔法项，在法术在影响目标后，你可以选择至多等于你的熟练加值的生物，被选择的生物距离最近的其他目标距离不能超过10尺，且任意目标都不能被此法术影响超过一次。</p>
+<p class="para">每回合仅一次，当你施展了一个1环或更高的法术时，并应用了<b>链式法术</b>超魔法项，你可以分化该法术的力量。除了那两个法术目标外，你可以再选择至多等于你的熟练加值的生物，每个被选择的生物不能超过10尺，且任意目标都不能被此法术影响超过一次。</p>
 <p class="para">如果此法术将造成伤害，那么其他目标将承受主目标所受的一半伤害。</p>
 <br>
 <h2>6级：链术战技 Artcasting Battleskill</h2>
-<p class="para">你消耗技力发动战技的回合，当你使用链式法则特性时，被法术影响的第一个生物若需要为法术进行豁免，则其豁免具有<b class="green">劣势</b>，且移动速度减少10尺直到其回合结束。</p>
+<p class="para">你消耗技力发动战技的回合，当你使用链式法则特性时，被法术影响的第一个生物直到其回合结束，若需要为法术进行豁免，则其首次豁免具有<b class="green">劣势</b>，且移动速度减少10尺。</p>
 <p class="para">此外，从以下战技中选择一个习得：扩散电流、超压过载。你可以在每次升级时重新选择以此习得的战技。</p>
 <div class="syntax">
 <table>
@@ -197,7 +197,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可在以<b class="green">魔法</b>动作施展法术时消耗1点技力来发动此战技。直到本回合结束前：你施展的法术视为升1环施展。你应用<b>链式法则</b>特性时，选择的生物距离最近的其他目标的最大距离增长到20尺，且受到你法术影响的生物直到其下一个回合结束前，移动速度降低10尺，且无法使用<b class="green">反应</b>。</p>
+<p>你可在以<b class="green">魔法</b>动作施展法术时消耗1点技力来发动此战技。直到本回合结束前：你施展的法术视为升1环施展（至多9环）。你应用<b>链式法则</b>特性时，选择的生物距离最近的其他目标的最大距离增长到20尺，且受到你法术影响的生物直到其下一个回合结束前，移动速度降低10尺，且无法使用<b class="green">反应</b>。</p>
 </div>
 <div class="syntax">
 <table>
@@ -221,16 +221,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以<b class="green">附赠动作</b>并消耗1技力来发动此战技。直到本回合结束前：你施展的法术视为升1环施展。若应用<b>链式法术</b>超魔法项，你立即对那两个目标均造成等同于你熟练加值枚d6的精通伤害。</p>
+<p>你可以<b class="green">附赠动作</b>并消耗1技力来发动此战技。直到本回合结束前：你施展的法术视为升1环施展（至多9环）。若应用<b>链式法术</b>超魔法项，你立即对那两个目标均造成等同于你熟练加值枚d6的精通伤害。</p>
 </div>
 <br>
 <h2>10级：高效通路 Efficient Circuits</h2>
-<p class="para">你对链式施法越发熟练起来，你可以在不升环的情况下，为自己释放的法术应用链式法术超魔法项。你应用此特性后，你必须进行一次先攻检定才能再次使用此特质。</p>
-<p class="para">当你使用<b>链式法则</b>特性后，直到你的下回合开始，如果任一目标在这之前移动了至少10尺，你可以采取<b class="green">反应</b>，让其再次受到到法术的影响。</p>
+<p class="para">你对链环法术的应用得心应手，你获得以下特性：</p>
+<p class="para"><b>链接本能。</b>你<b>链式施法</b>越发熟练起来，每回合仅一次，你可以在不升环的情况下，为自己施展的法术应用链式法术超魔法项。</p>
+<p class="para"><b>压制通路。</b>当你使用<b>链式法则</b>特性后，直到你的下回合开始，如果任一目标在这之前移动了至少10尺，你可以采取<b class="green">反应</b>，让其再次受到到法术的影响。</p>
 <p class="para"></p>
 <br>
 <h2>14级：导流环路 Diversion Recurrence</h2>
-<p class="para">现在你对链式法则的运用炉火纯青，当你使用<b>链式法则</b>特性时，你可以多次选择第一个目标收到法术的影响。</p>
+<p class="para">现在你对链式法则的运用炉火纯青，当你使用<b>链式法则</b>特性时，你可以仅一次再选择一次第一个目标受到法术的影响。</p>
 
 <br>
 <div class="syntax">
