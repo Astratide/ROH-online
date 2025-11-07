@@ -11,7 +11,6 @@
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../style.css">
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=11" />
@@ -104,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(190);
+  parent.nav.tree.selectNode(191);
  }else{
   setTimeout("syn()",500);
 }
@@ -185,159 +184,161 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4 id="虚弱">虚弱 Debility* 【状态】</h4>
 <p class="para">虚弱状态期间，你将遭受以下这个效应。 </p>
-<p><b>伤害减少Damge Reduction。</b>你进行的任何伤害掷骰获得-5减值。</p>
+<p class="indent"><b>伤害减少Damge Reduction。</b>你进行的任何伤害掷骰获得-5减值。</p>
 <br>
 <br>
 <h4 id="庇护">庇护 Sanctuary* 【状态】</h4>
 <p class="para">庇护状态期间，你将获得以下这些效应。</p>
-<p><b>伤害减免Damage Reduction。</b>你每次受到伤害时，每受到10点伤害，你就可以掷1d4来减少该伤害，减免数值等同d4的掷骰结果之和。</p>
-<p><b>增效庇护Effective Sanctuary。</b>有些提供庇护的效应会写明庇护提供的数值，如d6庇护就允许你掷1d6而非1d4来进行伤害减免。</p>
+<p class="indent"><b>伤害减免Damage Reduction。</b>你每次受到伤害时，每受到10点伤害，你就可以掷1d4来减少该伤害，减免数值等同d4的掷骰结果之和。</p>
+<p class="indent"><b>增效庇护Effective Sanctuary。</b>有些提供庇护的效应会写明庇护提供的数值，如d6庇护就允许你掷1d6而非1d4来进行伤害减免。</p>
 <p class="grey">掷骰使用例：先掷.r8d6得出8d6=31，再掷.r31-3d4得出25，此为庇护减免之后的伤害。伤害减少会在抗性或易伤之前结算。</p>
 <br>
 <br>
 <h4 id="战栗">战栗 Shudder* 【状态】</h4>
 <p class="para">战栗状态期间，你将遭受以下这个效应。</p>
-<p><b>攻击影响Attacks Affected。</b>你无法进行攻击检定。特别地，免疫恐慌的生物也免疫战栗。</p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>你无法进行攻击检定。</p>
+<p class="indent">特别地，免疫恐慌的生物也免疫战栗。</p>
 <br>
 <br>
 <h4 id="鼓舞">鼓舞 Inspiration* 【状态】</h4>
 <p class="para">鼓舞状态期间，你将获得以下这个效应。</p>
-<p><b>攻击强化Attack Enhanced。</b>你的攻击检定获得+1d4加值。受益于鼓舞状态时，你不能同时受益于<b class="spell">祝福术Bless</b> 
-效应提供的攻击检定加值。</p>
-<p><b>增效鼓舞Effective Inspiration。</b>有些提供鼓舞的效应会写明鼓舞提供的数值，如d6鼓舞就允许你掷1d6而非1d4来作为加值。</p>
+<p class="indent"><b>攻击强化Attack Enhanced。</b> 
+你的攻击检定获得+1d4加值。</p>
+<p class="indent"><b>增效鼓舞Effective Inspiration。</b>有些提供鼓舞的效应会写明鼓舞提供的数值，如d6鼓舞就允许你掷1d6而非1d4来作为加值。</p>
 <br>
 <br>
 <h4 id="抵抗">抵抗 Status Resistance* 【状态】</h4>
 <p class="para">抵抗状态期间，你将获得以下这个效应。 </p>
-<p><b>状态抵抗Status Resisting。</b>若一个效应需要你在结束回合时进行豁免来结束效应，你可以改为在开始回合时以及获得抵抗时进行豁免。此外，那些会在你回合结束时结束的效应，会在你回合开始时结束。</p>
+<p class="indent"><b>状态抵抗Status Resisting。</b>一个效应需要你在结束回合时进行豁免来结束效应，你可以改为在开始回合时以及获得抵抗时进行豁免。此外，那些会在你回合结束时结束的效应，会在你回合开始时结束。</p>
+<p class="indent"><b>豁免优势Saving Advantage。</b>你为抵抗会造成某种状态或危害的效应时而作的豁免检定具有<b class="green">优势</b>。</p>
 <br>
 <br>
 <h4 id="脆弱">脆弱 Fragile* 【状态】</h4>
 <p class="para">脆弱状态期间，你将遭受以下这个效应。</p>
-<p><b>伤害脆弱Damage 
+<p class="indent"><b>伤害脆弱Damage 
 Fragility。</b>你每次受到某单一类型伤害时，每受到10点该伤害，你就额外受到1d4的相同类型伤害（此伤害不再重复触发此效果，也无法被其他效应再次增大）。</p>
-<p><b>增效脆弱Effective Fragile。</b>有些提供脆弱的效应会写明脆弱提供的数值，如d6脆弱就允许伤害来源掷1d6而非1d4来作为额外伤害。此外，法术脆弱是一种特殊脆弱，仅对法术造成的伤害，以及生物的精通伤害生效。</p>
+<p class="indent"><b>增效脆弱Effective Fragile。</b>有些提供脆弱的效应会写明脆弱提供的数值，如d6脆弱就允许伤害来源掷1d6而非1d4来作为额外伤害。此外，法术脆弱是一种特殊脆弱，仅对法术造成的伤害，以及生物的精通伤害生效。</p>
 <p class="grey">为简化计算量，对于在同一时刻发动的多次攻击检定，将它们造成的伤害合并计算。伤害增加会在抗性或易伤之前结算。</p>
 <br>
 <br>
 <h4 id="沉默">沉默 Silence* 【状态】</h4>
 <p class="para">沉默状态期间，你将遭受以下这些效应。</p>
-<p><b>无法说话Speak Disability。</b>你无法说话，也不能施展需要言语成分的法术。</p>
-<p><b>能力失效Ability failure。</b>你无法发动战技，如果是怪物则无法执行需要充能的动作项。此外，如果一个特质写明了可以被沉默，则你也无法从该特质中获益。</p>
+<p class="indent"><b>无法说话Speak Disability。</b>你无法说话，也不能施展需要言语成分的法术。</p>
+<p class="indent"><b>能力失效Ability failure。</b>你无法发动战技，如果是怪物则无法执行需要充能的动作项。此外，如果一个特质写明了可以被沉默，则你也无法从该特质中获益。</p>
 <br>
 <hr>
 <br>
 <h4 id="目盲">目盲 Blinded【状态】</h4>
 <p class="para">目盲状态期间，你将遭受以下这些效应。 </p>
-<p><b>看不见Can't See。</b>你无法视物，且会自动失败于任何需要视觉的属性检定。 </p>
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势，而你进行的攻击检定具有劣势。</p>
+<p class="indent"><b>看不见Can't See。</b>你无法视物，且会自动失败于任何需要视觉的属性检定。 </p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势，而你进行的攻击检定具有劣势。</p>
 <br>
 <br>
 <h4 id="魅惑">魅惑 Charmed 【状态】</h4>
 <p class="para">魅惑状态期间，你将遭受以下这些效应。</p>
-<p><b>无法伤害魅惑源Can't Harm the Charmer。</b>你无法攻击魅惑源，也无法将其作为伤害性能力或魔法效应的对象。</p>
-<p><b>社交优势Social Advantage。</b>魅惑源对你进行的任何有关社交的属性检定均具有优势。</p>
+<p class="indent"><b>无法伤害魅惑源Can't Harm the Charmer。</b>你无法攻击魅惑源，也无法将其作为伤害性能力或魔法效应的对象。</p>
+<p class="indent"><b>社交优势Social Advantage。</b>魅惑源对你进行的任何有关社交的属性检定均具有优势。</p>
 <br>
 <br>
 <h4 id="耳聋">耳聋 Defened 【状态】</h4>
 <p class="para">耳聋状态期间，你将遭受以下这个效应。</p>
-<p><b>听不见Can't Hear。</b>你无法听声，且会自动失败于任何依赖听觉的属性检定。</p>
+<p class="indent"><b>听不见Can't Hear。</b>你无法听声，且会自动失败于任何依赖听觉的属性检定。</p>
 <br>
 <br>
 <h4 id="力竭">力竭 Exhaustion 【状态】 </h4>
 <p class="para">力竭状态期间，你将遭受以下这些效应。 </p>
-<p><b>力竭等级Exhaustion Levels。</b>此状态可叠加。每次你获得此状态，力竭等级都增加1层。当你力竭等级累加到6级你将死亡。</p>
-<p><b>D20检定影响D20 Tests Affected。</b>当你进行一次D20检定时，此次检定将减去你力竭等级2倍的值。</p>
-<p><b>速度降低Speed Reduced。</b>你的速度减少等于你力竭等级5倍尺。</p>
-<p><b>移除力竭等级Removing Exhaustion Levels</b>。完成一次长休时，你的力竭等级减少1层。当你力竭等级降至0时，此状态结束。</p>
+<p class="indent"><b>力竭等级Exhaustion Levels。</b>此状态可叠加。每次你获得此状态，力竭等级都增加1层。当你力竭等级累加到6级你将死亡。</p>
+<p class="indent"><b>D20检定影响D20 Tests Affected。</b>当你进行一次D20检定时，此次检定将减去你力竭等级2倍的值。</p>
+<p class="indent"><b>速度降低Speed Reduced。</b>你的速度减少等于你力竭等级5倍尺。</p>
+<p class="indent"><b>移除力竭等级Removing Exhaustion Levels</b>。完成一次长休时，你的力竭等级减少1层。当你力竭等级降至0时，此状态结束。</p>
 <br>
 <br>
 <h4 id="恐慌">恐慌Frightened 【状态】 </h4>
 <p class="para">恐慌状态期间，你将遭受以下这些效应。 </p>
-<p><b>属性检定与攻击影响Ability Checks and Attacks Affected。</b>只要恐惧源在你的视线范围内，你进行的属性检定与攻击检定就具有劣势。</p> 
-<p><b>无法靠近Can't Approach。</b>你无法自愿地向靠近恐惧源的方向移动。</p>
+<p class="indent"><b>属性检定与攻击影响Ability Checks and Attacks Affected。</b>只要恐惧源在你的视线范围内，你进行的属性检定与攻击检定就具有劣势。</p> 
+<p class="indent"><b>无法靠近Can't Approach。</b>你无法自愿地向靠近恐惧源的方向移动。</p>
 <br>
 <br>
 <h4 id="受擒">受擒 Grappled 【状态】 </h4>
 <p class="para">受擒状态期间，你将遭受以下这些效应。 </p>
-<p><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。 </p>
-<p><b>攻击影响Attacks Affected</b>。除擒抱者外，你对其他任何目标进行的攻击检定都具有劣势。 </p>
-<p><b>逃脱擒抱Esacape a Grapple。</b>受擒生物可以用其动作进行一次力量（运动）或敏捷（特技）检定，对抗此次擒抱的逃脱DC，检定成功时，受擒状态将结束。此外，如果擒抱者陷入 失能Incapacitated，或是擒抱者与受擒者之间的距离超出了此次擒抱的范围，那么受擒状态也会提前结束。</p>
+<p class="indent"><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。 </p>
+<p class="indent"><b>攻击影响Attacks Affected</b>。除擒抱者外，你对其他任何目标进行的攻击检定都具有劣势。 </p>
+<p class="indent"><b>逃脱擒抱Esacape a Grapple。</b>受擒生物可以用其动作进行一次力量（运动）或敏捷（特技）检定，对抗此次擒抱的逃脱DC，检定成功时，受擒状态将结束。此外，如果擒抱者陷入 失能Incapacitated，或是擒抱者与受擒者之间的距离超出了此次擒抱的范围，那么受擒状态也会提前结束。</p>
 <br>
 <br>
 <h4 id="失能">失能 Incapacitated 【状态】 </h4>
 <p class="para">失能状态期间，你将遭受以下这些效应。 </p>
-<p><b>无法行动Inactive。</b>你无法执行任何动作、附赠动作以及反应。 </p>
-<p><b>无法专注No Concentration。</b>你的专注将被打断。 </p>
-<p><b>无法说话Speechless。</b>你无法说话。</p>
-<p><b>措手不及Surprised。</b>如果你在陷入失能状态期间投掷先攻，你的先攻检定将具有劣势。</p>
+<p class="indent"><b>无法行动Inactive。</b>你无法执行任何动作、附赠动作以及反应。 </p>
+<p class="indent"><b>无法专注No Concentration。</b>你的专注将被打断。 </p>
+<p class="indent"><b>无法说话Speechless。</b>你无法说话。</p>
+<p class="indent"><b>措手不及Surprised。</b>如果你在陷入失能状态期间投掷先攻，你的先攻检定将具有劣势。</p>
 <br>
 <br>
 <h4 id="隐形">隐形 Invisible 【状态】</h4>
 <p class="para">隐形状态期间，你将获得以下这些效应。</p>
-<p><b>出其不意Surprise。 </b>如果你在投掷先攻时处于隐形状态，你的先攻检定将具有优势。 </p>
-<p><b>隐蔽Concealed。</b>任何需要能够看见目标的效应都不会影响到你，除非效应的源头能通过某种方式看到你。你所着装或携带的一切装备也同样会被隐蔽起来。 </p>
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有劣势，而你进行的攻击检定具有优势。如果一个生物能以某种方式看见你，那么你在面对该生物时不会获得这一增益。</p>
+<p class="indent"><b>出其不意Surprise。 </b>如果你在投掷先攻时处于隐形状态，你的先攻检定将具有优势。 </p>
+<p class="indent"><b>隐蔽Concealed。</b>任何需要能够看见目标的效应都不会影响到你，除非效应的源头能通过某种方式看到你。你所着装或携带的一切装备也同样会被隐蔽起来。 </p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有劣势，而你进行的攻击检定具有优势。如果一个生物能以某种方式看见你，那么你在面对该生物时不会获得这一增益。</p>
 <br>
 <br>
 <h4 id="麻痹">麻痹 Paralyzed 【状态】</h4>
 <p class="para">麻痹状态期间，你将遭受以下这些效应。</p>
-<p><b>失能Incapacitated。</b>你陷入失能状态。</p>
-<p><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p>
-<p><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。 </p>
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。 </p>
-<p><b>自动重击Automatic Critical Hits。</b>若攻击者位于你5尺内，其任何命中你的攻击检定都会变为重击。</p>
+<p class="indent"><b>失能Incapacitated。</b>你陷入失能状态。</p>
+<p class="indent"><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p>
+<p class="indent"><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。 </p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。 </p>
+<p class="indent"><b>自动重击Automatic Critical Hits。</b>若攻击者位于你5尺内，其任何命中你的攻击检定都会变为重击。</p>
 <br>
 <br>
 <h4 id="石化">石化 Petrified 【状态】 </h4>
 <p class="para">石化状态期间，你将遭受以下这些效应。 </p>
-<p><b>化为非活动材质Turned to Inanimate Substance。</b>你与你穿着或携带的所有非魔法物品将被变化为坚固的、非活动的材质（通常是石头）。你的重量变为原本的十倍，且你将停止老化。</p> 
-<p><b>失能Incapacitated。</b>你陷入失能状态。</p>
-<p><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。 </p>
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。 </p>
-<p><b>豁免影响Saving Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。 </p>
-<p><b>伤害全抗Resist Damage。</b>你具有所有伤害的抗性。 </p>
-<p><b>中毒免疫Poison Immunity。</b>你具有中毒状态的免疫。</p>
+<p class="indent"><b>化为非活动材质Turned to Inanimate Substance。</b>你与你穿着或携带的所有非魔法物品将被变化为坚固的、非活动的材质（通常是石头）。你的重量变为原本的十倍，且你将停止老化。</p> 
+<p class="indent"><b>失能Incapacitated。</b>你陷入失能状态。</p>
+<p class="indent"><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。 </p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。 </p>
+<p class="indent"><b>豁免影响Saving Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。 </p>
+<p class="indent"><b>伤害全抗Resist Damage。</b>你具有所有伤害的抗性。 </p>
+<p class="indent"><b>中毒免疫Poison Immunity。</b>你具有中毒状态的免疫。</p>
 <br>
 <br>
 <h4 id="中毒">中毒 Poisoned 【状态】</h4>
 <p class="para">中毒状态期间，你将遭受以下这个效应。 </p>
-<p><b>属性检定与攻击影响Ability Checks and Attacks Affected。</b>你进行的攻击检定与属性检定具有劣势。</p>
+<p class="indent"><b>属性检定与攻击影响Ability Checks and Attacks Affected。</b>你进行的攻击检定与属性检定具有劣势。</p>
 <br>
 <br>
 <h4>倒地 Prone 【状态】 </h4>
 <p class="para">倒地状态期间，你将遭受以下这些效应。 </p>
-<p><b>阻碍移动Restricted Movement。</b>你唯二的移动选项是匍匐移动或是消耗你速度一半数值（向下取整）的移动力起立，并由此终止这一状态。如果你的速度为0，你无法起立。</p>
-<p><b>攻击影响Attacks Affected。</b>你进行的攻击检定具有劣势。若攻击者位于你5尺内，其以你为目标的攻击检定具有优势；若攻击者不位于你5尺内，其以你为目标的攻击检定具有劣势。</p>
+<p class="indent"><b>阻碍移动Restricted Movement。</b>你唯二的移动选项是匍匐移动或是消耗你速度一半数值（向下取整）的移动力起立，并由此终止这一状态。如果你的速度为0，你无法起立。</p>
+<p class="indent"><b>攻击影响Attacks Affected。</b>你进行的攻击检定具有劣势。若攻击者位于你5尺内，其以你为目标的攻击检定具有优势；若攻击者不位于你5尺内，其以你为目标的攻击检定具有劣势。</p>
 <br>
 <br>
 <h4>束缚 Restrained 【状态】 </h4>
 <p class="para">束缚状态期间，你将遭受以下这些效应。 </p>
-<p><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p> 
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势，而你进行的攻击检定具有劣势。</p> 
-<p><b>豁免影响Saving Affected。</b>你进行的敏捷豁免检定具有劣势。
+<p class="indent"><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p> 
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势，而你进行的攻击检定具有劣势。</p> 
+<p class="indent"><b>豁免影响Saving Affected。</b>你进行的敏捷豁免检定具有劣势。
 <br>
 <br>
 <h4>震慑 Stunned 【状态】</h4>
 <p class="para">震慑状态期间，你将遭受以下这些效应。</p>
-<p><b>失能Incapacitated。</b>你陷入失能状态。
-<p><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。</p> 
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。
+<p class="indent"><b>失能Incapacitated。</b>你陷入失能状态。
+<p class="indent"><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。</p> 
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。
 <br>
 <br>
 <h4>昏迷 Unconscious 【状态】 </h4>
 <p class="para">昏迷状态期间，你将遭受以下这些效应。</p>
-<p><b>迟钝Inert。</b>你陷入失能状态与倒地状态，你手上持握的东西也会全数掉落。此状态结束时，倒地状态并不会因此结束。</p> 
-<p><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p> 
-<p><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。</p> 
-<p><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。</p> 
-<p><b>自动重击Automatic Critical Hits。</b>若攻击者位于你5尺内，其任何命中你的攻击检定都会变为重击。</p> 
-<p><b>无知觉Unaware。</b>你无法感知到你周遭的事物。
+<p class="indent"><b>迟钝Inert。</b>你陷入失能状态与倒地状态，你手上持握的东西也会全数掉落。此状态结束时，倒地状态并不会因此结束。</p> 
+<p class="indent"><b>速度归零Speed 0。</b>你的速度变为0，且无法被增加。</p> 
+<p class="indent"><b>攻击影响Attacks Affected。</b>以你为目标的攻击检定具有优势。</p> 
+<p class="indent"><b>豁免影响Saving Throws Affected。</b>你自动失败于力量豁免检定与敏捷豁免检定。</p> 
+<p class="indent"><b>自动重击Automatic Critical Hits。</b>若攻击者位于你5尺内，其任何命中你的攻击检定都会变为重击。</p> 
+<p class="indent"><b>无知觉Unaware。</b>你无法感知到你周遭的事物。
 <br>
 <br>
 <h4>死亡 Dead </h4>
 <p class="para">死亡的生物没有生命值也无法恢复生命值，只有先被魔法复活（例如法术 死者复活Raise Dead 或法术 回生术Revivify ）之后才能恢复生命值。当此类法术被施展时，死者的魂魄可以知晓谁施展了这个法术，并可以选择拒绝被复活。死亡生物的魂魄已经离开了其身体，并前往了外层位面 ，复活一名生物需要其魂魄被呼唤归来。</p>
-<p>当生物重拾生命时，那个回生效应会决定该生物的当前生命值。若无特殊说明，生物在重拾生命时，其死亡之前具有的任何持续时间未结束的状态、魔法疫病以及诅咒都会继续维持原样。如果生物死亡时具有任何力竭等级，其重拾生命时具有的力竭等级减少1层。如果生物死亡时与任何魔法物品同调，死亡后这些同调也将解除。 </p>
+<p class="para">      当生物重拾生命时，那个回生效应会决定该生物的当前生命值。若无特殊说明，生物在重拾生命时，其死亡之前具有的任何持续时间未结束的状态、魔法疫病以及诅咒都会继续维持原样。如果生物死亡时具有任何力竭等级，其重拾生命时具有的力竭等级减少1层。如果生物死亡时与任何魔法物品同调，死亡后这些同调也将解除。</p>
 <br>
 <br>
 <h4>浴血 Bloodied </h4>
