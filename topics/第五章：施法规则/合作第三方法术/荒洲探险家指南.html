@@ -11,10 +11,6 @@
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=11" />
-
-
-
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
 <style>
 html {
 	overflow-y:scroll;
@@ -264,13 +260,27 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>法术成分：</b>V、S、M（一个水晶棱镜）</p>
 <p><b>持续时间：</b>专注，至多一分钟</p>
 <p class="para">你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时掷一个d10，其结果决定目标身上发生了什么。参照下方表格“崩坏现实效果”。在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。</p>
-<p><b>崩坏现实效果：</b></p>
-<ul>
-  <li>1~2：遥远国度之瞥（Vision of the Far Realm）：目标受到6d12点心灵伤害并且陷入震慑到本轮结束。</li>
-  <li>3~5：崩碎裂缝（Rending Rift）：目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。</li>
-  <li>6~8：虫洞（Wormhole）：该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未被占据的空间。目标受到10d12点力场伤害并倒地。</li>
-  <li>9~10：暗虚之冻（Chill of the Dark Void）：目标受到10d12寒冷伤害并且目盲到本回合结束。</li>
-</ul>
+<table class="custom-table" id="left" style="max-width: auto;">
+  <colgroup>
+  <col style="width: 5em;">
+  <col style="width: 60em;">
+  <tbody>
+  <tr>
+    <td style="text-align: center;"><b>d10</b></td>
+    <td><b>崩坏现实效果</b></td></tr>
+  <tr>
+    <td style="text-align: center;">1~2</td>
+    <td><b>遥远国度之瞥Vision of the Far Realm。</b>目标受到6d12点心灵伤害并且陷入震慑到本轮结束。</td></tr>
+  <tr>
+    <td style="text-align: center;">3~5</td>
+    <td><b>崩碎裂缝Rending Rift。</b>目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。</td></tr>
+  <tr>
+    <td style="text-align: center;">6~8</td>
+    <td><b>虫洞Wormhole。</b>该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未被占据的空间。目标受到10d12点力场伤害并倒地。</td></tr>
+  <tr>
+    <td style="text-align: center;">9~10</td>
+    <td><b>暗虚之冻Chill of the Dark Void。</b>目标受到10d12寒冷伤害并且目盲到本回合结束。</td></tr>
+  <tr></tbody></table>
 <br>
 <br>
 <h5 id="时光蹂躏">时光蹂躏丨Time Ravage</h5>

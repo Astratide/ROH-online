@@ -7,7 +7,10 @@ body {
     width: 100%;
     color: #000000;
     font-family: 'microsoft yahei','sans-serif';
-    margin: 12px;
+}
+div#content
+{
+    padding: 12px;
     min-width: 400px;
     max-width: 1200px;
 }

@@ -138,7 +138,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <p class="para">在明日方舟（Arknights）中，<b>猎手</b>（Hunter）是狙击职业的其中一个职业分支。猎手使用独特的弹药机制进行战斗，当备弹充足时可以爆发出惊人的伤害。他们会在没有敌人时进行装弹，并等待敌人到来时，给予致命一击。</p>
 <p class="para">猎手通常作为队伍中的针对单个的高质量敌人的攻坚手，并且通过装弹后的高额伤害迅速解决敌人，再次进入装弹，但当敌人较多或出现间隔较短时猎手会较难应对。猎手通常位于在高价值目标的必经之路上，精确地对孤立的它发起凌厉的攻击，完成“击杀—装药”的循环。</p>
-<h2><br>猎手特性</h2>
+<br>
+<h2>猎手特性</h2>
 <table class="custom-table" id="left" style="max-width: 400px;">
   <colgroup>
   <col style="width: 5em;">
@@ -174,7 +175,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：调箭手艺 Hunter Arsenal</h2>
 <p class="para">你自后文蚀刻弹药选项一节习得 两种 由你选择的蚀刻选项。</p>
 <p class="para">当你的狙击等级到达6级、10级、15级和18级时，你均可习得一种新的蚀刻选项，同时你也可以将你已知的选项替换为另外一种。蚀刻选项造成的伤害依赖于蚀刻骰，你的蚀刻骰为d4，6级变为d6、10级变为d8、15级变为d10，18级变为d12。</p>
-<p class="para"><b>蚀刻装填。</b>你进行换弹时，可以改为进行蚀刻装填。你创造若干枚已知的蚀刻弹药，并填充于手中的猎手武器的弹容中，但以此填充的蚀刻弹药数量，仅等同弹容上限的一半（向上取整）而非全部。使用蚀刻弹药发动的攻击具有<b class="green">优势</b>，并且额外造成一枚蚀刻骰的伤害。</p>
+<p class="para"><b>蚀刻装填。</b>你进行换弹时，可以改为进行蚀刻装填。你创造若干枚已知的蚀刻弹药，并填充于手中的猎手武器的弹容中，但每次以此填充的蚀刻弹药数量，仅等同弹容上限的一半（向上取整）而非全部。使用蚀刻弹药发动的攻击具有<b class="green">优势</b>，并且额外造成1枚蚀刻骰的伤害。</p>
 <br>
 <h2> 6级：猎手战技 Hunter Battleskills</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至3个已知蚀刻选项）。</p>
@@ -222,11 +223,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以动作并消耗1点技力来发动此战技。你可以立即发动等同手中猎手武器的蚀刻弹药装填数量次数的攻击。</p></div>
+<p>你可以动作并消耗1点技力来发动此战技。你立即发动至多等同手中猎手武器的蚀刻弹药装填数量次数的攻击。</p></div>
 <br>
 <h2>10级：狩猎意志  Relentless  Hunt</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至4个已知蚀刻选项）。</p>
-<p class="para">你获得感知豁免的熟练。此外，你还可以选择一个基于感知的未熟练技能，并获得其熟练。</p>
+<p class="para">你选择一个基于感知的未熟练技能，并获得其熟练。</p>
+<p class="para">此外，只要你未处于<b class="green">失能</b>，你的先攻检定可以加入你的感知调整值。</p>
 <br>
 <h2>15级：进阶蚀刻 Advanced Etch</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至5个已知蚀刻选项）。</p>
@@ -234,9 +236,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2> 18级：骤雨蚀锋 Corrosive Barrage</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至6个已知蚀刻选项）。</p>
-<p class="para">此外，当你用蚀刻弹药发起攻击时，若在攻击检定的D20上掷出19或20即可视为造成重击。重击时，你可以迫使目标必须通过一次体质豁免（DC等同8+你熟练加值+你敏捷调整值），否则其会被推离30尺。</p>
+<p class="para">此外，你得到了在你的猎物企图干扰你时进行回击的能力。当一个可见生物迫使你进行一次豁免检定时，你在进行豁免检定前，可以立即采取<b class="green">反应</b>，对其发动一次远程武器攻击。</p>
+<p class="para">若此攻击命中，则除了攻击的正常效果外，这次豁免将自动成功。
 <br><br>
-<br><br>
+<br><br></p>
 <h2>蚀刻弹药选项 Etched Ammunition</h2>
 <hr class="sub">
 <p class="para"><b>蚀刻弹药DC：</b>8+敏捷调整值+熟练加值</p>
@@ -263,7 +266,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>束缚弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级6+）</p>
-<p class="para">此弹药在命中时，目标必须进行敏捷豁免，失败则额外造成一枚蚀刻骰的伤害，且陷入<b class="green">束缚</b>直到你下回合开始。</p>
+<p class="para">此弹药在命中时，目标必须进行敏捷豁免，失败则额外造成1枚蚀刻骰的伤害，且陷入<b class="green">束缚</b>直到你下回合开始。</p>
 <br>
 <h4>破甲弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级6+）</p>
@@ -271,7 +274,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>眩目弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级6+）</p>
-<p class="para">此弹药在命中后，该生物额外受到2枚蚀刻骰的心灵伤害，且必须成功通过一次感知豁免，否则陷入<b class="green">目盲</b>状态直至其下个回合结束。</p>
+<p class="para">此弹药在命中后，该生物额外受到2枚蚀刻骰的心灵伤害，且必须通过感知豁免，否则陷入<b class="green">目盲</b>状态直至其下个回合结束。</p>
 <br>
 <h4>校准弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级6+）</p>
