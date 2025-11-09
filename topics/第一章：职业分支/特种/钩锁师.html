@@ -133,7 +133,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">罗德岛外勤指南：[钩索师]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h1>钩索师&nbsp;Hookmaster<IMG class="text-img" alt="钩索师标志" src="../../图片资源/职业图标/子职/职业分支图标_钩索师.png"></h1>
+<h1>钩索师 Hookmaster<IMG class="text-img" alt="钩索师标志" src="../../图片资源/职业图标/子职/职业分支图标_钩索师.png"></h1>
 <hr class="sub">
 <div class="side-box">
   <b>特种-钩索师：</b>你擅长将敌人拖拽至身边后进行攻击。
@@ -167,8 +167,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：战术牵引 Tactical Haul</h2>
 <p class="para">作为一名钩索师，你获得以下特性：</p>
 <p class="para"><b>钩索精通。</b>你获得钩爪的熟练和精通。你在执行魔法动作时，作为魔法动作的一部分，你可以附赠动作用手中的一个具有拉近精通词条的武器发动一次攻击。</p>
-<p class="para"><b>越野大师。</b>当你持用钩爪时，你的攀爬或者悬吊不需要占用你的空手。</p>
-<p class="para"><b>本职法术。</b>当你达到对应特种等级时，你将下述法术加入你的职业法术表。你时刻准备这些法术，且不占用你以施法特性准备的法术数量。</p>
+<p class="para"><b>攀爬大师。</b>当你持用钩爪时，你的攀爬或者悬吊不需要占用你的空手。</p>
+<p class="para"><b>本职法术。</b>你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
 <br>
 <h4>钩锁师法术表</h4>
 <table class="custom-table" id="left" style="max-width: 500px;">
@@ -177,28 +177,29 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <col style="width: 25em;">
   <tbody>
   <tr>
-    <th style="text-align: center;"><b>特种等级</b></th>
+    <th style="text-align: center;"><b>环阶</b></th>
     <th><b>法术</b></th></tr>
   <tr>
-    <td style="text-align: center;">3rd</td>
-    <td><b class="spell">荆棘之鞭、闪电牵引</b><br>
-        <b class="spell"><A href="../../第五章：施法规则/1环.html#创造深坑">创造深坑*</a>、<A href="../../第五章：施法规则/1环.html#牵引斩">牵引斩*</a></b></td></tr>
+    <td style="text-align: center;">戏法</td>
+    <td><b class="spell">荆棘之鞭、闪电牵引</b></td></tr>
   <tr>
-    <td style="text-align: center;">5th</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/2环.html#造成失重">造成失重*</a>、<A href="../../第五章：施法规则/2环.html#光之锁链">光之锁链*</a></b></td></tr>
+    <td style="text-align: center;">一环</td>
+    <td><b class="spell"><A href="../../第五章：施法规则/1环.html#创造深坑">创造深坑</A><sup>KGE</sup>、牵引斩<sup>ROH</sup></b></td></tr>
   <tr>
-    <td style="text-align: center;">9th</td>
-    <td><b class="spell">雷霆步、<A href="../../第五章：施法规则/3环.html#酸性深坑">酸性深坑*</a></b></td></tr>
+    <td style="text-align: center;">二环</td>
+    <td><b class="spell"><A href="../../第五章：施法规则/2环.html#造成失重">造成失重</a><sup>ROH</sup>、<A href="../../第五章：施法规则/2环.html#光之锁链">光之锁链</a><sup>PES</sup></b></td></tr>
   <tr>
-    <td style="text-align: center;">13th</td>
+    <td style="text-align: center;">三环</td>
+    <td><b class="spell">雷霆步、<A href="../../第五章：施法规则/3环.html#酸性深坑">酸性深坑</a><sup>KGE</sup></b></td></tr>
+  <tr>
+    <td style="text-align: center;">四环</td>
     <td><b class="spell">行动自如、信仰守卫</b></td></tr>
   <tr>
-    <td style="text-align: center;">17th</td>
-    <td><b class="spell">定身怪物、<A href="../../第五章：施法规则/5环.html#狂风区">狂风区*</a></b></td></tr>
+    <td style="text-align: center;">五环</td>
+    <td><b class="spell">定身怪物、<A href="../../第五章：施法规则/5环.html#狂风区">狂风区</a><sup>ROH</sup></b></td></tr>
     </tbody></table>
-<p class="grey">*来自第三方拓展的法术，具体来源见法术一览。</p>
 <br>
-<p class="para">此外，你的基础战技被替换为&nbsp;战术牵引。</p>  
+<p class="para">此外，你的基础战技被替换为 战术牵引。</p>  
 <div class="syntax">
 <table>
   
@@ -209,7 +210,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>&nbsp;战术牵引&nbsp;|&nbsp;Tactical Haul</h6>
+      <h6> 战术牵引丨Tactical Haul</h6>
       <div class="cost" id="green"><p class="light">回合开始</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -240,7 +241,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>&nbsp;集束牵引&nbsp;|&nbsp;Cluster Traction</h6>
+      <h6> 集束牵引丨Cluster Traction</h6>
       <div class="cost" id="green"><p class="light">回合开始</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -253,7 +254,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>你可以在回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物拉近，你可以选择目标生物周围10尺内若干个AC以及体型均不大于原目标的生物，那些目标被拉近相同的距离。此外，所有所选目标无论是否可以被拉动，都会受到6d6你的精通伤害。</p></div>
 <br>
 <h2>13级：迅捷施法 Swift Artcasting</h2>
-<p class="para">在消耗技力发动战技的回合，你可以附赠动作施展一个施法时间为1动作的钩索师法术。
+<p class="para">在消耗技力发动战技的回合，你可以<b class="green">附赠动作</b>施展一个施法时间为动作的钩索师法术。
 </p>
 <br>
 <h2>17级：引力超载 Gravity Overload</h2>
