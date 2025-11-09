@@ -189,9 +189,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4 id="庇护">庇护 Sanctuary* 【状态】</h4>
 <p class="para">庇护状态期间，你将获得以下这些效应。</p>
-<p class="indent"><b>伤害减免Damage Reduction。</b>你每次受到伤害时，每受到10点伤害，你就可以掷1d4来减少该伤害，减免数值等同d4的掷骰结果之和。</p>
+<p class="indent"><b>伤害减免Damage Reduction。</b>你每次受到伤害时，每受到10点伤害，你就可以掷1d4来减少该伤害，减免数值等同d4的掷骰结果之和。此伤害减少总是在其他伤害修正效应（如抗性或易伤）之后作最终结算。</p>
 <p class="indent"><b>增效庇护Effective Sanctuary。</b>有些提供庇护的效应会写明庇护提供的数值，如d6庇护就允许你掷1d6而非1d4来进行伤害减免。</p>
-<p class="grey">掷骰使用例：先掷.r8d6得出8d6=31，再掷.r31-3d4得出25，此为庇护减免之后的伤害。伤害减少会在抗性或易伤之前结算。</p>
+<p class="grey">掷骰使用例：先掷.r8d6得出8d6=31，再掷.r31-3d4得出25，此为庇护减免之后的伤害。</p>
 <br>
 <br>
 <h4 id="战栗">战栗 Shudder* 【状态】</h4>
@@ -216,7 +216,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4 id="脆弱">脆弱 Fragile* 【状态】</h4>
 <p class="para">脆弱状态期间，你将遭受以下这个效应。</p>
 <p class="indent"><b>伤害脆弱Damage 
-Fragility。</b>你每次受到某单一类型伤害时，每受到10点该伤害，你就额外受到1d4的相同类型伤害（此伤害不再重复触发此效果，也无法被其他效应再次增大）。</p>
+Fragility。</b>你每次受到某单一类型伤害时，每受到10点该伤害，你就额外受到1d4的相同类型伤害（此伤害不再重复触发此效果，也无法被其他效应再次增大）。此伤害增加总是在其他伤害修正效应（如抗性或易伤）之后作最终结算。</p>
 <p class="indent"><b>增效脆弱Effective Fragile。</b>有些提供脆弱的效应会写明脆弱提供的数值，如d6脆弱就允许伤害来源掷1d6而非1d4来作为额外伤害。此外，法术脆弱是一种特殊脆弱，仅对法术造成的伤害，以及生物的精通伤害生效。</p>
 <p class="grey">为简化计算量，对于在同一时刻发动的多次攻击检定，将它们造成的伤害合并计算。伤害增加会在抗性或易伤之前结算。</p>
 <br>
