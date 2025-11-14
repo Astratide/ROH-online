@@ -299,13 +299,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <script>
     function calculateStats(){
     var crInput = document.getElementById("cr").value.trim();
-    var crMap = {  
-      "0":{ac: 13, hp: 3, ab: 2, dmr: 1, dc:9, xp: 0 },  
-      "1/8": {ac: 13, hp: 9, ab: 3, dmr: 3, dc: 10, xp: 25 },  
+    var crMap = {     
+      "0":{ac: 13, hp: 3, ab: 2, dmr: 1, dc:9, xp: 0 },     
+      "1/8": {ac: 13, hp: 9, ab: 3, dmr: 3, dc: 10, xp: 25 },     
       "1/4": {ac: 13, hp: 15, ab: 3, dmr: 6, dc: 10, xp: 50 },
       "1/2": {ac:14, hp:24, ab:4, dmr:9, dc:11, xp:100 }};
-       
-    var xpTable = [  
+          
+    var xpTable = [     
       200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200,
       8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 33000,
       41000, 50000, 62000, 75000, 90000, 105000, 120000, 135000, 155000,
@@ -320,12 +320,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       dmr = data.dmr;
       dc = data.dc;
       pb = 2;
-      xp = data.xp; } else {
+      xp =  data.xp; } else{
       var cr = parseFloat(crInput);
-      if (isNaN(cr) || cr < 1 || cr > 40 || cr % 1 !== 0) {
-        alert("请输入有效的 CR（0、1/8、1/4、1/2 或 1 到 40 的整数）");
-        return;
-      }
+      if (isNaN(cr) || cr < 1 || cr > 40 || cr % 1 !==  0)
+        { alert("请输入有效的 CR（0、1/8、1/4、1/2 或 1 到 40的整数）");
+      return;}
       ac = Math.floor(14 + cr / 3);
       hp = cr >= 21 ? 300 + 50 * (cr - 20) : 15 * (cr + 1);
       ab = Math.floor(4 + cr / 2);
@@ -339,7 +338,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       minimumFractionDigits: 0,
       maximumFractionDigits:0});
     };
-    var output = 
+    var output =    
       "<p class=\"para\"><b>AC:</b> " + ac + "</p> "+
       "<p class=\"para\"><b>HP:</b> " + format(hp) + "</p> "+
       "<p class=\"para\"><b>AB:</b> +" + ab + "</p> "+
@@ -353,7 +352,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>AC（护甲等级）。</b>根据怪物概念上下浮动最多±2。</p>
 <p class="para"><b>HP（生命值）。</b>怪物的生命值上限，你可以调整最多±10%。若怪物具备规避或恢复伤害的能力，可按其在三轮战斗中预计规避/恢复的伤害量适当减少 HP。</p>
 <p class="para"><b>AB（攻击加值）。</b>怪物的攻击项具有的加值，包括武器或法术攻击，你可以调整最多±2。</p>
-<p class="para"><b>DPR（每轮伤害）。</b>假设所有攻击命中、所有敌人豁免失败、范围攻击影响两名敌人，该怪物在一轮中可以造成的总伤害。你可以调整最多±10%。若怪物拥有限次能力（如每日X次、充能、法术等），请只考虑它们在前三轮造成的平均每轮伤害。</p>
+<p class="para"><b>DPR（每轮伤害）。</b>假设所有攻击命中、所有敌人豁免失败、范围攻击影响两名敌人，该怪物在一轮中可以造成的总伤害。你可以调整最多±10%。若怪物拥有限次能力（如每日X次、充能、法术等），只考虑它们在前三轮造成的平均每轮伤害。</p>
+<p class="para">如果怪物拥有可以造成伤害的传奇动作，默认他们会使用其中两次传奇动作用于造成伤害，一并算入总DPR中。</p>
 <p class="para"><b>DC（豁免难度）。</b>怪物的豁免效应项需要的成功豁免DC，包括特性或法术豁免，你可以调整最多±2。</p>
 <p class="para"><b>主属性加值。</b>根据怪物设定自由设定其最高属性加值，影响其AB和DC。</p>
 <p class="para"><b>传奇怪物。</b>如果怪物拥有传奇抗性或传奇动作，他们的生命值和每轮伤害因此变相增加了25%，因为传奇抗性使得怪物更难被打败，传奇动作使其的轮伤提高。</p>
@@ -371,57 +371,46 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="monster_container">
   <h6>怪物属性转换计算器</h6>
   <hr><div id="stats">
-    <p class="para">生命值：<input type="number" id="hp_raw" placeholder="生命值"></p>
-    <p class="para">防御力：<input type="number" id="def_raw" placeholder="防御力"></p>
+    <p class="para">生命值：<input type="number" placeholder="生命值" id="hp_raw" value=""></p>
+    <p class="para">防御力：<input type="number" placeholder="防御力" id="def_raw" value=""></p>
     <div style="display: flex;">
-        <p class="para">攻击力：<input type="number" id="atk_raw" placeholder="攻击力"></p>
-        <label style="flex:1">
-          <input type="checkbox" id="isMagic" style="margin-right:5px;">法术伤害
+        <p class="para">攻击力：<input type="number" placeholder="攻击力" id="atk_raw" value=""></p>
+        <label style="flex:1 1 0px;">
+          <input type="checkbox" id="isMagic" style="margin-right: 5px;">法术伤害
         </label><br>
     </div>
         <div style="display: flex;">
-    <p class="para">攻击间隔：<input type="number" id="interval" placeholder="攻击间隔"></p>
+    <p class="para">攻击间隔：<input type="number" placeholder="攻击间隔" id="interval" value=""></p>
     <button class="button" onclick="convertStats()">计算</button></div>
   <div id="data2"></div>
   </div>
 </div>
 
 <script>
-function convertStats() {
+ function convertStats(){
   var hpRaw = parseFloat(document.getElementById("hp_raw").value);
   var defRaw = parseFloat(document.getElementById("def_raw").value);
   var atkRaw = parseFloat(document.getElementById("atk_raw").value);
   var interval = parseFloat(document.getElementById("interval").value);
   var isMagic = document.getElementById("isMagic").checked;
-
   // HP 计算
-  var hp = (!isNaN(hpRaw) && hpRaw >= 0)
-    ? Math.round(Math.sqrt(hpRaw) * 1.5 - 50)
-    : 1;
+  var hp = (!isNaN(hpRaw) && hpRaw >= 0) ? Math.round(Math.sqrt(hpRaw) * 1.5 - 50): 1;
   if (hp < 1) hp = 1;
-
   // AC 计算
-  var ac = (!isNaN(defRaw) && defRaw >= 0)
-    ? 10 + Math.floor(Math.sqrt(defRaw / 10))
-    : 10;
+  var ac = (!isNaN(defRaw) && defRaw >= 0) ? 10 + Math.floor(Math.sqrt(defRaw / 10)): 10;
   if (ac < 0) ac = 10;
-
   // DPR 计算
   var dpr = 0;
   if (!isNaN(atkRaw) && !isNaN(interval) && interval > 0) {
     var baseAtk = atkRaw - (isMagic ? 0 : 100);
     var rawDpr = Math.floor(baseAtk / interval) / 10;
     dpr = isMagic ? Math.round(rawDpr * 2) : Math.round(rawDpr);
-    if (dpr < 0) dpr = 1;
-  }
-
+    if (dpr < 0) dpr = 1;}
   var output = "";
   output += "<p class=\"para\"><b>HP:</b> " + hp + "</p>";
   output += "<p class=\"para\"><b>AC:</b> " + ac + "</p>";
   output += "<p class=\"para\"><b>DPR:</b> " + dpr + "</p>";
-
-  document.getElementById("data2").innerHTML = output;
-  }
+  document.getElementById("data2").innerHTML =  output;}
 </script>
 <br>
 <p class="para"><b>生命值：</b>(SQRT({原生命值})*1.5)-50</p>
