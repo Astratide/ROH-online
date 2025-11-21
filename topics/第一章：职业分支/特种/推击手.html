@@ -167,7 +167,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：战术推击 Tactical Push</h2>
 <p class="para">作为一名推击手，你获得以下特性：</p>
 <p class="para"><b>推动精通。</b>你获得水炮的熟练和精通。当你持用水炮时，你视为具有其作为临时近战武器的熟练项，且同样可以应用<b class="green">精通词条</b>。</p>
-<p class="para"><b>工程专家。</b>你在执行<b class="green">魔法</b>动作时，你可以立即用<b class="green">附赠动作</b>使用武器发动一次攻击。</p>
+<p class="para"><b>工程专家。</b>你在执行<b class="green">魔法</b>动作时，你可以立即用<b class="green">附赠动作</b>使用武器发动一次攻击，或施展一个施法时间为动作的推击手戏法。</p>
 <p class="para"><b>本职法术。</b>你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
 <br>
 <h4>推击手法术表</h4>
@@ -179,9 +179,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <th style="text-align: center;"><b>环阶</b></th>
     <th><b>法术</b></th></tr>
-  <tr>
-    <td style="text-align: center;">戏法</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/戏法(0环).html#液压推击">液压推击</a><sup>PCC</sup>、闪电牵引<sup>TCE</sup></b></td></tr>
   <tr>
     <td style="text-align: center;">一环</td>
     <td><b class="spell"><A href="../../第五章：施法规则/1环.html#激流推手">激流推手</a><sup>ROH</sup>、雷鸣斩</b></td></tr>
@@ -219,16 +216,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在自己回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物推离，则每推动5尺，目标就额外受到1d6点你的精通伤害（在困难地形上移动时改为1d8）。此外，你迫使任何目标进行力量或体质豁免时，其具有<b class="green">劣势</b>。</p></div>
+<p>你可以在自己回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物推离，则每推动5尺，目标就额外受到1d6点你的精通伤害（在困难地形上移动时改为1d8）。此外，你迫使任何目标进行力量、体质或敏捷豁免时，其具有<b class="green">劣势</b>。</p></div>
 <br>
 <h2>3级：力学直觉 Mechanics Intuition</h2>
 <p class="para">你对推击装置的应用极为熟练，你获得以下特性：</p>
+<p class="para"><b>液压推击。</b>你习得并时刻准备戏法<b class="spell">液压推击</b>，其对你而言被视为推击手法术。</p>
 <p class="para"><b>碰撞冲击。</b>你以某效应成功将一个生物推开，并且其在被推动的过程中撞上墙体或其他生物，你可以让目标受到额外的1d8+你推击手等级的钝击伤害。</p>
 <p class="para"><b>反向推动。</b>若你以某效应试图推动一个被固定的物件，或者尝试推动一个因为体型过大而推动失败的目标，你可以改为将自己朝着反方向被推动等量的距离，且此移动不引发<b class="green">借机攻击</b>。</p>
 <br>
 <h2>6级：蓄势推击 Cluster Push</h2>
 <p class="para">你对推击装置的应用出神入化，你获得以下特性：</p>
-<p class="para"><b>趁势追击。</b>当你推动一个生物时，你可以采取<b class="green">反应</b>，立即朝着相同的方向移动至多等同你移动速度的距离，然后再发动一次武器攻击或施展一个施法时间为1动作的推击手戏法，此移动不引发<b class="green">借机攻击</b>。</p>
+<p class="para"><b>趁势追击。</b>当你推动一个生物时，你可以采取<b class="green">反应</b>，立即朝着相同的方向移动至多等同你移动速度的距离，然后再发动一次武器攻击或施展一个施法时间为动作的推击手戏法，此移动不引发<b class="green">借机攻击</b>。</p>
 <p class="para">此外，你习得战技：蓄势推击。</p>
 <div class="syntax">
 <table>
@@ -249,15 +247,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在自己回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物推动，你可以选择目标生物周围10尺内若干个AC以及体型均不大于原目标的生物，那些目标被推动相同的距离。此外，所有所选目标无论是否可以被推动，都会受到6d6你的精通伤害。</p></div>
+<p>你可以在自己回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物推动，你可以选择目标生物周围10尺内若干个AC以及体型均不大于原目标的生物，那些目标被推动相同的距离。此外，所有所选目标无论是否可以被推动，都会受到你熟练加值枚d8的精通伤害。</p></div>
 <br>
 <h2>10级：迅捷施法 Swift Artcasting</h2>
-<p class="para">在消耗技力发动战技的回合，你可以<b class="green">附赠动作</b>施展一个施法时间为1动作的推击手法术。
+<p class="para">在消耗技力发动战技的回合，你可以<b class="green">附赠动作</b>施展一个施法时间为动作的推击手法术。
 </p>
 <br>
 <h2>15级：动量转移 Momentum Conversion</h2>
-<p class="para">当你周围30尺内有生物在一次力量或体质豁免中失败时，你可以立即对目标额外造成6d8点你的精通伤害。</p>
-<p class="para">当你周围30尺内有生物要进行力量或体质豁免时，你可以采取反应，迫使目标的豁免结果中必须减去你的施法属性调整值。</p>
+<p class="para">当你周围30尺内有可见生物在一次力量、体质或敏捷豁免中失败时，你可以立即对目标额外造成6d8点你的精通伤害。</p>
+<p class="para">当你周围30尺内有可见生物要进行力量、体质或敏捷豁免时，你可以采取反应，迫使目标的豁免结果中必须减去你的施法属性调整值。</p>
 <br><br>
 </div>
 </div>

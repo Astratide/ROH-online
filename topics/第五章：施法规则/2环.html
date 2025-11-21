@@ -100,7 +100,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(173);
+  parent.nav.tree.selectNode(175);
  }else{
   setTimeout("syn()",500);
 }
@@ -196,7 +196,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>1轮</p>
 <p class="para">你唤出火焰元素保护自己。直到你下一个回合开始，你获得以下好处：</p>
-<p class="para">你对火焰伤害以及钝击、穿刺、挥砍伤害具有抗性</p>
+<p class="para">你对火焰伤害以及钝击、穿刺、挥砍伤害具有抗性。</p>
 <p class="para">你可以穿过其他生物所处的空间，并无视困难地形。当你在一轮内首次穿过另一个生物时，该生物会受到1d6的火焰伤害。</p>
 <p class="para">你在自己回合内为火焰伤害掷骰时，你可以将其中一个骰子的结果取满。</p>
 <br>
@@ -210,7 +210,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>持续时间：</b>1轮</p>
 <p class="para">你变得如同闪电一般。直到你下一个回合开始，你获得以下好处：</p>
 <p class="para">你对闪电伤害以及钝击、穿刺、挥砍伤害具有抗性，并且移动速度增加15尺。</p>
-<p class="para">你可以穿过其他生物所处的空间，并无视困难地形。当你在一轮内首次穿过另一个生物时，该生物会受到1d6的闪电伤害。</p>
+<p class="para">你可以穿过其他生物所处的空间，并无视困难地形。当你在一轮内首次穿过另一个生物时，该生物会受到1d6的闪电伤害。你不能在其他生物体内结束回合。</p>
 <p class="para">你在自己回合内为闪电伤害掷骰时，你可以在其中一次掷骰结果上额外加上你的施法属性调整值。</p>
 <br>
 <br>
@@ -246,7 +246,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>持续时间：</b>1轮</p>
 <p class="para">你唤出水元素保护自己。直到你的下一回合开始，你获得以下好处：</p>
 <p class="para">你对钝击、穿刺、挥砍伤害具有<b class="green">抗性</b>。</p>
-<p class="para">你可以穿过其他生物所处的空间，并无视<b class="green">困难地形</b>；当你在一个回合内首次穿过一个大型或更小体型的生物时，对方必须通过一次力量豁免，否则<b class="green">倒地</b>并受到1d6冷冻伤害。</p>
+<p class="para">你可以穿过其他生物所处的空间，并无视<b class="green">困难地形</b>；当你在一个回合内首次穿过一个大型或更小体型的生物时，对方必须通过一次力量豁免，否则<b class="green">倒地</b>并受到1d6冷冻伤害。你不能在其他生物体内结束回合。</p>
 <br>
 <br>
 <h5 id="化身烟雾">化身烟雾丨Become Smoke</h5>
@@ -695,8 +695,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>30尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">你呼唤神灵或自然之灵来治愈你的伤口并平复你的心绪。你选择施法距离内1个自愿生物，你和该生物恢复1d8+你施法属性调整值的生命值，并且你可以选择结束你们每个人身上的<b class="green">魅惑</b>或<b class="green">恐慌</b>状态。</p>
-<p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，你便可额外选择1个生物为目标。</p>
+<p class="para">你呼唤神灵或自然之灵来治愈你的伤口并平复你的心绪。你选择施法距离内一个自愿生物，你和该生物恢复1d8+你施法属性调整值的生命值，并且你可以选择结束每个法术目标身上的<b class="green">魅惑</b>或<b class="green">恐慌</b>状态。</p>
+<p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，你便可额外选择一个生物为目标。</p>
 <br>
 <br>
 <h5 id="迅捷冰刃">迅捷冰刃丨Swift Icebolt</h5>
@@ -711,7 +711,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h5 id="触手侵蚀">触手侵蚀丨Tentacle Erosion</h5>
-<p class="para">二环 咒法（邪术师）</p>
+<p class="grey">二环 咒法（邪术师）</p>
 <p><b>出处：</b>《罗德岛外勤指南（Rhodes Operations Handbook）》</p>
 <p><b>施法时间：</b>附赠动作，当你使用攻击命中一个生物后立即执行</p>
 <p><b>施法距离：</b>自身</p>

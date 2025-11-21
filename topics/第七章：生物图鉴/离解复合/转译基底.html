@@ -106,7 +106,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(242);
+  parent.nav.tree.selectNode(258);
  }else{
   setTimeout("syn()",500);
 }
@@ -154,7 +154,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="stats">
 <p style="float: left;"><b>AC</b> 17</p>
 <p style="text-indent: 8em;"><b>先攻</b> +3（13）</p>
-<p><b>HP</b> 20（没有生命骰）</p>
+<p><b>HP</b> 20（2d10）</p>
 <p><b>速度</b> 30 尺</p>
 <div class="mat_container">
 <table class="mat">
@@ -218,18 +218,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>特质 Traits</h3>
 <hr>
 <p class="para"><b>魔法抗性 Magic Resistence。</b>转译基底为抵抗法术和其它魔法效应而作的豁免检定具有优势。</p>
-<p class="para"><b>信息本质 Informational Nature（仅限未变形期间）。</b>转译基底最多只能从一次伤害中受到10点伤害。</p>
-<p class="para"><b>源石模拟 Originium Simulation（1/天）。</b>转译基底在死亡时，<b class="green">变形</b>为另一种源石造物生物，且根据导致其死亡的伤害而呈现出不同的变化：</p>
+<p class="para"><b>信息本质 Informational Nature（仅未变形期间）。</b>转译基底最多只能从一次伤害中受到10点伤害。</p>
+<p class="para"><b>源石模拟 Originium Simulation（1/天）。</b>转译基底在死亡时，变形为一种源石造物生物，且根据导致其死亡的伤害而呈现出不同的变化：</p>
 <ul>
 	<li><b>法术伤害。</b>特战术师形态：生命值及生命上限提升至50。</li>
-	<li><b>其他伤害。</b>寻仇者形态：生命值及生命上限提升至70。</li>
+	<li><b>非法术伤害。</b>寻仇者形态：生命值及生命上限提升至70。</li>
 </ul>
 <br>
 <h3>动作 Actions</h3>
 <hr>
 <p class="para"><b>多重攻击 Multiattack（仅限变形期间）。</b>转译基底发动两次攻击。</p>
-<p class="para"><b>燃血长刀 Bloody Longsword（仅限寻仇者形态）。</b><em>近战攻击检定：</em>+5（若转译基底处于浴血则具有优势），触及5尺。<em>命中：</em>8（1d10+3）挥砍伤害。若转译基底处于浴血期间，则额外造成11（2d10）火焰伤害。</p>
-<p class="para"><b>术法魔爆 Artcasting Burst（仅限特战术师形态）。</b><em>远程攻击检定：</em>+7，射程120尺。<em>命中：</em>11（2d10）力场伤害。</p>
+<p class="para"><b>燃血长刀 Bloody Longsword（仅寻仇者形态）。</b><em>近战攻击检定：</em>+5（若转译基底处于浴血则具有优势），触及5尺。<em>命中：</em>8（1d10+3）挥砍伤害。若转译基底处于浴血期间，则额外造成11（2d10）火焰伤害。</p>
+<p class="para"><b>术法魔爆 Artcasting Burst（仅特战术师形态）。</b><em>远程攻击检定：</em>+7，射程120尺。<em>命中：</em>11（2d10）力场伤害。</p>
 </div>
 <br><hr><br>
 <h6>转译基底·β Translation Base β</h6>
@@ -250,7 +250,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="stats">
 <p style="float: left;"><b>AC</b> 19</p>
 <p style="text-indent: 8em;"><b>先攻</b> +2（12）</p>
-<p><b>HP</b> 30（没有生命骰）</p>
+<p><b>HP</b> 30（3d10）</p>
 <p><b>速度</b> 30 尺</p>
 <div class="mat_container">
 <table class="mat">
@@ -314,7 +314,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>特质 Traits</h3>
 <hr>
 <p class="para"><b>魔法抗性 Magic Resistence。</b>转译基底为抵抗法术和其它魔法效应而作的豁免检定具有优势。</p>
-<p class="para"><b>信息本质 Informational Nature（仅限未变形期间）。</b>转译基底最多只能从一次伤害中受到10点伤害。</p>
+<p class="para"><b>信息本质 Informational Nature（仅未变形期间）。</b>转译基底最多只能从一次伤害中受到10点伤害。</p>
 <p class="para"><b>源石模拟 Originium Simulation（1/天）。</b>转译基底在死亡时，<b class="green">变形</b>为另一种源石造物生物，且根据导致其死亡的伤害而呈现出不同的变化：</p>
 <ul>
 	<li><b>法术伤害。</b>特战术师组长形态：生命值及生命上限提升至70。</li>
@@ -324,9 +324,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>动作 Actions</h3>
 <hr>
 <p class="para"><b>多重攻击 
-Multiattack（仅限变形期间）。</b>转译基底发动三次攻击。</p>
-<p class="para"><b>燃血长刀 Bloody Longsword（仅限复仇者形态）。</b><em>近战攻击检定：</em>+7（若转译基底处于浴血则具有优势），触及5尺。<em>命中：</em>8（1d10+3）挥砍伤害。若转译基底处于浴血期间，则额外造成11（2d10）火焰伤害。</p>
-<p class="para"><b>术法魔爆 Artcasting Burst（仅限特战术师组长形态）。</b><em>远程攻击检定：</em>+9，射程120尺。<em>命中：</em>11（2d10）力场伤害。</p>
+Multiattack（仅变形期间）。</b>转译基底发动三次攻击。</p>
+<p class="para"><b>燃血长刀 Bloody Longsword（仅复仇者形态）。</b><em>近战攻击检定：</em>+7（若转译基底处于浴血则具有优势），触及5尺。<em>命中：</em>8（1d10+3）挥砍伤害。若转译基底处于浴血期间，则额外造成11（2d10）火焰伤害。</p>
+<p class="para"><b>术法魔爆 Artcasting Burst（仅特战术师组长形态）。</b><em>远程攻击检定：</em>+9，射程120尺。<em>命中：</em>11（2d10）力场伤害。</p>
 </div>
 <br><br>
 </div>

@@ -101,7 +101,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(137);
+  parent.nav.tree.selectNode(139);
  }else{
   setTimeout("syn()",500);
 }
@@ -170,13 +170,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>体型Size。</b>你属于中型体型。</p>
 <p><b>速度Speed。</b>你的基础步行速度为30尺。</p>
 <p><b>黑暗视觉Darkvision。</b>你具有120尺<b class="green">黑暗视觉</b>。</p>
-<p><b>血魔体魄Vampire Resilience。</b>你为对抗会造成<b class="green">魅惑</b>状态的效应而进行的豁免具有<b class="green">优势</b>。</p>
+<p><b>血魔体魄Vampire Resilience。</b>你有暗蚀伤害<b class="green">抗性</b>，你为对抗会造成<b class="green">魅惑</b>状态的效应而进行的豁免具有<b class="green">优势</b>。</p>
 <p><b>掌控血液Master of Blood。</b>3级起，你对具有血液的敌人造成黯蚀伤害的同时，可以向其中一个被你伤害的目标施展以下效应之一。你在每次长休之间可以使用这些效应的次数等于你的<b class="green">熟练加值</b>。</p>
 <ul>
-<li><b>吸收Absorption：</b>你吸取对方血液内的生命力，并品味其味道。你获得一枚d4激励骰，可以在1分钟内加入任意一次d20检定结果中，若你已有此类激励骰，则你恢复1d4的生命值。</li>
-<li><b>削弱Weaken：</b>你操纵对方的血液为对方施加痛苦，使得对方下个回合结束前进行的首次攻击检定获得-1d4减值。</li>
+<li><b>吸收Absorption：</b>你吸取对方血液内的生命力，并品味其味道。你获得一枚d4激励骰，可以在你下回合开始前，加入一次你的D20检定结果中。若你已有此类激励骰，则你恢复1d4的生命值。</li>
+<li><b>削弱Weaken：</b>你操纵对方的血液为对方施加痛苦，使得对方直到其下回合结束前进行的首次攻击检定获得-1d4减值。</li>
 </ul>
-<p><b>尖牙利爪Fangs and Claws。</b>你擅长利用自己尖锐的牙齿或锋利的指甲取食猎物。你的牙齿或者指甲是天生武器，你用其进行徒手打击时，可以使用力量或敏捷作为攻击属性，命中时对目标造成1d4+攻击属性调整值的穿刺伤害。若目标生命值未满，则你还可以改为造成黯蚀伤害。</p>
+<p><b>尖牙利爪Fangs and Claws。</b>你擅长利用自己尖锐的牙齿或锋利的指甲取食猎物。你的牙齿或者指甲是天生武器，你用其进行徒手打击时，可以基于力量或敏捷发动攻击，此攻击造成1d4+攻击属性调整值的穿刺伤害。若目标生命值未满，则你还可以改为造成黯蚀伤害。</p>
 <p><b>技能熟练Skill Proficiency。</b>你获得一项来自种族的技能熟练，你可以选择：奥秘/历史/欺瞒。</p>
 <p><b>语言Language。</b>你习得通用语以及你所选的两门语言。通常包括萨卡兹语。</p>
 <br>
@@ -195,7 +195,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>属性值提升Ability Score Increase。</b>你的敏捷、感知或魅力提升1，至多为22。</li>
 <li><b>血术法术表The Sanguin Spells。</b>你习得如何使用鲜血的力量，如果你有施法特性，你将<A href="第五章：施法规则\AK5e\血术法术.html">血魔：血术法术</a>中提及的法术加入你的职业法术列表。你视为时刻准备这些法术。</li>
-<li><b>血腥视觉Bloody Vision。</b>你对具有血液而生命值未满的活体生物拥有30尺<b class="green">盲视</b>；你为追踪和调查此类生物而作的感知检定具有<b class="green">优势</b>，当你对它们造成黯蚀伤害时，可以额外造成等同你感知调整值的黯蚀伤害。你每回合只能造成一次这样的额外伤害。</li>
+<li><b>血腥视觉Bloody Vision。</b>你对具有血液而生命值未满的活体生物拥有30尺<b class="green">盲视</b>；你为追踪和调查此类生物而作的感知检定具有<b class="green">优势</b>，当你对它们造成黯蚀伤害时，可以额外造成等同你施法属性调整值的黯蚀伤害。你每回合只能造成一次这样的额外伤害。</li>
 <li><b>血统纯化Pureblood Awakening。</b>你增加200年的最大寿命。</li>
 </ul>
 <br>

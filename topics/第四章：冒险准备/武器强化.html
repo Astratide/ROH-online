@@ -101,7 +101,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(158);
+  parent.nav.tree.selectNode(160);
  }else{
   setTimeout("syn()",500);
 }
@@ -277,7 +277,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>处刑 Executioner's</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀/传说（需同调）</p>
-<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于你的等级，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。<br><strong>更高稀有度：</strong>在计算处刑的血量阈值时，使用更高的等级倍率，你等级的两倍（珍稀），你等级的三倍（极珍稀），你等级的四倍（传说）。</p>
+<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于你的等级，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。<br><strong>更高稀有度：</strong>在计算处刑的血量阈值时，使用更高的等级倍率，珍稀（你等级的两倍），极珍稀（你等级的三倍），传说（你等级的四倍）。</p>
 <br>
 <br>
 <h4>电流 Electrics</h4>
@@ -287,9 +287,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>爆破 Explosive</h4>
-<p class="grey">装备附魔（任意武器），珍稀/极珍稀/传说（需同调）</p>
-<p class="para"><b>爆破。</b>使用爆破武器的攻击命中目标时，你可以选择引爆弹药。源自目标半径20尺的<b class="green">球状</b>区域内的每个生物都必须通过DC15敏捷豁免，否则受到6d6能量伤害；成功则减半。伤害类型在附魔时确定，从强酸、寒冷、火焰、闪电或雷鸣中选一。此特性一经使用，直到次日黎明前无法再次使用。</p>
-<p class="para"><b>更高稀有度：</b>爆破的豁免DC、伤害和使用次数获得提升，极珍稀（DC17；8d6；2次），传说（DC19；12d6；4次）。</p>
+<p class="grey">装备附魔（任意远程武器），非普通/珍稀/极珍稀/传说（需同调）</p>
+<p class="para"><b>爆破。</b>使用爆破武器的攻击命中目标时，你可以选择引爆弹药。源自目标半径20尺的<b class="green">球状</b>区域内的每个生物都必须通过DC14敏捷豁免，否则受到3d6能量伤害；成功则减半。伤害类型在附魔时确定，从强酸、寒冷、火焰、闪电或雷鸣中选一。此特性在使用1次后，直到次日黎明前无法再次使用。</p>
+<p class="para"><b>更高稀有度：</b>爆破的豁免DC、伤害和使用次数获得提升，珍稀（DC16；6d6；2次），极珍稀（DC18；9d6；3次），传说（DC20；12d6；6次）。</p>
 <br>
 <br>
 <h4>威力 Empowered</h4>
@@ -381,7 +381,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>可靠 Reliable</h4>
 <p class="grey">装备附魔（任意武器），非普通/极珍稀</p>
-<p class="para"><b>可靠。</b>使用可靠武器的攻击即便失手，你可以仍造成等同你攻击所用属性调整值的伤害，前提是你原本不会造成伤害。</p>
+<p class="para"><b>可靠。</b>使用可靠武器的攻击即便失手，你可以仍造成等同你攻击所用属性调整值的伤害。</p>
 <p class="para"><b>更高稀有度：</b>极珍稀时，你可以改为命中，但该次攻击的所有伤害骰取最小值。</p>
 <br>
 <br>
@@ -410,7 +410,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>镀银 Silvered</h4>
-<p class="grey">装备附魔（任意钝击伤害武器），非普通</p>
+<p class="grey">装备附魔（任意挥砍或穿刺伤害武器），非普通</p>
 <p class="para"><b>镀银。</b>使用镀银武器的攻击对<b class="green">变形</b>生物造成<b class="green">重击</b>时，额外造成7点伤害。此外，这把武器造成的伤害还忽略那些生物的伤害<b class="green">抗性</b>。</p>
 <br>
 <br>
@@ -426,19 +426,24 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>变形 Transforming</h4>
-<p class="grey">装备附魔（任意单手近战武器），非普通</p>
+<p class="grey">装备附魔（任意武器），非普通</p>
 <p class="para"><b>变形。</b>持用变形武器时，你可以用交互动作使该武器变形，或者变回来。只要变形后的客观条件允许，武器会保留所有附魔属性。变形的对象在附魔时选定，可以是简易武器、军用武器或任何工具。</p>
+<br>
+<br>
+<h4>双生 Twin</h4>
+<p class="grey">装备附魔（任意单手武器），非普通（需同调）</p>
+<p class="para"><b>双生。</b>持用双生武器时，你可以用附赠动作在手中召唤出这把武器的另一把复制版本。如果你没有空闲的手来握住第二把武器，他就会掉到地上。该复制武器至多存在1小时，或直到你主动将其解散（无需动作）。直到复制武器被解散前，你无法再复制此武器。复制出来的武器和原来的武器占据同一个同调位。</p>
 <br>
 <br>
 <h4>萃血 Vampiric</h4>
 <p class="grey">装备附魔（任意近战武器），非普通/珍稀（需同调）</p>
-<p class="para"><b>萃血。</b>使用萃血武器的攻击对生物造成伤害时，你可以<b class="green">附赠动作</b>，让自己获得等同于此次伤害掷骰中所加入属性调整值的<b class="green">临时生命值</b>。此效应对<b class="green">构装</b>或<b class="green">不死</b>的生物无效。</p>
+<p class="para"><b>萃血。</b>使用萃血武器的攻击对生物造成伤害时，你可以<b class="green">附赠动作</b>，让自己获得等同于此次伤害掷骰中所加入属性调整值的<b class="green">临时生命值</b>。此效应对<b class="green">构装</b>或<b class="green">亡灵</b>生物无效。</p>
 <p class="para"><b>更高稀有度：</b>珍稀时，你无需任何动作即可在造成伤害时发动萃血。</p>
 <br>
 <br>
 <h4>猛毒 Venomous</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀</p>
-<p class="para"><b>猛毒。</b>持用猛毒武器时，你可以<b class="green">附赠动作</b>，让其在1分钟内下次命中时额外造成1d10的毒素伤害，且目标陷入<b class="green">中毒</b>状态直到其下回合结束。此效应对<b class="green">构装</b>或<b class="green">不死</b>生物无效。在使用1次此特性后，你必须在携带制毒工具的情况下完成一次长休或短休，才能重新从此特质中获利。</p>
+<p class="para"><b>猛毒。</b>持用猛毒武器时，你可以<b class="green">附赠动作</b>，让其在1分钟内下次命中时额外造成1d10的毒素伤害，且目标陷入<b class="green">中毒</b>状态直到其下回合结束。此效应对<b class="green">构装</b>或<b class="green">亡灵</b>生物无效。在使用1次此特性后，你必须在携带制毒工具的情况下完成一次长休或短休，才能重新从此特质中获利。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的伤害和使用次数。珍稀（3d10；2次），极珍稀（6d10；3次）。</p>
 <br>
 <br>
@@ -456,7 +461,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>致伤 Wounding</h4>
 <p class="grey">装备附魔（任意武器），珍稀/极珍稀（需同调）</p>
-<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害。前提是目标不属于<b class="green">构装</b>或<b class="green">不死</b>生物。每回合仅一次，你可以迫使攻击的目标进行一次DC15的体质豁免，失败则将无法恢复生命值，持续1小时。目标可以在它的每个回合结束时重复此豁免，豁免成功则解除此效应。</p>
+<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害。前提是目标不属于<b class="green">构装</b>或<b class="green">亡灵</b>生物。每回合仅一次，你可以迫使攻击的目标进行一次DC16的体质豁免，失败则将无法恢复生命值，持续1小时。目标可以在它的每个回合结束时重复此豁免，豁免成功则解除此效应。</p>
+<p class="para"><strong>更高稀有度：</strong>提供更高的伤害加值和体质豁免DC。极珍稀（+2d10；DC20）。</p>
 <br><br>
 </div>
 </div>
