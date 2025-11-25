@@ -15,12 +15,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -31,7 +32,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -48,7 +49,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -76,7 +77,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -101,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(9);
+  parent.nav.tree.selectNode(8);
  }else{
   setTimeout("syn()",500);
 }
@@ -168,10 +169,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：鼓舞旗帜 Inspiring Banner</h2>
 <p class="para">作为一名<b>执旗手</b>，你获得以下特性：</p>
 <p class="para"><b>迅捷戏法。</b>你可以将攻击动作中的其中一次攻击替换为施展一个施法时间为1动作的术战者戏法。</p>
-<p class="para"><b>战旗打击。</b>你获得长棍、短棍、矛的武器精通。你可以在完成一次长休后将一根非魔法旗子变为<em>先锋战旗</em>。</p>
+<p class="para"><b>战旗打击。</b>你获得长棍、短棍、矛的武器精通。你可以在完成一次长休后将一根非魔法旗子变为<i>先锋战旗</i>。</p>
 <div class="syntax">
 <p><b>先锋战旗</b></p>
-<p class="para">非普通（长棍、短棍、矛或长矛），需 <em>执旗手</em> 同调</p>
+<p class="para">非普通（长棍、短棍、矛或长矛），需 <i>执旗手</i> 同调</p>
 <p>此武器具有灵巧属性。你可以使用此武器作为施展先锋法术的法器。</p>
 </div>
 <p class="para"><b>短休复苏。</b>当你完成一次短休时，你可以让自己恢复所有已损生命值。你必须完成一次长休才能再次从此特质获益。</p>

@@ -15,12 +15,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -31,7 +32,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -48,7 +49,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -76,7 +77,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -101,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(177);
+  parent.nav.tree.selectNode(176);
  }else{
   setTimeout("syn()",500);
 }
@@ -393,7 +394,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>60尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">你瞬间施法距离内一个你能看见的点创造冻结区，将源自该点的10尺<b class="green">立方</b>区域冻结。区域内所有生物必须进行一次敏捷豁免，失败则受到3d10点冷冻伤害并被困于冰中；成功则受到一半伤害并被推至区域边缘。</p>
+<p class="para">你瞬间施法距离内一个你能看见的点创造冻结区，将源自该点的10尺<b class="green">立方</b>区域冻结。区域内所有生物必须进行一次敏捷豁免，失败则受到3d10点寒冷伤害并被困于冰中；成功则受到一半伤害并被推至区域边缘。</p>
 <p class="para">被困的生物陷入<b class="green">束缚</b>状态，且攻击与法术无法穿透冰块。冰块视为和受困生物等大的物件，AC为8，生命值为30，具有火焰易伤，免疫冷冻、心灵和毒素伤害。冰块被摧毁或法术结束时即碎裂，释放其中生物。</p>
 <p><b>升环施法：</b>使用五环或更高法术位施展该法术时，你使用的法术位每比四环高一环，冰封区域的边长增加10尺。</p>
 <br>

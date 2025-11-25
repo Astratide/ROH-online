@@ -15,12 +15,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -31,7 +32,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -48,7 +49,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -76,7 +77,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -101,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(175);
+  parent.nav.tree.selectNode(174);
  }else{
   setTimeout("syn()",500);
 }
@@ -224,7 +225,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>持续时间：</b>1轮</p>
 <p class="para">你浑身覆盖寒冰铠甲。直到你下一个回合开始，你获得以下好处：</p>
 <p class="para">你的AC获得+2加值，但是剩余移动速度归0。</p>
-<p class="para">生物的近战攻击命中你时，自己会受到1d6的冷冻伤害。</p>
+<p class="para">生物的近战攻击命中你时，自己会受到1d6的寒冷伤害。</p>
 <p class="para">你在自己回合内为寒冷伤害掷骰时，若掷出1或者2则可重掷，但你必须接受重掷的结果。</p>
 <br>
 <br>
@@ -247,7 +248,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>持续时间：</b>1轮</p>
 <p class="para">你唤出水元素保护自己。直到你的下一回合开始，你获得以下好处：</p>
 <p class="para">你对钝击、穿刺、挥砍伤害具有<b class="green">抗性</b>。</p>
-<p class="para">你可以穿过其他生物所处的空间，并无视<b class="green">困难地形</b>；当你在一个回合内首次穿过一个大型或更小体型的生物时，对方必须通过一次力量豁免，否则<b class="green">倒地</b>并受到1d6冷冻伤害。你不能在其他生物体内结束回合。</p>
+<p class="para">你可以穿过其他生物所处的空间，并无视<b class="green">困难地形</b>；当你在一个回合内首次穿过一个大型或更小体型的生物时，对方必须通过一次力量豁免，否则<b class="green">倒地</b>并受到1d6寒冷伤害。你不能在其他生物体内结束回合。</p>
 <br>
 <br>
 <h5 id="化身烟雾">化身烟雾丨Become Smoke</h5>
@@ -307,7 +308,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>90尺</p>
 <p><b>法术成分：</b>S</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">随着一次弹指，一阵刺骨的寒风开始在施法距离内你指定的那一点打旋。源自该点5尺半径<b class="green">球状</b>区域内的所有生物都必须进行一次体质豁免。豁免失败则受到3d8点冷冻伤害，并被困于寒冰，其速度减少10尺，直到你的下回合开始。豁免成功则仅受半伤。</p>
+<p class="para">随着一次弹指，一阵刺骨的寒风开始在施法距离内你指定的那一点打旋。源自该点5尺半径<b class="green">球状</b>区域内的所有生物都必须进行一次体质豁免。豁免失败则受到3d8点寒冷伤害，并被困于寒冰，其速度减少10尺，直到你的下回合开始。豁免成功则仅受半伤。</p>
 <p class="para">法术范围内的地面将会被光滑的冰雪所覆盖，在你的下一回合开始之前，这片区域都将视作<b class="green">困难地形</b>。</p>
 <p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，法术伤害就增加1d8。</p>
 <br>
@@ -472,7 +473,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>120尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>1分钟</p>
-<p class="para">一道薄雾般的蓝光从你手中射向施法距离内的一个目标。你对目标进行一次远程法术攻击，若命中，目标受到3d6的冷冻伤害，并被冻结在原地。在法术持续期间，被冻结生物的速度降低为0，并且无法获得任何速度增益。</p>
+<p class="para">一道薄雾般的蓝光从你手中射向施法距离内的一个目标。你对目标进行一次远程法术攻击，若命中，目标受到3d6的寒冷伤害，并被冻结在原地。在法术持续期间，被冻结生物的速度降低为0，并且无法获得任何速度增益。</p>
 <p class="para">以一个动作，被冻结生物可以进行一次力量豁免，豁免成功即可打破冰层，结束法术对自身的影响。</p>
 <br>
 <br>
@@ -639,7 +640,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>60尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">你生成一个冰晶护盾以挡下攻击。此次攻击的伤害将会减少1d8+你的施法关键属性调整值。如果此次攻击的伤害未被完全抵消，护盾将会碎裂，并对攻击者造成等同于护盾数值的冷冻伤害。若护盾并未碎裂，其将会在抵消伤害后融化消失。</p>
+<p class="para">你生成一个冰晶护盾以挡下攻击。此次攻击的伤害将会减少1d8+你的施法关键属性调整值。如果此次攻击的伤害未被完全抵消，护盾将会碎裂，并对攻击者造成等同于护盾数值的寒冷伤害。若护盾并未碎裂，其将会在抵消伤害后融化消失。</p>
 <p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，能够抵消的伤害就增加1d8。</p>
 <br>
 <br>
@@ -650,9 +651,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>30尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">你迅速冻结目标周围空气。目标生物必须进行一次体质豁免，失败则受到4d4点冷冻伤害并被困于冰中。</p>
+<p class="para">你迅速冻结目标周围空气。目标生物必须进行一次体质豁免，失败则受到4d4点寒冷伤害并被困于冰中。</p>
 <p class="para">被困的生物陷入<b class="green">束缚</b>状态，且与外界的攻击或效应而言视为<b class="green">全身掩护</b>。冰块视为与目标生物相同大小的物件，AC为8，生命值为30，具有火焰易伤，免疫冷冻、心灵和毒素伤害。冰块被摧毁或法术结束时即碎裂，释放其中生物。</p>
-<p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，冷冻伤害增加2d4。</p>
+<p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，寒冷伤害增加2d4。</p>
 <br>
 <br>
 <h5 id="雪球术">雪球术丨Snowball</h5>
@@ -662,7 +663,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>60尺</p>
 <p><b>法术成分：</b>S、M（一个小棉花球）</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">你在手上变出一个两寸宽的雪球，你可以在施法时立即投掷它，或在法术持续期间内的你的回合中使用一个动作投掷。当你这样做时，选择施法距离内一个可见的点，雪球迅速飞向那个点，然后引爆为半径5尺的刺骨寒风。爆炸区域内的所有生物都必须进行一次敏捷豁免，豁免失败受到5d4的冷冻伤害，豁免成功只受到一半伤害。</p>
+<p class="para">你在手上变出一个两寸宽的雪球，你可以在施法时立即投掷它，或在法术持续期间内的你的回合中使用一个动作投掷。当你这样做时，选择施法距离内一个可见的点，雪球迅速飞向那个点，然后引爆为半径5尺的刺骨寒风。爆炸区域内的所有生物都必须进行一次敏捷豁免，豁免失败受到5d4的寒冷伤害，豁免成功只受到一半伤害。</p>
 <p class="para">如果你选择不立即发射雪球，你可以在之后的回合中使用你的动作来增强法术的力量。每进行一次加强雪球的动作，伤害骰便大一号。伤害骰最高不能提高超过d12。同样的，每进行一次加强雪球的动作都会使爆炸范围增加5尺，最大半径为25尺。</p>
 <p><b>升环施法：</b>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，伤害骰便增加1d4。</p>
 <br>

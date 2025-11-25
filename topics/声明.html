@@ -21,12 +21,13 @@ li {
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -37,7 +38,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -54,7 +55,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -82,7 +83,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -107,7 +108,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(0);
+  parent.nav.tree.selectNode(198);
  }else{
   setTimeout("syn()",500);
 }
@@ -129,10 +130,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
-		<img id="winchm_template_prev" alt="Previous topic" src="btn_prev_g.gif" border="0">
-		<A href="序言.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="btn_next_n.gif" border="0"></a>
+		<A href="第六章：规则详述/可选村规.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="btn_prev_n.gif" border="0"></a>
+		<A href="第七章：生物图鉴.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="btn_next_n.gif" border="0"></a>
 	</div>
-	PRTS资料库 >  <b>声明</b>
+	PRTS资料库 > 第六章：拓展规则 &gt;  <b>声明</b>
 </div>
 <div id="winchm_template_minititle">罗德岛外勤指南：[声明]</div>
 <div id="winchm_template_content"> 
@@ -257,7 +258,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <li><b>先锋特性调整。</b>先锋的6级特性先前出现了笔误，应当是失能一整轮而非一回合，现在已经修正。现在的14级特性先前对于费用骰的利用表述的不够清楚，现在已经进行补充说明。</li>
 <li><b>近卫子职重做。</b>我们增强了<u>无畏者</u>的3级以及7级特性，现在无畏者的伤害、机动能力以及抵抗豁免的能力都获得了增强。</li>
 <li><b>领主调整。</b>我们重写了<u>领主</u>的10级特性以及15级战技，现在领主不再绑定斩系法术了。另外15级战技更改为附赠动作触发。</li>
-<li><b>战技优化。</b>我们注意到战技：<em>迅捷打击</em>的描述为发动武器攻击，可能无法适配使用徒手打击战斗的角色，现在将其修正为发动攻击。</li>
+<li><b>战技优化。</b>我们注意到战技：<i>迅捷打击</i>的描述为发动武器攻击，可能无法适配使用徒手打击战斗的角色，现在将其修正为发动攻击。</li>
 <li><b>狙击-猎手调整。</b>猎手的10级特性原本是提供感知豁免熟练，不过显然我忘了狙击本来就有感知豁免熟练了。现在这个特性的效果改为允许猎手在先攻检定中加入感知调整值。此外18级的特性效果也被修改成新的了。</li>
 <li><b>生命骰施法者强化。</b>注意到<u>术战者</u>、<u>驭法铁卫</u>和<u>守护者</u>等生命骰施法者的可选法术数量实在是太少，现在允许他们获得完整的领域法术表，而非只能选取其中三个。不过它们的准备法术数量依然非常有限。</li>
 <li><b>全施法者优化。</b>现在扩展中的全施法者在11级起可以选两个领域法术表和精通伤害！！！</li>

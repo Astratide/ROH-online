@@ -11,8 +11,6 @@
 <LINK rel=stylesheet href="style.css">
 
 
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
-
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=11" />
@@ -20,12 +18,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -36,7 +35,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -53,7 +52,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -81,7 +80,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -106,7 +105,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(2);
+  parent.nav.tree.selectNode(1);
  }else{
   setTimeout("syn()",500);
 }
@@ -207,7 +206,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 时，你立即投掷并消耗等同你当前感染等级数量的生命骰，并流失等同投掷结果的生命值。接下来的24小时内，你的伤害掷骰获得等同你感染等级的加值。
 </div>
 <p class="para"><b>感染者崩解。</b>具有矿石病感染等级的生物死亡时，其遗体在 1d20 
-分钟内发生崩解。遗体会消散成灰且此后无法被低于九环的法术效应复活。如果是重度感染或更高的生物，崩解改为1d6分钟内发生，且其遗体附近15尺区域成为<em><b>中度源石污染区</b></em>，然后其外15尺成为<em><b>轻度源石污染区</b></em>  。</p>
+分钟内发生崩解。遗体会消散成灰且此后无法被低于九环的法术效应复活。如果是重度感染或更高的生物，崩解改为1d6分钟内发生，且其遗体附近15尺区域成为<i><b>中度源石污染区</b></i>，然后其外15尺成为<i><b>轻度源石污染区</b></i>  。</p>
 <p class="para"><b>源石污染区域。</b>源石污染区域被分为1-5级：</p>
 <div class="syntax">
 <p><b>微量源石污染环境（1级）：</b>常见于城市核心工业区、动力区、源石开采矿区、部分荒野地区或地下洞穴等环境。</p>

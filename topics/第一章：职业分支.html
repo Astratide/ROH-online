@@ -18,12 +18,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -34,7 +35,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -51,7 +52,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -79,7 +80,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -104,7 +105,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(3);
+  parent.nav.tree.selectNode(2);
  }else{
   setTimeout("syn()",500);
 }
@@ -226,17 +227,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第一节：先锋</b></td>
   <tr class="black">
-    <td colSpan="2"><em>先锋职业分支 Vanguard Subclasses</em></td></tr>
+    <td colSpan="2"><i>先锋职业分支 Vanguard Subclasses</i></td></tr>
   <tr>
-    <td><b>冲锋手</b> <em>Charger</em></td> </tr>
+    <td><b>冲锋手</b> <i>Charger</i></td> </tr>
   <tr class="black">
-    <td><b>尖兵</b> <em>pioneer</em></td> </tr>
+    <td><b>尖兵</b> <i>pioneer</i></td> </tr>
   <tr>
-    <td><b>情报官</b> <em>Agent</em></td> </tr>
+    <td><b>情报官</b> <i>Agent</i></td> </tr>
   <tr class="black">
-    <td><b>战术家</b> <em>Tactician</em></td> </tr>
+    <td><b>战术家</b> <i>Tactician</i></td> </tr>
   <tr>
-    <td><b>执旗手</b> <em>Standard Bearer</em></td> </tr>
+    <td><b>执旗手</b> <i>Standard Bearer</i></td> </tr>
 </tbody></table><br>
 <hr>
 <p></p>
@@ -248,33 +249,33 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第二节：近卫</b></td>
   <tr class="black">
-    <td colSpan="2"><em>近卫职业分支 Guard Subclasses</em></td></tr>
+    <td colSpan="2"><i>近卫职业分支 Guard Subclasses</i></td></tr>
   <tr>
-    <td><b>强攻手</b> <em>Centurion</em></td> </tr>
+    <td><b>强攻手</b> <i>Centurion</i></td> </tr>
   <tr class="black">
-    <td><b>重剑手</b> <em>Crusher</em></td> </tr>
+    <td><b>重剑手</b> <i>Crusher</i></td> </tr>
   <tr>
-    <td><b>撼地者</b> <em>Earthshaker</em></td> </tr>
+    <td><b>撼地者</b> <i>Earthshaker</i></td> </tr>
   <tr class="black">
-    <td><b>无畏者</b> <em>Dreadnought</em></td> </tr>
+    <td><b>无畏者</b> <i>Dreadnought</i></td> </tr>
   <tr>
-    <td><b>术战者</b> <em>Arts Fighter</em></td> </tr>
+    <td><b>术战者</b> <i>Arts Fighter</i></td> </tr>
   <tr class="black">
-    <td><b>剑豪</b> <em>Swordmaster</em></td> </tr>
+    <td><b>剑豪</b> <i>Swordmaster</i></td> </tr>
   <tr>
-    <td><b>领主</b> <em>Lord</em></td> </tr>
+    <td><b>领主</b> <i>Lord</i></td> </tr>
   <tr class="black">
-    <td><b>教官</b> <em>Instructor</em></td> </tr>
+    <td><b>教官</b> <i>Instructor</i></td> </tr>
   <tr>
-    <td><b>武者</b> <em>Soloblade</em></td> </tr>
+    <td><b>武者</b> <i>Soloblade</i></td> </tr>
   <tr class="black">
-    <td><b>收割者</b> <em>Reaper</em></td> </tr>
+    <td><b>收割者</b> <i>Reaper</i></td> </tr>
   <tr>
-    <td><b>解放者</b> <em>Liberator</em></td> </tr>
+    <td><b>解放者</b> <i>Liberator</i></td> </tr>
   <tr class="black">
-    <td><b>斗士</b> <em>Fighter</em></td> </tr>
+    <td><b>斗士</b> <i>Fighter</i></td> </tr>
   <tr>
-    <td><b>佣兵</b> <em>Fighter</em></td> </tr>
+    <td><b>佣兵</b> <i>Fighter</i></td> </tr>
     </tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
@@ -285,21 +286,21 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第三节：</b><b>重装</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>重装职业分支 Defender Subclasses</em></td></tr>
+    <td colSpan="2"><i>重装职业分支 Defender Subclasses</i></td></tr>
   <tr>
-    <td><b>铁卫</b> <em>protecter</em></td> </tr>
+    <td><b>铁卫</b> <i>protecter</i></td> </tr>
   <tr class="black">
-    <td><b>哨戒铁卫</b> <em>Sentey protecter</em></td> </tr>
+    <td><b>哨戒铁卫</b> <i>Sentey protecter</i></td> </tr>
   <tr>
-    <td><b>驭法铁卫</b> <em>Arts protecter</em></td> </tr>
+    <td><b>驭法铁卫</b> <i>Arts protecter</i></td> </tr>
   <tr class="black">
-    <td><b>守护者</b> <em>Guardian</em></td> </tr>
+    <td><b>守护者</b> <i>Guardian</i></td> </tr>
   <tr>
-    <td><b>不屈者</b> <em>Juggernaut</em></td> </tr>
+    <td><b>不屈者</b> <i>Juggernaut</i></td> </tr>
   <tr class="black">
-    <td><b>决战者</b> <em>Duelist</em></td> </tr>
+    <td><b>决战者</b> <i>Duelist</i></td> </tr>
   <tr>
-    <td><b>要塞</b> <em>Fortress</em></td> </tr></tbody></table><br>
+    <td><b>要塞</b> <i>Fortress</i></td> </tr></tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
   <colgroup>
@@ -309,25 +310,25 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第四节：</b><b>狙击</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>狙击职业分支 Sniper Subclasses</em></td></tr>
+    <td colSpan="2"><i>狙击职业分支 Sniper Subclasses</i></td></tr>
   <tr>
-    <td><b>速射手</b> <em>Marksman</em></td> </tr>
+    <td><b>速射手</b> <i>Marksman</i></td> </tr>
   <tr class="black">
-    <td><b>重射手</b> <em>Heavyshooter</em></td> </tr>
+    <td><b>重射手</b> <i>Heavyshooter</i></td> </tr>
   <tr>
-    <td><b>神射手</b> <em>Deadeye</em></td> </tr>
+    <td><b>神射手</b> <i>Deadeye</i></td> </tr>
   <tr class="black">
-    <td><b>攻城手</b> <em>Besieger</em></td> </tr>
+    <td><b>攻城手</b> <i>Besieger</i></td> </tr>
   <tr>
-    <td><b>散射手</b> <em>Spreadshooter</em></td> </tr>
+    <td><b>散射手</b> <i>Spreadshooter</i></td> </tr>
   <tr class="black">
-    <td><b>投掷手</b> <em>Flinger</em></td> </tr>
+    <td><b>投掷手</b> <i>Flinger</i></td> </tr>
   <tr>
-    <td><b>回环射手</b> <em>Loopshooter</em></td> </tr>
+    <td><b>回环射手</b> <i>Loopshooter</i></td> </tr>
   <tr class="black">
-    <td><b>炮手</b> <em>Artilleryman</em></td> </tr>
+    <td><b>炮手</b> <i>Artilleryman</i></td> </tr>
   <tr>
-    <td><b>猎手</b> <em>Hunter</em></td> </tr></tbody></table><br>
+    <td><b>猎手</b> <i>Hunter</i></td> </tr></tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
   <colgroup>
@@ -337,27 +338,27 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第五节：</b><b>术师</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>术师职业分支 Caster Subclasses</em></td></tr>
+    <td colSpan="2"><i>术师职业分支 Caster Subclasses</i></td></tr>
   <tr>
-    <td><b>中坚术师</b> <em>Core</em></td> </tr>
+    <td><b>中坚术师</b> <i>Core</i></td> </tr>
   <tr class="black">
-    <td><b>扩散术师</b> <em>Splash</em></td> </tr>
+    <td><b>扩散术师</b> <i>Splash</i></td> </tr>
   <tr>
-    <td><b>本源术师</b> <em>primal</em></td> </tr>
+    <td><b>本源术师</b> <i>primal</i></td> </tr>
   <tr class="black">
-    <td><b>轰击术师</b> <em>Blast</em></td> </tr>
+    <td><b>轰击术师</b> <i>Blast</i></td> </tr>
   <tr>
-    <td><b>阵法术师</b> <em>phalanx</em></td> </tr>
+    <td><b>阵法术师</b> <i>phalanx</i></td> </tr>
   <tr class="black">
-    <td><b>驭械术师</b> <em>Mech-Accord</em></td> </tr>
+    <td><b>驭械术师</b> <i>Mech-Accord</i></td> </tr>
   <tr>
-    <td><b>塑灵术师</b> <em>Shaper</em></td> 
+    <td><b>塑灵术师</b> <i>Shaper</i></td> 
     </tr>
   <tr class="black">
-    <td><b>秘术师</b> <em>Mystic</em></td> 
+    <td><b>秘术师</b> <i>Mystic</i></td> 
     </tr>
   <tr>
-    <td><b>链术师</b> <em>Chain</em></td> </tr></tbody></table><br>
+    <td><b>链术师</b> <i>Chain</i></td> </tr></tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
   <colgroup>
@@ -367,19 +368,19 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第六节：医疗</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>医疗职业分支 Medic Subclasses</em></td></tr>
+    <td colSpan="2"><i>医疗职业分支 Medic Subclasses</i></td></tr>
   <tr>
-    <td><b>医师</b> <em>Medic</em></td> </tr>
+    <td><b>医师</b> <i>Medic</i></td> </tr>
   <tr class="black">
-    <td><b>群愈师</b> <em>Multi-Target</em></td> </tr>
+    <td><b>群愈师</b> <i>Multi-Target</i></td> </tr>
   <tr>
-    <td><b>链愈师</b> <em>Chain</em></td> </tr>
+    <td><b>链愈师</b> <i>Chain</i></td> </tr>
   <tr class="black">
-    <td><b>疗养师</b> <em>Therapist</em></td> </tr>
+    <td><b>疗养师</b> <i>Therapist</i></td> </tr>
   <tr>
-    <td><b>咒愈师</b> <em>Incantation</em></td> </tr>
+    <td><b>咒愈师</b> <i>Incantation</i></td> </tr>
   <tr class="black">
-    <td><b>行医</b> <em>Wandering</em></td> </tr></tbody></table><br>
+    <td><b>行医</b> <i>Wandering</i></td> </tr></tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
   <colgroup>
@@ -389,21 +390,21 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第七节：辅助</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>辅助职业分支 Supporter Subclasses</em></td></tr>
+    <td colSpan="2"><i>辅助职业分支 Supporter Subclasses</i></td></tr>
   <tr>
-    <td><b>凝滞师</b> <em>Decel Binder</em></td> </tr>
+    <td><b>凝滞师</b> <i>Decel Binder</i></td> </tr>
   <tr class="black">
-    <td><b>削弱者</b> <em>Hexer</em></td> </tr>
+    <td><b>削弱者</b> <i>Hexer</i></td> </tr>
   <tr>
-    <td><b>召唤师</b> <em>Summoner</em></td> </tr>
+    <td><b>召唤师</b> <i>Summoner</i></td> </tr>
   <tr class="black">
-    <td><b>吟游者</b> <em>Bard</em></td> </tr>
+    <td><b>吟游者</b> <i>Bard</i></td> </tr>
   <tr>
-    <td><b>护佑者</b> <em>Abjuer</em></td> </tr>
+    <td><b>护佑者</b> <i>Abjuer</i></td> </tr>
   <tr class="black">
-    <td><b>工匠</b> <em>Artifier</em></td> </tr>
+    <td><b>工匠</b> <i>Artifier</i></td> </tr>
   <tr>
-    <td><b>巫役</b> <em>Ritualist</em></td> </tr></tbody></table><br>
+    <td><b>巫役</b> <i>Ritualist</i></td> </tr></tbody></table><br>
 <hr>
 <table class="custom-table" id="left">
   <colgroup>
@@ -413,25 +414,25 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td colspan="2"><b>第八节：特种</b></td> </tr>
   <tr class="black">
-    <td colSpan="2"><em>特种职业分支 Subclass Feats</em></td></tr>
+    <td colSpan="2"><i>特种职业分支 Subclass Feats</i></td></tr>
   <tr>
-    <td><b>处决者</b> <em>Executor</em></td> </tr>
+    <td><b>处决者</b> <i>Executor</i></td> </tr>
   <tr class="black">
-    <td><b>钩锁师</b> <em>Hookmaster</em></td> </tr>
+    <td><b>钩锁师</b> <i>Hookmaster</i></td> </tr>
   <tr>
-    <td><b>推击手</b> <em>Push Stroker</em></td> </tr>
+    <td><b>推击手</b> <i>Push Stroker</i></td> </tr>
   <tr class="black">
-    <td><b>炼金师</b> <em>Alchemist</em></td> </tr>
+    <td><b>炼金师</b> <i>Alchemist</i></td> </tr>
   <tr>
-    <td><b>伏击客</b> <em>Ambusher</em></td> </tr>
+    <td><b>伏击客</b> <i>Ambusher</i></td> </tr>
   <tr class="black">
-    <td><b>傀儡师</b> <em>Dollkeeper</em></td> </tr>
+    <td><b>傀儡师</b> <i>Dollkeeper</i></td> </tr>
   <tr>
-    <td><b>陷阱师</b> <em>Trapmaster</em></td> </tr>
+    <td><b>陷阱师</b> <i>Trapmaster</i></td> </tr>
   <tr class="black">
-    <td><b>行商</b> <em>Merchant</em></td> </tr>
+    <td><b>行商</b> <i>Merchant</i></td> </tr>
   <tr>
-    <td><b>怪杰</b> <em>Geek</em></td> </tr></tbody></table>
+    <td><b>怪杰</b> <i>Geek</i></td> </tr></tbody></table>
 <br><br>
 </div>
 </div>

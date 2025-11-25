@@ -15,12 +15,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -31,7 +32,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -48,7 +49,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -76,7 +77,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -101,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(176);
+  parent.nav.tree.selectNode(175);
  }else{
   setTimeout("syn()",500);
 }
@@ -198,7 +199,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>自身（20尺半径）</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">施法时，你释放出一阵寒气。法术持续期间，每当一个生物在你周围20尺以内开始自身回合时，该生物必须进行一次体质豁免，豁免失败将受到2d8的冷冻伤害，其速度降低至0，直到其下回合开始。豁免成功则受到一半伤害，且速度减半，直到其下回合开始。</p>
+<p class="para">施法时，你释放出一阵寒气。法术持续期间，每当一个生物在你周围20尺以内开始自身回合时，该生物必须进行一次体质豁免，豁免失败将受到2d8的寒冷伤害，其速度降低至0，直到其下回合开始。豁免成功则受到一半伤害，且速度减半，直到其下回合开始。</p>
 <p class="para">你可以在法术持续时间的每个回合中，以一个附赠动作来操控寒气，解除施法距离内一定数量的生物所受的法术效应，直至你的下一回合，其数量至多等同于你的施法关键属性调整值。</p>
 <p><b>升环施法：</b>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，法术伤害就增加1d8。</p>
 <br>
@@ -340,7 +341,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>自身（30尺锥状）</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">一道寒风向外扩散。30尺<b class="green">锥状</b>区域内的所有生物都必须进行一次体质豁免。豁免失败则受到4d8的冷冻伤害，陷入被冰所<b class="green">束缚</b>的状态，直到你的下一回合开始。豁免成功的生物仅受半伤。</p>
+<p class="para">一道寒风向外扩散。30尺<b class="green">锥状</b>区域内的所有生物都必须进行一次体质豁免。豁免失败则受到4d8的寒冷伤害，陷入被冰所<b class="green">束缚</b>的状态，直到你的下一回合开始。豁免成功的生物仅受半伤。</p>
 <p><b>升环施法：</b>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，法术伤害就增加1d8。</p>
 <br>
 <br>
@@ -352,7 +353,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>法术成分：</b>V、S、M（一小块玻璃）</p>
 <p><b>持续时间：</b>专注，至多10分钟</p>
 <p class="para">你在施法距离内的一个或多个实体表面上制造冰层。每个冰层都是一块边长5尺，厚度1尺的方板，你可以制造多块冰层，数量最多等于你施法关键属性调整值。方板可以处于任何方向，只要每个方板的至少有一个边缘固定在实心表面或另一块方板上，尽管特别不平衡的结构可能会倒塌。</p>
-<p class="para">如果一个生物在方板出现时阻拦了其空间，该生物会被推到最近的未被占据空间，并且必须进行一次敏捷豁免，豁免失败受到2d8的冷冻伤害，豁免成功则受到一半伤害。</p>
+<p class="para">如果一个生物在方板出现时阻拦了其空间，该生物会被推到最近的未被占据空间，并且必须进行一次敏捷豁免，豁免失败受到2d8的寒冷伤害，豁免成功则受到一半伤害。</p>
 <p class="para">在其持续时间内，你每个回合可以用附赠动作制造或溶解任意数量的方板，只要同时放置的方板数量不超过你的施法关键属性调整值。</p>
 <p class="para">这些冰层是可以被破坏并碎裂的物件。每个方板的AC为10，拥有20点生命值，免疫毒素和心灵伤害，并对火焰伤害具有易伤。</p>
 <br>
@@ -408,7 +409,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>120尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，持续1分钟</p>
-<p class="para">你操控流水，用水体监牢困住施法距离内一个可见生物。目标必须通过一次敏捷豁免，否则将受到3d10的寒冷伤害，同时被一个充当监牢的泡泡包裹；豁免成功则伤害减半且不会被困。被泡泡困住的生物无法呼吸并陷入<b class="green">束缚</b>状态，在其每个回合开始时将受到3d10的冷冻伤害。</p>
+<p class="para">你操控流水，用水体监牢困住施法距离内一个可见生物。目标必须通过一次敏捷豁免，否则将受到3d10的寒冷伤害，同时被一个充当监牢的泡泡包裹；豁免成功则伤害减半且不会被困。被泡泡困住的生物无法呼吸并陷入<b class="green">束缚</b>状态，在其每个回合开始时将受到3d10的寒冷伤害。</p>
 <p class="para">被困在泡泡中的生物可以回合结束时重复力量豁免，若豁免成功则会打破泡泡脱离束缚。</p>
 <p><b>升环施法：</b>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，该法术最初造成的伤害就增加1d10。</p>
 <br>
@@ -433,8 +434,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>120尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">尖锐的冰锥从天而降，覆盖源自施法距离内一点的半径15尺、高40尺<b class="green">柱状</b>区域。区域内所有生物必须进行一次敏捷豁免，豁免失败则受到3d6穿刺伤害和3d6冷冻伤害，豁免成功则受到一半伤害。</p>
-<p><b>升环施法：</b>使用高于三环的法术位施展该法术时，你使用的法术位每高一环，冷冻伤害增加1d6。</p>
+<p class="para">尖锐的冰锥从天而降，覆盖源自施法距离内一点的半径15尺、高40尺<b class="green">柱状</b>区域。区域内所有生物必须进行一次敏捷豁免，豁免失败则受到3d6穿刺伤害和3d6寒冷伤害，豁免成功则受到一半伤害。</p>
+<p><b>升环施法：</b>使用高于三环的法术位施展该法术时，你使用的法术位每高一环，寒冷伤害增加1d6。</p>
 <br>
 <br>
 <h5 id="闪电之跃">闪电之跃丨Lightning Leap</h5>

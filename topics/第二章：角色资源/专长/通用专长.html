@@ -16,12 +16,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -32,7 +33,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -49,7 +50,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -77,7 +78,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -102,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(101);
+  parent.nav.tree.selectNode(100);
  }else{
   setTimeout("syn()",500);
 }
@@ -137,7 +138,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">下面列出一些本拓展新增的专长，适用于泰拉角色在到达可以获取专长的等级时选择。</p>
 <br>
 <h5>源石技艺研习 Originium Arts Study</h5>
-<p class="grey"><em>通用专长（先决：等级4+，有施法或契约魔法特性）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，有施法或契约魔法特性）</i></p>
 <p>在你不断的学习下，你除了自己的专攻领域的法术，对其他领域的法术也略有涉及。你获得以下增益：</p>
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
@@ -147,7 +148,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h5>领域法术增强 Area Spell Mastery</h5>
-<p class="grey"><em>通用专长（先决：等级4+，施法特性，精通伤害特性）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，施法特性，精通伤害特性）</i></p>
 <p>在你和你的精通伤害之间的联系越发深入，使你获得以下增益：</p>
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
@@ -158,7 +159,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h5>进攻式决斗 Offensive Duelist </h5>
-<p class="grey"><em>通用专长（先决：等级4+）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+）</i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的力量或敏捷提升1，最多为20。</li>
@@ -166,7 +167,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </ul><br>
 <br>
 <h5>战术超魔 Tactical Metamagic</h5>
-<p class="grey"><em>通用专长（先决：等级4+，有施法或契约魔法特性）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，有施法或契约魔法特性）</i></p>
 <p>你习得如何往你的法术上施加你的意志，从而改变它们的功能。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
@@ -177,7 +178,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h5>战技训练 Battleskills Training</h5>
-<p class="grey"><em>通用专长（先决：等级4+，至少习得一项战技）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，至少习得一项战技）</i></p>
 <p>你通过艰苦的训练进一步掌握了自己的战技。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你选择一项属性提升1，最多为20。</li>
@@ -192,7 +193,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h5>残暴之握 Brutal Grip </h5>
 <p><b>出处：</b>《瓦尔达的秘密尖塔（Valda's Spire of Secrets）》</p>
-<p class="grey"><em>通用专长（先决：等级4+，力量13+） </em></p>
+<p class="grey"><i>通用专长（先决：等级4+，力量13+） </i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的力量提升1，至多提升至20。</li>
@@ -203,7 +204,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h5>战地指挥 Field Commander </h5>
 <p><b>出处：</b>《瓦尔达的秘密尖塔（Valda's Spire of Secrets）》</p>
-<p class="grey"><em>通用专长（先决：等级4+，魅力13+）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，魅力13+）</i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的魅力提升1，至多提升至20。</li>
@@ -214,7 +215,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h5>专注重击 Focused Critical </h5>
 <p><b>出处：</b>《瓦尔达的秘密尖塔（Valda's Spire of Secrets）》</p>
-<p class="grey"><em>通用专长（先决：等级4+）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+）</i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的力量或敏捷提升1，至多提升至20。</li>
@@ -224,7 +225,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h5>拒绝死亡 Death Defier </h5>
 <p><b>出处：</b>《歪曲之月 The Crooked Moon》</p>
-<p class="grey"><em>通用专长（先决：等级4+）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+）</i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升Ability Score Increase。</b>你的体质提升1，至多提升至20。</li>
@@ -235,7 +236,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h5>迅捷巫术 Swift Witchcraft </h5>
 <p><b>出处：</b>《歪曲之月 The Crooked Moon》</p>
-<p class="grey"><em>通用专长（先决：等级4+，施法或契约魔法特性）</em></p>
+<p class="grey"><i>通用专长（先决：等级4+，施法或契约魔法特性）</i></p>
 <p>你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升Ability Score Increase。</b>你的智力、感知或魅力提升1，至多提升至20。</li>
@@ -244,46 +245,46 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h5 id="灼燃">元素精通·灼燃 Elemental Mastery·Burn</h5>
-<p class="grey"><em>通用专长（先决：8级+或</em><em>巫役/本源术师</em><em>等级3+，精通于火焰或光耀伤害，施法特性）</em></p>
+<p class="grey"><i>通用专长（先决：8级+或</i><i>巫役/本源术师</i><i>等级3+，精通于火焰或光耀伤害，施法特性）</i></p>
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
 <li><b>灼燃损伤。</b>你通过法术对生物造成至少10点火焰或光耀伤害时，若你精通于此伤害，则可以为对方添加<b>灼燃标记</b>。</li>
 <li><b>损伤爆发。</b>你对具有灼燃标记的生物再造成至少10点火焰或光耀伤害时，可以选择引爆并清除灼燃标记，并迫使对方进行敏捷豁免（DC等同伤害的一半，或你的法术豁免DC，两者取高）。<br>
-<b><em>失败：</em></b>目标受到6d6无法减免的火焰伤害，并陷入<b class="green">d4法术脆弱</b>直到你下回合结束。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
+<b><i>失败：</i></b>目标受到6d6无法减免的火焰伤害，并陷入<b class="green">d4法术脆弱</b>直到你下回合结束。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
 </ul>
 <br>
 <br>
 <h5 id="侵蚀">元素精通·侵蚀 Elemental Mastery·Corrosion</h5>
-<p class="grey"><em>通用专长（先决：</em><em>8级+或巫役/本源术师等级3+，</em><em>精通于寒冷或强酸伤害，施法特性）</em></p> 
+<p class="grey"><i>通用专长（先决：</i><i>8级+或巫役/本源术师等级3+，</i><i>精通于寒冷或强酸伤害，施法特性）</i></p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
 <li><b>侵蚀损伤。</b>你通过法术对生物造成单次至少10点寒冷或强酸伤害时，若你精通于此伤害，则可以为对方添加<b>侵蚀标记</b>。</li>
 <li><b>损伤爆发。</b>你对具有侵蚀标记的生物再造成至少10点寒冷或强酸伤害时，可以选择引爆并清除侵蚀标记，并迫使对方进行体质豁免（DC等同伤害的一半，或你的法术豁免DC，两者取高）。<br>
-<b><em>失败：</em></b>目标受到4d8无法减免的钝击伤害，并且AC获得-3减值，持续1分钟。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
+<b><i>失败：</i></b>目标受到4d8无法减免的钝击伤害，并且AC获得-3减值，持续1分钟。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
 </ul>
 <br>
 <br>
 <h5 id="神经">元素损伤·神经 Elemental Mastery·Nervous</h5>
-<p class="grey"><em>通用专长（先决：8级+或</em><em>巫役/本源术师</em><em>等级3+，精通于心灵或毒素伤害，施法特性）</em></p> 
+<p class="grey"><i>通用专长（先决：8级+或</i><i>巫役/本源术师</i><i>等级3+，精通于心灵或毒素伤害，施法特性）</i></p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
 <li><b>神经标记。</b>你通过法术对生物造成心灵或毒素伤害时，若你精通于此伤害，则可以为对方添加<b>神经标记</b>。</li>
 <li><b>损伤爆发。</b>你对具有神经标记的生物再造成心灵或毒素伤害时，可以选择引爆并清除神经标记，并迫使对方进行智力豁免（DC等同伤害的一半，或你的法术豁免DC，两者取高）。<br>
-<b><em>失败：</em></b>目标受到3d12无法减免的心灵伤害，并陷入<b class="green">麻痹</b>状态直到你下回合结束。目标也可选择不被麻痹，改为1分钟内接下来进行的三次攻击检定承受-10减值（若拥有抵抗状态则改为一次）。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
+<b><i>失败：</i></b>目标受到3d12无法减免的心灵伤害，并陷入<b class="green">麻痹</b>状态直到你下回合结束。目标也可选择不被麻痹，改为1分钟内接下来进行的三次攻击检定承受-10减值（若拥有抵抗状态则改为一次）。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
 </ul>
 <br>
 <br>
 <h5 id="凋亡">元素损伤·凋亡 Elemental Mastery·Necrosis</h5>
-<p class="grey"><em>通用专长（先决：8级+或巫役/本源术师等级3+，精通于黯蚀或心灵伤害，具法特性）</em></p> 
+<p class="grey"><i>通用专长（先决：8级+或巫役/本源术师等级3+，精通于黯蚀或心灵伤害，具法特性）</i></p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <ul>
 <li><b>属性值提升。</b>你的智力、感知或魅力提升1，最多为20。</li>
 <li><b>元素标记。</b>你通过法术对生物造成单次至少10点黯蚀或心灵伤害时，若你有此伤害的精通，则可以为对方添加<b>凋亡标记</b>。</li>
 <li><b>损伤爆发。</b>你对具有凋亡标记的生物再造成至少10点黯蚀或心灵伤害时，可以选择引爆并清除凋亡标记，并迫使对方进行魅力豁免（DC等同伤害的一半，或你的法术豁免DC，两者取高）。<br>
-<b><em>失败：</em></b>目标陷入<b class="green">虚弱</b>直到你下回合结束，期间每次发动攻击或者移动5尺，就受到1d4黯蚀伤害。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
+<b><i>失败：</i></b>目标陷入<b class="green">虚弱</b>直到你下回合结束，期间每次发动攻击或者移动5尺，就受到1d4黯蚀伤害。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。<br></li>
 </ul>
 <br>
 <br><br>

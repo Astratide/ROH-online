@@ -16,12 +16,13 @@
 <style>
 html {
 	overflow-y:scroll;
+	font-size: 16px;
 }
 body {
 	padding: 0px;
 	margin: 0px;
 	overflow: auto; 
-	FONT-SIZE: 16px;
+	font-size: 1rem;
     BACKGROUND: transparent;
     WIDTH: 100%;
     COLOR: #000000;
@@ -32,7 +33,7 @@ body {
 	padding-left: 5px;
 	padding-bottom: 5px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: bold;
 	BORDER-BOTTOM: #999999 1px solid;
@@ -49,7 +50,7 @@ body {
 }
 #winchm_template_title{
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 17px;
+	font-size: 1.1rem;
 	padding: 5px;
 	width: auto;
 	BACKGROUND-COLOR: #D8D8D8 ;
@@ -77,7 +78,7 @@ body {
 	padding-bottom: 20px;
 	padding-right: 0px;
 	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 9px;
+	font-size: 0.6rem;
 	color: #909090;
 	text-align: left;	
 	width: auto;	
@@ -102,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(178);
+  parent.nav.tree.selectNode(177);
  }else{
   setTimeout("syn()",500);
 }
@@ -203,9 +204,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>90尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">你使施法距离内一个可见生物遭受一场席卷全身全身的致残性寒冻的折磨。该生物立即受到3d10冷冻伤害，然后必须进行一次体质豁免，豁免失败则在持续时间内受到该法术的影响。免疫冷冻伤害的生物不受该法术影响。</p>
+<p class="para">你使施法距离内一个可见生物遭受一场席卷全身全身的致残性寒冻的折磨。该生物立即受到3d10寒冷伤害，然后必须进行一次体质豁免，豁免失败则在持续时间内受到该法术的影响。免疫寒冷伤害的生物不受该法术影响。</p>
 <p class="para">一个受影响的生物的移动速度会因为它体内充盈着的刺骨寒冷而减慢。它的速度减半；AC-2；它在攻击检定、敏捷属性检定和敏捷豁免检定中具有<b class="green">劣势</b>；它在因维持专注法术而进行的体质豁免检定具有<b class="green">劣势</b>；它只能在它的回合进行时进行一个<b class="green">动作</b>或一个<b class="green">附赠动作</b>，但不能两者兼有；而且它不能做出<b class="green">反应</b>。</p>
-<p class="para">受影响生物可以在自身回合结束时重复豁免，豁免成功则结束对自身的影响，豁免失败将再次受到3d10的冷冻伤害。</p>
+<p class="para">受影响生物可以在自身回合结束时重复豁免，豁免成功则结束对自身的影响，豁免失败将再次受到3d10的寒冷伤害。</p>
 <p><b>升环施法：</b>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，就可以额外选择一个生物作为目标。</p>
 <br>
 <br>
@@ -274,7 +275,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>120尺</p>
 <p><b>法术成分：</b>V、S、M（一枚小鹅卵石）</p>
 <p><b>持续时间：</b>立即</p>
-<p class="para">一个半径为20尺的冰球垂直坠落到你施法距离内可见地面的一点上。在撞击区域内的所有生物和物件必须进行一次力量豁免。豁免失败的生物受到4d8钝击伤害和4d8冷冻伤害，并应击倒地。豁免成功则只受一半伤害，且不会倒地。冰球在撞击后立即溶解。</p>
+<p class="para">一个半径为20尺的冰球垂直坠落到你施法距离内可见地面的一点上。在撞击区域内的所有生物和物件必须进行一次力量豁免。豁免失败的生物受到4d8钝击伤害和4d8寒冷伤害，并应击倒地。豁免成功则只受一半伤害，且不会倒地。冰球在撞击后立即溶解。</p>
 <p><b>升环施法：</b>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，钝击伤害就增加1d8。</p>
 <br>
 <br>
@@ -394,9 +395,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>施法距离：</b>60尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="para">你选择施法距离内一个点，让所有的温暖从其附近消失。位于以该点为中心半径20尺的球状区域内的所有生物必须进行一次体质豁免，豁免失败的生物将受到4d8的冷冻伤害，豁免成功的生物受到一半伤害。</p>
-<p class="para">豁免失败的生物还会被冻结在原地，并被冰块锁住，陷入<b class="green">束缚</b>状态。被<b class="green">束缚</b>的生物在其每回合开始时受到1d8的冷冻伤害，它们可以在自身回合结束时重复豁免检定，豁免成功时结束该法术对自身的影响。</p>
-<p><b>升环施法：</b>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，法术造成的直接冷冻伤害以及被束缚生物受到的冷冻伤害便增加1d8。</p>
+<p class="para">你选择施法距离内一个点，让所有的温暖从其附近消失。位于以该点为中心半径20尺的球状区域内的所有生物必须进行一次体质豁免，豁免失败的生物将受到4d8的寒冷伤害，豁免成功的生物受到一半伤害。</p>
+<p class="para">豁免失败的生物还会被冻结在原地，并被冰块锁住，陷入<b class="green">束缚</b>状态。被<b class="green">束缚</b>的生物在其每回合开始时受到1d8的寒冷伤害，它们可以在自身回合结束时重复豁免检定，豁免成功时结束该法术对自身的影响。</p>
+<p><b>升环施法：</b>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，法术造成的直接寒冷伤害以及被束缚生物受到的寒冷伤害便增加1d8。</p>
 <br>
 <br>
 <h5 id="急速流星">急速流星丨Meteor Dash</h5>
