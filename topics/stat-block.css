@@ -44,24 +44,24 @@
     margin:0px 8px;
 }
 
-table.stat{
+.monster_container table.stat{
 	width: 500px;
 	color: #642e25;
 	border-collapse: collapse;
     border-spacing: 0 2px;
 	margin-left: 5px;
 }
-table.stat td{
+.monster_container table.stat td{
 	padding: 0px;
 }
-table.stat-abilities{
+.monster_container table.stat-abilities{
 	text-align: center;
 	margin: 5px;
 	white-space: nowrap;
 	border-collapse: separate;
     border-spacing: 0 2px;
 }
-table.stat-abilities th{
+.monster_container table.stat-abilities th{
 	width: 45px;
 	font-size: 90%;
 	color: #808080;

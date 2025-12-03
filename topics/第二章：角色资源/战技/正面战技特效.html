@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(103);
+  parent.nav.tree.selectNode(104);
  }else{
   setTimeout("syn()",500);
 }
@@ -228,7 +228,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">正面战技特效-α（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
 <p><b>攻击造成溅射伤害。</b>你的攻击检定或法术仅对一个单体目标造成伤害时，可以选择对其周围 5 尺的每个生物造成1d8+你熟练加值的同类伤害。</p>
-<p><b>立即。</b>如果此战技持续时间为立即，则伤害提升至2d8+你熟练加值。</p>
+<p><b>立即。</b>如果此战技持续时间为立即，则溅射伤害翻倍。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效，每多应用一次，溅射范围就增加5尺。</p>
 </div>
 <br>
@@ -274,7 +274,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>低调。</b>任何对你的攻击检定具有<b class="green">劣势</b>，持续直到你下次发动此战技或战斗结束。</p>
+<p><b>低调。</b>任何对你发动的攻击检定具有<b class="green">劣势</b>，持续直到你陷入失能，或战斗结束。</p>
 </div>
 <br>
 <br>
@@ -282,7 +282,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>迷彩。</b>直到你下回合开始前，你获得<b class="green">隐形</b>状态。</p>
+<p><b>迷彩。</b>你获得<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。此增益在你周围5尺有敌人时撤下。</p>
 </div>
 <br>
 <br>
@@ -298,7 +298,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>闪避。</b>任何对你的攻击检定承受-1d4减值，你的豁免检定获得+1d4加值，持续直到你下次发动此战技或战斗结束。</p>
+<p><b>闪避。</b>任何对你的攻击检定承受-1d4减值，你的豁免检定获得+1d4加值（均不叠加），持续直到你陷入失能，或战斗结束。</p>
 <p><b>复选。</b>你可以给一个战技应用多次本特效。</p>
 </div>
 <br>
@@ -316,9 +316,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3 class="effect-box">攻击变为多连击&nbsp;Multi-Hit</h3>
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>攻击变为多连击。</b>  在战技发动的回合，若你所有的攻击都攻击了同一目标，且这些攻击仅使用了同一种武器或戏法，则你可以在结束回合时对该目标额外发动一次攻击检定，这次攻击检定使用与原来相同的武器或戏法发动。</p>
-<p><b>立即。</b>若此战技持续时间为立即，则改为，在战技发动的回合，你可以对一个本回合攻击过的目标发动一次使用相同武器或戏法的攻击，发动此战技的回合，你不能再攻击其他目标。</p>
+<p>此战技发动的回合，你获得以下效应：</p> 
+<p><b>攻击变为多连击。</b>  
+在战技发动的回合，若你通过攻击动作或魔法动作发动攻击检定且仅攻击一个生物，你可以用该武器或法术发动额外一次效果相同的攻击检定，这次额外攻击被视为攻击动作或法术本身的一部分。发动此战技的回合，你不能再攻击其他目标。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>

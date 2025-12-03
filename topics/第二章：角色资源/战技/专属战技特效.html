@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(105);
+  parent.nav.tree.selectNode(106);
  }else{
   setTimeout("syn()",500);
 }
@@ -189,7 +189,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级5+，没有其他专属战技特效）</p>
 <p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>沉睡。</b>你将豁免改为感知豁免，目标若豁免失败，则将在下回合结束时陷入 <b class="green">昏迷</b> 1分钟。目标会在受到任何伤害时立即惊醒。</p>
+<p><b>沉睡。</b>你将豁免改为感知豁免，目标若豁免失败，则将陷入 <b class="green">昏迷</b> 
+1分钟，或直到目标受到伤害，或其5尺内有人用一个动作将其摇醒。不需睡眠的生物或免疫力竭状态的生物自动成功通过此豁免。</p>
 </div>
 <br>
 <br>
@@ -228,25 +229,25 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <div class="syntax">
 <b>规则引用：抵抗 Status Resistance* 【状态】</b> 
-<p class="para">对拥有抵抗的生物而言，若一个效应需要其在结束回合时进行豁免来结束效应，它可以改为在开始回合时以及获得抵抗时进行豁免。此外，那些会在你回合结束时中止的效应，会在你回合开始时中止。</p>
+<p class="para">对拥有抵抗的生物而言，若一个效应需要其在结束回合时进行豁免来结束效应，它可以改为在开始回合时以及获得抵抗时进行豁免。此外，那些会在其回合结束时中止的效应，会改为在其回合开始时中止。</p>
 </div>
 <br>
 <h3 class="effect-box" id="green"> 沉默效果&nbsp;Silent Effect</h3>
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">沉默</b>，直到其下回合结束。</p>
+<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">沉默</b>，直到你下回合结束。</p>
 </div>
 <div class="syntax">
 <b>规则引用：沉默 Silent* 【状态】</b> 
-<p class="para">沉默的生物不能说话，无法发动战技，也不能施展需要言语成分的法术。</p>
+<p class="para">沉默的生物不能说话，无法发动战技，也不能施展需要言语成分的法术。如果是怪物则无法执行需要充能的动作项。此外，如果一个特质写明了可以被沉默，则也无法从该特质中获益。</p>
 </div>
 <br>
 <h3 class="effect-box" id="green">战栗效果&nbsp;Shudder Effect</h3>
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">战栗</b>，直到其下回合结束。</p>
+<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">战栗</b>，直到你下回合结束。</p>
 </div>
 <div class="syntax">
 <b>规则引用：战栗 Shudder* 【状态】</b> 
@@ -257,7 +258,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：狙击或辅助职业等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b> 破甲。</b>你可以将豁免改为体质豁免，目标在豁免失败时AC获得-4减值，直到其下回合结束。</p>
+<p><b> 破甲。</b>你可以将豁免改为体质豁免，目标在豁免失败时AC获得-4减值，直到你下回合结束。</p>
 </div>
 <br>
 <br>
