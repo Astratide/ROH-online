@@ -103,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(68);
+  parent.nav.tree.selectNode(69);
  }else{
   setTimeout("syn()",500);
 }
@@ -167,7 +167,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：战术处决 Tactical Execution</h2>
 <p class="para">作为一名处决者，你获得以下特性：</p>
 <p class="para"><b>短兵相接。</b>你选择一项具有轻型属性的近战武器，然后获得其精通。你应用武器的轻型词条而得以发动额外武器攻击的时候，你可以使用同一把武器而非另一把武器来发动此次攻击。</p>
-<p class="para"><b>隐匿大师。</b>若你没有着装盾牌或者持用双手武器，即便你只是处于轻度遮蔽或半身掩护后，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受劣势。</p>
+<p class="para"><b>隐匿大师。</b>若你没有着装盾牌或者持用双手武器，且处于轻度遮蔽或半身掩护后，则即便你能被敌人看见，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受劣势。</p>
 <p class="para"><b>本职法术。</b>你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
 <br>
 <h4>处决者法术表</h4>
@@ -184,10 +184,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b class="spell"><A href="../../第五章：施法规则/1环.html#吸收动能">吸收动能</a><sup>ROH</sup>、<A href="../../第五章：施法规则/1环.html#淡影步">淡影步</a><sup>RES</sup></b></td></tr>
   <tr>
     <td style="text-align: center;">二环</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/2环.html#猎犬本能">猎犬本能</a><sup>RES</sup>、<A href="../../第五章：施法规则/2环.html#蔽目斩">蔽目斩</a><sup>ROH</sup></b></td></tr>
+    <td><b class="spell">法术闪避<sup>FR</sup>、<A href="../../第五章：施法规则/2环.html#猎犬本能">猎犬本能</a><sup>RES</sup></b></td></tr>
   <tr>
     <td style="text-align: center;">三环</td>
-    <td><b class="spell">闪现术、<A href="../../第五章：施法规则/3环.html#复仇斩">复仇斩</a><sup>ROH</sup></b></td></tr>
+    <td><b class="spell">闪现术、魂灵环绕<sup>TCE</sup></b></td></tr>
   <tr>
     <td style="text-align: center;">四环</td>
     <td><b class="spell">行动自如、惊惧斩</b></td></tr>
@@ -196,7 +196,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b class="spell">钢风斩、湮灭波</b></td></tr>
     </tbody></table>
 <br>
-<p class="para">此外，你的基础战技被替换为 战术处决。</p>
+<p class="para"> 此外，你习得战技：战术处决。</p>
 <div class="syntax">
 <table>
   

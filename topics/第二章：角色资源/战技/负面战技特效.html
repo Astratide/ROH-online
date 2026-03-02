@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(105);
+  parent.nav.tree.selectNode(108);
  }else{
   setTimeout("syn()",500);
 }
@@ -135,8 +135,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>负面特效列表 Negative Effects</h2>
 <hr class="sub">
 <p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己的一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
-<p class="para"><b>消耗降低。</b>应用负面战技特效会减少1点战技的技力消耗（至多降低至1）。在计算你最多能应用的战技特效时，忽略你通过负面战技特效减少的技力消耗。这意味着应用负面特效不会让你能多应用1个正面特效。</p>
-<p class="para"><b>仅限一次。</b>你只能给仅一个战技应用一项负面战技特效。即便你习得了多项战技，你至多也只能给其中一项战技应用一项负面特效。<b>无论如何，每个角色只能应用一项负面特效。</b></p>
+<p class="para"><b>消耗降低。</b>应用负面战技特效会减少1点战技的技力消耗（至多降低至1）。</p>
+<p class="para"><b>技力消耗上限。</b>你<strong>无法</strong>发动一个技力消耗超过你的熟练加值的战技。举例来说，一个价值为3sp的战技，需要至少5级的角色（PB≥3）才能发动。</p>
+<p class="para">此外，注意添加负面特效不会影响战技的实际价值。一个实际价值为4的战技即便被添加了负面特效，也依然需要至少9级的角色（PB≥4）才能发动。只不过发动的时候会减少了1点技力消耗。</p>
+<p class="para"><b>仅限一次。</b>你只能给仅一个战技应用一项负面战技特效。换言之，即便你习得了多项战技，你至多也只能给其中一项战技应用负面特效。<b>无论如何，每个角色只能应用一项负面特效。</b></p>
 <br>
 <h3 class="effect-box" id="grey">生命值流失&nbsp;Hp Loss</h3>
 <div class="effect-box">
@@ -198,9 +200,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">负面战技特效（先决：等级3+，先锋/<i>近卫/重装</i><i>等级1+）</i></p>
 <p>此战技发动后，你获得以下效应：</p> 
-<p><b>嘲讽。</b>直到你下回合开始前，敌人对你的攻击检定具有<b class="green">优势</b>，并且处于你15尺内的敌人进行攻击或造成范围效应时，必须将你包含在内。</p> 
+<p><b>嘲讽。</b>直到你下回合开始前，敌人对你的攻击检定具有<b class="green">优势</b>，并且处于你15尺内的敌人进行攻击或造成范围效应时，如果没有将你包含在内、则在攻击检定和效应的豁免DC上具有-10减值。</p> 
 </div>
-<p class="grey">举例来说，有多重攻击能力的生物至少要将其中一次攻击分给你，而能施展火球术的生物则必须要把你涵盖在火球术范围内。</p>
+<p class="grey">举例来说，有多重攻击能力的生物需要将其中一次攻击分给你，而能施展火球术的生物则要把你涵盖在火球术范围内。</p>
 <br>
 <br>
 <h3 class="effect-box" id="grey">攻击范围缩小&nbsp;Reduce Atk Range</h3>

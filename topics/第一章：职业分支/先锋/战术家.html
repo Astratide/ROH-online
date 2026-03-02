@@ -171,14 +171,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：战术专家 Tactical Expert</h2>
 <p class="para">作为一名<b>战术家</b>，你获得以下特性：</p>
-<p class="para"><b>火力压制。</b>你选择一项<b>军用远程武器</b>并获得其熟练以及精通，你也可以放弃这个效果，改为习得一项魔能爆以外的任意戏法，例如<i>火焰箭 
+<p class="para"><b>火力压制。</b>你选择一项<b>军用远程武器</b>并获得其熟练以及精通（可以在每次升级时重选）。你也可以放弃这个效果，改为习得一项魔能爆以外的任意戏法，例如<i>火焰箭 
 </i>、<i>冷冻射线 </i>或<i> 冻寒之触 
 </i>。以此习得的戏法施法关键属性是智力、感知或魅力（自选）。</p>
-<p class="para"><b>战术指挥。</b>当你的一名可见盟友在攻击检定中失手时，则你可以采取反应并消耗和投出1枚费用骰，让目标的此次攻击检定获得等同你费用骰掷骰结果的加值。</p>
+<p class="para"><b>战术指挥。</b>当你的一名可见盟友在攻击检定中失手时，则你可以采取反应，并消耗和投出1枚拥有的费用骰，让目标的此次攻击检定获得等同你费用骰掷骰结果的加值。</p>
 <br>
 <h2>3级：战术援军 Tactical Reinforcements</h2>
 <p class="para">你获得在战斗中召唤战术援军协助小队进行战斗的能力。</p>
-<p class="para">此外，你的基础战技被替换为 召唤援军Summon Reinforcement。</p>
+<p class="para"> 此外，你习得战技：召唤援军Summon Reinforcement。</p>
 <div class="syntax">
 <table class="stat">
   <tr>
@@ -205,7 +205,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <br>
 <h2>7级：攻击指令 Command: Attack</h2>
-<p class="para">你的战术援军在被召唤出来时获得10点临时生命值。此外，你习得战技：攻击指令。</p>
+<p class="para">你的战术援军在被召唤出来时获得10点临时生命值。</p>
+<p class="para">此外，你习得战技：攻击指令。</p>
 <div class="syntax">
 <table class="stat">
   
@@ -232,17 +233,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">你选择以下一个强化选项获得：</p>
 <p class="indent"><b>近战系。</b>你的近战系战术援军AC额外+2，并且在攻击命中时额外造成1d6钝击伤害。</p>
 <p class="indent"><b>远程系。</b>你的远程系战术援军射程延长至60/120，并且在攻击命中时额外造成1d10力场伤害。</p>
-<p class="para">此外，你每次发动战术家战技时，可以选择一个战术援军，为其赋予等同你先锋等级的<b class="green">临时生命值</b>。</p>
+<p class="para">此外，你每次消耗技力发动战术家战技时，可以选择一个战术援军，为其赋予等同你先锋等级的<b class="green">临时生命值</b>。</p>
 <br>
 <h2>15级：快速增兵 Rapid Surge</h2>
 <p class="para">你可以召唤更多的战术援军来协助作战。你从以下两个能力中选择一个获得：</p>
-<p class="para"><b>增效集群。</b>以一个<b class="green">魔法</b>动作并消耗至多4点技力，你可以在自己的战术援军附近5尺，再召唤至多等同所消耗技力点个的临时战术援军。临时战术援军使用与战术援军相同的数据，但是会在你下次开始回合时消失。</p>
+<p class="para"><b>增效集群。</b>以一个<b class="green">魔法</b>动作并消耗至多4点技力，你可以在自己的战术援军附近5尺，再召唤至多等同所消耗技力点个的临时战术援军。临时战术援军使用与战术援军相同的数据，但是会在本回合结束时消失。</p>
 <p class="para"><b>强化复苏。</b>当你的战术援军死亡时，以一个<b class="green">反应</b>并消耗1点技力，你可以立即以满生命值复活该战术援军。作为反应的一部分，你命令该战术援军立即发动一次攻击。</p>
 <br>
 <h2>18级：战术领袖 Tactical Leader</h2>
 <p class="para">你的战术援军可以充分掩护你的盟友发起进攻。你获得以下特性：</p>
 <p class="para"><b>援军掩护Reinforcement Cover。</b>身处你的战术援军5尺范围内的盟友被远程攻击时，该攻击检定具有<b class="green">劣势</b>。</p>
-<p class="para"><b>援军恢复Reinforcement Recovery。</b>你的战术援军死亡时，你恢复1点技力。</p>
+<p class="para"><b>援军恢复Reinforcement Recovery。</b>你的战术援军死亡，且你未将其复苏时，你恢复1点技力。</p>
 <br>
 <hr>
 <br>
@@ -253,7 +254,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <table class="stat">
 <tr><td><b>AC </b>11+熟练加值（PB）</td>
 <td width="40%"><b>先攻 </b>+1（11）</td></tr>
-<tr><td colspan="2"><b>HP </b>6+熟练加值（PB）的四倍</td></tr>
+<tr><td colspan="2"><b>HP</b> 4 + 你等级的三倍 [d4×你等级的生命骰]</td></tr>
 <tr><td colspan="2"><b>速度 </b>20 尺，或10尺飞行（悬浮）</td></tr>
 </table>
 <table class="stat-abilities">

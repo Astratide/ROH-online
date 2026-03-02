@@ -103,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(155);
+  parent.nav.tree.selectNode(160);
  }else{
   setTimeout("syn()",500);
 }
@@ -149,7 +149,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <p class="para"><b>伤害Damage。</b>发射器武器造成的<b>伤害</b>以及<b>精通</b>属性仅取决于其<b>弹药</b>，因此魔法发射器武器无法带来伤害上的增益。除非另有说明，否则你的发射器武器攻击的伤害掷骰<i>不能加上你的攻击属性调整值</i>。此外，你必须在进行攻击掷骰前声明要使用的弹药类型。</p>
 <p class="para"><b>抛射Projectile。</b>用抛射武器进行的攻击可以无视目标生物从半身掩护以及3/4掩护中给予的AC加成。此外，使用抛射武器攻击15尺内的目标时具有<b class="green">劣势</b>。</p>
-<p class="para"><b>爆炸Blast。</b>使用具有爆炸属性的弹药进行的攻击不因为目标倒地而承受<b class="green">劣势</b>。命中时，主目标受到完整伤害，而源自目标15尺<b class="green">立方</b>区域内的其他生物会受到一半的伤害。</p>
+<p class="para"><b>爆炸Blast。</b>使用具有爆炸属性的弹药进行的攻击不因为目标倒地而承受<b class="green">劣势</b>。命中时，主目标受到完整伤害，而源自目标10尺<b class="green">球状</b>区域内的其他生物会受到一半的伤害。</p>
 <p class="para"><b>可控Controllable。</b>使用具有可控属性的弹药造成伤害时，你可以选择哪些生物不会受到伤害。</p>
 <p class="para"><b>特殊Special。</b>具有特殊属性的弹药在命中后会有特殊的效果，如下所示： </p>
 <ul>
@@ -182,25 +182,25 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>手持发射器</td>
 	<td>   弹药(射程30/60)，轻型，弹容(2)</td>
 	<td style="width: 3em;">3磅</td>
-	<td>1k LMD</td>
+	<td>10 gp</td>
 </tr>
 <tr>
 	<td> 注射枪</td>
 	<td> 弹药(射程20/60)，轻型，弹容(15)</td>
 	<td style="width: 3em;">2磅</td>
-	<td>4w LMD</td>
+	<td>5&nbsp;gp</td>
 </tr>
 <tr>
 	<td> 信号枪</td>
 	<td>  弹药(射程100/200)，轻型，弹容(1)</td>
 	<td style="width: 3em;">2磅</td>
-	<td>4w LMD</td>
+	<td>5&nbsp;gp</td>
 </tr>
 <tr>
 	<td> 高压水炮</td>
 	<td>  弹药(射程30/60)，双手，弹容(10)</td>
 	<td style="width: 3em;">5磅</td>
-	<td>4w LMD</td>
+	<td>20&nbsp;gp</td>
 </tr></table>
 <br>
 <table class="custom-table" id="left" style="width: 90%; font-size: 0.95em;">
@@ -231,7 +231,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>缓速</td>
 	<td>特殊, 装填：注射枪</td>
 	<td>2磅</td>
-	<td>100 LMD</td>
+	<td>1 gp</td>
 </tr>
 <tr>
 	<td>信号弹(10)</td>
@@ -239,7 +239,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>推离</td>
 	<td>特殊, 装填：信号枪</td>
 	<td>2磅</td>
-	<td>2k LMD</td>
+	<td>20 gp</td>
 </tr>
 <tr>
 	<td>压缩气罐(10)</td>
@@ -247,7 +247,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>推离</td>
 	<td>特殊, 装填：高压水炮</td>
 	<td>4磅</td>
-	<td>2k LMD</td>
+	<td>20 gp</td>
 </tr></table>
 <br>
 <h4>军用发射器</h4>
@@ -266,19 +266,19 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>轻型发射器</td>
 	<td>弹药(射程60/180)，弹容(4发)</td>
 	<td>6磅</td>
-	<td>5w LMD</td>
+	<td>500 gp</td>
 </tr>
 <tr>
 	<td>重型发射器</td>
 	<td>弹药(射程120/360)，重型，双手，弹容(6发)</td>
 	<td>10磅</td>
-	<td>10w LMD</td>
+	<td>1000 gp</td>
 </tr>
 <tr >
 	<td>单兵突击炮</td>
 	<td>弹药(射程180/600)，重型，双手，弹容(6发)，抛射</td>
 	<td>90磅</td>
-	<td>20w LMD</td>
+	<td>2000 gp</td>
 </tr></table>
 <br>
 <table class="custom-table" id="left" style="width: 90%; font-size: 0.95em;">
@@ -303,7 +303,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>缓速</td>
 	<td>爆炸，可控</td>
 	<td>2磅</td>
-	<td>1k LMD</td>
+	<td>10 gp</td>
 </tr>
 <tr>
 	<td>震憾榴炮(10)</td>
@@ -311,7 +311,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>削弱</td>
 	<td>爆炸，特殊</td>
 	<td>4磅</td>
-	<td>5k LMD</td>
+	<td>50 gp</td>
 </tr>
 <tr>
 	<td>照明榴炮(10)</td>
@@ -319,7 +319,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>缓速</td>
 	<td>爆炸，特殊</td>
 	<td>4磅</td>
-	<td>5k LMD</td>
+	<td>50 gp</td>
 </tr>
 <tr>
 	<td>曳光榴炮(10)</td>
@@ -327,7 +327,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>侵扰</td>
 	<td>爆炸，可控</td>
 	<td>4磅</td>
-	<td>5k LMD</td>
+	<td>50 gp</td>
 </tr>
 <tr>
 	<td>爆霰榴炮(10)</td>
@@ -335,7 +335,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>擦掠</td>
 	<td>爆炸</td>
 	<td>4磅</td>
-	<td>7k LMD</td>
+	<td>70 gp</td>
 </tr>
 <tr>
 	<td>燃烧榴炮(10)</td>
@@ -343,7 +343,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>削弱</td>
 	<td>爆炸，特殊</td>
 	<td>4磅</td>
-	<td>7k&nbsp;LMD</td>
+	<td>70 gp</td>
 </tr>
 <tr>
 	<td>高爆榴炮(5)</td>
@@ -351,18 +351,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	<td>削弱</td>
 	<td>爆炸</td>
 	<td>5磅</td>
-	<td>1w&nbsp;LMD</td>
+	<td>100 gp</td>
 </tr>
 </tbody></table>
 <br>
 <div class="syntax">
 <h6>军用弹药管制</h6>
 <p class="para">基于游戏平衡性和安全理由，一些高杀伤性弹药比起其他弹药更难得到和制造。角色在未达到特定的等级之前，无法使用过强的弹药，在使用超出自己等级的弹药时，视为没有其熟练。然而，魔法或职业特性创造的弹药不受此限制。</p>
-<p class="para">玩家角色会在达到以下等级时，才将解锁对应的弹药（获得它们的熟练）。当你解锁一组新类型的榴弹后，你发射更早一级的榴弹可以发射时不计入损耗——这体现了你的弹药贮备已经充沛到了一个程度，以至于在合理的使用程度下不需要担心用完它们。</p>
+<p class="para">玩家角色会在达到以下等级时，才将解锁对应的弹药（获得它们的熟练）。当你解锁一组新类型的榴弹后，你发射更早一级的榴弹可以发射时不需要计算损耗——这体现了你的弹药贮备已经充沛到了一个程度，以至于在合理的使用程度下不需要担心用完它们。</p>
 <p class="para"><b>1级：</b>训练榴弹。</p>
 <p class="para"><b>7级：</b>震撼榴弹、照明榴弹、曳光榴弹。</p>
-<p class="para"><b>13级：</b>爆霰榴弹、燃烧榴弹。（视为非普通魔法弹药）</p>
-<p class="para"><b>17级：</b>高爆榴弹。（视为珍稀魔法弹药）</p>
+<p class="para"><b>13级：</b>爆霰榴弹、燃烧榴弹。（购买时视为非普通魔法弹药）</p>
+<p class="para"><b>17级：</b>高爆榴弹。（购买时视为珍稀魔法弹药）</p>
 </div>
 <br>
 <br>

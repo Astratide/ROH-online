@@ -167,10 +167,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：格斗技巧 Experienced&nbsp;Fighter</h2>
 <p class="para">作为一名斗士，你获得以下特性：</p>
-<p class="para"><b>徒手格斗。</b>你可以使用敏捷而非攻击调整值加在你的徒手打击攻击检定和伤害掷骰上。</p>
+<p class="para"><b>徒手格斗。</b>你可以使用敏捷而非力量调整值加在你的徒手打击攻击检定和伤害掷骰上。如果你有徒手战斗风格，你的徒手打击伤害骰在7级时提升至1d10，15级时提升至1d12。最后，你可以使用<b class="green">附赠动作</b>发动徒手打击。</p>
 <p class="para"><b>无甲防御。</b>你未着装任何护甲或持用盾牌时，你的AC等同10+敏捷调整值+感知调整值。</p>
-<p class="para"><strong>轻装上阵。</strong>你的先攻检定获得+1d8加值，且你的基础移动速度增加10尺。</p>  
-<p class="para">此外，你习得战技：迅捷连击。</p>  
+<p class="para"><b>轻装上阵。</b>你的先攻检定可以加上你的感知调整值，且你的基础移动速度增加10尺。</p>  
+<p class="para">此外，你的基础战技被替换为战技：迅捷连击。</p>  
 <div class="syntax">
 <table>
   <tr>
@@ -195,7 +195,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：灵动闪避 Agile&nbsp;Evasion</h2>
 <p class="para">你灵敏的反应允许你闪避来自敌人的攻击，你获得以下效果：</p>
 <p class="para"><b>灵动闪避。</b>若其他生物以一次武器攻击命中你时，你未持用武器或穿戴重甲，则你可以采取<b class="green">反应</b>，应对这次攻击将你的熟练加值加入到你的AC中，此举可能导致本次攻击变为未命中。</p>
-<p class="para"><b>快速机动。</b>你可以<b class="green">附赠动作</b>执行<b class="green">撤离</b>、<b class="green">疾走</b>或<b class="green">回避</b>。</p>
+<p class="para"><b>快速机动。</b>你可以<b class="green">附赠动作</b>执行<b class="green">撤离</b>、<b class="green">疾走</b>或<b class="green">回避</b>。此特性一经使用，直到你投掷先攻或消耗技力发动一次战技前不可再次使用。</p>
 <br>
 <h2>7级：战场机动 Battlefield&nbsp;Maneuvers</h2>
 <p class="para">你的机动性无与伦比，若你未穿戴护甲也没有持用盾牌，你获得以下增益：</p>
@@ -208,7 +208,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">此外，你对战场的关注使得你获得感知豁免的熟练。</p>
 <br>
 <h2>15级：震撼冲拳 Deterent&nbsp;Knock</h2>
-<p class="para">你的全神贯注特性中的反应攻击改为可以进行两次徒手打击而非一次。</p>
+<p class="para">你的<b>全神贯注</b>特性中的反应攻击改为可以进行两次徒手打击而非一次。</p>
 <p class="para">此外，你习得战技：震撼冲拳。</p>
 <div class="syntax">
 <table>
@@ -222,10 +222,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       <h6>&nbsp;震撼冲拳&nbsp;|&nbsp;Deterent&nbsp;Knock</h6>
       <div class="cost" id="green"><p class="light">攻击命中</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
+      <div class="time">
+        <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
+        立即</p>
+      </div>
     </td>
   </tr>
 </table>
-<p>你的徒手打击攻击检定命中时，可以消耗1技力来发动此战技。你立即让这次攻击额外造成6d6的力场伤害，且必须通过DC19的体质豁免。豁免失败的生物直到其回合开始前陷入<b class="green">震慑</b>，豁免成功的生物在1分钟内进行的下次D20检定具有<b class="green">劣势</b>。</p></div>
+<p>你的徒手打击攻击检定命中时，可以消耗1技力来发动此战技。你立即让这次攻击额外造成6d6的力场伤害，且必须通过体质豁免（DC=8+你感知调整值+熟练加值）。豁免失败的生物直到其回合结束前陷入<b class="green">震慑</b>，豁免成功的生物在1分钟内进行的下次D20检定具有<b class="green">劣势</b>。</p></div>
 <br>
 <h2>18级：武道宗师 Martial Art Mastery</h2>
 <p class="para">你消耗技力发动了战技的回合，你进行的徒手攻击触及范围变为15尺，且在徒手攻击的攻击检定中的D20上掷出18或更高即可视为造成重击。</p>

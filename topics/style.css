@@ -386,7 +386,6 @@ table.custom-table th, table.custom-table td { border: none;text-indent:6px; }
 table.custom-table th { background-color: transparent; } 
 table.custom-table tr:nth-child(even) { background-color: #d8d8d8; } 
 table.custom-table td:nth-child(3) {text-align: left;} 
-table.custom-table th:nth-child(3) {text-align: left;} 
 
 table.custom-table#left { text-align: left;text-indent: 2px;}
 table.custom-table#left th {text-align: left;} 

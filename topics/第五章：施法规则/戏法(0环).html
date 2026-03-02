@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(173);
+  parent.nav.tree.selectNode(179);
  }else{
   setTimeout("syn()",500);
 }
@@ -256,7 +256,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="grey">塑能 戏法（术士，魔契师，法师）</p>
 <p><b>出处：</b>《元素法术书（The Elemental Spellbook）》</p>
 <p><b>施法时间：</b>动作</p>
-<p><b>施法距离：</b>触及</p>
+<p><b>施法距离：</b>触碰</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立刻</p>
 <p class="para">你伸手去触摸一个生物，让它的身体冷得为之颤抖。你进行一次近战法术攻击。若命中，目标受到1d12寒冷伤害。</p>
@@ -287,14 +287,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">以这种方式制作的物件在法术结束后就会失去其魔法耐久性，并散落成一些无用的碎石块。如果你多次施展该法术，则可以同时维持至多三个效应，并且可以用一个动作解散其中一种效应。</p>
 <br>
 <br>
-<h5 id="火焰御守">火焰御守丨Flame Ward</h5>
+<h5 id="炽寒御守">炽寒御守丨Blazing Cold&nbsp;Ward</h5>
 <p class="grey">戏法 防护（德鲁伊，术士，法师）</p>
 <p><b>出处：</b>《元素法术书（The Elemental Spellbook）》</p>
 <p><b>施法时间：</b>动作</p>
 <p><b>施法距离：</b>自身</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>1轮</p>
-<p class="para">你的身体被炽热的红色符文所环绕，为你形成了一道温暖的屏障。你获得5点<b class="green">临时生命值</b>，持续到你的下回合开始。只要以此形成的临时生命还在，你就对火焰和寒冷伤害具有<b class="green">抗性</b>。</p>
+<p class="para">你的身体被炽热或寒冽的符文所环绕，为你形成了一道屏障。你获得5点<b class="green">临时生命值</b>，持续到你的下回合开始。只要以此形成的临时生命还在，你就对火焰和寒冷伤害具有<b class="green">抗性</b>。</p>
 <br>
 <br>
 <h5 id="重力压迫">重力压迫丨Gravity Pressure</h5>
@@ -317,16 +317,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>持续时间：</b>立即</p>
 <p class="para">你挥动手势，呼唤出一股骤然爆发的水压洪流，直扑施法距离内的一个目标，或是一个5尺<b class="green">立方</b>区域。如果目标是一个体型不超过大型的生物，其必须进行一次敏捷豁免，豁免失败则应击<b class="green">倒地</b>或被推开5尺（由你选择）。如果目标是物件且重量不超过100磅，则自动被推开5尺。水流还会扑灭目标身上或区域内的普通火焰，魔法火焰则不受影响。</p>
 <p><b>戏法强化：</b>当你达到5级（10尺）、11级（15尺）、17级（20尺）时，对生物或物件推动的距离增加。</p>
-<br>
-<br>
-<h5 id="寒冰御守">寒冰御守丨Ice Ward</h5>
-<p class="grey">防护 戏法（德鲁伊，术士）</p>
-<p><b>出处：</b>《元素法术书（The Elemental Spellbook）》</p>
-<p><b>施法时间：</b>动作</p>
-<p><b>施法距离：</b>自身</p>
-<p><b>法术成分：</b>V、S</p>
-<p><b>持续时间：</b>1轮</p>
-<p class="para">蓝色的发光符文环绕着你，形成了一道寒冰魔法屏障。你获得5点<b class="green">临时生命值</b>，持续到你的下回合开始。只要以此形成的临时生命还在，你就对火焰和寒冷伤害具有<b class="green">抗性</b>。</p>
 <br>
 <br>
 <h5 id="电弧箭">电弧箭丨Jolt</h5>
@@ -373,25 +363,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>戏法强化：</b>到达更高等级时，这个法术的伤害会增加。在5级时，近战攻击会额外造成1d8点力场伤害。额外伤害会在11级（2d8）和17级（3d8）时分别增加1d8。</p>
 <br>
 <br>
-<h5 id="防护寒冷">防护寒冷丨Protect from Cold</h5>
-<p class="grey">戏法 防护（术士，法师）</p>
+<h5 id="防护炽寒">防护炽寒丨Protect from Heat and Cold</h5>
+<p class="grey">戏法 防护（德鲁伊，术士，法师）</p>
 <p><b>出处：</b>《明日方舟5e（AK5e1st）》</p>
 <p><b>施法时间：</b>动作</p>
 <p><b>施法距离：</b>10尺</p>
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>专注，至多1小时</p>
-<p class="para">你为一个生物提供抵御寒冷的保护。该生物对下一次受到的寒冷伤害具有<b class="green">抗性</b>。受到一次寒冷伤害后，效果结束。</p>
-<p><b>戏法强化：</b>当你达到5级（可选2个目标）、11级（3个目标）和17级（4个目标）时，可额外指定目标。</p>
-<br>
-<br>
-<h5 id="防护炽热">防护炽热丨Protect from Heat</h5>
-<p class="grey">戏法 防护（术士，法师）</p>
-<p><b>出处：</b>《明日方舟5e（AK5e1st）》</p>
-<p><b>施法时间：</b>动作</p>
-<p><b>施法距离：</b>10尺</p>
-<p><b>法术成分：</b>V、S</p>
-<p><b>持续时间：</b>专注，至多1小时</p>
-<p class="para">你为一个生物提供抵御炽热的保护。该生物对下一次受到的火焰伤害具有<b class="green">抗性</b>。受到一次火焰伤害后，效果结束。</p>
+<p class="para">你为一个生物提供抵御炽热或寒冷的保护。该生物对下一次受到的火焰或寒冷伤害具有<b class="green">抗性</b>。受到一次火焰或寒冷伤害后，效果结束。</p>
 <p><b>戏法强化：</b>当你达到5级（可选2个目标）、11级（3个目标）和17级（4个目标）时，可额外指定目标。</p>
 <br>
 <br>

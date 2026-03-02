@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(72);
+  parent.nav.tree.selectNode(73);
  }else{
   setTimeout("syn()",500);
 }
@@ -125,7 +125,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
 		<A href="伏击客.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
-		<A href="../../第二章：角色资源.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
+		<A href="行商.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
 	PRTS资料库 > <A href="../../第一章：职业分支.html">第一章：职业分支</A> &gt; <A href="../特种.html">特种</A> &gt;  <b>陷阱师</b>
 </div>
@@ -163,28 +163,29 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>天罗地网</b></td></tr></tbody></table><br>
 <hr>
 <br>
-<h2>3级：战术牵引 Tactical Haul</h2>
+<h2>3级：诡雷专家 Trap Mastery</h2>
 <p class="para">你深知，最致命的攻击往往来自最意想不到的地方，你获得以下特性：</p>
-<p class="para"><b>陷阱大师。</b>你热衷于制作陷阱，并且善于使用陷阱辅助自己的战斗。当你完成一次长休后，你制造等同你陷阱师等级个陷阱携带之，时刻准备在身上，并且你可以使用<b class="green">附赠动作</b>在触及内布置1个陷阱。</p>
-<p class="para">你可以在布置陷阱时选择陷阱的类型：暗箭、旋刃、震荡、改装（此类陷阱需要你在布置时同时消耗一件提到的冒险装备）。当有生物进入陷阱的触及，或在其射程内移动时，陷阱会自动执行对应的效果，然后自我销毁。</p>
+<p class="para"><b>心灵手巧。</b>你习得下述物品的制作方法：燃油/滚珠/捕猎陷阱/强酸/炽火胶/铁蒺藜/捕网。只要你有相当于装备一半价值的原材料，你就可以在完成一次长休后制作若干份这些装备，数量等同你的熟练加值。此外，如果原本布设或使用这些装备需要<b class="green">操作</b>动作，你可以改为使用<b class="green">附赠动作</b>进行布设。</p>
+<p class="para"><b>陷阱大师。</b>你热衷于制作陷阱，并且善于使用陷阱辅助自己的战斗。你可以使用<b class="green">附赠动作</b>在触碰范围内创建并布置一个陷阱。此特性一经使用，你必须投掷先攻，或是消耗技力发动战技后才能重新使用。</p>
+<p class="para">你可以在布置陷阱时选择陷阱的类型：暗箭、旋刃、震荡、改装（此类陷阱需要你在布置时同时消耗一件提到的冒险装备）。当敌人进入陷阱的触及，或在其射程内移动时，陷阱会采取反应，自动执行对应的效果，然后自我销毁。</p>
 <div class="syntax">
 <h4>机械陷阱 Mechanical Trap</h4>
 <p class="grey"><i>微型物件</i></p>
-<p><strong>AC</strong>&nbsp;13+PB</p>
-<p><strong>HP</strong>&nbsp;2×陷阱师等级</p>
-<p><strong>伤害阈值</strong>&nbsp;2+陷阱师等级×1/2</p>
-<p><strong>察觉DC</strong>&nbsp;等同你的法术豁免DC</p>
+<p><b>AC</b>&nbsp;12+PB</p>
+<p><b>HP</b>&nbsp;5+陷阱师等级</p>
+<p><b>伤害阈值</b>&nbsp;PB×2</p>
+<p><b>察觉DC</b>&nbsp;等同你的法术豁免DC</p>
 <p>——特质Traits——</p>
-<p><b>难以捉摸。</b>陷阱处于<b class="green">隐形</b>状态，被动察觉高于等于陷阱的察觉DC的生物可以自动发现该陷阱，其他生物可以通过<b class="green">搜索</b>动作进行察觉检定，对抗陷阱的察觉DC，来尝试发现陷阱。</p>
+<p><b>难以捉摸。</b>陷阱处于<b class="green">隐形</b>状态，被动察觉高于等于陷阱的察觉DC的生物可以看穿该隐形，其他生物可以通过<b class="green">搜索</b>动作进行察觉检定，对抗陷阱的察觉DC，来尝试看穿陷阱。</p>
 <p>——触发效果Effects——</p>
-<p><b>暗箭。</b><i>远程攻击：</i>命中使用你的法术攻击加值，射程20/60尺。<i>命中：</i>1d4点穿刺伤害。</p>
-<p><b>旋刃。</b><i>近战攻击：</i>命中使用你的法术攻击加值，触及10尺。<i>命中：</i>1d6点挥砍伤害。</p>
-<p><b>震荡。</b><i>敏捷豁免：</i>使用你的法术豁免DC，触发陷阱的10尺内生物。<i>失败：</i>1d10点力场伤害。</p>
-<p><b>改装。</b>陷阱如同燃油/滚珠/捕猎陷阱/强酸/炽火胶/铁蒺藜/捕网一般发挥效果。</p>
+<p><b>暗箭。</b><i>远程攻击：</i>命中使用你的法术攻击加值，射程20/60尺。<i>命中：</i>1d4点穿刺伤害，以及组件效果。</p>
+<p><b>旋刃。</b><i>近战攻击：</i>命中使用你的法术攻击加值，触及10尺。<i>命中：</i>1d6点挥砍伤害，以及组件效果。</p>
+<p><b>震荡。</b><i>敏捷豁免：</i>使用你的法术豁免DC，陷阱的10尺内生物。<i>失败：</i>1d10点力场伤害，以及组件效果。</p>
+<p><strong>改装。</strong>陷阱如同燃油/强酸/炽火胶/滚珠/捕猎陷阱/铁蒺藜/捕网被使用时一般发挥效果。</p>
 </div>
 <p class="para"><b>本职法术。</b>你对机关的理解已到达他人看来如同魔法的境界，通过机械结构你能实现那些常人无法想象的事情。你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
 <br>
-<h4>钩锁师法术表</h4>
+<b>陷阱师法术表</b>
 <table class="custom-table" id="left" style="max-width: 500px;">
   <colgroup>
   <col style="width: 5em;">
@@ -198,37 +199,36 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b class="spell">警报术，侦测魔法</b></td></tr>
   <tr>
     <td style="text-align: center;">二环</td>
-    <td><b class="spell">荆棘丛生，侦测思想</b></td></tr>
+    <td><b class="spell">警戒箭阵，秘法锁</b></td></tr>
   <tr>
     <td style="text-align: center;">三环</td>
-    <td><b class="spell">蛛咬术，箭如雨下</b></td></tr>
+    <td><b class="spell">鹰眼术，箭如雨下</b></td></tr>
   <tr>
     <td style="text-align: center;">四环</td>
-    <td><b class="spell">碧水法球，鬼斧神工</b></td></tr>
+    <td><b class="spell">困惑术，鬼斧神工</b></td></tr>
   <tr>
     <td style="text-align: center;">五环</td>
-    <td><b class="spell">万箭齐发，造物术</b></td></tr>
+    <td><b class="spell">活化物件，造物术</b></td></tr>
     </tbody></table>
 <br>
 
 <br>
 <h2>3级：工械熟手 Skilled Artificer</h2>
 <p class="para">你的双手拥有化腐朽为神奇的魔力，寻常材料在你手中能变成令人叹为观止的致命艺术品，你获得以下特性：</p>
-<p class="para"><b>心灵手巧。</b>你习得下述物品的制作方法：燃油/滚珠/捕猎陷阱/强酸/炽火胶/铁蒺藜/捕网。只要你有相当于装备一半价值的原材料，你就可以在完成一次长休后制作若干份这些装备，数量等同你的熟练加值。此外，如果原本布设这些装备需要<b class="green">操作</b>动作，你可以改为使用<b class="green">附赠动作</b>进行布设。</p>
-<p class="para"><b>离奇先见。</b>投掷先攻时，你可以立即声称自己的战场上布置了一个陷阱，而无须声明所布置的陷阱位置或效果。当一个可见生物移动时，你可以采取<b class="green">反应</b>，宣布自己的陷阱位于对方的移动路径上。该生物立即受到你所选的陷阱效应。</p>
-<p class="para">此外，你的基础战技被替换为战区肃清。</p>  
+<p class="para"><b>离奇先见。</b>投掷先攻时，你可以立即声称自己的战场上布置了一个陷阱，而无须声明所布置的陷阱位置或效果。当一个可见生物移动时，你可以采取<b class="green">反应</b>，宣布自己的陷阱位于对方的移动路径上。该生物立即受到你所选的陷阱效应（只有这个生物会受到影响）。这个效果在一场战斗中只能使用一次。</p>
+<p class="para">此外，你习得战技：迅捷布置。</p>  
 <div class="syntax">
 <table>
   
   <tr>
     <td>
       <div class="skill">
-      <IMG class="icon" src="../../图片资源/技能图标/特种/技能_战术牵引.png">
+      <IMG class="icon" src="../../图片资源/技能图标/特种/技能_迅捷布置.png">
       </div>
     </td>
     <td>
-      <h6>战区肃清丨Zone Purge</h6>
-      <div class="cost" id="green"><p class="light">立即</p></div>
+      <h6>迅捷布置丨Swift Deployment</h6>
+      <div class="cost"><p class="light">附赠动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
@@ -237,46 +237,38 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作消耗1技力来发动此战技。你立即在60尺内布置2个陷阱。在这两个陷阱触发后，其周围20尺内会弥漫着无形的力场，被视为<b class="green">困难地形</b>，持续1分钟。</p></div>
+<p>你可以附赠动作消耗1技力来发动此战技。你立即在60尺内一个可见空地上布置一个机械陷阱。直到本回合结束前：你在执行攻击动作时，可以额外发动一次攻击；你可以替换攻击动作中的一次或多次攻击，改为在60尺范围内布置陷阱（无布置次数限制）。</p></div>
 <br>
-<h2>6级：集束牵引 Cluster Traction</h2>
-<p class="para">你对陷阱的应用出神入化，你获得以下特性：</p>
-<p class="para"><b>落井下石。</b>当你攻击一个移动速度为0的生物时，你的攻击额外造成1d8点你的精通伤害。</p>
-<p class="para">此外，你习得战技：集束牵引。</p>
+<h2>6级：陷阱改良 Trap Refinement</h2>
+<p class="para">你进一步改良了你的机械陷阱。你习得下述特性：</p>
+<p class="para"><b>陷阱组件。</b>你可以在布置机械陷阱时消耗一枚1~5环的法术位来强化效果。你可以在到达下述特定等级时习得不同的组件。</p>
 <div class="syntax">
-<table>
-  
-  <tr>
-    <td>
-      <div class="skill">
-      <IMG class="icon" src="../../图片资源/技能图标/特种/技能_集束牵引.png">
-      </div>
-    </td>
-    <td>
-      <h6> 集束牵引丨Cluster Traction</h6>
-      <div class="cost" id="green"><p class="light">回合开始</p></div>
-      <div class="trigger"><p class="light">消耗 1 技力</p></div>
-      <div class="time">
-        <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
-        本回合结束</p>
-      </div>
-    </td>
-  </tr>
-</table>
-<p>你可以在自己回合开始时消耗1点技力来发动此战技。直到本回合结束前：若你以某效应将生物拉近，你可以选择目标生物周围10尺内若干个AC以及体型均不大于原目标的生物，那些目标被拉近相同的距离。此外，所有所选目标无论是否可以被拉动，都会受到6d6你的精通伤害。</p></div>
+<h4>组件 Components</h4>
+<p class="grey"><i>在布置陷阱时同时消耗一枚法术位，使得陷阱触发时带来额外的效应。</i></p>
+<p class="para"><b>燃烧（6级+）：</b>对每个目标额外每法术环阶d8点火焰伤害。然后若目标生物对火焰伤害没有抗性或免疫则开始<b>燃烧</b>。</p>
+<p class="para"><b>套索（6级+）：</b>每个目标进行力量豁免（DC同你法术DC），否则被陷阱束缚至多一分钟。在其每个回合结束时，可重复此豁免以挣脱。</p>
+<p class="para"><b>能量（10级+）：</b>陷阱周围20尺的每个生物进行敏捷豁免（DC同你法术DC），失败受到每法术环阶d6的你精通伤害，成功仅受半伤。范围内若有其他陷阱则会一并触发。</p>
+<p class="para"><b>落石（10级+）：</b>每个目标进行体质豁免（DC同你法术DC），失败则受到每法术环阶d10点的钝击伤害并<b class="green">倒地</b>，成功仅受半伤。</p>
+<p class="para"><b>奥法（15级+）：</b>在布置陷阱时并消耗法术位添加此组件时，可以以该法术位，施展一道施法时间为动作，无需专注的法术，将法术效果储存在陷阱中。当陷阱被触发时，法术立刻释放，使用你的施法属性。如果法术有目标，则以触发陷阱的生物为目标；如果法术影响一个区域，则该区域以此生物为中心；如果法术召唤敌对生物或创造伤害性质的物件或陷阱，则这些造物将显现在尽可能靠近触发者的地方并攻击它。</p>
+</div>
 <br>
 <h2>10级：机枢大师 Mechanist Expertise</h2>
-<p class="para">你的陷阱的复杂程度与致命性远超常人想象。你习得下述特性：
+<p class="para">你的陷阱的复杂程度与致命性远超常人想象。你习得下述特性：</p>
+<p class="para"><b>熟能生巧。</b>出自你手所制造的冒险用品已经数不胜数，且远比市面上的更加精良。若你制造的燃油/强酸/炽火胶/滚珠/捕猎陷阱/铁蒺藜/捕网使一个生物进行豁免检定，则它改为使用你的法术豁免DC。
 </p>
-<p class="para">熟能生巧。出自你手所制造的冒险用品已经数不胜数，且远比市面上的更加精良。若你制造的燃油/滚珠/捕猎陷阱/强酸/炽火胶/铁蒺藜/捕网使一个生物进行豁免检定，则它改为使用你的法术豁免DC。
-</p>
-<p class="para">连环机括。你的陷阱在触发后，可以发起两次攻击
+<p class="para"><strong>陷阱塑能。</strong>你可以在机械陷阱的伤害掷骰以及组件造成的伤害中加入你的施法属性调整值。
 </p>
 <br>
 <h2>15级：天罗地网 Certain Doom</h2>
 <p class="para">对你而言，战斗已经是一场早已编排好的舞会。你习得下述特性：</p>
-<p class="para"><strong>战地工事。</strong>你已经学会了如何极快地趁乱布置陷阱。在每次战斗的第一个回合开始时，你可以利用反应在120尺内布下3个陷阱</p>
-<p class="para"><strong>绝妙陷阱。</strong>你可以布下那些近乎无解的致命杰作。你可以选择为单个陷阱选择两项不同的陷阱创新特性，或者为其注入多道不同的法术（法术环阶之和至多小于等于特种等级的三分之一（向上取整）且不大于9）。这些效果可以按照你设定的顺序依次触发，</p>
+<p class="para"><b>抢先部署。</b>你已经学会了如何极快地趁乱布置陷阱。投掷先攻时，只要你未被突袭，则你可以采取反应，在120尺内可见的至多两个空地分别布下2个陷阱。</p>
+<p class="para"><strong>增强机括。</strong>你的陷阱发动的攻击命中时，可以额外掷一枚伤害骰。</p>
+<p class="para"><b> 额外攻击。</b>你在自己回合内执行<b class="green">攻击</b>动作时，可以发动三次而非一次攻击。</p>
+<br><br>
+<div class="syntax">
+  <p><b>本章内容来源：</b>玩家投稿</p>
+  <p><b>作者：</b>...（3300629434）</p>
+</div>
 <br><br>
 </div>
 </div>
