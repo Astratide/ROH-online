@@ -166,7 +166,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：怪杰把戏 Geek's Tricks</h2>
 <p class="para">作为一名怪杰，你获得以下特性：</p>
 <p class="para"><b>异质武器 Eccentric Weapon。</b>你选择一把可以单手持用的远程武器（可以是铳械），并获得其熟练和精通（你可以在升级时重选）。你使用其发动攻击时，可以使用你的施法属性调整值而非敏捷作为攻击与伤害属性。</p>
-<p class="para"><b>跳跃登场 Jump Scare。</b>你可以将你的施法属性调整值加入先攻检定中。</p>
+<p class="para"><b>闪亮登场 Dramatic Entrance。</b>你可以将你的施法属性调整值加入先攻检定中。</p>
 <p class="para"><b>风险骰子 Risk Dice。</b>每回合仅一次，你要进行D20检定时，你可以使其具有<b class="green">优势</b>，不过你这么做时，需要投掷并消耗一枚生命骰并流失等同结果的生命值。而且如果仍检定失败，你需要在<b>狂野意外事件表</b>上掷骰以确定随机效应。</p>
 <br>
 <h2>3级：愚人之策 Fool's Gambit</h2>
@@ -183,7 +183,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>盟友幸运效应</b></td></tr>
   <tr>
     <td style="text-align: center;">1</td>
-    <td>目标陷入<b class="green">束缚</b>直到本轮结束，同时流失1d8+其等级/CR的生命值</td></tr>
+    <td>目标陷入<b class="green">束缚</b>直到本轮结束，同时流失1d8+其等级或CR的生命值</td></tr>
   <tr>
     <td style="text-align: center;">2</td>
     <td>你与目标在本轮结束前，动作将会迅捷无比，如同受到<b class="spell">加速术</b>一样</td></tr>
@@ -195,7 +195,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>你与目标在本轮结束前，首次命中的攻击额外造成你熟练加值枚d6的精通伤害</td></tr>
   <tr>
     <td style="text-align: center;">5</td>
-    <td>目标立即恢复1d8+其等级/CR的生命值，或获得等额<b class="green">临时生命值</b></td></tr>
+    <td>目标立即恢复1d8+其等级或CR的生命值，或获得等额<b class="green">临时生命值</b></td></tr>
   <tr>
     <td style="text-align: center;">6</td>
     <td>目标在<b>狂野意外事件表</b>上掷骰以确定额外随机效应</td></tr>
@@ -221,7 +221,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>你与目标在本轮结束前，获得<b class="green">D4脆弱</b></td></tr>
   <tr>
     <td style="text-align: center;">4</td>
-    <td>目标立即受到你熟练等级枚d6的精通伤害</td></tr>
+    <td>目标立即受到你熟练加值枚d6的精通伤害</td></tr>
   <tr>
     <td style="text-align: center;">5</td>
     <td>目标陷入<b class="green">中毒</b>直到本轮结束，此中毒期间目标还会<b class="green">失能</b></td></tr>
@@ -230,11 +230,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>目标在<b>狂野意外事件表</b>上掷骰以确定额外随机效应</td></tr>
 </tbody></table><br>
 <br>
-<br>
 <h2>6级：混乱回馈 Chaotic Feedback</h2>
 <p class="para">你学会了用不可预测的方式驾驭这些力量，即使付出代价也在所不惜。</p>
 <p class="para"><b>混乱回馈。</b>每当你消耗技力发动战技时，你恢复一定生命值：每消耗1点技力，你就恢复1d8+你体质调整值的生命值。</p>
-
 <p class="para">此外，你习得战技：致命玩笑 Lethal Joke。</p>  
 <div class="syntax">
 <table>
@@ -251,7 +249,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
-        本回合结束</p>
+        立即</p>
       </div>
     </td>
   </tr>
@@ -266,10 +264,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>15级：命运拨弄 Fate's Twiddle</h2>
 <p class="para">你对偶然的理解已经超越了凡人，现在你能够轻轻拨动命运的琴弦，让结果向你所期望的方向微微偏移。你习得下述特性：</p>
 <p class="para"><b>拨动骰子</b>。每当你骰出<b>怪杰幸运表</b>、<b>怪杰厄运表</b>或<b>狂野意外事件表</b>后，你可以轻轻推动骰子，使得该结果增加或减少1点（不能低于1或超过上限）。此特性一经使用，直到你完成长休前不可再次使用。你也可以消耗1技力或20点生命值（无需动作）来恢复此特性的使用权。</p>
-<p class="para"><b>决定命运。</b>在自己回合中以一个<b class="green">魔法动作</b>并消耗一枚至少三环的法术位，你可以选择60尺内的一个可见目标，其立即受到<b>怪杰幸运表</b>或<b>怪杰厄运表</b>中的一个你指定的效应影响。</p>
+<p class="para"><b>决定命运。</b>以一个<b class="green">魔法动作</b>并消耗一枚至少三环的法术位，你可以选择60尺内的一个可见目标，其立即受到<b>怪杰幸运表</b>或<b>怪杰厄运表</b>中的一个你指定的效应影响。消耗的法术位每有一环，你还可以恢复1d8的已损生命值。</p>
+<p class="para"><b>额外攻击。</b>你在自己回合内执行<b class="green">攻击</b>动作时，可以发动三次而非一次攻击。</p>
 <br><br>
 <hr>
-<p class="para">当混沌真正失控时，任何事情都可能发生。以下是一些可能的结果，但谁也不知道下一秒会出现什么。</p>
+<br><br>
 <h2>狂野意外事件表</h2>
 <table class="custom-table" id="left">
   <colgroup>
@@ -287,7 +286,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>一道闪电从天而降，你受到4d6闪电伤害，周围10尺内每个生物必须通过DC15敏捷豁免，否则受到等量伤害</td></tr>
   <tr>
     <td style="text-align: center;">3</td>
-    <td>你突然发现自己脚下是一颗未引爆的流弹，以你为中心，30尺内所有生物受到8d6精通伤害（敏捷豁免减半）</td></tr>
+    <td>你突然发现自己脚下是一颗未引爆的流弹，你和源自你20尺内所有生物受到8d6精通伤害（DC15敏捷豁免减半）</td></tr>
   <tr>
     <td style="text-align: center;">4</td>
     <td>一股治疗能量爆发，你恢复3d10生命值，但20尺内所有其他生物损失等量生命值</td></tr>
@@ -314,7 +313,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>你的下一次攻击自动命中，且造成<b class="green">重击</b></td></tr>
   <tr>
     <td style="text-align: center;">12</td>
-    <td>你被传送至30尺内一个随机可见位置（DM决定）</td></tr>
+    <td>你被传送至60尺内一个随机可见位置（DM决定）</td></tr>
   <tr>
     <td style="text-align: center;">13</td>
     <td>你陷入<b class="green">束缚</b>状态，直到你下回合开始</td></tr>

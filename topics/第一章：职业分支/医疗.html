@@ -151,12 +151,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h3>医疗核心特质Core Medic Traits</h3>
 <p class="para">作为一名医疗，你具有以下职业核心特质：</p>
-<p><b><i>主属性Primary Ability。</i></b>自选智力、感知或魅力</p>
+<p><b><i>主属性Primary Ability。</i></b>【取决于施法属性】</p>
 <p><b><i>生命值骰Hit Point Die。</i></b>每医疗等级D6</p>
-<p><b><i>豁免熟练Saving Throw Proficiencies。</i></b>感知、以及所选施法属性</p>
-<p><b><i>技能熟练Skill Proficiencies。</i></b>选择2项：奥秘、历史、调查、医药、自然、察觉、巧手。</p>
+<p><b><i>豁免熟练Saving Throw Proficiencies。</i></b>【取决于施法属性】</p>
+<p><b><i>技能熟练Skill Proficiencies。</i></b>【取决于施法属性】</p>
 <p><b><i>武器熟练Weapon Proficiencies。</i></b>简易武器</p>
-<p><b><i>工具熟练Tool Proficiencies。</i></b>草药工具</p>
+<p><b><i>工具熟练Tool Proficiencies。</i></b>【取决于施法属性】</p>
 <p><b><i>护甲受训Armor Training。</i></b>轻甲、中甲</p>
 <p><b><i>起始装备Starting Equipment。</i></b> 你获得150GP，可以用来购买初始装备或作为起始财产。</p>
 <br>
@@ -531,9 +531,29 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h3>1级：医疗施法 Medic Arts</h3>
 <p class="para">作为一名医疗，你获得以下特性：</p>
-<p class="para"><b>施法属性。</b>从智力、感知或魅力中选择一项属性，这项属性将是你施展医疗法术的关键<b>施法属性</b>。你还获得所选属性的豁免熟练。特别地，由于医疗具有感知豁免熟练，因此如果你选择了感知，则你改为获得智力或魅力豁免的熟练。</p>
-<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 <b>精通伤害</b> 
-，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
+<p class="para"><b> 施法属性。</b>从智力、感知或魅力中选择一项属性，这项属性将是你施展医疗法术的<b>施法属性</b>。所选择的属性还会决定你的豁免熟练以及技能、工具熟练。</p>
+<div class="syntax">
+<h5>智慧 Intelligence</h5>
+<p class="para"><b>施法属性：</b>智力</p>
+<p class="para"><b>豁免熟练：</b>感知，魅力</p>
+<p class="para"><b>技能熟练：</b>从调查、宗教、自然、历史、察觉、游说或欺瞒中选择两项。</p>
+<p class="para"><b>工具熟练：</b>从草药工具、书法工具、炼金工具或一种赌具中选择一项。</p>
+</div>
+<div class="syntax">
+<h5>直觉 Intuition</h5>
+<p class="para"><b>施法属性：</b>感知</p>
+<p class="para"><b>豁免熟练：</b>智力，魅力</p>
+<p class="para"><b>技能熟练：</b>从调查、医药、求生、察觉、洞悉、驯兽或游说中选择两项。</p>
+<p class="para"><b>工具熟练：</b>从领航工具、制图工具、厨师工具或画家工具中选择一项。</p>
+</div>
+<div class="syntax">
+<h5>情感 Emotion</h5>
+<p class="para"><b>施法属性：</b>魅力</p>
+<p class="para"><b>豁免熟练：</b>智力，感知</p>
+<p class="para"><b>技能熟练：</b>从调查、察觉、洞悉、欺瞒、威吓、表演或游说中选择两项。</p>
+<p class="para"><b>工具熟练：</b>从易容工具、织布工具、珠宝匠工具或一种乐器中选择一项。</p>
+</div>
+<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 <b>精通伤害</b> ，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
 <p class="para"><b>法术表构建。</b>你将 <b>基础医疗法表</b> 以及一项你选择的 <b>领域法术表</b> 加入你的职业法表。前提是你符合它们的先决条件（见第五章“<A href="../第五章：施法规则/法术表构建.html" >法术表构建</a>”）。你也可以在升级时更改自己的领域法术表。</p>
 <p class="para"><b>法术位。</b>医疗特性表显示了你可用于施放1环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。</p>
 <p class="para"><b>准备法术。</b>你需要准备才可以此特性施展任何已知的医疗法术。最初，选择四道医疗戏法和两道1环医疗法术准备之。医疗特性表列出了你在每个等级最多可以准备的法术数量。每当你升级时，你就可以重新选择要准备的法术。你准备的法术环阶不能超过你的最大法术环阶。</p>
@@ -542,9 +562,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>1级：医护知识 Medical knowledge</h3>
 <p class="para">你的专业知识允许你在医疗养护方面帮助那些需要帮助的人，你获得以下特性：</p>
 <p class="para"><b>疗养。</b>作为完成一次长休或短休的一部分，你可以为至多等同你熟练加值个和你在一起休息的盟友进行疗养，然后所有受益的盟友获得<b class="green">英雄激励</b>。已经拥有英雄激励的生物可以改为获得1d6+你医疗等级的<b class="green">临时生命值</b>。</p>
-<p class="para"><b>医术。</b>你进行感知（医药或驯兽）检定时，可以额外加上你的智力或魅力调整值（至少1）。</p>
+<p class="para"><b>医术。</b>你进行感知（<b class="green">医药</b>或<b class="green">驯兽</b>）检定时，可以额外加上你的智力或魅力调整值（至少1）。</p>
 <br>
-<h3>2级：医疗战技 Medic Battleskills</h3><strong></strong>
+<h3>2级：医疗战技 Medic Battleskills</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
 <p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技，但是你只能在一回合内使用一个战技一次。你可以在之后每次获得医疗等级时，给你从医疗职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="../第二章：角色资源/战技.html" >战技特效</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
 <p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>

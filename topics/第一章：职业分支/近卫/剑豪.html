@@ -169,8 +169,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2> 3级：剑艺大师 Blade Artist</h2>
 <p class="para">作为一名剑豪，你获得以下特性：</p>
-<p class="para"><b>剑艺大师。</b>你选择一把没有双手属性的近战武器（通常是长剑或刺剑），然后获得其熟练以及精通。若你未持用盾牌，你可以将你单手持握的武器视为具有<b class="green">轻型</b>属性，前提是该武器原本没有重型属性。</p> 
-<p class="para"><b>剑刃连击。</b>你应用武器的轻型词条而得以发动额外武器攻击的时候，你可以使用同一把武器而非另一把武器来发动此次攻击。</p> 
+<p class="para"><b>军武大师。</b>你选择一把军用武器（可以是铳械），然后获得其熟练以及精通。当你单手持握这把武器，且未持用盾牌时，你面对近战攻击的AC获得+1加值。</p> 
+<p class="para"><b>剑刃连击。</b>若你未持用盾牌，你可以<b class="green">附赠动作</b>使用一把你能单手持用攻击的武器发动攻击，但如果该武器有重型属性，则此次攻击伤害不加入属性调整值。</p> 
 <br>
 <h2>3级：震慑打击 Stunning&nbsp;Strike</h2>
 <p class="para">你连续不断的攻击让敌人疲于应对。当你在一回合内至少两次以攻击检定命中<b class="green">浴血</b>的敌人时，你可以回复1点技力。以此回复技力后，你必须进行一次先攻检定才能再次使用此特性。</p>
@@ -203,7 +203,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>坚定意识。</b>当你或者一名可以听见你声音的生物要进行感知豁免时，你可以用一个反应为其提供优势。</p><!----> 
 <br>
 <h2>10级：异刃突袭 Ectopia&nbsp;Raid</h2>
-<p class="para">你懂得习向多个生物发起剑刃般迅速的猛烈突袭。在消耗技力发动了战技的回合中，你对所有你未伤害过的生物发动的攻击具有<b class="green">优势</b>。</p>
+<p class="para">你懂得习向多个生物发起剑刃般迅速的猛烈突袭。</p>
+<p class="para"><strong>迅猛突袭。</strong>你消耗技力发动了战技的回合中，你对该回合所有你未伤害过的生物发动的攻击具有<b class="green">优势</b>。</p>
+<p class="para"><strong>剑意如虹。</strong>你消耗了技力发动战技的回合，如果你持握一把你精通的近战武器，则每消耗1点技力，你的触及距离就增加5尺。</p>
 <p class="para">此外，你还习得战技：异刃突袭。</p>
 <div class="syntax">
 <table>
@@ -216,8 +218,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>&nbsp;异刃突袭&nbsp;|&nbsp;Ectopia&nbsp;Raid</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗 2 技力</p></div>
+      <div class="cost" id="green"><p class="light">攻击动作</p></div>
+      <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
         立即</p>
@@ -225,36 +227,20 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗2技力来发动此战技。你立即向前方30尺<b class="green">锥状</b>区域内你所选的至多5名可见生物分别发动一次近战武器攻击。若命中则额外造成2d8的力场伤害。</p></div>
+<p>你可以在执行攻击动作时消耗1技力来发动此战技。此攻击动作中的每次攻击若命中额外造成等同熟练加值的武器伤害。此外：</p>
+<p>- 如果这些攻击均以同一生物为目标，该生物在战技结束时再额外受到等同你近卫等级的力场伤害。</p>
+<p>- 如果这些攻击选择了超过一个生物为目标，那些生物在战技结束时<b class="green">倒地</b>。</p>
+</div>
 <br>
 <h2>15级：剑之试炼 Sword&nbsp;Ordeal</h2>
-<p class="para">在消耗技力发动了战技的回合中，你所有以单手用近战武器发起的攻击检定不会因为任何原因承受<b class="green">劣势</b>。</p>
+<p class="para">你的剑术已经达到了炉火纯青的境界。你习得下述特性：</p>
+<p class="para"><b>试炼连击。</b>在自己的回合中仅一次，执行<b class="green">攻击</b>动作时，如果你要使用武器发动一次具有<b class="green">优势</b>的攻击，你可以放弃该次攻击，改为对该目标发动两次不享受优势的攻击，均视为动作一部分。</p>
+<p class="para"><b>超凡格挡。</b>当你持用一把你精通的近战武器被其他生物以一次你可见的攻击命中时，你可以采取<b class="green">反应</b>，将此攻击改为失手。</p>
 <br>
-<h2>18级：剑刃风暴 Blade&nbsp;Strom</h2>
-<p class="para">你迅猛的攻击让敌人完全找不到破绽。在消耗技力发动了战技后，直到该回合结束前，你<b class="green">免疫</b>所有伤害，并且所有豁免检定具有<b class="green">优势</b>。</p>
-<p class="para">此外，你习得战技：剑刃风暴。</p>
-<div class="syntax">
-<table>
-  
-  <tr>
-    <td>
-      <div class="skill">
-      <IMG class="icon" src="../../图片资源/技能图标/近卫/技能_剑刃风暴.png">
-      </div>
-    </td>
-    <td>
-      <h6>&nbsp;剑刃风暴&nbsp;|&nbsp;Blade&nbsp;Storm</h6>
-      <div class="cost"><p class="light">动作</p></div>
-      <div class="trigger"><p class="light">消耗 2 技力</p></div>
-      <div class="time">
-        <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
-        立即</p>
-      </div>
-    </td>
-  </tr>
-</table>
-<p>你可以动作并消耗2点技力来发动此战技。选择距离你30尺内最多 5 个可见生物，你立即消失并用手中的武器向每个生物分别发动两次武器攻击。每次攻击若命中则都额外造成5d8的力场伤害。在这之后，你可以出现在其中一个所选生物周围 5 尺内的可见空地。</p>
-</div>
+<h2>18级：剑刃风暴 Blade&nbsp;Storm</h2>
+<p class="para">你迅猛的攻击让敌人完全找不到破绽。你习得下述特性：</p>
+<p class="para"><b>风暴潮。</b>你消耗技力发动战技时，可以立即传送到30尺内的一处可见空地，你可在战技生效之前或之后应用该传送。</p>
+<p class="para"><b>无瑕击。</b>你消耗技力发动战技的回合，直到该回合结束前，任何生物不得应对你的行动作出<b class="green">反应</b>。</p>
 <br><br>
 </div>
 </div>
