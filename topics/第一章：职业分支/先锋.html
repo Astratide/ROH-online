@@ -334,12 +334,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="indent"><b>地形适应Terrain Adaptation。</b>你获得等同你步行速度一半的游泳和攀爬速度。</p>
 <br>
 <h3>2级：部署策略 Deploy Strategey</h3>
-<p class="para">作为先锋，你可以通过发动先锋战技来获得费用骰。费用骰会在你进行先攻检定时清空。</p>
-<p class="para"><b>费用骰成长Cost Dice。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到5级（d6），9级（d8），13级（d10）以及17级（d12）时增大一级。</p>
-<p class="para"><b>部署策略Deployment Strategy。</b>你结束回合时，若你有<b>费用骰</b>，则可以消耗并掷出若干费用骰，将结果相加，并应用下述的一项部署策略。</p>
-<p class="indent"><b>攻击：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即发动一次武器攻击或施展一个动作戏法。若命中或造成伤害，则使得那次伤害掷骰获得等同费用骰掷骰结果的加值。</p>
-<p class="indent"><b>加速：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即移动至多等同自身移动速度一半的距离。并且其先攻值在本轮结束时增加，数值等同费用骰掷骰结果。</p>
-<p class="indent"><b>协助：</b>指定一名可见盟友。目标直到其自身回合结束前，进行的首次D20检定具有<b class="green">优势</b>。并且其立即获得等同费用骰掷骰结果的<b class="green">临时生命值</b>。</p>
+<p class="para">作为先锋，你可以通过发动先锋战技来获得费用骰。</p>
+<p class="para"><strong>进战重置Battle 
+Reset。</strong>费用骰会在战斗结束时，以及你进行先攻检定时清空。</p>
+<p class="para"><b> 费用骰成长Cost 
+ Dice。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到5级（d6），9级（d8），13级（d10）以及17级（d12）时增大一级。</p>
+<p class="para"><b> 部署策略Deployment 
+strategy。</b>你结束回合时，若你有<b>费用骰</b>，则可以消耗并掷出若干费用骰，将结果相加，并应用下述的一项部署策略。</p>
+<ul>
+<li><b>攻击：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即发动一次武器攻击或施展一个动作戏法。若命中或造成伤害，则使得那次伤害掷骰获得等同费用骰掷骰结果的加值。</li>
+<li><b>加速：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即移动至多等同自身移动速度一半的距离。并且其先攻值在本轮结束时增加，数值等同费用骰掷骰结果。</li>
+<li><b>协助：</b>指定一名可见盟友。目标直到其自身回合结束前，进行的首次D20检定具有<b class="green">优势</b>。并且其立即获得等同费用骰掷骰结果的<b class="green">临时生命值</b>。</li>
+</ul>
 <br>
 <h3>2级：先锋战技&nbsp;Vanguard&nbsp;Battle&nbsp;Skills</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
@@ -372,8 +378,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>你可以附赠动作并消耗1点技力来发动这个战技。此战技每消耗1点技力，你就获得1枚费用骰。</p>
 </div>
 <br>
-<h3>2级：先锋回转&nbsp;Vanguard Recovery</h3><strong></strong>
-<p class="para">在自己回合中，以一个附赠动作，你可以让自己立即恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特质。</p>
+<h3>2级：先锋回转&nbsp;Vanguard Recovery</h3>
+<p class="para">在自己回合中，以一个<b class="green">附赠动作</b>，你可以让自己立即恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特质。</p>
 <p class="para">你在提升到更高的先锋等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：先锋子职&nbsp;Vanguard&nbsp;Subclass</h3>
@@ -395,7 +401,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">你变的更加擅长快速作战。战斗的第一轮里，你可以行动两个回合：即你先以自己正常的先攻执行一个回合行动，再以先攻数值减10的数值作为另一先攻额外执行一回合的行动。</p>
 <br>
 <h3>14级：先进部署&nbsp;Advanced Deployment</h3>
-<p class="para">你应用部署策略时，无需消耗目标的反应。此外，你可以同时给两名不同的目标应用你的部署策略。由你来分配每个掷出的费用骰分别为哪个目标提供增益。</p>
+<p class="para">你应用部署策略时，无需消耗目标的反应。</p>
+<p class="para">此外，你可以同时给两名不同的目标应用你的部署策略，由你来分配每个掷出的费用骰分别为哪个目标提供增益。</p>
 <br>
 <h3>19级：传奇恩惠&nbsp;Epic&nbsp;Boon</h3>
 <p class="para">你获得一项 <b>传奇恩惠专长</b> ，或其他一项你选择的适用的 <b>专长</b>。</p>
