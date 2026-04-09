@@ -165,7 +165,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：怪杰把戏 Geek's Tricks</h2>
 <p class="para">作为一名怪杰，你获得以下特性：</p>
-<p class="para"><b>异质武器 Eccentric Weapon。</b>你选择一把可以单手持用的远程武器（可以是铳械），并获得其熟练和精通（你可以在升级时重选）。你使用其发动攻击时，可以使用你的施法属性调整值而非敏捷作为攻击与伤害属性。</p>
+<p class="para"><b>异质武器 Eccentric Weapon。</b>你选择一把可以单手持用的远程武器（可以是铳械），并获得其熟练和精通（你可以在升级时重选）。你使用精通的远程武器发动攻击时，可以使用你的施法属性调整值而非敏捷作为攻击与伤害属性。</p>
 <p class="para"><b>闪亮登场 Dramatic Entrance。</b>你可以将你的施法属性调整值加入先攻检定中。</p>
 <p class="para"><b>风险骰子 Risk Dice。</b>每回合仅一次，你要进行D20检定时，你可以使其具有<b class="green">优势</b>，不过你这么做时，需要投掷并消耗一枚生命骰并流失等同结果的生命值。而且如果仍检定失败，你需要在<b>狂野意外事件表</b>上掷骰以确定随机效应。</p>
 <br>
@@ -224,7 +224,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>目标立即受到你熟练加值枚d6的精通伤害</td></tr>
   <tr>
     <td style="text-align: center;">5</td>
-    <td>目标陷入<b class="green">中毒</b>直到本轮结束，此中毒期间目标还会<b class="green">失能</b></td></tr>
+    <td>目标陷入一个随机状态直到其回合结束（D6：魅惑、恐慌、中毒、目盲、束缚、震慑）</td></tr>
   <tr>
     <td style="text-align: center;">6</td>
     <td>目标在<b>狂野意外事件表</b>上掷骰以确定额外随机效应</td></tr>
@@ -263,8 +263,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>15级：命运拨弄 Fate's Twiddle</h2>
 <p class="para">你对偶然的理解已经超越了凡人，现在你能够轻轻拨动命运的琴弦，让结果向你所期望的方向微微偏移。你习得下述特性：</p>
-<p class="para"><b>拨动骰子</b>。每当你骰出<b>怪杰幸运表</b>、<b>怪杰厄运表</b>或<b>狂野意外事件表</b>后，你可以轻轻推动骰子，使得该结果增加或减少1点（不能低于1或超过上限）。此特性一经使用，直到你完成长休前不可再次使用。你也可以消耗1技力或20点生命值（无需动作）来恢复此特性的使用权。</p>
-<p class="para"><b>决定命运。</b>以一个<b class="green">魔法动作</b>并消耗一枚至少三环的法术位，你可以选择60尺内的一个可见目标，其立即受到<b>怪杰幸运表</b>或<b>怪杰厄运表</b>中的一个你指定的效应影响。消耗的法术位每有一环，你还可以恢复1d8的已损生命值。</p>
+<p class="para"><b>拨动骰子</b>。当你使用掌控混乱特性时，你可以放弃重掷，改为轻轻推动骰子，使得该结果增加或减少1点（不能低于1或超过上限）。</p>
+<p class="para"><b>决定命运。</b>以一个<b class="green">魔法动作</b>并消耗一枚至少三环的法术位，你可以选择60尺内的一个可见目标，其立即受到<b>怪杰幸运表</b>或<b>怪杰厄运表</b>中的一个你指定的效应影响。消耗的法术位每有一环，你还可以恢复1d10点已损生命值。</p>
 <p class="para"><b>额外攻击。</b>你在自己回合内执行<b class="green">攻击</b>动作时，可以发动三次而非一次攻击。</p>
 <br><br>
 <hr>
@@ -301,7 +301,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>直到你下回合开始，自己和60尺内盟友的攻击具有<b class="green">劣势</b>，但伤害掷骰获得+1d10加值</td></tr>
   <tr>
     <td style="text-align: center;">8</td>
-    <td>本轮中，20尺内所有生物移动速度减半，且进行力量与敏捷豁免时具有<b class="green">劣势</b></td></tr>
+    <td>本轮中，你20尺内所有生物移动速度减半，且进行力量与敏捷豁免时具有<b class="green">劣势</b></td></tr>
   <tr>
     <td style="text-align: center;">9</td>
     <td>本轮中，你的攻击造成的伤害最多只能将目标的HP降至1（不能致死）</td></tr>

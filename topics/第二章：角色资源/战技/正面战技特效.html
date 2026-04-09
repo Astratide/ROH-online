@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(107);
+  parent.nav.tree.selectNode(108);
  }else{
   setTimeout("syn()",500);
 }
@@ -208,7 +208,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">正面战技特效-α（先决：等级3+，精通伤害特性）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
 <p><b>攻击变为法术伤害。</b>你造成的所有挥砍、穿刺、钝击伤害都转化为你的<b>精通伤害</b>。</p>
-<p><b>立即。</b>如果此战技持续时间为立即，则这些伤害还无视目标的<b class="green">抗性</b>。</p>
+<p><b>立即。</b>如果此战技持续时间为立即，则你造成的这些精通伤害骰增大一级（至多d12）。</p>
 </div>
 <br>
 <br>
@@ -330,13 +330,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>造成物理伤害提升。</b>你为造成<u>物理类伤害</u>而掷伤害骰时，骰子等级增大 1 级（至多d12）。</p>
+<p><b>造成物理伤害提升。</b>你为造成穿刺、挥砍、钝击伤害而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
 <p><b>立即。</b>若此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
-</div>
-<div class="syntax">
-<p>注：物理类伤害，即穿刺、挥砍、钝击。</p>
-<p>骰子等级扩大一级，即应用下一合法骰阶的骰子，也就是d4-&gt;d6-&gt;d8-&gt;d10-d12。</p>
 </div>
 <br>
 <br>
@@ -344,13 +340,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>造成法术伤害提升。</b>你为造成<u>法术类伤害</u>而掷伤害骰时，骰子等级增大 1 级（至多d12）。</p>
+<p><b>造成法术伤害提升。</b>你为造成你的<b>精通伤害</b>而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
 <p><b>立即。</b>若此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
-</div>
-<div class="syntax">
-<p>注：法术类伤害，即火焰、寒冷、闪电、雷鸣、强酸、毒素、光耀、暗蚀、心灵、力场。</p>
-<p>骰子等级扩大一级，即应用下一合法骰阶的骰子，也就是d4-&gt;d6-&gt;d8-&gt;d10-d12。</p>
 </div>
 <br>
 <br>
@@ -358,8 +350,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>额外攻击力提升。</b> 你进行的伤害掷骰获得 +1d10 加值。</p>
-<p><b>立即。</b> 若此战技持续时间为立即，则数值翻倍（变为+2d10）。</p>
+<p><b>额外攻击力提升。</b> 你进行的伤害掷骰获得 +1d8 加值。</p>
+<p><b>立即。</b> 若此战技持续时间为立即，则数值翻倍（变为+2d8）。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
@@ -368,8 +360,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+，精通伤害特性）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>额外造成法术伤害。</b>你发动的攻击若命中，则额外造成 1d10 你的<b>精通伤害</b>。</p>
-<p><b>立即。</b> 如果此战技持续时间为立即，则数值翻倍（变为2d10点）。</p>
+<p><b>额外造成法术伤害。</b>你发动的攻击若命中，则额外造成 1d8 你的<b>精通伤害</b>。</p>
+<p><b>立即。</b> 如果此战技持续时间为立即，则数值翻倍（变为2d8点）。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
@@ -378,7 +370,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击速度提升。</b>你执行攻击动作时，作为其一部分，可以再额外发动 1 次武器攻击。</p>
+<p><b>攻击速度提升。</b>你执行<b class="green">攻击</b>动作时，作为其一部分，可以再额外发动 1 次武器攻击。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
@@ -387,7 +379,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-β（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>施法速度提升。</b>你执行魔法动作时，作为其一部分，可以再额外施展 1 个动作戏法。<br>  </p>
+<p><b>施法速度提升。</b>你执行<b class="green">魔法</b>动作时，作为其一部分，可以再额外施展 1 个动作戏法。<br>  </p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
@@ -431,7 +423,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-γ（先决：等级9+，战技至少持续至下回合开始）</p>
 <p>此战技具有以下效应：</p>
-<p><b>持续时间无限。</b>此战技将持续直到战斗结束，或直到你生命值降至0。此战技持续期间你不能再发动任何其他战技，除非你主动结束之（无需动作）。</p>
+<p><b>持续时间无限。</b>此战技将持续直到战斗结束，或直到你生命值降至0。此战技持续期间你不能再发动任何其他战技，除非你主动结束此战技（无需动作）。</p>
 </div>
 <br>
 <br>

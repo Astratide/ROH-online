@@ -103,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(165);
+  parent.nav.tree.selectNode(166);
  }else{
   setTimeout("syn()",500);
 }
@@ -147,6 +147,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>连装。</b>连装武器的<b class="green">装填</b>属性可以被忽略。</p>
 <br>
 <br>
+<h4>奥力 Arcane</h4>
+<p class="grey">装备附魔（任意武器），非普通（需施法者同调）</p>
+<p class="para"><b>奥力。</b>使用奥力武器发动的攻击命中时，你可以立即执行<b class="green">附赠动作</b>并消耗一枚法术位。这次攻击额外造成每法术环阶1d6的力场伤害。</p>
+<span style="color: transparent;">龙龙 2026-4-6</span>
+<br>
+<br>
 <h4>魔刃 Artblade</h4>
 <p class="grey">装备附魔（任意近战武器），普通/非普通/珍稀/极珍稀/传说</p>
 <p class="para"><b>魔刃。</b>持用魔刃武器时，你可以<b class="green">附赠动作</b>为该武器附魔，效应持续一分钟。期间你可以基于智力、感知或魅力属性（自选）来为这把武器进行攻击检定和伤害掷骰。</p>
@@ -177,14 +183,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>援助 Aid</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需医疗、守护者或护佑者同调）</p>
-<p class="para"><b>援助。</b>持用援助武器时，你可以将其作为任意职业的施法法器。援助武器具有5发充能，其会在每日黎明时恢复所有充能。持用援助武器时，你可以执行<b class="green">附赠动作</b>并消耗1发充能，向120尺内的一个可见生物发射治疗弹。该目标立即恢复1d8+你感知调整值的生命值。<b class="green">不死</b>、<b class="green">构装</b>生物免疫此效应。</p>
+<p class="para"><b>援助。</b>持用援助武器时，你可以将其作为任意职业的施法法器。援助武器具有5发充能，其会在每日黎明时恢复所有充能。持用援助武器时，你可以执行<b class="green">附赠动作</b>并消耗1发充能，向120尺内的一个可见生物发射治疗弹。该目标立即恢复1d8+你感知调整值的生命值。<b class="green">亡灵</b>、<b class="green">构装</b>生物免疫此效应。</p>
 <p class="para"><b>更高稀有度：</b>充能数提升，恢复量的骰子数量提升。珍稀（8发；2d8），极珍稀（10发；3d8）。</p>
 <br>
 <br>
 <h4>复仇 Avenging</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀（需同调）</p>
-<p class="para"><b>复仇。</b>持用复仇武器被其他生物发动的攻击命中时，你可以采取<b class="green">反应</b>，使用该武器向攻击者发动一次攻击作为反击（此时伤害不加入攻击属性调整值），前提是攻击者在武器的射程内或可触及。</p>
-<p class="para"><b>更高稀有度：</b>珍稀时，允许在伤害中加入攻击属性调整值。</p>
+<p class="para"><b>复仇。</b>持用复仇武器被其他生物发动的攻击命中时，你可以采取<b class="green">反应</b>，使用该武器向攻击者发动一次攻击作为反击（此时伤害不加入攻击属性调整值；除非其为负数），前提是攻击者在武器的射程内或可触及。</p>
+<p class="para"><b>更高稀有度：</b>珍稀时，允许在该伤害中加入攻击属性调整值。</p>
 <br>
 <br>
 <h4>锚定 Binding</h4>
@@ -231,7 +237,32 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>璀璨。</b>璀璨武器的攻击会造成光耀伤害而非武器原本的伤害，且攻击即便失手也可造成等同此次攻击中加入的属性调整值的光耀伤害。</p>
 <p class="para">出鞘时，璀璨武器还会散发发出10尺明亮光照，并使你的敏捷（隐匿）检定承受劣势。</p>
 <br>
-
+<br>
+<h4>组合 Combine</h4>
+<p class="grey">装备附魔（任意武器），普通/非普通</p>
+<p class="para"><b>组合。</b>组合武器被和另一样物件组合起来，按照组合对象获得不同的增益。组合的对象在附魔时选定，可以是任意武器、盾牌、工具、乐器或法器。</p>
+<ul>
+<li><b>与其他武器组合：</b>使用该武器发动的攻击可以自选使用原武器或组合对象的伤害骰和伤害类型，也具有两把武器的所有属性（特别地，重型和轻型属性会相互抵消）。多重附魔时，组成武器的双方都可以用来满足附魔的要求，即便其可能在作为某一形态而使用时因不满足条件而无法发挥附魔的效果。</li>
+<li><b>与盾牌组合：</b>如果该武器被进行了增强附魔，持握它时你的AC也都获得等同增强程度的加值。</li>
+<li><b>与法器组合：</b>该武器同时也可以作为组合的法器使用。如果该武器被进行了增强附魔，持握它时你的法术攻击检定和法术伤害掷骰也都获得等同增强程度的加值。</li>
+<li><b>与乐器组合：</b>该武器同时也可以作为组合的乐器使用。如果该武器被进行了增强附魔，持握它时你用它进行的魅力（表演）检定也都获得等同增强程度的加值。</li>
+<li><b>与工具组合：</b>该武器同时也可以作为组合的工具使用。如果该武器被进行了增强附魔，持握它时你用它进行的工具检定也都获得增强程度的加值。</li>
+</ul>
+<p class="para"><b>更高稀有度：</b>非普通时，每种组合方式获得不同程度的额外效应，见下表：</p>
+<table class="custom-table" style="min-width: 500px;">
+  <tr>
+    <th  style="width: 80px;">组合对象</th>
+    <th>额外效应</th>
+  </tr>
+  <tr><td>其他武器</td><td>你可以选择两种武器其一的精通词条使用</td></tr>
+  <tr><td>盾牌</td><td>如果你有一只空手，你的AC再额外+1</td></tr>
+  <tr><td>法器</td><td>使用该武器作为法器施展的法术在法术攻击检定和法术伤害掷骰上获得+1加值</td></tr>
+  <tr><td>乐器</td><td>
+      <p>使用该武器执行攻击动作后，可以立即执行<b class="green">附赠动作</b>，为30尺内一个可以听见你声音的盟友提供一枚D4激励骰（不叠加；在其下回合结束时消失）。激励骰可以被拥有者在进行D20检定时消耗并投掷，加入到结果中</p></td></tr>
+  <tr><td>工具</td><td>使用该武器作为工具进行的工具检定具有<b class="green">优势</b></td></tr>
+</table>
+<span style="color: transparent;">龙龙 2026-4-6</span>
+<br>
 <br>
 <h4>同协 Concord</h4>
 <p class="grey">装备附魔（任意武器），非普通（需同调）</p>
@@ -247,7 +278,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>显影 Develop</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>显影。</b>使用显影武器发动的攻击，不因受击目标处于<b class="green">隐形</b>而承受劣势。</p>
-<p class="para"><b>更高稀有度：</b>珍稀时，被显影武器命中的<b class="green">隐形</b>生物，隐形状态被压制直到其回合开始。极珍稀时，被显影武器命中的<b class="green">变形</b>状态生物必须通过DC20体质豁免，失败则解除变形。</p>
+<p class="para"><b>更高稀有度：</b>珍稀时，被显影武器命中的<b class="green">隐形</b>生物，隐形状态被压制直到其回合开始。极珍稀时，你在持握显影武器时获得30尺<b class="green">真实视觉</b>。且显影武器对变形生物发动的攻击具有<b class="green">优势</b>。</p>
 <br>
 <br>
 <h4>防御 Defending</h4>
@@ -258,28 +289,33 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>解构 Deconstruction</h4>
 <p class="grey">装备附魔（任意造成钝击伤害的武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>解构。</b>使用解构武器的攻击额外造成1d4点力场伤害。如果是命中<b class="green">构装</b>生物，这些力场伤害骰提升至d8。</p>
-<p class="para">此外，这把武器发动的攻击若造成<b class="green">重击</b>，则可以破坏所命中的魔法力场结构，例如<b class="spell">力场监牢Forcecage</b>或<b class="spell">力场墙Wall of Force</b>。不超过中型的魔法力场结构会消散。如果目标是大型或更大体型的力场结构，这把武器会击碎其5尺立方的部分。</p>
+<p class="para">此外，这把武器发动的攻击若造成<b class="green">重击</b>，则可以破坏所命中的魔法力场结构，例如<b class="spell">力场监牢Forcecage</b>或<b class="spell">力场墙Wall of Force</b>。不超过中型的魔法力场结构会消散。如果目标是大型或更大体型的力场结构，这把武器会击碎其5尺立方的部分。精金解构武器可以在命中魔法力场结构时自动重击。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害和结构破坏程度。珍稀（2d4；10尺立方），极珍稀（3d4；20尺立方）。</p>
-<p class="para"><strong>附魔禁限：</strong>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
-
 <br>
-<h4>屠龙 Dragonslay</h4>
+<h4>及远 Distance</h4>
+<p class="grey">装备附魔（任意远程武器），非普通</p>
+<p class="para"><b>及远。</b>及远武器的常规射程和最大射程加倍。</p>
+<span style="color: transparent;">龙龙 2026-4-6</span>
+<br>
+<br>
+<h4>猎龙 Dragonhunt</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>屠龙。</b>使用屠龙武器的攻击额外造成1d4点武器伤害。如果是命中<b class="green">龙类</b>生物，这些额外武器伤害骰提升至d8。</p>
-<p class="para">此外，持用这把武器时，当你受到火焰、寒冷、闪电、强酸或毒素伤害时，你可以采取<b class="green">反应</b>，使得自己在应对该伤害时，具有一项对应伤害的<b class="green">抗性</b>。</p>
+<p class="para"><b>猎龙。</b>使用猎龙武器的攻击额外造成1d4点武器伤害。如果是命中<b class="green">龙类</b>生物，这些额外武器伤害骰提升至d8。</p>
+<p class="para">此外，持用这把武器时，当你受到火焰、寒冷、闪电、强酸或毒素伤害时，你可以采取<b class="green">反应</b>，使得自己在应对此伤害时，具有一项对应伤害的<b class="green">抗性</b>。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d4），极珍稀（3d4）。</p>
-<p class="para"><b>附魔禁限：</b>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
+<span style="color: transparent;">龙龙 2026-4-6</span>
 <br>
-
 <br>
 <h4>破坏 Devastating</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须进行一次DC17体质豁免检定，否则一个你选择的肢体将承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到14点额外伤害。</p>
+<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须进行一次DC17体质豁免检定，否则一个你选择的肢体将按照下表承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到14点额外伤害。</p>
 <table class="custom-table" style="min-width: 350px;">
   <tr>
     <th>位置</th>
-    <th>效应</th>
+    <th>破坏效应</th>
   </tr>
   <tr><td>头部</td><td>法术攻击检定-1d4。</td></tr>
   <tr><td>躯干</td><td>AC获得-2减值。</td></tr>
@@ -287,26 +323,26 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr><td>腿部</td><td>移动速度减半。</td></tr>
 </table>
 <br>
-<p class="para"><b>更高稀有度：</b>触发体质豁免的DC获得提升，珍稀（DC19），极珍稀（DC21）。</p>
+<p class="para"><b>更高稀有度：</b>触发体质豁免的DC和额外伤害获得提升，珍稀（DC19；21），极珍稀（DC21；28）。</p>
 <br>
 <br>
 <h4>元素 Elemental</h4>
 <p class="grey">装备附魔（任意近战武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>元素。</b>持用元素武器时，你可以<b class="green">附赠动作</b>激活武器中的魔法能量，在直到你收起武器前，此武器的攻击额外造成1d6伤害。伤害类型在附魔时选择：强酸、寒冷、火焰、闪电或雷鸣。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外元素伤害。珍稀（+2d6），极珍稀（+3d6）。</p>
-<p class="para"><b>附魔禁限：</b>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
 <br>
 <h4>增强 Enhancement</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀/传说</p>
 <p class="para"><b>增强。</b>持用该武器进行的攻击检定和伤害掷骰获得+1加值。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的加值，珍稀（+2），极珍稀（+3），传说（+4）。</p>
-<p class="para"><b>附魔宽限：</b>由于此类武器的常见程度，此附魔通过多重附魔规则叠加在其他魔法武器上时，不需要支付双倍价格而是通常价格。</p>
+<p class="para"><b>附魔宽限：</b>该附魔属于常见附魔，此附魔通过多重附魔规则叠加在其他魔法武器上时，不需要支付双倍价格而是通常价格。</p>
 <br>
 <br>
 <h4>处刑 Executioner's</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀/传说（需同调）</p>
-<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于你的等级，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。<br><strong>更高稀有度：</strong>在计算处刑的血量阈值时，使用更高的等级倍率，珍稀（你等级的两倍），极珍稀（你等级的三倍），传说（你等级的四倍）。</p>
+<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于你的等级，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。<br><b>更高稀有度：</b>在计算处刑的血量阈值时，使用更高的等级倍率，珍稀（你等级的两倍），极珍稀（你等级的三倍），传说（你等级的四倍）。</p>
 <br>
 <br>
 <h4>电流 Electrics</h4>
@@ -353,17 +389,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>回力。</b>持用回力武器时，你将此武器视为具有投掷（20/60）属性，其还会在攻击后回到你的手中。</p>
 <br>
 <br>
-<h4>超重 Heavyweight</h4>
-<p class="grey">装备附魔（任意重型武器），非普通/珍稀/极珍稀</p>
-<p class="para"><b>超重。</b>超重武器的重量翻倍，且持用超重武器发动的攻击总是使用力量作为攻击属性（包括远程武器；但重型远程武器仍需满足敏捷13的需求），且用其发动的攻击在伤害掷骰上获得+2加值。</p>
-<p class="para">生物必须具有17或更高的力量才能正常使用超重武器。</p>
-<p class="para"><b>更高稀有度：</b>提供更高的额外伤害加值，珍稀为+4，极珍稀为+6。</p>
-<br><br>
 <h4>圣洁 Holy</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀/传说（需善良或守序生物同调）</p>
 <p class="para"><b>圣洁。</b>使用圣洁武器发动的攻击，额外造成1d4点光耀伤害。如果是命中<b class="green">邪魔</b>、<b class="green">亡灵</b>或<b class="green">异怪</b>生物时，这些光耀伤害骰提升至d8。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d4），极珍稀（3d4），传说（4d4）。</p>
-<p class="para"><strong>附魔禁限：</strong>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br><br>
 <h4>精准 Keen</h4>
 <p class="grey">装备附魔（任意武器），珍稀</p>
@@ -406,6 +436,26 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>移位 Shifting</h4>
 <p class="grey">装备附魔（任意武器），非普通</p>
 <p class="para"><b>移位。</b>这把武器获得触及属性（如果原本没有）。当你用这把武器发动攻击，且你可以使用此武器的精通词条时，你可以将此次攻击的精通词条改为<b class="green">推离</b>、<b class="green">拉近</b>、<b class="green">缓速</b>或<b class="green">削弱</b>（由你在附魔时选择）。</p>
+<br>
+<br>
+<h4>超标 Oversized</h4>
+<p class="grey">装备附魔（任意重型武器），非普通</p>
+<p class="para"><b>超标。</b>超标武器的重量翻倍，生物必须具有17或更高的力量才能正常使用超标武器。持用超标武器发动的攻击总是使用力量作为攻击属性（包括远程武器；但重型远程武器仍需满足敏捷13的需求）。</p>
+<p class="para">此外，超标武器的武器伤害骰会增大，成长方式见下表：</p>
+<table class="custom-table" style="min-width: 250px;">
+  <tr>
+  <th>原伤害骰</th>
+  <th>超标武器伤害骰</th>
+  </tr>
+  <tr><td>1d4</td><td>1d8</td></tr>
+  <tr><td>1d6</td><td>1d10</td></tr>
+  <tr><td>1d8</td><td>1d12</td></tr>
+  <tr><td>1d10</td><td>2d6</td></tr>
+  <tr><td>1d12</td><td>2d8</td></tr>
+  <tr><td>2d4</td><td>2d6</td></tr>
+  <tr><td>2d6</td><td>2d8</td></tr>
+</table>
+<span style="color: transparent;">龙龙 2026-4-6</span>
 <br>
 <br>
 <h4>流银 Quicksilver</h4>
@@ -480,7 +530,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>恶毒。</b>使用恶毒武器发动的攻击在命中生物时，在伤害掷骰上获得+1d6加值。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的伤害加值。珍稀（+2d6），极珍稀（+3d6）。</p>
-<p class="para"><b>附魔禁限：</b>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
 <br>
 <h4>警戒 Warning</h4>
@@ -490,10 +540,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>致伤 Wounding</h4>
 <p class="grey">装备附魔（任意武器），珍稀/极珍稀（需同调）</p>
-<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害，前提是目标不属于<b class="green">构装</b>或<b class="green">亡灵</b>生物。此武器命中的生物在 1 分钟内无法恢复生命值。该目标在其每个自己回合结束时，可以进行一次 DC 15 
-的体质豁免，豁免成功则该效应提前终止。</p>
-<p class="para"><strong>更高稀有度：</strong>提供更高的伤害加值和体质豁免DC。极珍稀（+2d10；DC17）。</p>
-<p class="para"><strong>附魔禁限：</strong>由于此类武器的强大程度，此附魔无法通过多重附魔规则叠加在其他魔法武器上。因此你只能给一把非魔法武器进行此附魔。</p>
+<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害，前提是目标不属于<b class="green">构装</b>或<b class="green">亡灵</b>     
+生物。此武器命中的生物直到你下一回合开始前无法恢复生命值。</p>
+<p class="para"><b>更高稀有度：</b>提供更高的伤害加值。极珍稀（+2d10）。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br><br>
 </div>
 </div>

@@ -102,7 +102,11 @@ blockquote
 }
 ul
 {
-    margin:5px;
+    margin: 5px;
+}
+div.monster_container ul
+{
+    margin: 5px;
 }
 img
 {

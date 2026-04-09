@@ -103,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(148);
+  parent.nav.tree.selectNode(149);
  }else{
   setTimeout("syn()",500);
 }
@@ -180,8 +180,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <p>以下可选规则和种族特性可能对游戏过程带来不可知的变化，请在征得DM同意后再选择。</p>
 <div class="syntax">
-<p class="para"><b>可选-灵幛化身 Shroud Incarnate：</b>当你达到9级或更高等级，你生命值降至0且并未立即死亡时，你可以选择放弃死亡，立即转化为灵幛形态。你获得等同你等级枚d6的临时生命值。你身体化作半透明的能量体，获得30尺飞行速度以及对挥砍、钝击、穿刺伤害的抗性以及暗蚀伤害免疫，并且你的近战攻击造成额外1d8暗蚀伤害。</p>
-<p class="para">此形态持续1分钟或直到你不具有任何来源的临时生命值为止，之后你陷入昏迷并稳定。此特性一经使用，7日内无法再次使用。</p>
+<p class="para"><b>可选-灵幛化身 Shroud Incarnate：</b>当如果你有施法特性且拥有一枚至少3环的法术位，在你生命值降至0且并未立即死亡时，你可以选择放弃死亡，立即转化为灵幛形态。你获得等同你等级枚d6的临时生命值。你身体化作半透明的能量体，获得30尺飞行速度以及对挥砍、钝击、穿刺伤害的抗性以及暗蚀伤害免疫，并且你的近战攻击造成额外1d8暗蚀伤害。</p>
+<p class="para">此形态持续1分钟或直到你不具有任何来源的临时生命值为止，之后你陷入昏迷并伤势稳定。</p>
 </div>
 <div class="syntax">
 <p class="para"><b>可选-护灵者 Path of the Warden：</b>你摒弃了通过战争汲取力量的古老方式，转而信仰萨米的永恒狩猎。你不再拥有<b>生命汲取</b>特性，改为获得<b>自然之友</b>特性。</p>
@@ -200,7 +200,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>属性值提升 Ability Score Increase。</b>你的体质、感知或魅力提升1，最多为22。</li>
 <li><b>腐朽强化 Advanced Decay。</b>你的生命汲取恢复量提升为2d8，且可以在短休后恢复一次使用次数。</li>
-<li><b>秽蚀之触 Touch of Blight。</b>每回合仅一次，当你以近战攻击命中一个生物时，可以花费一次生命汲取次数（无需反应），使目标额外受到2d8黯蚀伤害，并且其速度减少10尺，持续到你的下回合结束。</li>
+<li><b>秽蚀之触 Touch of Blight。</b>每回合仅一次，当你以近战攻击命中一个生物时，可以花费一次生命汲取次数，使目标额外受到2d8暗蚀伤害，并且其无法恢复生命值，持续到你的下回合开始。</li>
 <li><b>血统纯化 Pureblood Awakening。</b>你增加200年的最大寿命。</li>
 </ul>
 <br>
@@ -211,7 +211,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>属性值提升 Ability Score Increase。</b>你的体质、感知或魅力提升1，最多为22。</li>
 <li><b>枯朽领域 Field of Decay。</b>以<b class="green">附赠动作</b>，你可以在源自自身15尺<b class="green">光环</b>区域内创建一个枯朽领域，持续1分钟。领域内除你以外的生物在开始其回合时受到1d6黯蚀伤害，并且无法回复生命值。此特性使用后需完成长休方可再次使用。</li>
-<li><b>不灭枯枝 Unending Branch。</b>当你受到伤害时，你可以采取<b class="green">反应</b>并消耗一次生命汲取次数，使该伤害减少2d10+体质调整值。若此次伤害将你生命值降至0，你可以改为降至1。</li>
+<li><b>不灭枯枝 Unending Branch。</b>当你受到伤害时，你可以采取<b class="green">反应</b>并消耗一次生命汲取次数，使该伤害减少2d10+体质调整值。若此次伤害仍将你生命值降至0，你可以改为降至1。</li>
 <li><b>血统纯化 Pureblood Awakening。</b>你增加500年的最大寿命。当任何效应需要你是<b class="green">亡灵</b>生物时，你也被视为亡灵生物。</li>
 </ul>
 <br>

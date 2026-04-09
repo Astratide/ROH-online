@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(109);
+  parent.nav.tree.selectNode(110);
  }else{
   setTimeout("syn()",500);
 }
@@ -139,14 +139,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>仅限一次。</b>你只能给仅一个战技应用一项专属特效。即便你习得了多项战技，你至多也只能给其中一项战技应用一项负面特效。</p>
 <br>
 <p class="para">大部分专属特效允许你在要求生物进行豁免检定来避免受到完整伤害，或者陷入某个效应或状态时，替换这次豁免类型和失败带来的效应或状态为不同的选项。如果原本豁免失败不会带来额外效应或状态，则添加之。</p>
-<p class="para">例如，如果你在发动了具有晕眩效果的战技期间，以3环施展了火球术，那么你可以让这次火球术要求所有范围内的目标进行体质豁免，失败时会受到8d6火焰伤害并被<b class="green">震慑</b>直到其下回合开始，成功时则仅受到一半的伤害。</p>
+<p class="para">例如，如果你在发动了具有晕眩效果的战技期间，以3环施展了火球术，那么你可以让这次火球术要求所有范围内的目标进行体质豁免，失败时会受到8d6火焰伤害并被<b class="green">震慑</b>直到其下回合结束，成功时则仅受到一半的伤害。</p>
 <br>
 <br>
 <h3 class="effect-box" id="green">晕眩效果&nbsp;Stun Effect</h3>
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p>
 <p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>晕眩。</b>你将豁免改为体质豁免，目标在豁免失败时陷入<b class="green">震慑</b>，直到其下回合开始。</p>
+<p><b>晕眩。</b>你将豁免改为体质豁免，目标在豁免失败时陷入<b class="green">震慑</b>，直到其下回合结束。</p>
 </div>
 <br>
 <br>
@@ -154,15 +154,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>束缚。</b>你将豁免改为力量豁免，目标在豁免失败时遭到<b class="green">束缚</b>，直到其下回合结束。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box" id="green">减速效果&nbsp;Slow Effect</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>此战技持续期间，你对一名生物造成伤害时，可以应用以下特性：</p> 
-<p><b>减速。</b>你造成伤害后，目标的移动速度减少10尺直到其回合结束。一个生物在一回合中只能以此减速一次。此外，若你以此减速一个移动速度不高于10尺的生物，改为使得目标遭到<b class="green">束缚</b>直到其回合开始。</p>
+<p><b>束缚。</b>你将豁免改为力量豁免，目标在豁免失败时遭到<b class="green">束缚</b>直到其下回合结束，在豁免成功时移动速度减少10尺。无论豁免结果，每个目标再额外受到1d10+你熟练加值的力场伤害。</p>
 </div>
 <br>
 <br>
@@ -170,7 +162,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p>
 <p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>失衡。</b>你将豁免改为力量豁免，目标在豁免失败时倒地并额外受到2d6钝击伤害。</p>
+<p><b>失衡。</b>你将豁免改为力量豁免，目标在豁免失败时倒地。无论豁免结果，每个目标额外受到1d10+你职业等级的钝击伤害。</p>
 </div>
 <br>
 <br>
@@ -198,7 +190,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>寒冷。</b>你将豁免改为体质豁免，目标在豁免失败时承受<b>冰封</b>，直到其下回合结束。</p>
+<p><b>寒冷。</b>你将豁免改为体质豁免，目标在豁免失败时承受<b>冰封</b>，直到其下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的寒冷伤害。</p>
 </div>
 <div class="side-box" id="navy">
 <h4 id="ISW">规则引用：冰封 Frozen*【危害】</h4>
@@ -210,7 +202,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>恐慌。</b>你可以将豁免改为感知豁免，目标在豁免失败时对你 <b class="green">恐慌</b>，直到其下回合结束。</p>
+<p><b>恐慌。</b>你可以将豁免改为感知豁免，目标在豁免失败时对你 <b class="green">恐慌</b>，直到其下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
 </div>
 <br>
 <br>
@@ -218,7 +210,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>浮空。</b>你可以将豁免改为力量豁免，目标在豁免失败时被抛升20尺（巨型或更大目标改为10尺），并在其开始回合时坠落。</p>
+<p><b>浮空。</b>你可以将豁免改为力量豁免，目标在豁免失败时被抛升20尺（巨型或更大目标改为10尺），并在其开始回合时坠落。如果生物受到坠落伤害，那些坠落导致的钝击伤害骰提升至d10。</p>
 </div>
 <br>
 <br>
@@ -236,7 +228,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">沉默</b>，直到你下回合结束。</p>
+<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">沉默</b>，直到你下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
 </div>
 <div class="syntax">
 <b>规则引用：沉默 Silent* 【状态】</b> 
@@ -247,7 +239,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">战栗</b>，直到你下回合结束。</p>
+<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">战栗</b>，直到你下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
 </div>
 <div class="syntax">
 <b>规则引用：战栗 Shudder* 【状态】</b> 
@@ -258,7 +250,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：狙击或辅助职业等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b> 破甲。</b>你可以将豁免改为体质豁免，目标在豁免失败时AC获得-4减值，直到你下回合结束。</p>
+<p><b> 破甲。</b>你可以将豁免改为体质豁免，目标在豁免失败时AC获得-5减值，直到你下回合结束。</p>
 </div>
 <br>
 <br>
@@ -285,7 +277,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
 <p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>推拉。</b>你可以将豁免改为力量豁免，目标在豁免失败时被直线推离或者拉近你20尺（由你选择），体型为大型或更大的生物改为10尺。</p>
+<p><b>推拉。</b>你可以将豁免改为力量豁免，目标在豁免失败时被直线推离或者拉近你20尺（由你选择），体型为大型或更大的生物改为10尺。无论豁免结果，每个目标额外受到1d10+你熟练加值的钝击伤害。</p>
 </div>
 <br>
 <br><br>

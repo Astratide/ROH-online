@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(108);
+  parent.nav.tree.selectNode(109);
  }else{
   setTimeout("syn()",500);
 }
@@ -137,7 +137,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己的一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
 <p class="para"><b>消耗降低。</b>应用负面战技特效会减少1点战技的技力消耗（至多降低至1）。</p>
 <p class="para"><b>技力消耗上限。</b>你<strong>无法</strong>发动一个技力消耗超过你的熟练加值的战技。举例来说，一个价值为3sp的战技，需要至少5级的角色（PB≥3）才能发动。</p>
-<p class="para">此外，注意添加负面特效不会影响战技的实际价值。一个实际价值为4的战技即便被添加了负面特效，也依然需要至少9级的角色（PB≥4）才能发动。只不过发动的时候会减少了1点技力消耗。</p>
+<p class="para"><strong>负面特效不增加你的上限。</strong>在考虑你能否发动一个战技时，忽略负面特效带来的技力减值。一个原本技力消耗为4SP的战技，即便添加了负面特效，也需要至少9级的角色（PB≥4）才能发动。只不过你发动的时候可以仅消耗3SP。</p>
 <p class="para"><b>仅限一次。</b>你只能给仅一个战技应用一项负面战技特效。换言之，即便你习得了多项战技，你至多也只能给其中一项战技应用负面特效。<b>无论如何，每个角色只能应用一项负面特效。</b></p>
 <br>
 <h3 class="effect-box" id="grey">生命值流失&nbsp;Hp Loss</h3>
@@ -217,7 +217,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">负面战技特效（先决：<i>等级3</i><i>+）</i></p>
 <p>此战技具有以下效应：</p>
-<p><b>慢速暖机。</b>你不能在战斗开始的首轮中使用此战技。如果你在战斗开始后的第三轮或以后的自己回合中发动此战技，且在之前未发动过，则若此战技原本需要使用附赠动作来发动，你可以忽略该限制。</p>
+<p><b>慢速暖机。</b>你不能在战斗开始的首轮中使用此战技。如果你在战斗开始后的第三轮或以后的自己回合中发动此战技，且在之前未发动过，则此战技的技力消耗减少1点。</p>
 </div>
 <br>
 <br><br>

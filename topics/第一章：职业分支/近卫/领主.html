@@ -152,7 +152,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>特性</b></td></tr>
   <tr>
     <td style="text-align: center;">3rd</td>
-    <td><b>凌空锋刃、锋刃护身</b></td></tr>
+    <td><strong>凌空锋刃、</strong><strong>升华武器</strong></td></tr>
   <tr>
     <td style="text-align: center;">7th</td>
     <td><b>升华武器</b></td></tr>
@@ -169,11 +169,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：凌空锋刃 Blade Aura</h2>
 <p class="para">作为一名领主，你获得以下特性：</p>
-<p class="para"><b>武器精通。</b>你选择一把可以单手持用的军用近战武器（通常是长剑或刺剑），然后获得其熟练以及精通（可在升级时重选）。</p> 
-<p class="para"><b>凌空锋刃。</b>你可以将所选的近战武器视为具有投掷(20/40)以及回手属性。</p> 
+<p class="para"><b>武器精通。</b>你选择一把任意近战武器，然后获得其熟练以及精通（可在升级时重选）。</p> 
+<p class="para"><b>凌空锋刃。</b>当你在自己回合发动近战攻击时，你可以为其延长射程。此时对于该攻击而言，你的触及距离增加至20尺。但除非本回合曾消耗技力，否则以此延伸触及的攻击在伤害中不加入属性调整值。</p> 
+<p class="para"><b>额外熟练项。</b>选择一项基于魅力的未熟练技能，并获得其熟练。</p> 
 <br>
-<h2>3级：锋刃护身 Tough&nbsp;Bodyguard</h2>
-<p class="para">你擅长于近身和中距离战斗的技巧。你习得战技：锋刃护身。</p>
+<h2>3级：升华武器 Ascendant Weapon</h2>
+<p class="para">你对法术的钻研让你可以将法术和你的战斗技巧结合。你获得以下特性：</p>
+<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的<b>精通伤害</b>，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
+<p class="para"><b>领域戏法。</b>你选择一个符合条件的 
+<b>领域法术表</b>，并在该法术表中选择两项戏法，以及一项1环法术习得之。你可以每次长休间免费施展所选法术一次，或者你也可以用自己有的法术位施展该法术。你施展该戏法的属性是智力、感知或魅力，由你在到达此等级时选择。</p>
+<p class="para"><b>延长戏法。</b>如果某个戏法要求你对5尺内目标发动攻击，你可以改为对触及内目标发动攻击。</p>
+<p class="para">此外，你习得战技：锋刃护身。</p>
 <div class="syntax">
 <table>
   
@@ -185,8 +191,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>&nbsp;锋刃护身&nbsp;|&nbsp;Tough&nbsp;Bodyguard</h6>
-      <div class="cost" id="yellow">
-        <p class="light">反应</p></div>
+      <div class="cost">
+        <p class="light">附赠动作</p></div>
       <div class="trigger">
         <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
       <div class="time">
@@ -196,21 +202,21 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你受到伤害时，你可以采取反应并消耗1点技力来发动此战技。你立即恢复2d8+你近卫等级的生命值，并可以立即发动一次武器攻击。</p></div>
+<p>你可以附赠动作并消耗1技力来发动此战技。直到本回合结束前：你的触及距离增加至30尺，你发动的攻击额外造成1d10的精通伤害。</p></div>
 <br>
-<h2>7级：升华武器 Ascendant Weapon</h2>
+<h2>7级：预谋攻势 Premeditated Offensive</h2>
 <p class="para">你对法术的钻研让你可以将法术和你的战斗技巧结合。你获得以下特性：</p>
-<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的<b>精通伤害</b>，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
-<p class="para"><b>领域戏法。</b>你选择一个符合条件的 
-<strong>领域法术表</strong>，并在该法术表中选择两项戏法，以及一项一环法术习得之。你可以每次长休间免费施展所选法术一次，或者你也可以用法术位施展该法术。你施展该戏法的属性是智力、感知或魅力，由你在到达此等级时选择。</p>
-<p class="para"><b>迅捷戏法。</b>你执行攻击动作时，可以将其中一次攻击替换为施展一个施法时间为动作的戏法。</p>
+<p class="para"><b>协同战法。</b>当你施展一个造成伤害，且目标周围5尺有一名你的未失能的<b class="green">盟友</b>时，该戏法的所有伤害骰增加一级（至多d12）。</p>
+<p class="para"><b>迅捷戏法。</b>你执行<b class="green">攻击</b>动作时，可以将其中一次攻击替换为施展一个施法时间为动作的戏法。</p>
 <br>
 <h2>10级：统帅威仪 Lord's&nbsp;Demeanord</h2>
-<p class="para">你从智力、感知或魅力中选择一个属性，然后获得该属性的豁免熟练。你还选择一个基于所选属性的技能，并获得其熟练，若已有熟练则改为获得专精。</p>
-<p class="para">此外，每回合仅一次，当你的攻击检定命中时，你可以投掷并消耗至多两枚生命骰，对目标额外造成等同掷骰结果的<strong>精通伤害</strong>。当你达到18级起，你每回合可以使用此特性两次。</p>
+<p class="para">你已经能将你的源石技艺和你的领导力融会贯通，你获得下述特性：</p>
+<p class="para"><b>统帅威仪。</b>你从智力、感知或魅力中选择一个属性，然后获得该属性的豁免熟练。你还选择一个基于所选属性的技能，并获得其熟练，若已有熟练则改为获得专精。</p>
+<p class="para"><b>戏法增效。</b>当你施展一个造成伤害的戏法时，你可以在戏法的其中一次伤害掷骰中加入你的施法属性调整值。</p>
 <br>
 <h2>15级：逆流弧光 Backflow Arc</h2>
-<p class="para">你懂得在逆境下保持冷静，当你持用一把你精通的武器时，如果你在一次武器攻击中承受<b class="green">劣势</b>，且没有效果为你提供<b class="green">优势</b>，则你可以在掷骰时忽略该劣势。</p>
+<p class="para">你懂得在逆境下保持冷静。你获得下述特性：</p>
+<p class="para"><b>战术适应。</b>当你持用一把你精通的武器时，如果你在一次武器攻击中承受<b class="green">劣势</b>，你可以选择放弃发动这次攻击。然后该回合内你发动的任何其他攻击都可以在掷骰时忽略劣势。</p>
 <p class="para">此外，你还习得战技：逆流弧光。</p>
 <div class="syntax">
 <table>
@@ -233,7 +239,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>  你可以附赠动作并消耗1点技力来发动此战技。直到你下回合开始前：你执行攻击动作时，可以额外发动一次攻击。你的每次武器攻击若命中则额外造成1d10的精通伤害。</p>
+<p>  你可以附赠动作并消耗1点技力来发动此战技。直到你下回合开始前：你的触及距离增加至40尺，你执行攻击动作时，可以额外发动一次攻击；你伤害掷骰可以加入熟练加值。</p>
 </div>
 <br>
 <h2>18级：统御战场 Battlefield Domination</h2>
