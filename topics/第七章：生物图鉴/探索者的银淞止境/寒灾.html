@@ -105,7 +105,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(337);
+  parent.nav.tree.selectNode(342);
  }else{
   setTimeout("syn()",500);
 }
@@ -218,14 +218,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>传奇抗性 Legendary Resistance（3/日）。</b>寒灾豁免失败时，可以将其改为豁免成功。</p>
 <p class="para"><b>魔法抗性 Magic Resistence。</b>寒灾为抵抗法术和其它魔法效应而作的豁免检定具有<b class="green">优势</b>。</p>
 <p class="para"><b>风雪蔽目 Snow Blinded。</b>寒灾投掷先攻后，其周遭60尺的区域内视为处于由风雪造成的<b class="green">重度遮蔽</b>环境，期间寒灾具有<b class="green">四分之三掩护</b>。如果寒灾造成了任何伤害，此效应会在该轮结束时停止。</p>
-<p class="para"><b>刺骨冰封 Biting Frozen。</b>寒灾对一个被<b class="green">冰封</b>的生物造成寒冷伤害时，忽略其拥有的任何寒冷伤害<b class="green">抗性</b>。寒灾将一个被冰封的生物的生命值降至0时，其立即死亡。</p>
+<p class="para"><b>刺骨冰封 Biting Frozen。</b>寒灾对一个被<b class="green">冻结</b>的生物造成寒冷伤害时，忽略其拥有的任何寒冷伤害<b class="green">抗性</b>。寒灾将一个被冻结的生物的生命值降至0时，其立即死亡。</p>
 <p class="para"><b>生灵的终点 The End of Life（神话特性；长休充能）。</b>如果寒灾的生命值被降低到0，它不会死亡，并在自己下回合开始前不会受到伤害。在自己下回合开始时，它立即将生命值重设为300，并立即完成<b>寒潮爆发</b>的充能，以及恢复所有已消耗传奇抗性的次数。另外，寒灾现在可以在一小时内使用“神话动作”部分中的选项。</p>
 <br/>
 <h3>动作 Actions</h3>
 <hr class="sub"/>
 <p class="para"><b>多重攻击 Multiattack。</b>寒灾发动两次<b>冰刃</b>攻击。</p>
-<p class="para"><b>冰刃 Ice Blades。</b><i>近战或远程攻击检定：</i>+13，触及5尺或射程120尺。<i>命中：</i>22（4d10）穿刺伤害，以及11（2d10）寒冷伤害。<i>重击：</i>目标被<b class="green">冰封</b>。</p>
-<p class="para"><b>寒潮爆发 Frozen Burst（充能5~6）。</b>寒灾指定自己或者指定30尺内的一块<b>源石冰晶</b>，使其爆发出冰冷刺骨的冲击波。<i>敏捷豁免检定：</i>DC21，源自该点15尺<b class="green">光环</b>区域内的每个其所选生物。<i>失败：</i>55（10d10）寒冷伤害，并陷入<b class="green">冰封</b>。<i>成功：</i>仅受半伤。</p>
+<p class="para"><b>冰刃 Ice Blades。</b><i>近战或远程攻击检定：</i>+13，触及5尺或射程120尺。<i>命中：</i>22（4d10）穿刺伤害，以及11（2d10）寒冷伤害。<i>重击：</i>目标被<b class="green">冻结</b>。</p>
+<p class="para"><b>寒潮爆发 Frozen Burst（充能5~6）。</b>寒灾指定自己或者指定30尺内的一块<b>源石冰晶</b>，使其爆发出冰冷刺骨的冲击波。<i>敏捷豁免检定：</i>DC21，源自该点15尺<b class="green">光环</b>区域内的每个其所选生物。<i>失败：</i>55（10d10）寒冷伤害，并陷入<b class="green">冻结</b>。<i>成功：</i>仅受半伤。</p>
 <p class="para"><b>施法 Artcasting。</b>寒灾作为13级施法者施展一道以下法术，无需法术成分，并使用魅力作为施法属性（法术豁免 DC 21，法术攻击命中+13）。</p>
 <p><i>随意：</i><b class="spell">德鲁伊技俩，颤栗之触，侦测思想，次级幻象，霜噬<sup>XGE</sup></b></p>
 <p><i>每项3/日：</i><b class="spell"><a href="../../第五章：施法规则/2环.html#寒潮">寒潮</a><sup>ES</sup>，塔莎心灵鞭，缓慢术</b></p>
@@ -250,9 +250,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <br/>
 <div class="side-box" id="navy">
-<h4 id="ISW">规则引用：冰封 Frozen*【危害】</h4>
-<p class="para"><b>迟缓。</b>冰封中的生物移动速度降至0，在执行攻击动作或魔法动作以进行攻击时，必须放弃其中一次攻击检定，且无法执行<b class="green">反应</b>。</p>
-<p class="para"><b>恢复。</b>生物可以使用<b class="green">动作</b>打破身上的冰封效果，如果拥有<b class="green">抵抗</b>状态则可以用<b class="green">附赠动作</b>或者替换攻击动作中的其中一次攻击来打破。如果受到<b class="spell">温暖术<sup>ES</sup></b> 效应、任意火焰伤害、<b class="spell">次级复原术</b>或类似效应，则冰封危害也会立刻结束。</p>
+<h4 id="ISW">规则引用：冻结 Frozen*【危害】</h4>
+<p class="para"><b>迟缓。</b>冻结中的生物移动速度降至0，在执行攻击动作或魔法动作以进行攻击时，必须放弃其中一次攻击检定，且无法执行<b class="green">反应</b>。</p>
+<p class="para"><b>恢复。</b>生物可以使用<b class="green">动作</b>打破身上的冻结效果，如果拥有<b class="green">抵抗</b>状态则可以用<b class="green">附赠动作</b>或者替换攻击动作中的其中一次攻击来打破。如果受到<b class="spell">温暖术<sup>ES</sup></b> 效应、任意火焰伤害、<b class="spell">次级复原术</b>或类似效应，则冻结危害也会立刻结束。</p>
 </div>
 <br/><br/>
 </div>

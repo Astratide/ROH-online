@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(193);
+  parent.nav.tree.selectNode(194);
  }else{
   setTimeout("syn()",500);
 }
@@ -144,7 +144,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
 <p class="indent">当鲜血流淌，你将其转化为力量。在触发生物5尺内的未占据空间中创造一枚<b class="green">血珀</b>。</p>
-<p class="indent"><b class="green">血珀</b>是一种小型物件（AC为10，HP为10），对所有伤害具有<b class="green">抗性</b>，并对所有伤害具有10点伤害减免。血珀本身无效应，但可被其他血术法术消耗以触发额外效果。</p>
+<p class="indent"><b class="green">血珀</b>是一种小型物件（AC为10，HP为10），对所有伤害具有<b class="green">抗性</b>，并对所有伤害具有10点伤害减免（在抗性之前结算）。血珀本身无效应，但可被其他血术法术消耗以触发额外效果。</p>
 <br>
 <br>
 <h5 id="血矛术">血矛术丨Sanguine Spear</h5>
