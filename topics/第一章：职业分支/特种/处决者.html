@@ -161,41 +161,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>乘胜追击</b></td></tr>
   <tr>
     <td style="text-align: center;">15th</td>
-    <td><b>致命袭杀</b></td></tr></tbody></table><br>
+    <td><b>致命袭杀</b></td></tr></tbody></table>
+    <br>
 <hr>
 <br>
 <h2>3级：战术处决 Tactical Execution</h2>
 <p class="para">作为一名处决者，你获得以下特性：</p>
-<p class="para"><b>短兵相接。</b>你选择一项具有轻型属性的近战武器，然后获得其精通。你应用武器的轻型词条而得以发动额外武器攻击的时候，你可以使用同一把武器而非另一把武器来发动此次攻击。</p>
-<p class="para"><b>隐匿大师。</b>你可以<b class="green">附赠动作</b>执行<b class="green">躲藏</b>或<b class="green">撤离</b>。若你没有着装盾牌或者持用双手武器，且处于轻度遮蔽或半身掩护后，则即便你能被敌人看见，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受劣势。</p>
-<p class="para"><b>本职法术。</b>你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
-<br>
-<h4>处决者法术表</h4>
-<table class="custom-table" id="left" style="max-width: 500px;">
-  <colgroup>
-  <col style="width: 5em;">
-  <col style="width: 25em;">
-  <tbody>
-  <tr>
-    <th style="text-align: center;"><b>环阶</b></th>
-    <th><b>法术</b></th></tr>
-  <tr>
-    <td style="text-align: center;">一环</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/1环.html#吸收动能">吸收动能</a><sup>ROH</sup>、<A href="../../第五章：施法规则/1环.html#淡影步">淡影步</a><sup>RES</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">二环</td>
-    <td><b class="spell">法术闪避<sup>FR</sup>、<A href="../../第五章：施法规则/2环.html#猎犬本能">猎犬本能</a><sup>RES</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">三环</td>
-    <td><b class="spell">闪现术、魂灵环绕<sup>TCE</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">四环</td>
-    <td><b class="spell">行动自如、惊惧斩</b></td></tr>
-  <tr>
-    <td style="text-align: center;">五环</td>
-    <td><b class="spell">钢风斩、湮灭波</b></td></tr>
-    </tbody></table>
-<br>
+<p class="para"><b>短兵相接。</b>你选择一项具有轻型属性的近战武器，然后获得其精通。此外，每当你用一把轻型武器发动攻击，且你可以使用此武器的精通词条时，你可以将此次攻击的精通词条改为<b class="green">迅击</b>。</p>
+<p class="para"><b>剑刃连击。</b>你应用武器的轻型词条而得以发动额外武器攻击的时候，你可以使用同一把武器而非另一把武器来发动此次攻击。</p>
+<p class="para"><b>隐匿大师。</b>你可以<b class="green">附赠动作</b>执行<b class="green">躲藏</b>、<b class="green">撤离</b>或<b class="green">疾走</b>。若你没有着装盾牌或者持用双手武器，且处于轻度遮蔽或半身掩护后，则即便你能被敌人看见，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受劣势。</p>
 <p class="para"> 此外，你习得战技：战术处决。</p>
 <div class="syntax">
 <table>
@@ -208,7 +182,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>战术处决丨Tactical Execution</h6>
-      <div class="cost" id="green"><p class="light">回合开始</p></div>
+      <div class="cost" id="green"><p class="light">攻击动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
@@ -217,15 +191,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在自己回合开始时消耗1点技力来发动此战技。你立即获得1d8+你特种等级的临时生命值。直到本回合结束前：你的近战攻击在伤害掷骰上获得+1d6加值。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。你立即获得1d8+你特种等级的<b class="green">临时生命值</b>，这些临时生命值在战斗结束时消失。直到本回合结束前：你的近战攻击在伤害掷骰上获得+1d6加值。</p></div>
 <br>
 <h2>3级：快速部署 Speeded Deployment</h2>
 <p class="para">你擅长一击脱离，然后在合适的时机回归战场发起奇袭，你获得以下增益：</p>
-<p class="para"><b>再部署Redeploy。</b>每先攻检定间仅一次，若你结束回合时，你周围60尺内没有敌人能看见你，则你可以立即恢复1点技力点，以及恢复等同你特种等级枚d8的已损生命值。以此恢复的技力点在你到达更高的处决者等级时提升：5级起2点，13级起3点。</p>
-<p class="para"><b>瞬影步Flash Step。</b>你可以在每轮开始时或在一个生物结束回合时采取反应，移动至多等同你移动速度的距离。你使用此特性后，在你的下一个回合开始时，会立即损失等同你以此移动距离的移动力。</p>
+<p class="para"><b>再部署。</b>每先攻检定间仅一次，若你结束回合时，你周围60尺内没有敌人能看见你，则你可以立即恢复1点技力点，并移除身上所有可以通过重复豁免结束的状态或效应。以此恢复的技力点在你到达更高的处决者等级时提升：5级起2点，13级起3点。</p>
+<p class="para"><b>本能法术。</b>你习得并时刻准备戏法<b class="spell">克敌先击</b>以及一环<b class="spell">猎人印记</b>，其对你而言被视为处决者法术。你可以免费施展该法术而无需法术位，次数等同你的施法属性调整值。你在完成一次长休后恢复所有次数。</p>
 <br>
 <h2>6级：瞬影震爆 Instant Concussion</h2>
-<p class="para">你习得战技：瞬影震爆。</p>
+<p class="para">你的反应灵敏、行动迅捷，你习得下述特性：</p>
+<p class="para"><b>迅捷戏法。</b>你可以将<b class="green">攻击</b>动作中的其中一次攻击替换为施展一个施法时间为动作的处决者戏法。</p>
+<p class="para">此外，你习得战技：瞬影震爆。</p>
 <div class="syntax">
 <table>
   
@@ -237,7 +213,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>瞬影震爆丨Instant Concussion</h6>
-      <div class="cost" id="green"><p class="light">回合开始</p></div>
+      <div class="cost" id="green"><p class="light">攻击动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
@@ -246,12 +222,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在自己回合开始时消耗1点技力来发动此战技。你周围10尺的每个你选择的生物必须通过敏捷豁免（DC同你法术DC），否则受到4d6点你的精通伤害，成功则仅受半伤。直到本回合结束前：你对那些豁免失败的生物发动的近战攻击具有<b class="green">优势</b>。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。你周围10尺的每个你选择的生物必须通过敏捷豁免（DC同你法术DC），否则受到你<b class="green">熟练加值</b>枚d6点你的精通伤害，成功则仅受半伤。直到本回合结束前：你对那些豁免失败的生物发动的近战攻击具有<b class="green">优势</b>。</p></div>
 <br>
 <h2>10级：乘胜追击 Victorious Pursuit</h2>
 <p class="para">你的机动性无与伦比，总是能够在敌人最脆弱的时刻施加打击。你获得以下特性：</p>
-<p class="para"><b>追击突刺。</b>当你30尺内的一名可见生物在一次豁免检定中失败时，你可以采取反应，立即移动至多等同你移动速度的距离，然后对触发反应的目标发动一次近战攻击。</p>
-<p class="para"><b>迅捷瞬步。</b>你的瞬影步特性不再需要消耗反应来使用，但你仍每轮只能使用一次此特性。</p>
+<p class="para"><b>追击突刺。</b>当你30尺内的一名可见生物在一次豁免检定中失败时，你可以采取<b class="green">反应</b>，立即移动至多等同你移动速度的距离，然后对触发反应的目标发动一次近战攻击。</p>
+<p class="para"><b>迅捷瞬步。</b>你可以在一个生物要开始回合前，移动至多等同你移动速度的距离。此特性一经使用，直到你在一回合选择仅移动0尺后，才能再次使用。</p>
 <br>
 <h2>15级：致命袭杀 Fatal Assault</h2>
 <p class="para">你的刺杀技艺已经登峰造极。你获得以下特性：</p>

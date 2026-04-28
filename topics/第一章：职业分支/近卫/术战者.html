@@ -169,62 +169,61 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：术战锋刃&nbsp;Blade&nbsp;of&nbsp;Arts</h2>
 <p class="para">作为一名术战者，你获得以下特性：</p>
-<p class="para"><b>迅捷戏法。</b>你可以将攻击动作中的其中一次攻击替换为施展一个施法时间为1动作的术战者戏法。</p>
-<p class="para"><b>短休复苏。</b>当你完成一次短休时，你可以让自己恢复所有已损生命值。你必须完成一次长休才能再次从此特质获益。</p>
+<p class="para"><b>迅捷戏法。</b>你可以将攻击动作中的其中一次攻击替换为施展一个施法时间为动作的术战者戏法。</p>
+<p class="para"><b>战术施法。</b>你执行<b class="green">魔法</b>动作的回合，你可以<b class="green">附赠动作</b>施展一个施法时间为动作的术战者戏法。</p>
 <br>
-<h2>3级：近卫施法 Guard Casting</h2>
-<p class="para">你习得如何施展法术，如同你是一名施法者。这是一个施法特性。</p>
-<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 <b>精通伤害</b> 
-，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
-<p class="para"><b>法术表构建。</b>你将 <b>基础术师法表</b> 以及一个符合条件的 <b>领域法术表</b> 加入你的职业法术表内。（见第五章“<A href="../../第五章：施法规则/法术表构建.html">法术表构建</a>”）</p>
-<p class="para"><b>生命骰施法。</b>你施展术战者法术时，需消耗等同对应环阶数量的生命骰。你一次最多只能消耗1枚生命骰用以施展术战者法术。你一次能消耗的生命骰在你到达更高术战者等级时获得提升：5级时2枚，7级时3枚，10级时4枚，15级时5枚。</p>
-<p class="para"><b>准备法术。</b>你需要准备才可以此特性施展任何术战者法术，包括戏法。你可以在升级时重新选择你以此准备的法术，但只能准备你能施展的法术。</p>
-<p class="indent"><b>准备戏法：</b>你可以准备的戏法数量为至多2道。10级起改为3道。</p>
-<p class="indent"><b>准备一环或更高法术：</b>你可以准备的1环或更高法术数量等同你的熟练加值。</p>
+<h2>3级：近卫施法 Guard Artcasting</h2>
+<p class="para">你习得如何施展法术，如同你是一名施法者。这是一个 施法Spellcasting 
+特性。</p>
+<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 
+精通伤害，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。你通过职业特性造成你的精通伤害时，也视为是通过法术造成的伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。只有起源专长“<A href="../../第二章：角色资源/专长/通用专长.html#源石技艺天赋">源石技艺天赋</a>”可以为你带来光耀、黯蚀、力场、心灵伤害的精通。</p>
+<p class="para"><b>法术表构建。</b>你将 <b>基础术师法表</b> 以及一个符合条件的 <b>领域法术表</b>加入你的职业法术表内。（见第五章“<A href="../../第五章：施法规则/法术表构建.html">法术表构建</a>”）</p>
+<p class="para"><b>法术位。</b>术战者施法表显示了你可用于施展一环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位，你必须拥有替换后法术对应环阶的法术位才可以替换。<br></p>
+<p class="para"><b>准备法术。</b>你需要准备才可以此特性施展任何术战者法术。最初，选择两道术战者戏法和三道1环术战者法术准备之。术战者施法表列出了你在每个等级最多可以准备的法术数量。每当你升级时，你就可以重新选择要准备的法术。你准备的法术环阶不能超过你的最大法术环阶。</p>
 <p class="para"><b>施法属性。</b>你施展术战者法术时，你的施法属性是智力、感知或魅力，由你在选择该子职时选择。</p>
-<p class="para"><b>施法法器。</b>你可以用奥术法器，或任何精通的军用近战武器作为法器。</p>
-<p class="para"><b>本职法术。</b>当你达到对应近卫等级时，你将下述法术加入你的职业法术表。你时刻准备这些法术，且不占用你以此特性准备的法术数量。</p>
+<p class="para"><b>施法法器。</b>你可以用奥术法器或任何魔法武器作为你施展术战者法术的法器。</p>
+  <br>
+
+<h2>术战者施法表</h2>
+<table cellspacing="0" cellpadding="2" style="text-align: center;  border-collapse: collapse;">
+  <tr>
+    <th rowspan="2">近卫等级</th>
+    <th rowspan="2">准备法术</th>
+    <th colspan="4">—每法术等级法术位—</th>
+  </tr>
+  <tr>
+    <th>一环</th>
+    <th>二环</th>
+    <th>三环</th>
+    <th>四环</th>
+  </tr>
+  <tr><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>7</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+  <tr><td>8</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+  <tr><td>9</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+  <tr><td>10</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+  <tr><td>11</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+  <tr><td>12</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+  <tr><td>13</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+  <tr><td>14</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+  <tr><td>15</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+  <tr><td>16</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+  <tr><td>17</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+  <tr><td>18</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+  <tr><td>19</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+  <tr><td>20</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+</table>
 <br>
-<h4>术战者法术表</h4>
-<table class="custom-table" id="left" style="max-width: 500px;">
-  <colgroup>
-  <col style="width: 5em;">
-  <col style="width: 25em;">
-  <tbody>
-  <tr>
-    <th style="text-align: center;"><b>近卫等级</b></th>
-    <th><b>法术</b></th></tr>
-  <tr>
-    <td style="text-align: center;">3rd</td>
-    <td><b class="spell">翠炎剑，<A href="../../第五章：施法规则/戏法(0环).html#魔刃">魔刃</a><sup>ROH</sup></b><br>
-    <b class="spell">炽焰斩，吸收元素</b></td></tr>
-  <tr>
-    <td style="text-align: center;">5th</td>
-    <td><b class="spell">魔化武器，<A href="../../第五章：施法规则/2环.html#繁彩剑">繁彩剑</a><sup>GMB</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">7th</td>
-    <td><b class="spell">元素武器，魂灵环绕<sup>TCE</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">10th</td>
-    <td><b class="spell">月光涌泉，惊惧斩</b></td></tr>
-  <tr>
-    <td style="text-align: center;">15th</td>
-    <td><b class="spell">钢风斩<sup>XGE</sup>，神圣武器<sup>XGE</sup></b></td></tr>
-    </tbody></table>
 <br>
-<h2>7级：破浪回神&nbsp;Restorative Surge</h2>
-<p class="para">你懂得使用源石技艺恢复自己消耗的体力。你执行 <b>近卫回转</b>时，可以放弃恢复技力，而是让自己立即恢复1d3+熟练加值枚的已损生命骰。直到你完成一次长休前，你不能再这么做。</p>
-<p class="para">此外，当你在一次近战攻击检定中，或在为维持术战者法术的<b class="green">专注</b>而作的体质豁免检定中失败时，你可以消耗2枚生命骰来重掷这次检定，但你必须接受重掷的结果。</p>
-<br>
-<h2>10级：专注附魔&nbsp;Focused Enchanting</h2>
-<p class="para">你为维持术战者法术的<b class="green">专注</b>而作的体质豁免检定具有<b class="green">优势</b>。当你在此豁免检定中失败时，你可以选择使其成功，然后对周围10尺内的每个所选敌人造成1d10+你近卫等级的力场伤害。此特性一经使用，直到你完成一次长休，不可再次使用。</p>
-<p class="para">此外，你获得你的<b>精通伤害</b>的<b class="green">抗性</b>，若你有多个精通伤害，则你仅选择一个获得。</p>
-<br>
-<h2>15级：灿辉剑影&nbsp;Brilliant Shadowblade</h2>
-<p class="para">你习得战技：灿辉剑影。</p>
+<h2>7级：灿辉剑影 Brilliant Shadowblade</h2>
+<p class="para">你擅长于在物理攻击中融入法术能量以穿透敌人护甲。你习得下述特性：
+<p class="para"><b>贯甲术刃。</b>你消耗技力发动战技的回合，或者施展了任何法术的回合，你使用武器发动的攻击具有<b class="green">优势</b>。</p>
+<p class="para">此外，你习得战技：灿辉剑影。</p>
 <div class="syntax">
 <table>
-  
   <tr>
     <td>
       <div class="skill">
@@ -232,21 +231,31 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>&nbsp;灿辉剑影&nbsp;|&nbsp;Brilliant&nbsp;Shadowblade</h6>
+      <h6>灿辉剑影 | Brilliant Shadowblade</h6>
       <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗 2 技力</p></div>
+      <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
-        <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
-        本回合结束</p>
+        <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png">本回合结束</p>
       </div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗2点技力来发动这个战技。直到本回合结束前：你的近战攻击具有优势，造成的伤害全部转化为你的<b>精通伤害</b>，每次攻击额外造成1d8点伤害。</p></div>
+<p>你可以附赠动作并消耗1点技力来发动这个战技。直到本回合结束前：你的近战攻击具有<b class="green">优势</b>，造成的伤害全部转化为你的<b>精通伤害</b>，每次攻击额外造成1d8点伤害。</p></div>
 <br>
-<h2>18级：至臻术刃&nbsp;Ultimate Artblade</h2>
-<p class="para">你不会因为受到伤害而中断对术战者法术的<b class="green">专注</b>。</p>
-<p class="para">此外，你消耗技力发动了战技的回合，造成的伤害全部转化为你的<b>精通伤害</b>，且忽略敌人的抗性。</p>
+<h2>10级：专注附魔 Focused Enchanting</h2>
+<p class="para">你完美地将源石技艺灌注于你的剑刃之上，你习得以下特性：</p>
+<p class="para"><b>专注附魔。</b>你为维持术战者法术的<b class="green">专注</b>而作的体质豁免检定具有<b class="green">优势</b>。当你在此豁免检定中失败时，你可以选择使其成功，然后对周围10尺内的每个所选敌人造成1d10+你近卫等级的力场伤害。此特性一经使用，直到你完成一次长休，不可再次使用。</p>
+<p class="para"><b>精通抗性。</b>此外，你获得你的<b>精通伤害</b>的<b class="green">抗性</b>，若你有多个精通伤害，则你仅选择一个获得。</p>
+<br>
+<h2>15级：至臻术刃 Ultimate Artblade</h2>
+<p class="para">你完美地将源石技艺灌注于你的剑刃之上，你习得以下特性：</p>
+<p class="para"><b>无暇专注。</b>你不会因为受到伤害而中断对术战者法术的<b class="green">专注</b>。</p>
+<p class="para"><b>破浪回神。</b>你在自己回合施展一道一环或更高环阶的法术后，你可以为自己赋予等同环阶五倍的<b class="green">临时生命值</b>。</p>
+<br>
+<h2>18级：战争魔法 War Magic</h2>
+<p class="para">你对战争源石技艺的深造使得你习得以下特性：</p>
+<p class="para"><b>战争魔法。</b>你执行<b class="green">魔法</b>动作的回合，你可以<b class="green">附赠动作</b>使用武器发动两次攻击。</p>
+<p class="para"><b>奥秘释能。</b>以一个<b class="green">魔法</b>动作，你可以施展一道法术环阶为四环到六环的法术，施法时间为动作的法术，前提是其在你的职业法术表中。这道法术被视为使用六环法术位施展。此特性一经使用，直到你完成一次长休前不可再次使用。</p>
 <br><br>
 </div>
 </div>

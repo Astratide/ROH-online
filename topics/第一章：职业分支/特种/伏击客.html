@@ -168,38 +168,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：战术伏击 Tactical Ambush</h2>
 <p class="para">作为一名伏击客，你获得以下特性：</p>
 <p class="para"><b>阻滞打击。</b>你选择一项具有轻型属性的近战武器，然后获得其精通。此外，每当你用一把轻型武器发动攻击，且你可以使用此武器的精通词条时，你可以将此次攻击的精通词条改为<b class="green">缓速</b>。</p>
-<p class="para"><b>隐匿大师。</b>若你没有着装盾牌或者持用双手武器，即便你只是处于<b class="green">轻度遮蔽</b>或<b class="green">半身掩护</b>时，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受<b class="green">劣势</b>。</p>
-<p class="para"><strong>本职法术。</strong>你将下述法术加入你的职业法术表。如果你有对应的法术位施展它们，那么你时刻准备这些法术，且不占用你以特种施法特性准备的法术数量。</p>
-<br>
-<h4>伏击客法术表</h4>
-<table class="custom-table" id="left" style="max-width: 500px;">
-  <colgroup>
-  <col style="width: 5em;">
-  <col style="width: 25em;">
-  <tbody>
-  <tr>
-    <th style="text-align: center;"><b>环阶</b></th>
-    <th><b>法术</b></th></tr>
-  <tr>
-    <td style="text-align: center;">戏法</td>
-    <td><b class="spell">鸣雷破、克敌先击</b></td></tr>
-  <tr>
-    <td style="text-align: center;">一环</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/1环.html#吸收动能">吸收动能</a><sup>ROH</sup>、<A href="../../第五章：施法规则/1环.html#黯蚀灵光">黯蚀灵光</a><sup>ROH</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">二环</td>
-    <td><b class="spell"><A href="../../第五章：施法规则/2环.html#化身烟雾">化身烟雾</a><sup>ROH</sup>、<A href="../../第五章：施法规则/2环.html#蔽目斩">蔽目斩</a><sup>ROH</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">三环</td>
-    <td><b class="spell">吸血鬼之触、<A href="../../第五章：施法规则/3环.html#复仇斩">复仇斩</a><sup>ROH</sup></b></td></tr>
-  <tr>
-    <td style="text-align: center;">四环</td>
-    <td><b class="spell">行动自如、惊惧斩</b></td></tr>
-  <tr>
-    <td style="text-align: center;">五环</td>
-    <td><b class="spell">钢风斩、<A href="../../第五章：施法规则/5环.html#荡毁时雨">荡毁时雨</a><sup>ROH</sup></b></td></tr>
-    </tbody></table>
-<br>
+<p class="para"><b>隐匿大师。</b>你可以<b class="green">附赠动作</b>执行<b class="green">躲藏</b>或<b class="green">撤离</b>。若你没有着装盾牌或者持用双手武器，且处于轻度遮蔽或半身掩护后，则即便你能被敌人看见，也可以执行<b class="green">躲藏</b>，但以此进行的隐匿检定承受劣势。</p>
+
 <p class="para"> 此外，你习得战技：伏击袭杀。</p>
 <div class="syntax">
 <table>
@@ -220,7 +190,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在攻击命中时消耗1点技力来发动此战技。你立即让这次攻击对目标额外造成等同你特种等级的精通伤害，且使其移动速度减少10尺直到其回合结束。如果一个生物的速度被以此降至0，其还会在期间陷入<b class="green">束缚</b>状态。此外，每个你20尺内你选择的其他生物，若AC不高于原目标的AC，则你可以让它们受到原攻击一半的伤害。</p></div>
+<p>你可以在攻击命中时消耗1点技力来发动此战技。你立即让这次攻击对目标额外造成等同你特种等级的精通伤害，且使其移动速度减少10尺直到其回合结束。如果一个生物的速度被以此降至0，其还会在期间陷入<b class="green">束缚</b>状态。</p>
+<p>此外，每个你20尺内你选择的其他生物，若AC不高于原目标的AC，则你可以让它们受到1d8+你特种等级的精通伤害。</p></div>
 <br>
 <h2>3级：遁影直觉 Shadow Intuition</h2>
 <p class="para">你擅长在混乱的战场中心隐藏行踪，身处敌群却又无法捉摸，你获得以下特性：</p>
@@ -240,9 +211,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6> 蚀骨侵袭丨Etching Strike</h6>
-      <div class="cost" id="green"><p class="light">回合开始</p></div>
-      <div class="trigger"><p class="light">消耗 2 技力</p></div>
+      <h6>蚀骨侵袭丨Etching Strike</h6>
+      <div class="cost" id="green"><p class="light">攻击动作</p></div>
+      <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
         立即</p>
@@ -250,7 +221,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在自己回合开始时消耗2点技力来发动此战技。你周围20尺的每个你选择的生物必须立即通过敏捷豁免（DC等同你法术DC），否则受到等同你特种等级的精通伤害，成功则仅受半伤。豁免失败的生物移动速度减少10尺直到其回合结束。如果一个生物的速度被以此降至0，其还会在期间陷入<b class="green">束缚</b>状态。</p></div>
+<p>你可以执行攻击动作时消耗1点技力来发动此战技。每个你20尺内你选择的生物，受到1d8+你特种等级的精通伤害，且移动速度减少10尺直到其回合结束。如果一个生物的速度被以此降至0，其还会在期间陷入<b class="green">束缚</b>状态。</p></div>
 <br>
 <h2>10级：渗透之眼 Eye of Infiltration</h2>
 <p class="para">你的隐蔽性和渗透性无与伦比。你获得以下特性：</p>
