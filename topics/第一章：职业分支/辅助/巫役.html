@@ -198,7 +198,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">你可以利用元素印记来对敌人造成爆发效应。你获得以下特性：</p>
 <p class="para"><b>重选精通。</b>你可以重新选择自己的精通伤害，可选项也包括了光耀、黯蚀、心灵或力场。</p>
 <p class="para"><b>元素损伤。</b>你习得一项符合条件的元素损伤专长（见第二章“通用专长”），但你不从以此习得的专长中获得属性值提升。你可以选择：<A href="../../第二章：角色资源/专长/通用专长.html#灼燃">灼燃</a>、<A href="../../第二章：角色资源/专长/通用专长.html#侵蚀">侵蚀</a>、<A href="../../第二章：角色资源/专长/通用专长.html#神经">神经</a>、<A href="../../第二章：角色资源/专长/通用专长.html#凋亡">凋亡</a>。</p>
-<p class="para"><b>增效回转。</b>当你使用<b class="green">附赠动作</b>执行辅助回转动作时，作为附赠动作的一部分，你还可以执行<b class="green">损伤爆发</b>。效果如同所习得的专长所述。</p>
 <p class="para"><b>高效爆发。</b>如果一个生物在你的上一回合中在你的元素损伤爆发的豁免中成功，那么你本回合再次迫使其进行元素损伤爆发的豁免时其具有<b class="green">劣势</b>。</p>
 <br>
 <h2>6级：巫法烙印 Hex Brand</h2>
@@ -215,8 +214,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>巫法烙印丨Hex Brand</h6>
-      <div class="cost">
-        <p class="light">附赠动作</p></div>
+      <div class="cost" id="green">
+        <p class="light">魔法动作</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -226,7 +225,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。你立即施展一个施法时间为动作的巫役戏法。然后你可以选择周围若干个120尺内身上有元素损伤标记的生物，引爆并清除其身上的元素标记，并迫使他们进行一次具有<b class="green">劣势</b>的对应损伤爆发豁免，前提是你拥有对应类型的元素损伤专长。</p>
+<p>你可以魔法动作并消耗1点技力来发动此战技。你立即施展一道施法时间为动作的辅助法术（视为升1环施展）。作为此动作的一部分，你还可以执行损伤爆发动作，那些需要进行损伤爆发豁免的生物在该豁免中承受<b class="green">劣势</b>。</p>
 <p></p>
 </div>
 <br>
@@ -262,7 +261,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以魔法动作并消耗1点技力来发动此战技。你立即施展一个施法时间为动作的辅助法术（视为升1环施展）。然后选择周围若干个120尺内身上有元素损伤标记的生物，引爆并清除其身上的元素标记，并迫使他们进行对应豁免。前提是你拥有对应类型的元素损伤专长。直到你下回合结束前：你可见的敌人在元素损伤爆发期间获得<b class="green">d6脆弱</b>。</p>
+<p>你可以魔法动作并消耗1点技力来发动此战技。你立即施展一个施法时间为动作的辅助法术（视为升1环施展）。直到你下回合结束前：你可见的敌人在元素损伤爆发期间获得<b class="green">d6脆弱</b>。</p>
 </div>
 <br><br>
 
