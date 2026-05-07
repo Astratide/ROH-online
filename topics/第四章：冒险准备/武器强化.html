@@ -103,7 +103,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(166);
+  parent.nav.tree.selectNode(168);
  }else{
   setTimeout("syn()",500);
 }
@@ -125,7 +125,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
-		<A href="装备附魔.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../btn_prev_n.gif" border="0"></a>
+		<A href="泰拉武器/施术单元.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../btn_prev_n.gif" border="0"></a>
 		<A href="防具强化.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../btn_next_n.gif" border="0"></a>
 	</div>
 	PRTS资料库 > <A href="../第四章：冒险准备.html">第四章：冒险准备</A> &gt; <A href="装备附魔.html">装备强化</A> &gt;  <b>武器</b>
@@ -149,13 +149,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>奥力 Arcane</h4>
 <p class="grey">装备附魔（任意武器），非普通（需施法者同调）</p>
-<p class="para"><b>奥力。</b>使用奥力武器发动的攻击命中时，你可以立即执行<b class="green">附赠动作</b>并消耗一枚法术位。这次攻击额外造成每法术环阶1d6的力场伤害。</p>
+<p class="para"><strong>奥力。</strong>每回合仅一次，使用奥力武器发动的攻击命中时，你可以消耗一枚法术位，使得这次攻击额外造成每法术环阶1d8点力场伤害，还可以在伤害掷骰上加入你的施法属性调整值。使用此特性的回合，你不能消耗法术位施展过法术，且直到回合结束前也无法这么做。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <span style="color: transparent;">龙龙 2026-4-6</span>
 <br>
 <br>
 <h4>魔刃 Artblade</h4>
-<p class="grey">装备附魔（任意近战武器），普通</p>
-<p class="para"><b>魔刃。</b>持用魔刃武器时，你可以<b class="green">附赠动作</b>为该武器附魔，效应持续一分钟。期间你可以基于智力、感知或魅力属性（自选）来为这把武器进行攻击检定和伤害掷骰。</p>
+<p class="grey">装备附魔（任意近战武器），普通（需施法者同调）</p>
+<p class="para"><b>魔刃。</b>持用魔刃武器时，你可以<b class="green">附赠动作</b>为该武器附魔，效应持续一分钟。期间你可以基于你的施法属性调整值来为这把武器进行攻击检定和伤害掷骰。</p>
 <br>
 <br>
 <h4>施术 Artcasting</h4>
@@ -216,9 +217,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>组合 Combine</h4>
 <p class="grey">装备附魔（任意武器），普通</p>
-<p class="para"><b>组合。</b>组合武器被和另一样物件组合起来，按照组合对象获得不同的增益。组合的对象在附魔时选定，可以是任意武器、盾牌、工具、乐器或法器。</p>
+<p class="para"><b>组合。</b>组合武器被和另一样物件组合起来，目标物件被融入此武器中。此武器会按照组合对象获得不同的增益。组合的对象在附魔时选定，可以是任意武器、盾牌、工具、乐器或法器。</p>
 <ul>
-<li><b>与其他武器组合：</b>使用该武器发动的攻击可以自选使用原武器或组合对象的伤害骰和伤害类型，你可以选择两种武器其一的精通词条使用，也具有两把武器的所有属性（特别地，重型和轻型属性会相互抵消）。进行多重附魔时，组成武器的双方都可以用来满足附魔的要求，即便其可能在作为某一形态而使用时因不满足条件而无法发挥附魔的效果。</li>
+<li><b>与其他武器组合：</b>使用该武器发动的攻击可以自选使用原武器或组合对象的伤害骰和伤害类型，具有两把武器的所有属性（特别地，重型和轻型属性会相互抵消）。进行多重附魔时，组成武器的双方都可以用来满足附魔的要求，即便其可能在作为某一形态而使用时因不满足条件而无法发挥附魔的效果。</li>
 <li><b>与盾牌组合：</b>如果该武器被进行了增强附魔，持握它时你的AC也都获得等同增强程度的加值。</li>
 <li><b>与法器组合：</b>该武器同时也可以作为组合的法器使用。如果该武器被进行了增强附魔，持握它时你的法术攻击检定和法术豁免DC也都获得等同增强程度的加值。</li>
 <li><b>与乐器组合：</b>该武器同时也可以作为组合的乐器使用。如果该武器被进行了增强附魔，持握它时你用它进行的魅力（表演）检定也都获得等同增强程度的加值。</li>
@@ -233,7 +234,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <br>
 <h4>舞空 Dancing</h4>
-<p class="grey">装备附魔（任意近战武器），非普通</p>
+<p class="grey">装备附魔（任意没有重型属性的近战武器），非普通</p>
 <p class="para"><b>舞空。</b>你可以<b class="green">附赠动作</b>，将该武器抛至60尺内的一点并开始悬浮。这把武器可以在随后的回合被你以附赠动作指挥对其5尺内的生物发动近战攻击（攻击加值与你相同），且可以在攻击前或后飞行移动至多30尺。悬浮超过1分钟后，武器掉落在地。</p>
 <br>
 
@@ -266,7 +267,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>猎龙 Dragonhunt</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>猎龙。</b>使用猎龙武器的攻击额外造成1d4点武器伤害。如果是命中<b class="green">龙类</b>生物，这些额外武器伤害骰提升至d8。</p>
-<p class="para">此外，持用这把武器时，当你受到火焰、寒冷、闪电、强酸或毒素伤害时，你可以采取<b class="green">反应</b>，使得自己在应对此伤害时，具有一项对应伤害的<b class="green">抗性</b>。</p>
+<p class="para">此外，持握这把武器时，当你受到火焰、寒冷、闪电、强酸或毒素伤害时，你可以采取<b class="green">反应</b>，使得自己在应对此伤害时，具有一项对应伤害的<b class="green">抗性</b>。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d4），极珍稀（3d4）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <span style="color: transparent;">龙龙 2026-4-6</span>
@@ -274,7 +275,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>破坏 Devastating</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须进行一次DC17体质豁免检定，否则一个你选择的肢体将按照下表承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到14点额外伤害。</p>
+<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须进行一次DC17体质豁免检定，否则一个你选择的肢体将按照下表承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到等同豁免DC的额外伤害。</p>
 <table class="custom-table" style="min-width: 350px;">
   <tr>
     <th>位置</th>
@@ -335,8 +336,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>威力 Empowered</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>威力。</b>威力武器具有5发充能，其会在每日黎明时恢复所有充能。每回合仅一次，使用威力武器的攻击命中目标时，你可以消耗1发充能强化这次攻击。这次攻击额外造成2d6的力场伤害。</p>
+<p class="para"><b>威力。</b>每回合仅一次，当你使用威力武器发动的攻击命中目标时，你可以使得这次攻击额外造成2d6点与武器相同类型的伤害。</p>
 <p class="para"><b>更高稀有度：</b>造成的额外伤害获得提升。珍稀（4d6），极珍稀（6d6）。</p>
+<p class="para"><b>附魔禁限：</b>该附魔属于核心附魔，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
 <br>
 <h4>冰寒 Frost</h4>
@@ -396,7 +398,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>仁慈 Merciful</h4>
 <p class="grey">装备附魔（任意武器），非普通</p>
-<p class="para"><b>仁慈。</b>使用仁慈武器造成的伤害使一个生物的生命值降至0点时，目标自动伤势稳定。</p>
+<p class="para"><b>仁慈。</b>使用仁慈武器发动的攻击将生物的生命值降低到0点时，其不会死亡，而是会陷入昏迷且伤势稳定，并且不会留下长效性伤患和残疾。</p>
 <br>
 <br>
 <h4>誓仇 Nemesis</h4>
