@@ -135,95 +135,120 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">Rhodes Operation Handbook：[Quick Reference]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h2>拓展规则速查 Quick Reference</h2>
+<h2>Rules Quick Reference</h2>
 <hr class="sub">
-<p class="para">本页包含了本拓展书中的一些规则速查，方便你在游戏中快速查阅。</p>
-<h3>施法 Artcasting</h3>
+<p class="para">This page contains quick references from for easy access during gameplay.</p>
+
+<h3>Spellcasting</h3>
 <hr class="sub">
-<p class="para"><b>精通伤害。</b>拓展中的所有施法者拥有自己的 精通伤害，获得施法特性时可选：火焰、寒冷、强酸、毒素、闪电、雷鸣；只有起源专长“<A href="chapter2_character_options/feats/origin_feats.html#源石技艺天赋">源石技艺天赋</a>”可以为玩家带来光耀、黯蚀、力场、心魂伤害的精通。施法者可以在施展法术时将法术中的所有伤害都将改为自己的精通伤害，但如果施展一个可以自选伤害的法术，且可选项里面包括了施法者的精通伤害，则其必须选择之。</p>
-<p class="para"><b>法术表构建。</b>拓展中的所有施法者，获得施法特性时，将对应的 <b>基础法术表</b> 以及一项符合条件的自选 <b>领域法术表</b> 
-加入自己的职业法表。这构成了该施法者所有可用的职业法术。如果是全施法者，还会在13级时得到自己的<b>进阶法术表</b> 。</p>
-<p class="indent"><b>基础法术表：</b>要求没有其他施法职业等级，包含0-3环中的一些基础常用的法术；一共有3种基础法术表：<A href="chapter5_spellcasting_rules/spell_list_building.html#术师基础法术表">术师基础法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#术师基础法术表">医疗基础法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#辅助基础法术表">辅助基础法术表</a>。</p>
-<p class="indent"><b>领域法术表：</b>要求具有对应的精通伤害，包含0-6环中的一些符合领域画风的法术；一共有16种不同的领域法术表：<A href="chapter5_spellcasting_rules/spell_list_building.html#光芒">光芒</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#烈火">烈火</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#寒冰">寒冰</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#流水">流水</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#气尘">气尘</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#岩土">岩土</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#雷电">雷电</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#黯蚀">黯蚀</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#空间">空间</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#心魂">心魂</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#幻象">幻象</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#预知">预知</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#自然">自然</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#酸毒">酸毒</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#深海">深海</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#炼金">炼金</a>。
-<p class="indent"><b>进阶法术表：</b>要求13级且已经习得特定的领域法术表，包含6-9环中的一些最为深奥高阶的法术；一共有7种进阶法术表：<A href="chapter5_spellcasting_rules/spell_list_building.html#辉煌烈焰法术表">辉煌烈焰法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#酷寒洪流法术表">酷寒洪流法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#风暴雷鸣法术表">风暴雷鸣法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#酸毒侵蚀法术表">酸毒侵蚀法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#光影心灵法术表">光影心灵法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#疗愈重塑法术表">疗愈重塑法术表</a>、<A href="chapter5_spellcasting_rules/spell_list_building.html#时空矢量法术表">时空矢量法术表</a>。</p>
-<p class="para"><b>准备。</b>拓展中的施法者施展任何1环或更高法术以及戏法都需要准备，他们只有在升级时才能更换自己的准备列表。</p>
-<p class="para"><b>升环超魔。</b>升环施法时，无论法术有无升环施展效应，都可以选择应用一项已知的超魔选项。</p>
-<h3>战技 Battleskills</h3>
+<p class="para"><b>Mastery Damage.</b> All spellcasters in this supplement have their own <b>Mastery Damage</b>, chosen when gaining the Spellcasting feature: Fire, Cold, Acid, Poison, Lightning, or Thunder. Only the Origin Feat "<A href="chapter2_character_options/feats/origin_feats.html#源石技艺天赋">Originium Arts Talent</a>" can grant a caster mastery of Radiant, Necrotic, Force, or Psychic damage. When casting a spell, a caster may convert all damage in the spell to their mastery damage type. However, if they cast a spell that allows choosing from multiple damage types, and one of the options is their mastery damage type, they must choose that type.</p>
+
+<p class="para"><b>Spell List Building.</b> When gaining the Spellcasting feature, all spellcasters in this supplement add their corresponding <b>Basic Spell List</b> and one qualifying <b>Domain Spell List</b> of their choice to their class spell list. This constitutes all available class spells for that caster. Full casters additionally gain their <b>Advanced Spell List</b> at 13th level.</p>
+
+<p class="indent"><b>Basic Spell List:</b> Requires no other spellcasting class levels. Contains basic and commonly used spells from levels 0–3. There are three types of Basic Spell Lists: <A href="chapter5_spellcasting_rules/spell_list_building.html#术师基础法术表">Basic Caster Spells</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#术师基础法术表">Basic Medic Spells</a>, and <A href="chapter5_spellcasting_rules/spell_list_building.html#辅助基础法术表">Basic Supporter Spells</a>.</p>
+
+<p class="indent"><b>Domain Spell List:</b> Requires the corresponding mastery damage type. Contains spells from levels 0–6 that fit the domain's theme. There are 16 different Domain Spell Lists: <A href="chapter5_spellcasting_rules/spell_list_building.html#光芒">Light</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#烈火">Fire</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#寒冰">Ice</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#流水">Water</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#气尘">Air</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#岩土">Earth</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#雷电">Lightning</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#黯蚀">Darkness</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#空间">Space</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#心魂">Mind</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#幻象">Illusion</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#预知">Prophecy</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#自然">Nature</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#酸毒">Poison &amp; Acid</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#深海">Abyss</a>, and <A href="chapter5_spellcasting_rules/spell_list_building.html#炼金">Alchemy</a>.</p>
+
+<p class="indent"><b>Advanced Spell List:</b> Requires 13th level and having learned a specific Domain Spell List. Contains the most profound and high-level spells from levels 6–9. There are 7 Advanced Spell Lists: <A href="chapter5_spellcasting_rules/spell_list_building.html#辉煌烈焰法术表">Brilliant Flame</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#酷寒洪流法术表">Frigid Torrent</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#风暴雷鸣法术表">Stormy Thunder</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#酸毒侵蚀法术表">Acid Corrosion</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#光影心灵法术表">Shadow Soul</a>, <A href="chapter5_spellcasting_rules/spell_list_building.html#疗愈重塑法术表">Healing Reshaper</a>, and <A href="chapter5_spellcasting_rules/spell_list_building.html#时空矢量法术表">Space-Time Vector</a>.</p>
+
+<p class="para"><b>Preparation.</b> Spellcasters from ROH must prepare spells to cast it even the cantrips. They can only change their prepared list when leveling up.</p>
+
+<p class="para"><b>Upcast Metamagic.</b> When casting a spell at a higher level, regardless of whether the spell has an upcast effect, you may choose to apply a known Metamagic option.</p>
+
+<h3>Battleskills</h3>
 <hr class="sub">
-<p class="para"><b>战技。</b>消耗技力点，以动作/附赠动作发动，有时也以魔法动作或攻击命中的同时发动。一般职业会在2级允许你习得一个基础战技，子职业在后续的等级中给你习得更多战技的机会。</p>
-<p class="para"><b>每回合一次。</b>你一回合只能发动一次相同的战技。</p>
-<p class="para"><b>战技点。</b>你的技力点上限等同你的熟练加值。完成一次长休后恢复所有技力点，完成一次短休后恢复等同熟练加值一半的技力点。</p>
-<p class="para"><b>战技特效。</b>你可以在获得新的职业等级时，给自己的一个来自该职业的战技，应用、替换或移除一项战技特效。正面特效α/β/γ会增加1/1.5/2点技力消耗，技力总和不能超过熟练加值，负面特效减少1点技力消耗（仅一次）。</p>
-<p class="para"><b>战技回转。</b>每先攻检定间仅一次，以附赠动作恢复1技力点，9级起2点，17级起3点。每个职业拥有自己的回转额外特性：</p>
+<p class="para"><b>Battleskills.</b> Spend Skill Points (SP), activated by an Action or Bonus Action, sometimes by a Magic action or simultaneously with a successful attack. Most classes allow you to learn one basic Battleskill at 2nd level, and subclasses grant opportunities to learn more at higher levels.</p>
+
+<p class="para"><b>Once Per Turn.</b> You can only use the same Battleskill once per turn.</p>
+
+<p class="para"><b>Skill Points.</b> Your maximum SP equals your Proficiency Bonus. You regain all SP after a Long Rest, and regain SP equal to half your Proficiency Bonus (rounded down) after a Short Rest.</p>
+
+<p class="para"><b>Battleskill Effects.</b> When gaining a new class level, you may apply, replace, or remove a Battleskill Effect on one of your Battleskills from that class. Positive Effects α/β/γ increase SP cost by 1/1.5/2 points respectively; the total SP cost cannot exceed your Proficiency Bonus. Negative Effects reduce SP cost by 1 point (once only).</p>
+
+<p class="para"><b>Recovery.</b> Once per initiative roll, you may use a Bonus Action to recover 1 SP (2 SP from 9th level, 3 SP from 17th level). Each class has its own additional recovery feature:</p>
 <div class="syntax">
-<p><strong>先锋：</strong>指定60尺内可以听见你声音的盟友，对方恢复1点技力。</p>
-<p><b>近卫：</b>每恢复1点，获得1d10+体质调整值点的临时生命值。</p>
-<p><b>重装：</b>每恢复1点，恢复1d12+体质调整值点生命值。</p>
-<p><b>狙击：</b>立即执行弹药装填，或执行回避/撤离。</p>
-<p><b>术师：</b>自己下次施展法术视为升1环施法。</p>
-<p><b>辅助：</b>指定60尺内可以听见你声音的盟友，对方恢复1点技力。</p>
-<p><b>医疗：</b>每恢复1点，指定60尺内可以听见你声音的盟友，对方恢复1d6+施法属性调整值的生命值。</p>
-<p><b>特种：</b>立即执行躲藏/回避/疾走/撤离。</p>
+<p><strong>Vanguard:</strong> Choose an ally within 60 feet who can hear you; they recover 1 SP.</p>
+<p><b>Guard:</b> For each SP recovered, gain 1d10 + Constitution modifier temporary HP.</p>
+<p><b>Defender:</b> For each SP recovered, recover 1d12 + Constitution modifier HP.</p>
+<p><b>Sniper:</b> Immediately reload ammunition, or take the Dodge/Disengage action.</p>
+<p><b>Caster:</b> Your next spell is treated as if cast one level higher.</p>
+<p><b>Supporter:</b> Choose an ally within 60 feet who can hear you; they recover 1 SP.</p>
+<p><b>Medic:</b> For each SP recovered, choose an ally within 60 feet who can hear you; they recover 1d6 + spellcasting ability modifier HP.</p>
+<p><b>Specialist:</b> Immediately take the Hide/Dodge/Dash/Disengage action.</p>
 </div>
-<p class="para"><b>强力击。</b>你可以在攻击命中的同时消耗1点技力来发动此战技。你立即让这次命中的攻击，造成等同你熟练加值枚d6的额外伤害。</p>
-<p class="para"><b>迅捷打击。</b>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你执行攻击动作时，可以额外发动一次武器攻击。</p>
-<p class="para"><b>战术咏唱。</b>你可以附赠动作并消耗1技力来发动此战技。直到本回合结束前：你执行魔法动作时，作为魔法动作的一部分，可以额外施展一个1动作戏法。</p>
-<p class="para"><b>攻击力强化。</b>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你的攻击检定获得+1d4加值，伤害掷骰可以加入熟练加值。</p>
-<h3>状态 Effects</h3>
+
+<p class="para"><b>Power Strike.</b> You may spend 1 SP when you hit with an attack to activate this Battleskill. The attack immediately deals additional damage equal to a number of d6 equal to your Proficiency Bonus.</p>
+
+<p class="para"><b>Swift Strike.</b> You may spend 1 SP as a Bonus Action to activate this Battleskill. Until the end of this turn, when you take the Attack action, you may make one additional weapon attack.</p>
+
+<p class="para"><b>Tactical Chant.</b> You may spend 1 SP as a Bonus Action to activate this Battleskill. Until the end of this turn, when you take the Magic action, you may cast one cantrip with a casting time of 1 action as part of the same Magic action.</p>
+
+<p class="para"><b>ATK Up.</b> You may spend 1 SP as a Bonus Action to activate this Battleskill. Until the end of this turn, you gain +1d4 on attack rolls and add your Proficiency Bonus to damage rolls.</p>
+
+<h3>Conditions</h3>
 <hr class="sub">
-<p class="para"><b>鼓舞。</b>获得鼓舞的生物在攻击检定和伤害掷骰上获得+1d4加值。</p>
-<p class="para"><b>庇护。</b>获得庇护的生物每次受到伤害时，每受到10点伤害，就可以掷1d4来减少该伤害，减免数值等同d4的掷骰结果之和。</p>
-<p class="para"><b>脆弱。</b>你每次受到某单一类型伤害时，每受到10点该伤害，你就额外受到1d4的相同类型伤害（额外伤害不再重复触发此效果）。</p>
-<p class="para"><b>抵抗。</b>对获得抵抗的生物而言，那些会在其回合结束时结束的状态，在其回合开始时结束。那些会在其回合结束时重试豁免来结束的状态，可以改为在其回合开始时重试豁免。此外其在避免或终止陷入某种状态或危害的豁免中具有优势。</p>
-<p class="para"><b>虚弱。</b>承受虚弱的生物进行的伤害掷骰获得-5减值。</p>
-<p class="para"><b>战栗。</b>承受战栗的生物无法进行攻击检定。免疫恐慌的生物也免疫战栗。</p>
-<p class="para"><b>沉默。</b>承受沉默的生物无法说话、施展需要言语成分的法术、发动战技。此外，若某特质写明了可以被沉默，则其也无法从该特质中获益。</p>
-<h3>矿石病 Oripahy</h3>
+<p class="para"><b>Inspiration.</b> A creature with Inspiration gains +1d4 on attack rolls and damage rolls.</p>
+<p class="para"><b>Sanctuary.</b> When a creature with Sanctuary takes damage, for every 10 points of damage taken, they may roll 1d4 to reduce the damage by the total rolled.</p>
+<p class="para"><b>Fragile.</b> Whenever you take damage of a single type, for every 10 points of that damage, you take an additional 1d4 damage of the same type (this additional damage does not trigger itself).</p>
+<p class="para"><b>Resist.</b> For a creature with Resist, conditions that would end at the end of its turn instead end at the start of its turn. Conditions that allow a repeated save at the end of its turn to end may instead allow the save at the start of its turn. Additionally, it has Advantage on saving throws to avoid or end a condition or hazard.</p>
+<p class="para"><b>Debility.</b> A creature suffering from Debility has a −5 penalty on damage rolls.</p>
+<p class="para"><b>Shudder.</b> A creature suffering from Shudder cannot make attack rolls. Creatures immune to the Frightened condition are also immune to Shudder.</p>
+<p class="para"><b>Silence.</b> A creature suffering from Silence cannot speak, cast spells with verbal components, or use Battleskills. Additionally, if a trait specifies that it can be silenced, the creature cannot benefit from that trait while Silenced.</p>
+
+<h3>Oripathy</h3>
 <hr class="sub">
-<p class="para"><b>矿石病等级。</b>矿石病等级被分为1-8级，除非在感染等级上升的短时间内服用药物，否则感染等级无法以任何手段下降。以下是感染类型和对应常见症状：</p>
+<p class="para"><b>Oripathy Level.</b> Oripathy levels range from 1 to 8. Unless medication is taken shortly after an infection level increases, the infection level cannot be reduced by any means. Below are the infection types and their common symptoms:</p>
 <div class="syntax">
-<p><b>微量感染（1级）：</b>偶有发烧。</p>
-<p><b>轻度感染（2-3级）：</b>偶有发烧、反胃、头晕；少量体表源石结晶。</p>
-<p><b>中度感染（4-5级）：</b>常有发烧、反胃、头晕；明显体表源石结晶。</p>
-<p><b>重度感染（6-7级）：</b>丧失部分身体机能或知觉；脏器或部分身体部位部分结晶化，以及上述症状。</p>
-<p><b>致死感染（8级）：</b>丧失更多身体机能或知觉；脏器或多个身体部位严重结晶化，以及上述症状。</p>
+<p><b>Minimal Infection (Level 1):</b> Occasional fever.</p>
+<p><b>Mild Infection (Level 2–3):</b> Occasional fever, nausea, dizziness; a small amount of surface Originium crystals.</p>
+<p><b>Moderate Infection (Level 4–5):</b> Frequent fever, nausea, dizziness; noticeable surface Originium crystals.</p>
+<p><b>Severe Infection (Level 6–7):</b> Loss of some bodily function or sensation; partial crystallization of organs or body parts, along with the above symptoms.</p>
+<p><b>Lethal Infection (Level 8):</b> Loss of more bodily function or sensation; severe crystallization of organs or multiple body parts, along with the above symptoms.</p>
 </div>
-<p class="para"><b>矿石病感染检定。</b>矿石病感染检定是一种体质豁免检定，你失败于此检定时，感染等级上升1级。你在下述两种情况需要进行矿石病感染检定：</p>
+
+<p class="para"><b>Oripathy Infection Check.</b> An Oripathy Infection Check is a Constitution saving throw. If you fail this check, your infection level increases by 1. You must make an Oripathy Infection Check in the following two situations:</p>
 <div class="syntax">
-<p><b>受到源石伤害：</b>伤害被分为源石性的和非源石性的，受到源石伤害的生物需要进行矿石病感染检定（DC等同所受伤害的一半，至少10，至多30），生物1回合内仅需进行1次此检定。</p>
-<p><b>受伤时长休：</b>如果你具有感染等级，且进行长休前生命值未满，则你完成长休时必须进行一次矿石病感染检定（DC等同8+当前感染等级）</p>
+<p><b>Taking Originium Damage:</b> Damage is divided into Originium-based and non-Originium-based. A creature that takes Originium damage must make an Oripathy Infection Check (DC equals half the damage taken, minimum 10, maximum 30). A creature only needs to make this check once per round.</p>
+<p><b>Long Rest While Injured:</b> If you have an infection level and your HP is not full before starting a Long Rest, you must make an Oripathy Infection Check upon completing the Long Rest (DC equals 8 + your current infection level).</p>
 </div>
-<p class="para"><b>急性矿石病发作（N1）：</b>在矿石病感染检定的D20中掷出1时，你触发<b>急性矿石病发作</b>。
+
+<p class="para"><b>Acute Oripathy Outburst (N1):</b> When you roll a 1 on the d20 for an Oripathy Infection Check, you trigger an <b>Acute Oripathy Outburst</b>.</p>
 <div class="syntax">
-获得<b>急性矿石病发作</b>
-时，你立即获得等同你感染等级一半（向下取整）的力竭状态。你还需要投掷并消耗等同你当前感染等级数量的生命骰，并流失等同投掷结果的生命值。</div>
-<div class="syntax">如果生命骰不足，则你陷入<b>昏迷</b>。你可以通过每小时一次的重复体质豁免（DC等同8+当前感染等级）来结束昏迷状态。</div>
-<p class="syntax"></p>
-<p class="para"><b>活性源石强化（N20）：</b>在矿石病感染检定的D20中掷出20时，你触发<b>活性源石强化</b>。
-<div class="syntax">
-获得<b>活性源石强化</b>
-时，你立即投掷并消耗等同你当前感染等级数量的生命骰，并流失等同投掷结果的生命值。接下来的24小时内，你的伤害掷骰获得等同你感染等级的加值。
-</div>
-<p class="para"><b>感染者崩解。</b>具有矿石病感染等级的生物死亡时，其遗体在 1d20 
-分钟内发生崩解。遗体会消散成灰且此后无法被低于九环的法术效应复活。如果是重度感染或更高的生物，崩解改为1d6分钟内发生，且其遗体附近15尺区域成为<i><b>中度源石污染区</b></i>，然后其外15尺成为<i><b>轻度源石污染区</b></i>  。</p>
-<p class="para"><b>源石污染区域。</b>源石污染区域被分为1-5级：</p>
-<div class="syntax">
-<p><b>微量源石污染环境（1级）：</b>常见于城市核心工业区、动力区、源石开采矿区、部分荒野地区或地下洞穴等环境。</p>
-<p><b>轻度或中度源石污染环境（2-3级）：</b>常见于炮火轰炸后的战场、烈性源石炸药爆炸、重度感染者崩解后、天灾影响、源石反应炉泄露等情景。</p>
-<p><b>重度或致死源石污染环境（4-5级）：</b>常见于天灾中心、大当量烈性源石炸药爆炸等情景。</p>
+When you gain <b>Acute Oripathy Outburst</b>, you immediately gain a number of Exhaustion levels equal to half your infection level (rounded down). You must also roll and expend a number of Hit Dice equal to your current infection level, and lose HP equal to the total rolled.
 </div>
 <div class="syntax">
-<p><b>矿石病易染：</b>位于任何源石污染区域时，生物进行的矿石病检定具有劣势。</p>
-<p><b>活性粉尘吸入：</b>在进入2-3级的源石污染区域时，或者每在区域内驻留1小时，生物会受到等同区域污染等级枚d6的源石黯蚀伤害。</p>
-<p><b>活性粉尘侵蚀：</b>在进入4-5级或更高的源石污染区域时，或者每在区域内驻留1分钟，生物会受到等同区域污染等级枚d6的源石黯蚀伤害。</p>
+If you don't have enough Hit Dice, you fall <b>Unconscious</b>. You can end this Unconsciousness by succeeding on a Constitution saving throw once per hour (DC equals 8 + your current infection level).
 </div>
-<p class="para"><b>感染者施法。</b>感染者可以用体内的源石作为施法媒介，以此来满足施展法术所需的任何成分，包括耗材。以此施法时需要进行一次 
-DC 等同 8+法术环阶的 体质豁免（矿石病感染检定），失败则感染等级加深一级。</p>
-<p class="para"><b>抑制矿石病。</b> 你可以花费 10分钟 
-并专注于治疗上，来帮助面前的矿石病感染者抑制病情。你完成治疗时，进行一次医药技能检定（DC等同 
-10+对方感染等级），使用医药包次数可以让这次检定获得优势，任意矿石病药物可以让这次检定获得+5加值。检定成功后，你可以让对方解除一层来自矿石病的力竭状态，或者从昏迷中醒来。但无论检定成功与否，对方24小时内都无法再次以此方法进行病情抑制。</p>
+
+<p class="para"><b>Active Originium Enhancement (N20):</b> When you roll a 20 on the d20 for an Oripathy Infection Check, you trigger <b>Active Originium Enhancement</b>.</p>
+<div class="syntax">
+When you gain <b>Active Originium Enhancement</b>, you immediately roll and expend a number of Hit Dice equal to your current infection level, and lose HP equal to the total rolled. For the next 24 hours, you gain a bonus to damage rolls equal to your infection level.
+</div>
+
+<p class="para"><b>Infected Dissolution.</b> When a creature with an Oripathy infection level dies, their remains dissolve within 1d20 minutes. The remains dissipate into ash and cannot be resurrected by spell effects lower than 9th level. If the creature has Severe Infection or higher, the dissolution instead occurs within 1d6 minutes, and the area within 15 feet of their remains becomes a <i><b>Moderate Originium Contamination Zone</b></i>, with the next 15 feet beyond that becoming a <i><b>Light Originium Contamination Zone</b></i>.</p>
+
+<p class="para"><b>Originium Contamination Zones.</b> Originium Contamination Zones are divided into 1–5 levels:</p>
+<div class="syntax">
+<p><b>Minimal Originium Contamination (Level 1):</b> Commonly found in urban core industrial areas, power districts, Originium mining areas, some wilderness areas, or underground caves.</p>
+<p><b>Light or Moderate Originium Contamination (Level 2–3):</b> Commonly found in artillery-bombarded battlefields, high-yield Originium explosive detonations, after Severe Infected dissolution, Catastrophe aftermath, Originium reactor leaks, etc.</p>
+<p><b>Severe or Lethal Originium Contamination (Level 4–5):</b> Commonly found at the center of Catastrophes, large-scale high-yield Originium explosive detonations, etc.</p>
+</div>
+<div class="syntax">
+<p><b>Increased Susceptibility:</b> A creature in any Originium Contamination Zone has Disadvantage on Oripathy checks.</p>
+<p><b>Active Particle Inhalation:</b> When entering a Level 2–3 Originium Contamination Zone, or for every hour spent within the zone, a creature takes Originium Necrotic damage equal to a number of d6 equal to the zone's contamination level.</p>
+<p><b>Active Particle Erosion:</b> When entering a Level 4–5 or higher Originium Contamination Zone, or for every minute spent within the zone, a creature takes Originium Necrotic damage equal to a number of d6 equal to the zone's contamination level.</p>
+</div>
+
+<p class="para"><b>Infected Spellcasting.</b> An Infected individual may use the Originium within their body as a spellcasting focus to satisfy any components required to cast a spell, including costly materials. When casting a spell this way, they must make a Constitution saving throw (Oripathy Infection Check) with a DC equal to 8 + the spell's level. On a failure, their infection level increases by 1.</p>
+
+<p class="para"><b>Suppressing Oripathy.</b> You may spend 10 minutes focusing on treatment to help suppress 
+the disease in a nearby Infected individual. When you complete the treatment, 
+make a Medicine skill check (DC&nbsp;=                               10 + the target's infection level). Using a charge from a Healer's Kit grants Advantage on this check. Any Oripathy medication grants a +5 bonus on this check. On a success, you can remove one level of Exhaustion caused by Oripathy from the target, or wake them from Unconsciousness. Regardless of success or failure, the target cannot receive this treatment again for 24 hours.</p>
+
 <br>
-<br></div>
+<br>
+</div>
+
 </div>
 <div id="winchm_template_footer">Rhodes Operation Handbook[ROH]</div>
 </body></HTML>
