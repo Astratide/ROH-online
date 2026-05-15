@@ -169,7 +169,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：猎手武装 Hunter Armament</h2>
 <p class="para">作为一名猎手，你获得以下特性：</p>
 <p class="para"><b>猎手武器。</b>你选择一把具有装填或者弹容属性的远程武器（可以是铳械），然后获得其熟练以及精通。你还可以半价购买所选武器，或在一次长休后消耗价值一半的材料自己组装一把。</p> 
-<p class="para"><b>蚀刻弹容。</b> 你可以在完成一次长休后将所选武器变为你的猎手武器。你同时只能拥有一把猎手武器，且该武器只有你能使用。猎手武器总是具有“弹容（PB）”词条，即弹容上限与你熟练加值一致。此弹容不可被扩容。如果武器原本就有弹容词条，则将其替换。最后，猎手武器的攻击伤害总是可以加入你的<b>攻击属性调整值</b> 。</p>
+<p class="para"><b>蚀刻弹容。</b> 
+你可以在完成一次长休后将所选武器变为你的猎手武器。你同时只能拥有一把猎手武器，且该武器只有你能使用。猎手武器总是具有“弹容（PB）”词条，即弹容上限与你熟练加值一致。此弹容不可被扩容。如果武器原本就有弹容词条，则将其替换。</p>
 <br>
 <h2>3级：调箭手艺 Hunter Arsenal</h2>
 <p class="para">你自后文蚀刻弹药选项一节习得 2 种由你选择的蚀刻选项。</p>
@@ -213,8 +214,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>狂风骤雨丨Rapid Barrage</h6>
-      <div class="cost">
-        <p class="light">动作</p></div>
+      <div class="cost" id="green">
+        <p class="light">攻击动作</p></div>
       <div class="trigger">
         <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
       <div class="time">
@@ -224,12 +225,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以动作并消耗1点技力来发动此战技。你立即使用手中的猎手武器，发动至多等同你熟练加值次远程武器攻击。在这些攻击中，你的蚀刻骰增大一级（至多d12）。发动此战技后，直到本回合结束前，你不能使用附赠动作换弹。</p></div>
+<p>你可以在执行攻击动作时消耗1点技力来发动此战技。你可以在此动作中可以发动的攻击次数提升至与你的熟练加值一致。发动此战技后，直到本回合结束前，你不能通过附赠动作或狙击回转换弹。</p></div>
 <br>
 <h2>10级：狩猎意志  Relentless  Hunt</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至4个已知蚀刻选项）。</p>
-<p class="para">你选择一个基于感知的技能，并获得其熟练。</p>
-<p class="para">此外，只要你未处于<b class="green">失能</b>，你的先攻检定可以加入你的感知调整值。</p>
+<p class="para"><b>技能熟练。</b>你选择一个基于感知的未熟练技能，并获得其熟练。</p>
+<p class="para"><b>时刻备战。</b>只要你未处于<b class="green">失能</b>，你的先攻检定可以加入你的感知调整值。</p>
+<p class="para"><b>武器增强。</b>你使用猎手武器发动的攻击，伤害总是可以加入你的<b>攻击属性调整值</b>。</p>
 <br>
 <h2>15级：进阶蚀刻 Advanced Etch</h2>
 <p class="para">你额外习得一项蚀刻选项（提升至5个已知蚀刻选项）。</p>
@@ -250,7 +252,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>强化弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级3+）</p>
-<p class="para">使用此弹药发动的攻击，额外造成1枚蚀刻骰的穿刺伤害。</p>
+<p class="para">使用此弹药发动的攻击，攻击检定获得+1加值，且额外造成1枚蚀刻骰的穿刺伤害。</p>
 <br>
 <h4>能量弹药</h4>
 <p class="grey">蚀刻选项（先决条件：狙击等级3+）</p>
