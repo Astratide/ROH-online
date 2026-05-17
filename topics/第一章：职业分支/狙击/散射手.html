@@ -132,7 +132,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">罗德岛外勤指南：[散射手]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h1>散射手&nbsp;Spreadshooter<IMG class="text-img" src="../../图片资源/职业图标/子职/职业分支图标_散射手.png" ></h1>
+<h1>散射手 Spreadshooter<IMG class="text-img" src="../../图片资源/职业图标/子职/职业分支图标_散射手.png" ></h1>
 <hr class="sub">
 <div class="side-box">
   <b>狙击-散射手：</b>你擅长近距离射击并对复数敌人进行火力压制。
@@ -174,7 +174,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：压制战术 Suppressing Tactics</h2>
 <p class="para">你对如何使用散射火力压制敌人具有丰富的经验。你获得以下增益：</p>
 <p class="para"><b>可靠反应。</b>你使用<b class="green">反应</b>发动的攻击具有<b class="green">优势</b>。若攻击失手，则你在该回合结束时恢复所消耗的反应。</p>
-<p class="para"><b>近距爆发。</b>每回合仅一次，若你用远程武器攻击命中了一名10尺内的生物，你可以让这次攻击额外造成1d8的穿刺伤害。</p>
+<p class="para"><b>近距爆发。</b>每回合仅一次，若你用远程武器攻击命中了一名10尺内的生物，你可以让这次攻击额外造成1d10的穿刺伤害。</p>
+<p class="para">此伤害会在你的散射手等级提升至 10 级时获得提升，增长至 2d10。</p>
 <br>
 <h2>6级：散射战技 Spreadshooting Battleskills</h2>
 <p class="para">你从以下战技中选择一个习得：铳弹反击、压制弹幕、贯甲长钉。你可以在每次升级时重新选择以此习得的战技。</p>
@@ -192,7 +193,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       <div class="cost">
         <p class="light">附赠动作</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
+        <p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
@@ -200,7 +201,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。你立即获得2d6+你狙击等级的<b class="green">临时生命值</b>。直到你下回合开始前，如果有生物进入你10尺范围内，或者你进入了一个生物10尺范围内，你可以用反应对其发动一次武器攻击。</p></div>
+<p>你可以附赠动作并消耗1点技力来发动此战技。你立即获得2d6+你狙击等级的<b class="green">临时生命值</b>。直到你下回合开始前，如果有生物进入你10尺范围内，或者你进入了一个生物10尺范围内，你可以用<b class="green">反应</b>对其发动一次武器攻击。</p>
+<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
 <div class="syntax">
 <table>
   
@@ -221,7 +223,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1技力来发动此战技。你立即对面前20尺<b class="green">锥状</b>区域内的每个可见生物各发动一次远程武器攻击。若命中则目标的移动速度减少10尺直到其下回合结束。</p></div>
+<p>你可以附赠动作并消耗1技力来发动此战技。你立即对面前20尺<b class="green">锥状</b>区域内的每个可见生物各发动一次远程武器攻击。若命中则目标的移动速度减少10尺直到其下回合结束。</p>
+<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
 <div class="syntax">
 <table>
   
@@ -236,7 +239,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       <div class="cost" id="green">
         <p class="light">攻击失手</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
+        <p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
@@ -244,18 +247,19 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在攻击失手时消耗1点技力来发动此战技。你立即令这次攻击检定获得+10加值。如果导致命中，你可使得这次攻击额外造成你熟练加值枚d6的穿刺伤害。</p></div>
+<p>你可以在攻击失手时消耗1点技力来发动此战技。你立即令这次攻击检定获得+10加值。如果导致命中，你可使得这次攻击额外造成你熟练加值枚d6的穿刺伤害。</p>
+<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
 <br>
 <h2>10级：稳固射击 Steady Shot</h2>
-<p class="para">你每次消耗技力发动战技时，每消耗1点技力，你可以恢复1d6+你体质调整值的生命值。如果你发动战技时生命值已满，则可以改为获得等量的临时生命值。</p>
+<p class="para">你每次消耗技力发动战技时，每消耗1点技力，你可以恢复1d6+你体质调整值的生命值。如果你发动战技时生命值已满，则可以改为获得等量的<b class="green">临时生命值</b>。</p>
 <p class="para">当你进行伤害掷骰时，你可以消耗身上的临时生命值，将其加入你的伤害掷骰中。你一次以此消耗的临时生命值不能超过你的狙击等级。</p>
 <br>
 <h2>15级：弹幕覆盖 Barrage Coverage</h2>
-<p class="para">你对铳械战斗的应用出神入化，你使用铳械发动攻击时，攻击动作中的每次攻击都可应用&nbsp;散射&nbsp;精通词条。</p>
-<p class="para">此外，你应用 散射 精通词条时，可以先进行移动，再对新位置触及范围内的目标应用横扫攻击。</p>
+<p class="para">你对铳械战斗的应用出神入化，你使用铳械发动攻击时，攻击动作中的每次攻击都可应用<b class="green">散射</b>精通词条。</p>
+<p class="para">此外，你应用<b class="green">散射</b>精通词条时，可以先进行移动，再对新位置触及范围内的目标应用横扫攻击。</p>
 <br>
 <h2>18级：终局弹雨 Final Volley</h2>
-<p class="para">你消耗了技力发动战技的回合，若你进行伤害掷骰，则伤害掷骰中每次掷出1时，你就可以额外掷一枚同等大小的骰子，将其加入造成伤害中。以此造成的额外伤害忽略目标的任何伤害抗性。</p>
+<p class="para">你消耗了技力发动战技的回合，若你进行伤害掷骰，则伤害掷骰中每次掷出1时，你就可以额外掷一枚同等大小的骰子，将其加入造成伤害中。以此造成的额外伤害忽略目标的任何伤害<b class="green">抗性</b>。</p>
 <br><br>
 </div>
 </div>
