@@ -133,7 +133,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">罗德岛外勤指南：[武者]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h1>武者&nbsp;Soloblade<IMG class="text-img" alt="武者标志" src="../../图片资源/职业图标/子职/职业分支图标_武者.png"></h1>
+<h1>武者 Soloblade<IMG class="text-img" alt="武者标志" src="../../图片资源/职业图标/子职/职业分支图标_武者.png"></h1>
 <hr class="sub">
 <div class="side-box">
   <b>近卫-武者：</b>你擅长孤身一人阻挡强敌，在孤立无援的情况下执守阵线。
@@ -169,7 +169,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：坚忍锋刃 Soloblade Perseverance</h2>
 <p class="para">作为一名武者，你获得以下特性：</p>
 <p class="para"><b>长刀精通。</b>你选择一把具有双手或两用属性的挥砍伤害近战武器（通常是长剑、巨剑或长柄刀），然后获得其熟练以及精通。</p> 
-<p class="para"><b>坚忍战斗。</b>你<b class="green">浴血</b>期间，若你未持用盾牌或穿戴重甲，则你执行攻击动作后，可立即以<b class="green">附赠动作</b>发动一次近战武器攻击。</p> 
+<p class="para"><b>坚忍战斗。</b>当你<b class="green">浴血</b>期间，你可以在执行<b class="green">攻击</b>动作后立即以<b class="green">附赠动作</b>发动一次近战武器攻击。这次攻击视为攻击动作的一部分。使用此特性时你不能着盾牌或重甲。</p> 
 <br>
 <h2>3级：孤守自持 Solitary Sustainment</h2>
 <p class="para">你习得了孤立作战的真谛，尽管这是一把双刃剑。进行先攻检定时，你决定是否让自己获得下述所有效果，持续到战斗结束。</p> 
@@ -177,9 +177,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>禁疗。</b>这场战斗中你无法被魔法效应或任何职业特性治疗，除非该治疗来源于你的近卫职业特性，或者你为这次治疗消耗了近卫生命骰。</p> 
 <br>
 <h2>7级：纵气横刀 Spiritual Bladiance</h2>
-<p class="para">你习得如何应对来自敌人的打击并施以回敬。你习得以下特性：</p>
-<p class="para"><b>反击斩。</b>当你<b class="green">浴血</b>期间，遭受一次来自其他生物的攻击时，若攻击者可触及，则你可以采取<b class="green">反应</b>，立即对其发动一次近战武器攻击作为反击。这次攻击若命中，则对方的攻击被改为失手。</p>
-<p class="para">此特性一经使用，直到你完成一次<b class="green">长休</b>前不可再次使用。你也可以消耗一次1点技力（无需动作）来重置此特性的使用权。 
+<p class="para">你习得如何应对来自敌人的打击，并施以回敬。你习得以下特性：</p>
+<p class="para"><b>反击斩。</b>当你<b class="green">浴血</b>期间，遭受一次来自其他生物的攻击时，你可以采取<b class="green">反应</b>，立即对其发动近战武器攻击作为反击。这次攻击若命中，则对方的攻击被改为失手。此特性一经使用，你必须投掷先攻或消耗技力发动战技后才能再次使用。 
 <br></p> 
 <p class="para">此外，你习得战技：纵气连斩。</p>
 <div class="syntax">
@@ -192,31 +191,31 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>纵气连斩&nbsp;|&nbsp;Spiritual Strike</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗 1 技力</p></div>
+      <h6>纵气连斩 | Spiritual Strike</h6>
+      <div class="cost" id="red"><p class="light">攻击动作</p></div>
+      <div class="trigger"><p class="light">消耗 2 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1技力来发动此战技。直到本回合结束前：你的触及距离增加10尺；你执行<b class="green">攻击</b>动作时，可以额外发动一次武器攻击。</p>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗2技力来发动此战技。若你未浴血则生命值流失直到浴血。这次攻击动作可以额外发动一次攻击，且期间你的触及距离增加10尺。</p>
 </div>
 <br>
 <h2>10级：历战余响 Battleworn Warrior</h2>
 <p class="para">你久经沙场，经验丰富。你习得下述特性：</p>
 <p class="para"><b>意志。</b>你获得感知豁免的熟练。</p>
-<p class="para"><b>坚忍。</b>你消耗技力发动战技的回合，每消耗1点技力，就获得1d10点临时生命值。</p>
+<p class="para"><b>坚忍。</b>你消耗技力发动战技时，每消耗1点技力，就获得1d10+你体质调整值点<b class="green">临时生命值</b>。</p>
 <br>
-<h2>15级：背孤击虚 Isolated Exploiter</h2>
-<p class="para">你<b class="green">浴血</b>期间，获得下述增益：</p>
+<h2>15级：背孤击虚 Isolated Exploiter</h2><strong></strong>
+<p class="para">你寻找破绽，攻其不备。你<b class="green">浴血</b>期间，获得下述增益：</p>
 <p class="para"><b>破绽。</b>当你使用反击斩特性时，只要你能看见目标，那么该次攻击检定具有<b class="green">优势</b>。</p>
-<p class="para"><b>追击。</b>你的近战武器攻击在D20中掷出19或更高即可视为造成重击。造成重击时，你可以放弃造成重击的额外伤害，改为额外发动一次使用相同武器的近战攻击。此效应一回合只能使用一次。</p>
+<p class="para"><b>追击。</b>你的近战武器攻击在D20中掷出19或更高即可视为造成重击。每回合仅一次，当你造成重击时，你可以放弃造成重击的额外伤害，改为额外发动一次使用相同武器的近战攻击。</p>
 <br>
 <h2>18级：单刀赴会 Determined Maverick</h2>
-<p class="para">如果你周围10尺没有盟友，则你获得下述增益：</p>
+<p class="para">你奋勇向前，视死如归。如果你周围10尺没有<b class="green">盟友</b>，则你获得下述增益：</p>
 <p class="para"><b>锐意。</b>你发动的近战武器攻击若未受益于<b class="green">优势</b>，便不会承受<b class="green">劣势</b>。</p>
 <p class="para"><b>勇气。</b>你为抵抗或中止<b class="green">魅惑</b>或<b class="green">恐慌</b>状态而作的豁免具有<b class="green">优势</b>。</p>
 <br><br>

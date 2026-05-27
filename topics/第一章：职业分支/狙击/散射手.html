@@ -168,7 +168,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：散射精通 Scatter Expertise</h2>
 <p class="para">作为一名散射手，你获得以下特性：</p>
-<p class="para"><b>散射武器。</b>你获得所有霰弹铳武器的熟练以及精通。你还可以半价购买霰弹铳武器，或在一次长休后消耗价值一半的材料自己组装一把。最后，你持用霰弹铳时，AC获得+1加值。</p> 
+<p class="para"><b>散射武器。</b>你获得所有霰弹铳武器的熟练以及精通。你还可以半价购买霰弹铳武器，或在一次长休后消耗价值一半的材料自己组装一把。最后，你持用霰弹铳且并未着装盾牌时，AC获得+1加值。</p> 
 <p class="para"><b>重装射手。</b>你投掷先攻时，你可以让自己的先攻承受-1d6减值，然后立即获得1d6+你狙击等级的<b class="green">临时生命值</b>。</p>
 <br>
 <h2>3级：压制战术 Suppressing Tactics</h2>
@@ -202,7 +202,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p>你可以附赠动作并消耗1点技力来发动此战技。你立即获得2d6+你狙击等级的<b class="green">临时生命值</b>。直到你下回合开始前，如果有生物进入你10尺范围内，或者你进入了一个生物10尺范围内，你可以用<b class="green">反应</b>对其发动一次武器攻击。</p>
-<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
+<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <div class="syntax">
 <table>
   
@@ -224,7 +224,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p>你可以附赠动作并消耗1技力来发动此战技。你立即对面前20尺<b class="green">锥状</b>区域内的每个可见生物各发动一次远程武器攻击。若命中则目标的移动速度减少10尺直到其下回合结束。</p>
-<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
+<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <div class="syntax">
 <table>
   
@@ -236,7 +236,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>贯甲长钉丨Penetrating Nails</h6>
-      <div class="cost" id="green">
+      <div class="cost" id="red">
         <p class="light">攻击失手</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
@@ -248,11 +248,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p>你可以在攻击失手时消耗1点技力来发动此战技。你立即令这次攻击检定获得+10加值。如果导致命中，你可使得这次攻击额外造成你熟练加值枚d6的穿刺伤害。</p>
-<p>此外，本回合中，你应用近距爆发的伤害时，此战技每消耗1点技力就可以在额外伤害中再加入1d10。</p></div>
+<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <br>
 <h2>10级：稳固射击 Steady Shot</h2>
 <p class="para">你每次消耗技力发动战技时，每消耗1点技力，你可以恢复1d6+你体质调整值的生命值。如果你发动战技时生命值已满，则可以改为获得等量的<b class="green">临时生命值</b>。</p>
-<p class="para">当你进行伤害掷骰时，你可以消耗身上的临时生命值，将其加入你的伤害掷骰中。你一次以此消耗的临时生命值不能超过你的狙击等级。</p>
+<p class="para">当你进行伤害掷骰时，如果你持有临时生命值，则你可以消耗至多等同你敏捷调整值的临时生命值，在伤害掷骰中获得等额加值。</p>
 <br>
 <h2>15级：弹幕覆盖 Barrage Coverage</h2>
 <p class="para">你对铳械战斗的应用出神入化，你使用铳械发动攻击时，攻击动作中的每次攻击都可应用<b class="green">散射</b>精通词条。</p>

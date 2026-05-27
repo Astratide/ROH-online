@@ -224,10 +224,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <br>
 <h2>7级：支援号令 Order of Support</h2>
 <p class="para">你的旗帜不仅是你施法的工具，还可以散发出无形的灵光保护盟友。你获得下述特性：</p>
-<p class="para"><b>旗帜灵光。</b>持握先锋战旗时，以一个<b class="green">魔法</b>动作，并消耗一枚法术位，你可以为旗帜激活一道灵光，覆盖以旗帜为源点的30尺光环区域，持续1分钟。期间你和你位于灵光范围内的盟友获得以下效应之一，由你选择是哪个效应。</p>
+<p class="para"><b>旗帜灵光。</b>持握先锋战旗时，以一个<b class="green">魔法</b>动作，并消耗一枚法术位，你可以为旗帜激活一道灵光，覆盖以旗帜为源点的30尺光环区域，持续1分钟。期间你和你位于灵光范围内的盟友获得以下效应之一，由你在执行时选择是哪个效应。</p>
 <ul>
 <li><b>进攻。</b>目标发动的攻击在伤害掷骰上获得1+法术环阶的加值。</li>
-<li><b>防御。</b>目标的AC获得等同法术环阶一半（至少1）的加值。</li>
+<li><b>防御。</b>目标的AC获得等同法术环阶一半（向上取整）的加值。</li>
 <li><b>治愈。</b>目标在回合结束时，可以选择投掷并消耗一枚生命骰，并恢复等同掷骰结果+法术环阶的生命值。</li>
 </ul>
 <p class="para">此外，你习得战技：支援号令。</p>
@@ -242,7 +242,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>支援号令 | Order of Support</h6>
-      <div class="cost" id="green"><p class="light">魔法动作</p></div>
+      <div class="cost" id="red"><p class="light">魔法动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
        <p class="light">
@@ -252,7 +252,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以魔法动作并消耗1点技力来发动此战技。你立即施展一道施法时间为动作的执旗手法术（视为升1环施展），或者使用执旗手的“旗帜灵光”特性（有效环阶提升1环）；此战技每消耗1点技力，你就立即获得1枚费用骰。</p></div>
+<p>你可以在执行<b class="green">魔法</b>动作时消耗1点技力来发动此战技。若你为该魔法动作消耗了法术位，则有效环阶提升一环；此战技每消耗1点技力，你就立即获得1枚费用骰。</p></div>
 <br>
 <h2>10级：战旗掌握 Banner Mastery</h2>
 <p class="para">你对旗帜的掌握达到了一个新的高度，你获得下述特性：</p>

@@ -132,7 +132,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">罗德岛外勤指南：[速射手]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h1>速射手&nbsp;Marksman<IMG class="text-img" alt="速射手标志" src="../../图片资源/职业图标/子职/职业分支图标_速射手.png" ></h1>
+<h1>速射手 Marksman<IMG class="text-img" alt="速射手标志" src="../../图片资源/职业图标/子职/职业分支图标_速射手.png" ></h1>
 <hr class="sub">
 <div class="side-box">
   <b>狙击-速射手：</b>你擅长保持距离对敌人进行火力压制，快速打击地面和空中的敌人。
@@ -168,16 +168,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：轻盈速射 Rapid Fire</h2>
 <p class="para">作为一名速射手，你获得以下特性：</p>
-<p class="para"><b>速射武器。</b>你选择一把远程武器（可以是铳械），然后获得其熟练以及精通。你还可以半价购买所选的武器，或在一次长休后消耗价值一半的材料自己组装一把。</p>
-<p class="para"><b>迅捷射击。</b>你可以<b class="green">附赠动作</b>使用远程武器发动攻击，但如果该武器有<b class="green">重型</b>属性，则此次攻击伤害不加入属性调整值。此特性一经使用，直到你投掷先攻或消耗技力发动一次战技前不可再次使用。</p> 
+<p class="para"><b>速射武器。</b>你选择一把远程武器（可以是铳械），然后获得其熟练以及精通。你还可以半价购买所选的武器，或在一次长休后消耗价值一半的材料自己组装一把。你使用所选武器进行攻击时，可以忽略其装填属性。</p>
+<p class="para"><b>迅捷射击。</b>你执行<b class="green">攻击</b>动作后，你可以立即以<b class="green">附赠动作</b>使用一把精通属性为<b class="green">侵扰</b>、<b class="green">缓速</b>或<b class="green">自动</b>的远程武器发动攻击，这次攻击视为攻击动作的一部分。如果该武器有<b class="green">重型</b>属性，则此次攻击伤害不加入属性调整值。此特性一经使用，你必须投掷先攻或消耗技力发动战技后才能再次使用。</p> 
 <p class="para"><b>快速出击。</b>你未被突袭时，先攻检定可以加入你的感知调整值（至少1）。</p>
 <br>
-<h2>3级：空射技巧 Anti-Air expert</h2>
-<p class="para">你是打击空中敌人并建立防空火力网的好手。当一名你武器射程内的可见生物开始使用其飞行速度进行移动，或者被任何效应推动或传送到空中时，你可以采取<b class="green">反应</b>，用远程武器对其发动一次攻击，但如果该武器有<b class="green">重型</b>属性，则此次攻击伤害不加入属性调整值。</p>
-<p class="para">当你到达15级起，改为可以用远程武器对其进行两次攻击。</p>
+<h2>3级：空射技巧 Anti-Air Expert</h2>
+<p class="para">你是打击空中敌人并建立防空火力网的好手。当一名你武器射程内的可见生物开始使用其飞行速度进行移动，或者被任何效应推动或传送到空中时，你可以采取<b class="green">反应</b>，用远程武器对其发动一次攻击。</p>
+<p class="para">当你的速射手等级到达15级起，改为可以用远程武器对其发动两次攻击。</p>
 <br>
 <h2>6级：速射战技 Marksman Battleskills</h2>
-<p class="para">你良好的视力让你在依赖视觉而作的感知（察觉）检定上具有<b class="green">优势</b>。</p>
+<p class="para">你对远程武器的掌握允许你快速地倾泻火力。你习得下述特性：</p>
+<p class="para"><b>敏锐疾射。</b>你使用远程武器发动的攻击命中体型不大于中型，或者位于空中的目标时，可以额外造成等同你<b class="green">熟练加值</b>的武器伤害。</p>
 <p class="para">此外，你从以下战技中选择一个习得：连发射击、分裂射击、晕眩射击。你可以在每次升级时重新选择以此习得的战技。</p>
 <div class="syntax">
 <table>
@@ -189,19 +190,19 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>连发射击丨Rapid&nbsp;Shooting</h6>
-      <div class="cost">
-        <p class="light">附赠动作</p></div>
+      <h6>连发射击丨Rapid Shooting</h6>
+      <div class="cost" id="red">
+        <p class="light">攻击动作</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
+        <p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前，你执行攻击动作时，可以额外发动两次攻击。这两次攻击不能由具有重型属性的武器发动。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。这次攻击动作可以额外发动一次攻击。</p></div>
 <div class="syntax">
 <table>
   
@@ -212,7 +213,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>裂分射击丨Split&nbsp;Shooting</h6>
+      <h6>裂分射击丨Split Shooting</h6>
       <div class="cost"><p class="light">附赠动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -233,11 +234,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>晕眩射击丨Stun&nbsp;Shooting</h6>
-      <div class="cost" id="green">
+      <h6>晕眩射击丨Stun Shooting</h6>
+      <div class="cost" id="red">
         <p class="light">攻击命中</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
+        <p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
@@ -252,8 +253,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <br>
 <h2>15级：空射大师 Air-Shot Mastery</h2>
-<p class="para">当你使用空射技巧特性时，你可以改为用远程武器对目标执行两次攻击。</p>
-<p class="para">此外，你使用远程武器发动一次具有<b class="green">优势</b>的武器攻击时，若目标的AC低于你的狙击等级，则这次攻击额外造成1d6点穿刺伤害。</p>
+<p class="para">当你使用空射技巧特性时，你可以改为用远程武器对目标发动两次攻击。</p>
+<p class="para">此外，只要你的攻击目标的AC低于等于你的狙击等级，即便目标体型不符合条件也可以触发你敏锐疾射的额外伤害。</p>
 <br>
 <h2>18级：贯甲杀手 Slayer of Unarmoured</h2>
 <p class="para">每个你的回合内一次，你执行<b class="green">攻击</b>动作时，如果有至少一次远程攻击失手了，那么作为攻击动作的一部分，你可以再次对同一目标发动一次远程攻击。</p>

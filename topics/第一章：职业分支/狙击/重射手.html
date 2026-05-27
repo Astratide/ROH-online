@@ -132,13 +132,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_minititle">罗德岛外勤指南：[重射手]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h1>重射手&nbsp;Heavyshooter<IMG class="text-img" alt="重射手标志" src="../../图片资源/职业图标/子职/职业分支图标_重射手.png" ></h1>
+<h1>重射手 Heavyshooter<IMG class="text-img" alt="重射手标志" src="../../图片资源/职业图标/子职/职业分支图标_重射手.png" ></h1>
 <hr class="sub">
 <div class="side-box">
   <b>狙击-重射手：</b>你擅长射击近距离敌人造成精准物理杀伤。
 </div>
 <p class="para"><b>重射手</b>（Heavyshooter）是狙击职业中的一个职业分支。他们专注于近距离打击与高破坏力，能够通过多样的远程武器（如手弩、轻弩、重弩、长弓等）在近距离对目标进行高精度和具备破甲能力的强力射击。</p>
-<p class="para">重射手干员通常被部署在前线的关键位置，确保能够在敌人接近时进行高效的近距离射击。他们会选择视野开阔的地点，以便能够迅速锁定并攻击敌人。</p>
+<p class="para">在战斗中，重射手干员通常被部署在前线的关键位置，确保能够在敌人接近时进行高效的近距离射击。他们会选择视野开阔的地点，以便能够迅速锁定并攻击敌人。</p>
 <br>
 <h2>重射手特性</h2>
 <table class="custom-table" id="left" style="max-width: 400px;">
@@ -168,16 +168,16 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：重型射手 Heavy Shooting</h2>
 <p class="para">作为一名重射手，你获得以下特性：</p>
-<p class="para"><b>重射武器。</b>你选择一把远程武器（可以是铳械），然后获得其熟练以及精通。你还可以半价购买所选的武器，或在一次长休后消耗价值一半的材料自己组装一把。</p> 
-<p class="para"><b>快速装填。</b>你使用所选武器进行攻击时，可以忽略其装填属性。</p>
-<p class="para"><b>抵近射击。</b>你使用所选武器进行攻击时，不因为有敌人处于5尺范围内而承受<b class="green">劣势</b>。</p>
+<p class="para"><b>重射武器。</b>你选择一把远程武器（可以是铳械），然后获得其熟练以及精通。你还可以半价购买所选的武器，或在一次长休后消耗价值一半的材料自己组装一把。你使用所选武器进行攻击时，可以忽略其装填属性。</p> 
+<p class="para"><b>精准射击。</b>每回合仅一次，使用远程武器攻击距离你60尺内的目标时，额外造成1d8点穿刺伤害。当你的重射手等级达到10级时，此额外伤害提升至2d8。</p>
+<p class="para"><b>抵近射击。</b>你使用远程武器发动攻击时，不因为有敌人处于5尺范围内而承受<b class="green">劣势</b>。</p>
 <br>
 <h2>3级：精准重击 Precise Crit</h2>
-<p class="para">当你用远程武器攻击攻击60尺内的目标时，若在攻击检定的D20上掷出19或20即可视为造成<b class="green">重击</b>。在以远程武器造成重击时，目标必须通过一次体质豁免（DC等同8+你熟练加值+你敏捷调整值），否则其AC获得等同你熟练加值的减值，持续1分钟。</p>
+<p class="para">当你用远程武器攻击攻击60尺内的目标时，若在攻击检定的D20上掷出19或20即可视为造成<b class="green">重击</b>。当你使用远程武器造成重击时，目标必须通过一次体质豁免（DC等同8+你熟练加值+你敏捷调整值），否则其AC获得等同你熟练加值的减值，持续1分钟。</p>
 <br>
 <h2>6级：重射战技 Heavyshoot Battleskills</h2>
 <p class="para">你对武器的掌握允许你在重击中获益。你用远程武器作出的攻击检定若造成重击则可以恢复1点技力。此特性一经使用，你必须进行一次先攻检定才能再次使用。</p>
-<p class="para">此外，你从以下战技中选择一个习得：&nbsp;暴风连射、破甲贯射、强力重射。你可以在每次升级时重新选择以此习得的战技。</p><!----> 
+<p class="para">此外，你从以下战技中选择一个习得：暴风连射、破甲贯射、强力重射。你可以在每次升级时重新选择以此习得的战技。</p><!----> 
 <div class="syntax">
 <table>
   
@@ -188,8 +188,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>暴风重射丨Strom&nbsp;Bolt</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
+      <h6>暴风重射丨Strom Bolt</h6>
+      <div class="cost" id="red"><p class="light">攻击动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
@@ -198,7 +198,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。你立即用远程武器对30尺内的一个可见目标发动一次具有<b class="green">优势</b>的攻击。这次攻击若命中额外造成你狙击等级的武器伤害。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。这次攻击动作可以额外发动一次攻击。</p>
+<p>此战技每消耗1点技力，本回合你通过精准射击特性造成的伤害就增加1d8。</p></div>
 <div class="syntax">
 <table>
   
@@ -209,19 +210,20 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>破甲重射丨Piercing&nbsp;Bolt</h6>
+      <h6>破甲重射丨Piercing Bolt</h6>
       <div class="cost">
         <p class="light">附赠动作</p></div>
       <div class="trigger">
-        <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
+        <p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你进行的远程武器攻击具有<b class="green">优势</b>，即便失手也可以造成一半的伤害；你造成的伤害忽略目标的穿刺伤害<b class="green">抗性</b>。</p></div>
+<p>你可以附赠动作并消耗1点技力来发动此战技。你立即用远程武器对30尺内的一个可见目标发动一次具有<b class="green">优势</b>的攻击。这次攻击若命中额外造成1d10+你狙击等级的武器伤害。</p>
+<p>此战技每消耗1点技力，本回合你通过精准射击特性造成的伤害就增加1d8。</p></div>
 <div class="syntax">
 <table>
   
@@ -232,10 +234,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>强力重射丨Critical&nbsp;Bolt</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗&nbsp; 1 
-      技力</p></div>
+      <h6>强力重射丨Critical Bolt</h6>
+      <div class="cost" id="red"><p class="light">攻击命中</p></div>
+      <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png"> 
@@ -244,18 +245,19 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：仅一次，你可以使得一次命中的远程武器攻击，造成的所有穿刺伤害骰直接取满而无需掷骰。</p></div>
+<p>你可以在攻击命中时消耗1点技力来发动此战技。这次攻击所有穿刺伤害骰直接取满而无需掷骰。</p>
+<p>此战技每消耗1点技力，本回合你通过精准射击特性造成的伤害就增加1d8。</p></div>
 <br>
 <h2>10级：交叉火力  Crossfire  Coformity</h2>
-<p class="para">你用远程武器攻击60尺内的目标时，可以指定一个可以听见你声音的盟友，对方可以采取<b class="green">反应</b>，同时对该目标发动一次远程武器攻击，或者对该目标施展一个施法时间为1动作戏法（前提是目标也处于盟友的射程内）。你每回合只能使用一次此特性。</p>
+<p class="para">你用远程武器攻击60尺内的目标时，可以指定一个可以听见你声音的盟友，对方可以采取<b class="green">反应</b>，同时对该目标发动一次远程武器攻击，或者对该目标施展一道施法时间为动作的戏法。此特性一经使用，直到你下回合开始前不能再次使用。</p>
 <br>
 <h2>15级：强效重击 Effective Cirt</h2>
-<p class="para">当你用远程武器攻击攻击60尺内的目标时，若在攻击检定的D20上掷出18或更高即可视为造成<b class="green">重击</b>。</p>
-<p class="para">此外，在你对某目标的攻击造成重击的回合，该目标进行的体质豁免具有<b class="green">劣势</b>。</p>
+<p class="para">当你用远程武器攻击攻击60尺内的目标时，忽略目标的半身掩护或四分之三掩护，且若在攻击检定的D20上掷出18或更高即可视为造成<b class="green">重击</b>。</p>
+<p class="para">此外，在你对生物的攻击造成重击的回合，该目标进行的体质豁免具有<b class="green">劣势</b>。</p>
 <br>
 <h2> 18级：终结战术 Final Tactics</h2>
 <p class="para">你的远程武器攻击无视目标所拥有的任何穿刺伤害<b class="green">抗性</b>。</p>
-<p class="para">此外，每回合仅一次，当你在远程武器攻击中造成了<b class="green">重击</b>时，若对方处于<b class="green">浴血</b>，则重击伤害掷骰可以翻三倍而非两倍。</p>
+<p class="para">此外，每回合仅一次，当你使用远程武器造成<b class="green">重击</b>时，若目标处于<b class="green">浴血</b>，则重击伤害掷骰可以翻三倍而非两倍。</p>
 <br><br>
 </div>
 </div>
