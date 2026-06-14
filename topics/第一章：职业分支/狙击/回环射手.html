@@ -172,13 +172,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>强效投掷。</b>若所选武器原本没有投掷属性，则你可以将其视为具有投掷（30/90）以及回手属性。如果原本就已有投掷属性，则你使用其发动的攻击额外造成等同你<b class="green">熟练加值</b>点的挥砍伤害。</p>
 <br>
 <h2>3级：迅捷掷手 Swift Thrower</h2>
-<p class="para">只要你的攻击目标距离足够近，且武器没有弹射，你就能更块地收回你的武器继续发动攻击。你获得以下特性：</p>
-<p class="para"><b>近距突击。</b>你用具有投掷词条的武器发动的攻击检定，不会因有敌人在你5尺内而具有<b class="green">劣势</b>，且你对15尺内敌人发起的攻击具有<b class="green">优势</b>。</p>
-<p class="para"><b>快速回手。</b>当你使用具有投掷属性的武器命中距离你30尺内的敌人，且这次攻击仅对单一目标造成了伤害，你可以立即用<b class="green">附赠动作</b>以相同武器再发动一次攻击。作为此附赠动作的一部分，你还可以执行<b class="green">回避</b>动作。</p>
+<p class="para">只要你的攻击目标距离足够近，你就能更块地收回你的武器继续发动攻击。你获得以下特性：</p>
+<p class="para"><b>近距突击。</b>你用具有投掷词条的武器发动的攻击检定，不会因有敌人在你5尺内而具有<b class="green">劣势</b>。你发动远程武器攻击时，只要你在目标的15尺内，则这次攻击将具有<b class="green">优势</b>。</p>
+<p class="para"><b>快速回手。</b>当你使用具有投掷属性的武器命中距离你30尺内的敌人，你可以立即用<b class="green">附赠动作</b>以相同武器再发动一次攻击。</p>
 <br>
 <h2>6级：回环战技 Loopshooter Battleskills</h2>
 <p class="para">你的投掷命中后削弱敌人防御，同时增强自身防护。你获得以下特性：</p>
-<p class="para"><b>防御夺取。</b>当你在一回合中至少两次使用投掷武器命中一个生物时，那么直到你的下个回合结束，你的AC获得+2加值，且该生物的AC承受-2减值。此特性造成的效应不能叠加。</p>
+<p class="para"><b>迂回战术。</b>当你消耗技力发动战技时，作为战技的一部分，你还可以执行<b class="green">回避</b>动作。</p>
 <p class="para">此外，你从以下战技中选择一个习得：回环往复、分导连击、贯空之刃。你可以在每次升级时重新选择以此习得的战技。</p>
 <div class="syntax">
 <table>
@@ -198,11 +198,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你的投掷武器攻击命中时，选择至多4个AC不高于原目标的可见生物，前提是目标以及他们互相之间的距离均不超过10尺，每个生物立即受到主目标所受的一半伤害。</p></div>
+<p>你可以附赠动作并消耗1点技力来发动此战技。你立即发动一次投掷武器攻击，如果命中则这次攻击可以进行弹射。你可以视为处于目标的位置，对目标30尺内另一个目标对其再发动一次攻击。如果仍命中则可以继续进行弹射，直到你失手或者弹射次数达到你的敏捷调整值为止。</p></div>
 <div class="syntax">
 <table>
   
@@ -214,16 +214,16 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>分导连击丨Split Targeting</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
+      <div class="cost" id="red"><p class="light">攻击动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你每次攻击命中并造成伤害时，可以选择距离自己30尺内的另一个可见生物，若目标AC不高于原目标AC，则对其造成相同的伤害。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。这次<b class="green">攻击</b>动作中，你可以额外发动一次攻击，但这次攻击不能与动作中任何其余攻击选择相同的目标。</p></div>
 <div class="syntax">
 <table>
   
@@ -235,8 +235,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>贯空之刃丨Linear Barrage</h6>
-      <div class="cost" id="red">
-        <p class="light">攻击命中</p></div>
+      <div class="cost">
+        <p class="light">附赠动作</p></div>
       <div class="trigger">
         <p class="light">消耗&nbsp;1&nbsp;技力</p></div>
       <div class="time">
@@ -246,18 +246,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以远程武器攻击命中时消耗1点技力来发动此战技。你立即对一条源自你的、且朝向此次攻击目标的5尺宽、60尺长的<b class="green">线状</b>区域内的每个生物造成额外武器伤害，数值等同你熟练加值枚d6，且那些生物的移动速度减少10尺，持续至你下回合开始。</p></div>
+<p>你可以使用<b class="green">附赠动作</b>并消耗1点技力来发动此战技。源自你的5尺宽、60尺长的<b class="green">线状</b>区域内的每个生物必须通过敏捷豁免，否则受到等同你熟练加值枚d6的挥砍伤害，且那些生物的移动速度减少10尺，持续至你下回合开始。成功则仅受半伤。</p></div>
 <br>
 <h2>10级：韧劲转化 Resilience Conversion</h2>
-<p class="para">当你受到伤害时，你可以采取<b class="green">反应</b>使得那次受到的伤害减半。如果你这么做了，直到你的下个回合结束前，你下次命中的攻击在伤害掷骰上获得加值，数值等同1d10+你狙击等级。</p>
+<p class="para">当你受到来自可见生物的一次伤害时，你可以采取<b class="green">反应</b>使得那次受到的伤害减半。如果你这么做了，直到你下回合结束前，你下次使用投掷属性武器命中的攻击，额外造成1d8点挥砍伤害。当你的狙击等级达到18级时，此伤害增加至2d8。</p>
 <br>
 <h2>15级：连空刃环 Cyclic Guard</h2>
 <p class="para">你以精妙的技巧让武器在身边盘旋，形成致命的刀刃风暴，任何贸然靠近的敌人都将遭到无情的切割与压制。</p>
-<p class="para">只要你结束回合时持握一把你精通的投掷属性武器，而且可以进行<b class="green">借机攻击</b>，则你可以选择若干个周围10尺内的生物，每个所选生物受到1d6+你敏捷调整值的挥砍伤害，并且不能使用<b class="green">反应</b>，直至你的下一回合开始。</p>
+<p class="para">只要你结束回合时持握一把你精通的投掷属性武器，而且可以进行<b class="green">借机攻击</b>，则你可以选择若干个周围10尺内的生物，每个所选生物受到1d6+你敏捷调整值的挥砍伤害。</p>
 <br>
 <h2>18级：压制攻势 Suppression Offensive</h2>
 <p class="para">你在连续命中中不断调整姿态和发力方式，使每一次投掷都比上一次更具威胁，同时干扰了对手的战斗节奏。</p>
-<p class="para">每回合仅一次，当你使用投掷属性的武器发动的攻击命中一个生物时，你对那个生物形成压制。你立即获得等同你狙击等级的<b class="green">临时生命值</b>，并且此临时生命值存在期间，你对其发动的攻击具有<b class="green">优势</b>，目标生物对你发动的攻击具有<b class="green">劣势</b>。</p>
+<p class="para">当你使用投掷属性的武器发动的攻击对敌人造成<b class="green">重击</b>时，你对目标形成压制。你立即获得等同你狙击等级的<b class="green">临时生命值</b>，并且此临时生命值存在期间，你对其发动的攻击具有<b class="green">优势</b>，目标生物对你发动的攻击具有<b class="green">劣势</b>。</p>
 <br>
 <div class="syntax">
   <p><b>本章内容来源：</b>玩家投稿</p>

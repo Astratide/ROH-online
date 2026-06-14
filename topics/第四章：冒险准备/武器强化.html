@@ -164,8 +164,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>复仇 Avenging</h4>
-<p class="grey">装备附魔（任意武器），珍稀</p>
-<p class="para"><b>复仇。</b>持握复仇武器被其他生物发动的攻击命中时，你可以采取<b class="green">反应</b>，使用该武器向攻击者发动一次攻击作为反击，前提是攻击者在武器的射程内或可触及。</p>
+<p class="grey">装备附魔（任意近战武器），珍稀（需同调）</p>
+<p class="para"><b>复仇。</b>持握复仇武器被距离你5尺内的生物发动的攻击命中时，你可以采取<b class="green">反应</b>，使用该武器向攻击者发动一次攻击作为反击。</p>
 <br>
 <br>
 <h4>锚定 Binding</h4>
@@ -180,8 +180,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>闪烁 Blinking</h4>
-<p class="grey">装备附魔（任意武器），非普通（需同调）</p>
-<p class="para"><b>闪烁。</b>使用闪烁武器命中一个生物时，你可以魔法性地传送到目标10尺范围内的一处可见空地上，前提是你和目标原本的距离不超过120尺。此特性一经使用，直到次日黎明前无法再次使用。</p>
+<p class="grey">装备附魔（任意武器），非普通</p>
+<p class="para"><b>闪烁。</b>使用闪烁武器命中一个生物时，你可以魔法性地传送到目标10尺范围内的一处可见空地上，前提是你和目标原本的距离不超过120尺。在使用此特性后，掷一次D20，如果结果低于10，则直到次日黎明前不可再使用此特性。</p>
 <br>
 <br>
 <h4>浴血 Bloodied</h4>
@@ -234,14 +234,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <br>
 <h4>残酷 Cruel</h4>
-<p class="grey">装备附魔（任意近战武器），非普通</p>
+<p class="grey">装备附魔（任意武器），非普通</p>
 <p class="para"><b>残酷。</b>每回合仅一次，使用残酷武器对<b class="green">浴血</b>的生物发动的攻击，额外造成1d6点武器伤害。</p>
 <br>
 
 
 <br>
 <h4>挑战 Challenge</h4>
-<p class="grey">装备附魔（任意近战武器），非普通</p>
+<p class="grey">装备附魔（任意武器），非普通</p>
 <p class="para"><b>挑战。</b>使用挑战武器发动的攻击在命中生命值为满的生物时，额外造成1d6点武器伤害。</p>
 <br>
 
@@ -296,25 +296,25 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>破坏 Devastating</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须进行一次DC17体质豁免检定，否则一个你选择的肢体将按照下表承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到等同豁免DC的额外伤害。</p>
+<p class="para"><b>破坏。</b>使用破坏武器发动的攻击对一个<b class="green">浴血</b>的生物在攻击检定的D20中掷出20时，目标生物必须通过DC17体质豁免，否则一个你选择的肢体将按照下表承受残疾，直到其脱离<b class="green">浴血</b>。被DM认为没有类似肢体的生物可以不受影响，但是改为受到等同豁免DC的额外伤害。</p>
 <table class="custom-table" style="min-width: 350px;">
   <tr>
     <th>位置</th>
     <th>破坏效应</th>
   </tr>
-  <tr><td>头部</td><td>法术攻击检定-1d4。</td></tr>
-  <tr><td>躯干</td><td>AC获得-2减值。</td></tr>
-  <tr><td>手部</td><td>需要手进行的攻击检定-1d4。</td></tr>
-  <tr><td>腿部</td><td>移动速度减半。</td></tr>
+  <tr><td>头部</td><td>效应豁免DC获得-2减值</td></tr>
+  <tr><td>躯干</td><td>AC获得-2减值</td></tr>
+  <tr><td>手部</td><td>攻击检定获得-2减值</td></tr>
+  <tr><td>腿部</td><td>移动速度减半</td></tr>
 </table>
 <br>
-<p class="para"><b>更高稀有度：</b>触发体质豁免的DC和额外伤害获得提升，珍稀（DC19；21），极珍稀（DC21；28）。</p>
+<p class="para"><b>更高稀有度：</b>触发体质豁免的DC。珍稀（DC19），极珍稀（DC21）。</p>
 <br>
 <br>
 <h4>元素 Elemental</h4>
 <p class="grey">装备附魔（任意近战武器），非普通/珍稀/极珍稀（需同调）</p>
 <p class="para"><b>元素。</b>持握元素武器时，你可以<b class="green">附赠动作</b>激活武器中的魔法能量，在直到你收起武器前，此武器的攻击额外造成1d6伤害。伤害类型在附魔时选择：强酸、寒冷、火焰、闪电或雷鸣。</p>
-<p class="para"><b>更高稀有度：</b>提供更高的额外元素伤害。珍稀（+2d6），极珍稀（+3d6）。</p>
+<p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d6），极珍稀（3d6）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
 <br>
@@ -338,8 +338,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>处刑 Executioner's</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀/传说（需同调）</p>
-<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于你的等级，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。</p>
-<p class="para"><b>更高稀有度：</b>在计算处刑的血量阈值时，使用更高的等级倍率，珍稀（你等级的两倍），极珍稀（你等级的三倍），传说（你等级的四倍）。</p>
+<p class="para"><b>处刑。</b>持用处刑武器攻击命中的目标生物，若生命值不大于10，其被立即杀死。拥有传奇抗性或类似特性的生物可以消耗次数抵抗此效应。</p>
+<p class="para"><b>更高稀有度：</b>在计算处刑的血量阈值时，使用更高的等级倍率，珍稀（20），极珍稀（40），传说（60）。</p>
 <br>
 <br>
 <h4>电流 Electrics</h4>
@@ -363,7 +363,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>冰寒 Frost</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>冰寒。</b>使用冰寒武器发动的攻击额外造成1d4点寒冷伤害。当命中一个因效应或状态而无法使用反应的生物时，这些寒冷伤害提升至1d8。此外，当你用这把武器造成<b class="green">重击</b>时，目标会被冻结。</p>
+<p class="para"><b>冰寒。</b>使用冰寒武器发动的攻击额外造成1d4点寒冷伤害。当命中一个因效应或状态而无法使用反应的生物时，这些寒冷伤害提升至1d6。此外，当你用这把武器造成<b class="green">重击</b>时，目标会被<b class="green">冻结</b>。</p>
 <p class="para">此外，与此武器同调期间，你具有寒冷伤害<b class="green">抗性</b>。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外寒冷伤害。珍稀（2d4），极珍稀（3d4）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
@@ -376,18 +376,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <br>
 <h4>愈合 Healing</h4>
-<p class="grey">装备附魔（任意武器或盾牌），珍稀（需守护者同调）</p>
-<p class="para"><b>愈合。</b>持用愈合武器执行<b class="green">攻击</b>动作时，你可以放弃其中一次攻击，然后同时选择一个可触及或射程内的盟友，目标立即消耗并投掷一枚生命骰，然后恢复等同掷骰结果加上你感知调整值的生命值。</p>
+<p class="grey">装备附魔（任意武器），珍稀（需守护者同调）</p>
+<p class="para"><b>愈合。</b>持握愈合武器并执行<b class="green">攻击</b>动作时，你可以放弃其中一次攻击，然后同时选择一个可触及或射程内的盟友，目标立即消耗并投掷一枚生命骰，然后恢复等同掷骰结果加上你感知调整值的生命值。</p>
 <br>
 <br>
 <h4>觅心 Heartfinder</h4>
 <p class="grey">装备附魔（任意穿刺伤害武器），珍稀（需同调）</p>
-<p class="para"><b>觅心。</b>持用觅心武器命中一个被<b class="green">突袭</b>的生物时，你可以迫使对方进行一次DC21的体质豁免检定，失败则这次攻击视为造成<b class="green">重击</b>且伤害无视目标的<b class="green">抗性</b>。此特性在应用成功后，直到次日黎明前无法再次使用。</p>
+<p class="para"><b>觅心。</b>持用觅心武器命中一个被<b class="green">突袭</b>的生物时，你可以迫使对方进行DC21体质豁免检定，失败则这次攻击视为造成<b class="green">重击</b>且伤害无视目标的<b class="green">抗性</b>。此特性在应用成功后，直到次日黎明前无法再次使用。</p>
 <br>
 <br>
 <h4>狩猎 Hunter</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>狩猎。</b>使用狩猎武器发动的攻击，在伤害掷骰上获得+1d4加值。如果是命中<b class="green">野兽</b>、<b class="green">怪兽</b>或<b class="green">植物</b>生物时，这些伤害骰加值提升至d6。</p>
+<p class="para"><b>狩猎。</b>使用狩猎武器发动的攻击，额外造成与武器伤害类型相同的1d4点伤害。如果是命中<b class="green">野兽</b>、<b class="green">怪兽</b>或<b class="green">植物</b>生物时，额外伤害骰提升至d6。</p>
 <p class="para">此外，与此武器同调期间，你在感知（<b class="green">求生</b>或<b class="green">驯兽</b>）检定上具有<b class="green">优势</b>。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d4），极珍稀（3d4）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
@@ -401,7 +401,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>圣洁 Holy</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需善良或守序生物同调）</p>
 <p class="para"><b>圣洁。</b>使用圣洁武器发动的攻击，额外造成1d4点光耀伤害。如果是命中<b class="green">邪魔</b>、<b class="green">亡灵</b>或<b class="green">异怪</b>生物时，这些光耀伤害骰提升至d6。</p>
-<p class="para">此外，与此武器同调期间，你在感知（<b class="green">医药</b>）检定上具有<b class="green">优势</b>。</p>
+<p class="para">此外，与此武器同调期间，你在抵抗<b class="green">恐慌</b>的豁免检定上具有<b class="green">优势</b>。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的额外伤害。珍稀（2d4），极珍稀（3d4）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
@@ -415,7 +415,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>统御 Leadership</h4>
 <p class="grey">装备附魔（任意武器），非普通（需同调）</p>
-<p class="para"><b>统御。</b>持用统御武器时，你周围30尺内可以听见你声音的<b class="green">盟友</b>在对抗<b class="green">恐惧</b>和<b class="green">魅惑</b>的豁免检定中具有<b class="green">优势</b>。</p>
+<p class="para"><b>统御。</b>持握统御武器时，你周围30尺内可以听见你声音的<b class="green">盟友</b>在对抗<b class="green">恐惧</b>和<b class="green">魅惑</b>的豁免检定中具有<b class="green">优势</b>。</p>
 <br>
 <br>
 <h4>幸运 Lucky</h4>
@@ -425,7 +425,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>雷枪 Lightning</h4>
 <p class="grey">装备附魔（任意投掷武器或弹药），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>雷枪。</b>当你执行攻击动作时，你可以替换其中一次攻击，将该武器或弹药变为一道闪电束。该闪电束会在你和目标之间形成一个5尺宽的线状区域，目标及该区域内的每个生物（除你之外）都必须进行一次DC15的敏捷豁免，豁免失败者受到4d6闪电伤害，豁免成功则伤害减半。该武器或弹药会在造成该伤害后立即回到你的手中。此特性一经使用，你必须使用附赠动作并消耗价值至少5GP的源石锭为武器进行充能才能再次使用。</p>
+<p class="para"><b>雷枪。</b>当你执行<b class="green">攻击</b>动作时，你可以替换其中一次攻击，将该武器或弹药变为一道闪电束。该闪电束会在你和目标之间形成一个5尺宽的线状区域，目标及该区域内的每个生物（除你之外）都必须进行一次DC15的敏捷豁免，豁免失败者受到4d6闪电伤害，豁免成功则伤害减半。该武器或弹药会在造成该伤害后立即回到你的手中。此特性一经使用，你必须使用<b class="green">附赠动作</b>并消耗价值至少5GP的源石锭为武器进行充能才能再次使用。</p>
 <p class="para"><b>更高稀有度：</b>提供更高的闪电伤害、使用次数和豁免DC。珍稀（8d6；DC17），极珍稀（12d6；DC19）。</p>
 <br>
 <br>
@@ -437,18 +437,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h4>誓仇 Nemesis</h4>
 <p class="grey">装备附魔（任意远程武器），珍稀/极珍稀（需同调）</p>
 <p class="para"><b>誓仇。</b>持用誓仇武器时，你可以在执行<b class="green">攻击</b>动作时，指明攻击的一个目标作为你的仇敌，持续至次日黎明或仇敌死亡，在那之前无法再使用此特性。你对仇敌的攻击检定具有<b class="green">优势</b>。但你对非仇敌目标的攻击检定具有<b class="green">劣势</b>。</p>
-<p class="para"><b>更高稀有度：</b>极珍稀时，你总是知道你仇敌的当前方位、其伤害<b class="green">抗性</b>或<b class="green">免疫</b>，以及状态免疫。此外，仇敌无法在面对你时受益于<b class="green">隐形</b>或<b class="green">重度遮蔽</b>。</p>
+<p class="para"><b>更高稀有度：</b>极珍稀时，你总是知道你仇敌的当前相对方位、生物类型和阵营、其伤害<b class="green">抗性</b>或<b class="green">免疫</b>，以及状态免疫。此外，仇敌无法在面对你的攻击时受益于<b class="green">隐形</b>或<b class="green">重度遮蔽</b>。</p>
 <br>
 <br>
 <h4>相位 Phasing</h4>
-<p class="grey">装备附魔（任意武器或防具），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>相位。</b>持握相位武器时，你可以<b class="green">附赠动作</b>立即传送至30尺内可见的一点。在使用此特性后，掷一次D20，如果结果低于10，则你直到次日黎明前不可再使用此特性。</p>
-<p class="para"><b>更高稀有度：</b>提供更远的传送距离和更低的失效概率。珍稀（60尺；低于7），极珍稀（120尺；低于5）</p>
+<p class="grey">装备附魔（任意武器或防具），非普通</p>
+<p class="para"><b>相位。</b>持握相位武器时，你可以<b class="green">附赠动作</b>立即传送至60尺内可见的一点。在使用此特性后，掷一次D20，如果结果低于10，则你直到次日黎明前不可再使用此特性。 
 <br>
-<br>
+<br></p>
 <h4>移位 Shifting</h4>
 <p class="grey">装备附魔（任意近战武器），非普通</p>
-<p class="para"><b>移位。</b>这把武器获得<b class="green">触及</b>属性（如果原本没有）。当你用这把武器发动攻击，且你可以使用此武器的精通词条时，你可以将此次攻击的精通词条改为<b class="green">推离</b>、<b class="green">拉近</b>、<b class="green">缓速</b>或<b class="green">削弱</b>（由你在附魔时选择）。</p>
+<p class="para"><b>移位。</b>这把武器获得<b class="green">触及</b>属性，前提是原本没有。当你用这把武器发动攻击，且你可以使用此武器的精通词条时，你可以将此次攻击的精通词条改为<b class="green">推离</b>、<b class="green">拉近</b>、<b class="green">缓速</b>或<b class="green">削弱</b>，由你在附魔时选择。</p>
 <br>
 <br>
 <h4>超标 Oversized</h4>
@@ -543,8 +542,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>恶毒 Vicious</h4>
 <p class="grey">装备附魔（任意武器），非普通/珍稀/极珍稀（需同调）</p>
-<p class="para"><b>恶毒。</b>使用恶毒武器发动的攻击在命中生物时，在伤害掷骰上获得+1d6加值。</p>
-<p class="para"><b>更高稀有度：</b>提供更高的伤害加值。珍稀（+2d6），极珍稀（+3d6）。</p>
+<p class="para"><b>恶毒。</b>使用恶毒武器发动的攻击在命中生物时，额外造成与武器伤害类型相同的1d6点伤害。</p>
+<p class="para"><b>更高稀有度：</b>提供更高的额外。珍稀（2d6），极珍稀（3d6）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br>
 <br>
@@ -555,9 +554,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h4>致伤 Wounding</h4>
 <p class="grey">装备附魔（任意武器），珍稀/极珍稀（需同调）</p>
-<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害，前提是目标不属于<b class="green">构装</b>或<b class="green">亡灵</b>     
-生物。此武器命中的生物直到你下一回合开始前无法恢复生命值。</p>
-<p class="para"><b>更高稀有度：</b>提供更高的伤害加值。极珍稀（+2d10）。</p>
+<p class="para"><b>致伤。</b>持用致伤武器对生物造成伤害时，目标额外受到1d10暗蚀伤害，前提是目标不属于<b class="green">构装</b>或<b class="green">亡灵</b>     生物。此武器命中的生物直到你下一回合开始前无法恢复生命值。</p>
+<p class="para"><b>更高稀有度：</b>提供更高的伤害加值。极珍稀（2d10）。</p>
 <p class="para"><b>附魔禁限：</b>该附魔属于核心附魔。核心附魔不能被单独购买，而必须附加在已有的魔法装备上。此外，同一魔法武器上只能附加一个核心附魔，因此不能和其他核心附魔共同添加在一起。</p>
 <br><br>
 </div>
