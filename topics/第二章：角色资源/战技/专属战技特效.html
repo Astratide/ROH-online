@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
 <head>
-<title>专属战技特效</title>
+<title>精通特效选项</title>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../../style.css">
@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(112);
+  parent.nav.tree.selectNode(125);
  }else{
   setTimeout("syn()",500);
 }
@@ -127,159 +127,205 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 		<A href="负面战技特效.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
 		<A href="../../第三章：种族一览.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
-	PRTS资料库 > <A href="../../第二章：角色资源.html">第二章：角色资源</A> &gt; <A href="../战技.html">战技</A> &gt;  <b>专属战技特效</b>
+	PRTS资料库 > <A href="../../第二章：角色资源.html">第二章：角色资源</A> &gt; <A href="../战技.html">战技</A> &gt;  <b>精通特效选项</b>
 </div>
-<div id="winchm_template_minititle">罗德岛外勤指南：[专属战技特效]</div>
+<div id="winchm_template_minititle">罗德岛外勤指南：[精通特效选项]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h2>专属特效列表 Exclusive Effects</h2>
+<h2> 战技精通特效 Mastery Effects</h2>
 <hr class="sub">
-<p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己的一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
-<p class="para"><b>消耗提升。</b>应用专属战技特效会使得战技的技力消耗增加1点。</p>
-<p class="para"><b>仅限一次。</b>你只能给仅一个战技应用一项专属特效。即便你习得了多项战技，你至多也只能给其中一项战技应用一项负面特效。</p>
-<br>
-<p class="para">大部分专属特效允许你在要求生物进行豁免检定来避免受到完整伤害，或者陷入某个效应或状态时，替换这次豁免类型和失败带来的效应或状态为不同的选项。如果原本豁免失败不会带来额外效应或状态，则添加之。</p>
-<p class="para">例如，如果你在发动了具有晕眩效果的战技期间，以3环施展了火球术，那么你可以让这次火球术要求所有范围内的目标进行体质豁免，失败时会受到8d6火焰伤害并被<b class="green">震慑</b>直到其下回合结束，成功时则仅受到一半的伤害。</p>
+<p class="para"><b>专属特效。</b>你可以通过【战技特训】专长来习得一项战技精通特效。你同时只能习得一个战技精通特效。你可以在此后每次升级时替换你所习得的精通特效为另一个。</p>
+<p class="para"><b>随时应用。</b>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用已知的战技精通特效。</p>
+<p class="para"><b>豁免难度。</b>任何战技精通特效的如果需要豁免，其豁免DC等同8+你熟练加值+你攻击所用属性调整值。</p>
+<p class="para"></p>
 <br>
 <br>
-<h3 class="effect-box" id="green">晕眩效果&nbsp;Stun Effect</h3>
+<h3 class="effect-box" id="green">【特训】晕眩 Stun</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p>
-<p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>晕眩。</b>你将豁免改为体质豁免，目标在豁免失败时陷入<b class="green">震慑</b>，直到其下回合结束。</p>
+<p class="gradiant-box">精通战技特效（先决：等级4+）</p>
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p>
+<p><b>晕眩。</b>目标必须通过体质豁免，否则陷入<b class="green">失能</b>且移动速度降至0，直到你下回合开始。</p>
 </div>
 <br>
+
 <br>
-<h3 class="effect-box" id="green">束缚效果&nbsp;Chained Effect</h3>
+<h3 class="effect-box" id="green"> 【特训】恐慌 Fear</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>束缚。</b>你将豁免改为力量豁免，目标在豁免失败时遭到<b class="green">束缚</b>直到其下回合结束，在豁免成功时移动速度减少10尺。无论豁免结果，每个目标再额外受到1d10+你熟练加值的力场伤害。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>恐慌。</b>目标必须通过感知豁免，否则将对你 <b class="green">恐慌</b>直到你下回合开始。以此恐慌期间，目标必须在自己回合消耗所有移动力以安全的路径远离你。</p>
 </div>
 <br>
+
 <br>
-<h3 class="effect-box" id="green">失衡效果&nbsp;Topple Effect</h3>
+<h3 class="effect-box" id="green"> 【特训】诱导 Charm</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p>
-<p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>失衡。</b>你将豁免改为力量豁免，目标在豁免失败时倒地。无论豁免结果，每个目标额外受到1d10+你熟练加值的钝击伤害。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>魅惑。</b>目标必须通过感知豁免，否则将被你 <b class="green">魅惑</b>直到你下回合开始。以此魅惑期间，目标必须在自己回合消耗所有移动力以安全的路径靠近你。</p>
 </div>
 <br>
+
 <br>
-<h3 class="effect-box" id="green">虚弱效果&nbsp;Debility Effect</h3>
+<h3 class="effect-box" id="green"> 【特训】战栗 Shudder</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级5+，没有其他专属战技特效）</p> 
-<p>此战技持续期间，你对一名生物造成伤害时，可以应用以下特性：</p> 
-<p><b>虚弱。</b>你造成伤害后，目标承受<b class="green">虚弱</b>状态直到其下回合结束。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>沉默。</b>目标必须通过魅力豁免，否则遭到<b class="green">战栗</b>直到你下回合结束。</p>
+</div>
+<div class="syntax">
+<b>规则引用：战栗 Shudder* 【状态】</b> 
+<p class="para">战栗的一个生物无法进行攻击检定。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】沉睡 Sleep</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p>
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p>
+<p><b>沉睡。</b>目标必须通过感知豁免，否则将陷入 <b class="green">昏迷</b> 
+1分钟，或直到目标受到伤害，或其5尺内一个生物用动作将其摇醒。不需睡眠或免疫力竭状态的生物自动成功通过此豁免。</p>
+</div>
+<br>
+
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】束缚 Chain</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p>
+<p><b>束缚。</b>目标必须通过力量豁免，否则遭到<b class="green">束缚</b>，直到你下回合开始。在豁免成功时改为移动速度减少10尺。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】冻结 Frozen</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>冻结。</b>目标必须通过体质豁免，否则将承受<b>冻结</b>直到你下回合开始，并受到1d10点寒冷伤害。</p>
+</div>
+<div class="side-box" id="navy">
+<h4 id="ISW">规则引用：冻结 Frozen*【危害】</h4>
+<p class="para"><b>迟缓。</b>冻结中的一个生物移动速度降至0，在执行攻击动作或魔法动作以进行攻击时，必须放弃其中一次攻击检定，且无法执行<b class="green">反应</b>。</p>
+<p class="para"><b>恢复。</b>一个生物可以<b class="green">动作</b>打破身上的冻结效果，如果拥有<b class="green">抵抗</b>状态则可以用<b class="green">附赠动作</b>打破。如果受到<b class="spell">温暖术<sup>ES</sup></b> 效应、任意火焰伤害、<b class="spell">次级复原术</b>或类似效应，则冻结危害也会立刻结束。</p> 
+</div>
+
+<br>
+<h3 class="effect-box" id="green">  【特训】沉默 Silent</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>沉默。</b>目标必须通过魅力豁免，否则遭到<b class="green">沉默</b>直到你下回合结束，并受到1d10点心灵伤害。</p>
+</div>
+<div class="syntax">
+<b>规则引用：沉默 Silent* 【状态】</b> 
+<p class="para">沉默的一个生物不能说话，无法发动战技，也不能施展需要言语成分的法术。如果是怪物则无法执行需要充能的动作项。此外，如果特质写明了可以被沉默，则也无法从该特质中获益。</p>
+</div>
+<br>
+
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】虚弱 Debility</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p><em></em> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>虚弱。</b>目标承受<b class="green">虚弱</b>状态直到你下回合开始。</p>
 </div>
 <div class="syntax">
 <b>规则引用：虚弱 Debility* 【状态】 </b> 
 <p class="para"><b>伤害减少。</b>你进行的任何伤害掷骰获得-5减值。</p>
 </div>
 <br>
-<h3 class="effect-box" id="green">沉睡效果&nbsp;Sleep Effect</h3>
+
+<br>
+
+<h3 class="effect-box" id="green">【特训】破甲 Armour Breaking</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级5+，没有其他专属战技特效）</p>
-<p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p>
-<p><b>沉睡。</b>你将豁免改为感知豁免，目标若豁免失败，则将陷入 <b class="green">昏迷</b> 
-1分钟，或直到目标受到伤害，或其5尺内有人用一个动作将其摇醒。不需睡眠的生物或免疫力竭状态的生物自动成功通过此豁免。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b> 破甲。</b>目标必须通过体质豁免，否则将AC获得-4减值并失去一项你选择的伤害抗性，直到你下回合开始。</p>
 </div>
 <br>
+
 <br>
-<h3 class="effect-box" id="green">寒冷效果&nbsp;Colden Effect</h3>
+<h3 class="effect-box" id="green"> 【特训】脆弱 Fragile</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>此战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>寒冷。</b>你将豁免改为体质豁免，目标在豁免失败时承受<b>冻结</b>，直到其下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的寒冷伤害。</p>
-</div>
-<div class="side-box" id="navy">
-<h4 id="ISW">规则引用：冻结 Frozen*【危害】</h4>
-<p class="para"><b>迟缓。</b>冻结中的生物移动速度降至0，在执行攻击动作或魔法动作以进行攻击时，必须放弃其中一次攻击检定，且无法执行<b class="green">反应</b>。</p>
-<p class="para"><b>恢复。</b>生物可以<b class="green">动作</b>打破身上的冻结效果，如果拥有<b class="green">抵抗</b>状态则可以用<b class="green">附赠动作</b>打破。如果受到<b class="spell">温暖术<sup>ES</sup></b> 效应、任意火焰伤害、<b class="spell">次级复原术</b>或类似效应，则冻结危害也会立刻结束。</p> 
-</div>
-<br>
-<h3 class="effect-box" id="green">恐慌效果&nbsp;Fear Effect</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>恐慌。</b>你可以将豁免改为感知豁免，目标在豁免失败时对你 <b class="green">恐慌</b>，直到其下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box" id="green"> 浮空效果&nbsp;Levitation</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>浮空。</b>你可以将豁免改为力量豁免，目标在豁免失败时被抛升20尺（巨型或更大目标改为10尺），并在其开始回合时坠落。如果生物受到坠落伤害，那些坠落导致的钝击伤害骰提升至d10。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box" id="green">抵抗效果&nbsp;Status Resist</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p><b> 抵抗。</b>直到下回合结束前，你获得<b>抵抗</b>状态。你也可以改为让所有你在战技持续期间治疗过的生物，在你下回合结束前都获得<b class="green">抵抗</b>状态。</p>
-</div>
-<div class="syntax">
-<b>规则引用：抵抗 Status Resistance* 【状态】</b> 
-<p class="para">对拥有抵抗的生物而言，若一个效应需要其在结束回合时进行豁免来结束效应，它可以改为在开始回合时以及获得抵抗时进行豁免。此外，那些会在其回合结束时中止的效应，会改为在其回合开始时中止。</p>
-</div>
-<br>
-<h3 class="effect-box" id="green"> 沉默效果&nbsp;Silent Effect</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">沉默</b>，直到你下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
-</div>
-<div class="syntax">
-<b>规则引用：沉默 Silent* 【状态】</b> 
-<p class="para">沉默的生物不能说话，无法发动战技，也不能施展需要言语成分的法术。如果是怪物则无法执行需要充能的动作项。此外，如果一个特质写明了可以被沉默，则也无法从该特质中获益。</p>
-</div>
-<br>
-<h3 class="effect-box" id="green">战栗效果&nbsp;Shudder Effect</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>沉默。</b>你可以将豁免改为魅力豁免，目标在豁免失败时陷入<b class="green">战栗</b>，直到你下回合结束。无论豁免结果，每个目标额外受到1d10+你熟练加值的心灵伤害。</p>
-</div>
-<div class="syntax">
-<b>规则引用：战栗 Shudder* 【状态】</b> 
-<p class="para">战栗的生物无法进行攻击检定。</p>
-</div>
-<br>
-<h3 class="effect-box" id="green">破甲效果&nbsp;Armour Breaking</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：狙击或辅助职业等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b> 破甲。</b>你可以将豁免改为体质豁免，目标在豁免失败时AC获得-4减值，直到你下回合结束。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box" id="green">削抗效果&nbsp;Resist Breaking</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：术师或辅助职业等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>削抗。</b>你可以将豁免改为体质豁免，目标在豁免失败时失去一项你选择的伤害抗性，或将免疫变成抗性，直到你下回合结束。如果目标没有任何伤害抗性，你改为让其获得<b class="green">d4脆弱</b>。</p></div>
-<br>
-<br>
-<h3 class="effect-box" id="green">脆弱效果&nbsp;Fragile Effect</h3>
-<div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：特种或辅助职业等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>脆弱。</b>你可以将豁免改为体质豁免，目标在豁免失败时获得 <b class="green">d6脆弱</b>，直到你下回合结束。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>脆弱。</b>目标必须通过体质豁免，否则将获得 <b class="green">d6脆弱</b>，直到你下回合开始。</p>
 </div>
 <div class="syntax">
 <b>规则引用：脆弱 Fragile* 【状态】</b> 
 <p>你每次受到伤害时，每受到10点该伤害，你就额外受到1d4的相同类型伤害（额外伤害不再重复触发此效果）。</p>
 <p>有些提供脆弱的效应会写明脆弱提供的数值，如d6脆弱就允许伤害来源掷1d6而非1d4来作为额外伤害。</p>
 </div>
+
 <br>
-<h3 class="effect-box" id="green">推拉效果&nbsp;Shift Effect</h3>
+<h3 class="effect-box" id="green"> 【特训】失衡 Topple</h3>
 <div class="effect-box">
-<p class="gradiant-box">专属战技特效（先决：等级3+，没有其他专属战技特效）</p> 
-<p>战技持续期间，你如果要求生物进行豁免检定来避免陷入某个效应或状态，你可以替换这次豁免类型和失败带来的效应或状态为下列选项：</p> 
-<p><b>推拉。</b>你可以将豁免改为力量豁免，目标在豁免失败时被直线推离或者拉近你20尺（由你选择），体型为大型或更大的生物改为10尺。无论豁免结果，每个目标额外受到1d10+你熟练加值的钝击伤害。</p>
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p>
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p>
+<p><b>失衡。</b>目标必须通过力量豁免，否则将<b class="green">倒地</b>并受到1d10点钝击伤害。</p>
 </div>
 <br>
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】位移 Shift</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>位移。</b>目标必须通过力量豁免，否则将被直线推离或者拉近你30尺（由你选择），体型为大型或更大的一个生物改为20尺，然后受到1d10点钝击伤害。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green"> 【特训】浮空 Levitation</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决： 等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>浮空。</b>目标必须通过力量豁免，否则将被抛升30尺（巨型或更大目标改为20尺）。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green">  【特训】阻挡 Blocking</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>阻挡。</b>你立即对 1 名可触及的生物执行擒抱或推撞（无需动作，自动成功），此擒抱也无需占用你的空手。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green">  【特训】生存 Survival</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>生存。</b>此战技每消耗1点技力，你就立即获得10点临时生命值。以此获得的临时生命值在战斗结束时消失。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green">  【特训】机动 Mobility</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>机动。</b>此战技每消耗1点技力，你就能让自己在该回合的移动速度增加10尺。</p>
+</div>
+<br>
+
+<br>
+<h3 class="effect-box" id="green">  【特训】伤害 Damage</h3>
+<div class="effect-box">
+<p class="gradiant-box">专属战技特效（先决：等级4+）</p> 
+<p>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。</p> 
+<p><b>伤害。</b>此战技每消耗1点技力，你就能让自己在该回合进行的一次伤害掷骰额外获得+5加值。</p>
+</div>
+<br>
+
+
 <br><br>
 </div>
 </div>

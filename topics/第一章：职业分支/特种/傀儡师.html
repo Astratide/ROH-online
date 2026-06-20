@@ -125,7 +125,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
 		<A href="怪杰.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
-		<A href="../../第二章：角色资源.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
+		<A href="../玩家手册扩展/野蛮人.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
 	PRTS资料库 > <A href="../../第一章：职业分支.html">第一章：职业分支</A> &gt; <A href="../特种.html">特种</A> &gt;  <b>傀儡师</b>
 </div>
@@ -173,7 +173,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>替身选择。</b>你选择你替身的运作模式：<b>主动替身</b>或<b>被动替身</b>。此选择无法更改。</p>
 <ul>
 <li><b>主动替身：双重存在。</b>你可以用一个<b class="green">附赠动作</b>，在你能看见的30尺内的一处空地上召唤出你的替身（替身同时只能存在一个）。替身是体型与你一样的构装生物，具有等同于你傀儡师等级四倍的生命值，AC为10+你的熟练加值，免疫所有状态，豁免加值与你相同，与你共用回合。在你的回合中，你能意念命令替身移动至多30尺（无需动作），除此之外替身不能做任何行动。在你回合结束时，如果你与替身之间的距离超过30尺，其会消失。</li>
-<li><b>被动替身：第二自我。</b>以一个<b class="green">附赠动作</b>并消耗一枚法术位，你立即获得1d10+法术环阶十倍的<b class="green">临时生命值</b>。此临时生命存在期间，你处于替身状态。如果你的下一个回合结束时，这些临时生命值依然存在，则其转化为你的真实生命值，否则，你陷入<b class="green">震慑</b>直到你的下回合结束。</li>
+<li><b>被动替身：第二自我。</b>以一个<b class="green">附赠动作</b>并消耗一枚法术位，你立即获得1d10+法术环阶十倍的<b class="green">临时生命值</b>。此临时生命存在期间，你处于替身状态。如果你的下一个回合结束时，这些临时生命值依然存在，它们被转化使得你恢复等额生命值，否则，你陷入<b class="green">震慑</b>直到你的下回合结束。</li>
 </ul>
 
 <br>
@@ -200,7 +200,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>心魂狂舞丨Heart Frenzy</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
+      <div class="cost" id="red"><p class="light">攻击动作</p></div>
       <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light"><IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
@@ -209,7 +209,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。你立即流失等同你1d8+你等级的生命值（至多流失至1）。直到本回合结束前：每当你的攻击命中生物时，或有生物对抗你法术豁免失败时，你对它们额外造成1d8点精通伤害，如果你处于替身状态或者替身距离你15尺内，则改为1d12。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。你立即流失等同你1d8+你等级的生命值（至多流失至1）。直到本回合结束前：每当你的攻击命中生物时，或有生物对抗你法术豁免失败时，你对它们额外造成1d8点精通伤害，如果你处于替身状态或者替身距离你15尺内，则改为1d12。</p></div>
 <p class="para">此外，根据你的替身类型，你将获得以下特性之一：</p>
 <p class="para"><b>主动替身：镜像打击。</b>替身存在时，每当你执行<b class="green">攻击</b>动作时，你可以在替身的位置上发动额外一次近战攻击，或者施展一个施法时间为动作的戏法。你能使用此特性的次数等同于你的施法属性调整值次（至少1次）。在你完成一次长休后，你重获全部已消耗的使用次数。</p>
 <p class="para"><b>被动替身：影子连击。</b>你进入替身状态时，恢复1点技力。当你在替身状态下执行<b class="green">攻击</b>动作时，你可以将其中一次攻击替换为施展一道施法时间为动作的戏法。</p>
@@ -220,7 +220,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>潜意识技能。</b>每当你完成一次长休时，你将下述一项已熟练技能变为<b class="green">专精</b>：巧手、洞悉、欺瞒或表演，持续到你下次完成长休。</p>
 <p class="para">此外，根据你的替身类型，你将获得以下特性之一：</p>
 <p class="para"><b>主动替身：法术储存。</b>你可以施展一道施法时间为动作的法术，法术不会立即生效而是储存在替身体内，持续8小时。替身可以储存多个法术，但环阶总和不可超过九环。在你的回合，你可以<b class="green">附赠动作</b>指挥替身释放任意储存的法术（使用你的施法属性、法术豁免DC和法术攻击加值，若有专注则由替身维持）。</p>
-<p class="para"><b>被动替身：生息续存。</b>每次长休之间仅一次，当你生命值降至0时，你可以改为降至1，然后你获得等同你特种等级两倍的<b class="green">临时生命值</b>。此临时生命值存在期间，你处于替身状态。如果你的下一个回合结束时，这些临时生命值依然存在，则其转化为你的真实生命值。</p>
+<p class="para"><b>被动替身：生息续存。</b>当你生命值降至0但未立即死亡时，你可以改为降至1，然后你获得等同你特种等级两倍的<b class="green">临时生命值</b>。此临时生命值存在期间，你处于替身状态。如果你的下一个回合结束时，这些临时生命值依然存在，它们被转化使得你恢复等额生命值。此特性一经使用，直到你完成一次短休或长休前不可再次使用。</p>
 <br>
 
 <h2>  15级：傀儡大师 Puppet  Master</h2>

@@ -175,14 +175,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <th><b>职业</b></th>
     <th><b>熟练</b></th>
     <th rowspan="2"><b>职业特性</b></th>
-    <th><b>准备</b></th>
+    <th rowspan="2"><b>戏法</b></th>
     <th><b>准备</b></th>
     <th colspan="9"><b>每环法术位</b></th>
   </tr>
   <tr>
     <th><b>等级</b></th>
     <th><b>加值</b></th>
-    <th><b>戏法</b></th>
     <th><b>法术</b></th>
     <th><b>1</b></th>
     <th><b>2</b></th>
@@ -197,7 +196,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>1st</td>
     <td>+2</td>
-    <td style="text-align: left;">医疗施法，医护知识</td>
+    <td style="text-align: left;">施法，医护知识</td>
     <td>4</td>
     <td>2</td>
     <td>2</td>
@@ -212,7 +211,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>2nd</td>
     <td>+2</td>
-    <td style="text-align: left;">医疗战技，医疗回转</td>
+    <td style="text-align: left;">战技，回转</td>
     <td>4</td>
     <td>4</td>
     <td>3</td>
@@ -564,10 +563,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>疗养。</b>作为完成一次长休或短休的一部分，你可以为至多等同你熟练加值个和你在一起休息的盟友进行疗养，然后所有受益的盟友获得<b class="green">英雄激励</b>。已经拥有英雄激励的生物可以改为获得1d6+你医疗等级的<b class="green">临时生命值</b>。</p>
 <p class="para"><b>医术。</b>你进行感知（<b class="green">医药</b>）检定时，可以额外加上你的智力或魅力调整值（至少1）。</p>
 <br>
-<h3>2级：医疗战技 Medic Battleskills</h3>
+<h3> 2级：战技 Battleskill</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
-<p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得特种等级时，给你从特种职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
-<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>
+<p class="para"><b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得医疗等级时，给你从医疗职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
+<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点技力点。若你进行了兼职，则此熟练加值只考虑那些有战技特性的职业的等级。</p>
 <p class="para"><b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。</p>
 <p class="para">作为医疗，你在第2级时从下表选择并习得一个战技：治疗强化、迅捷治疗 或 援护治疗。你可以在每次升级时重新选择以此习得的战技。</p>
 <div class="syntax">
@@ -605,7 +604,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>
       <h6>迅捷治疗丨Swift Curing</h6>
       <div class="cost" id="red">
-        <p class="light">魔法动作</p></div>
+        <p class="light">施展法术</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -615,7 +614,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p >你可以魔法动作并消耗1点技力来发动此战技。你立即施展一道施法时间为动作，且可以为生物恢复生命值的法术（视为升1环施展，至多9环）。作为此动作的一部分，你选择一个施法距离内的生物，目标恢复1d6+你医疗等级的生命值。</p></div>
+<p >你可以在施法时消耗1点技力来发动此战技。如果这次法术会为生物恢复生命值，你立即再选择一个施法距离内的目标（可以是同一目标），对方恢复1d6+你医疗等级的生命值。</p></div>
 <div class="syntax">
 <table>
   
@@ -643,7 +642,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <br>    
 <h3>2级：医疗回转 Medic Recovery</h3>
-<p class="para">在自己回合中，以一个附赠动作，你可以让自己立即恢复1点已消耗技力。同时你每以此恢复1点技力，就可以指定周围60尺内一个可见盟友，并为对方恢复1d6+你施法属性调整值的生命值（可以选择同一目标）。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特质。</p>
+<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。同时你每以此恢复1点技力，就可以指定周围60尺内一个可见盟友，并为对方恢复1d6+你施法属性调整值的生命值（可以选择同一目标）。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的医疗等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：医疗子职 Vanguard Subclass</h3>
@@ -666,7 +665,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">你获得一项传奇恩惠专长，或其他一项你选择的适用的专长。</p>
 <br>
 <h3>20级：生命使徒 Apostle of Life</h3><b></b> 
-<p class="para">你掷先攻时，立即选择120尺内的至多5个可见生物（可包括自己），直到战斗结束前，所有目标的生命值上限和生命值提升20点。</p>
+<p class="para">你掷先攻时，立即选择120尺内的至多5个可见生物（可包括自己），直到战斗结束前，所有目标的生命值上限和生命值提升20点。此特性使用后需要完成长休方可再次使用。</p>
 <br><br>
 </div>
 </div>

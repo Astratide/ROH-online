@@ -176,14 +176,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <th><b>职业</b></th>
     <th><b>熟练</b></th>
     <th rowspan="2"><b>职业特性</b></th>
-    <th><b>准备</b></th>
+    <th rowspan="2"><b>戏法</b></th>
     <th><b>准备</b></th>
     <th colspan="9"><b>每环法术位</b></th>
   </tr>
   <tr>
     <th><b>等级</b></th>
     <th><b>加值</b></th>
-    <th><b>戏法</b></th>
     <th><b>法术</b></th>
     <th><b>1</b></th>
     <th><b>2</b></th>
@@ -198,7 +197,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>1st</td>
     <td>+2</td>
-    <td style="text-align: left;">辅助施法，辅助助力</td>
+    <td style="text-align: left;">施法，辅助助力</td>
     <td>4</td>
     <td>2</td>
     <td>2</td>
@@ -213,7 +212,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>2nd</td>
     <td>+2</td>
-    <td style="text-align: left;">辅助战技，辅助回转</td>
+    <td style="text-align: left;">战技，回转</td>
     <td>4</td>
     <td>4</td>
     <td>3</td>
@@ -569,10 +568,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>  使用次数。</b>一个生物一旦接受了助力骰，那么其直到完成一次长休或短休之前，都无法再次从中受益。不过，你可以消耗1点技力（无需动作）来立即重置某个生物对助力骰的使用权。</p>
 <p class="para"><b> 助力成长。</b>你给予的助力骰最初时为d4，但其大小会随着你等级成长，你的助力骰会在你辅助等级达到5级（d6），9级（d8），13级（d10）以及17级（d12）时增大一级。</p>
 <br>
-<h3>2级：辅助战技 Supporter Battleskills</h3>
+<h3> 2级：战技 Battleskill</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
-<p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得辅助等级时，给你从辅助职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
-<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>
+<p class="para"><b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得辅助等级时，给你从辅助职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
+<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点技力点。若你进行了兼职，则此熟练加值只考虑那些有战技特性的职业的等级。</p>
 <p class="para"><b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。</p>
 <p class="para">作为辅助，你在第2级时从下表选择并习得一个战技：强力击、战术咏唱 或 攻击力强化。你可以在每次升级时重新选择所习得的战技。</p>
 <div class="syntax">
@@ -648,8 +647,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你的攻击检定获得+1d4加值，伤害掷骰可以加入熟练加值。</p>
 </div>
 <br>    
-<h3>2级：辅助回转 Supporter Recovery</h3>
-<p class="para">在自己回合中，以一个附赠动作，你可以让自己立即恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力，或获得1d6+你辅助等级的临时生命值（由你选择）。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特质。</p>
+<h3> 2级：回转 Recovery</h3>
+<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力，或获得1d6+你辅助等级的临时生命值（由你选择）。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的辅助等级时，可以以此恢复更多技力。9级起，你可以以此为自己恢复2点技力而非1点。第17级起，你可以以此为自己恢复3点技力。</p>
 <br>
 <h3>3级：辅助子职 Vanguard Subclass</h3>
@@ -657,7 +656,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">子职是一种特化能力，会在特定的辅助等级给予你对应的独特能力。此后你将在达到对应的辅助等级时，依次获得每一个你所选的子职的能力。辅助特性表列出了你从子职中获得新特性的辅助等级。</p>
 <br>
 <h3>7级：反迷惑 Countercharm </h3>
-<p class="para">你可以干扰影响心灵的效应。若你或位于你30尺内的一名生物在一次感知豁免检定中失败，你能够以<b class="green">反应</b>令其重骰这次豁免，这次重骰具有<b class="green">优势</b>。 </p>
+<p class="para">你可以干扰影响心灵的效应。若你或位于你30尺内的一名生物在一次感知豁免检定中失败，你能够以<b class="green">反应</b>令其重骰这次豁免，并且可以在检定结果上获得等同你助力骰大小的加值 。 </p>
 
 <br>
 <h3>11级：额外领域 Extra Area</h3>
@@ -676,7 +675,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para">你获得一项传奇恩惠专长，或其他一项你选择的适用的专长。</p>
 <br>
 <h3>20级：战备鼓舞 Pre-War Assistence</h3>
-<p class="para">你掷先攻时，可以选择120尺内的至多5个可见生物（可包括自己），直到战斗结束前，所有目标的当前技力点和技力点上限提升2点。此特性一经使用，直到你完成一次长休前不可再次使用。</p>
+<p class="para">你掷先攻时，可以选择120尺内的至多5个可见生物（可包括自己），直到战斗结束前，所有目标的当前技力点和技力点上限提升1点。此特性使用后需要完成长休方可再次使用。</p>
 <br><br>
 </div>
 </div>

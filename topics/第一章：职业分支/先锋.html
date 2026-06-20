@@ -9,10 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../style.css">
 <STYLE>
-table.custom-table td:nth-child(3) {text-align: center;} 
-table.custom-table th:nth-child(3) {text-align: center;} 
 table.custom-table td:nth-child(4) {text-align: left;} 
-table.custom-table th:nth-child(4) {text-align: left;} 
 table.custom-table#left td:nth-child(2) {text-align: center;} 
 table.custom-table#left th:nth-child(2) {text-align: center;} 
 </STYLE>
@@ -174,12 +171,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>获得先锋的1级特性（见先锋特性表 ）。</p>
 <br>
 <h4>先锋特性表</h4>
-<table class="custom-table" style="max-width: 480px;">
+<table class="custom-table" style="max-width: 520px;">
   <colgroup>
   <col style="width: 40px;">
-  <col style="width: 80px;">
-  <col style="width: 80px;">
-  <col style="width: 260px;"></colgroup>
+  <col style="width: 90px;">
+  <col style="width: 60px;">
+  <col style="width: 260px;">
+  </colgroup>
   <tbody>
   <tr>
     <th><b>等级</b></th>
@@ -196,7 +194,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>2nd</td>
     <td>+2</td>
     <td>d4</td>
-    <td>部署策略，先锋战技，先锋回转</td></tr>
+    <td>部署策略，战技，回转</td></tr>
   <tr>
     <td>3rd</td>
     <td>+2</td>
@@ -205,13 +203,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>4th</td>
     <td>+2</td>
-    <td>
-      <p>d4</p></td>
+    <td>d4</td>
     <td>属性值提升</td></tr>
   <tr>
     <td>5th</td>
     <td>+3</td>
-    <td>d6</td>
+    <td>d4</td>
     <td>额外攻击，战场适应</td></tr>
   <tr>
     <td>6th</td>
@@ -231,12 +228,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>9th</td>
     <td>+4</td>
-    <td>d8</td>
-    <td>先锋回转</td></tr>
+    <td>d6</td>
+    <td>先锋回转（2）</td></tr>
   <tr>
     <td>10th</td>
     <td>+4</td>
-    <td>d8</td>
+    <td>d6</td>
     <td>子职特性</td></tr>
   <tr>
     <td>11th</td>
@@ -251,17 +248,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>13th</td>
     <td>+5</td>
-    <td>d10</td>
+    <td>d8</td>
     <td>—</td></tr>
   <tr>
     <td>14th</td>
     <td>+5</td>
-    <td>d10</td>
+    <td>d8</td>
     <td>先进部署</td></tr>
   <tr>
     <td>15th</td>
     <td>+5</td>
-    <td>d10</td>
+    <td>d8</td>
     <td>子职特性</td></tr>
   <tr>
     <td>16th</td>
@@ -271,22 +268,22 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>17th</td>
     <td>+6</td>
-    <td>d12</td>
-    <td>先锋回转</td></tr>
+    <td>d10</td>
+    <td>先锋回转（3）</td></tr>
   <tr>
     <td>18th</td>
     <td>+6</td>
-    <td>d12</td>
+    <td>d10</td>
     <td>子职特性</td></tr>
   <tr>
     <td>19th</td>
     <td>+6</td>
-    <td>d12</td>
+    <td>d10</td>
     <td>传奇恩惠</td></tr>
   <tr>
     <td>20th</td>
     <td>+6</td>
-    <td>d12</td>
+    <td>d10</td>
     <td>陷阵旌旗</td></tr></tbody></table>
 <br>
 <table class="custom-table" id="left">
@@ -337,7 +334,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>2级：部署策略 Deploy Strategy</h3>
 <p class="para">作为先锋，你可以通过发动先锋战技来获得费用骰。</p>
 <p class="para"><b>进战重置。</b>费用骰会在战斗结束时，以及你进行先攻检定时清空。</p>
-<p class="para"><b>费用骰成长。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到5级（d6），9级（d8），13级（d10）以及17级（d12）时增大一级。</p>
+<p class="para"><b>费用骰成长。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到6级（d6），11级（d8），16级（d10）时增大一级。</p>
 <p class="para"><b>部署策略。</b>你结束回合时，若你有<b>费用骰</b>，则可以消耗并掷出若干费用骰，将结果相加，并应用下述的一项部署策略。</p>
 <ul>
 <li><b>攻击：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即发动一次武器攻击或施展一个动作戏法。若命中或造成伤害，则使得那次伤害掷骰获得等同费用骰掷骰结果的加值。</li>
@@ -345,10 +342,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <li><b>协助：</b>指定一名可见盟友。目标直到其回合结束前，进行的首次D20检定具有<b class="green">优势</b>。并且其立即获得等同费用骰掷骰结果的<b class="green">临时生命值</b>。</li>
 </ul>
 <br>
-<h3>2级：先锋战技 Vanguard Battle Skills</h3>
+<h3>  2级：战技 Battleskill</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
-<p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得先锋等级时，给你从先锋职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
-<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>
+<p class="para"><b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得先锋等级时，给你从先锋职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”）。你还可以习得一项精通特效。</p>
+<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点技力点。若你进行了兼职，则此熟练加值只考虑那些有战技特性的职业的等级。</p>
 <p class="para"><b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。</p>
 <p class="para">作为先锋，你在第2级时习得基础战技：冲锋号令。</p>
 <div class="syntax">
@@ -376,8 +373,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>你可以附赠动作并消耗1点技力来发动这个战技。此战技每消耗1点技力，你就获得1枚费用骰。</p>
 </div>
 <br>
-<h3>2级：先锋回转 Vanguard Recovery</h3>
-<p class="para">在自己回合中，以一个<b class="green">附赠动作</b>，你可以让自己立即恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。当一个敌人的神话特性被激活时，你也可以重置此特性的使用权。</p>
+<h3>  2级：回转 Recovery</h3><strong></strong>
+<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力，每个盟友每次长休间只能以此受益一次。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的先锋等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：先锋子职 Vanguard Subclass</h3>

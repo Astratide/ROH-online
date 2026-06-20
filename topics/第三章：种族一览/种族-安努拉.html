@@ -104,7 +104,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(136);
+  parent.nav.tree.selectNode(149);
  }else{
   setTimeout("syn()",500);
 }
@@ -158,24 +158,26 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>安努拉特质 Anura Traits</h2>
 <hr class="sub">
-<p class="para">作为一位安努拉，你拥有以下特质：</p>
-<p><b>生物种类Creature Type。</b>你属于类人生物；你的种族是安努拉。</p>
-<p><b>年龄Age。</b>安努拉成长的速度和人类相仿，他们大概16岁便成年，至少能活80岁。</p>
-<p><b>体型Size。</b>你属于中型或小型体型，在选取该种族时选择。</p>
-<p><b>速度Speed。</b>你的基础步行速度为30尺。</p>
-<p><b>黑暗视觉Darkvision。</b>你具有60尺<b class="green">黑暗视觉</b>，而且你可以分辨黑暗中的颜色。</p>
+
+<p><b>生物类型。</b>你属于类人生物；你的种族是安努拉。</p>
+<p><b>体型。</b>你属于中型或小型体型，在选取该种族时选择。</p>
+<p><b>速度。</b>你的基础步行速度为30尺。</p>
+<p><b>语言。</b>你习得通用语以及你所选的两门语言。通常包括萨尔贡语或阿卡胡拉语。</p>
+<br>
+<p>作为安努拉，你拥有以下特殊特质：</p>
+<p><b>黑暗视觉。</b>你具有60尺<b class="green">黑暗视觉</b>，而且你可以分辨黑暗中的颜色。</p>
 <p><b>安努拉种群 Anura Species。</b>你属于一支安努拉种群，并因此获得了特殊能力。从安努拉种群中选择其一。你获得该种群的好处:</p>
 <ul>
 	<li><b>——树蛙 Polypedatid——</b>
-	<p><b>速度Speed。</b>你额外获得25尺攀爬速度。</p>
-	<p><b>毒性皮肤 Poisonous Skin。</b>你对毒素伤害具有<b class="green">抗性</b>。每当你被一个5尺内的生物以近战攻击命中时，你可以采取<b class="green">反应</b>，并使得该生物受到1d6毒素伤害。</p>
+	<p><b>速度。</b>你额外获得20尺攀爬速度。</p>
+	<p><b>毒性皮肤。</b>你对毒素伤害具有<b class="green">抗性</b>。每当你被一个5尺内的生物以近战攻击命中时，你可以采取<b class="green">反应</b>，并使得该生物受到1d6毒素伤害。</p>
 	<li><b>——雨蛙 Hylidae——</b>
-	<p><b>速度Speed。</b>你额外获得25尺游泳速度。</p>
-	<p><b>变色皮肤Discolored skin。</b>你的皮肤可以根据环境调整颜色，变得透明，在那些常人难以想象的地方隐藏自己，因此你在敏捷（隐匿）检定中具有<b class="green">优势</b>。</p></li>
+	<p><b>速度。</b>你额外获得20尺游泳速度。</p>
+	<p><b>变色皮肤。</b>你的皮肤可以根据环境调整颜色，变得透明，在那些常人难以想象的地方隐藏自己，因此你在敏捷（隐匿）检定中具有<b class="green">优势</b>。</p></li>
 </ul>
-<p><b>增强跳跃Bouncy Jump。</b>你可以用敏捷属性而非力量决定跳跃距离。此外，你可以使用<b class="green">附赠动作</b>进行跳跃，以此跳远或跳高的距离为你的步行速度的一半，且不会引起借机攻击。</p>
-<p><b>技能熟练Skill Proficiency。</b>你获得一项来自种族的技能熟练，你可以选择：求生/医药/自然/驯兽/隐匿。</p>
-<p><b>语言Languages。</b>你习得通用语以及你所选的两门语言。通常包括萨尔贡语或阿卡胡拉语。</p>
+<p><b>增强跳跃。</b>你可以用敏捷属性而非力量决定跳跃距离。此外，你可以使用<b class="green">附赠动作</b>进行跳跃，以此跳远或跳高的距离为你的步行速度的一半，且不会引起借机攻击。</p>
+<p><b>技能熟练。</b>你获得一项来自种族的技能熟练，你可以选择：求生/医药/自然/驯兽/隐匿。</p>
+
 <br>
 <h2>种族专长 Racial Feats</h2>
 <hr class="sub">
@@ -185,10 +187,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="grey">种族专长（先决：安努拉，4级+）</p>
 <p>你获得以下增益：</p>
 <ul>
-<li><b>属性值提升Ability Score Increase。</b>你的敏捷、智力或感知提升1，至多20。 
-<li><b>亚种强化Subspecies Enhancement。</b>根据你的种群类型获得相应增益：</li>
+<li><b>  属性值提升。</b>你的敏捷、智力或感知提升1，至多20。 
+<li><b> 亚种强化。</b>根据你的种群类型获得相应增益：</li>
 <p><b>树蛙·强化毒素：</b>你的毒性皮肤特性造成的伤害骰提升至2d6，且伤害可以加入你的体质调整值。以此造成伤害时，目标必须通过体质豁免（DC等同8+你体质调整值+你熟练加值），失败则<b class="green">中毒</b>直到其下回合结束。以此中毒期间，生物不能执行反应。</p>
-<p><b>雨蛙·隐匿大师：</b>你可以<b class="green">附赠动作</b>执行<b class="green">躲藏</b>动作。即便你只受益于<b class="green">轻度遮蔽</b>，你也可以执行<b class="green">躲藏</b>动作。</p>
+<p><b>雨蛙·隐匿大师：</b>你可以<b class="green">附赠动作</b>执行<b class="green">躲藏</b>动作。即便你只受益于<b class="green">轻度遮蔽</b>或<b class="green">半身掩护</b>，你也可以执行<b class="green">躲藏</b>动作。</p>
 <li><b>额外熟练。</b>你从求生、自然或隐匿中选择一项未熟练技能并获得其熟练。</li>
 </ul>
 <br>

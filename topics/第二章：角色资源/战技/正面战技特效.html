@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
 <head>
-<title>正面战技特效</title>
+<title>正面特效选项</title>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../../style.css">
@@ -102,7 +102,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(110);
+  parent.nav.tree.selectNode(123);
  }else{
   setTimeout("syn()",500);
 }
@@ -127,18 +127,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 		<A href="../战技.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
 		<A href="负面战技特效.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
-	PRTS资料库 > <A href="../../第二章：角色资源.html">第二章：角色资源</A> &gt; <A href="../战技.html">战技</A> &gt;  <b>正面战技特效</b>
+	PRTS资料库 > <A href="../../第二章：角色资源.html">第二章：角色资源</A> &gt; <A href="../战技.html">战技</A> &gt;  <b>正面特效选项</b>
 </div>
-<div id="winchm_template_minititle">罗德岛外勤指南：[正面战技特效]</div>
+<div id="winchm_template_minititle">罗德岛外勤指南：[正面特效选项]</div>
 <div id="winchm_template_content"> 
 <div id="content">
-<h2>正面特效列表 Positive Effects</h2>
+<h2>正面战技特效 Positive Effects</h2>
 <hr class="sub">
 <p class="para">为战技应用特效是定制化你的战技的主要方式，遵循下述规则：</p>
 <p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
 <p class="para"><b>提升技力消耗。</b>应用正面特效会增加发动该战技的SP消耗。</p>
-<p class="para"><b>技力消耗上限。</b>你<b>无法</b>发动一个技力消耗超过你的熟练加值的战技。举例来说，一个技力消耗为3SP的战技，需要至少5级的角色（PB≥3）才能发动。</p>
-<p class="para"><b>负面特效不增加你的上限。</b>有时候你可以依靠负面特效来降低消耗，不过，在考虑你能否发动一个战技时，忽略负面特效带来的技力减值。一个原本技力消耗为4SP的战技，即便添加了负面特效，也需要至少9级的角色（PB≥4）才能发动。只不过你发动的时候可以仅消耗3SP。</p>
+<p class="para"><b>负面特效。</b>你<b>无法</b>发动一个技力消耗超过你的技力上限的战技。举例来说，一个技力消耗为3SP的战技，需要至少5级的角色（PB≥3）才能发动。</p>
 <p class="para"><b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
 <ul>
 <li><b>正面战技特效-α。</b>最常见的特效，应用α特效会使战技的SP消耗增加1点。至少3级才能应用。</li>
@@ -186,7 +185,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h3 class="effect-box">瞬时造成法术伤害 Deal Instant Art Damage</h3>
 <div class="effect-box">
-<p class="gradiant-box">正面战技特效-α（先决：等级3+，精通伤害特性）</p>
+<p class="gradiant-box">正面战技特效-α（先决：等级3+，精通伤害特性或施法特性）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>  
 <p><b>瞬时造成法术伤害。</b>战技持续期间仅一次，你可以在攻击命中时额外造成1d10+你职业等级点精通伤害。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效，每次复选都使得该伤害加值额外进行相同的提升。</p>
@@ -201,26 +200,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 尺的每个其他生物造成1d6+你职业等级的同类伤害。</p>
 <p><b>立即。</b>如果此战技持续时间为立即，则溅射伤害骰提升至d10。</p>
 <p><b>复选。</b>你可以给一个战技多次应用本特效，每多应用一次，溅射范围就增加5尺，溅射伤害骰增加1枚。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box">阻挡数增加 Block Increase</h3>
-<div class="effect-box">
-<p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
-<p>此战技发动后，你获得以下效应：</p> 
-<p><b>阻挡数增加。</b>你立即对 1 
-名可触及的生物执行擒抱或推撞（无需动作，自动成功），此擒抱也无需占用你的空手。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。 </p>
-</div>
-<br>
-<br>
-<h3 class="effect-box">造成治疗量提升 Healing Amount Increase</h3>
-<div class="effect-box">
-<p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>治疗量提升。</b>你所有为决定恢复生物生命值量而进行的掷骰，骰子等级增大 1 级（至多d12）。</p> 
-<p><b>立即。</b>如果此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
 <br>
@@ -255,7 +234,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>迷彩。</b>你获得<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。此增益在你位于任何敌人触及距离内时被暂时压制。</p>
+<p><b>迷彩。</b>你对于任何远程攻击而言具有<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。</p>
 </div>
 <br>
 <br>
@@ -263,7 +242,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">正面战技特效-α（先决：等级3+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>隐匿。</b>直到你下回合开始前，你获得<b class="green">全身掩护</b>，但此增益在你位于任何敌人触及距离内时被暂时压制。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
+<p><b>隐匿。</b>直到你下回合开始前，你对于任何远程攻击而言具有<b class="green">全身掩护</b>。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
 </div>
 <br>
 <br>

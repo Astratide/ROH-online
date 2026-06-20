@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../style.css">
 <style>
+table.custom-table td:nth-child(3) {text-align: left;} 
 table.custom-table#left th:nth-child(2) {text-align: center;} 
 table.custom-table#left td:nth-child(2) {text-align: center;} 
 </style>
@@ -170,10 +171,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>获得重装的1级特性（见重装特性表 ）。</p>
 <br>
 <h3>重装特性表</h3>
-<table class="custom-table" id="left" style="max-width: 400px;">
+<table class="custom-table" style="max-width: 600px;">
+  <colgroup>
+    <col style="width: 40px;">
+    <col style="width: 90px;">
+    <col style="width: 260px;">
+  </colgroup>
   <tbody>
   <tr>
-    <td><b>职业等级</b></td>
+    <td><b>等级</b></td>
     <td><b>熟练加值</b></td>
     <td><b>职业特性</b></td></tr>
   <tr>
@@ -183,7 +189,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>2nd</td>
     <td>+2</td>
-    <td>防御风格，重装战技，重装回转</td></tr>
+    <td>防御策略，战技，回转</td></tr>
   <tr>
     <td>3rd</td>
     <td>+2</td>
@@ -191,7 +197,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>4th</td>
     <td>+2</td>
-    <td>属性值提升，防御风格</td></tr>
+    <td>属性值提升，防御策略</td></tr>
   <tr>
     <td>5th</td>
     <td>+3</td>
@@ -207,7 +213,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>8th</td>
     <td>+3</td>
-    <td>属性值提升，防御风格</td></tr>
+    <td>属性值提升，防御策略</td></tr>
   <tr>
     <td>9th</td>
     <td>+4</td>
@@ -223,7 +229,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>12th</td>
     <td>+4</td>
-    <td>属性值提升，防御风格</td></tr>
+    <td>属性值提升，防御策略</td></tr>
   <tr>
     <td>13th</td>
     <td>+5</td>
@@ -239,7 +245,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <tr>
     <td>16th</td>
     <td>+5</td>
-    <td>属性值提升，防御风格</td></tr>
+    <td>属性值提升，防御策略</td></tr>
   <tr>
     <td>17th</td>
     <td>+6</td>
@@ -317,10 +323,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>阻挡挤压（8级+）。</b>你结束自己回合时，你对每个被你<b class="green">擒抱</b>的生物造成1d12+你重装等级的钝击伤害。</p>
 <p class="para"><b>列阵前进（8级+）。</b>每轮仅一次，当你周围15尺内的一名盟友移动脱离了这个范围，则你可以立即移动至多等同你移动速度的距离（无需反应）。此特性不能在你处于<b class="green">失能</b>状态时使用。</p>
 <br><br>
-<h3>2级：重装战技 Defender Battleskills</h3>
+<h3> 2级：战技 Battleskill</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
-<p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得重装等级时，给你从重装职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
-<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>
+<p class="para"><b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得重装等级时，给你从重装职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
+<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点技力点。若你进行了兼职，则此熟练加值只考虑那些有战技特性的职业的等级。</p>
 <p class="para"><b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。</p>
 <p class="para">作为重装，你在第2级时选择习得以下基础重装战技之一：防御力强化或高效阻挡。你可以在每次升级重新选择以此习得的战技。</p>
 <div class="syntax">
@@ -370,8 +376,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </table>
 <p>你可以在攻击命中时并消耗1点技力来发动此战技。你立即擒抱目标，此擒抱自动成功，前提是目标体型不大于大型。</p></div>
 <br>
-<h3>2级：重装回转 Defender Recovery</h3>
-<p class="para">在自己回合中，以一个<b class="green">附赠动作</b>，你可以让自己立刻恢复1点已消耗技力。你每以此恢复1点技力，你就能恢复1d12+你体质调整值的生命值。你以此恢复技力点后，必须进行一次先攻检定才能再次使用此特质。</p>
+<h3> 2级：回转 Recovery</h3>
+<p class="para">你可以使用<b class="green">附赠动作</b>未自己恢复1点已消耗技力。你每以此恢复1点技力，你就能恢复1d12+你体质调整值的生命值。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的重装等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：重装子职 Defender Subclass</h3>
