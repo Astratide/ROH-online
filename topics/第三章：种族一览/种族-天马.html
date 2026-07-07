@@ -7,7 +7,7 @@
 <html>
 <head>
 <title>天马</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="text/html; charset=UTF-8 http-equiv="content-type">
 <link rel="stylesheet" href="../style.css">
 <meta http-equiv="X-UA-Compatible" content="IE=11" />
 
@@ -104,7 +104,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(136);
+  parent.nav.tree.selectNode(137);
  }else{
   setTimeout("syn()",500);
 }
@@ -140,7 +140,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   <p class="grey" style="text-align: right; max-width: 600px;">――锈蚀银枪</p>
 </ul>
 <div class="side-box">
-  <p><b>上位种族。</b>天马作为上位种族，强度比一般种族稍高。由于其稀有性，只有在特定的战役中可以选用天马。请务必在创建天马角色前咨询你的DM是否允许选取上位种族。</p>
+  <p><b>上位种族。</b>天马通常被视为库兰塔的神民分支之一，强度比一般种族稍高。由于其稀有性，只有在特定的战役中可以选用天马。请务必在创建天马角色前咨询你的DM是否允许选取上位种族。</p>
 </div>
 <h2>天马血脉 Bloodline of Pegasus</h2>
 <hr class="sub">
@@ -176,13 +176,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>作为天马，你拥有以下特殊特质：</p>
 <p><b>黑暗视觉。</b>你具有60尺<b class="green">黑暗视觉</b>。</p>
 <p><b> 天马体魄。</b>你具有光耀伤害<b class="green">抗性</b>；你为抵抗<b class="green">恐慌</b>状态而作的豁免检定具有<b class="green">优势</b>。</p>
-<p><b> 闪耀术法。</b>你习得戏法<b class="spell">光亮术</b>；3级起，你习得<b class="spell">神恩</b>，5级起，你习得<b class="spell">闪耀斩</b>。你可以在每次长休之间免费施展这些法术各一次，或者你也可以使用合适的法术位施展这些法术。这些法术的施法关键属性是智力、感知或魅力。</p>
+<p><b>闪耀术法。</b>你习得戏法<b class="spell">光亮术</b>；此外，3级起，你习得<b class="spell">神恩</b>，5级起，你习得<b class="spell">闪耀斩</b>，你可以在每次长休之间免费施展这些法术各一次，或者你也可以使用法术位施展这些法术。你使用此特质施展法术的施法属性是魅力。</p>
 <p><b>技能熟练。</b>你获得一项来自种族的技能熟练，你可以选择：运动/历史/游说。</p>
 
 <br>
 <h2>种族专长 Racial Feats</h2>
 <hr class="sub">
-<p class="para">作为天马，你在达到相应等级时可选择以下种族专长：</p>
+<p class="para">作为天马，你在达到相应等级时可选择以下种族专长。你也可以选择库兰塔的种族专长。</p>
 <br>
 <h5>银枪战术 Argent Tactics</h5>
 <p class="grey">种族专长（先决：天马，4级+）</p>
@@ -190,8 +190,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>属性值提升Ability Score Increase。</b>你的力量、敏捷或魅力提升1，至多22。 
 <li><b>天马真击Pegasus Truestrike。</b>每回合仅一次，若你在一次武器攻击检定中具有<b class="green">优势</b>，你可使得这次攻击额外造成1d6光耀伤害，并且以此造成的光耀伤害无视目标的<b class="green">抗性</b>。 </li>
-<li><b>阵型协调Formation Synergy。</b>你可以在执行<b class="green">攻击</b>动作时，将其中一次攻击替换为执行<b class="green">协助</b>动作。当你执行<b class="green">协助</b>动作辅助盟友的攻击检定时，你可以分散位于你60尺内而非5尺内敌人的注意力，只要该敌人能看见或听见你。</li>
-<li><b>破阵冲锋Shock Charge。</b>你的基础移动速度增加至40尺。此外，若你直线移动至少30尺后立即发动一次近战攻击，此次攻击具有<b class="green">优势</b>。</li>
+<li><b>阵型协调Formation Synergy。</b>你可以在执行<b class="green">攻击</b>动作时，将其中一次攻击替换为执行<b class="green">协助</b>动作。当你执行<b class="green">协助</b>动作，你可以协助最多距离你30尺远的目标。</li>
+<li><b>破阵冲锋Shock Charge。</b>你的基础移动速度增加至40尺。</li>
 </ul>
 <br>
 <h5>黄金誓言 Golden Oath</h5>
@@ -200,7 +200,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>属性值提升Ability Score Increase。</b>你的力量、敏捷或魅力提升1，至多22。 </li>
 <li><b>光辉守护Radiant Guardian。</b>你可以用<b class="green">附赠动作</b>激发血脉能量，使自己和30尺内每个能听见你声音的盟友获得<b class="green">临时生命值</b>，数值等于你的等级+魅力调整值，持续1分钟。此临时生命值存在期间，生物的移动速度增加10尺。此特性一经使用，直到你完成一次短休或长休前不可再次使用。</li> 
-<li><b>天马法术Pegasus Arts。</b>你习得戏法<b class="spell">光耀祷词</b>。然后从下述两个法术中选择一个：三环<b class="spell">十字军披风</b>、或三环<b class="spell">加速术</b> ，并加入你以闪耀术法特性习得的法术中，且可以同样的方式施展。当你施展所选三环法术时，如果其需要专注，你可以让一个60尺内的自愿盟友承受专注负担。该盟友必须拥有施法的能力。</li>
+<li><b>天马法术Pegasus Arts。</b>你习得戏法<b class="spell">光耀祷词</b>。然后从下述两个法术中选择一个：三环<b class="spell">十字军披风</b>、或三环<b class="spell">加速术</b> ，并加入你以闪耀术法特性习得的法术中，且可以同样的方式施展。当你施展所选法术时，如果其需要专注，你可以让一个60尺内的自愿盟友承受专注负担。该盟友必须拥有施法的能力。</li>
 </ul>
 <br><br>
 </div>

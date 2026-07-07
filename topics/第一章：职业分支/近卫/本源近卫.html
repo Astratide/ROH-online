@@ -5,8 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html><head><title>本源近卫</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<meta http-equiv="X-UA-Compatible" content="IE=11">
+<meta content="text/html; charset=UTF-8 http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible"content="IE=11">
 <link rel="stylesheet" href="../../style.css">
 
 
@@ -135,6 +135,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="content">
 <h1>本源近卫 Primal Guard<IMG class="text-img" src="../../图片资源/职业图标/子职/职业分支图标_本源近卫.png" ></h1>
 <hr class="sub">
+
 <div class="side-box">
   <b>近卫-本源近卫：</b>你擅长利用元素能量标记敌人并在适当时机引爆，造成爆发性伤害或削弱效果。
 </div>
@@ -170,7 +171,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h2>3级：元素精通 Elemental Mastery</h2>
 <p class="para">作为一名本源近卫，你获得以下特性：</p>
 <p class="para"><b>迅捷戏法。</b>你可以将<b class="green">攻击</b>动作中的其中一次攻击替换为施展一个施法时间为动作的本源近卫戏法。</p>
-<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣、暗蚀、光耀、心灵、力场伤害中选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。每回合仅一次，你可以在施展法术时将</p>
+<p class="para"><b>精通伤害。</b>你选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。你消耗技力的回合，可以将所施展的法术造成的伤害类型改为你的精通伤害。 </p>
 <p class="para"><b>领域戏法。</b>你选择一个符合条件的 <b>领域法术表</b>，并在该法术表中选择两道戏法，以及一道1环法术习得之。你可以每次长休间免费施展所选法术一次，或者你也可以用法术位施展该法术。你施展该戏法的属性是智力、感知或魅力，由你在到达此等级时选择。</p>
 <br>
 <h2>3级：本源刻印 Primordial Sigil</h2>
@@ -180,14 +181,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>7级：铭魂哀歌 Soulious Elegy</h2>
 <p class="para">你擅长于引爆周围的元素能量。你习得下述特性：
-<p class="para"><b>强力戏法。</b>当你施展一道戏法并对生物造成你的精通伤害时，你可以在戏法的其中一次伤害掷骰中加入你的施法属性调整值。如果目标处于元素损伤爆发期间，则还可以对其额外造成1d10点同类型伤害。</p>
+<p class="para"><b>强力戏法。</b>当你施展一道戏法并对生物造成你的精通伤害时，你可以在戏法的其中一次伤害掷骰中加入你的施法属性调整值。如果目标处于元素损伤爆发期间，则改为可以加入双倍施法属性调整值。</p>
 <p class="para">此外，你习得战技：铭魂祭礼。</p>
 <div class="syntax">
 <table>
+  
   <tr>
     <td>
       <div class="skill">
-      <IMG class="icon" src="../../图片资源/技能图标/近卫/技能_铭魂丧钟.png">
+      <IMG class="icon" src="../../图片资源/技能图标/近卫/技能_铭魂丧钟.png">       
       </div>
     </td>
     <td>
@@ -224,35 +226,35 @@ class="green">抗性</b>，若你有多个精通伤害，则你仅选择一个�
 <hr class="sub">
 <br>
 
-<h5 id="灼燃">元素损伤·灼燃 Elemental Mastery·Burn</h5>
+<h5 id="灼燃">元素损伤・灼燃 Elemental Mastery・Burn</h5>
 <p class="grey">元素损伤选项（先决：精通于火焰或光耀伤害）</p>
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <p><b>灼燃损伤。</b>你对生物造成至少10点火焰或光耀伤害时，若你精通于此伤害，则可以为对方添加<b class="green">灼燃标记</b>。要使得此标记爆发的豁免DC，等同你法术DC或伤害的一半，两者取高。</p>
-<p><b>损伤爆发。</b>以一个<b class="green">附赠动作</b>，你可选择周围若干个120尺内身上有灼燃标记的生物，引爆并清除灼燃标记，并迫使对方进行敏捷豁免。</p>
+<p><b>损伤爆发。</b>你可以使用<b class="green">附赠动作</b>选择周围若干个120尺内身上有灼燃标记的生物，引爆并清除灼燃标记，并迫使对方进行敏捷豁免。</p>
 <p><b>失败：</b>目标受到6d6+你等级点无法减免的火焰伤害，并陷入<b class="green">d6法术脆弱</b>直到你下回合结束。此外，目标且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。</p>
 
 <br>
-<h5 id="侵蚀">元素损伤·侵蚀 Elemental Mastery·Corrosion</h5>
+<h5 id="侵蚀">元素损伤・侵蚀 Elemental Mastery・Corrosion</h5>
 <p class="grey">元素损伤选项（先决：精通于寒冷或强酸伤害）</p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <p><b>侵蚀损伤。</b>你对生物造成至少10点寒冷或强酸伤害时，若你精通于此伤害，则可以为对方添加<b class="green">侵蚀标记</b>。要使得此标记爆发的豁免DC，等同你法术DC或伤害的一半，两者取高。</p>
-<p><b>损伤爆发。</b>以一个<b class="green">附赠动作</b>，你可选择周围若干个120尺内身上有侵蚀标记的生物，引爆并清除侵蚀标记，并迫使他们进行体质豁免。</p>
+<p><b>损伤爆发。</b>你可以使用<b class="green">附赠动作</b>选择周围若干个120尺内身上有侵蚀标记的生物，引爆并清除侵蚀标记，并迫使他们进行体质豁免。</p>
 <p><b>失败：</b>目标受到4d8+你等级点无法减免的钝击伤害，并且AC获得-3减值，持续1分钟。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。</p>
 
 <br>
-<h5 id="神经">元素损伤·神经 Elemental Mastery·Nervous</h5>
+<h5 id="神经">元素损伤・神经 Elemental Mastery・Nervous</h5>
 <p class="grey">元素损伤选项（先决：精通于心灵或毒素伤害）</p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <p><b>神经标记。</b>你对生物造成至少10点心灵或毒素伤害时，若你精通于此伤害，则可以为对方添加<b class="green">神经标记</b>。要使得此标记爆发的豁免DC，等同你法术DC或伤害的一半，两者取高。</p>
-<p><b>损伤爆发。</b>以一个<b class="green">附赠动作</b>，你可选择周围若干个120尺内身上有神经标记的生物，引爆并清除神经标记，并迫使他们进行智力豁免。</p>
+<p><b>损伤爆发。</b>你可以使用<b class="green">附赠动作</b>选择周围若干个120尺内身上有神经标记的生物，引爆并清除神经标记，并迫使他们进行智力豁免。</p>
 <p><b>失败：</b>目标受到3d12+你等级点无法减免的心灵伤害，并陷入<b class="green">麻痹</b>状态直到你下回合结束。目标也可选择不被麻痹，改为1分钟内接下来进行的三次攻击检定承受-10减值（若拥有抵抗状态则改为一次）。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。</p>
 
 <br>
-<h5 id="凋亡">元素损伤·凋亡 Elemental Mastery·Necrosis</h5>
+<h5 id="凋亡">元素损伤・凋亡 Elemental Mastery・Necrosis</h5>
 <p class="grey">元素损伤选项（先决：精通于暗蚀或心灵伤害）</p> 
 <p>你独特的法术天赋为你建立起你和元素本源之间的联系。你获得以下增益：</p> 
 <p><b>元素标记。</b>你对生物造成至少10点暗蚀或心灵伤害时，若你精通于此伤害，则可以为对方添加<b class="green">凋亡标记</b>。要使得此标记爆发的豁免DC，等同你法术DC或伤害的一半，两者取高。</p>
-<p><b>损伤爆发。</b>以一个<b class="green">附赠动作</b>，你可选择周围若干个120尺内身上有凋亡标记的生物，引爆并清除凋亡标记，并迫使对方进行魅力豁免。</p>
+<p><b>损伤爆发。</b>你可以使用<b class="green">附赠动作</b>选择周围若干个120尺内身上有凋亡标记的生物，引爆并清除凋亡标记，并迫使对方进行魅力豁免。</p>
 <p><b>失败：</b>目标陷入<b class="green">虚弱</b>状态直到你下回合结束，期间每次发动攻击或者移动5尺，就受到1d4+你熟练加值点暗蚀伤害。此外，目标身上的所有其他元素标记被清除，且直到你下回合结束前不可再被添加元素标记（这期间被视为元素损伤爆发期间）。</p>
 
 

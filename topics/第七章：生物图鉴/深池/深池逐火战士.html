@@ -6,7 +6,7 @@
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=UTF-8 http-equiv="Content-Type"/>
 <meta content="IE=11" http-equiv="X-UA-Compatible">
 <title>深池逐火战士</title>
 <link href="../../style.css" rel="stylesheet"/>
@@ -106,7 +106,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(237);
+  parent.nav.tree.selectNode(242);
  }else{
   setTimeout("syn()",500);
 }
@@ -128,13 +128,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 <div id="winchm_template_title">
 	<div id="winchm_template_button">
-		<A href="爱布拉娜.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
-		<A href="万火归一.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
+		<A href="深池弩炮手.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
+		<A href="深池逐火护卫.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
 	</div>
 	PRTS资料库 > <A href="../../第七章：生物图鉴.html">第七章：生物图鉴</A> &gt; 深池 &gt; 照我以火 &gt;  <b>深池逐火战士</b>
 </div>
 <div id="winchm_template_minititle">罗德岛外勤指南：[深池逐火战士]</div>
-<div id="winchm_template_content">
+<div id="winchm_template_content"> 
 <div id="content">
 <h6>深池逐火战士 Dublinn Flamechaser Soldier</h6>
 <p class="grey">近战 物理；普通 任意</p>
@@ -150,7 +150,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="monster_container">
 <h6> 深池逐火战士丨Flamechaser Soldier</h6>
 <hr>
-<p class="grey"><i>中型类人（任意），守序中立</i></p>
+
+<p class="grey"><i>中型亡灵（任意），守序中立</i></p>
 <table class="stat">
 <tr><td><b>AC</b> 15</td>
 <td width="40%"><b>先攻</b> +3（13）</td></tr>
@@ -210,14 +211,16 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h3>特质 Traits</h3>
 <hr>
+
 <p class="para"><b>魔法抗性 Magic Resistence。</b>逐火战士为抵抗法术或魔法效应而作的豁免具有<b class="green">优势</b>。</p>
-<p class="para"><b>怨恨余烬 Ember of Resentment 。</b>逐火战士生命值降至0期间不会死亡或昏迷，其变为小型生物，进入<b class="green">失能</b>和<b class="green">隐形</b>状态（若处于任何生物触及距离内则隐形被压制），直到其恢复任意生命值。在生命值降至0期间，逐火战士在累计受到三次伤害后才会真正死亡。</p>
+<p class="para"><b> 怨恨余烬 Ember of Resentment。</b>当逐火战士因非光耀非重击伤害生命值降至0时，其进行一次体质豁免（DC为5+所受伤害）。豁免成功则改为将生命值降至1 
+。逐火战士生命值为1期间若未处于任何生物触及距离内则还会获得隐形状态。</p>
 <br>
 <h3>动作 Actions</h3>
 <hr>
-<p class="para"><b>长剑 Longsword。</b><i>近战攻击检定：</i>+5，触及5尺。<i>命中：</i>8（1d10+3）挥砍伤害。如果逐火战士周围5尺有燃烧的物件或生物，这次攻击会为目标添加<b class="green">灼燃标记</b>。</p>
-<p class="para"><b>余烬重生 Ember Rebirth（仅生命值为0时）。</b>逐火战士进行DC15体质豁免，成功则恢复所有生命值。此动作项可以在失能时使用。</p>
+<p class="para"><b>长剑 Longsword。</b><i>近战攻击检定：</i>+5，触及5尺。<i>命中：</i>8（1d10+3）挥砍伤害。<i>重击：</i>目标开始<b class="green">燃烧</b>。</p>
 </div>
+
 <br><hr><br>
 <h6>深池逐火精锐战士 Dublinn Flamechaser Elite Soldier</h6>
 <p class="grey">近战 物理；普通 任意</p>
@@ -233,7 +236,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="monster_container">
 <h6> 深池逐火精锐战士丨Flamechaser Elite Soldier</h6>
 <hr>
-<p class="grey"><i>中型类人（任意），守序中立</i></p>
+
+<p class="grey"><i>中型亡灵（任意），守序中立</i></p>
 <table class="stat">
 <tr><td><b>AC</b> 15</td>
 <td width="40%"><b>先攻</b> +3（13）</td></tr>
@@ -272,40 +276,36 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <td class="c4">-1</td>
 <td></td>
 <td class="c3"><b>感知</b></td>
-<td class="c3">12</td>
-<td class="c4">+1</td>
-<td class="c4">+1</td>
+<td class="c3">11</td>
+<td class="c4">+0</td>
+<td class="c4">+0</td>
 <td></td>
 <td class="c3"><b>魅力</b></td>
-<td class="c3">12</td>
-<td class="c4">+1</td>
-<td class="c4">+1</td>
+<td class="c3">14</td>
+<td class="c4">+2</td>
+<td class="c4">+2</td>
 <td></td>
 </tr>
 </table>
 <table class="stat">
-<tr><td><b>技能</b> 运动+5，察觉+3</td></tr>
+<tr><td><b>技能</b> 运动+5，察觉+2</td></tr>
 <tr><td><b>抗性</b> 暗蚀</td></tr>
 <tr><td><b>装备</b> 长剑，镶钉皮甲</td></tr>
-<tr><td><b>感官</b> 黑暗视觉60尺，被动察觉11</td></tr>
+<tr><td><b>感官</b> 黑暗视觉60尺，被动察觉12</td></tr>
 <tr><td><b>语言</b> 通用语，维多利亚语，塔拉语</td></tr>
 <tr><td><b>CR</b> 3（XP 700；PB +2）</td></tr>
 </table>
 <br>
 <h3>特质 Traits</h3>
 <hr>
+
 <p class="para"><b>魔法抗性 Magic Resistence。</b>逐火战士为抵抗法术或魔法效应而作的豁免具有<b class="green">优势</b>。</p>
-<p class="para"><b>怨恨余烬 Ember of Resentment 。</b>逐火战士生命值降至0期间，其不会死亡或昏迷，其变为小型生物，进入<b class="green">失能</b>和<b class="green">隐形</b>状态（若处于任何生物触及距离内则隐形被压制）。在生命值降至0期间，逐火战士在累计受到三次伤害后才会真正死亡。</p>
+<p class="para"><b> 怨恨余烬 Ember of Resentment。</b>当逐火战士因非光耀非重击伤害生命值降至0时，其进行一次体质豁免（DC为5+所受伤害）。豁免成功则改为将生命值降至1。逐火战士生命值为1期间若未处于任何生物触及距离内则还会获得隐形状态。</p>
 <br>
 <h3>动作 Actions</h3>
 <hr>
 <p class="para"><b>多重攻击 Multiattack。</b>深池逐火精锐战士发动两次长剑攻击。</p>
-<p class="para"><b>长剑 Longsword。</b><i>近战攻击检定：</i>+5，触及5尺。<i>命中：</i>8（1d10+3）挥砍伤害，如果逐火战士周围5尺有燃烧的物件或生物，这次攻击会为目标添加<b class="green">灼燃标记</b>。</p>
-<p class="para"><b>余烬重生 Ember Rebirth（仅生命值为0时）。</b>逐火战士进行DC15体质豁免，成功则恢复所有生命值。此动作项可以在失能时使用。</p>
-<br>
-<h3>附赠动作 Bonus Actions</h3>
-<hr>
-<p class="para"><b>焚灭灼燃 Burnt Scorching。</b><i>敏捷豁免检定：</i>DC24，深池逐火精锐战士触及距离内一个有<b class="green">灼燃标记</b>的生物。<i>失败：</i>17（4d6+3）无法减免的火焰伤害。<i>失败或成功：</i>目标身上的燃烧以及灼燃标记被清除，本回合结束前不可再被添加元素标记。</p>
+<p class="para"><b>长剑 Longsword。</b><i>近战攻击检定：</i>+5，触及5尺。<i>命中：</i>8（1d10+3）挥砍伤害，外加3（1d6）火焰伤害。<i>重击：</i>目标开始<b class="green">燃烧</b>。</p>
 </div>
 <br><br>
 </div>

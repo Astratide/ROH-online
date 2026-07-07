@@ -5,8 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html><head><title>先锋</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<meta http-equiv="X-UA-Compatible" content="IE=11">
+<meta content="text/html; charset=UTF-8 http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible"content="IE=11">
 <link rel="stylesheet" href="../style.css">
 <STYLE>
 table.custom-table td:nth-child(4) {text-align: left;} 
@@ -214,12 +214,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>6th</td>
     <td>+3</td>
     <td>d6</td>
-    <td>前线汹涌</td></tr>
+    <td>子职特性</td></tr>
   <tr>
     <td>7th</td>
     <td>+3</td>
     <td>d6</td>
-    <td>子职特性</td></tr>
+    <td>开路先锋，前线汹涌</td></tr>
   <tr>
     <td>8th</td>
     <td>+3</td>
@@ -229,7 +229,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>9th</td>
     <td>+4</td>
     <td>d6</td>
-    <td>先锋回转（2）</td></tr>
+    <td>预先准备，先锋回转（2）</td></tr>
   <tr>
     <td>10th</td>
     <td>+4</td>
@@ -249,7 +249,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>13th</td>
     <td>+5</td>
     <td>d8</td>
-    <td>—</td></tr>
+    <td>开路先锋</td></tr>
   <tr>
     <td>14th</td>
     <td>+5</td>
@@ -318,13 +318,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>1级：突入战局 Jump into the Fray</h3>
 <p class="para">你总是在所有人有所行动之前切入战局，为队友的部署争取有利机会。</p>
 <p class="para">若你未被突袭，你进行的先攻检定具有<b class="green">优势</b>。</p>
-<p class="para">你进行先攻检定时，可以选择自己或一名可见盟友，其先攻检定结果可以加入你的熟练加值（前提是原本未加入熟练加值）。9级起，你以及所有可见盟友都获得此加值。</p>
+<p class="para">你习得起源专长：警戒 Alert。</p>
 <br>
 <h3>1级：战斗风格 Fighting Style</h3>
 <p class="para">你习得一项你选择的战斗风格专长（见专长章节），推荐选择：巨武器战斗（冲锋手），对决/防御（尖兵），投掷武器战斗（情报官），箭术（战术家），拦截（执旗手）。</p>
 <br>
 <h3>1级：开路先锋 Trailblazer</h3>
-<p class="para">你懂得如何应对陌生的战场环境，为队友扫除障碍，你从以下增益中选择两项获得。当你的先锋等级达到7级的时候，你可以再习得两项。</p>
+<p class="para">你懂得如何应对陌生的战场环境，为队友扫除障碍，你从以下增益中选择两项获得。当你的先锋等级达到7级以及13级时，你可以分别再习得一项，但不能习得已经习得的特性。</p>
 <p class="para"><b>技能专精。</b>选择一项你熟练但不具备专精的技能，你获得其<b class="green">专精</b>。</p>
 <p class="para"><b>额外熟练。</b>选择一项你不具备熟练的技能或工具，你获得其熟练。</p>
 <p class="para"><b>武器精通。</b>选择一项你熟练的武器，你获得其精通。每当你完成一次长休，你能将所选的武器种类替换为你熟练的另一种武器。</p>
@@ -334,12 +334,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <h3>2级：部署策略 Deploy Strategy</h3>
 <p class="para">作为先锋，你可以通过发动先锋战技来获得费用骰。</p>
 <p class="para"><b>进战重置。</b>费用骰会在战斗结束时，以及你进行先攻检定时清空。</p>
-<p class="para"><b>费用骰成长。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到6级（d6），11级（d8），16级（d10）时增大一级。</p>
-<p class="para"><b>部署策略。</b>你结束回合时，若你有<b>费用骰</b>，则可以消耗并掷出若干费用骰，将结果相加，并应用下述的一项部署策略。</p>
+<p class="para"><b>费用骰成长。</b>你的费用骰骰最初时为d4，但大小会随着你等级成长。你的费用骰会在你先锋等级达到6级（d6），11级（d8），16级（d10）时增大一级。当你需要消耗费用骰时，可以改为消耗一个拥有费用骰的自愿盟友的费用骰。</p>
+<p class="para"><b>部署策略。</b>当你结束自己回合时，你可以消耗并掷出一枚费用骰，将结果相加，并应用下述的一项部署策略。</p>
 <ul>
 <li><b>攻击：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即发动一次武器攻击或施展一个动作戏法。若命中或造成伤害，则使得那次伤害掷骰获得等同费用骰掷骰结果的加值。</li>
-<li><b>加速：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即移动至多等同自身移动速度一半的距离。并且其先攻值在本轮结束时增加，数值等同费用骰掷骰结果。</li>
-<li><b>协助：</b>指定一名可见盟友。目标直到其回合结束前，进行的首次D20检定具有<b class="green">优势</b>。并且其立即获得等同费用骰掷骰结果的<b class="green">临时生命值</b>。</li>
+<li><b>加速：</b>指定一名可见盟友。目标可以采取<b class="green">反应</b>，立即移动至多等同自身移动速度一半的距离而不引发借机攻击。如果目标本轮尚未执行过回合，其先攻值提高等同费用骰掷骰结果，但不能因此高于你的先攻值；若提高后与你先攻值相同，则它在你之后行动。</li>
+<li><b>协助：</b>指定一名可见盟友。目标直到你下回合开始前，进行的首次D20检定具有<b class="green">优势</b>。并且其立即获得等同费用骰掷骰结果的<b class="green">临时生命值</b>。</li>
 </ul>
 <br>
 <h3>  2级：战技 Battleskill</h3>
@@ -373,8 +373,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>你可以附赠动作并消耗1点技力来发动这个战技。此战技每消耗1点技力，你就获得1枚费用骰。</p>
 </div>
 <br>
-<h3>  2级：回转 Recovery</h3><strong></strong>
-<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力，每个盟友每次长休间只能以此受益一次。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
+<h3>2级：回转 Recovery</h3>
+<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。同时你还可以指定周围60尺内一个能听到你声音的盟友，对方恢复1点技力或者恢复等同你先锋等级的生命值，每个盟友每次长休间只能以此受益一次。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的先锋等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：先锋子职 Vanguard Subclass</h3>
@@ -388,9 +388,12 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="para"><b>翻山越野。</b>你的移动速度增加5尺。若你具有攀爬速度或是游泳速度，这一加值同样会增加到这些速度上。 </p>
 <p class="para"><b>本职才能。</b>当你的一次加入熟练加值的属性检定或工具检定失败时，你可以消耗 1 点技力并重掷检定中的其中一枚D20，但你必须接受新的结果。如果重掷后仍失败，则技力不会被消耗。 </p>
 <br>
-<h3>6级：前线汹涌 Battlefront Turbulence</h3>
+<h3>7级：前线汹涌 Battlefront Turbulence</h3>
 <p class="para">你带领队友打击那些反应慢你一拍的敌人，并达成高效的突袭。</p>
 <p class="para">当你投掷先攻时，如果对任何生物造成了突袭，并使得那些生物的先攻检定承受<b class="green">劣势</b>，你可以放弃造成劣势，改为要求那些生物进行敏捷豁免（DC等同你8+你熟练加值+你敏捷或力量调整值）。若失败，则他们在战斗开始的首轮中处于<b class="green">失能</b>状态。</p>
+<br>
+<h3>9级：预先准备 Advanced Preparation</h3>
+<p class="para">你投掷先攻时，立即获得1枚费用骰。</p>
 <br>
 <h3>11级：突破本能 Breakthrough Instinct</h3>
 <p class="para">你变的更加擅长快速作战。战斗的第一轮里，你可以行动两个回合：即你先以自己正常的先攻执行一个回合行动，再以先攻数值减10的数值作为另一先攻额外执行一回合的行动。</p>
@@ -400,14 +403,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <ul>
 <li><b>攻击：</b>该盟友的这次攻击具有<b class="green">优势</b>。</li>
 <li><b>加速：</b>该盟友在战斗剩余的时间中，移动忽略<b class="green">困难地形</b>。</li>
-<li><strong>协助：</strong>该盟友的这次D20检定结果还可以加上你的熟练加值。</li>
+<li><b>协助：</b>该盟友的这次D20检定结果还可以加上你的熟练加值。</li>
 </ul>
 <br>
 <h3>19级：传奇恩惠 Epic Boon</h3>
 <p class="para">你获得一项 <b>传奇恩惠专长</b> ，或其他一项你选择的适用的 <b>专长</b>。</p>
 <br>
 <h3>20级：陷阵旌旗 Unto The Breach</h3>
-<p class="para">你带领盟友冲锋陷阵，突入战场。战斗开始时，你可以将你或者你的一名可见盟友的先攻检定中D20结果改为20。此特性在一场战斗中只能使用一次。</p>
+<p class="para">你带领盟友冲锋陷阵，突入战场。当你投掷先攻时，你可以将你或者一名自愿生物的先攻检定中D20结果改为20。</p>
 <br><br>
 </div>
 </div>
