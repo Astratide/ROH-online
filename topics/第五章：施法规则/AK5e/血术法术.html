@@ -1,6 +1,7 @@
 ﻿
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- saved from url=(0014)about:internet -->
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
 <head>
@@ -8,6 +9,8 @@
 <meta content="text/html; charset=UTF-8 http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible"content="IE=11">
 <link rel="stylesheet" href="../../style.css">
+
+
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=11" />
@@ -144,7 +147,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><b>法术成分：</b>V、S</p>
 <p><b>持续时间：</b>立即</p>
 <p class="indent">当鲜血流淌，你将其转化为力量。在触发生物5尺内的未占据空间中创造一枚<b class="green">血珀</b>。</p>
-<p class="indent"><b class="green">血珀</b>是一种小型物件（AC为10，HP为10），对所有伤害具有<b class="green">抗性</b>，并对所有伤害具有10点伤害减免（在抗性之前结算）。血珀本身无效应，但可被其他血术法术消耗以触发额外效果。</p>
+<p class="indent"><b class="green">血珀</b>是一种小型物件（AC为10，HP为10），对所有伤害具有<b class="green">抗性</b>，并对所有伤害具有10点伤害减免（在抗性之前结算），血珀会在被创建的一分钟后自然消散。血珀本身无效应，但可被其他血术法术消耗以触发额外效果。</p>
 <br>
 <br>
 <h5 id="血矛术">血矛术丨Sanguine Spear</h5>
@@ -180,18 +183,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="indent">你触碰一名自愿生物，其失去2d8生命值。然后你选择施法距离30尺内你可见的另一名生物，其恢复等同于前者失去生命值两倍的生命值；若恢复量超过其最大生命值，则多出的部分转化为<b class="green">临时生命值</b>。</p>
 <p><b>血珀效应：</b>若你施法时100尺内存在<b class="green">血珀</b>，你可消耗该血珀令自身也获得该法术提供的<b class="green">临时生命值</b>。</p>
 <br>
-<br>
-<h5 id="不稳定血浆">不稳定血浆丨Unstable Plasma</h5>
-<p class="grey">二环 死灵（血术；术士）</p>
-<p><b>出处：</b>《明日方舟5e（AK5e1st）》</p>
-<p><b>施法时间：</b>附赠动作</p>
-<p><b>施法距离：</b>60尺</p>
-<p><b>法术成分：</b>V、S</p>
-<p><b>持续时间：</b>专注，至多1分钟</p>
-<p class="indent">你为目标施加血咒，增强其力量但代价是生命。该生物在其回合中每次以近战攻击命中时，就额外造成1d10黯蚀伤害，但每次攻击会也使其在该回合结束时失去1d10点生命值。</p>
-<p><b>血珀效应：</b>若施法距离内存在<b class="green">血珀</b>，可消耗它使得受术生物不会失去生命值。</p>
-<p><b>升环施法：</b>使用四环或更高环阶的法术位施展该法术时，你使用的法术位你使用的法术位每比二环高二环，法术伤害和受术生物每次流失的生命值，就都增加1d10。</p>
-<br>
+
 <br>
 <h5 id="血涌术">血涌术丨Sanguine Surge</h5>
 <p class="grey">二环 死灵（血术；术士）</p>
@@ -204,6 +196,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="indent">该回合结束时，该生物失去2d10点生命值。</p>
 <p><b>血珀效应：</b>若施法距离内存在<b class="green">血珀</b>，你可以消耗它使目标不失去生命值。</p>
 <p><b>升环施法：</b>使用三环或更高环阶的法术位施展该法术时，你使用的法术位你使用的法术位每比二环高一环，受术生物流失的生命值就增加1d10，但若用此法术提供的动作执行攻击动作，则可以在那次攻击中额外造成2d10点暗蚀伤害。</p>
+<br>
+<br>
+<h5 id="不稳定血浆">不稳定血浆丨Unstable Plasma</h5>
+<p class="grey">三环 死灵（血术；术士）</p>
+<p><b>出处：</b>《明日方舟5e（AK5e1st）》</p>
+<p><b>施法时间：</b>附赠动作</p>
+<p><b>施法距离：</b>60尺</p>
+<p><b>法术成分：</b>V、S</p>
+<p><b>持续时间：</b>专注，至多1分钟</p>
+<p class="indent">你为目标施加血咒，增强其力量但代价是生命。该生物在其回合中每次以近战攻击命中时，就额外造成1d10暗蚀伤害，但每次攻击会也使其在该回合结束时失去1d10点生命值。</p>
+<p><b>血珀效应：</b>若施法距离内存在<b class="green">血珀</b>，可消耗它使得受术生物不会失去生命值。</p>
+<p><b>升环施法：</b>使用五环或更高环阶的法术位施展该法术时，你使用的法术位你使用的法术位每比三环高二环，法术伤害和受术生物每次流失的生命值，就都增加1d10。</p>
 <br>
 <br>
 <h5 id="撕裂术">撕裂术丨Lacerate</h5>
