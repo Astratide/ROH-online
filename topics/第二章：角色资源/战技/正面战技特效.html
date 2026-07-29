@@ -139,11 +139,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <hr class="sub">
 <p class="para">为战技应用特效是定制化你的战技的主要方式，遵循下述规则：</p>
 <p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
-<p class="para"><b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的生物（PB=4），最多只能发动一个技力消耗为3的战技。</p>
+<p class="para"><b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的角色，熟练加值为4，最多只能发动一个技力消耗为3的战技。</p>
 <p class="para"><b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
 <ul>
 <li><b>战技特效-α。</b>最常见的特效，应用α特效会使战技的SP消耗增加1点。至少5级才能应用。</li>
-<li><b>战技特效-β。</b>更为强大，应用β特效会使战技的SP消耗增加1点。每给战技应用两项β特效，就会额外增加1点SP消耗。（即两个β共消耗3 SP，单个消耗1 SP）。至少7级才能应用。</li>
+<li><b>战技特效-β。</b>更为强大，应用β特效会使战技的SP消耗增加1点。每给战技应用两项β特效，就会额外增加1点SP消耗。即两个β共消耗3 SP，单个消耗1 SP。至少7级才能应用。</li>
 <li><b>战技特效-γ。</b>最为强大，应用γ特效会使战技的SP消耗增加2点。至少9级才能应用。</li>
 </ul>
 <br>
@@ -266,15 +266,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 <br>
 <br>
-<h3 class="effect-box">更易受敌人攻击 Taunt</h3>
-<div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+，盾牌熟练）</p>
-<p>此战技发动后，你获得以下效应：</p> 
-<p><b>嘲讽。</b>直到你下回合开始前，任何能看见你的敌人在进行攻击或造成范围效应时，如果可以做到而没有将你包含在内、则在攻击检定和效应的豁免DC上具有-5减值。</p> 
-</div>
-<p class="grey">举例来说，有多重攻击能力的生物需要将其中一次攻击分给你（若你在其触及内），而能施展火球术的生物则要把你涵盖在火球术范围内。</p>
-<br>
-<br>
 <h3 class="effect-box">快速启动 Speeded Launch</h3>
 <div class="effect-box">
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
@@ -395,9 +386,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h3 class="effect-box" id="orange">持续时间无限 Unlimited Duration</h3>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-γ（先决：等级9+，战技至少持续至下回合开始）</p>
+<p class="gradiant-box">战技特效-γ（先决：等级9+）</p>
 <p>此战技具有以下效应：</p>
-<p><b>持续时间无限。</b>此战技将持续直到战斗结束，或直到你生命值降至0。</p>
+<p><b>持续时间无限。</b>此战技若有持续时间则将持续直到战斗结束，或直到你生命值降至0。若为立即战技，则直到战斗结束前，你都可以无需技力消耗地发动此战技。</p>
 </div>
 <br>
 <br>

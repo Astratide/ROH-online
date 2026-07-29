@@ -133,7 +133,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	PRTS资料库 > <A href="../../第一章：职业分支.html">第一章：职业分支</A> &gt; <A href="../狙击.html">狙击</A> &gt;  <b>散射手</b>
 </div>
 <div id="winchm_template_minititle">罗德岛外勤指南：[散射手]</div>
-<div id="winchm_template_content">
+<div id="winchm_template_content"> 
 <div id="content">
 <h1>散射手 Spreadshooter<IMG class="text-img" src="../../图片资源/职业图标/子职/职业分支图标_散射手.png" ></h1>
 <hr class="sub">
@@ -154,7 +154,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>特性</b></td></tr>
   <tr>
     <td style="text-align: center;">3rd</td>
-    <td><b>散射精通、压制火力</b></td></tr>
+    <td><b>散射精通、近距爆发</b></td></tr>
   <tr>
     <td style="text-align: center;">6th</td>
     <td><b>散射战技</b></td></tr>
@@ -171,17 +171,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：散射精通 Scatter Expertise</h2>
 <p class="para">作为一名散射手，你获得以下特性：</p>
-<p class="para"><b>散射武器。</b>你获得所有霰弹铳武器的熟练以及精通。你还可以半价购买霰弹铳武器，或在一次长休后消耗价值一半的材料自己组装一把。最后，你持用霰弹铳且并未着装盾牌时，AC获得+1加值。</p> 
-<p class="para"><b>重装射手。</b>你投掷先攻时，你可以让自己的先攻承受-1d6减值，然后立即获得1d6+你狙击等级的<b class="green">临时生命值</b>。</p>
+<p class="para"><b>单兵防备。</b>你持握霰弹铳时，基础AC等同13+你的敏捷调整值。</p> 
+
+<p class="para"><b>散射战斗。</b>你应用<b class="green">横扫</b>或<b class="green">散射</b>精通词条时可以额外攻击至多两名而非一名符合条件的敌人。你必须为原本的攻击以及两次追加攻击都分别选取不同的目标。</p>
 <br>
-<h2>3级：压制战术 Suppressing Tactics</h2>
+<h2>3级：近距爆发 Close-Range Burst</h2>
 <p class="para">你对如何使用散射火力压制敌人具有丰富的经验。你获得以下增益：</p>
-<p class="para"><b>可靠反应。</b>你使用<b class="green">反应</b>发动的攻击具有<b class="green">优势</b>。若攻击失手，则你在该回合结束时恢复所消耗的反应。</p>
 <p class="para"><b>近距爆发。</b>每回合仅一次，若你用远程武器攻击命中了一名10尺内的生物，你可以让这次攻击额外造成1d10的穿刺伤害。</p>
-<p class="para">此伤害会在你的散射手等级提升至 10 级时获得提升，增长至 2d10。</p>
 <br>
 <h2>6级：散射战技 Spreadshooting Battleskills</h2>
-<p class="para">你从以下战技中选择一个习得：铳弹反击、压制弹幕、贯甲长钉。你可以在每次升级时重新选择以此习得的战技。</p>
+<p class="para">你对散射武器有着独特的心得，习得下述特性：</p>
+<p class="para"><b>火力压制。</b>当你在自己回合用远程武器命中一个生物，它将被压制直到你的下回合开始。如果被压制的目标打算移动5尺或更远，你可以采取<b class="green">反应</b>，使用远程武器对其发动攻击。</p>
+<p class="para">此外，你从以下战技中选择一个习得：铳弹反击、贯甲长钉。你可以在每次升级时重新选择以此习得的战技。</p>
 <div class="syntax">
 <table>
   
@@ -193,32 +194,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>铳弹反击丨Counterstrike Barrage</h6>
-      <div class="cost">
-        <p class="light">附赠动作</p></div>
+      <div class="cost" id="red">
+        <p class="light">攻击动作</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
-      <div class="time">
-        <p class="light">
-          <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          下回合开始</p></div>
-    </td>
-  </tr>
-</table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。你立即获得2d6+你狙击等级的<b class="green">临时生命值</b>。直到你下回合开始前，如果有生物进入你10尺范围内，或者你进入了一个生物10尺范围内，你可以用<b class="green">反应</b>对其发动一次武器攻击。</p>
-<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
-<div class="syntax">
-<table>
-  
-  <tr>
-    <td>
-      <div class="skill">
-      <IMG class="icon" src="../../图片资源/技能图标/狙击/技能_压制弹幕.png">       
-      </div>
-    </td>
-    <td>
-      <h6>压制弹幕丨Suppression Barrage</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗 1 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
@@ -226,8 +205,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1技力来发动此战技。你立即对面前20尺<b class="green">锥状</b>区域内的每个可见生物各发动一次远程武器攻击。若命中则目标的移动速度减少10尺直到其下回合结束。</p>
-<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
+<p>你可以在执行攻击动作时消耗1点技力来发动此战技。你获得1d6+你狙击等级的<b class="green">临时生命值</b>。这次攻击动作中，你的攻击伤害可以加入你的熟练加值。</p>
+<p><b>消耗增强：</b>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <div class="syntax">
 <table>
   
@@ -251,15 +230,39 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
   </tr>
 </table>
 <p>你可以在攻击失手时消耗1点技力来发动此战技。你立即令这次攻击检定获得+10加值。如果导致命中，你可使得这次攻击额外造成你熟练加值枚d6的穿刺伤害。</p>
-<p>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
+<p><b>消耗增强：</b>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <br>
 <h2>10级：稳固射击 Steady Shot</h2>
-<p class="para">你每次消耗技力发动战技时，每消耗1点技力，你可以恢复1d6+你体质调整值的生命值。如果你发动战技时生命值已满，则可以改为获得等量的<b class="green">临时生命值</b>。</p>
-<p class="para">当你进行伤害掷骰时，如果你持有临时生命值，则你可以消耗至多等同你敏捷调整值的临时生命值，在伤害掷骰中获得等额加值。</p>
+<p class="para">你已经掌握了如何最大程度稳固你的射击姿态，你习得下述特性：</p>
+<p class="para"><b>稳固战技。</b>每次消耗技力发动战技时，每消耗1点技力，你可以恢复1d6+你体质调整值的生命值。如果你发动战技时生命值已满，则可以改为获得等量的<b class="green">临时生命值</b>。</p>
+<p class="para"><b>可靠反应。</b>你使用<b class="green">反应</b>发动的攻击具有<b class="green">优势</b>。若攻击失手，则你在该回合结束时恢复所消耗的反应。</p>
 <br>
 <h2>15级：弹幕覆盖 Barrage Coverage</h2>
-<p class="para">你对铳械战斗的应用出神入化，你使用铳械发动攻击时，攻击动作中的每次攻击都可应用<b class="green">散射</b>精通词条。</p>
-<p class="para">此外，你应用<b class="green">散射</b>精通词条时，可以先进行移动，再对新位置触及范围内的目标应用横扫攻击。</p>
+<p class="para">你对铳械战斗的应用出神入化。你习得下述特性：</p>
+<p class="para"><b>霰射火力。</b>你使用远程武器攻击10尺内的目标时，如果你可以使用其精通词条，你可以将其改为<b class="green">推离</b>或<b class="green">缓速</b>。但你不能在一回合中同时受益于这两种精通。</p> 
+<p class="para">此外，你习得战技：压制弹幕。</p> 
+<div class="syntax">
+<table>
+  
+  <tr>
+    <td>
+      <div class="skill">
+      <IMG class="icon" src="../../图片资源/技能图标/狙击/技能_压制弹幕.png">       
+      </div>
+    </td>
+    <td>
+      <h6>压制弹幕丨Suppression Barrage</h6>
+      <div class="cost"><p class="light">附赠动作</p></div>
+      <div class="trigger"><p class="light">消耗 2 技力</p></div>
+      <div class="time">
+        <p class="light">
+          <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
+          立即</p></div>
+    </td>
+  </tr>
+</table>
+<p>你可以附赠动作并消耗2技力来发动此战技。你获得2d6+你狙击等级的<b class="green">临时生命值</b>。你立即对面前20尺<b class="green">锥状</b>区域内的每个可见生物各发动一次远程武器攻击，这些攻击伤害可以加入熟练加值。</p>
+<p><b>消耗增强：</b>此战技每消耗1点技力，本回合你通过近距爆发特性造成的伤害就增加1d10。</p></div>
 <br>
 <h2>18级：终局弹雨 Final Volley</h2>
 <p class="para">你消耗了技力发动战技的回合，若你进行伤害掷骰，则伤害掷骰中每次掷出1时，你就可以额外掷一枚同等大小的骰子，将其加入造成伤害中。以此造成的额外伤害忽略目标的任何伤害<b class="green">抗性</b>。</p>

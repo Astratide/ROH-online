@@ -134,7 +134,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 	PRTS资料库 > <A href="../../第一章：职业分支.html">第一章：职业分支</A> &gt; <A href="../近卫.html">近卫</A> &gt;  <b>收割者</b>
 </div>
 <div id="winchm_template_minititle">罗德岛外勤指南：[收割者]</div>
-<div id="winchm_template_content">
+<div id="winchm_template_content"> 
 <div id="content">
 <h1>收割者 Reaper<IMG class="text-img" alt="收割者标志" src="../../图片资源/职业图标/子职/职业分支图标_收割者.png" ></h1>
 <hr class="sub">
@@ -172,7 +172,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：镰刃风暴 Scythe Storm</h2>
 <p class="para">作为一名收割者，你获得以下特性：</p>
-<p class="para"><b>巨镰精通。</b>你选择一把精通词条为<b class="green">横扫</b>或<b class="green">散射</b>的武器，并获得其精通。</p>
+
 <p class="para"><b>横扫镰刃。</b>若你未穿戴重甲，则你应用<b class="green">横扫</b>或<b class="green">散射</b>精通词条时可以额外攻击至多两名而非一名符合条件的敌人。你必须为原本的攻击以及两次追加攻击都分别选取不同的目标。</p>
 <p class="para">此外，你习得战技：快速切割。</p>
 <div class="syntax">
@@ -195,7 +195,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。这次攻击动作中你可以额外发动一次攻击，且这次攻击可以应用<b class="green">横扫</b>或<b class="green">散射</b>精通词条而不受到其每回合一次的限制。</p>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗1点技力来发动此战技。这次攻击动作中：你可以额外发动一次攻击。</p>
 </div>
 <br>
 <h2>3级：收割循环 Reaping Loop</h2>
@@ -205,6 +205,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2> 7级：横扫如风 Wind Sweeping</h2>
 <p class="para">你懂得如何将手中武器的攻击效率最大化，你习得下述特性：</p>
+<p class="para"><b>横扫精通。</b>你使用具有<b class="green">横扫</b>或<b class="green">散射</b>精通词条的武器发动攻击时，如果你可以使用其精通词条，你可以将其改为<b class="green">擦掠</b>或<b class="green">拉近</b>。</p>
 <p class="para"><b>旋斩横扫。</b>当你执行<b class="green">攻击</b>动作时，你可以替换其中一次攻击为旋斩横扫。你触及范围内的每个所选生物必须通过敏捷豁免（DC=8+你熟练加值+你攻击属性调整值），否则受到你武器原本伤害+1d10点挥砍伤害并<b class="green">倒地</b>，成功则仅受半伤。你必须持用一把具有横扫精通或者散射精通的武器才能这么做。</p>
 <p class="para">此回合中，如果你曾消耗技力发动战技，则每消耗1点技力，旋斩横扫的额外挥砍伤害就增加1d10。</p>
 <br>
@@ -222,17 +223,17 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6> 生死回响 | Vital Reverberations</h6>
-      <div class="cost"><p class="light">附赠动作</p></div>
-      <div class="trigger"><p class="light">消耗 1 技力</p></div>
+      <h6>生死回响 | Vital Reverberations</h6>
+      <div class="cost" id="red"><p class="light">攻击动作</p></div>
+      <div class="trigger"><p class="light">消耗 2 技力</p></div>
       <div class="time">
         <p class="light">
           <IMG class="clock" src="../../图片资源/技能图标/图标时间.png">
-          本回合结束</p></div>
+          立即</p></div>
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动此战技。直到本回合结束前：你的触及范围增加5尺；你执行攻击动作时，可以额外发动一次武器攻击；你通过收割循环特性恢复的生命值翻倍。</p></div>
+<p>你可以在执行<b class="green">攻击</b>动作时消耗2点技力来发动此战技。这次攻击动作中：你可以额外发动一次武器攻击；你通过收割循环特性恢复的生命值翻倍。</p></div>
 <br>
 <h2>15级：横扫切裂 Cleave Expertise</h2>
 <p class="para">你对横扫战斗的应用出神入化。你习得下述特性：</p>

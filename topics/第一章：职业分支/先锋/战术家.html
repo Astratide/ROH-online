@@ -174,7 +174,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <h2>3级：战术专家 Tactical Expert</h2>
 <p class="para">作为一名<b>战术家</b>，你获得以下特性：</p>
-<p class="para"><b>火力压制。</b>你选择一项<b>军用远程武器</b>并获得其熟练以及精通（可以在每次升级时重选）。你也可以放弃这个效果，改为习得一项法师法术列表中的戏法。以此习得的戏法施法属性是智力、感知或魅力（自选）。</p>
+<p class="para"><b>火力压制。</b>你选择一项<b>军用远程武器</b>或者<b>军用铳械</b>并获得其熟练以及精通，可以在每次升级时重选。你也可以放弃这个效果，改为习得一项法师法术列表中的戏法。以此习得的戏法施法属性是智力、感知或魅力，由你在获得此特性时选择。</p>
 <p class="para"><b>战术指挥。</b>当你的一名可见也能听见你声音的<b class="green">盟友</b>在攻击检定中失手时，则你可以采取<b class="green">反应</b>，消耗并投出1枚拥有的费用骰，让目标的此次攻击检定获得等同你费用骰掷骰结果的加值。</p>
 <br>
 <h2>3级：战术援军 Tactical Reinforcements</h2>
@@ -190,8 +190,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
     <td>
       <h6>召唤援军 | Summon: Reinforcement</h6>
-      <div class="cost">
-        <p class="light">附赠动作</p></div>
+      <div class="cost" id="red">
+        <p class="light">攻击动作</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -201,8 +201,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动这个战技。你立即获得1枚费用骰；你立即在30尺距离内的可见空地上召唤一个战术援军（数据见本章最后）。你在召唤时选择你的战术援军属于近战系或远程系，还有其移动方式及种族。如果战术援军已存在，你改为命令其以反应发动一次攻击。</p>
-<p><b>战术援军：</b>战术援军在战斗中和你共享先攻并紧接你之后行动。它是你和你盟友的盟友。战术援军最多只能存在一个。通常情况下，战术援军只能执行<b class="green">回避</b>动作或者被你使用<b class="green">附赠动作</b>指挥来执行特定动作，但你可以在战术援军回合期间对其维持<b class="green">专注</b>来进行精细操作，使得该战术援军可以无需指挥自由行动。</p>
+<p>你可以在执行攻击动作时消耗1点技力来发动这个战技。你立即获得1枚费用骰；你立即在30尺距离内的可见空地上召唤一个战术援军（数据见本章最后）。你在召唤时选择你的战术援军属于近战系或远程系，还有其移动方式及种族。如果战术援军已存在，你改为命令其以反应发动一次攻击。</p>
+<p><b>战术援军：</b>战术援军在战斗中和你共享先攻并紧接你之后行动。它是你和你盟友的盟友。战术援军最多只能存在一个。通常情况下，战术援军只能执行<b class="green">回避</b>动作或者被你使用<b class="green">附赠动作</b>指挥来执行特定动作，但你可以在战术援军回合期间对其维持<b class="green">专注</b>来进行精细操作，使得该战术援军在专注期间可以无需指挥自由执行任何动作。</p>
 </div>
 <br>
 <h2>6级：攻击指令 Command: Attack</h2>
