@@ -18,7 +18,8 @@ p
 {
     font-size: 16px;
     line-height:1.5;
-    margin:0px 0px;
+    text-indent: 0px;
+    margin: 5px 5px;
 }
 p.block
 {
@@ -33,11 +34,6 @@ p.indent#grey
     color: #666666;
     margin: 15px 0px 0px 15px;
     font-style: italic;
-}
-p.para
-{
-    text-indent: 10px;
-    margin: 5px 5px;
 }
 table
 {
@@ -71,7 +67,9 @@ h3
 }
 h4
 {
-    font-size: 105%
+    font-size: 100%;
+    text-indent: 0px;
+    margin: 5px 5px;
 }
 h5
 {
@@ -80,7 +78,7 @@ h5
 }
 h6
 {
-    font-size: 130%;
+    font-size: 120%;
     color: black;
 }
 hr

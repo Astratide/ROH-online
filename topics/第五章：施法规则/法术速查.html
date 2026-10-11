@@ -291,7 +291,7 @@ visibility:hidden;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(194);
+  parent.nav.tree.selectNode(197);
  }else{
   setTimeout("syn()",500);
 }
@@ -356,7 +356,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <input name="school" id="sc6" type="checkbox" checked="" value="幻术"><label for="sc6">幻术</label>
 <input name="school" id="sc7" type="checkbox" checked="" value="死灵"><label for="sc7">死灵</label>
 <input name="school" id="sc8" type="checkbox" checked="" value="变化"><label for="sc8">变化</label>
-<br>惊惧斩，构装召唤术，生物定位术，幻景，李欧蒙秘藏箱
 <br>
 <b>基础法术表：</b> <button onclick="select_all('job')">全选</button>
 <input name="job" id="j1" type="checkbox" checked="" value="术师"><label for="j1">术师</label>
@@ -373,7 +372,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <input name="area" id="ae7" type="checkbox" checked="" value="雷电"><label for="ae7">雷电</label>
 <input name="area" id="ae8" type="checkbox" checked="" value="黯蚀"><label for="ae8">黯蚀</label>
 <input name="area" id="ae9" type="checkbox" checked="" value="空间"><label for="ae9">空间</label>
-<input name="area" id="ae10" type="checkbox" checked="" value="心灵"><label for="ae10">心灵</label> 
+<input name="area" id="ae10" type="checkbox" checked="" value="心魂"><label for="ae10">心魂</label> 
 <input name="area" id="ae11" type="checkbox" checked="" value="幻象"><label for="ae11">幻象</label>
 <input name="area" id="ae12" type="checkbox" checked="" value="预知"><label for="ae12">预知</label> 
 <input name="area" id="ae13" type="checkbox" checked="" value="自然"><label for="ae13">自然</label>
@@ -389,7 +388,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <input name="advanced" id="ad5" type="checkbox" checked="" value="光影心灵"><label for="ad5">光影心灵</label> 
 <input name="advanced" id="ad6" type="checkbox" checked="" value="疗愈重塑"><label for="ad6">疗愈重塑</label>
 <input name="advanced" id="ad7" type="checkbox" checked="" value="时空矢量"><label for="ad7">时空矢量</label>
-<br>
 <br>
 <b>职业：</b><button onclick="select_all('class')">全选</button>
 <input name="class" id="cl1" type="checkbox" checked="" value="奇械师"><label for="cl1">奇械师</label> 
@@ -622,8 +620,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>×</TD>
     <td>UAH</TD></TR>
-  <tr spell="防护炽寒Protect from Heat and Cold" tags="防护 戏法(零环) 德鲁伊 术士 法师 言语 姿势 专注 ROH 烈火 寒冰">
-    <td><A href="../第五章：施法规则/戏法(0环).html#防护炽寒" >防护炽寒Protect from Heat and Cold</A></TD>
+  <tr spell="防护元素Protect from Element" tags="防护 戏法(零环) 德鲁伊 术士 法师 言语 姿势 专注 ROH 辅助 医疗 烈火 寒冰 岩土 流水 雷电 酸毒">
+    <td><A href="../第五章：施法规则/戏法(0环).html#防护元素" >防护元素Protect from Element</A></TD>
     <td>戏法</TD>
     <td>防护</TD>
     <td>德 术 法</TD>
@@ -856,7 +854,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></TR><!--一环-->   
-  <tr spell="吸收动能Absorb Kinetics" tags="防护 一环 游侠 奇械师 姿势 ROH 炼金 特种">
+  <tr spell="吸收动能Absorb Kinetics" tags="防护 一环 游侠 奇械师 姿势 ROH 岩土 特种">
     <td><A href="../第五章：施法规则/1环.html#吸收动能" >吸收动能Absorb Kinetics</A></TD>
     <td>一环</TD>
     <td>防护</TD>
@@ -924,8 +922,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>×</TD>
     <td>KGE</TD></TR>
-  <tr spell="护甲封锁Armor Lock" tags="咒法 一环 奇械师 言语 姿势 材料 专注 UAH 炼金">
-    <td><A href="../第五章：施法规则/1环.html#护甲封锁" >护甲封锁Armor Lock</A></TD>
+  <tr spell="封锁术Lock Creature" tags="咒法 一环 奇械师 言语 姿势 材料 专注 ROH 炼金 术师 辅助 岩土">
+    <td><A href="../第五章：施法规则/1环.html#封锁术" >封锁术Lock Creature</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇</TD>
@@ -934,7 +932,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>M</TD>
     <td>×</TD>
     <td>√</TD>
-    <td>UAH</TD></TR>
+    <td>ROH</TD></TR>
   <tr spell="腐化之血Bad Blood" tags="死灵 一环 德鲁伊 魔契师 法师 言语 姿势 材料 专注 KGE 酸毒">
     <td><A href="../第五章：施法规则/1环.html#腐化之血" >腐化之血Bad Blood</A></TD>
     <td>一环</TD>
@@ -1348,32 +1346,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>×</TD>
     <td>ES</TD></TR>
-  <tr spell="保护盾Shield for Protection" tags="防护 一环 奇械师 牧师 德鲁伊 言语 姿势 ROH 医疗 岩土">
-    <td><A href="../第五章：施法规则/1环.html#保护盾" >保护盾Shield for Protection</A></TD>
-    <td>一环</TD>
-    <td>防护</TD>
-    <td>奇 牧 德</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>ROH</TD></TR>
   <tr spell="天火击Skyfire Burst" tags="塑能 一环 德鲁伊 术士 法师 奇械师 言语 姿势 ROH 烈火">
     <td><A href="../第五章：施法规则/1环.html#天火击" >天火击Skyfire Burst</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
-    <td>奇 德 术 法</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>ROH</TD></TR>
-  <tr spell="压制术Suppression" tags="咒法 一环 德鲁伊 术士 法师 奇械师 言语 姿势 ROH 术师 辅助 岩土 雷电">
-    <td><A href="../第五章：施法规则/1环.html#压制术" >压制术Suppression</A></TD>
-    <td>一环</TD>
-    <td>咒法</TD>
     <td>奇 德 术 法</TD>
     <td>V</TD>
     <td>S</TD>
@@ -2001,18 +1977,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>√</TD>
     <td>KGE</TD></TR>
-  <tr spell="痉挛术Wrack" tags="死灵 二环 牧师 言语 姿势 材料 专注 GHLE 黯蚀 深海">
-    <td><A href="../第五章：施法规则/2环.html#痉挛术" >痉挛术Wrack</A></TD>
-    <td>二环</TD>
-    <td>死灵</TD>
-    <td>牧</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>M</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>GHLE</TD></TR>
-  <tr spell="水脉冲击WaterPulse"     tags="塑能 术士 法师 二环 AK5e 言语 姿势"><td><A href="../第五章：施法规则/2环.html#水脉冲击" ><spell 
+  <tr spell="水脉冲击WaterPulse" tags="塑能 术士 法师 二环 AK5e 言语 姿势"><td><A href="../第五章：施法规则/2环.html#水脉冲击" ><spell 
       >水脉冲击Water Pulse</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
@@ -2101,28 +2066,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td>×</TD>
     <td>√</TD>
     <td>KGE</TD></TR>
-  <tr spell="造成脆弱Cause Fragile" tags="变化 三环 德鲁伊 牧师 游侠 法师 言语 姿势 专注 ROH 辅助 医疗">
-    <td><A href="../第五章：施法规则/3环.html#造成脆弱" >造成脆弱Cause Fragile</A></TD>
-    <td>三环</TD>
-    <td>变化</TD>
-    <td>牧 德 软 法</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>ROH</TD></TR>
-  <tr spell="造成庇护Cause Sanctuary" tags="防护 三环 德鲁伊 牧师 游侠 言语 姿势 专注 ROH 辅助 医疗">
-    <td><A href="../第五章：施法规则/3环.html#造成庇护" >造成庇护Cause Sanctuary</A></TD>
-    <td>三环</TD>
-    <td>防护</TD>
-    <td>牧 德 软</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>ROH</TD></TR>
   <tr spell="治疗重伤Cure Serious Wounds" tags="防护 三环 德鲁伊 牧师 言语 姿势 材料 ROH 医疗">
     <td><A href="../第五章：施法规则/3环.html#治疗重伤" >治疗重伤Cure Serious Wounds</A></TD>
     <td>三环</TD>
@@ -2391,7 +2334,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>DM</TD></TR>
-  <tr spell="流沙术Quick Sand" tags="变化 三环 德鲁伊 术士 法师 言语 姿势 材料 专注 KGE 岩土">
+  <tr spell="流沙术Quick Sand" tags="变化 三环 德鲁伊 术士 法师 言语 姿势 材料 专注 KGE 岩土 气尘">
     <td><A href="../第五章：施法规则/3环.html#流沙术" >流沙术Quick Sand</A></TD>
     <td>三环</TD>
     <td>变化</TD>
@@ -2490,17 +2433,6 @@ Foresight</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></TR>
-  <tr spell="窒息术Suffocate" tags="咒法 三环 吟游诗人 术士 魔契师 法师 言语 姿势 材料 专注 GHE 气尘 黯蚀 空间 深海">
-    <td><A href="../第五章：施法规则/3环.html#窒息术" >窒息术Suffocate</A></TD>
-    <td>三环</TD>
-    <td>咒法</TD>
-    <td>诗 术 法 锁</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>M</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>GHE</TD></TR>
   <tr spell="地震波Seismic Wave" tags="变化 三环 德鲁伊 术士 法师 奇械师 言语 姿势 KGE 岩土">
     <td><A href="../第五章：施法规则/3环.html#地震波" >地震波Seismic Wave</A></TD>
     <td>三环</TD>
@@ -2756,17 +2688,6 @@ Hand</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>KGE</TD></TR>
-  <tr spell="群体庇护术Mass Sanctuary" tags="塑能 四环 德鲁伊 牧师 言语 姿势 专注 ROH 光芒 流水">
-    <td><A href="../第五章：施法规则/4环.html#群体庇护术" >群体庇护术Mass Sanctuary</A></TD>
-    <td>四环</TD>
-    <td>塑能</TD>
-    <td>牧 德</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>ROH</TD></TR>
   <tr spell="秽浊空间Foul Space" tags="塑能 四环 术士 法师 言语 姿势 ROH 黯蚀">
     <td><A href="../第五章：施法规则/4环.html#秽浊空间" >秽浊空间Foul Space</A></TD>
     <td>四环</TD>
@@ -4639,8 +4560,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></TR><!--BET-->   
   <tr spell="残酷收割GrimHarvest" tags="死灵 六环 牧师 德鲁伊 魔契师 法师 BET 言语 姿势 材料 黯蚀 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#残酷收割" ><spell>残酷收割Grim 
-      Harvest</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#残酷收割" ><spell>残酷收割Grim Harvest</spell></A></TD>
     <td>六环</TD>
     <td>死灵</TD>
     <td>牧 德 锁 法</TD>
@@ -4651,8 +4571,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>BET</TD></TR>
   <tr spell="友尽之灾DoomofFalseFriends" tags="惑控 八环 吟游诗人 术士 法师 BET 言语 姿势 材料 光影心灵">
-    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#友尽之灾" ><spell>友尽之灾Doom 
-      of False Friends</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#友尽之灾" ><spell>友尽之灾Doom of False Friends</spell></A></TD>
     <td>八环</TD>
     <td>惑控</TD>
     <td>诗 术 法</TD>
@@ -5658,7 +5577,7 @@ Power</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="命令术Command" tags="惑控 吟游诗人 牧师 圣武士 一环 PHB24 言语 辅助 心魂">
+  <tr spell="命令术Command" tags="惑控 吟游诗人 牧师 圣武士 一环 PHB24 言语 辅助 医疗 心魂">
     <td><a>命令术Command</A></TD>
     <td>一环</TD>
     <td>惑控</TD>
@@ -5669,8 +5588,8 @@ Power</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="通神术Commune"     tags="预言 牧师 五环 PHB24 言语 姿势 材料 仪式"><td><a 
-      >通神术Commune</A></TD>
+  <tr spell="通神术Commune" tags="预言 牧师 五环 PHB24 言语 姿势 材料 仪式">
+    <td><a>通神术Commune</A></TD>
     <td>五环</TD>
     <td>预言</TD>
     <td>牧</TD>
@@ -6158,7 +6077,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="防死结界Death Ward" tags="防护 牧师 圣武士 四环 PHB24 言语 姿势 黯蚀 预知">
+  <tr spell="防死结界Death Ward" tags="防护 牧师 圣武士 四环 PHB24 言语 姿势 黯蚀 预知 光芒">
     <td><a>防死结界Death Ward</A></TD>
     <td>四环</TD>
     <td>防护</TD>
@@ -6225,9 +6144,8 @@ Weather</A></TD>
     <td>√</TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
-  <tr spell="侦测毒性和疾病Detect Poison and Disease" tags="预言 牧师 德鲁伊 圣武士 游侠 一环 PHB24 言语 姿势 材料 仪式 专注 自然 酸毒">
-    <td><a>侦测毒性和疾病Detect Poison and 
-      Disease</A></TD>
+  <tr spell="侦测毒性和疾病Detect Poison and Disease" tags="预言 牧师 德鲁伊 圣武士 游侠 一环 PHB24 言语 姿势 材料 仪式 专注 自然 酸毒 医疗">
+    <td><a>侦测毒性和疾病Detect Poison and Disease</A></TD>
     <td>一环</TD>
     <td>预言</TD>
     <td>牧 德 帕 软</TD>
@@ -6260,7 +6178,7 @@ Thoughts</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="易容术Disguise Self" tags="幻术 吟游诗人 术士 法师 一环 PHB24 言语 姿势 深海 炼金">
+  <tr spell="易容术Disguise Self" tags="幻术 吟游诗人 术士 法师 一环 PHB24 言语 姿势 深海 炼金 流水 幻象">
     <td><a>易容术Disguise Self</A></TD>
     <td>一环</TD>
     <td>幻术</TD>
@@ -7070,7 +6988,7 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
-  <tr spell="行动自如Freedom of Movement" tags="防护 吟游诗人 牧师 德鲁伊 游侠 四环 PHB24 言语 姿势 材料 气尘 自然 深海 幻象">
+  <tr spell="行动自如Freedom of Movement" tags="防护 吟游诗人 牧师 德鲁伊 游侠 四环 PHB24 言语 姿势 材料 气尘 自然 深海 幻象 光芒">
     <td><a>行动自如Freedom of 
       Movement</A></TD>
     <td>四环</TD>
@@ -7522,7 +7440,7 @@ Death</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="英雄气概Heroism" tags="惑控 吟游诗人 圣武士 一环 PHB24 言语 姿势 专注 辅助 心魂">
+  <tr spell="英雄气概Heroism" tags="惑控 吟游诗人 圣武士 一环 PHB24 言语 姿势 专注 辅助 医疗 心魂">
     <td><a>英雄气概Heroism</A></TD>
     <td>一环</TD>
     <td>惑控</TD>
@@ -8191,7 +8109,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="高级幻影Major Image" tags="幻术 吟游诗人 术士 法师 魔契师 三环 PHB24 言语 姿势 材料 专注">
+  <tr spell="高级幻影Major Image" tags="幻术 吟游诗人 术士 法师 魔契师 三环 PHB24 言语 姿势 材料 专注 幻象 流水">
     <td><a>高级幻影Major Image</A></TD>
     <td>三环</TD>
     <td>幻术</TD>
@@ -8427,7 +8345,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="镜影术Mirror Image" tags="幻术 吟游诗人 术士 法师 魔契师 二环 PHB24 言语 姿势 幻象">
+  <tr spell="镜影术Mirror Image" tags="幻术 吟游诗人 术士 法师 魔契师 二环 PHB24 言语 姿势 幻象 流水">
     <td><a>镜影术Mirror Image</A></TD>
     <td>二环</TD>
     <td>幻术</TD>
@@ -8648,8 +8566,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
   <tr spell="行动无踪Pass without trace" tags="防护 德鲁伊 游侠 二环 PHB24 言语 姿势 材料 专注 辅助 气尘 幻象 自然 特种">
-    <td><a>行动无踪Pass without 
-    trace</A></TD>
+    <td><a>行动无踪Pass without trace</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>德 软</TD>
@@ -8671,8 +8588,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
   <tr spell="魅影之力Phantasmal Force" tags="幻术 吟游诗人 术士 法师 二环 PHB24 言语 姿势 材料 专注 心魂 幻象">
-    <td><a>魅影之力Phantasmal 
-    Force</A></TD>
+    <td><a>魅影之力Phantasmal Force</A></TD>
     <td>二环</TD>
     <td>幻术</TD>
     <td>诗 术 法</TD>
@@ -8682,9 +8598,8 @@ Fortress</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
-  <tr spell="魅影杀手Phantasmal Killer" tags="幻术 吟游诗人 法师 四环 PHB24 言语 姿势 专注 心魂 深海">
-    <td><a>魅影杀手Phantasmal 
-    Killer</A></TD>
+  <tr spell="魅影杀手Phantasmal Killer" tags="幻术 吟游诗人 法师 四环 PHB24 言语 姿势 专注 心魂 深海 幻象">
+    <td><a>魅影杀手Phantasmal Killer</A></TD>
     <td>四环</TD>
     <td>幻术</TD>
     <td>诗 法</TD>
@@ -8694,7 +8609,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
-  <tr spell="魅影驹Phantom Steed" tags="幻术 法师 三环 PHB24 言语 姿势 仪式">
+  <tr spell="魅影驹Phantom Steed" tags="幻术 法师 三环 PHB24 言语 姿势 仪式 幻象">
     <td><a>魅影驹Phantom Steed</A></TD>
     <td>三环</TD>
     <td>幻术</TD>
@@ -9621,7 +9536,7 @@ Burst</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></TR>
-  <tr spell="灵体卫士Spirit Guardians" tags="咒法 牧师 三环 PHB24 言语 姿势 材料 专注 预知 幻象 心魂">
+  <tr spell="灵体卫士Spirit Guardians" tags="咒法 牧师 三环 PHB24 言语 姿势 材料 专注 预知 幻象 心魂 辅助 医疗 光芒">
     <td><a>灵体卫士Spirit 
     Guardians</A></TD>
     <td>三环</TD>
@@ -10245,7 +10160,7 @@ Smite</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></TR>
-  <tr spell="巧言术Tongues" tags="预言 吟游诗人 牧师 术士 法师 魔契师 三环 PHB24 言语 材料 心魂">
+  <tr spell="巧言术Tongues" tags="预言 吟游诗人 牧师 术士 法师 魔契师 三环 PHB24 言语 材料 心魂 辅助 医疗">
     <td><a>巧言术Tongues</A></TD>
     <td>三环</TD>
     <td>预言</TD>

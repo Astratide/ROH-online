@@ -7,7 +7,7 @@
 <!-- saved from url=(0014)about:internet -->
 <!DOCTYPE HTML>
 <html><head><title>战术家</title>
-<meta content="text/html; charset=UTF-8 http-equiv="content-type">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible"content="IE=11">
 <link rel="stylesheet" href="../../style.css">
 <link rel="stylesheet" href="../../stat-block.css">
@@ -142,8 +142,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="side-box">
   <b>先锋-战术家：</b>你擅长在战场上布设战术点，召唤不同类型的援军来为盟友争取部署空间。
 </div>
-<p class="para"><b>战术家</b>（Tactician）是先锋职业的一个职业分支。战术家干员普遍使用远程武器甚至法术攻击等多样的远程攻击手段，在安全距离进行战斗，他们可以在战场上部署战术点，这些战术点可以用来召唤不同类型的援军支援战场，或触发特殊效果。</p>
-<p class="para">战术家干员们具备出色的战略眼光，能够预见战场上的变化，并提前部署战术点和召唤援军。他们在战斗中保持清醒的头脑，做出正确的战术决策。</p>
+<p><b>战术家</b>（Tactician）是先锋职业的一个职业分支。战术家干员普遍使用远程武器甚至法术攻击等多样的远程攻击手段，在安全距离进行战斗，他们可以在战场上部署战术点，这些战术点可以用来召唤不同类型的援军支援战场，或触发特殊效果。</p>
+<p>战术家干员们具备出色的战略眼光，能够预见战场上的变化，并提前部署战术点和召唤援军。他们在战斗中保持清醒的头脑，做出正确的战术决策。</p>
 <br>
 <h4>战术家特性表</h4>
 <table class="custom-table" id="left" style="max-width: 400px;">
@@ -156,10 +156,10 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     <td><b>特性</b></td></tr>
   <tr>
     <td style="text-align: center;">3rd</td>
-    <td><b>战术专家、战术援军</b></td></tr>
+    <td><b>指挥策略、战术援军</b></td></tr>
   <tr>
     <td style="text-align: center;">6th</td>
-    <td><b>攻击指令</b></td></tr>
+    <td><b>战斗指令</b></td></tr>
   <tr>
     <td style="text-align: center;">10th</td>
     <td><b>支援增兵</b></td></tr>
@@ -172,14 +172,24 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <br>
 <hr>
 <br>
-<h2>3级：战术专家 Tactical Expert</h2>
-<p class="para">作为一名<b>战术家</b>，你获得以下特性：</p>
-<p class="para"><b>火力压制。</b>你选择一项<b>军用远程武器</b>或者<b>军用铳械</b>并获得其熟练以及精通，可以在每次升级时重选。你也可以放弃这个效果，改为习得一项法师法术列表中的戏法。以此习得的戏法施法属性是智力、感知或魅力，由你在获得此特性时选择。</p>
-<p class="para"><b>战术指挥。</b>当你的一名可见也能听见你声音的<b class="green">盟友</b>在攻击检定中失手时，则你可以采取<b class="green">反应</b>，消耗并投出1枚拥有的费用骰，让目标的此次攻击检定获得等同你费用骰掷骰结果的加值。</p>
+<h4>3级：指挥策略 Command Strategy</h4>
+<p>作为一名<b>战术家</b>，你习得一项新的部署策略：<b>指挥 Command</b>。该策略与你从先锋职业获得的部署策略使用同一规则。</p>
+<p><b>部署策略：指挥。</b>直到战斗结束前仅一次，当你的一名可见盟友在攻击检定中失手时，则你可以采取反应，让目标的此次攻击检定获得等同掷骰结果的加值。可能使得攻击命中，如果命中则伤害掷骰中可以加入你的智力调整值。</p>
 <br>
-<h2>3级：战术援军 Tactical Reinforcements</h2>
-<p class="para">你获得在战斗中召唤战术援军协助小队进行战斗的能力。</p>
-<p class="para">  此外，你习得战技：召唤援军。</p>
+<h4>3级：战术援军 Tactical Reinforcements</h4>
+<p>你能够召唤战术援军协助小队进行战斗：</p>
+<p><b>火力压制。</b>你选择一项<b>军用远程武器</b>或者<b>军用铳械</b>并获得其熟练以及精通，可以在每次升级时重选。</p>
+<p><b>寻获魔宠。</b>你能使用<b class="green">魔法</b>动作无需法术位地施展<b class="spell">寻获魔宠Find Familiar</b>，其施法属性为智力。每当你施展该法术，并为你的魔宠选择形态时，除了通常的形态选项，你还可以改为选择任何CR不超过1/2的怪物作为魔宠，前提是其不可能会说通用语。如果要选择非核心书中的怪物作为魔宠，请先获得DM的同意。</p>
+<p>无论你选择了什么怪物作为魔宠的数据，魔宠的体型会变为小型或微型，且生物类型仍由你指定：可以是野兽、怪兽、构装、元素或妖精中的一种。当你选择了魔宠的数据后，直到你升级前不能进行更改。</p>
+<p><b>战斗魔宠。</b>你召唤的魔宠是战斗魔宠。战斗魔宠在战斗中与你共享先攻并紧接之后行动。你可以将攻击动作的其中一次攻击，替换为指挥你的战斗魔宠采取反应，并发动一次魔宠的攻击。如果你有精通伤害，那么战斗魔宠造成伤害时可以改为造成你的精通伤害而非其原本的伤害。</p>
+
+<br>
+<h4>6级：战斗指令 Battle Command</h4>
+<p>你的伙伴的战斗能力进一步增强。你习得下述特性：</p>
+<p><b>战斗意识。</b>你的魔宠进行D20检定时，可以加入你的智力调整值。魔宠如果迫使生物进行豁免，其豁免DC为8+你的智力调整值+你的熟练加值。</p>
+<p><strong>魔宠之威。</strong>你的魔宠进行伤害掷骰时，可以加入你的智力调整值。</p>
+<p><b>魔宠坚韧。</b>你的魔宠被召唤或复活时，其获得等同你先锋等级的<b class="green">临时生命值</b>。</p>
+<p>此外，你习得下述两个战技：攻击指令，以及召唤援军。</p>
 <div class="syntax">
 <table class="stat">
   <tr>
@@ -189,9 +199,9 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
       </div>
     </td>
     <td>
-      <h6>召唤援军 | Summon: Reinforcement</h6>
-      <div class="cost" id="red">
-        <p class="light">攻击动作</p></div>
+      <h6>召唤援军 | Command: Reinforcement</h6>
+      <div class="cost">
+        <p class="light">附赠动作</p></div>
       <div class="trigger">
         <p class="light">消耗 1 技力</p></div>
       <div class="time">
@@ -201,16 +211,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以在执行攻击动作时消耗1点技力来发动这个战技。你立即获得1枚费用骰；你立即在30尺距离内的可见空地上召唤一个战术援军（数据见本章最后）。你在召唤时选择你的战术援军属于近战系或远程系，还有其移动方式及种族。如果战术援军已存在，你改为命令其以反应发动一次攻击。</p>
-<p><b>战术援军：</b>战术援军在战斗中和你共享先攻和回合。它是你和你盟友的盟友。战术援军最多只能存在一个。通常情况下，战术援军只能执行<b class="green">回避</b>动作或者被你使用<b class="green">附赠动作</b>指挥来执行特定动作，但你可以在战术援军回合期间对其维持<b class="green">专注</b>来进行精细操作，使得该战术援军在专注期间可以无需指挥自由执行任何动作。</p>
+<p>你可以使用附赠动作并消耗1点技力来发动这个战技。</p>
+<p><strong>部署策略：</strong>你可以立即掷出1枚费用骰，然后应用一项部署策略来使用这些掷出的费用骰。</p>
+<p>如果你的魔宠死亡或被回收，你可以将其在60尺内的可见空地上再次召唤。若已存在则为该魔宠恢复1d6+你先锋等级的生命值。</p>
+<p><b>魔宠受令：</b>你对你的一个魔宠发出指令，其本轮将可以执行攻击动作。</p>
 </div>
-<br>
-<h2>6级：攻击指令 Command: Attack</h2>
-<p class="para">你的战术援军在被召唤出来时获得10点<b class="green">临时生命值</b>。</p>
-<p class="para">此外，你习得战技：攻击指令。</p>
 <div class="syntax">
 <table class="stat">
-  
   <tr>
     <td>
       <div class="skill">
@@ -228,95 +235,29 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
     </td>
   </tr>
 </table>
-<p>你可以附赠动作并消耗1点技力来发动这个战技。你立即获得1枚费用骰；直到本回合结束前：你执行<b class="green">攻击</b>动作时，可以额外发动一次攻击。</p>
-<p>发动此战技的回合，若你应用部署策略，且受益目标为你的战术援军，则该战术援军也可以立即发动一次攻击。</p>
+<p>你可以使用附赠动作并消耗1点技力来发动这个战技。</p>
+<p><strong>部署策略：</strong>你可以立即掷出1枚费用骰，然后应用一项部署策略来使用这些掷出的费用骰。</p>
+<p>直到本回合结束前：你执行<b class="green">攻击</b>动作时，你可以额外发动一次攻击。</p>
+<p><b>魔宠受令：</b>你对你的一个魔宠发出指令，其本轮将可以执行攻击动作。</p>
 </div>
 <br>
-<h2>10级：强化援军 Advanced Reinforcements</h2>
-<p class="para">你选择以下一个强化选项获得：</p>
-<p class="para"><b>近战系。</b>你的近战系战术援军AC额外+2，并且在攻击命中时额外造成1d6钝击伤害。</p>
-<p class="para"><b>远程系。</b>你的远程系战术援军射程延长至60/120，并且在攻击命中时额外造成1d10力场伤害。</p>
-<p class="para">此外，你每次消耗技力发动战术家战技时，可以选择一个战术援军，为其赋予等同你先锋等级的<b class="green">临时生命值</b>。</p>
+<h4>10级：快速增兵 Rapid Surge</h4>
+<p>你的战斗指挥能力进一步提升，你习得下述特性：</p>
+<p><b>快速增兵。</b>当你位于你魔宠60尺内时，你能使用<b class="green">魔法</b>动作并消耗1点技力，无需法术位地施展<b class="spell">魔宠群Flock of Familiars</b>，其施法属性为智力。你以此召唤的额外魔宠同样是战斗魔宠。</p>
+<p><b>额外指挥。</b>当你使用战技的魔宠受令特性，指挥你的魔宠执行攻击动作时，你可以同时指挥两个魔宠而非一个。</p>
 <br>
-<h2>15级：快速增兵 Rapid Surge</h2>
-<p class="para">你可以召唤更多的战术援军来协助作战。你从以下两个能力中选择一个获得：</p>
-<p class="para"><b>增效集群。</b>你可以使用<b class="green">魔法</b>动作并消耗至多4点技力，你可以在自己的战术援军附近5尺，再召唤至多等同所消耗技力点个的临时战术援军。临时战术援军使用与战术援军相同的数据，但是会在本回合结束时消失。</p>
-<p class="para"><b>强化复苏。</b>当你的战术援军死亡时，你可以采取<b class="green">反应</b>并消耗1点技力，你可以立即以满生命值复活该战术援军。作为反应的一部分，你命令该战术援军立即发动一次攻击。</p>
+<h4>15级：进阶援军 Advanced Reinforcement</h4>
+<p>你的伙伴现在可以在战斗中发挥更大的作用，你习得下述特性：</p>
+<p><b>魔宠强化。</b>现在你可以选择CR不超过1的怪物作为你的魔宠，前提是其不可能懂得通用语。如果要选择非核心书中的怪物作为魔宠，请先获得DM的同意。</p>
+<p><b>多重指挥。</b>当你使用战技的魔宠受令特性，指挥你的魔宠执行攻击动作时，你可以同时指挥三个魔宠而非一个。</p>
 <br>
-<h2>18级：战术领袖 Tactical Leader</h2>
-<p class="para">你的战术援军可以充分掩护你的盟友发起进攻。你获得以下特性：</p>
-<p class="para"><b> 援军掩护。</b>身处你的战术援军5尺范围内的盟友被远程攻击时，该攻击检定具有<b class="green">劣势</b>。</p>
-<p class="para"><b> 援军恢复。</b>你的战术援军死亡，且你未将其复苏时，你恢复1点技力。</p>
+<h4>18级：战术领袖 Tactical Leader</h4>
+<p>你的魔宠可以充分掩护你的盟友发起进攻。你习得下述特性：</p>
+<p><b>援军掩护。</b>身处你的魔宠5尺范围内的盟友被远程攻击时，该攻击检定具有<b class="green">劣势</b>。</p>
+
+<p><b>魔宠强化。</b>你的魔宠进行伤害掷骰时，可以额外掷1枚伤害骰。</p>
 <br>
-<hr>
-<br>
-<div class="monster_container">
-<h6>战术援军丨Tactical Reinforcement</h6>
-<hr>
-<p class="grey"><i>小型野兽/构装/妖精/怪兽（由你选择），无阵营</i></p>
-<table class="stat">
-<tr><td><b>AC </b>11+熟练加值（PB）</td>
-<td width="40%"><b>先攻 </b>+1（11）</td></tr>
-<tr><td colspan="2"><b>HP</b> 4 + 你先锋等级的三倍 [d4×你等级的生命骰]</td></tr>
-<tr><td colspan="2"><b>速度 </b>20 尺，或10尺飞行（悬浮）</td></tr>
-</table>
-<table class="stat-abilities">
-<tr><th></th><th></th>
-<th>调整</th><th>豁免</th>
-<td style="width: 8px;"></td>
-<th></th><th></th>
-<th>调整</th><th>豁免</th>
-<td style="width: 8px;"></td>
-<th></th><th></th>
-<th>调整</th><th>豁免</th></tr>
-<tr><td class="c1"><b>力量</b></td>
-<td class="c1">16</td>
-<td class="c2">+3</td>
-<td class="c2">+3</td>
-<td></td>
-<td class="c1"><b>敏捷</b></td>
-<td class="c1">10</td>
-<td class="c2">+0</td>
-<td class="c2">+0</td>
-<td></td>
-<td class="c1"><b>体质</b></td>
-<td class="c1">12</td>
-<td class="c2">+1</td>
-<td class="c2">+1</td>
-</tr><tr>
-<td class="c3"><b>智力</b></td>
-<td class="c3">5</td>
-<td class="c4">-3</td>
-<td class="c4">-3</td>
-<td></td>
-<td class="c3"><b>感知</b></td>
-<td class="c3">16</td>
-<td class="c4">+3</td>
-<td class="c4">+3</td>
-<td></td>
-<td class="c3"><b>魅力</b></td>
-<td class="c3">10</td>
-<td class="c4">+0</td>
-<td class="c4">+0</td></tr>
-</table>
-<table class="stat">
-<tr><td><b>免疫 </b>魅惑，恐慌，力竭</td></tr>
-<tr><td><b>感官 </b>黑暗视觉 60 尺，被动察觉13+PB</td></tr>
-<tr><td><b>语言 </b>理解你说的语言</td></tr>
-<tr><td><b>CR </b>无（XP 0，PB与你一样）</td></tr>
-</table>
-<br>
-<h3>特质Traits</h3>
-<hr>
-<p class="para"><b>集群战术 Pack Tactics。</b>战术援军至少有一个未失能的其他<b class="green">盟友</b>在目标生物5尺内时，它对该生物发动的攻击检定有<b class="green">优势</b>。</p>
-<p class="para"><b>召唤物本质 Creature Nature。</b>你可以将你的熟练加值加入召唤物的豁免检定中。召唤物不能被治疗，且在其主人死亡时自动消失。召唤物在主人失能时会自主行动。</p>
-<p class="para"><b>受指挥者 Commanded。</b>战术援军与你共享先攻并紧接之后行动。通常情况下，战术援军只能执行<b class="green">回避</b>动作或者被你使用<b class="green">附赠动作</b>指挥来执行特定动作，但你可以在战术援军的回合期间对其维持<b class="green">专注</b>来进行精细操作，使得该战术援军可以无需指挥自由行动。</p>
-<br>
-<h3>动作Actions</h3>
-<hr>
-<p class="para"><b>近战攻击 Melee Attack（仅限近战系）。</b><i>近战攻击检定：</i>+3+PB，触及5尺。命中：6（1d6+3）钝击伤害。</p>
-<p class="para"><b>远程攻击 Ranged Attack（仅限远程系）。</b><i>远程攻击检定：</i>+3+PB，射程30/60尺。命中：5（1d10）力场伤害。</p>
-</div>
+
 <br><br>
 </div>
 </div>

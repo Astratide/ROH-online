@@ -6,7 +6,7 @@
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
 <head>
 <title>战技特效</title>
-<meta content="text/html; charset=UTF-8 http-equiv="content-type">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta http-equiv="X-UA-Compatible"content="IE=11">
 <link rel="stylesheet" href="../../style.css">
 
@@ -137,10 +137,11 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="content">
 <h2>战技特效 Battleskill Effects</h2>
 <hr class="sub">
-<p class="para">为战技应用特效是定制化你的战技的主要方式，遵循下述规则：</p>
-<p class="para"><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。</p>
-<p class="para"><b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的角色，熟练加值为4，最多只能发动一个技力消耗为3的战技。</p>
-<p class="para"><b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
+<p>为战技应用特效是定制化你的战技的主要方式，遵循下述规则：</p>
+<p><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。你不能重复添加已经选取的战技特效。</p>
+<p><b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的角色，熟练加值为4，最多只能发动一个技力消耗为3的战技。</p>
+<p><strong>可转移。</strong>有些特效可以在发动时将此特效的效果移交给一个可见盟友，此时效果的持续时间仍按照你的回合为准。</p>
+<p><b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
 <ul>
 <li><b>战技特效-α。</b>最常见的特效，应用α特效会使战技的SP消耗增加1点。至少5级才能应用。</li>
 <li><b>战技特效-β。</b>更为强大，应用β特效会使战技的SP消耗增加1点。每给战技应用两项β特效，就会额外增加1点SP消耗。即两个β共消耗3 SP，单个消耗1 SP。至少7级才能应用。</li>
@@ -153,7 +154,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
 <p><b>生命值提升。</b>你的生命值以及生命值上限提升等同你的职业等级的两倍，该生命值上限提升持续直到你下次发动此战技，或失能，或战斗结束。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
 <br>
@@ -162,35 +162,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p> 
 <p><b>防御力提升。</b>你的AC获得 +2 加值，持续直到你下次发动此战技，或失能，或战斗结束。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><strong>可转移。</strong>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
-<h3 class="effect-box">持续攻击力提升 Continuous Atk Increase</h3>
+<h3 class="effect-box"> 攻击力提升 Atk Increase</h3>
 <div class="effect-box">
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>持续攻击力提升。</b>你的伤害掷骰获得+1d4加值。</p>
-<p><b>立即。</b> 若此战技持续时间为立即，则数值翻倍（变为+2d4）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box">瞬时攻击力提升 Instant Atk Increase</h3>
-<div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>瞬时攻击力提升。</b>战技持续期间仅一次，你可以在伤害掷骰上获得1d10+你职业等级的加值。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效，每次复选都使得该伤害加值额外进行相同的提升。</p>
-</div>
-<br>
-<br>
-<h3 class="effect-box">瞬时造成法术伤害 Deal Instant Art Damage</h3>
-<div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+，施法特性）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>瞬时造成法术伤害。</b>战技持续期间仅一次，你可以在攻击命中时额外造成1d10+你职业等级点精通伤害。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效，每次复选都使得该伤害加值额外进行相同的提升。</p>
+<p><b>攻击力提升。</b>你的伤害掷骰获得+1d4加值。</p>
 </div>
 <br>
 <br>
@@ -200,8 +180,14 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
 <p><b>攻击造成溅射伤害。</b>你的攻击检定或法术仅对一个单体目标造成伤害时，可以选择额外对其周围 5 
 尺的每个其他生物造成1d6+你职业等级的同类伤害。</p>
-<p><b>立即。</b>如果此战技持续时间为立即，则溅射伤害骰提升至2d6。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效，每多应用一次，溅射范围就增加5尺，溅射伤害骰增加1枚。</p>
+</div>
+<br>
+<br>
+<h3 class="effect-box">增强单次攻击 Enhance Next Attack</h3>
+<div class="effect-box">
+<p class="gradiant-box">战技特效-α（先决：等级5+）</p> 
+<p>此战技发动时以及持续期间，你获得以下效应：</p>  
+<p><b>增强单次攻击。</b>战技期间仅一次，你可以使得你的伤害掷骰获得1d10+你职业等级的加值。</p>
 </div>
 <br>
 <br>
@@ -209,9 +195,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>治疗量提升。</b>你所有为决定恢复生物生命值量而进行的掷骰，骰子等级增大 1 级（至多d12）。</p> 
-<p><b>立即。</b>如果此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>治疗量提升。</b>你所有为决定恢复生物生命值量而进行的掷骰，骰子等级增大 1 级（至多d12）。</p>
 </div>
 <br>
 <br>
@@ -220,7 +204,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动时，你获得以下效应：</p> 
 <p><b>生命值恢复。</b>你立即恢复等同你职业等级三倍的生命值。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
@@ -229,6 +213,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p>
 <p><b>低调。</b>任何对你发动的攻击检定具有<b class="green">劣势</b>，持续直到你失能，或战斗结束。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。<br></p>
 </div>
 <br>
 <br>
@@ -237,6 +222,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p>
 <p><b>迷彩。</b>你对于任何远程攻击而言具有<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
@@ -245,6 +231,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p>
 <p><b>隐匿。</b>直到你下回合开始前，你对于任何远程攻击而言具有<b class="green">全身掩护</b>。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
@@ -253,7 +240,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动后，你获得以下效应：</p>
 <p><b>闪避。</b>任何对你的攻击检定承受-1d4减值，你的豁免检定获得+1d4加值，持续直到你陷入失能，或战斗结束。</p>
-<p><b>复选。</b>你可以给一个战技应用多次本特效。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
@@ -262,7 +249,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-α（先决：等级5+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
 <p><b>攻击范围扩大。</b>你的触及范围增加10尺，远程攻击和法术的最大射程翻倍。</p>
-<p><b>立即。</b>如果此战技持续时间为立即，则触及范围改为增加20尺，且远程攻击不会承受劣势。</p>
 </div>
 <br>
 <br>
@@ -278,8 +264,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-α（先决：等级5+，先锋等级1+或行商等级3+或佣兵等级3+）</p>
 <p>此战技发动时，你获得以下效应：</p>
-<p><b>回费。</b>你立即获得1枚费用骰。此外，战技持续期间你掷出的费用骰增大一级（至多d12）。</p>
-<p><b>复选。</b>你可以给一个战技应用多次本特效。</p>
+<p><b>回费。</b>你的这次费用骰掷骰结果获得+10加值。</p>
 </div>
 <br>
 <br>
@@ -288,8 +273,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
 <p><b>造成物理伤害提升。</b>你为造成穿刺、挥砍、钝击伤害而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
-<p><b>立即。</b>若此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
 <br>
@@ -297,9 +280,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-β（先决：等级7+，精通伤害特性）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>造成法术伤害提升。</b>你为造成你的<b>精通伤害</b>而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
-<p><b>立即。</b>若此战技持续时间为立即，则数值翻倍（变为增大 2 级）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>造成法术伤害提升。</b>你为造成你的<b class="green">精通伤害</b>而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
 </div>
 <br>
 <br>
@@ -308,8 +289,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>  
 <p><b>额外攻击力提升。</b> 你进行的伤害掷骰获得 +1d8 加值。</p>
-<p><b>立即。</b> 若此战技持续时间为立即，则数值翻倍（变为+2d8）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p> 特别地，此特效和攻击力提升互斥。</p>
 </div>
 <br>
 <br>
@@ -318,8 +298,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+，精通伤害特性）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p> 
 <p><b>额外造成法术伤害。</b>你发动的攻击若命中，则额外造成 1d8 你的<b class="green">精通伤害</b>。</p>
-<p><b>立即。</b> 如果此战技持续时间为立即，则数值翻倍（变为2d8点）。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p>特别地，此特效和攻击力提升互斥。</p>
 </div>
 <br>
 <br>
@@ -328,7 +307,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
 <p><b>攻击速度提升。</b>你执行<b class="green">攻击</b>动作时，作为其一部分，可以再额外发动 1 次武器攻击。所用武器不能具有<b class="green">重型</b>属性。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
 <br>
@@ -336,8 +314,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-β（先决：等级7+）</p>
 <p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>施法速度提升。</b>你执行<b class="green">魔法</b>动作时，作为其一部分，可以再额外施展 1 个动作戏法。所施展的戏法不能用于发动多次法术攻击检定。<br>  </p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>施法速度提升。</b>你执行<b class="green">魔法</b>动作时，作为其一部分，可以再额外施展 1 
+个动作戏法。所施展的戏法不能用于发动多次法术攻击检定。  </p>
 </div>
 <br>
 <br>
@@ -354,7 +332,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+）</p>
 <p>此战技发动后，你获得以下效应：</p>
 <p><b>防御力提升。</b>你的AC获得 +3 加值，持续直到你下次发动此战技或战斗结束。此外，期间那些对你的攻击失手时，你不会因此受到任何伤害。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
+<p>特别地，此特效和防御力提升互斥。</p>
 </div>
 <br>
 <br>
@@ -362,8 +341,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-β（先决：等级7+，立即战技）</p>
 <p>此战技具有以下效应：</p>
-<p><b>可充能。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，此战技可以在一回合中多次发动，但连续发动时将不享受其他所添加特效带来的增益。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
+<p><b>可充能。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，此战技可以在一回合中多次发动。</p>
 </div>
 <br>
 <br>
@@ -372,7 +350,6 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p class="gradiant-box">战技特效-β（先决：等级7+，持续战技）</p>
 <p>此战技具有以下效应：</p>
 <p><b>延长持续时间。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至你下回合开始。</p>
-<p><b>复选。</b>你可以给一个战技多次应用本特效。</p>
 </div>
 <br>
 <br>
@@ -388,7 +365,8 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div class="effect-box">
 <p class="gradiant-box">战技特效-γ（先决：等级9+）</p>
 <p>此战技发动后，你获得以下效应：</p>
-<p><b>无敌。</b>你获得<b class="green">全身掩护</b>，直到你失能或战斗结束。如果你执行了攻击或魔法动作，此效果立即结束。</p>
+<p><b>无敌。</b>你免疫所有伤害，直到你失能或战斗结束。如果你执行了攻击或魔法动作，此效果立即结束。</p>
+<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
 </div>
 <br>
 <br>
