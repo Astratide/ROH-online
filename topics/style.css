@@ -299,25 +299,36 @@ img.clock
     color: white;
     white-space: nowrap; 
 }
-.drak
-{
-    color: black;
-}
 .blue
 {
     color: #215fb1;
 }
-.scarlet
-{
-    color: rgb(215, 38, 38);
+.grey{
+    color: grey;
 }
 .maroon
 {
     color: maroon;
 }
+.item
+{
+    color: #0000ff;;
+}
 .navy
 {
     color: navy;
+}
+.green
+{
+    color: #008000;
+}
+.red
+{
+    color: #ee3300;
+}
+.scarlet
+{
+    color: rgb(215, 38, 38);
 }
 .green
 {
