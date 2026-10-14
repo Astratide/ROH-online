@@ -1,147 +1,78 @@
-﻿
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- saved from url=(0014)about:internet -->
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:o = "urn:schemas-microsoft-com:office:office">
-<head>
+<head><meta charset="utf-8">
 <title>战技特效</title>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<meta http-equiv="X-UA-Compatible"content="IE=11">
+
+<meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../../style.css">
-
-
-
-
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-html {
-	overflow-y:scroll;
-	font-size: 16px;
-}
-body {
-	padding: 0px;
-	margin: 0px;
-	overflow: auto; 
-	font-size: 1rem;
-    BACKGROUND: transparent;
-    WIDTH: 100%;
-    COLOR: #000000;
-    PADDING-TOP: 0px;
-    FONT-FAMILY: 'Microsoft YaHei',sans-serif;
-}
-#winchm_template_minititle{
-	padding-left: 5px;
-	padding-bottom: 5px;
-	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 1rem;
-	font-style: normal;
-	font-weight: bold;
-	BORDER-BOTTOM: #999999 1px solid;
-	BACKGROUND-COLOR: #D8D8D8 ;
-	width: auto;
-}
-#winchm_template_button{
-	float: right;
-	top: 5px;
-	position: relative;
-	text-align: right;
-	right: 10px;
-	height: auto;
-}
-#winchm_template_title{
-	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 1.1rem;
-	padding: 5px;
-	width: auto;
-	BACKGROUND-COLOR: #D8D8D8 ;
-	text-align: left;
-}
-#winchm_template_content{
-	padding: 0px;
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-bottom: 15px;
-	margin-right: 15px;
-	width: auto  !important;
-	width: 100%;
-}
-#winchm_template_footer{
-	border-width: 1px;
-	border-color: #c0c0c0;
-	border-top-style: solid;
-	margin-top: 0px;
-	margin-left: 15px;
-	margin-bottom: 5px;
-	margin-right: 15px;
-	padding-top: 6px;
-	padding-left: 0px;
-	padding-bottom: 20px;
-	padding-right: 0px;
-	font-family: 'Microsoft YaHei',sans-serif，arial, helvetica;
-	font-size: 0.6rem;
-	color: #909090;
-	text-align: left;	
-	width: auto;	
-}
-#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
-#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
-#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
-#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
-a:link	{text-decoration: underline; color:#0033cc}
-a:visited  {text-decoration: underline; color: #0033cc}
-a:active {text-decoration: underline; color: #0033cc }
-a:hover {text-decoration: underline;color: #ff0000;}
-@media print
+b.effect-box
 {
-#winchm_template_button{
-visibility:hidden;
+    padding:5px; 
+    background: maroon; 
+    color: white; margin-right: 20px;
+    display: block;
+    font-size: 120%;
 }
-}
-</style>
-</head>
-<body><script language="JavaScript" type="text/JavaScript">
-function syn(){
-if(parent.nav.tree){
- if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(123);
- }else{
-  setTimeout("syn()",500);
-}
-  }else{
-  setTimeout("syn()",500);
-  }}
-if(parent!=self){
-  setTimeout("syn()",100);
-}else{
-  parent.location.href = "../../../index.htm?page=第二章：角色资源/战技/正面战技特效.html";
-}
-originalOnload = window.onload;
-if(originalOnload==null){
-window.onload = function(){parent.contentLoaded = true;};
-}else{
-window.onload = function(){originalOnload();parent.contentLoaded = true;};
-}
-</script> 
 
-<div id="winchm_template_title">
-	<div id="winchm_template_button">
-		<A href="../战技.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="../../btn_prev_n.gif" border="0"></a>
-		<A href="专属战技特效.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="../../btn_next_n.gif" border="0"></a>
-	</div>
-	PRTS资料库 > <A href="../../第二章：角色资源.html">第二章：角色资源</A> &gt; <A href="../战技.html">战技</A> &gt;  <b>战技特效</b>
-</div>
-<div id="winchm_template_minititle">罗德岛外勤指南：[战技特效]</div>
-<div id="winchm_template_content"> 
-<div id="content">
-<h2>战技特效 Battleskill Effects</h2>
-<hr class="sub">
+b.effect-box#blue
+{
+    background: rgb(35, 60, 147); 
+}
+
+b.effect-box#orange
+{
+    background: rgb(208, 128, 8); 
+}
+
+b.effect-box#green
+{
+    background: rgb(28, 111, 41); 
+}
+
+b.effect-box#grey
+{
+    background: rgb(70, 70, 70); 
+}
+
+b.effect-box#yellow
+{
+    background: rgb(166, 142, 0); 
+}
+
+
+div.effect-box
+{
+    border: 1px solid grey; 
+    margin-right: 20px;
+    padding: 0px 4px 2px;
+}
+
+span.gradiant
+{
+    margin:0px -4px 2px;
+    padding:4px 4px;
+    background: linear-gradient(to right,rgb(158, 158, 158), white);
+    font-style: italic;
+}
+
+</style>
+
+<script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
+<link id="webhelpTopicStyles" rel="stylesheet" href="../../../assets/webhelp-topic.css">
+<link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../../../assets/content-enhance.css">
+<script id="webhelpContentEnhanceScript" src="../../../assets/content-enhance.js" defer></script>
+<script src="../../../webhelp-content-bridge.js"></script>
+</head>
+<body>
+<h2 class="line">战技特效 Battleskill Effects</h2>
 <p>为战技应用特效是定制化你的战技的主要方式，遵循下述规则：</p>
-<p><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。你不能重复添加已经选取的战技特效。</p>
-<p><b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的角色，熟练加值为4，最多只能发动一个技力消耗为3的战技。</p>
-<p><strong>可转移。</strong>有些特效可以在发动时将此特效的效果移交给一个可见盟友，此时效果的持续时间仍按照你的回合为准。</p>
-<p><b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
+<p><b>升级时应用。</b>你可以在获得新的职业等级时，给自己一个来自该职业的战技，应用、替换或移除一项战技特效。你不能重复添加已经选取的战技特效。<br>
+<b>提升技力消耗。</b>应用特效会增加发动该战技的SP消耗，但战技的SP消耗必须小于你的熟练加值。举例来说，一个等级为9的角色，熟练加值为4，最多只能发动一个技力消耗为3的战技。<br>
+<b>可转移。</b>有些特效可以在发动时将此特效的效果移交给一个可见的自愿生物，此时效果的持续时间仍按照你的回合为准。生物同一时间只能接受一个被转移的特效，如果要接受其他<br>
+<b>可复选。</b>有些特效可以重复应用使其其效果获得增强。<br>
+<b>特效等级。</b>特效被分为[α、β、γ]三个等级。</p>
 <ul>
 <li><b>战技特效-α。</b>最常见的特效，应用α特效会使战技的SP消耗增加1点。至少5级才能应用。</li>
 <li><b>战技特效-β。</b>更为强大，应用β特效会使战技的SP消耗增加1点。每给战技应用两项β特效，就会额外增加1点SP消耗。即两个β共消耗3 SP，单个消耗1 SP。至少7级才能应用。</li>
@@ -149,237 +80,228 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </ul>
 <br>
 <br>
-<h3 class="effect-box">生命值提升 Extra Hp Increase</h3>
+<b class="effect-box">生命值提升 Extra Hp Increase</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>生命值提升。</b>你的生命值以及生命值上限提升等同你的职业等级的两倍，该生命值上限提升持续直到你下次发动此战技，或失能，或战斗结束。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>生命值提升。</b>你的生命值以及生命值上限提升等同你的职业等级的两倍，该生命值上限提升持续直到你下次发动此战技，或失能，或战斗结束。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box">防御力提升 Def Increase</h3>
+<b class="effect-box">防御力提升 Def Increase</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动后，你获得以下效应：</p> 
-<p><b>防御力提升。</b>你的AC获得 +2 加值，持续直到你下次发动此战技，或失能，或战斗结束。</p>
-<p><strong>可转移。</strong>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>防御力提升。</b>你的AC获得 +2 加值，持续直到你下次发动此战技，或失能，或战斗结束。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box"> 攻击力提升 Atk Increase</h3>
+<b class="effect-box">攻击力提升 Atk Increase</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>攻击力提升。</b>你的伤害掷骰获得+1d4加值。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击力提升。</b>你的伤害掷骰获得+1d4加值。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box">攻击造成溅射伤害 Splash Damage</h3>
+<b class="effect-box">攻击造成溅射伤害 Splash Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击造成溅射伤害。</b>你的攻击检定或法术仅对一个单体目标造成伤害时，可以选择额外对其周围 5 
-尺的每个其他生物造成1d6+你职业等级的同类伤害。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击造成溅射伤害。</b>你的攻击检定或法术仅对一个单体目标造成伤害时，可以选择额外对其周围 5 尺的每个其他生物造成1d6+你职业等级的同类伤害。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。每多应用一次，溅射范围就增加5尺，溅射伤害骰增加1d6。</div>
 <br>
 <br>
-<h3 class="effect-box">增强单次攻击 Enhance Next Attack</h3>
+<b class="effect-box">增强单次攻击 Enhance Next Attack</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p> 
-<p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>增强单次攻击。</b>战技期间仅一次，你可以使得你的伤害掷骰获得1d10+你职业等级的加值。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>增强单次攻击。</b>战技期间仅一次，你可以使得你的伤害掷骰获得1d10+你职业等级的加值。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效，每次复选都使得该伤害加值额外进行相同的提升。</div>
 <br>
 <br>
-<h3 class="effect-box">造成治疗量提升 Healing Amount Increase</h3>
+<b class="effect-box">造成治疗量提升 Healing Amount Increase</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>治疗量提升。</b>你所有为决定恢复生物生命值量而进行的掷骰，骰子等级增大 1 级（至多d12）。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>治疗量提升。</b>你所有为决定恢复生物生命值量而进行的掷骰，骰子等级增大 1 级（至多d12）。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box">生命值恢复 Hp Recovery</h3>
+<b class="effect-box">生命值恢复 Hp Recovery</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时，你获得以下效应：</p> 
-<p><b>生命值恢复。</b>你立即恢复等同你职业等级三倍的生命值。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时，你获得以下效应：<br>
+<b>生命值恢复。</b>你立即恢复等同你职业等级四倍的生命值。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box">不易受敌人攻击 Non-Vulnerable</h3>
+<b class="effect-box">不易受敌人攻击 Non-Vulnerable</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>低调。</b>任何对你发动的攻击检定具有<b class="green">劣势</b>，持续直到你失能，或战斗结束。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。<br></p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>低调。</b>任何对你发动的攻击检定具有<b class="green">劣势</b>，持续直到你失能，或战斗结束。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。<br></div>
 <br>
 <br>
-<h3 class="effect-box">迷彩 Camouflage</h3>
+<b class="effect-box">迷彩 Camouflage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>迷彩。</b>你对于任何远程攻击而言具有<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>迷彩。</b>你对于任何远程攻击而言具有<b class="green">隐形</b>状态，持续直到你陷入失能，或战斗结束。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。</div>
 <br>
 <br>
-<h3 class="effect-box">隐匿 Hidden</h3>
+<b class="effect-box">隐匿 Hidden</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>隐匿。</b>直到你下回合开始前，你对于任何远程攻击而言具有<b class="green">全身掩护</b>。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>隐匿。</b>直到你下回合开始前，你对于任何远程攻击而言具有<b class="green">全身掩护</b>。能通过<b class="green">真实视觉</b>或<b class="green">盲视</b>看到你的生物可以忽略此效应。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。</div>
 <br>
 <br>
-<h3 class="effect-box">闪避率提升 Dodge Rate Up</h3>
+<b class="effect-box">闪避率提升 Dodge Rate Up</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>闪避。</b>任何对你的攻击检定承受-1d4减值，你的豁免检定获得+1d4加值，持续直到你陷入失能，或战斗结束。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>闪避。</b>任何对你的攻击检定承受-1d4减值，你的豁免检定获得+1d4加值，持续直到你陷入失能，或战斗结束。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box">攻击范围扩大 Extra Atk Range</h3>
+<b class="effect-box">攻击范围扩大 Extra Atk Range</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击范围扩大。</b>你的触及范围增加10尺，远程攻击和法术的最大射程翻倍。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击范围扩大。</b>你的触及范围增加10尺，远程攻击和法术的最大射程翻倍。</div>
 <br>
 <br>
-<h3 class="effect-box">快速启动 Speeded Launch</h3>
+<b class="effect-box">快速启动 Speeded Launch</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+）</p>
-<p>此战技具有以下效应：</p> 
-<p><b>快速启动。</b>在一场战斗中首次发动此战技时，如果原本需要使用<b class="green">附赠动作</b>来发动，则你可以忽略该限制。你不能在<b class="green">失能</b>时以此发动战技。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+）</span><br>
+此战技具有以下效应：<br>
+<b>快速启动。</b>在一场战斗中首次发动此战技时，如果原本需要使用<b class="green">附赠动作</b>来发动，则你可以忽略该限制。你不能在<b class="green">失能</b>时以此发动战技。</div>
 <br>
 <br>
-<h3 class="effect-box">恢复费用提升 Cost Gain Up</h3>
+<b class="effect-box">恢复费用提升 Cost Gain Up</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-α（先决：等级5+，先锋等级1+或行商等级3+或佣兵等级3+）</p>
-<p>此战技发动时，你获得以下效应：</p>
-<p><b>回费。</b>你的这次费用骰掷骰结果获得+10加值。</p>
-</div>
+<span class="gradiant">战技特效-α（先决：等级5+，先锋等级1+或行商等级3+或佣兵等级3+）</span><br>
+此战技发动时，你获得以下效应：<br>
+<b>回费。</b>战技期间仅一次，费用骰掷骰结果获得+10加值。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">物理伤害倍率 Dealt Multiple Phy Damage</h3>
+<b class="effect-box" id="blue">物理伤害倍率 Dealt Multiple Phy Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>造成物理伤害提升。</b>你为造成穿刺、挥砍、钝击伤害而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>造成物理伤害提升。</b>你为造成穿刺、挥砍、钝击伤害而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">法术伤害倍率 Dealt Multiple Art Damage</h3>
+<b class="effect-box" id="blue">法术伤害倍率 Dealt Multiple Art Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+，精通伤害特性）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>造成法术伤害提升。</b>你为造成你的<b class="green">精通伤害</b>而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+，精通伤害特性）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>造成法术伤害提升。</b>你为造成你的<b class="green">精通伤害</b>而掷伤害骰时，那些骰子等级增大 1 级（至多d12）。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">额外攻击力提升 Extra Atk Increase</h3>
+<b class="effect-box" id="blue">额外攻击力提升 Extra Atk Increase</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>  
-<p><b>额外攻击力提升。</b> 你进行的伤害掷骰获得 +1d8 加值。</p>
-<p> 特别地，此特效和攻击力提升互斥。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>额外攻击力提升。</b> 你进行的伤害掷骰获得 +1d8 加值。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。<br>
+特别地，此特效和攻击力提升互斥。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">额外造成法术伤害 Extra Art Damage</h3>
+<b class="effect-box" id="blue">额外造成法术伤害 Extra Art Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+，精通伤害特性）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p> 
-<p><b>额外造成法术伤害。</b>你发动的攻击若命中，则额外造成 1d8 你的<b class="green">精通伤害</b>。</p>
-<p>特别地，此特效和攻击力提升互斥。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+，精通伤害特性）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>额外造成法术伤害。</b>你发动的攻击若命中，则额外造成 1d8 你的<b class="green">精通伤害</b>。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。<br>
+特别地，此特效和攻击力提升互斥。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">攻击速度提升 Atk Speed Up</h3>
+<b class="effect-box" id="blue">攻击速度提升 Atk Speed Up</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击速度提升。</b>你执行<b class="green">攻击</b>动作时，作为其一部分，可以再额外发动 1 次武器攻击。所用武器不能具有<b class="green">重型</b>属性。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击速度提升。</b>你执行<b class="green">攻击</b>动作时，作为其一部分，可以再额外发动 1 次武器攻击。所用武器不能具有<b class="green">重型</b>属性。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">施法速度提升 Cast Speed Up</h3>
+<b class="effect-box" id="blue">施法速度提升 Cast Speed Up</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>施法速度提升。</b>你执行<b class="green">魔法</b>动作时，作为其一部分，可以再额外施展 1 
-个动作戏法。所施展的戏法不能用于发动多次法术攻击检定。  </p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>施法速度提升。</b>你执行<b class="green">魔法</b>动作时，作为其一部分，可以再额外施展 1 
+个动作戏法。所施展的戏法不能用于发动多次法术攻击检定。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">攻击变为法术伤害 Turn into Art Damage</h3>
+<b class="effect-box" id="blue">攻击变为法术伤害 Turn into Art Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+，精通伤害特性）</p>
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击变为法术伤害。</b>你发动的攻击检定具有<b class="green">优势</b>，且造成的所有挥砍、穿刺、钝击伤害都转化为你的<b class="green">精通伤害</b>。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+，精通伤害特性）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击变为法术伤害。</b>你发动的攻击检定具有<b class="green">优势</b>，且造成的所有挥砍、穿刺、钝击伤害都转化为你的<b class="green">精通伤害</b>。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">额外防御力提升 Extra Def Up</h3>
+<b class="effect-box" id="blue">额外防御力提升 Extra Def Up</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>防御力提升。</b>你的AC获得 +3 加值，持续直到你下次发动此战技或战斗结束。此外，期间那些对你的攻击失手时，你不会因此受到任何伤害。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-<p>特别地，此特效和防御力提升互斥。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>防御力提升。</b>你的AC获得 +3 加值，持续直到你下次发动此战技或战斗结束。此外，期间那些对你的攻击失手时，你不会因此受到任何伤害。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。<br>
+特别地，此特效和防御力提升互斥。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">可充能 Chargeable</h3>
+<b class="effect-box" id="blue">可充能 Chargeable</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+，立即战技）</p>
-<p>此战技具有以下效应：</p>
-<p><b>可充能。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，此战技可以在一回合中多次发动。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+，立即战技）</span><br>
+此战技具有以下效应：<br>
+<b>可充能。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，此战技可以在一回合中多次发动。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="blue">延长持续时间 Extra Duration</h3>
+<b class="effect-box" id="blue">延长持续时间 Extra Duration</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-β（先决：等级7+，持续战技）</p>
-<p>此战技具有以下效应：</p>
-<p><b>延长持续时间。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至你下回合开始。</p>
-</div>
+<span class="gradiant">战技特效-β（先决：等级7+，持续战技）</span><br>
+此战技具有以下效应：<br>
+<b>延长持续时间。</b>此战技发动后，直到你失能或战斗结束前仅 1 次，你再次发动此战技时无需消耗技力。此外，若此战技原本持续至本回合结束，则改为持续至你下回合开始。<br>
+<b>可复选。</b>你可以给一个战技多次应用本特效。</div>
 <br>
 <br>
-<h3 class="effect-box" id="orange">持续时间无限 Unlimited Duration</h3>
+<b class="effect-box" id="orange">持续时间无限 Unlimited Duration</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-γ（先决：等级9+）</p>
-<p>此战技具有以下效应：</p>
-<p><b>持续时间无限。</b>此战技若有持续时间则将持续直到战斗结束，或直到你生命值降至0。若为立即战技，则直到战斗结束前，你都可以无需技力消耗地发动此战技。</p>
-</div>
+<span class="gradiant">战技特效-γ（先决：等级9+）</span><br>
+此战技具有以下效应：<br>
+<b>持续时间无限。</b>此战技若有持续时间则将持续直到战斗结束，或直到你生命值降至0。若为立即战技，则直到战斗结束前，你都可以无需技力消耗地发动此战技。</div>
 <br>
 <br>
-<h3 class="effect-box" id="orange">不再受到伤害 Damage Immunity</h3>
+<b class="effect-box" id="orange">不再受到伤害 Damage Immunity</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-γ（先决：等级9+）</p>
-<p>此战技发动后，你获得以下效应：</p>
-<p><b>无敌。</b>你免疫所有伤害，直到你失能或战斗结束。如果你执行了攻击或魔法动作，此效果立即结束。</p>
-<p><b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见盟友。</p>
-</div>
+<span class="gradiant">战技特效-γ（先决：等级9+）</span><br>
+此战技发动后，你获得以下效应：<br>
+<b>无敌。</b>你免疫所有伤害，直到你失能或战斗结束。如果你执行了攻击或魔法动作，此效果立即结束。<br>
+<b>可转移。</b>你可以在发动时将此特效的效果移交给一个可见自愿生物。</div>
 <br>
 <br>
-<h3 class="effect-box" id="orange">攻击造成真实伤害 Deal True Damage</h3>
+<b class="effect-box" id="orange">攻击造成真实伤害 Deal True Damage</b>
 <div class="effect-box">
-<p class="gradiant-box">战技特效-γ（先决：等级9+）</p><i></i> 
-<p>此战技发动时以及持续期间，你获得以下效应：</p>
-<p><b>攻击造成真实伤害。</b>你的攻击检定具有<b class="green">优势</b>，并且可以掷三枚D20并取最高的那枚。此外，你造成的伤害全部转为无法被减免的力场伤害。</p>
-</div>
+<span class="gradiant">战技特效-γ（先决：等级9+）</span><br>
+此战技发动时以及持续期间，你获得以下效应：<br>
+<b>攻击造成真实伤害。</b>你的攻击检定具有<b class="green">优势</b>，并且可以掷三枚D20并取最高的那枚。此外，你造成的伤害全部转为无法被减免的力场伤害。</div>
 
 <br>
-<br><br></div>
-</div>
-<div id="winchm_template_footer">罗德岛外勤指南[ROH]</div>
+<br>
+
+<br>
+
 </body>
 </html>
