@@ -1945,3 +1945,35 @@ html.webhelp-topic-document div.stat-block span.grey {
   margin: 0 !important;
   padding: 0 !important;
 }
+/* ================= v14 修正：战技卡内 cost / trigger / time 文字恒为白色 ================= */
+/* 起因：GitHub Pages 上 .trigger/.cost 的文字变黑而 .time 正常。为排除“模板对某些 id/子元素
+   单独设色”的可能，这里把所有变体（含 #red/#yellow/#blue 等 id）与内部子元素一并锁成白色。*/
+html.webhelp-topic-document div.syntax div.cost,
+html.webhelp-topic-document div.syntax div.trigger,
+html.webhelp-topic-document div.syntax div.time,
+html.webhelp-topic-document div.syntax .cost,
+html.webhelp-topic-document div.syntax .trigger,
+html.webhelp-topic-document div.syntax .time,
+html.webhelp-topic-document div.syntax div[id].cost,
+html.webhelp-topic-document div.syntax div[id].trigger,
+html.webhelp-topic-document div.syntax div[id].time,
+html.webhelp-topic-document div.cost, html.webhelp-topic-document div.trigger, html.webhelp-topic-document div.time {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: none !important;
+}
+html.webhelp-topic-document div.syntax div.cost *,
+html.webhelp-topic-document div.syntax div.trigger *,
+html.webhelp-topic-document div.syntax div.time *,
+html.webhelp-topic-document div.cost *, html.webhelp-topic-document div.trigger *, html.webhelp-topic-document div.time * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+/* 反例：若卡内某个 <b class="green"> 等关键词落在这些标签里，也统一为白色（标签底色为深色，白字正确） */
+html.webhelp-topic-document div.syntax div.cost b,
+html.webhelp-topic-document div.syntax div.trigger b,
+html.webhelp-topic-document div.syntax div.time b {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-weight: bold !important;
+}
