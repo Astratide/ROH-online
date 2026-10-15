@@ -1,4 +1,4 @@
-/*整体配置*/
+﻿/*整体配置*/
 html,body {
 	font-family: Arial, Helvetica, sans-serif;
     line-height:160%;
@@ -64,6 +64,7 @@ b.red{
 h4 {
     color: navy;
     margin-bottom: -10px;
+	margin-top: 2em;
 	font-size: 140%;
 }
 /*怪物页使用h5*/
@@ -178,7 +179,7 @@ div.side-box P{
 
 div.skill, table.skill {float:right;width: 4em; height: 4em; margin:4px 6px;}
 img.icon {width: 4em; height: auto; margin-bottom:-5px; box-shadow: 0px 0px 10px rgb(0, 0, 0);}
-img.text-img { height: 50px; display: inline-block;vertical-align: middle;margin-left: 10px;}
+img.text-img { height: 1em; display: inline-block;vertical-align: middle;margin-left: 10px;}
 
 div.syntax
 {
@@ -237,7 +238,7 @@ div.time
 }
 img.clock
 {
-    height: 16px;
+    height: 1em;
     width: auto;
     vertical-align: middle;
     display: inline-block;

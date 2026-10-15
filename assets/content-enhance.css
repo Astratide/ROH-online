@@ -1355,17 +1355,17 @@ html.webhelp-topic-document div.syntax div.time    { background: #545454 !import
 html.webhelp-topic-document div.syntax div.cost#red    { background: #fc793e !important; }
 html.webhelp-topic-document div.syntax div.cost#yellow { background: #FFB400 !important; }
 html.webhelp-topic-document div.syntax img.clock {
-  height: 16px !important; width: auto !important; max-width: none !important;
+  max-width: none !important;
   vertical-align: middle !important; display: inline-block !important;
   margin: 0 2px 4px 2px !important; box-shadow: none !important; border-radius: 0 !important;
 }
 html.webhelp-topic-document div.syntax img.icon {
-  width: 4em !important; height: auto !important; max-width: none !important;
-  margin-bottom: -5px !important; box-shadow: 0 0 10px rgb(0,0,0) !important; border-radius: 0 !important;
+  max-width: none !important;
+  border-radius: 0 !important;
 }
 html.webhelp-topic-document div.syntax div.skill,
 html.webhelp-topic-document div.syntax table.skill {
-  float: right !important; width: 4em !important; height: 4em !important; margin: 4px 6px !important;
+  float: right !important; margin: 4px 6px !important;
 }
 html.webhelp-topic-document div.syntax h1,
 html.webhelp-topic-document div.syntax h2,
@@ -1483,4 +1483,465 @@ html.webhelp-topic-document h6 {
   color: maroon !important;
   margin-bottom: 5px !important;
   font-size: 115% !important;
+}
+
+/* ---- 项目图片类（自动镜像 style.css，改 style.css 后重跑此脚本即可同步）---- */
+html.webhelp-topic-document div.skill {
+  float:right !important;
+  width: 4em !important;
+  height: 4em !important;
+  margin:4px 6px !important;
+}
+html.webhelp-topic-document table.skill {
+  float:right !important;
+  width: 4em !important;
+  height: 4em !important;
+  margin:4px 6px !important;
+}
+html.webhelp-topic-document img.icon {
+  width: 4em !important;
+  height: auto !important;
+  margin-bottom:-5px !important;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0) !important;
+}
+html.webhelp-topic-document img.text-img {
+  height: 1em !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-left: 10px !important;
+}
+html.webhelp-topic-document img.clock {
+  height: 1em !important;
+  width: auto !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+  color: white !important;
+  white-space: nowrap !important;
+  margin: 0px 2px 4px 2px !important;
+}
+/* ================= v4 修正（本轮） ================= */
+/* 1) 模板的 html…img { height: auto } 与项目 img.text-img/img.clock 同优先级且后加载，
+      会把「固定高度」冲掉导致图片按原始尺寸撑大；这里以同优先级+!important 复述项目值（上面镜像自 style.css）。*/
+/* 2) 怪物页头像：内联已写死 width/height，模板的 max-width:100% 会在窄格子里横向压扁，故放开上限保持正方形 */
+html.webhelp-topic-document img[style*="width"][style*="height"] {
+  max-width: none !important;
+  max-height: none !important;
+}
+/* 3) 怪物数据卡：卡名 h1 / 小节 h2 —— stat-block.css 的字号 + .line 的棕色底线 */
+html.webhelp-topic-document div.monster_container h1,
+html.webhelp-topic-document div.stat-block h1 {
+  color: #642e25 !important;
+  font-size: 140% !important;
+  margin: 0px 0px 8px 0px !important;
+  border-bottom: 2px solid #d1b68f !important;
+  border-top: 0 !important;
+  padding-bottom: 8px !important;
+  line-height: 120% !important;
+}
+html.webhelp-topic-document div.monster_container h2,
+html.webhelp-topic-document div.stat-block h2 {
+  color: #642e25 !important;
+  font-size: 120% !important;
+  margin: 20px 0px 8px 0px !important;
+  border-bottom: 2px solid #d1b68f !important;
+  border-top: 0 !important;
+  padding-bottom: 8px !important;
+  line-height: 120% !important;
+}
+
+/* ================= v5 修正（本轮） ================= */
+/* 1) 数据卡的 .line 底线用 stat-block.css 的规格：1px 实线 #642e25（不是 style.css 的 2px #d1b68f） */
+html.webhelp-topic-document div.monster_container .line,
+html.webhelp-topic-document div.stat-block .line {
+  border-bottom: 1px solid #642e25 !important;
+  border-top: 0 !important;
+  padding-left: -2px !important;
+  padding-bottom: 8px !important;
+  text-indent: 2px !important;
+}
+/* 2) 属性（stat-abilities）表内文字恢复水平居中 */
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.monster_container table.stat-abilities td,
+html.webhelp-topic-document div.monster_container table.stat-abilities th,
+html.webhelp-topic-document div.stat-block table.stat-abilities,
+html.webhelp-topic-document div.stat-block table.stat-abilities td,
+html.webhelp-topic-document div.stat-block table.stat-abilities th {
+  text-align: center !important;
+}
+/* 3) 数据卡正文行距按 style.css（html,body 150% / p 1.6em / li 1.5em），别被模板的紧凑行距压扁 */
+html.webhelp-topic-document div.monster_container,
+html.webhelp-topic-document div.stat-block {
+  line-height: 150% !important;
+}
+html.webhelp-topic-document div.monster_container p,
+html.webhelp-topic-document div.stat-block p {
+  line-height: 1.6em !important;
+}
+html.webhelp-topic-document div.monster_container li,
+html.webhelp-topic-document div.stat-block li {
+  line-height: 1.5em !important;
+}
+
+/* ================= v6 修正（本轮）表格紧凑化 ================= */
+/* 只收紧内边距/行高/背景/边框，**不写 font-size**，因此你在行内写的 font-size:0.9em 等始终生效
+   （行内 style 优先级高于任何非 !important 规则；这里也刻意不碰 font-size）。*/
+html.webhelp-topic-document table {
+  line-height: 1.5em !important;
+  margin: 0.4em 0 !important;
+  border-spacing: 0 !important;
+}
+html.webhelp-topic-document table td,
+html.webhelp-topic-document table th {
+  padding: 2px !important;
+  line-height: 1.5em !important;
+  text-indent: 0 !important;
+}
+html.webhelp-topic-document table tr { line-height: 1.5em !important; background-color: transparent !important; }
+html.webhelp-topic-document table th { background-color: transparent !important; }
+/* style.css 里的三张基础表 */
+html.webhelp-topic-document table.basic,
+html.webhelp-topic-document table.center,
+html.webhelp-topic-document table.part {
+  width: auto !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  border: 0 !important;
+}
+/* style.css 的 table#render */
+html.webhelp-topic-document table#render {
+  width: max-content !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  line-height: 1.5em !important;
+}
+html.webhelp-topic-document table#render th,
+html.webhelp-topic-document table#render td { border: none !important; padding: 2px !important; text-indent: 6px !important; }
+html.webhelp-topic-document table#render th { background-color: transparent !important; }
+html.webhelp-topic-document table#render tr:nth-child(even) { background-color: #eeeeee !important; }
+
+/* ================= v7 修正（本轮）：抑制模板 table-enhanced 的"宽大"排版 ================= */
+/* 模板的 content-enhance.js 会给正文表格加 .table-enhanced：
+   padding: 0.58em 0.72em（≈9px/11.5px）、width:100%、斑马纹、表头底色 —— 表格因此又宽又高。
+   这里只收紧内边距/行高/底色/宽度，**不写 font-size**，你在行内写的 font-size:0.9em 永远有效。*/
+html.webhelp-topic-document table.table-enhanced,
+html.webhelp-topic-document table.table-enhanced th,
+html.webhelp-topic-document table.table-enhanced td {
+  padding: 2px 6px !important;
+  line-height: 1.5em !important;
+  vertical-align: middle !important;
+}
+html.webhelp-topic-document table.table-enhanced {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  margin: 0.4em 0 !important;
+}
+/* 项目自己的表类/ID：宽度回到 style.css 的 auto（不要被模板拉成 100%） */
+html.webhelp-topic-document table.basic,
+html.webhelp-topic-document table.center,
+html.webhelp-topic-document table.part,
+html.webhelp-topic-document table#render { width: auto !important; max-width: 100% !important; }
+/* 去掉模板加的斑马纹/表头底色（项目里只有 table#render 有 even 行底色，v6 已单独声明，其 ID 优先级更高会保留） */
+html.webhelp-topic-document table.table-enhanced tbody tr,
+html.webhelp-topic-document table.table-enhanced tbody tr:nth-child(even),
+html.webhelp-topic-document table.table-enhanced tbody tr:hover,
+html.webhelp-topic-document table.table-enhanced thead th,
+html.webhelp-topic-document table.table-enhanced tbody th {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+/* 数据卡与战技卡内的表格不受上面影响（它们的规则优先级更高且带 !important） */
+
+/* ================= v8 修正（本轮）：标题随"字体调整"一起缩放 ================= */
+/* 模板把 h1/h2/h3 写成 font-size: 2rem / 1.48rem / 1.2rem（rem 相对根元素，根字号不变），
+   所以调大正文字号后标题反而"显得更小"。这里改用 style.css 的百分比规格 ——
+   百分比相对父元素（模板正文容器用 var(--webhelp-font-size)），因此会跟着一起放大。*/
+html.webhelp-topic-document h1 { font-size: 200% !important; }   /* style.css: h1 { font-size: 200% } */
+html.webhelp-topic-document h2 { font-size: 140% !important; }   /* style.css: h2 { font-size: 140% } */
+html.webhelp-topic-document h3 { font-size: 120% !important; }   /* style.css: h3 { font-size: 120% } */
+/* h4=140%、h5=140%、h6=115% 已在前面各版本里声明（同样是百分比，会一起缩放） */
+/* 数据卡与战技卡内的标题有自己的规格（v4/v5），优先级更高，不受这三条影响 */
+
+/* ================= v9 修正（本轮）=================
+   1) 怪物页 h1.title / 数据卡尺寸：整份取自 stat-block.css，并把 px 全部换算为 em，
+      使数据卡在任意字号下占据的空间比例基本一致（16px = 1em）。
+   2) h1.title 颜色/边距按 stat-block.css（黑色、无下边框）。*/
+html.webhelp-topic-document table.stat-abilities {
+  text-align: center !important;
+  margin-bottom: 0.9375em !important;
+  white-space: nowrap !important;
+}
+html.webhelp-topic-document table.stat-abilities th {
+  width: 2.5em !important;
+  font-size: 75% !important;
+  color: #808080 !important;
+}
+html.webhelp-topic-document table.stat-abilities td {
+  padding: 0.125em 0 0 0 !important;
+  font-size: 100% !important;
+}
+html.webhelp-topic-document td.c1 {
+  BACKGROUND-COLOR:#e9e3d6 !important;
+}
+html.webhelp-topic-document td.c2 {
+  BACKGROUND-COLOR: #d8d0c9 !important;
+}
+html.webhelp-topic-document td.c3 {
+  BACKGROUND-COLOR: #d2d6ce !important;
+}
+html.webhelp-topic-document td.c4 {
+  BACKGROUND-COLOR: #cbc6c6 !important;
+}
+html.webhelp-topic-document h1.title {
+  font-size: 150% !important;
+  font-weight: bold !important;
+  color: black !important;
+  margin: 0 0 0 0 !important;
+}
+html.webhelp-topic-document div.monster_container {
+  background-color: #f8f8f6 !important;
+  padding: 0.9375em !important;
+  border: #8b8988 0.0625em double !important;
+  border-width: 0.25em !important;
+  border-radius: 0.625em !important;
+  box-sizing: border-box !important;
+  background-color: #f8f8f6 !important;
+  line-height: 160% !important;
+  width: 33.5625em !important;
+  margin-left: 2em !important;
+  margin-bottom:1.25em !important;
+}
+html.webhelp-topic-document div.monster_container table {
+  color: #642e25 !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  margin-left: 0.25em !important;
+  border-collapse: collapse !important;
+}
+html.webhelp-topic-document div.monster_container .line {
+  border-bottom: 0.0625em solid #642e25 !important;
+  padding-left: -0.125em !important;
+  text-indent: 0.125em !important;
+}
+html.webhelp-topic-document div.monster_container h1 {
+  color: #642e25 !important;
+  margin: 0 0 0.5em 0 !important;
+  font-size: 140% !important;
+}
+html.webhelp-topic-document div.monster_container h2 {
+  color: #642e25 !important;
+  margin: 0.75em 0 0.5em 0 !important;
+  font-size: 120% !important;
+}
+html.webhelp-topic-document div.monster_container table.stat {
+  width: 31.25em !important;
+  color: #642e25 !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 0.125em !important;
+  margin-left: 0 !important;
+  margin-top: 0.3125em !important;
+}
+html.webhelp-topic-document div.monster_container table.stat td {
+  padding: 0.125em 0 0 0 !important;
+  font-size: 100% !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities {
+  text-align: center !important;
+  margin: 0.25em !important;
+  white-space: nowrap !important;
+  border-collapse: separate !important;
+  border-spacing: 0 0.125em !important;
+  border-collapse: collapse !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities th {
+  width: 2.8125em !important;
+  font-size: 90% !important;
+  color: #808080 !important;
+  border-collapse: collapse !important;
+}
+html.webhelp-topic-document div.monster_container ul {
+  margin: 0.625em !important;
+}
+/* h1.title 兜底：stat-block.css 若未显式定义颜色/边距，这里按“黑色标题、无下边框”处理 */
+html.webhelp-topic-document h1.title,
+html.webhelp-topic-document h2.title {
+  color: #000000 !important;
+  border-bottom: 0 !important;
+  margin: 0 0 0.5em 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+/* ================= v10 修正：数据卡表格在任意字号下都刚好放进容器 ================= */
+/* 模板把正文表格包进 .table-responsive--scroll 并给 min-width: 42rem（rem 不随字体调整变化），
+   小字号下 42rem 会宽过数据卡 → 出现横向滚动条。这里放开下限与滚动，并让卡内表格自适应。*/
+html.webhelp-topic-document div.monster_container .table-responsive,
+html.webhelp-topic-document div.monster_container .table-responsive--scroll,
+html.webhelp-topic-document div.monster_container .webhelp-table-scroll,
+html.webhelp-topic-document div.stat-block .table-responsive,
+html.webhelp-topic-document div.stat-block .table-responsive--scroll {
+  overflow: visible !important;
+  width: auto !important;
+  max-width: 100% !important;
+  padding-bottom: 0 !important;
+}
+html.webhelp-topic-document div.monster_container .table-responsive > table,
+html.webhelp-topic-document div.monster_container .table-responsive--scroll > table,
+html.webhelp-topic-document div.monster_container .webhelp-table-scroll > table,
+html.webhelp-topic-document div.stat-block table {
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+html.webhelp-topic-document div.monster_container table,
+html.webhelp-topic-document div.monster_container table.stat,
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.stat-block table,
+html.webhelp-topic-document div.stat-block table.stat,
+html.webhelp-topic-document div.stat-block table.stat-abilities {
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  table-layout: auto !important;
+  box-sizing: border-box !important;
+}
+html.webhelp-topic-document div.monster_container table.stat,
+html.webhelp-topic-document div.monster_container table.stat-abilities {
+  margin-left: 0 !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities {
+  white-space: normal !important;
+  border-spacing: 0 0.125em !important;
+  margin: 0.25em 0 !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities th {
+  width: auto !important;
+  min-width: 2.5em !important;
+}
+html.webhelp-topic-document div.monster_container table.stat td,
+html.webhelp-topic-document div.monster_container table.stat th,
+html.webhelp-topic-document div.monster_container table.stat-abilities td,
+html.webhelp-topic-document div.monster_container table.stat-abilities th {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
+html.webhelp-topic-document div.monster_container {
+  width: 33.5625em !important;
+  max-width: 100% !important;
+}
+/* ================= v11 修正：数据卡内表格强制贴合容器（不再外溢） ================= */
+/* 说明：v10 放开了包装层（.table-responsive--scroll）的 overflow，而模板给表格的是
+   width: max-content / min-width: 42rem，表格本身仍可能比容器内容盒宽 → 于是"冲出去"。
+   这里改为：表格 width:100% + table-layout:fixed（列宽按比例分配、内容自动换行），
+   包装层同步限制为 100%，卡片再兜底裁剪，任何字号下都不会越出外框。*/
+html.webhelp-topic-document div.monster_container table,
+html.webhelp-topic-document div.monster_container table.stat,
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.stat-block table,
+html.webhelp-topic-document div.stat-block table.stat,
+html.webhelp-topic-document div.stat-block table.stat-abilities {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  table-layout: fixed !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  white-space: normal !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.stat-block table.stat-abilities {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  margin: 0.25em 0 !important;
+}
+html.webhelp-topic-document div.monster_container table.stat-abilities th,
+html.webhelp-topic-document div.stat-block table.stat-abilities th {
+  width: auto !important;
+  min-width: 0 !important;
+}
+html.webhelp-topic-document div.monster_container table.stat td,
+html.webhelp-topic-document div.monster_container table.stat th,
+html.webhelp-topic-document div.monster_container table.stat-abilities td,
+html.webhelp-topic-document div.monster_container table.stat-abilities th,
+html.webhelp-topic-document div.stat-block table.stat td,
+html.webhelp-topic-document div.stat-block table.stat th,
+html.webhelp-topic-document div.stat-block table.stat-abilities td,
+html.webhelp-topic-document div.stat-block table.stat-abilities th {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
+html.webhelp-topic-document div.monster_container .table-responsive,
+html.webhelp-topic-document div.monster_container .table-responsive--scroll,
+html.webhelp-topic-document div.monster_container .webhelp-table-scroll,
+html.webhelp-topic-document div.stat-block .table-responsive,
+html.webhelp-topic-document div.stat-block .table-responsive--scroll {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+html.webhelp-topic-document div.monster_container,
+html.webhelp-topic-document div.stat-block {
+  overflow-x: hidden !important;
+}
+/* ================= v12 修正：数据卡表格填满容器 + 表头不换行且略小 ================= */
+/* 1) 由 fixed 布局改为 auto + width:100%：表格一定撑满容器内容盒（右侧不再留空），
+      且因为内容允许换行（white-space:normal + overflow-wrap:anywhere），不会被撑破容器。*/
+html.webhelp-topic-document div.monster_container table.stat,
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.stat-block table.stat,
+html.webhelp-topic-document div.stat-block table.stat-abilities {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  table-layout: auto !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+/* 2) “调整 / 豁免”这类表头：不换行（避免小字号时被顶成两行）、字号比正文略小（0.9em 随字号缩放） */
+html.webhelp-topic-document div.monster_container table.stat-abilities th,
+html.webhelp-topic-document div.stat-block table.stat-abilities th {
+  white-space: nowrap !important;
+  font-size: 0.9em !important;
+  width: auto !important;
+  min-width: 0 !important;
+  padding: 0 0.15em !important;
+  text-align: center !important;
+}
+/* 3) 属性名（力量/敏捷/体质/智力/感知/魅力）也不换行，数值列允许换行 */
+html.webhelp-topic-document div.monster_container table.stat-abilities td.c1,
+html.webhelp-topic-document div.monster_container table.stat-abilities td.c3,
+html.webhelp-topic-document div.stat-block table.stat-abilities td.c1,
+html.webhelp-topic-document div.stat-block table.stat-abilities td.c3 {
+  white-space: nowrap !important;
+}
+/* ================= v13 修正：数据卡内表格的上下留白收紧 ================= */
+/* 模板给表格与包装层的是 margin: 18px 0（table.table-enhanced / .table-responsive），
+   加上 stat-block.css 里 table.stat 自带的 margin-top: 5px，于是 span.grey 与 table.stat
+   之间、以及 table.stat 与下一段之间留白偏大。这里把两者都压下来。*/
+html.webhelp-topic-document div.monster_container table,
+html.webhelp-topic-document div.monster_container table.stat,
+html.webhelp-topic-document div.monster_container table.stat-abilities,
+html.webhelp-topic-document div.stat-block table,
+html.webhelp-topic-document div.stat-block table.stat,
+html.webhelp-topic-document div.stat-block table.stat-abilities {
+  margin-top: 0.1em !important;     /* 表格上方（紧贴 span.grey 类型行） */
+  margin-bottom: 0.4em !important;  /* 表格下方（比原来 18px 小很多，但保留一点呼吸感） */
+}
+html.webhelp-topic-document div.monster_container .table-responsive,
+html.webhelp-topic-document div.monster_container .table-responsive--scroll,
+html.webhelp-topic-document div.monster_container .webhelp-table-scroll,
+html.webhelp-topic-document div.stat-block .table-responsive,
+html.webhelp-topic-document div.stat-block .table-responsive--scroll {
+  margin: 0 !important;             /* 原来是 18px 0 */
+  padding: 0 !important;
+}
+/* 类型行 span.grey 自身不要额外下边距 */
+html.webhelp-topic-document div.monster_container span.grey,
+html.webhelp-topic-document div.stat-block span.grey {
+  margin: 0 !important;
+  padding: 0 !important;
 }
