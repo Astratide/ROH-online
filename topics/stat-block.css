@@ -142,7 +142,7 @@ P.sum{
 }
 UL,OL{
 	margin-left: 32px;
-	margin-top: -16px;
+	margin-top: -5px;
 }
 
 
@@ -221,5 +221,5 @@ div.monster_container table.stat-abilities th{
 	border-collapse: collapse;
 }
 div.monster_container ul{
-	margin: 10px;
+	margin: 0px 0px 5px -5px;
 }

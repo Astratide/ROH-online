@@ -37,7 +37,7 @@ sup {
  var cb_level=document.getElementsByName("level");
  var cb_book=document.getElementsByName("book");
  var cb_special=document.getElementsByName("special");
- var cb_job=document.getElementsByName("job");     // 新增
+ var cb_job=document.getElementsByName("job"); // 新增
  var cb_area=document.getElementsByName("area");   // 新增
 var cb_advanced=document.getElementsByName("advanced");   // 新增
 
@@ -46,7 +46,7 @@ var cb_advanced=document.getElementsByName("advanced");   // 新增
  var choosen_level=[];
  var choosen_book=[];
  var choosen_special=[];
- var choosen_job=[];     // 新增
+ var choosen_job=[]; // 新增
  var choosen_area=[];    // 新增
  var choosen_advanced=[];    // 新增
 
@@ -95,7 +95,7 @@ var cb_advanced=document.getElementsByName("advanced");   // 新增
  var content=elements[i].getAttribute("data-spell");
  if (content.toLowerCase().indexOf(keyword.toLowerCase()) !=-1) {
  has_word=true
-     }
+ }
  } else {
  has_word=true
  }
@@ -105,27 +105,27 @@ var cb_advanced=document.getElementsByName("advanced");   // 新增
  for (var j=0; j < choosen_school.length && !has_school; j++) {
  if (tags.indexOf(choosen_school[j]) !=-1) {has_school=true;
   }
-     }
+ }
  var has_class=false;
  for (var j=0; j < choosen_class.length && !has_class; j++) {
  if (tags.indexOf(choosen_class[j]) !=-1) {has_class=true;
   }
-     }
+ }
  var has_level=false;
  for (var j=0; j < choosen_level.length && !has_level; j++) {
  if (tags.indexOf(choosen_level[j]) !=-1) {has_level=true;
   }
-     }
+ }
  var has_book=false;
  for (var j=0; j < choosen_book.length && !has_book; j++) {
  if (tags.indexOf(choosen_book[j]) !=-1) {has_book=true;
   }
-     }
+ }
  var has_special=true;
  for (var j=0; j < choosen_special.length && has_special; j++) {
  if (tags.indexOf(choosen_special[j])==-1) {has_special=false;
   }
-     }
+ }
 
 var has_job = (choosen_job.length === cb_job.length);
 for (var j = 0; j < choosen_job.length && !has_job; j++) {
@@ -152,9 +152,9 @@ var has_advanced_job_area = has_advanced || has_job || has_area;
 
  if (has_word && has_school && has_class && has_level && has_book && has_special && has_advanced_job_area) {
  elements[i].style.display="";
-     } else {
+ } else {
  elements[i].style.display="none";
-     }
+ }
  }
     }
 }
@@ -425,6 +425,17 @@ function toggleVisibility() {
     <td>×</td>
     <td>×</td>
     <td>ROH</td></tr>
+<tr data-spell="魂灵剑Revenant Blade" data-tags="塑能 戏法(零环) 术士 魔契师 法师 言语 价耗 材料 ROH 心魂 预知">
+    <td><A href="../第五章：施法规则/戏法(0环).html#魂灵剑">魂灵剑Revenant Blade</a></td>
+    <td>戏法</td>
+    <td>塑能</td>
+    <td>术 锁 法</td>
+    <td>V</td>
+    <td>×</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="飘忽不定Elusive" data-tags  ="幻术 戏法(零环) 吟游诗人 游侠 言语 姿势 专注 ROH 心魂 空间 幻象">
     <td><A href="../第五章：施法规则/戏法(0环).html#飘忽不定">飘忽不定Elusive</a></td>
     <td>戏法</td>
@@ -525,7 +536,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="闪电速Lightning Speed" data-tags="塑能 戏法(零环) 法师 魔契师 奇械师 术士 言语 姿势 ES 雷电">
-    <td><A href="../第五章：施法规则/戏法(0环).html#闪电速" >闪电速Lightning Speed</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#闪电速">闪电速Lightning Speed</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>奇 术 法 锁</TD>
@@ -535,19 +546,8 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>ES</TD></tr>
-<tr data-spell="厄运标记Misfortune's Mark" data-tags="预言 戏法(零环) 魔契师 吟游诗人 言语 材料 UAH 心魂 预知">
-    <td><A href="../第五章：施法规则/戏法(0环).html#厄运标记Misfortune'" >厄运标记Misfortune's  Mark</A></TD>
-    <td>戏法</TD>
-    <td>预言</TD>
-    <td>诗 锁</TD>
-    <td>V</TD>
-    <td>×</TD>
-    <td>M</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>UAH</TD></tr>
 <tr data-spell="防护元素Protect from Element" data-tags="防护 戏法(零环) 德鲁伊 法师 辅助 术士 医疗 言语 姿势 专注 ROH 酸毒 烈火 雷电 岩土 寒冰">
-    <td><A href="../第五章：施法规则/戏法(0环).html#防护元素" >防护元素Protect from Element</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#防护元素">防护元素Protect from Element</A></TD>
     <td>戏法</TD>
     <td>防护</TD>
     <td>德 术 法</TD>
@@ -558,7 +558,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸液弹Produce Acid" data-tags="咒法 戏法(零环) 法师 术士 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/戏法(0环).html#酸液弹" >酸液弹Produce Acid</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#酸液弹">酸液弹Produce Acid</A></TD>
     <td>戏法</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -569,7 +569,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="醒神寒意Refreshing Chill" data-tags="塑能 戏法(零环) 法师 魔契师 牧师 术士 吟游诗人 言语 姿势 ES 自然 寒冰">
-    <td><A href="../第五章：施法规则/戏法(0环).html#醒神寒意" >醒神寒意Refreshing Chill</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#醒神寒意">醒神寒意Refreshing Chill</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>诗 牧 术 法 锁</TD>
@@ -580,7 +580,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="岩石冲击Rock Slam" data-tags="变化 戏法(零环) 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/戏法(0环).html#岩石冲击" >岩石冲击Rock  Slam</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#岩石冲击">岩石冲击Rock  Slam</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -591,7 +591,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="涟漪术Ripple" data-tags="咒法 戏法(零环) 德鲁伊 法师 术士 言语 姿势 ES 流水 寒冰">
-    <td><A href="../第五章：施法规则/戏法(0环).html#涟漪术" >涟漪术Ripple</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#涟漪术">涟漪术Ripple</A></TD>
     <td>戏法</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -602,8 +602,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="金属塑形Shape Metal" data-tags="变化 戏法(零环) 法师 奇械师 言语 姿势 GMB 炼金 岩土">
-    <td><A href="../第五章：施法规则/戏法(0环).html#金属塑形" >金属塑形Shape 
-      Metal</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#金属塑形">金属塑形Shape Metal</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>奇 法</TD>
@@ -613,19 +612,8 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>GMB</TD></tr>
-<tr data-spell="静谧步伐Silent Steps" data-tags="幻术 戏法(零环) 德鲁伊 法师 魔契师 奇械师 术士 姿势 专注 UAH 气尘 幻象">
-    <td><A href="../第五章：施法规则/戏法(0环).html#静谧步伐" >静谧步伐Silent Steps</A></TD>
-    <td>戏法</TD>
-    <td>幻术</TD>
-    <td>奇 德 术 法 锁</TD>
-    <td>×</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>UAH</TD></tr>
 <tr data-spell="碎石弹雨Stone Shower" data-tags="变化 戏法(零环) 法师 术士 言语 姿势 AK5e 岩土">
-    <td><A href="../第五章：施法规则/戏法(0环).html#碎石弹雨" >碎石弹雨Stone Shower</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#碎石弹雨">碎石弹雨Stone Shower</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -636,7 +624,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="风啸术Squall" data-tags="塑能 戏法(零环) 德鲁伊 术士 言语 姿势 GMB 气尘">
-    <td><A href="../第五章：施法规则/戏法(0环).html#风啸术" >风啸术Squall</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#风啸术">风啸术Squall</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>德 术</TD>
@@ -647,7 +635,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="分裂电击Splitting Shock" data-tags="咒法 戏法(零环) 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/戏法(0环).html#分裂电击" >分裂电击Splitting Shock</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#分裂电击">分裂电击Splitting Shock</A></TD>
     <td>戏法</TD>
     <td>咒法</TD>
     <td>奇 德 术 法 锁</TD>
@@ -658,7 +646,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="灵体烛焰Spirit Candles" data-tags="塑能 戏法(零环) 法师 魔契师 牧师 术士 吟游诗人 言语 姿势 材料 ES 光芒 烈火">
-    <td><A href="../第五章：施法规则/戏法(0环).html#灵体烛焰" >灵体烛焰Spirit Candles</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#灵体烛焰">灵体烛焰Spirit Candles</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>诗 牧 术 法 锁</TD>
@@ -669,8 +657,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="凝滞击Stasis Strike" data-tags="塑能 戏法(零环) 法师 辅助 魔契师 牧师 术士 吟游诗人 言语 姿势 ROH 预知 幻象">
-    <td><A href="../第五章：施法规则/戏法(0环).html#凝滞击" >凝滞击Stasis 
-      Strike</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#凝滞击">凝滞击Stasis Strike</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>诗 牧 术 法 锁</TD>
@@ -681,7 +668,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="魔刃Shadow Blade" data-tags="变化 戏法(零环) 圣武士 游侠 言语 姿势 材料 ROH 黯蚀 空间">
-    <td><A href="../第五章：施法规则/戏法(0环).html#魔刃" >魔刃Shadow Blade</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#魔刃">魔刃Shadow Blade</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>帕 软</TD>
@@ -703,7 +690,7 @@ function toggleVisibility() {
     <td>×</td>
     <td>ROH</td></tr>
 <tr data-spell="雷鸣脉冲Thundering Pulse" data-tags="咒法 戏法(零环) 法师 奇械师 术士 言语 姿势 ROH 雷电">
-    <td><A href="../第五章：施法规则/戏法(0环).html#雷鸣脉冲" >雷鸣脉冲Thundering Pulse</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#雷鸣脉冲">雷鸣脉冲Thundering Pulse</A></TD>
     <td>戏法</TD>
     <td>咒法</TD>
     <td>奇 术 法</TD>
@@ -714,7 +701,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="仇杀剑Vengeful Blade" data-tags="塑能 戏法(零环) 法师 魔契师 术士 言语 姿势 ILL 黯蚀">
-    <td><A href="../第五章：施法规则/戏法(0环).html#仇杀剑" >仇杀剑Vengeful Blade</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#仇杀剑">仇杀剑Vengeful Blade</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -725,7 +712,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ILL</TD></tr>
 <tr data-spell="温暖术Warmth" data-tags="塑能 戏法(零环) 德鲁伊 法师 牧师 奇械师 术士 吟游诗人 姿势 ES 自然 光芒 烈火">
-    <td><A href="../第五章：施法规则/戏法(0环).html#温暖术" >温暖术Warmth</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#温暖术">温暖术Warmth</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>奇 诗 牧 德 术 法</TD>
@@ -736,7 +723,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="衍射水流Water Diffraction" data-tags="塑能 戏法(零环) 德鲁伊 法师 奇械师 术士 言语 姿势 ROH 流水">
-    <td><A href="../第五章：施法规则/戏法(0环).html#衍射水流" >衍射水流Water Diffraction</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#衍射水流">衍射水流Water Diffraction</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>奇 德 术 法</TD>
@@ -747,7 +734,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷风刃Wind Blade" data-tags="咒法 戏法(零环) 德鲁伊 法师 术士 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/戏法(0环).html#迅捷风刃" >迅捷风刃Wind Blade</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#迅捷风刃">迅捷风刃Wind Blade</A></TD>
     <td>戏法</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -758,7 +745,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="乘风武器Windborne Weapon" data-tags="变化 戏法(零环) 德鲁伊 法师 术士 言语 姿势 材料 KGE 气尘 价耗">
-    <td><A href="../第五章：施法规则/戏法(0环).html#风刃" >乘风武器Windborne Weapon</A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#风刃">乘风武器Windborne Weapon</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -768,9 +755,8 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>KGE</TD></tr>
-<tr data-spell="风斩术Wind Slash"     data-tags="塑能 戏法(零环) 法师 术士 言语 姿势 AK5e 气尘">
-    <td><A href="../第五章：施法规则/戏法(0环).html#风斩术" ><spell 
-      >风斩术Wind Slash</spell></A></TD>
+<tr data-spell="风斩术Wind Slash" data-tags="塑能 戏法(零环) 法师 术士 言语 姿势 AK5e 气尘">
+    <td><A href="../第五章：施法规则/戏法(0环).html#风斩术"><spell>风斩术Wind Slash</spell></A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -781,8 +767,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="毒液侵蚀Venom" data-tags="死灵 戏法(零环) 法师 魔契师 术士 言语 姿势 ROH 酸毒">
-    <td><A href="../第五章：施法规则/戏法(0环).html#毒液侵蚀" ><spell 
-      >毒液侵蚀Venom</spell></A></TD>
+    <td><A href="../第五章：施法规则/戏法(0环).html#毒液侵蚀"><spell>毒液侵蚀Venom</spell></A></TD>
     <td>戏法</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -793,7 +778,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="吸收动能Absorb Kinetics" data-tags="防护 一环 奇械师 游侠 姿势 ROH 岩土">
-    <td><A href="../第五章：施法规则/1环.html#吸收动能" >吸收动能Absorb Kinetics</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#吸收动能">吸收动能Absorb Kinetics</A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>奇 软</TD>
@@ -804,8 +789,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸性护甲Acid Armour" data-tags="防护 一环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#酸性护甲" ><spell 
-      >酸性护甲Acid Armour</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#酸性护甲"><spell>酸性护甲Acid Armour</spell></A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>术 法</TD>
@@ -816,8 +800,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="酸液涂覆Acid Douse" data-tags="咒法 一环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#酸液涂覆" ><spell 
-      >酸液涂覆Acid Douse</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#酸液涂覆"><spell>酸液涂覆Acid Douse</spell></A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -828,7 +811,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="元素叱喝Alricor's Elemental Rebuke" data-tags="防护 一环 德鲁伊 法师 魔契师 奇械师 术士 术师 游侠 姿势 KGE 烈火 寒冰 流水 岩土 雷电 酸毒 深海">
-    <td><A href="../第五章：施法规则/1环.html#元素叱喝" >元素叱喝Alricor's Elemental Rebuke</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#元素叱喝">元素叱喝Alricor's Elemental Rebuke</A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>奇 德 软 术 法 锁</TD>
@@ -839,7 +822,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="极地吐息Arctic Breath" data-tags="咒法 一环 德鲁伊 法师 术士 言语 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#极地吐息" >极地吐息Arctic Breath</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#极地吐息">极地吐息Arctic Breath</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -850,7 +833,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="酸性气泡Acid Bubble" data-tags="咒法 一环 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#酸性气泡" >酸性气泡Acid Bubble</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#酸性气泡">酸性气泡Acid Bubble</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇 德 术 法 锁</TD>
@@ -861,7 +844,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="封锁术Lock Creature" data-tags="咒法 一环 辅助 奇械师 术师 言语 姿势 材料 专注 ROH 炼金 岩土">
-    <td><A href="../第五章：施法规则/1环.html#封锁术" >封锁术Lock Creature</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#封锁术">封锁术Lock Creature</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇</TD>
@@ -872,7 +855,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="腐化之血Bad Blood" data-tags="死灵 一环 德鲁伊 法师 魔契师 言语 姿势 材料 专注 KGE 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#腐化之血" >腐化之血Bad Blood</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#腐化之血">腐化之血Bad Blood</A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>德 法 锁</TD>
@@ -883,8 +866,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="腐蚀Corrode" data-tags="变化 一环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#腐蚀" ><spell 
-      >腐蚀Corrode</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#腐蚀"><spell>腐蚀Corrode</spell></A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -895,7 +877,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="寒流灵光Coldsnap" data-tags="塑能 一环 德鲁伊 姿势 专注 ES 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#寒流灵光" >寒流灵光Coldsnap</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#寒流灵光">寒流灵光Coldsnap</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德</TD>
@@ -906,7 +888,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="日冕灵光Corona" data-tags="塑能 一环 德鲁伊 言语 专注 ES 烈火">
-    <td><A href="../第五章：施法规则/1环.html#日冕灵光" >日冕灵光Corona</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#日冕灵光">日冕灵光Corona</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德</TD>
@@ -917,7 +899,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="治疗轻伤Cure Light Wounds" data-tags="塑能 一环 牧师 德鲁伊 言语 姿势 材料 ROH 光芒 流水 医疗">
-    <td><A href="../第五章：施法规则/1环.html#治疗轻伤" >治疗轻伤Cure Light Wounds</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#治疗轻伤">治疗轻伤Cure Light Wounds</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>牧 德</TD>
@@ -928,7 +910,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="创造深坑Create Pit" data-tags="变化 一环 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/1环.html#创造深坑" >创造深坑Create Pit</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#创造深坑">创造深坑Create Pit</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -939,7 +921,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="创造毒雾Create Poisonous" data-tags="死灵 一环 德鲁伊 法师 术士 言语 姿势 ROH 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#创造毒雾" >创造毒雾Create Poisonous</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#创造毒雾">创造毒雾Create Poisonous</A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>德 术 法</TD>
@@ -950,7 +932,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="雷鸣震荡Thunderous Burst" data-tags="塑能 一环 法师 奇械师 术士 言语 姿势 ROH 炼金 雷电 空间">
-    <td><A href="../第五章：施法规则/1环.html#雷鸣震荡" >雷鸣震荡Thunderous Burst</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#雷鸣震荡">雷鸣震荡Thunderous Burst</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 术 法</TD>
@@ -961,7 +943,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="浪涌冲击Crashing Wave" data-tags="咒法 一环 德鲁伊 法师 术士 言语 姿势 KGE 深海 流水">
-    <td><A href="../第五章：施法规则/1环.html#浪涌冲击" >浪涌冲击Crashing Wave</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#浪涌冲击">浪涌冲击Crashing Wave</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -972,7 +954,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="混乱风区Chaotic Zone" data-tags="塑能 一环 德鲁伊 游侠 言语 姿势 ROH 气尘">
-    <td><A href="../第五章：施法规则/1环.html#混乱风区" >混乱风区Chaotic Zone</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#混乱风区">混乱风区Chaotic Zone</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德 软</TD>
@@ -983,7 +965,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="离散波动Discrete Fluctuations" data-tags="塑能 一环 法师 奇械师 术士 术师 言语 姿势 ROH 空间">
-    <td><A href="../第五章：施法规则/1环.html#离散波动" >离散波动Discrete Fluctuations</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#离散波动">离散波动Discrete Fluctuations</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 术 法</TD>
@@ -994,7 +976,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="通电Electrify" data-tags="塑能 一环 德鲁伊 法师 奇械师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/1环.html#通电" >通电Electrify</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#通电">通电Electrify</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 德 术 法</TD>
@@ -1005,7 +987,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="元素法球Elemental Orb" data-tags="塑能 一环 法师 术士 术师 言语 姿势 KGE 气尘 酸毒 烈火 流水 雷电 岩土 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#元素法球" >元素法球Elemental Orb</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#元素法球">元素法球Elemental Orb</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1016,7 +998,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="元素斩Elemental Smite" data-tags="塑能 一环 法师 术士 言语 姿势 ROH 气尘 酸毒 烈火 雷电 岩土 寒冰 价耗 圣武士">
-    <td><A href="../第五章：施法规则/1环.html#元素斩" >元素斩Elemental Smite</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#元素斩">元素斩Elemental Smite</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>帕</TD>
@@ -1026,12 +1008,11 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></tr>
-<tr data-spell="坚拳术Firm Fist" data-tags="变化 一环 德鲁伊 游侠 言语 姿势 ROH 岩土">
-    <td><A href="../第五章：施法规则/1环.html#坚拳术" ><spell>坚拳术Firm 
-      Fist</spell></A></TD>
+<tr data-spell="坚拳术Firm Fist" data-tags="变化 一环 德鲁伊 游侠 圣武士 言语 姿势 ROH 岩土">
+    <td><A href="../第五章：施法规则/1环.html#坚拳术"><spell>坚拳术Firm Fist</spell></A></TD>
     <td>一环</TD>
     <td>变化</TD>
-    <td>德 软</TD>
+    <td>德 软 帕</TD>
     <td>V</TD>
     <td>S</TD>
     <td>×</TD>
@@ -1039,7 +1020,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="烽烟斩Fume Smite" data-tags="咒法 一环 德鲁伊 魔契师 游侠 言语 ROH 黯蚀 气尘">
-    <td><A href="../第五章：施法规则/1环.html#烽烟斩" >烽烟斩Fume Smite</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#烽烟斩">烽烟斩Fume Smite</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>德 软 锁</TD>
@@ -1050,7 +1031,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="疾风箭Gale Bolt" data-tags="塑能 一环 德鲁伊 法师 术士 游侠 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/1环.html#疾风箭" >疾风箭Gale Bolt</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#疾风箭">疾风箭Gale Bolt</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德 软 术 法</TD>
@@ -1061,7 +1042,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="治愈灵药Healing Elixir" data-tags="咒法 一环 奇械师 言语 姿势 材料 UA 流水 炼金 医疗">
-    <td><A href="../第五章：施法规则/1环.html#治愈灵药" >治愈灵药Healing Elixir</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#治愈灵药">治愈灵药Healing Elixir</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇</TD>
@@ -1072,7 +1053,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>UA</TD></tr>
 <tr data-spell="寒冰箭Ice Arrow" data-tags="塑能 一环 德鲁伊 法师 术士 言语 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#寒冰箭" >寒冰箭Ice Arrow</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#寒冰箭">寒冰箭Ice Arrow</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -1083,7 +1064,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="冰冻光束Ice Beam" data-tags="塑能 一环 法师 术士 言语 姿势 材料 ES 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#冰冻光束" >冰冻光束Ice Beam</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#冰冻光束">冰冻光束Ice Beam</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1094,8 +1075,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="冰盾术Ice Barrier" data-tags="咒法 一环 法师 术士 言语 姿势 AK5e 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#冰盾术" ><spell>冰障Ice 
-      Barrier</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#冰盾术"><spell>冰障Ice Barrier</spell></A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -1106,7 +1086,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="引燃以太Ignite Aether" data-tags="塑能 一环 法师 魔契师 姿势 专注 ES 光芒 烈火">
-    <td><A href="../第五章：施法规则/1环.html#引燃以太" >引燃以太Ignite Aether</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#引燃以太">引燃以太Ignite Aether</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>法 锁</TD>
@@ -1117,8 +1097,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="发射术Launch" data-tags="变化 一环 法师 术士 姿势 AK5e 气尘 空间">
-    <td><A href="../第五章：施法规则/1环.html#发射术" ><spell 
-      >发射术Launch</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#发射术"><spell>发射术Launch</spell></A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -1129,7 +1108,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="闪电卷须Lightning Tendril" data-tags="塑能 一环 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 材料 KGE 雷电">
-    <td><A href="../第五章：施法规则/1环.html#闪电卷须" >闪电卷须Lightning Tendril</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#闪电卷须">闪电卷须Lightning Tendril</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 德 术 法 锁</TD>
@@ -1140,8 +1119,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="雷电长矛Lightning Spear" data-tags="塑能 一环 法师 术士 言语 姿势 AK5e 雷电">
-    <td><A href="../第五章：施法规则/1环.html#雷电长矛" ><spell 
-      >雷电长矛Lightning Spear</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#雷电长矛"><spell>雷电长矛Lightning Spear</spell></A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1152,8 +1130,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="跃动电流Leaping Current" data-tags="塑能 一环 法师 术士 姿势 AK5e 雷电">
-    <td><A href="../第五章：施法规则/1环.html#跃动电流" ><spell 
-      >跃动电流Leaping Current</spell></A></TD>
+    <td><A href="../第五章：施法规则/1环.html#跃动电流"><spell>跃动电流Leaping Current</spell></A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1164,7 +1141,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="磁力牵引Magnet Pull" data-tags="变化 一环 德鲁伊 法师 奇械师 姿势 ES 雷电 空间">
-    <td><A href="../第五章：施法规则/1环.html#磁力牵引" >磁力牵引Magnet Pull</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#磁力牵引">磁力牵引Magnet Pull</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>奇 德 法</TD>
@@ -1175,7 +1152,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="溶解球Melting Glob" data-tags="咒法 一环 法师 魔契师 奇械师 术士 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/1环.html#溶解球" >溶解球Melting Glob</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#溶解球">溶解球Melting Glob</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇 术 法 锁</TD>
@@ -1186,7 +1163,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="秽毒打击Nauseating Poison" data-tags="死灵 一环 德鲁伊 魔契师 言语 姿势 KGE 黯蚀 酸毒 深海">
-    <td><A href="../第五章：施法规则/1环.html#秽毒打击" >秽毒打击Nauseating Poison</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#秽毒打击">秽毒打击Nauseating Poison</A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>德 锁</TD>
@@ -1197,7 +1174,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="黯蚀灵光Necrotic Aura" data-tags="塑能 一环 法师 术士 姿势 专注 ROH 黯蚀">
-    <td><A href="../第五章：施法规则/1环.html#黯蚀灵光" >黯蚀灵光Necrotic Aura</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#黯蚀灵光">黯蚀灵光Necrotic Aura</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1208,7 +1185,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="幻影斩Phantom Smite" data-tags="咒法 一环 德鲁伊 魔契师 游侠 言语 ROH 黯蚀 幻象">
-    <td><A href="../第五章：施法规则/1环.html#幻影斩" >幻影斩Phantom Smite</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#幻影斩">幻影斩Phantom Smite</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>德 软 锁</TD>
@@ -1219,7 +1196,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="岩石刺Rock Thorn" data-tags="变化 一环 德鲁伊 法师 奇械师 术士 言语 姿势 ROH 岩土">
-    <td><A href="../第五章：施法规则/1环.html#岩石刺" >岩石刺Rock Thorn</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#岩石刺">岩石刺Rock Thorn</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>奇 德 术 法</TD>
@@ -1230,7 +1207,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷闪雷Swift Lightning" data-tags="塑能 一环 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 ROH 雷电">
-    <td><A href="../第五章：施法规则/1环.html#迅捷闪雷" >迅捷闪雷Swift Lightning</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#迅捷闪雷">迅捷闪雷Swift Lightning</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 德 术 法 锁</TD>
@@ -1241,7 +1218,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="咒火闪焰Spellfire Flare" data-tags="塑能 一环 法师 术士 术师 言语 姿势 FR 烈火">
-    <td><A href="../第五章：施法规则/1环.html#咒火闪焰" >咒火闪焰Spellfire Flare</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#咒火闪焰">咒火闪焰Spellfire Flare</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1252,7 +1229,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="迅捷扰动Swift Disturbance" data-tags="塑能 一环 法师 术士 言语 姿势 ROH 空间">
-    <td><A href="../第五章：施法规则/1环.html#迅捷扰动" >迅捷扰动Swift Disturbance</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#迅捷扰动">迅捷扰动Swift Disturbance</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1263,7 +1240,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷激流Swift Torrent" data-tags="咒法 一环 德鲁伊 法师 奇械师 术士 言语 姿势 ROH 流水">
-    <td><A href="../第五章：施法规则/1环.html#迅捷激流" >迅捷激流Swift Torrent</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#迅捷激流">迅捷激流Swift Torrent</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇 德 术 法</TD>
@@ -1274,7 +1251,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="雪地术Snowfield" data-tags="咒法 一环 德鲁伊 法师 奇械师 言语 姿势 材料 ES 寒冰">
-    <td><A href="../第五章：施法规则/1环.html#雪地术" >雪地术Snowfield</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#雪地术">雪地术Snowfield</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>奇 德 法</TD>
@@ -1285,7 +1262,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="天火击Skyfire Burst" data-tags="塑能 一环 德鲁伊 法师 奇械师 术士 言语 姿势 ROH 烈火">
-    <td><A href="../第五章：施法规则/1环.html#天火击" >天火击Skyfire Burst</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#天火击">天火击Skyfire Burst</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 德 术 法</TD>
@@ -1296,7 +1273,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="触须附肢Tentacle Appendages" data-tags="变化 一环 魔契师 姿势 材料 专注 ROH 深海">
-    <td><A href="../第五章：施法规则/1环.html#触须附肢" >触须附肢Tentacle Appendages</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#触须附肢">触须附肢Tentacle Appendages</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>锁</TD>
@@ -1306,9 +1283,8 @@ function toggleVisibility() {
     <td>×</TD>
     <td>√</TD>
     <td>ROH</TD></tr>
-<tr data-spell="牵引斩Traction Smite"     data-tags="塑能 一环 德鲁伊 游侠 言语 ROH 空间">
-    <td><A href="../第五章：施法规则/1环.html#牵引斩" >牵引斩Traction 
-      Smite</A></TD>
+<tr data-spell="牵引斩Traction Smite" data-tags="塑能 一环 德鲁伊 游侠 言语 ROH 空间">
+    <td><A href="../第五章：施法规则/1环.html#牵引斩">牵引斩Traction Smite</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>德 软</TD>
@@ -1319,7 +1295,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="雷拳Thunder Punch" data-tags="塑能 一环 法师 术士 吟游诗人 游侠 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/1环.html#雷拳" >雷拳Thunder Punch</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#雷拳">雷拳Thunder Punch</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>诗 软 术 法</TD>
@@ -1330,7 +1306,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="惧怖呼号Fearful Warcry" data-tags="死灵 一环 魔契师 言语 材料 ROH 黯蚀 心魂 深海">
-    <td><A href="../第五章：施法规则/1环.html#惧怖呼号" >惧怖呼号Fearful Warcry</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#惧怖呼号">惧怖呼号Fearful Warcry</A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>锁</TD>
@@ -1341,7 +1317,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>DM</TD></tr>
 <tr data-spell="上升气流Violent Updraft" data-tags="变化 一环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/1环.html#上升气流" >上升气流Violent Updraft</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#上升气流">上升气流Violent Updraft</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1352,7 +1328,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="制敌术Wardaway" data-tags="防护 一环 法师 牧师 圣武士 吟游诗人 言语 姿势 材料 FR">
-    <td><A href="../第五章：施法规则/1环.html#制敌术" >制敌术Wardaway</A></TD>
+    <td><A href="../第五章：施法规则/1环.html#制敌术">制敌术Wardaway</A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>诗 牧 帕 法</TD>
@@ -1363,8 +1339,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="磨蚀之触Abrasive Touch" data-tags="塑能 二环 法师 术士 言语 姿势 AK5e 酸毒 深海">
-    <td><A href="../第五章：施法规则/2环.html#磨蚀之触" ><spell 
-      >磨蚀之触Abrasive Touch</spell></A></TD>
+    <td><A href="../第五章：施法规则/2环.html#磨蚀之触"><spell>磨蚀之触Abrasive Touch</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1375,7 +1350,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="灰烬之云Ash Cloud" data-tags="咒法 二环 德鲁伊 法师 奇械师 言语 姿势 材料 专注 ES 气尘">
-    <td><A href="../第五章：施法规则/2环.html#灰烬之云" >灰烬之云Ash Cloud</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#灰烬之云">灰烬之云Ash Cloud</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>奇 德 法</TD>
@@ -1386,7 +1361,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="化身火焰Become Fire" data-tags="变化 二环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 烈火">
-    <td><A href="../第五章：施法规则/2环.html#化身火焰" >化身火焰Become Fire</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身火焰">化身火焰Become Fire</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1397,7 +1372,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="化身闪电Become Lightning" data-tags="变化 二环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/2环.html#化身闪电" >化身闪电Become Lightning</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身闪电">化身闪电Become Lightning</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1408,7 +1383,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="化身寒冰Become Ice" data-tags="变化 二环 德鲁伊 法师 魔契师 术士 言语 姿势 ROH 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#化身寒冰" >化身寒冰Become Ice</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身寒冰">化身寒冰Become Ice</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1419,7 +1394,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="化身岩石Become Stone" data-tags="变化 二环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 岩土 女巫">
-    <td><A href="../第五章：施法规则/2环.html#化身岩石" >化身岩石Become Stone</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身岩石">化身岩石Become Stone</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1430,7 +1405,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="化身流水Become Water" data-tags="变化 二环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 流水">
-    <td><A href="../第五章：施法规则/2环.html#化身流水" >化身流水Become Water</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身流水">化身流水Become Water</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1441,7 +1416,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="化身烟雾Become Smoke" data-tags="变化 二环 德鲁伊 游侠 言语 姿势 ROH 气尘">
-    <td><A href="../第五章：施法规则/2环.html#化身烟雾" >化身烟雾Become Smoke</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#化身烟雾">化身烟雾Become Smoke</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 软</TD>
@@ -1452,7 +1427,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="造成失重Cause Weightlessness" data-tags="塑能 二环 德鲁伊 法师 术士 游侠 言语 姿势 材料 ROH 预知 空间 气尘">
-    <td><A href="../第五章：施法规则/2环.html#造成失重" >造成失重Cause Weightlessness</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#造成失重">造成失重Cause Weightlessness</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 软 术 法</TD>
@@ -1463,7 +1438,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="寒潮Cold Snap" data-tags="塑能 二环 法师 术士 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#寒潮" >寒潮Cold Snap</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#寒潮">寒潮Cold Snap</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1474,7 +1449,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="繁彩剑Chromatic Blade" data-tags="塑能 二环 德鲁伊 法师 术士 术师 言语 姿势 专注 GMB 酸毒 烈火 雷电 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#繁彩剑" >繁彩剑Chromatic Blade</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#繁彩剑">繁彩剑Chromatic Blade</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -1485,7 +1460,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="电击术Crackle" data-tags="塑能 二环 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/2环.html#电击术" >电击术Crackle</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#电击术">电击术Crackle</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>奇 德 术 法 锁</TD>
@@ -1496,7 +1471,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="蔽目斩Darken Smite" data-tags="死灵 二环 德鲁伊 魔契师 游侠 言语 ROH 黯蚀 空间">
-    <td><A href="../第五章：施法规则/2环.html#蔽目斩" >蔽目斩Darken Smite</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#蔽目斩">蔽目斩Darken Smite</A></TD>
     <td>二环</TD>
     <td>死灵</TD>
     <td>德 软 锁</TD>
@@ -1507,7 +1482,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="舞浪Dancing Wave" data-tags="咒法 二环 德鲁伊 法师 术士 言语 姿势 专注 KGE 流水">
-    <td><A href="../第五章：施法规则/2环.html#舞浪" >舞浪Dancing Wave</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#舞浪">舞浪Dancing Wave</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -1518,7 +1493,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="元素龙潮Dragon Surge" data-tags="变化 二环 术士 魔契师 法师 言语 姿势 KGE 烈火 寒冰 雷电 酸毒 术师">
-    <td><A href="../第五章：施法规则/2环.html#元素龙潮" >元素龙潮Dragon Surge</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#元素龙潮">元素龙潮Dragon Surge</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>术 法 锁</TD>
@@ -1529,7 +1504,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="尘土旋风Dust Cyclone" data-tags="咒法 二环 德鲁伊 法师 术士 游侠 言语 姿势 材料 专注 KGE 气尘">
-    <td><A href="../第五章：施法规则/2环.html#尘土旋风" >尘土旋风Dust Cyclone</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#尘土旋风">尘土旋风Dust Cyclone</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德 软 术 法</TD>
@@ -1540,7 +1515,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="坚定神智Determined" data-tags="变化 二环 德鲁伊 法师 辅助 牧师 医疗 吟游诗人 言语 姿势 专注 ROH 光芒">
-    <td><A href="../第五章：施法规则/2环.html#坚定神智" >坚定神智Determined</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#坚定神智">坚定神智Determined</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>诗 牧 德 法</TD>
@@ -1551,7 +1526,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="扰乱心智Disrupt Mind" data-tags="惑控 二环 法师 魔契师 牧师 术士 言语 姿势 专注 GMB 黯蚀 心魂 酸毒 深海 雷电 预知 幻象">
-    <td><A href="../第五章：施法规则/2环.html#扰乱心智" >扰乱心智Disrupt Mind</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#扰乱心智">扰乱心智Disrupt Mind</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>牧 术 锁 法</TD>
@@ -1562,7 +1537,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="命运之灾Doom of Destiny" data-tags="惑控 二环 法师 牧师 言语 姿势 材料 专注 DM 黯蚀 心魂 酸毒 深海 预知 幻象">
-    <td><A href="../第五章：施法规则/2环.html#命运之灾" >命运之灾Doom of Destiny</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#命运之灾">命运之灾Doom of Destiny</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>牧 法</TD>
@@ -1573,7 +1548,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="地涌术Earth Ripple" data-tags="变化 二环 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/2环.html#地涌术" >地涌术Earth Ripple</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#地涌术">地涌术Earth Ripple</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -1584,7 +1559,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="电能武装Electric Armaments" data-tags="变化 二环 法师 奇械师 圣武士 游侠 言语 姿势 材料 专注 ES 雷电">
-    <td><A href="../第五章：施法规则/2环.html#电能武装" >电能武装Electric Armaments</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#电能武装">电能武装Electric Armaments</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>奇 帕 软 法</TD>
@@ -1595,7 +1570,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="以太焚烧Ethereal Immolation" data-tags="塑能 二环 术士 言语 姿势 专注 KGE 烈火">
-    <td><A href="../第五章：施法规则/2环.html#以太焚烧" >以太焚烧Ethereal Immolation</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#以太焚烧">以太焚烧Ethereal Immolation</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术</TD>
@@ -1617,7 +1592,7 @@ function toggleVisibility() {
     <td>×</td>
     <td>ROH</td></tr>
 <tr data-spell="冰冻射线Freezing Ray" data-tags="塑能 二环 德鲁伊 法师 术士 言语 姿势 GMB 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#冰冻射线" >冰冻射线Freezing Ray</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#冰冻射线">冰冻射线Freezing Ray</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -1628,8 +1603,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="激能Galvanise" data-tags="塑能 二环 法师 术士 言语 姿势 AK5e">
-    <td><A href="../第五章：施法规则/2环.html#激能" ><spell 
-      >激能Galvanise</spell></A></TD>
+    <td><A href="../第五章：施法规则/2环.html#激能"><spell>激能Galvanise</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1640,7 +1614,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="重力扬升Gravity Lift" data-tags="变化 二环 法师 术士 言语 姿势 专注 ROH 空间 气尘">
-    <td><A href="../第五章：施法规则/2环.html#重力扬升" >重力扬升Gravity Lift</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#重力扬升">重力扬升Gravity Lift</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -1651,7 +1625,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="飓风切割Hurricane Slash" data-tags="塑能 二环 德鲁伊 法师 术士 游侠 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/2环.html#飓风切割" >飓风切割Hurricane Slash</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#飓风切割">飓风切割Hurricane Slash</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 软 术 法</TD>
@@ -1662,7 +1636,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="寒冰缠足Ice Footbind" data-tags="咒法 二环 德鲁伊 法师 魔契师 术士 言语 姿势 材料 专注 ROH 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#寒冰缠足" >寒冰缠足Ice Footbind</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#寒冰缠足">寒冰缠足Ice Footbind</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德 术 法 锁</TD>
@@ -1673,8 +1647,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="冰层术Ice Sheet" data-tags="咒法 二环 法师 术士 言语 姿势 AK5e 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#冰层术" ><spell>冰层术Ice 
-      Sheet</spell></A></TD>
+    <td><A href="../第五章：施法规则/2环.html#冰层术"><spell>冰层术Ice Sheet</spell></A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -1685,7 +1658,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="球状闪电Lightning Ball" data-tags="咒法 二环 德鲁伊 法师 奇械师 术士 言语 姿势 材料 GMB 雷电">
-    <td><A href="../第五章：施法规则/2环.html#球状闪电" >球状闪电Lightning Ball</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#球状闪电">球状闪电Lightning Ball</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>奇 德 术 法</TD>
@@ -1696,7 +1669,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="雷电充能Lighthing Charged" data-tags="塑能 二环 奇械师 言语 姿势 材料 KGE 雷电">
-    <td><A href="../第五章：施法规则/2环.html#雷电充能" >雷电充能Lighthing Charged</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#雷电充能">雷电充能Lighthing Charged</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>奇</TD>
@@ -1707,8 +1680,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="融蚀地雷Melting Mine" data-tags="咒法 二环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/2环.html#融蚀地雷" ><spell 
-      >融蚀地雷Melting Mine</spell></A></TD>
+    <td><A href="../第五章：施法规则/2环.html#融蚀地雷"><spell>融蚀地雷Melting Mine</spell></A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -1719,7 +1691,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="毒镖术Poison Dart" data-tags="变化 二环 法师 魔契师 奇械师 术士 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/2环.html#毒镖术" >毒镖术Poison Dart</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#毒镖术">毒镖术Poison Dart</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>奇 术 法 锁</TD>
@@ -1730,7 +1702,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="伪足猛击Pseudopod Slam" data-tags="咒法 二环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 酸毒 深海 女巫">
-    <td><A href="../第五章：施法规则/2环.html#伪足猛击" >伪足猛击Pseudopod Slam</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#伪足猛击">伪足猛击Pseudopod Slam</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德 术 法 锁</TD>
@@ -1741,7 +1713,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="追踪法球Seeking Orb" data-tags="塑能 二环 术士 法师 言语 姿势 专注 KGE 空间 术师">
-    <td><A href="../第五章：施法规则/2环.html#追踪法球" >追踪法球Seeking Orb</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#追踪法球">追踪法球Seeking Orb</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1752,7 +1724,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="破碎冰盾Shattering Shield" data-tags="塑能 二环 法师 术士 言语 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#破碎冰盾" >破碎冰盾Shattering Shield</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#破碎冰盾">破碎冰盾Shattering Shield</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1762,9 +1734,8 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>KGE</TD></tr>
-<tr data-spell="急冻术Snap Freeze"     data-tags="塑能 二环 法师 术士 言语 姿势 AK5e 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#急冻术" ><spell 
-      >急冻术Snap Freeze</spell></A></TD>
+<tr data-spell="急冻术Snap Freeze" data-tags="塑能 二环 法师 术士 言语 姿势 AK5e 寒冰">
+    <td><A href="../第五章：施法规则/2环.html#急冻术"><spell>急冻术Snap Freeze</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1775,7 +1746,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="雪球术Snowball" data-tags="咒法 二环 德鲁伊 姿势 材料 专注 ES 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#雪球术" >雪球术Snowball</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#雪球术">雪球术Snowball</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德</TD>
@@ -1786,7 +1757,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="星尘Star Dust" data-tags="塑能 二环 法师 辅助 术士 术师 言语 姿势 KGE 光芒">
-    <td><A href="../第五章：施法规则/2环.html#星尘" >星尘Star Dust</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#星尘">星尘Star Dust</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1797,7 +1768,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="岩石矛钉Stone Pike" data-tags="咒法 二环 德鲁伊 法师 游侠 言语 姿势 ROH 岩土">
-    <td><A href="../第五章：施法规则/2环.html#岩石矛钉" >岩石矛钉Stone Pike</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#岩石矛钉">岩石矛钉Stone Pike</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>德 软 法</TD>
@@ -1808,7 +1779,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="静心魂魄Spirit Balm" data-tags="咒法 二环 德鲁伊 牧师 医疗 游侠 言语 姿势 DM 心魂">
-    <td><A href="../第五章：施法规则/2环.html#静心魂魄" >静心魂魄Spirit Balm</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#静心魂魄">静心魂魄Spirit Balm</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>牧 德 软</TD>
@@ -1819,7 +1790,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>DM</TD></tr>
 <tr data-spell="迅捷冰刃Swift Icebolt" data-tags="塑能 二环 德鲁伊 法师 术士 游侠 言语 姿势 材料 ROH 寒冰">
-    <td><A href="../第五章：施法规则/2环.html#迅捷冰刃" >迅捷冰刃Swift Icebolt</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#迅捷冰刃">迅捷冰刃Swift Icebolt</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 软 术 法</TD>
@@ -1830,7 +1801,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷保护Swift Protection" data-tags="塑能 二环 德鲁伊 法师 辅助 术士 游侠 言语 姿势 材料 ROH 岩土 牧师 圣武士">
-    <td><A href="../第五章：施法规则/2环.html#迅捷保护" >迅捷保护Swift Protection</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#迅捷保护">迅捷保护Swift Protection</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 软 术 法 牧 帕</TD>
@@ -1841,7 +1812,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="触手侵蚀Tentacle Erosion" data-tags="咒法 二环 魔契师 言语 ROH 酸毒 深海">
-    <td><A href="../第五章：施法规则/2环.html#触手侵蚀" >触手侵蚀Tentacle Erosion</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#触手侵蚀">触手侵蚀Tentacle Erosion</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>锁</TD>
@@ -1852,7 +1823,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="雷霆脉冲Thunder Pulse" data-tags="塑能 二环 法师 奇械师 术士 吟游诗人 言语 姿势 专注 KGE 雷电">
-    <td><A href="../第五章：施法规则/2环.html#雷霆脉冲" >雷霆脉冲Thunder Pulse</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#雷霆脉冲">雷霆脉冲Thunder Pulse</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>奇 诗 术 法</TD>
@@ -1863,7 +1834,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="突发起爆Unstable Explosion" data-tags="塑能 二环 法师 魔契师 术士 言语 姿势 KGE 烈火">
-    <td><A href="../第五章：施法规则/2环.html#突发起爆" >突发起爆Unstable Explosion</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#突发起爆">突发起爆Unstable Explosion</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -1874,7 +1845,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="顽石覆身Rock Covered" data-tags="变化 二环 德鲁伊 法师 魔契师 奇械师 术士 姿势 材料 专注 ROH 岩土">
-    <td><A href="../第五章：施法规则/2环.html#顽石覆身" >顽石覆身Rock Covered</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#顽石覆身">顽石覆身Rock Covered</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>奇 德 术 法 锁</TD>
@@ -1885,7 +1856,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="真空抽取Vacuum Pull" data-tags="塑能 二环 德鲁伊 法师 术士 游侠 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/2环.html#真空抽取" >真空抽取Vacuum Pull</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#真空抽取">真空抽取Vacuum Pull</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>德 软 术 法</TD>
@@ -1896,7 +1867,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="恶毒雾气Vicious Vapors" data-tags="变化 二环 德鲁伊 法师 魔契师 奇械师 言语 姿势 专注 KGE 气尘 酸毒">
-    <td><A href="../第五章：施法规则/2环.html#恶毒雾气" >恶毒雾气Vicious Vapors</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#恶毒雾气">恶毒雾气Vicious Vapors</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>奇 德 法 锁</TD>
@@ -1907,8 +1878,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="水脉冲击WaterPulse" data-tags="塑能 二环 法师 术士 言语 姿势 AK5e 流水">
-    <td><A href="../第五章：施法规则/2环.html#水脉冲击" ><spell 
-      >水脉冲击Water Pulse</spell></A></TD>
+    <td><A href="../第五章：施法规则/2环.html#水脉冲击"><spell>水脉冲击Water Pulse</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1919,7 +1889,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="水盾Water Shield" data-tags="防护 二环 德鲁伊 奇械师 术士 言语 姿势 材料 ROH 流水">
-    <td><A href="../第五章：施法规则/2环.html#水盾" >水盾Water Shield</A></TD>
+    <td><A href="../第五章：施法规则/2环.html#水盾">水盾Water Shield</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>奇 德 术</TD>
@@ -1930,7 +1900,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸性深坑Acidic Pit" data-tags="塑能 三环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#酸性深坑" >酸性深坑Acidic Pit</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#酸性深坑">酸性深坑Acidic Pit</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 术 法 锁</TD>
@@ -1941,7 +1911,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="艾德的獠牙Adder's Fangs" data-tags="咒法 三环 德鲁伊 魔契师 术士 游侠 言语 姿势 材料 GMB 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#艾德的獠牙Adder'" >艾德的獠牙Adder's Fangs</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#艾德的獠牙Adder'">艾德的獠牙Adder's Fangs</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 软 术 锁</TD>
@@ -1952,8 +1922,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="阿兰托夫的冰霜狂风Arantov's Frozen Gale" data-tags="咒法 三环 德鲁伊 法师 术士 言语 姿势 材料 GMB 寒冰">
-    <td><A href="../第五章：施法规则/3环.html#阿兰托夫的冰霜狂风Arantov'" >阿兰托夫的冰霜狂风Arantov's 
-      Frozen Gale</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#阿兰托夫的冰霜狂风Arantov'">阿兰托夫的冰霜狂风Arantov's Frozen Gale</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -1964,7 +1933,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="光芒之箭Arrow of Light" data-tags="变化 三环 牧师 圣武士 游侠 言语 姿势 专注 ROH 光芒">
-    <td><A href="../第五章：施法规则/3环.html#光芒之箭" >光芒之箭Arrow of Light</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#光芒之箭">光芒之箭Arrow of Light</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>牧 帕 软</TD>
@@ -1975,7 +1944,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="以太长枪Aether Lance" data-tags="塑能 三环 术士 法师 言语 姿势 KGE 空间 术师">
-    <td><A href="../第五章：施法规则/3环.html#以太长枪" >以太长枪Aether Lance</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#以太长枪">以太长枪Aether Lance</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -1986,7 +1955,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="极地寒气Arctic Aura" data-tags="变化 三环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 寒冰">
-    <td><A href="../第五章：施法规则/3环.html#极地寒气" >极地寒气Arctic Aura</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#极地寒气">极地寒气Arctic Aura</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -1997,7 +1966,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="治疗重伤Cure Serious Wounds" data-tags="防护 三环 牧师 德鲁伊 言语 姿势 材料 ROH 光芒 流水 医疗">
-    <td><A href="../第五章：施法规则/3环.html#治疗重伤" >治疗重伤Cure Serious Wounds</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#治疗重伤">治疗重伤Cure Serious Wounds</A></TD>
     <td>三环</TD>
     <td>防护</TD>
     <td>牧 德</TD>
@@ -2008,7 +1977,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="破坏射线Destruction Ray" data-tags="塑能 三环 术士 魔契师 法师 言语 姿势 材料 ROH 空间 术师">
-    <td><A href="../第五章：施法规则/3环.html#破坏射线" >破坏射线Destruction Ray</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#破坏射线">破坏射线Destruction Ray</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -2019,7 +1988,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="元素风暴Elemental Strom" data-tags="咒法 三环 德鲁伊 术士 法师 言语 姿势 材料 ROH 烈火 寒冰 雷电 酸毒 辅助 术师 医疗">
-    <td><A href="../第五章：施法规则/3环.html#元素风暴" >元素风暴Elemental Strom</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#元素风暴">元素风暴Elemental Strom</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2030,7 +1999,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="苍梦树冠Dream Canopy" data-tags="幻术 三环 德鲁伊 游侠 言语 姿势 专注 DM 自然">
-    <td><A href="../第五章：施法规则/3环.html#苍梦树冠" >苍梦树冠Dream Canopy</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#苍梦树冠">苍梦树冠Dream Canopy</A></TD>
     <td>三环</TD>
     <td>幻术</TD>
     <td>德 软</TD>
@@ -2041,7 +2010,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="电刑Electrocute" data-tags="塑能 三环 法师 奇械师 术师 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/3环.html#电刑" >电刑Electrocute</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#电刑">电刑Electrocute</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>奇 法</TD>
@@ -2052,7 +2021,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="酸蚀Erode" data-tags="塑能 三环 法师 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#酸蚀" >酸蚀Erode</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#酸蚀">酸蚀Erode</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>法</TD>
@@ -2063,7 +2032,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="火焰旋风Fire Cyclone" data-tags="咒法 三环 德鲁伊 法师 术士 言语 姿势 材料 专注 KGE 烈火">
-    <td><A href="../第五章：施法规则/3环.html#火焰旋风" >火焰旋风Fire Cyclone</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#火焰旋风">火焰旋风Fire Cyclone</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2074,7 +2043,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="炽焰喷涌Flamethrower" data-tags="塑能 三环 法师 魔契师 术士 言语 姿势 材料 专注 KGE 烈火">
-    <td><A href="../第五章：施法规则/3环.html#炽焰喷涌" >炽焰喷涌Flamethrower</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#炽焰喷涌">炽焰喷涌Flamethrower</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -2085,7 +2054,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="灼燃爆Explosive Burnt" data-tags="塑能 三环 法师 术士 言语 姿势 专注 ROH 烈火">
-    <td><A href="../第五章：施法规则/3环.html#灼燃爆" >灼燃爆Explosive Burnt</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#灼燃爆">灼燃爆Explosive Burnt</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2096,7 +2065,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="急速冷冻Flash Freeze" data-tags="塑能 三环 德鲁伊 法师 术士 言语 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/3环.html#急速冷冻" >急速冷冻Flash Freeze</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#急速冷冻">急速冷冻Flash Freeze</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -2107,7 +2076,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="冰障术Frigid Barrier" data-tags="咒法 三环 法师 言语 姿势 材料 专注 ES 寒冰">
-    <td><A href="../第五章：施法规则/3环.html#冰障术" >冰障术Frigid Barrier</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#冰障术">冰障术Frigid Barrier</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -2118,7 +2087,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="热源干扰Heat Shimmer" data-tags="幻术 三环 德鲁伊 法师 奇械师 言语 姿势 材料 专注 ES 烈火">
-    <td><A href="../第五章：施法规则/3环.html#热源干扰" >热源干扰Heat Shimmer</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#热源干扰">热源干扰Heat Shimmer</A></TD>
     <td>三环</TD>
     <td>幻术</TD>
     <td>奇 德 法</TD>
@@ -2129,7 +2098,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="催眠火纹Hypnotic Flame" data-tags="惑控 三环 法师 魔契师 术士 吟游诗人 姿势 专注 ES 心魂 烈火 幻象">
-    <td><A href="../第五章：施法规则/3环.html#催眠火纹" >催眠火纹Hypnotic Flame</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#催眠火纹">催眠火纹Hypnotic Flame</A></TD>
     <td>三环</TD>
     <td>惑控</TD>
     <td>诗 术 法 锁</TD>
@@ -2140,7 +2109,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="瞬时起爆Instant Denotion" data-tags="塑能 三环 法师 魔契师 术士 吟游诗人 言语 姿势 ES 烈火 雷电">
-    <td><A href="../第五章：施法规则/3环.html#瞬时起爆" >瞬时起爆Instant Denotion</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#瞬时起爆">瞬时起爆Instant Denotion</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>诗 术 法 锁</TD>
@@ -2151,7 +2120,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="冰水牢笼Ice Water Cage" data-tags="塑能 三环 德鲁伊 法师 言语 姿势 专注 ROH 深海 流水">
-    <td><A href="../第五章：施法规则/3环.html#冰水牢笼" >冰水牢笼Ice Water Cage</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#冰水牢笼">冰水牢笼Ice Water Cage</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 法</TD>
@@ -2162,7 +2131,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="土阵壁Instant Bulwark" data-tags="变化 三环 德鲁伊 法师 奇械师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/3环.html#土阵壁" >土阵壁Instant Bulwark</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#土阵壁">土阵壁Instant Bulwark</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>奇 德 术 法</TD>
@@ -2173,8 +2142,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="冰锥坠击Icicle Crash" data-tags="咒法 三环 法师 术士 言语 姿势 AK5e 寒冰">
-    <td><A href="../第五章：施法规则/3环.html#冰锥坠击" ><spell 
-      >冰锥坠击Icicle Crash</spell></A></TD>
+    <td><A href="../第五章：施法规则/3环.html#冰锥坠击"><spell>冰锥坠击Icicle Crash</spell></A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -2185,7 +2153,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="闪电之跃Lightning Leap" data-tags="塑能 三环 术士 言语 姿势 ES 雷电 空间">
-    <td><A href="../第五章：施法规则/3环.html#闪电之跃" >闪电之跃Lightning Leap</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#闪电之跃">闪电之跃Lightning Leap</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术</TD>
@@ -2196,8 +2164,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="飞弹屏障Missile Barrier" data-tags="塑能 三环 法师 术士 言语 姿势 AK5e 空间">
-    <td><A href="../第五章：施法规则/3环.html#飞弹屏障" ><spell 
-      >飞弹屏障Missile Barrier</spell></A></TD>
+    <td><A href="../第五章：施法规则/3环.html#飞弹屏障"><spell>飞弹屏障Missile Barrier</spell></A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2208,8 +2175,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="融蚀迷雾Melting Mist" data-tags="咒法 三环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#融蚀迷雾" ><spell 
-      >融蚀迷雾Melting Mist</spell></A></TD>
+    <td><A href="../第五章：施法规则/3环.html#融蚀迷雾"><spell>融蚀迷雾Melting Mist</spell></A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -2220,7 +2186,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="月华之刃Moon Blade" data-tags="塑能 三环 法师 魔契师 术士 言语 姿势 材料 专注 DM 气尘 光芒">
-    <td><A href="../第五章：施法规则/3环.html#月华之刃" >月华之刃Moon Blade</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#月华之刃">月华之刃Moon Blade</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -2231,7 +2197,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="夜幕降临Nightfall" data-tags="塑能 三环 德鲁伊 魔契师 牧师 言语 姿势 专注 仪式 DM 黯蚀 深海">
-    <td><A href="../第五章：施法规则/3环.html#夜幕降临" >夜幕降临Nightfall</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#夜幕降临">夜幕降临Nightfall</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 德 锁</TD>
@@ -2242,7 +2208,7 @@ function toggleVisibility() {
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="洞烛先见Opportunistic Foresight" data-tags="预言 三环 法师 辅助 魔契师 术士 吟游诗人 言语 姿势 专注 DM 光芒 流水 预知">
-    <td><A href="../第五章：施法规则/3环.html#洞烛先见" >洞烛先见Opportunistic 
+    <td><A href="../第五章：施法规则/3环.html#洞烛先见">洞烛先见Opportunistic 
 Foresight</A></TD>
     <td>三环</TD>
     <td>预言</TD>
@@ -2254,7 +2220,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="流沙术Quick Sand" data-tags="变化 三环 德鲁伊 法师 术士 言语 姿势 材料 专注 KGE 气尘 岩土">
-    <td><A href="../第五章：施法规则/3环.html#流沙术" >流沙术Quick Sand</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#流沙术">流沙术Quick Sand</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -2265,7 +2231,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="复原真言Restoration Mantra" data-tags="防护 三环 牧师 德鲁伊 言语 姿势 ROH 光芒 流水 医疗">
-    <td><A href="../第五章：施法规则/3环.html#复原真言" >复原真言Restoration Mantra</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#复原真言">复原真言Restoration Mantra</A></TD>
     <td>三环</TD>
     <td>防护</TD>
     <td>牧 德</TD>
@@ -2276,7 +2242,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="蔓延毒雾Spreading Poisonous" data-tags="死灵 三环 法师 术士 吟游诗人 言语 姿势 专注 ROH 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#蔓延毒雾" >蔓延毒雾Spreading Poisonous</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#蔓延毒雾">蔓延毒雾Spreading Poisonous</A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>诗 术 法</TD>
@@ -2287,7 +2253,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="震慑术Stunning" data-tags="塑能 三环 法师 术士 术师 特种 吟游诗人 言语 姿势 ROH 气尘 炼金 雷电 岩土 空间">
-    <td><A href="../第五章：施法规则/3环.html#震慑术" >震慑术Stunning</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#震慑术">震慑术Stunning</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>诗 术 法</TD>
@@ -2298,7 +2264,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="耀变星芒Shinning Blazar" data-tags="塑能 三环 法师 牧师 言语 姿势 ROH 光芒">
-    <td><A href="../第五章：施法规则/3环.html#耀变星芒" >耀变星芒Shinning Blazar</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#耀变星芒">耀变星芒Shinning Blazar</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 法</TD>
@@ -2309,7 +2275,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="震荡冲击Shock Impact" data-tags="塑能 三环 法师 奇械师 术士 术师 言语 姿势 KGE 气尘 雷电">
-    <td><A href="../第五章：施法规则/3环.html#震荡冲击" >震荡冲击Shock Impact</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#震荡冲击">震荡冲击Shock Impact</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>奇 术 法</TD>
@@ -2320,7 +2286,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="迅捷爆焰Swift Blaze" data-tags="塑能 三环 德鲁伊 术士 游侠 言语 姿势 ROH 烈火">
-    <td><A href="../第五章：施法规则/3环.html#迅捷爆焰" >迅捷爆焰Swift Blaze</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#迅捷爆焰">迅捷爆焰Swift Blaze</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 软 术</TD>
@@ -2331,7 +2297,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷圣光Swift Holylight" data-tags="塑能 三环 牧师 圣武士 言语 姿势 ROH 光芒">
-    <td><A href="../第五章：施法规则/3环.html#迅捷圣光" >迅捷圣光Swift Holylight</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#迅捷圣光">迅捷圣光Swift Holylight</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 帕</TD>
@@ -2342,7 +2308,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="迅捷洪流Swift Torrent" data-tags="塑能 三环 德鲁伊 术士 游侠 言语 姿势 ROH 流水">
-    <td><A href="../第五章：施法规则/3环.html#迅捷洪流" >迅捷洪流Swift Torrent</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#迅捷洪流">迅捷洪流Swift Torrent</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 软 术</TD>
@@ -2353,7 +2319,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="地震波Seismic Wave" data-tags="变化 三环 德鲁伊 法师 奇械师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/3环.html#地震波" >地震波Seismic Wave</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#地震波">地震波Seismic Wave</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>奇 德 术 法</TD>
@@ -2364,7 +2330,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="蛛咬术Spider Bite" data-tags="变化 三环 德鲁伊 法师 魔契师 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#蛛咬术" >蛛咬术Spider Bite</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#蛛咬术">蛛咬术Spider Bite</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>德 法 锁</TD>
@@ -2375,7 +2341,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="静电场Static Field" data-tags="变化 三环 法师 魔契师 奇械师 术士 言语 姿势 专注 KGE 雷电">
-    <td><A href="../第五章：施法规则/3环.html#静电场" >静电场Static Field</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#静电场">静电场Static Field</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>奇 术 法 锁</TD>
@@ -2386,7 +2352,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="硝烟震爆Smoke Explosion" data-tags="咒法 三环 德鲁伊 法师 术士 吟游诗人 言语 姿势 专注 ROH 气尘">
-    <td><A href="../第五章：施法规则/3环.html#硝烟震爆" >硝烟震爆Smoke Explosion</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#硝烟震爆">硝烟震爆Smoke Explosion</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>诗 德 术 法</TD>
@@ -2408,7 +2374,7 @@ Foresight</A></TD>
     <td>×</td>
     <td>AK5e</td></tr>
 <tr data-spell="雷鸣爆破Thunderous Blast" data-tags="咒法 三环 德鲁伊 法师 术士 吟游诗人 言语 姿势 GMB 雷电">
-    <td><A href="../第五章：施法规则/3环.html#雷鸣爆破" >雷鸣爆破Thunderous Blast</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#雷鸣爆破">雷鸣爆破Thunderous Blast</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>诗 德 术 法</TD>
@@ -2418,19 +2384,8 @@ Foresight</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>GMB</TD></tr>
-<tr data-spell="勇气诗篇Tale of Courage" data-tags="幻术 三环 吟游诗人 言语 姿势 专注 UAH 心魂">
-    <td><A href="../第五章：施法规则/3环.html#勇气诗篇" >勇气诗篇Tale of Courage</A></TD>
-    <td>三环</TD>
-    <td>幻术</TD>
-    <td>诗</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>UAH</TD></tr>
 <tr data-spell="失活之触Touch of The Unliving" data-tags="死灵 三环 法师 魔契师 牧师 术士 言语 姿势 专注 DM 黯蚀 深海">
-    <td><A href="../第五章：施法规则/3环.html#失活之触" >失活之触Touch of The Unliving</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#失活之触">失活之触Touch of The Unliving</A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>牧 术 法 锁</TD>
@@ -2441,7 +2396,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="涡流爆裂Vortex Blast" data-tags="塑能 三环 德鲁伊 法师 术士 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/3环.html#涡流爆裂" >涡流爆裂Vortex Blast</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#涡流爆裂">涡流爆裂Vortex Blast</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -2451,9 +2406,8 @@ Foresight</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>KGE</TD></tr>
-<tr data-spell="复仇斩Vengeful Smite"     data-tags="死灵 三环 圣武士 言语 ROH 黯蚀">
-    <td><A href="../第五章：施法规则/3环.html#复仇斩" >复仇斩Vengeful 
-      Smite</A></TD>
+<tr data-spell="复仇斩Vengeful Smite" data-tags="死灵 三环 圣武士 言语 ROH 黯蚀">
+    <td><A href="../第五章：施法规则/3环.html#复仇斩">复仇斩Vengeful Smite</A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>帕</TD>
@@ -2464,7 +2418,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="虚空打击Void Strike" data-tags="塑能 三环 法师 言语 姿势 专注 DM 黯蚀">
-    <td><A href="../第五章：施法规则/3环.html#虚空打击" >虚空打击Void Strike</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#虚空打击">虚空打击Void Strike</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>法</TD>
@@ -2475,7 +2429,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>DM</TD></tr>
 <tr data-spell="蜂群术Wasp Barrage" data-tags="咒法 三环 德鲁伊 法师 魔契师 术士 游侠 言语 姿势 KGE 酸毒">
-    <td><A href="../第五章：施法规则/3环.html#蜂群术" >蜂群术Wasp Barrage</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#蜂群术">蜂群术Wasp Barrage</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 软 术 法 锁</TD>
@@ -2486,7 +2440,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="水炮Water Cannon" data-tags="塑能 三环 德鲁伊 法师 术士 言语 姿势 KGE 流水">
-    <td><A href="../第五章：施法规则/3环.html#水炮" >水炮Water Cannon</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#水炮">水炮Water Cannon</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -2497,7 +2451,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="水龙卷Waterspout" data-tags="咒法 三环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 深海 流水">
-    <td><A href="../第五章：施法规则/3环.html#水龙卷" >水龙卷Waterspout</A></TD>
+    <td><A href="../第五章：施法规则/3环.html#水龙卷">水龙卷Waterspout</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 术 法 锁</TD>
@@ -2508,8 +2462,7 @@ Foresight</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="酸液波涛AcidWave" data-tags="咒法 四环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/4环.html#酸液波涛" ><spell 
-      >酸液波涛Acid Wave</spell></A></TD>
+    <td><A href="../第五章：施法规则/4环.html#酸液波涛"><spell>酸液波涛Acid Wave</spell></A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -2520,7 +2473,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="气流弹雨Aero Barrage" data-tags="变化 四环 法师 术士 言语 姿势 KGE 气尘">
-    <td><A href="../第五章：施法规则/4环.html#气流弹雨" >气流弹雨Aero Barrage</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#气流弹雨">气流弹雨Aero Barrage</A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -2531,7 +2484,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="极光爆发Aurora Burst" data-tags="塑能 四环 法师 牧师 术士 言语 姿势 ROH 光芒">
-    <td><A href="../第五章：施法规则/4环.html#极光爆发" >极光爆发Aurora Burst</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#极光爆发">极光爆发Aurora Burst</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>牧 术 法</TD>
@@ -2542,7 +2495,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="破邪击Baneslayer Lance" data-tags="塑能 四环 牧师 圣武士 言语 姿势 ROH 雷电">
-    <td><A href="../第五章：施法规则/4环.html#破邪击" >破邪击Baneslayer Lance</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#破邪击">破邪击Baneslayer Lance</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>牧 帕</TD>
@@ -2553,7 +2506,7 @@ Foresight</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="毕格比行空手Bigby's Flying Hand" data-tags="咒法 四环 法师 奇械师 言语 姿势 仪式 GMB 炼金 空间">
-    <td><A href="../第五章：施法规则/4环.html#毕格比行空手" >毕格比行空手Bigby's Flying 
+    <td><A href="../第五章：施法规则/4环.html#毕格比行空手">毕格比行空手Bigby's Flying 
 Hand</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
@@ -2565,7 +2518,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="爆裂电弧Crackling Burst" data-tags="塑能 四环 法师 奇械师 术士 言语 姿势 ES 雷电">
-    <td><A href="../第五章：施法规则/4环.html#爆裂电弧" >爆裂电弧Crackling Burst</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#爆裂电弧">爆裂电弧Crackling Burst</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>奇 术 法</TD>
@@ -2576,7 +2529,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="梦之剪Dream Shear" data-tags="幻术 四环 法师 牧师 术士 吟游诗人 言语 姿势 DM 心魂 幻象">
-    <td><A href="../第五章：施法规则/4环.html#梦之剪" >梦之剪Dream Shear</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#梦之剪">梦之剪Dream Shear</A></TD>
     <td>四环</TD>
     <td>幻术</TD>
     <td>诗 牧 术 法</TD>
@@ -2587,7 +2540,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>DM</TD></tr>
 <tr data-spell="拆解术Deconstruct" data-tags="变化 四环 德鲁伊 法师 魔契师 奇械师 术士 言语 姿势 材料 DM 炼金">
-    <td><A href="../第五章：施法规则/4环.html#拆解术" >拆解术Deconstruct</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#拆解术">拆解术Deconstruct</A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>奇 德 术 法 锁</TD>
@@ -2598,7 +2551,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>DM</TD></tr>
 <tr data-spell="回音长枪Echoing Lance" data-tags="塑能 四环 法师 术士 吟游诗人 言语 姿势 专注 KGE 雷电">
-    <td><A href="../第五章：施法规则/4环.html#回音长枪" >回音长枪Echoing Lance</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#回音长枪">回音长枪Echoing Lance</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>诗 术 法</TD>
@@ -2609,7 +2562,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="力场刃Force Blade" data-tags="塑能 四环 法师 术士 言语 姿势 专注 KGE 炼金 空间">
-    <td><A href="../第五章：施法规则/4环.html#力场刃" >力场刃Force Blade</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#力场刃">力场刃Force Blade</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2620,7 +2573,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="秽浊空间Foul Space" data-tags="塑能 四环 法师 术士 言语 姿势 ROH 黯蚀">
-    <td><A href="../第五章：施法规则/4环.html#秽浊空间" >秽浊空间Foul Space</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#秽浊空间">秽浊空间Foul Space</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2630,8 +2583,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></tr>
-<tr data-spell="间歇泉Geyser"     data-tags="咒法 四环 德鲁伊 法师 术士 言语 姿势 KGE 流水">
-    <td><A href="../第五章：施法规则/4环.html#间歇泉" >间歇泉Geyser</A></TD>
+<tr data-spell="间歇泉Geyser" data-tags="咒法 四环 德鲁伊 法师 术士 言语 姿势 KGE 流水">
+    <td><A href="../第五章：施法规则/4环.html#间歇泉">间歇泉Geyser</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2642,7 +2595,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="魂灵毒法Ghost Poison" data-tags="死灵 四环 德鲁伊 法师 术士 言语 姿势 ROH 酸毒">
-    <td><A href="../第五章：施法规则/4环.html#魂灵毒法" >魂灵毒法Ghost Poison</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#魂灵毒法">魂灵毒法Ghost Poison</A></TD>
     <td>四环</TD>
     <td>死灵</TD>
     <td>德 术 法</TD>
@@ -2653,7 +2606,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="魂火术Ghostflame" data-tags="塑能 四环 魔契师 牧师 吟游诗人 言语 姿势 ES 心魂 酸毒 烈火">
-    <td><A href="../第五章：施法规则/4环.html#魂火术" >魂火术Ghostflame</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#魂火术">魂火术Ghostflame</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>诗 牧 锁</TD>
@@ -2664,7 +2617,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="光辉弹雨Glorious Bullet Rain" data-tags="咒法 四环 牧师 圣武士 游侠 言语 姿势 材料 ROH 光芒">
-    <td><A href="../第五章：施法规则/4环.html#光辉弹雨" >光辉弹雨Glorious Bullet Rain</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#光辉弹雨">光辉弹雨Glorious Bullet Rain</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>牧 帕 软</TD>
@@ -2674,9 +2627,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></tr>
-<tr data-spell="冰刃群Ice Blades"     data-tags="咒法 四环 德鲁伊 法师 术士 姿势 ES 寒冰">
-    <td><A href="../第五章：施法规则/4环.html#冰刃群" >冰刃群Ice 
-      Blades</A></TD>
+<tr data-spell="冰刃群Ice Blades" data-tags="咒法 四环 德鲁伊 法师 术士 姿势 ES 寒冰">
+    <td><A href="../第五章：施法规则/4环.html#冰刃群">冰刃群Ice Blades</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2687,7 +2639,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="冰霜尖刺Ice Spike" data-tags="塑能 四环 德鲁伊 法师 术士 言语 姿势 KGE 寒冰">
-    <td><A href="../第五章：施法规则/4环.html#冰霜尖刺" >冰霜尖刺Ice Spike</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#冰霜尖刺">冰霜尖刺Ice Spike</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -2698,7 +2650,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="寒冰凝滞Ice Stagnation" data-tags="咒法 四环 德鲁伊 法师 术士 言语 姿势 ROH 寒冰">
-    <td><A href="../第五章：施法规则/4环.html#寒冰凝滞" >寒冰凝滞Ice Stagnation</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#寒冰凝滞">寒冰凝滞Ice Stagnation</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2709,7 +2661,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="跳跃电击Jumping Jolt" data-tags="塑能 四环 法师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/4环.html#跳跃电击" >跳跃电击Jumping Jolt</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#跳跃电击">跳跃电击Jumping Jolt</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2720,8 +2672,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="雷电骑枪LightningBlade" data-tags="变化 四环 法师 牧师 圣武士 术士 言语 姿势 AK5e 雷电">
-    <td><A href="../第五章：施法规则/4环.html#雷电骑枪" ><spell 
-      >雷电骑枪Lightning Blade</spell></A></TD>
+    <td><A href="../第五章：施法规则/4环.html#雷电骑枪"><spell>雷电骑枪Lightning Blade</spell></A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>牧 帕 术 法</TD>
@@ -2732,7 +2683,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="环行之石Orbital Stones" data-tags="变化 四环 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/4环.html#环行之石" >环行之石Orbital Stones</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#环行之石">环行之石Orbital Stones</A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -2743,8 +2694,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="永冻Permafrost" data-tags="咒法 四环 法师 术士 言语 姿势 AK5e 寒冰">
-    <td><A href="../第五章：施法规则/4环.html#永冻" ><spell 
-      >永冻Permafrost</spell></A></TD>
+    <td><A href="../第五章：施法规则/4环.html#永冻"><spell>永冻Permafrost</spell></A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -2755,7 +2705,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="火焰之柱Pillar of Fire" data-tags="塑能 四环 法师 魔契师 术士 言语 姿势 KGE 烈火">
-    <td><A href="../第五章：施法规则/4环.html#火焰之柱" >火焰之柱Pillar of Fire</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#火焰之柱">火焰之柱Pillar of Fire</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -2766,7 +2716,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="共振斩Resonance Smite" data-tags="塑能 四环 圣武士 游侠 言语 ROH 雷电">
-    <td><A href="../第五章：施法规则/4环.html#共振斩" >共振斩Resonance Smite</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#共振斩">共振斩Resonance Smite</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>帕 软</TD>
@@ -2777,7 +2727,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="虫群叮咬Stinging Swarm" data-tags="咒法 四环 德鲁伊 法师 魔契师 言语 姿势 专注 KGE 酸毒">
-    <td><A href="../第五章：施法规则/4环.html#虫群叮咬" >虫群叮咬Stinging Swarm</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#虫群叮咬">虫群叮咬Stinging Swarm</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 法 锁</TD>
@@ -2788,7 +2738,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="石棺Stone Coffin" data-tags="变化 四环 德鲁伊 法师 术士 言语 姿势 专注 KGE 岩土">
-    <td><A href="../第五章：施法规则/4环.html#石棺" >石棺Stone Coffin</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#石棺">石棺Stone Coffin</A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -2799,7 +2749,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="烽烟处刑场Smoke Execution" data-tags="咒法 四环 德鲁伊 奇械师 游侠 言语 姿势 专注 ROH 气尘">
-    <td><A href="../第五章：施法规则/4环.html#烽烟处刑场" >烽烟处刑场Smoke Execution</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#烽烟处刑场">烽烟处刑场Smoke Execution</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>奇 德 软</TD>
@@ -2810,7 +2760,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="炽焰献祭Utter Immolation" data-tags="塑能 四环 德鲁伊 法师 术士 言语 姿势 材料 ES 烈火">
-    <td><A href="../第五章：施法规则/4环.html#炽焰献祭" >炽焰献祭Utter Immolation</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#炽焰献祭">炽焰献祭Utter Immolation</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -2821,7 +2771,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="生命活性法Vitality Activation" data-tags="死灵 四环 德鲁伊 牧师 言语 姿势 专注 ROH 自然 光芒 流水">
-    <td><A href="../第五章：施法规则/4环.html#生命活性法" >生命活性法Vitality Activation</A></TD>
+    <td><A href="../第五章：施法规则/4环.html#生命活性法">生命活性法Vitality Activation</A></TD>
     <td>四环</TD>
     <td>死灵</TD>
     <td>牧 德</TD>
@@ -2832,8 +2782,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸化血液AcidifyBlood" data-tags="变化 五环 法师 术士 言语 姿势 AK5e 酸毒">
-    <td><A href="../第五章：施法规则/5环.html#酸化血液" ><spell 
-      >酸化血液Acidify Blood</spell></A></TD>
+    <td><A href="../第五章：施法规则/5环.html#酸化血液"><spell>酸化血液Acidify Blood</spell></A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -2844,7 +2793,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="极地冰原Artic Icefield" data-tags="咒法 五环 德鲁伊 魔契师 术士 言语 姿势 ROH 寒冰">
-    <td><A href="../第五章：施法规则/5环.html#极地冰原" >极地冰原Artic Icefield</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#极地冰原">极地冰原Artic Icefield</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 术 锁</TD>
@@ -2855,7 +2804,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸雨Acid Rain" data-tags="变化 五环 德鲁伊 法师 言语 姿势 专注 KGE 酸毒">
-    <td><A href="../第五章：施法规则/5环.html#酸雨" >酸雨Acid Rain</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#酸雨">酸雨Acid Rain</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 法</TD>
@@ -2866,7 +2815,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="以太风暴Aether Storm" data-tags="塑能 五环 法师 术士 言语 姿势 专注 KGE 黯蚀 空间">
-    <td><A href="../第五章：施法规则/5环.html#以太风暴" >以太风暴Aether Storm</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#以太风暴">以太风暴Aether Storm</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2877,7 +2826,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="坠星锋刃Astral Blade" data-tags="塑能 五环 牧师 圣武士 言语 姿势 GMB 光芒">
-    <td><A href="../第五章：施法规则/5环.html#坠星锋刃" >坠星锋刃Astral Blade</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#坠星锋刃">坠星锋刃Astral Blade</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>帕</TD>
@@ -2888,7 +2837,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="刺骨寒意Agonizing Chill" data-tags="惑控 五环 德鲁伊 法师 术士 言语 姿势 专注 ES 寒冰">
-    <td><A href="../第五章：施法规则/5环.html#刺骨寒意" >刺骨寒意Agonizing Chill</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#刺骨寒意">刺骨寒意Agonizing Chill</A></TD>
     <td>五环</TD>
     <td>惑控</TD>
     <td>德 术 法</TD>
@@ -2899,7 +2848,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="庇护立场Asylum Field" data-tags="防护 五环 牧师 姿势 材料 专注 ROH 光芒">
-    <td><A href="../第五章：施法规则/5环.html#庇护立场" >庇护立场Asylum Field</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#庇护立场">庇护立场Asylum Field</A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>牧</TD>
@@ -2910,7 +2859,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="圣域法令Assize Sanctuary" data-tags="防护 五环 牧师 言语 材料 专注 ROH 光芒">
-    <td><A href="../第五章：施法规则/5环.html#圣域法令" >圣域法令Assize Sanctuary</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#圣域法令">圣域法令Assize Sanctuary</A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>牧</TD>
@@ -2921,7 +2870,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="土石弹幕Burial Barrage" data-tags="变化 五环 德鲁伊 法师 魔契师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/5环.html#土石弹幕" >土石弹幕Burial Barrage</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#土石弹幕">土石弹幕Burial Barrage</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -2932,7 +2881,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="炽炎囚Blaze Prisoners" data-tags="塑能 五环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 ROH 烈火">
-    <td><A href="../第五章：施法规则/5环.html#炽炎囚" >炽炎囚Blaze Prisoners</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#炽炎囚">炽炎囚Blaze Prisoners</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>德 术 法 锁</TD>
@@ -2943,7 +2892,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="汲取火焰Consume Flame" data-tags="变化 五环 魔契师 术士 姿势 ES 光芒 烈火">
-    <td><A href="../第五章：施法规则/5环.html#汲取火焰" >汲取火焰Consume Flame</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#汲取火焰">汲取火焰Consume Flame</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>术 锁</TD>
@@ -2954,7 +2903,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="彗星打击Comet Strike" data-tags="咒法 五环 德鲁伊 术士 言语 姿势 材料 ES 寒冰">
-    <td><A href="../第五章：施法规则/5环.html#彗星打击" >彗星打击Comet Strike</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#彗星打击">彗星打击Comet Strike</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 术</TD>
@@ -2965,7 +2914,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="荡毁时雨Destruction Rain" data-tags="塑能 五环 法师 术士 言语 姿势 专注 ROH 黯蚀 空间">
-    <td><A href="../第五章：施法规则/5环.html#荡毁时雨" >荡毁时雨Destruction Rain</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#荡毁时雨">荡毁时雨Destruction Rain</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -2975,8 +2924,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>ROH</TD></tr>
-<tr data-spell="火山喷发Eruption" data-tags="咒法 五环 德鲁伊 法师 术士 言语 姿势 材料 专注 ES 烈火">
-    <td><A href="../第五章：施法规则/5环.html#火山喷发" >火山喷发Eruption</A></TD>
+<tr data-spell="艾雅法拉的火山喷发Eyjafjalla's Eruption" data-tags="咒法 五环 德鲁伊 法师 术士 言语 姿势 材料 专注 ROH 烈火">
+    <td><A href="../第五章：施法规则/5环.html#艾雅法拉的火山喷发">艾雅法拉的火山喷发Eyjafjalla's Eruption</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -2985,9 +2934,9 @@ Hand</A></TD>
     <td>M</TD>
     <td>×</TD>
     <td>√</TD>
-    <td>ES</TD></tr>
+    <td>ROH</TD></tr>
 <tr data-spell="山泥倾泻Earthen Landslide" data-tags="变化 五环 德鲁伊 法师 言语 姿势 材料 ROH 岩土">
-    <td><A href="../第五章：施法规则/5环.html#山泥倾泻" >山泥倾泻Earthen Landslide</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#山泥倾泻">山泥倾泻Earthen Landslide</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 法</TD>
@@ -2997,8 +2946,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></tr>
-<tr data-spell="地裂Fissure"     data-tags="变化 五环 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
-    <td><A href="../第五章：施法规则/5环.html#地裂" >地裂Fissure</A></TD>
+<tr data-spell="地裂Fissure" data-tags="变化 五环 德鲁伊 法师 术士 言语 姿势 KGE 岩土">
+    <td><A href="../第五章：施法规则/5环.html#地裂">地裂Fissure</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -3009,7 +2958,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="末日形态Form of Doom" data-tags="变化 五环 魔契师 言语 姿势 XPH 深海">
-    <td><A href="../第五章：施法规则/5环.html#末日形态" >末日形态Form of Doom</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#末日形态">末日形态Form of Doom</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>锁</TD>
@@ -3020,7 +2969,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>XPH</TD></tr>
 <tr data-spell="重力聚集Gravity Gather" data-tags="塑能 五环 法师 术士 言语 姿势 ROH 空间">
-    <td><A href="../第五章：施法规则/5环.html#重力聚集" >重力聚集Gravity Gather</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#重力聚集">重力聚集Gravity Gather</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3031,7 +2980,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="重水波Heavy Wave" data-tags="咒法 五环 德鲁伊 魔契师 术士 言语 姿势 ROH 深海 流水">
-    <td><A href="../第五章：施法规则/5环.html#重水波" >重水波Heavy Wave</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#重水波">重水波Heavy Wave</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 术 锁</TD>
@@ -3042,7 +2991,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="闪电军团Lightning Army" data-tags="惑控 五环 法师 奇械师 术士 言语 姿势 专注 ES 炼金 雷电">
-    <td><A href="../第五章：施法规则/5环.html#闪电军团" >闪电军团Lightning Army</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#闪电军团">闪电军团Lightning Army</A></TD>
     <td>五环</TD>
     <td>惑控</TD>
     <td>奇 术 法</TD>
@@ -3053,7 +3002,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="避雷针Lightning Rod" data-tags="防护 五环 德鲁伊 法师 牧师 奇械师 圣武士 术士 姿势 ES 雷电">
-    <td><A href="../第五章：施法规则/5环.html#避雷针" >避雷针Lightning Rod</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#避雷针">避雷针Lightning Rod</A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>奇 牧 德 帕 术 法</TD>
@@ -3064,7 +3013,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="群体冻结术Mass Freeze" data-tags="变化 五环 德鲁伊 法师 术士 言语 姿势 专注 GMB 寒冰">
-    <td><A href="../第五章：施法规则/5环.html#群体冻结术" >群体冻结术Mass Freeze</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#群体冻结术">群体冻结术Mass Freeze</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -3075,7 +3024,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="急速流星Meteor Dash" data-tags="塑能 五环 术士 姿势 ES 烈火">
-    <td><A href="../第五章：施法规则/5环.html#急速流星" >急速流星Meteor Dash</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#急速流星">急速流星Meteor Dash</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>术</TD>
@@ -3086,8 +3035,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="高压过载Overload" data-tags="咒法 五环 法师 术士 言语 姿势 AK5e 雷电">
-    <td><A href="../第五章：施法规则/5环.html#高压过载" ><spell 
-      >高压过载Overload</spell></A></TD>
+    <td><A href="../第五章：施法规则/5环.html#高压过载"><spell>高压过载Overload</spell></A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3097,9 +3045,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
-<tr data-spell="猛毒之手Poisonous Hand"     data-tags="死灵 五环 德鲁伊 法师 奇械师 言语 姿势 ROH 酸毒">
-    <td><A href="../第五章：施法规则/5环.html#猛毒之手" >猛毒之手Poisonous 
-      Hand</A></TD>
+<tr data-spell="猛毒之手Poisonous Hand" data-tags="死灵 五环 德鲁伊 法师 奇械师 言语 姿势 ROH 酸毒">
+    <td><A href="../第五章：施法规则/5环.html#猛毒之手">猛毒之手Poisonous Hand</A></TD>
     <td>五环</TD>
     <td>死灵</TD>
     <td>奇 德 法</TD>
@@ -3110,7 +3057,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="高压水刃Pessure Cutter" data-tags="咒法 五环 法师 术士 言语 姿势 KGE 流水">
-    <td><A href="../第五章：施法规则/5环.html#高压水刃" >高压水刃Pessure Cutter</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#高压水刃">高压水刃Pessure Cutter</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3121,7 +3068,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="熔岩长枪Pyroclastic Lance" data-tags="咒法 五环 法师 术士 言语 姿势 KGE 烈火">
-    <td><A href="../第五章：施法规则/5环.html#熔岩长枪" >熔岩长枪Pyroclastic Lance</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#熔岩长枪">熔岩长枪Pyroclastic Lance</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3132,7 +3079,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="涤罪之焰Purifying Flame" data-tags="塑能 五环 牧师 圣武士 言语 姿势 ES 烈火">
-    <td><A href="../第五章：施法规则/5环.html#涤罪之焰" >涤罪之焰Purifying Flame</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#涤罪之焰">涤罪之焰Purifying Flame</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>牧 帕</TD>
@@ -3143,7 +3090,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="晴天霹雳Sky Burst" data-tags="塑能 五环 德鲁伊 法师 术士 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/5环.html#晴天霹雳" >晴天霹雳Sky Burst</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#晴天霹雳">晴天霹雳Sky Burst</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -3154,7 +3101,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="音爆尖啸Sonic Shriek" data-tags="变化 五环 法师 术士 吟游诗人 言语 姿势 KGE 雷电">
-    <td><A href="../第五章：施法规则/5环.html#音爆尖啸" >音爆尖啸Sonic Shriek</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#音爆尖啸">音爆尖啸Sonic Shriek</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>诗 术 法</TD>
@@ -3165,7 +3112,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="风暴云Stormcloud" data-tags="塑能 五环 德鲁伊 法师 术士 言语 姿势 材料 专注 ES 雷电">
-    <td><A href="../第五章：施法规则/5环.html#风暴云" >风暴云Stormcloud</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#风暴云">风暴云Stormcloud</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -3176,7 +3123,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="石山顿起Mountain Rising" data-tags="咒法 五环 德鲁伊 法师 术士 言语 姿势 专注 ROH 岩土">
-    <td><A href="../第五章：施法规则/5环.html#石山顿起" >石山顿起Mountain Rising</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#石山顿起">石山顿起Mountain Rising</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -3187,7 +3134,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="龙卷风Tornado" data-tags="变化 五环 德鲁伊 法师 术士 言语 姿势 专注 KGE 气尘">
-    <td><A href="../第五章：施法规则/5环.html#龙卷风" >龙卷风Tornado</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#龙卷风">龙卷风Tornado</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -3198,7 +3145,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="五雷法Taoist Thunder" data-tags="塑能 五环 牧师 圣武士 言语 姿势 ROH 雷电">
-    <td><A href="../第五章：施法规则/5环.html#五雷法" >五雷法Taoist Thunder</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#五雷法">五雷法Taoist Thunder</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>牧 帕</TD>
@@ -3209,7 +3156,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="气旋轰炸Cyclone bombardment" data-tags="塑能 五环 奇械师 术士 游侠 言语 姿势 专注 ROH 气尘">
-    <td><A href="../第五章：施法规则/5环.html#气旋轰炸" >气旋轰炸Cyclone bombardment</A></TD>
+    <td><A href="../第五章：施法规则/5环.html#气旋轰炸">气旋轰炸Cyclone bombardment</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>奇 软 术</TD>
@@ -3220,8 +3167,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="瞬时酸雨Acid Rain Instant" data-tags="咒法 六环 法师 术士 言语 姿势 AK5e 酸毒 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/6环.html#瞬时酸雨" ><spell 
-      >瞬时酸雨Acid Rain Instant</spell></A></TD>
+    <td><A href="../第五章：施法规则/6环.html#瞬时酸雨"><spell>瞬时酸雨Acid Rain Instant</spell></A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3232,8 +3178,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="法术炮击ArtsArtillery" data-tags="塑能 六环 法师 术士 言语 姿势 AK5e 炼金 烈火 雷电 空间 时空矢量 辉煌烈焰 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#法术炮击" ><spell 
-      >法术炮击Arts Artillery</spell></A></TD>
+    <td><A href="../第五章：施法规则/6环.html#法术炮击"><spell>法术炮击Arts Artillery</spell></A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3244,8 +3189,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="重力变化AlterGravity" data-tags="变化 六环 法师 术士 言语 姿势 仪式 AK5e 空间 时空矢量">
-    <td><A href="../第五章：施法规则/6环.html#重力变化" ><spell 
-      >重力变化Alter Gravity</spell></A></TD>
+    <td><A href="../第五章：施法规则/6环.html#重力变化"><spell>重力变化Alter Gravity</spell></A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -3256,7 +3200,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="暴风雪Blizzard" data-tags="塑能 六环 德鲁伊 法师 术士 言语 姿势 专注 ES 寒冰 酷寒洪流">
-    <td><A href="../第五章：施法规则/6环.html#暴风雪" >暴风雪Blizzard</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#暴风雪">暴风雪Blizzard</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -3266,20 +3210,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>ES</TD></tr>
-<tr data-spell="土石塑像Construct Mudrock Colossus" data-tags="咒法 六环 德鲁伊 法师 言语 姿势 材料 专注 ROH 岩土 酷寒洪流">
-    <td><A href="../第五章：施法规则/6环.html#土石塑像" >土石塑像Construct Mudrock 
-    Colossus</A></TD>
-    <td>六环</TD>
-    <td>咒法</TD>
-    <td>德 法</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>M</TD>
-    <td>×</TD>
-    <td>√</TD>
-    <td>ROH</TD></tr>
 <tr data-spell="厄运风暴Doom Storm" data-tags="变化 六环 魔契师 术士 言语 姿势 ROH 黯蚀 气尘 雷电 酸毒侵蚀 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#厄运风暴" >厄运风暴Doom Storm</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#厄运风暴">厄运风暴Doom Storm</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>术 锁</TD>
@@ -3290,7 +3222,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="深度冻结Deep Freeze" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 ES 寒冰 酷寒洪流">
-    <td><A href="../第五章：施法规则/6环.html#深度冻结" >深度冻结Deep Freeze</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#深度冻结">深度冻结Deep Freeze</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3301,7 +3233,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="火焰旋涡Flame Vortex" data-tags="塑能 六环 德鲁伊 牧师 言语 姿势 材料 专注 ES 烈火 辉煌烈焰">
-    <td><A href="../第五章：施法规则/6环.html#火焰旋涡" >火焰旋涡Flame Vortex</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#火焰旋涡">火焰旋涡Flame Vortex</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>牧 德</TD>
@@ -3312,7 +3244,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="火焰形态Form of Fire" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 烈火 辉煌烈焰">
-    <td><A href="../第五章：施法规则/6环.html#火焰形态" >火焰形态Form of Fire</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#火焰形态">火焰形态Form of Fire</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3323,7 +3255,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="寒冰形态Form of Ice" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 寒冰 酷寒洪流">
-    <td><A href="../第五章：施法规则/6环.html#寒冰形态" >寒冰形态Form of Ice</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#寒冰形态">寒冰形态Form of Ice</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3334,7 +3266,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="岩石形态Form of Stone" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 岩土 酷寒洪流">
-    <td><A href="../第五章：施法规则/6环.html#岩石形态" >岩石形态Form of Stone</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#岩石形态">岩石形态Form of Stone</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3345,7 +3277,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="流水形态Form of Water" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 深海 流水 酷寒洪流 疗愈重塑">
-    <td><A href="../第五章：施法规则/6环.html#流水形态" >流水形态Form of Water</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#流水形态">流水形态Form of Water</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3356,7 +3288,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="清风形态Form of Wind" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 KGE 气尘 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#清风形态" >清风形态Form of Wind</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#清风形态">清风形态Form of Wind</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3367,7 +3299,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>KGE</TD></tr>
 <tr data-spell="烟雾形态Form of Smoke" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 ROH 气尘 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#烟雾形态" >烟雾形态Form of Smoke</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#烟雾形态">烟雾形态Form of Smoke</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3378,7 +3310,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="获得易伤Gain Vulnerability" data-tags="变化 六环 德鲁伊 牧师 奇械师 吟游诗人 言语 姿势 专注 ROH 光芒 疗愈重塑 辉煌烈焰">
-    <td><A href="../第五章：施法规则/6环.html#获得易伤" >获得易伤Gain Vulnerability</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#获得易伤">获得易伤Gain Vulnerability</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>奇 诗 牧 德</TD>
@@ -3389,7 +3321,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="大炼金术Grand Alchemy" data-tags="变化 六环 法师 奇械师 言语 姿势 材料 仪式 CAH 炼金 价耗">
-    <td><A href="../第五章：施法规则/6环.html#大炼金术" >大炼金术Grand Alchemy</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#大炼金术">大炼金术Grand Alchemy</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>奇 法</TD>
@@ -3400,7 +3332,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CAH</TD></tr>
 <tr data-spell="幻术投影Illusion Projection" data-tags="幻术 六环 法师 吟游诗人 言语 姿势 材料 专注 ROH 流水 幻象 酷寒洪流 疗愈重塑 光影心灵">
-    <td><A href="../第五章：施法规则/6环.html#幻术投影" >幻术投影Illusion Projection</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#幻术投影">幻术投影Illusion Projection</A></TD>
     <td>六环</TD>
     <td>幻术</TD>
     <td>诗 法</TD>
@@ -3411,8 +3343,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="闪电赋权Investiture of Lightning" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 GMB 雷电 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#闪电赋权" >闪电赋权Investiture of 
-    Lightning</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#闪电赋权">闪电赋权Investiture of Lightning</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3423,7 +3354,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="毒素赋权Investiture of Poison" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 GMB 酸毒 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/6环.html#毒素赋权" >毒素赋权Investiture of Poison</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#毒素赋权">毒素赋权Investiture of Poison</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3434,7 +3365,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="强酸赋权Investiture of Acid" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 GMB 酸毒 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/6环.html#强酸赋权" >强酸赋权Investiture of Acid</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#强酸赋权">强酸赋权Investiture of Acid</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -3445,7 +3376,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="秘法魔剑Mystic Sword" data-tags="塑能 六环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 ROH 黯蚀 空间 时空矢量 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/6环.html#秘法魔剑" >秘法魔剑Mystic Sword</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#秘法魔剑">秘法魔剑Mystic Sword</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>诗 术 法 锁</TD>
@@ -3456,7 +3387,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="火中窥视Peer Through Flames" data-tags="预言 六环 德鲁伊 法师 牧师 言语 姿势 材料 专注 仪式 ES 烈火 辉煌烈焰">
-    <td><A href="../第五章：施法规则/6环.html#火中窥视" >火中窥视Peer Through Flames</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#火中窥视">火中窥视Peer Through Flames</A></TD>
     <td>六环</TD>
     <td>预言</TD>
     <td>牧 德 法</TD>
@@ -3467,7 +3398,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="剧毒之潮Poison Wave" data-tags="咒法 六环 德鲁伊 法师 魔契师 术士 言语 姿势 材料 ROH 酸毒">
-    <td><A href="../第五章：施法规则/6环.html#剧毒之潮" >剧毒之潮Poison Wave</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#剧毒之潮">剧毒之潮Poison Wave</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>德 术 法 锁</TD>
@@ -3478,7 +3409,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="卷须爆发Twisting Eruption" data-tags="咒法 六环 法师 魔契师 言语 姿势 材料 专注 GMB 深海">
-    <td><A href="../第五章：施法规则/6环.html#卷须爆发" >卷须爆发Twisting Eruption</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#卷须爆发">卷须爆发Twisting Eruption</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -3489,7 +3420,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>GMB</TD></tr>
 <tr data-spell="汹涌洪流Turbulent Flood" data-tags="咒法 六环 德鲁伊 法师 魔契师 术士 言语 姿势 ROH 深海 流水 酷寒洪流 疗愈重塑">
-    <td><A href="../第五章：施法规则/6环.html#汹涌洪流" >汹涌洪流Turbulent Flood</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#汹涌洪流">汹涌洪流Turbulent Flood</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>德 术 法 锁</TD>
@@ -3500,7 +3431,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="雷鸣风暴Thunder Burst" data-tags="塑能 六环 德鲁伊 法师 魔契师 术士 言语 姿势 ROH 雷电 风暴雷鸣">
-    <td><A href="../第五章：施法规则/6环.html#雷鸣风暴" >雷鸣风暴Thunder Burst</A></TD>
+    <td><A href="../第五章：施法规则/6环.html#雷鸣风暴">雷鸣风暴Thunder Burst</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>德 术 法 锁</TD>
@@ -3511,8 +3442,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="酸性奔流AcerbicFlow" data-tags="咒法 七环 法师 术士 言语 姿势 AK5e 酷寒洪流 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/7环.html#酸性奔流" ><spell 
-      >酸性奔流Acerbic Flow</spell></A></TD>
+    <td><A href="../第五章：施法规则/7环.html#酸性奔流"><spell>酸性奔流Acerbic Flow</spell></A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3523,8 +3453,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="奥术风暴ArcaneTempest" data-tags="塑能 七环 法师 术士 言语 姿势 材料 AK5e 时空矢量 辉煌烈焰 风暴雷鸣">
-    <td><A href="../第五章：施法规则/7环.html#奥术风暴" ><spell 
-      >奥术风暴Arcane Tempest</spell></A></TD>
+    <td><A href="../第五章：施法规则/7环.html#奥术风暴"><spell>奥术风暴Arcane Tempest</spell></A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3535,7 +3464,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="极寒之风Arctic Wind" data-tags="塑能 七环 德鲁伊 法师 术士 言语 姿势 专注 ES 酷寒洪流">
-    <td><A href="../第五章：施法规则/7环.html#极寒之风" >极寒之风Arctic Wind</A></TD>
+    <td><A href="../第五章：施法规则/7环.html#极寒之风">极寒之风Arctic Wind</A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -3546,8 +3475,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="雪崩Avalanche" data-tags="咒法 七环 法师 术士 言语 姿势 AK5e 酷寒洪流">
-    <td><A href="../第五章：施法规则/7环.html#雪崩" ><spell 
-      >雪崩Avalanche</spell></A></TD>
+    <td><A href="../第五章：施法规则/7环.html#雪崩"><spell>雪崩Avalanche</spell></A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -3558,7 +3486,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="岩崩地裂Earthenbreak" data-tags="咒法 七环 德鲁伊 法师 术士 言语 姿势 材料 专注 ROH 酷寒洪流">
-    <td><A href="../第五章：施法规则/7环.html#岩崩地裂" >岩崩地裂Earthenbreak</A></TD>
+    <td><A href="../第五章：施法规则/7环.html#岩崩地裂">岩崩地裂Earthenbreak</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -3569,7 +3497,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="落石雨Stone Rain" data-tags="咒法 七环 德鲁伊 法师 术士 言语 姿势 材料 专注 ROH 酷寒洪流">
-    <td><A href="../第五章：施法规则/7环.html#落石雨" >落石雨Stone Rain</A></TD>
+    <td><A href="../第五章：施法规则/7环.html#落石雨">落石雨Stone Rain</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -3580,8 +3508,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="风暴之矛StormSpear" data-tags="塑能 七环 法师 术士 言语 姿势 AK5e 风暴雷鸣">
-    <td><A href="../第五章：施法规则/7环.html#风暴之矛" ><spell 
-      >风暴之矛Storm Spear</spell></A></TD>
+    <td><A href="../第五章：施法规则/7环.html#风暴之矛"><spell>风暴之矛Storm Spear</spell></A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3592,7 +3519,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="电击光环Shocking Aura" data-tags="塑能 七环 奇械师 术士 言语 专注 ES 风暴雷鸣">
-    <td><A href="../第五章：施法规则/7环.html#电击光环" >电击光环Shocking Aura</A></TD>
+    <td><A href="../第五章：施法规则/7环.html#电击光环">电击光环Shocking Aura</A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>奇 术</TD>
@@ -3603,7 +3530,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="超导体Supercondutor" data-tags="咒法 七环 奇械师 术士 言语 姿势 GMB 风暴雷鸣">
-    <td><A href="../第五章：施法规则/7环.html#超导体" >超导体Supercondutor</A></TD>
+    <td><A href="../第五章：施法规则/7环.html#超导体">超导体Supercondutor</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>奇 术</TD>
@@ -3614,7 +3541,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>GMB</TD></tr>
 <tr data-spell="极寒凛冬Fimbulvetr" data-tags="塑能 八环 德鲁伊 法师 术士 言语 姿势 AK5e 酷寒洪流">
-    <td><A href="../第五章：施法规则/8环.html#极寒凛冬" ><spell>极寒凛冬Fimbulvetr</spell></A></TD>
+    <td><A href="../第五章：施法规则/8环.html#极寒凛冬"><spell>极寒凛冬Fimbulvetr</spell></A></TD>
     <td>八环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -3625,7 +3552,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="地狱火雨Inferno Rain" data-tags="咒法 八环 法师 魔契师 术士 言语 姿势 专注 ES 辉煌烈焰 风暴雷鸣">
-    <td><A href="../第五章：施法规则/8环.html#地狱火雨" >地狱火雨Inferno Rain</A></TD>
+    <td><A href="../第五章：施法规则/8环.html#地狱火雨">地狱火雨Inferno Rain</A></TD>
     <td>八环</TD>
     <td>咒法</TD>
     <td>术 法 锁</TD>
@@ -3636,7 +3563,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ES</TD></tr>
 <tr data-spell="闪电拘束Lightning Tether" data-tags="塑能 八环 法师 术士 言语 姿势 材料 专注 ES 风暴雷鸣">
-    <td><A href="../第五章：施法规则/8环.html#闪电拘束" >闪电拘束Lightning Tether</A></TD>
+    <td><A href="../第五章：施法规则/8环.html#闪电拘束">闪电拘束Lightning Tether</A></TD>
     <td>八环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3658,7 +3585,7 @@ Hand</A></TD>
     <td>×</td>
     <td>EGW</td></tr>
 <tr data-spell="强击闪电Smiting Bolt" data-tags="塑能 八环 德鲁伊 法师 牧师 言语 ES 风暴雷鸣">
-    <td><A href="../第五章：施法规则/8环.html#强击闪电" >强击闪电Smiting Bolt</A></TD>
+    <td><A href="../第五章：施法规则/8环.html#强击闪电">强击闪电Smiting Bolt</A></TD>
     <td>八环</TD>
     <td>塑能</TD>
     <td>牧 德 法</TD>
@@ -3669,7 +3596,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="冰晶封冻Cryostasis" data-tags="防护 八环 法师 魔契师 言语 姿势 材料 ES 酷寒洪流 价耗">
-    <td><A href="../第五章：施法规则/8环.html#冰晶封冻" >冰晶封冻Cryostasis</A></TD>
+    <td><A href="../第五章：施法规则/8环.html#冰晶封冻">冰晶封冻Cryostasis</A></TD>
     <td>八环</TD>
     <td>防护</TD>
     <td>法 锁</TD>
@@ -3680,8 +3607,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="绝对零度Absolute Zero" data-tags="塑能 九环 法师 术士 言语 姿势 AK5e 酷寒洪流">
-    <td><A href="../第五章：施法规则/9环.html#绝对零度" ><spell 
-      >绝对零度Absolute Zero</spell></A></TD>
+    <td><A href="../第五章：施法规则/9环.html#绝对零度"><spell>绝对零度Absolute Zero</spell></A></TD>
     <td>九环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3692,8 +3618,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="风之化身AvatarofWind" data-tags="塑能 九环 法师 术士 言语 姿势 AK5e 风暴雷鸣">
-    <td><A href="../第五章：施法规则/9环.html#风之化身" ><spell 
-      >风之化身Avatar of Wind</spell></A></TD>
+    <td><A href="../第五章：施法规则/9环.html#风之化身"><spell>风之化身Avatar of Wind</spell></A></TD>
     <td>九环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3704,7 +3629,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="绝能闪电Decimation Bolts" data-tags="塑能 九环 法师 术士 言语 姿势 ES 风暴雷鸣">
-    <td><A href="../第五章：施法规则/9环.html#绝能闪电" >绝能闪电Decimation Bolts</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#绝能闪电">绝能闪电Decimation Bolts</A></TD>
     <td>九环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3715,8 +3640,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="事件视界Event Horizon" data-tags="塑能 九环 法师 术士 言语 姿势 AK5e 时空矢量">
-    <td><A href="../第五章：施法规则/9环.html#事件视界" ><spell 
-      >事件视界Event Horizon</spell></A></TD>
+    <td><A href="../第五章：施法规则/9环.html#事件视界"><spell>事件视界Event Horizon</spell></A></TD>
     <td>九环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3727,7 +3651,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>AK5e</TD></tr>
 <tr data-spell="烈焰之躯Flame Body" data-tags="变化 九环 法师 魔契师 术士 言语 姿势 ES 辉煌烈焰">
-    <td><A href="../第五章：施法规则/9环.html#烈焰之躯" >烈焰之躯Flame Body</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#烈焰之躯">烈焰之躯Flame Body</A></TD>
     <td>九环</TD>
     <td>变化</TD>
     <td>术 法 锁</TD>
@@ -3749,7 +3673,7 @@ Hand</A></TD>
     <td>×</td>
     <td>AK5e</td></tr>
 <tr data-spell="冰山术Ice Mountain" data-tags="咒法 九环 德鲁伊 法师 术士 姿势 ES 酷寒洪流">
-    <td><A href="../第五章：施法规则/9环.html#冰山术" >冰山术Ice Mountain</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#冰山术">冰山术Ice Mountain</A></TD>
     <td>九环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -3760,7 +3684,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ES</TD></tr>
 <tr data-spell="冰封万里Frozen Miles" data-tags="咒法 九环 德鲁伊 法师 言语 姿势 材料 专注 ROH 酷寒洪流 价耗">
-    <td><A href="../第五章：施法规则/9环.html#冰封万里" >冰封万里Frozen Miles</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#冰封万里">冰封万里Frozen Miles</A></TD>
     <td>九环</TD>
     <td>咒法</TD>
     <td>德 法</TD>
@@ -3771,7 +3695,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>ROH</TD></tr>
 <tr data-spell="地龙动Earthwyrm Awaken" data-tags="变化 九环 德鲁伊 法师 术士 言语 姿势 材料 专注 ROH 酷寒洪流 价耗">
-    <td><A href="../第五章：施法规则/9环.html#地龙动" >地龙动Earthwyrm Awaken</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#地龙动">地龙动Earthwyrm Awaken</A></TD>
     <td>九环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -3826,7 +3750,7 @@ Hand</A></TD>
     <td>×</td>
     <td>EGW</td></tr>
 <tr data-spell="神霄紫雷Zenith Thunderbolt" data-tags="咒法 九环 德鲁伊 法师 术士 言语 姿势 ROH 风暴雷鸣">
-    <td><A href="../第五章：施法规则/9环.html#神霄紫雷" >神霄紫雷Zenith Thunderbolt</A></TD>
+    <td><A href="../第五章：施法规则/9环.html#神霄紫雷">神霄紫雷Zenith Thunderbolt</A></TD>
     <td>九环</TD>
     <td>咒法</TD>
     <td>德 术 法</TD>
@@ -3837,8 +3761,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>ROH</TD></tr>
 <tr data-spell="削弱芒刺Sapping Sting" data-tags="死灵 戏法(零环) 法师 辅助 言语 姿势 EGW 黯蚀 岩土 空间 重力 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#削弱芒刺" ><spell>削弱芒刺Sapping 
-      Sting</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#削弱芒刺"><spell>削弱芒刺Sapping Sting</spell></A></TD>
     <td>戏法</TD>
     <td>死灵</TD>
     <td>术 法</TD>
@@ -3849,8 +3772,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="灵敏之赐Gift of Alacrity" data-tags="预言 一环 法师 言语 姿势 EGW 空间 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#灵敏之赐" ><spell>灵敏之赐Gift 
-      of Alacrity</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#灵敏之赐"><spell>灵敏之赐Gift of Alacrity</spell></A></TD>
     <td>一环</TD>
     <td>预言</TD>
     <td>术 法</TD>
@@ -3861,8 +3783,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="重力分裂Gravity Fissure" data-tags="塑能 六环 法师 言语 姿势 材料 EGW 空间 时空矢量 重力">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#重力分裂" ><spell>重力分裂Gravity 
-      Fissure</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#重力分裂"><spell>重力分裂Gravity Fissure</spell></A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3873,8 +3794,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="扩大重力Magnify Gravity" data-tags="变化 一环 法师 言语 姿势 EGW 空间 重力">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#扩大重力" ><spell>扩大重力Magnify 
-      Gravity</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#扩大重力"><spell>扩大重力Magnify Gravity</spell></A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -3885,8 +3805,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="命运宠儿Fortunes Favor" data-tags="预言 二环 法师 言语 姿势 材料 EGW 心魂 预知 价耗 重力 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#命运宠儿" ><spell>命运宠儿Fortune's 
-      Favor</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#命运宠儿"><spell>命运宠儿Fortune's Favor</spell></A></TD>
     <td>二环</TD>
     <td>预言</TD>
     <td>术 法</TD>
@@ -3897,8 +3816,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="脉冲波动Pulse Wave" data-tags="塑能 三环 法师 言语 姿势 EGW 空间 重力 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#脉冲波动" ><spell>脉冲波动Pulse 
-      Wave</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#脉冲波动"><spell>脉冲波动Pulse Wave</spell></A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3909,8 +3827,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="引力裂沟Gravity Sinkhole" data-tags="塑能 四环 法师 言语 姿势 材料 EGW 空间 重力">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#引力裂沟" ><spell>引力裂沟Gravity 
-      Sinkhole</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#引力裂沟"><spell>引力裂沟Gravity Sinkhole</spell></A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3921,8 +3838,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="时流刹转TemporalShunt" data-tags="变化 五环 法师 言语 姿势 EGW 心魂 预知 空间 幻象 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#时流刹转" ><spell>时流刹转Temporal 
-      Shunt</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#时流刹转"><spell>时流刹转Temporal Shunt</spell></A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -3933,8 +3849,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>EGW</TD></tr>
 <tr data-spell="系结本源Tether Essence" data-tags="死灵 七环 法师 言语 姿势 材料 EGW 时空矢量 价耗 重力 时间">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#系结本源" ><spell>系结本源Tether 
-      Essence</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#系结本源"><spell>系结本源Tether Essence</spell></A></TD>
     <td>七环</TD>
     <td>死灵</TD>
     <td>术 法</TD>
@@ -3945,8 +3860,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>EGW</TD></tr>
 <tr data-spell="暗黑星辰Dark Star" data-tags="塑能 八环 法师 言语 姿势 材料 EGW 时空矢量 价耗 重力">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#暗黑星辰" ><spell>暗黑星辰Dark 
-      Star</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#暗黑星辰"><spell>暗黑星辰Dark Star</spell></A></TD>
     <td>八环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3957,8 +3871,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>EGW</TD></tr>
 <tr data-spell="饕餮虚空Ravenous Void" data-tags="塑能 九环 法师 言语 姿势 材料 EGW 时空矢量 重力">
-    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#饕餮虚空" ><spell>饕餮虚空Ravenous 
-      Void</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/荒洲探险家指南.html#饕餮虚空"><spell>饕餮虚空Ravenous Void</spell></A></TD>
     <td>九环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -3969,8 +3882,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>EGW</TD></tr>
 <tr data-spell="思忖一瞬Moment to Think" data-tags="变化 预言 戏法(零环) 法师 牧师 术士 言语 姿势 材料 VSS 炼金 时序魔法">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#思忖一瞬" ><spell 
-      >思忖一瞬Moment to Think</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#思忖一瞬"><spell>思忖一瞬Moment to Think</spell></A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>牧 术 法</TD>
@@ -3981,7 +3893,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="岩骨术Stone Bones" data-tags="变化 二环 德鲁伊 法师 圣武士 术士 游侠 言语 姿势 材料 VSS 岩土 时序魔法">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#岩骨术" ><spell>岩骨术Stone Bones</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#岩骨术"><spell>岩骨术Stone Bones</spell></A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>德 帕 软 术 法</TD>
@@ -3992,7 +3904,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="增能术/缓能术Accelerate/Decelerate" data-tags="变化 一环 法师 辅助 牧师 术士 吟游诗人 言语 姿势 材料 VSS 炼金 岩土 时序魔法">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#增能术/缓能术" ><spell>增能术/缓能术Accelerate/Decelerate</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#增能术/缓能术"><spell>增能术/缓能术Accelerate/Decelerate</spell></A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>诗 牧 术 法</TD>
@@ -4003,7 +3915,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="斩击弹Ballistic Smite" data-tags="塑能 一环 圣武士 特种 言语 姿势 材料 VSS 烈火 寒冰 雷电 酸毒">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#斩击弹" ><spell>斩击弹Ballistic Smite</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#斩击弹"><spell>斩击弹Ballistic Smite</spell></A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>帕</TD>
@@ -4014,7 +3926,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="显迹术Clue" data-tags="预言 一环 德鲁伊 法师 牧师 圣武士 吟游诗人 游侠 言语 姿势 材料 VSS 炼金 预知">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#显迹术" ><spell>显迹术Clue</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#显迹术"><spell>显迹术Clue</spell></A></TD>
     <td>一环</TD>
     <td>预言</TD>
     <td>诗 牧 德 帕 软 法</TD>
@@ -4025,7 +3937,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="记忆术Memorize" data-tags="惑控 一环 法师 牧师 吟游诗人 言语 姿势 材料 VSS 炼金 预知 价耗">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#记忆术" ><spell>记忆术Memorize</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#记忆术"><spell>记忆术Memorize</spell></A></TD>
     <td>一环</TD>
     <td>惑控</TD>
     <td>诗 牧 法</TD>
@@ -4036,7 +3948,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="悖论Paradox" data-tags="变化 九环 法师 魔契师 术士 言语 姿势 VSS 时空矢量 时序魔法">
-    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#悖论" ><spell>悖论Paradox</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/瓦达尔的秘密尖塔.html#悖论"><spell>悖论Paradox</spell></A></TD>
     <td>九环</TD>
     <td>变化</TD>
     <td>术 锁 法</TD>
@@ -4047,8 +3959,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>VSS</TD></tr>
 <tr data-spell="尘风屏障GustBarrier" data-tags="塑能 戏法(零环) 德鲁伊 魔契师 术士 吟游诗人 姿势 HW 气尘">
-    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#尘风屏障" ><spell>尘风屏障Gust 
-      Barrier</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#尘风屏障"><spell>尘风屏障Gust Barrier</spell></A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>诗 德 术 锁</TD>
@@ -4059,8 +3970,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>HW</TD></tr>
 <tr data-spell="尖刺护盾SpinyShield" data-tags="防护 一环 德鲁伊 法师 术士 游侠 言语 姿势 材料 HW 气尘 酸毒 岩土">
-    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html" ><spell 
-      >尖刺护盾Spiny Shield</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html"><spell>尖刺护盾Spiny Shield</spell></A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>德 软 术 法</TD>
@@ -4071,8 +3981,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>HW</TD></tr>
 <tr data-spell="黄昏之纱VeilofDusk" data-tags="防护 一环 德鲁伊 魔契师 言语 姿势 材料 HW 气尘 幻象">
-    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#黄昏之纱" ><spell>黄昏之纱Veil 
-      of Dusk</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#黄昏之纱"><spell>黄昏之纱Veil of Dusk</spell></A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>德 锁</TD>
@@ -4083,8 +3992,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>HW</TD></tr>
 <tr data-spell="伏击猎物AmbushPrey" data-tags="幻术 二环 游侠 姿势 材料 HW 黯蚀 气尘 预知 幻象">
-    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#伏击猎物" ><spell>伏击猎物Ambush 
-      Prey</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/谦卑林.html#伏击猎物"><spell>伏击猎物Ambush Prey</spell></A></TD>
     <td>二环</TD>
     <td>幻术</TD>
     <td>软</TD>
@@ -4095,8 +4003,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>HW</TD></tr>
 <tr data-spell="血蚀箭Blood Bolt" data-tags="死灵 戏法(零环) 法师 魔契师 术士 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#血蚀箭" ><spell>血蚀箭Blood 
-      Bolt</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#血蚀箭"><spell>血蚀箭Blood Bolt</spell></A></TD>
     <td>戏法</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -4107,7 +4014,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="瓦解术Dissolution" data-tags="变化 戏法(零环) 法师 言语 姿势 CM 炼金 空间">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#瓦解术" ><spell>瓦解术Dissolution</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#瓦解术"><spell>瓦解术Dissolution</spell></A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>法</TD>
@@ -4118,8 +4025,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="灼眼术Eye Burn" data-tags="变化 戏法(零环) 德鲁伊 法师 言语 姿势 材料 CM 幻象">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#灼眼术" ><spell>灼眼术Eye 
-      Burn</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#灼眼术"><spell>灼眼术Eye Burn</spell></A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>德 法</TD>
@@ -4130,8 +4036,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="莫测仪容Mysterious Presence" data-tags="幻术 戏法(零环) 德鲁伊 术士 吟游诗人 言语 姿势 CM 幻象">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#莫测仪容" ><spell>莫测仪容Mysterious 
-      Presence</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#莫测仪容"><spell>莫测仪容Mysterious Presence</spell></A></TD>
     <td>戏法</TD>
     <td>幻术</TD>
     <td>诗 德 术</TD>
@@ -4142,8 +4047,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="先祖授慧Ancestral Communion" data-tags="预言 一环 德鲁伊 牧师 术士 游侠 言语 姿势 CM 预知">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#先祖授慧" ><spell>先祖授慧Ancestral 
-      Communion</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#先祖授慧"><spell>先祖授慧Ancestral Communion</spell></A></TD>
     <td>一环</TD>
     <td>预言</TD>
     <td>牧 德 软 术</TD>
@@ -4154,8 +4058,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="迷惑亡灵Captivate Undead" data-tags="死灵 一环 法师 魔契师 牧师 术士 吟游诗人 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#迷惑亡灵" ><spell>迷惑亡灵Captivate 
-      Undead</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#迷惑亡灵"><spell>迷惑亡灵Captivate Undead</spell></A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>诗 牧 术 锁 法</TD>
@@ -4166,8 +4069,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="魔鬼报偿Devils Due" data-tags="死灵 一环 法师 魔契师 术士 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#魔鬼报偿" ><spell>魔鬼报偿Devil's 
-      Due</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#魔鬼报偿"><spell>魔鬼报偿Devil's Due</spell></A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -4178,8 +4080,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="饕餮魔刃Hungering Blade" data-tags="死灵 一环 魔契师 圣武士 游侠 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#饕餮魔刃" ><spell>饕餮魔刃Hungering 
-      Blade</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#饕餮魔刃"><spell>饕餮魔刃Hungering Blade</spell></A></TD>
     <td>一环</TD>
     <td>死灵</TD>
     <td>帕 软 契</TD>
@@ -4201,8 +4102,7 @@ Hand</A></TD>
     <td>×</td>
     <td>CM</td></tr>
 <tr data-spell="判罪锁链Chain of Conviction" data-tags="咒法 二环 魔契师 圣武士 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#判罪锁链" ><spell>判罪锁链Chain 
-      of Conviction</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#判罪锁链"><spell>判罪锁链Chain of Conviction</spell></A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>帕 契</TD>
@@ -4213,8 +4113,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="失落者合颂Chorus of the Lost" data-tags="死灵 二环 法师 魔契师 牧师 术士 吟游诗人 言语 姿势 材料 CM 黯蚀 价耗">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#失落者合颂" ><spell>失落者合颂Chorus 
-      of the Lost</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#失落者合颂"><spell>失落者合颂Chorus of the Lost</spell></A></TD>
     <td>二环</TD>
     <td>死灵</TD>
     <td>诗 牧 术 锁 法</TD>
@@ -4225,8 +4124,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="黯然销魂曲Harrowing Ballad" data-tags="惑控 二环 法师 术士 吟游诗人 言语 姿势 CM 黯蚀 心魂">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#黯然销魂曲" ><spell>黯然销魂曲Harrowing 
-      Ballad</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#黯然销魂曲"><spell>黯然销魂曲Harrowing Ballad</spell></A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>诗 术 法</TD>
@@ -4237,8 +4135,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="夏日清风SummerWinds" data-tags="塑能 二环 德鲁伊 牧师 圣武士 游侠 言语 姿势 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#夏日清风" ><spell>夏日清风Summer 
-      Winds</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#夏日清风"><spell>夏日清风Summer Winds</spell></A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>牧 德 帕 软</TD>
@@ -4249,8 +4146,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="溃心低语UnravelingWhisper" data-tags="惑控 二环 法师 魔契师 术士 吟游诗人 言语 姿势 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#溃心低语" ><spell>溃心低语Unraveling 
-      Whisper</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#溃心低语"><spell>溃心低语Unraveling Whisper</spell></A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>诗 术 锁 法</TD>
@@ -4261,8 +4157,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="死神面纱VeiloftheReaper" data-tags="幻术 二环 法师 魔契师 术士 游侠 言语 姿势 材料 幻象">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#死神面纱" ><spell>死神面纱Veil 
-      of the Reaper</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#死神面纱"><spell>死神面纱Veil of the Reaper</spell></A></TD>
     <td>二环</TD>
     <td>幻术</TD>
     <td>软 术 锁 法</TD>
@@ -4272,9 +4167,8 @@ Hand</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>CM</TD></tr>
-<tr data-spell="蠕行腐朽CreepingRot"     data-tags="死灵 三环 德鲁伊 法师 魔契师 术士 游侠 言语 姿势 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#蠕行腐朽" ><spell>蠕行腐朽Creeping 
-      Rot</spell></A></TD>
+<tr data-spell="蠕行腐朽CreepingRot" data-tags="死灵 三环 德鲁伊 法师 魔契师 术士 游侠 言语 姿势 黯蚀">
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#蠕行腐朽"><spell>蠕行腐朽Creeping Rot</spell></A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>德 软 术 锁 法</TD>
@@ -4285,8 +4179,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="猩红丰获CrimsonHarvest" data-tags="死灵 三环 法师 魔契师 术士 言语 姿势 材料 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#猩红丰获" ><spell>猩红丰获Crimson 
-      Harvest</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#猩红丰获"><spell>猩红丰获Crimson Harvest</spell></A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -4297,8 +4190,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD>
   <tr data-spell="歪曲结界CrookedWard" data-tags="防护 三环 德鲁伊 法师 魔契师 游侠 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#歪曲结界" ><spell>歪曲结界Crooked 
-      Ward</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#歪曲结界"><spell>歪曲结界Crooked Ward</spell></A></TD>
     <td>三环</TD>
     <td>防护</TD>
     <td>德 软 锁 法</TD>
@@ -4309,8 +4201,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="剔肉镰刀CullingSickle" data-tags="死灵 三环 德鲁伊 法师 魔契师 术士 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#剔肉镰刀" ><spell>剔肉镰刀Culling 
-      Sickle</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#剔肉镰刀"><spell>剔肉镰刀Culling Sickle</spell></A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>德 术 锁 法</TD>
@@ -4321,8 +4212,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="受诅杂音CursedCacophony" data-tags="惑控 三环 魔契师 术士 吟游诗人 姿势 材料 仪式 CM 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#受诅杂音" ><spell>受诅杂音Cursed 
-      Cacophony</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#受诅杂音"><spell>受诅杂音Cursed Cacophony</spell></A></TD>
     <td>三环</TD>
     <td>惑控</TD>
     <td>诗 术 锁</TD>
@@ -4333,8 +4223,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="丰收月辉HarvestMoonglow" data-tags="塑能 三环 德鲁伊 牧师 游侠 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#丰收月辉" ><spell>丰收月辉Harvest 
-      Moonglow</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#丰收月辉"><spell>丰收月辉Harvest Moonglow</spell></A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 德 软</TD>
@@ -4345,7 +4234,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="孤立术Isolation" data-tags="惑控 三环 法师 魔契师 言语 姿势 材料 CM 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#孤立术" ><spell>孤立术Isolation</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#孤立术"><spell>孤立术Isolation</spell></A></TD>
     <td>三环</TD>
     <td>惑控</TD>
     <td>锁 法</TD>
@@ -4356,8 +4245,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="悼亡迷雾MistofMourning" data-tags="惑控 三环 法师 魔契师 术士 言语 姿势 材料 CM 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#悼亡迷雾" ><spell>悼亡迷雾Mist 
-      of Mourning</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#悼亡迷雾"><spell>悼亡迷雾Mist of Mourning</spell></A></TD>
     <td>三环</TD>
     <td>惑控</TD>
     <td>术 锁 法</TD>
@@ -4368,7 +4256,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="殉难者Martyr" data-tags="死灵 三环 法师 牧师 圣武士 言语 姿势 材料 CM 黯蚀 价耗">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#殉难者" ><spell>殉难者Martyr</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#殉难者"><spell>殉难者Martyr</spell></A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>牧 帕 法</TD>
@@ -4379,8 +4267,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="猩红黎明ScarletDawn" data-tags="塑能 三环 德鲁伊 法师 魔契师 牧师 圣武士 游侠 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#猩红黎明" ><spell>猩红黎明Scarlet 
-      Dawn</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#猩红黎明"><spell>猩红黎明Scarlet Dawn</spell></A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 德 帕 软 锁 法</TD>
@@ -4391,8 +4278,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="汲影术ShadowDrain" data-tags="死灵 三环 法师 魔契师 术士 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#汲影术" ><spell>汲影术Shadow 
-      Drain</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#汲影术"><spell>汲影术Shadow Drain</spell></A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -4403,8 +4289,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="活埋术BuriedAlive" data-tags="变化 四环 德鲁伊 法师 魔契师 术士 言语 姿势 材料 CM 岩土">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#活埋术" ><spell>活埋术Buried 
-      Alive</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#活埋术"><spell>活埋术Buried Alive</spell></A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>德 术 锁 法</TD>
@@ -4415,8 +4300,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="薪火焚身ConsumingPyre" data-tags="塑能 四环 德鲁伊 魔契师 圣武士 言语 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#薪火焚身" ><spell>薪火焚身Consuming 
-      Pyre</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#薪火焚身"><spell>薪火焚身Consuming Pyre</spell></A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>德 帕 锁</TD>
@@ -4427,8 +4311,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="野性呼唤CalloftheWild" data-tags="惑控 四环 德鲁伊 魔契师 吟游诗人 游侠 言语 姿势 材料 CM 自然 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#野性呼唤" ><spell>野性呼唤Call 
-      of the Wild</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#野性呼唤"><spell>野性呼唤Call of the Wild</spell></A></TD>
     <td>四环</TD>
     <td>惑控</TD>
     <td>诗 德 软 锁</TD>
@@ -4439,8 +4322,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="绝望侵袭IntrusiveDespair" data-tags="惑控 四环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 CM 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#绝望侵袭" ><spell>绝望侵袭Intrusive 
-      Despair</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#绝望侵袭"><spell>绝望侵袭Intrusive Despair</spell></A></TD>
     <td>四环</TD>
     <td>惑控</TD>
     <td>诗 术 锁 法</TD>
@@ -4451,8 +4333,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD>
   <tr data-spell="凶杀鸦群MurderofCrows" data-tags="咒法 四环 德鲁伊 法师 魔契师 术士 游侠 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#凶杀鸦群" ><spell>凶杀鸦群Murder 
-      of Crows</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#凶杀鸦群"><spell>凶杀鸦群Murder of Crows</spell></A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 软 术 锁 法</TD>
@@ -4463,8 +4344,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="傀儡掌控PuppetMaster" data-tags="惑控 四环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 CM 心魂">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#傀儡掌控" ><spell>傀儡掌控Puppet 
-      Master</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#傀儡掌控"><spell>傀儡掌控Puppet Master</spell></A></TD>
     <td>四环</TD>
     <td>惑控</TD>
     <td>诗 术 锁 法</TD>
@@ -4475,8 +4355,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="祭献虹吸SacrificialSiphon" data-tags="死灵 四环 法师 魔契师 牧师 圣武士 姿势 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#祭献虹吸" ><spell>祭献虹吸Sacrificial 
-      Siphon</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#祭献虹吸"><spell>祭献虹吸Sacrificial Siphon</spell></A></TD>
     <td>四环</TD>
     <td>死灵</TD>
     <td>牧 帕 锁 法</TD>
@@ -4487,8 +4366,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="收割场FieldofReaping" data-tags="死灵 五环 德鲁伊 魔契师 牧师 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#收割场" ><spell>收割场Field 
-      of Reaping</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#收割场"><spell>收割场Field of Reaping</spell></A></TD>
     <td>五环</TD>
     <td>死灵</TD>
     <td>牧 德 锁</TD>
@@ -4499,8 +4377,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>CM</TD></tr>
 <tr data-spell="镜像痛苦MirroredAgony" data-tags="防护 五环 法师 术士 吟游诗人 言语 姿势 材料 CM 黯蚀 心魂 幻象">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#镜像痛苦" ><spell>镜像痛苦Mirrored 
-      Agony</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#镜像痛苦"><spell>镜像痛苦Mirrored Agony</spell></A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>诗 术 法</TD>
@@ -4511,8 +4388,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="惊怖冲锋GhastlyCharge" data-tags="死灵 六环 法师 魔契师 术士 言语 姿势 材料 CM 黯蚀 心魂 幻象 酸毒侵蚀">
-    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#惊怖冲锋" ><spell>惊怖冲锋Ghastly 
-      Charge</spell></A></TD>
+    <td><A href="../第五章：施法规则\合作第三方法术\歪曲之月.html#惊怖冲锋"><spell>惊怖冲锋Ghastly Charge</spell></A></TD>
     <td>六环</TD>
     <td>死灵</TD>
     <td>术 锁 法</TD>
@@ -4523,8 +4399,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="血色隐秘Sanguine Secrets" data-tags="预言 二环 法师 魔契师 术士 游侠 言语 姿势 材料 CM 黯蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#血色隐秘" ><spell>血色隐秘Sanguine 
-      Secrets</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/歪曲之月.html#血色隐秘"><spell>血色隐秘Sanguine Secrets</spell></A></TD>
     <td>二环</TD>
     <td>预言</TD>
     <td>软 术 锁 法</TD>
@@ -4535,7 +4410,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>CM</TD></tr>
 <tr data-spell="残酷收割GrimHarvest" data-tags="死灵 六环 德鲁伊 法师 魔契师 牧师 言语 姿势 材料 BET 黯蚀 酸毒侵蚀">
-    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#残酷收割" ><spell>残酷收割Grim Harvest</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#残酷收割"><spell>残酷收割Grim Harvest</spell></A></TD>
     <td>六环</TD>
     <td>死灵</TD>
     <td>牧 德 锁 法</TD>
@@ -4546,7 +4421,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>BET</TD></tr>
 <tr data-spell="友尽之灾DoomofFalseFriends" data-tags="惑控 八环 法师 术士 吟游诗人 言语 姿势 材料 BET 光影心灵">
-    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#友尽之灾" ><spell>友尽之灾Doom of False Friends</spell></A></TD>
+    <td><A href="../第五章：施法规则/合作第三方法术/黯潮之书.html#友尽之灾"><spell>友尽之灾Doom of False Friends</spell></A></TD>
     <td>八环</TD>
     <td>惑控</TD>
     <td>诗 术 法</TD>
@@ -4568,8 +4443,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="德莱雅的人工生命小帮手DeryansHelpfulHomunculi" data-tags="咒法 二环 法师 牧师 言语 姿势 材料 仪式 FR 炼金 预知 价耗">
-    <td><a>德莱雅的人工生命小帮手Deryan's 
-      Helpful Homunculi</A></TD>
+    <td><a>德莱雅的人工生命小帮手Deryan's Helpful Homunculi</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>牧 法</TD>
@@ -4580,8 +4454,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="伊尔明斯特的法术闪避ElminstersElusion" data-tags="防护 二环 法师 特种 言语 姿势 FR 气尘 流水 雷电 预知 空间 幻象">
-    <td><a>伊尔明斯特的法术闪避Elminster's 
-      Elusion</A></TD>
+    <td><a>伊尔明斯特的法术闪避Elminster's Elusion</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>法</TD>
@@ -4592,8 +4465,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>FR</TD></tr>
 <tr data-spell="噪鸣护盾CacophonicShield" data-tags="塑能 三环 法师 术士 吟游诗人 言语 姿势 FR 炼金 雷电 岩土 空间 幻象">
-    <td><a>噪鸣护盾Cacophonic 
-    Shield</A></TD>
+    <td><a>噪鸣护盾Cacophonic Shield</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>诗 术 法</TD>
@@ -4626,8 +4498,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="希伦的剧毒灵蛇SylunesViper" data-tags="咒法 三环 德鲁伊 法师 言语 姿势 材料 FR 黯蚀 自然 心魂 酸毒 深海">
-    <td><a>希伦的剧毒灵蛇Sylune's 
-    Viper</A></TD>
+    <td><a>希伦的剧毒灵蛇Sylune's Viper</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>德 法</TD>
@@ -4637,7 +4508,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>FR</TD></tr>
-<tr data-spell="反冲术Backlash"     data-tags="防护 四环 法师 魔契师 术士 吟游诗人 言语 FR 炼金 岩土">
+<tr data-spell="反冲术Backlash" data-tags="防护 四环 法师 魔契师 术士 吟游诗人 言语 FR 炼金 岩土">
     <td><a>反冲术Backlash</A></TD>
     <td>四环</TD>
     <td>防护</TD>
@@ -4682,8 +4553,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>FR</TD></tr>
 <tr data-spell="桑缟的元灵显圣SongalsElementalSuffusion" data-tags="变化 五环 德鲁伊 法师 术士 言语 姿势 材料 FR 自然 价耗">
-    <td><a>桑缟的元灵显圣Songal's Elemental 
-      Suffusion</A></TD>
+    <td><a>桑缟的元灵显圣Songal's Elemental Suffusion</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -4705,8 +4575,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>FR</TD></tr>
 <tr data-spell="伊尔明斯特的绚丽光球ElminstersEffulgentSpheres" data-tags="塑能 六环 德鲁伊 法师 术士 言语 姿势 材料 FR 价耗">
-    <td><a>伊尔明斯特的绚丽光球Elminster's 
-      Effulgent Spheres</A></TD>
+    <td><a>伊尔明斯特的绚丽光球Elminster's Effulgent Spheres</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>德 术 法</TD>
@@ -4717,8 +4586,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="欣布的法愈秘术SimbulsSynostodweomer" data-tags="变化 七环 法师 术士 言语 姿势 FR 疗愈重塑">
-    <td><a>欣布的法愈秘术Simbul's 
-      Synostodweomer</A></TD>
+    <td><a>欣布的法愈秘术Simbul's Synostodweomer</A></TD>
     <td>七环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -4729,8 +4597,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>FR</TD></tr>
 <tr data-spell="密斯特拉圣星HolyStarofMystra" data-tags="塑能 八环 法师 牧师 言语 姿势 FR 辉煌烈焰">
-    <td><a>密斯特拉圣星Holy Star of 
-      Mystra</A></TD>
+    <td><a>密斯特拉圣星Holy Star of Mystra</A></TD>
     <td>八环</TD>
     <td>塑能</TD>
     <td>牧 法</TD>
@@ -4741,8 +4608,7 @@ Hand</A></TD>
     <td>√</TD>
     <td>FR</TD></tr>
 <tr data-spell="亚比达奇凋死术Abi-Dalzim's Horrid Wilting" data-tags="死灵 八环 法师 术士 言语 姿势 材料 XGE 黯蚀 酸毒">
-    <td><a>亚比达奇凋死术Abi-Dalzim's 
-      Horrid Wilting</A></TD>
+    <td><a>亚比达奇凋死术Abi-Dalzim's Horrid Wilting</A></TD>
     <td>八环</TD>
     <td>死灵</TD>
     <td>术 法</TD>
@@ -4776,8 +4642,7 @@ Elements</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="阿迦纳萨喷火术Aganazzar's Scorcher" data-tags="塑能 二环 法师 术士 言语 姿势 材料 XGE 烈火">
-    <td><a>阿迦纳萨喷火术Aganazzar's 
-      Scorcher</A></TD>
+    <td><a>阿迦纳萨喷火术Aganazzar's Scorcher</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -4832,8 +4697,7 @@ Elements</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="化兽为友Animal Friendship" data-tags="惑控 一环 德鲁伊 吟游诗人 游侠 言语 姿势 材料 PHB24 自然 预知">
-    <td><a>化兽为友Animal 
-    Friendship</A></TD>
+    <td><a>化兽为友Animal Friendship</A></TD>
     <td>一环</TD>
     <td>惑控</TD>
     <td>诗 德 软</TD>
@@ -4844,8 +4708,7 @@ Elements</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="动物信使Animal Messenger" data-tags="惑控 二环 德鲁伊 吟游诗人 游侠 言语 姿势 材料 仪式 PHB24 自然 预知">
-    <td><a>动物信使Animal 
-    Messenger</A></TD>
+    <td><a>动物信使Animal Messenger</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>诗 德 软</TD>
@@ -4925,8 +4788,7 @@ Field</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="嫌恶术/关怀术AntipathySympathy" data-tags="惑控 八环 德鲁伊 法师 吟游诗人 言语 姿势 材料 PHB24 酸毒侵蚀 光影心灵">
-    <td><a 
-      >嫌恶术/关怀术AntipathySympathy</A></TD>
+    <td><a>嫌恶术/关怀术AntipathySympathy</A></TD>
     <td>八环</TD>
     <td>惑控</TD>
     <td>诗 德 法</TD>
@@ -4981,8 +4843,7 @@ Field</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="黯冰狱铠Armor of Agathys" data-tags="防护 一环 魔契师 言语 姿势 材料 PHB24 深海 寒冰">
-    <td><a>黯冰狱铠Armor of 
-    Agathys</A></TD>
+    <td><a>黯冰狱铠Armor of Agathys</A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>锁</TD>
@@ -5004,8 +4865,7 @@ Field</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="阿莎德隆奔行Ashardalon's Stride" data-tags="变化 三环 法师 奇械师 术士 游侠 言语 姿势 专注 FTD 烈火">
-    <td><a>阿莎德隆奔行Ashardalon's 
-      Stride</A></TD>
+    <td><a>阿莎德隆奔行Ashardalon's Stride</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>奇 软 术 法</TD>
@@ -5016,8 +4876,7 @@ Field</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="星界投影Astral Projection" data-tags="死灵 九环 法师 魔契师 牧师 言语 姿势 材料 PHB24 时空矢量 价耗">
-    <td><a>星界投影Astral 
-    Projection</A></TD>
+    <td><a>星界投影Astral Projection</A></TD>
     <td>九环</TD>
     <td>死灵</TD>
     <td>牧 法 锁</TD>
@@ -5061,8 +4920,7 @@ Field</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="活力灵光Aura of Vitality" data-tags="塑能 三环 德鲁伊 辅助 牧师 圣武士 医疗 言语 专注 PHB24 自然 流水">
-    <td><a>活力灵光Aura of 
-    Vitality</A></TD>
+    <td><a>活力灵光Aura of Vitality</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>牧 德 帕</TD>
@@ -5216,8 +5074,7 @@ Field</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="灾厄之刃Blade of Disaster" data-tags="咒法 九环 法师 魔契师 术士 言语 姿势 专注 FR 酸毒侵蚀">
-    <td><a>灾厄之刃Blade of 
-    Disaster</A></TD>
+    <td><a>灾厄之刃Blade of Disaster</A></TD>
     <td>九环</TD>
     <td>咒法</TD>
     <td>术 法 锁</TD>
@@ -5261,8 +5118,7 @@ Field</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="目盲术/耳聋术Blindness/Deafness" data-tags="变化 二环 法师 牧师 术士 特种 吟游诗人 言语 PHB24 流水 黯蚀 幻象">
-    <td><a 
-      >目盲术/耳聋术Blindness/Deafness</A></TD>
+    <td><a>目盲术/耳聋术Blindness/Deafness</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>诗 牧 术 法</TD>
@@ -5295,8 +5151,7 @@ Field</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="地之骨Bones of the Earth" data-tags="变化 六环 德鲁伊 言语 姿势 XGE 岩土 酷寒洪流">
-    <td><a>地之骨Bones of the 
-    Earth</A></TD>
+    <td><a>地之骨Bones of the Earth</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德</TD>
@@ -5318,8 +5173,7 @@ Field</A></TD>
     <td>×</TD>
     <td>TCE</TD></tr>
 <tr data-spell="借鉴才学Borrowed Knowledge" data-tags="预言 二环 法师 辅助 魔契师 牧师 吟游诗人 言语 姿势 材料 SCC 预知 价耗">
-    <td><a>借鉴才学Borrowed 
-    Knowledge</A></TD>
+    <td><a>借鉴才学Borrowed Knowledge</A></TD>
     <td>二环</TD>
     <td>预言</TD>
     <td>诗 牧 法 锁</TD>
@@ -5362,7 +5216,7 @@ Field</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="弹射术Catapult" data-tags="变化 一环 法师 奇械师 术士 姿势 XGE 炼金 空间">
+<tr data-spell="弹射术Catapult" data-tags="变化 一环 法师 奇械师 术士 姿势 XGE 炼金 空间 特种">
     <td><a>弹射术Catapult</A></TD>
     <td>一环</TD>
     <td>变化</TD>
@@ -5520,8 +5374,7 @@ Power</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="匕首之云Cloud of Daggers" data-tags="咒法 二环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 专注 PHB24 空间">
-    <td><a>匕首之云Cloud of 
-    Daggers</A></TD>
+    <td><a>匕首之云Cloud of Daggers</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>诗 术 法 锁</TD>
@@ -5576,8 +5429,7 @@ Power</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="问道自然Commune with Nature" data-tags="预言 五环 德鲁伊 游侠 言语 姿势 仪式 PHB24 自然">
-    <td><a>问道自然Commune with 
-      Nature</A></TD>
+    <td><a>问道自然Commune with Nature</A></TD>
     <td>五环</TD>
     <td>预言</TD>
     <td>德 软</TD>
@@ -5599,8 +5451,7 @@ Power</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="通晓语言Comprehend Languages" data-tags="预言 一环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 仪式 PHB24 心魂">
-    <td><a>通晓语言Comprehend 
-      Languages</A></TD>
+    <td><a>通晓语言Comprehend Languages</A></TD>
     <td>一环</TD>
     <td>预言</TD>
     <td>诗 术 法 锁</TD>
@@ -5668,8 +5519,7 @@ Barrage</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="咒唤圣光Conjure Celestial" data-tags="咒法 七环 牧师 言语 姿势 专注 PHB24 疗愈重塑 辉煌烈焰">
-    <td><a>咒唤圣光Conjure 
-    Celestial</A></TD>
+    <td><a>咒唤圣光Conjure Celestial</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -5679,7 +5529,7 @@ Barrage</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="咒唤元素Conjure Elemental" data-tags="咒法 五环 德鲁伊 法师 言语 姿势 专注 PHB24 自然 气尘 深海 烈火 雷电 岩土 寒冰">
+<tr data-spell="咒唤元素Conjure Elemental" data-tags="咒法 五环 德鲁伊 法师 言语 姿势 专注 PHB24 自然 深海 烈火 雷电 岩土 寒冰">
     <td><a>咒唤元素Conjure Elemental</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
@@ -5701,7 +5551,7 @@ Barrage</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="咒唤微元素群Conjure Minor Elementals" data-tags="咒法 四环 德鲁伊 法师 言语 姿势 专注 PHB24 自然 气尘 烈火 雷电 岩土 预知 寒冰">
+<tr data-spell="咒唤微元素群Conjure Minor Elementals" data-tags="咒法 四环 德鲁伊 法师 言语 姿势 专注 PHB24 自然 烈火 雷电 岩土 预知 寒冰">
     <td><a>咒唤微元素群Conjure Minor Elementals</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
@@ -5724,8 +5574,7 @@ Barrage</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="咒唤林地卫士Conjure Woodland Beings" data-tags="咒法 四环 德鲁伊 游侠 言语 姿势 专注 PHB24 自然 预知">
-    <td><a>咒唤林地卫士Conjure Woodland 
-      Beings</A></TD>
+    <td><a>咒唤林地卫士Conjure Woodland Beings</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>德 软</TD>
@@ -5736,8 +5585,7 @@ Barrage</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="异界探知Contact Other Plane" data-tags="预言 五环 法师 魔契师 言语 仪式 PHB24 空间">
-    <td><a>异界探知Contact Other 
-      Plane</A></TD>
+    <td><a>异界探知Contact Other Plane</A></TD>
     <td>五环</TD>
     <td>预言</TD>
     <td>法 锁</TD>
@@ -5827,8 +5675,7 @@ Weather</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="警戒箭阵Cordon of Arrows" data-tags="变化 二环 游侠 言语 姿势 材料 PHB24">
-    <td><a>警戒箭阵Cordon of 
-    Arrows</A></TD>
+    <td><a>警戒箭阵Cordon of Arrows</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>软</TD>
@@ -5861,8 +5708,7 @@ Weather</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="造粮术Create Food and Water" data-tags="咒法 三环 牧师 圣武士 言语 姿势 PHB24">
-    <td><a>造粮术Create Food and 
-      Water</A></TD>
+    <td><a>造粮术Create Food and Water</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>牧 帕</TD>
@@ -5873,8 +5719,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="创造人工生命体Create Homunculus" data-tags="变化 六环 法师 言语 姿势 材料 XGE 炼金 流水 岩土 预知 幻象 时空矢量 酷寒洪流 疗愈重塑 光影心灵 价耗">
-    <td><a>创造人工生命体Create 
-      Homunculus</A></TD>
+    <td><a>创造人工生命体Create Homunculus</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>法</TD>
@@ -5896,8 +5741,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="创造法驱魔舵Create Spelljamming Helm" data-tags="变化 五环 法师 奇械师 言语 姿势 材料 AAG 价耗">
-    <td><a>创造法驱魔舵Create Spelljamming 
-      Helm</A></TD>
+    <td><a>创造法驱魔舵Create Spelljamming Helm</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>奇 法</TD>
@@ -5919,8 +5763,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="造水术/枯水术Create or Destroy Water" data-tags="变化 一环 德鲁伊 牧师 言语 姿势 材料 PHB24 深海 流水">
-    <td><a>造水术/枯水术Create or Destroy 
-      Water</A></TD>
+    <td><a>造水术/枯水术Create or Destroy Water</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>牧 德</TD>
@@ -5942,8 +5785,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="疯狂冠冕Crown of Madness" data-tags="惑控 二环 法师 魔契师 术士 吟游诗人 言语 姿势 专注 PHB24 黯蚀 心魂 深海">
-    <td><a>疯狂冠冕Crown of 
-    Madness</A></TD>
+    <td><a>疯狂冠冕Crown of Madness</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>诗 术 法 锁</TD>
@@ -5965,8 +5807,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="十字军披风Crusader's Mantle" data-tags="塑能 三环 圣武士 言语 专注 PHB24 光芒">
-    <td><a>十字军披风Crusader's 
-    Mantle</A></TD>
+    <td><a>十字军披风Crusader's Mantle</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>帕</TD>
@@ -6065,8 +5906,7 @@ Weather</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="延迟爆裂火球Delayed Blast Fireball" data-tags="塑能 七环 法师 术士 言语 姿势 材料 专注 PHB24 辉煌烈焰">
-    <td><a>延迟爆裂火球Delayed Blast 
-      Fireball</A></TD>
+    <td><a>延迟爆裂火球Delayed Blast Fireball</A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -6177,8 +6017,7 @@ Thoughts</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="驱逐善恶Dispel Evil and Good" data-tags="防护 五环 牧师 圣武士 言语 姿势 材料 专注 PHB24 光芒 流水">
-    <td><a>驱逐善恶Dispel Evil and 
-      Good</A></TD>
+    <td><a>驱逐善恶Dispel Evil and Good</A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>牧 帕</TD>
@@ -6200,8 +6039,7 @@ Thoughts</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="不谐低语Dissonant Whispers" data-tags="惑控 一环 吟游诗人 言语 PHB24 心魂 深海">
-    <td><a>不谐低语Dissonant 
-    Whispers</A></TD>
+    <td><a>不谐低语Dissonant Whispers</A></TD>
     <td>一环</TD>
     <td>惑控</TD>
     <td>诗</TD>
@@ -6278,8 +6116,7 @@ Thoughts</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="支配怪物Dominate Monster" data-tags="惑控 八环 法师 魔契师 术士 吟游诗人 言语 姿势 专注 PHB24 疗愈重塑 光影心灵">
-    <td><a>支配怪物Dominate 
-    Monster</A></TD>
+    <td><a>支配怪物Dominate Monster</A></TD>
     <td>八环</TD>
     <td>惑控</TD>
     <td>诗 术 法 锁</TD>
@@ -6302,8 +6139,7 @@ Person</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="龙类变形Draconic transformation" data-tags="变化 七环 德鲁伊 法师 术士 言语 姿势 材料 专注 FTD 价耗">
-    <td><a>龙类变形Draconic 
-      transformation</A></TD>
+    <td><a>龙类变形Draconic transformation</A></TD>
     <td>七环</TD>
     <td>变化</TD>
     <td>德 术 法</TD>
@@ -6325,8 +6161,7 @@ Person</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="卓姆吉瞬间召唤Drawmij's Instant Summons" data-tags="咒法 六环 法师 言语 姿势 材料 仪式 PHB24 空间 时空矢量 价耗">
-    <td><a>卓姆吉瞬间召唤Drawmij's Instant 
-      Summons</A></TD>
+    <td><a>卓姆吉瞬间召唤Drawmij's Instant Summons</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -6348,8 +6183,7 @@ Person</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="蓝纱一梦Dream of the Blue Veil" data-tags="咒法 七环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 TCE">
-    <td><a>蓝纱一梦Dream of the Blue 
-      Veil</A></TD>
+    <td><a>蓝纱一梦Dream of the Blue Veil</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>诗 术 法 锁</TD>
@@ -6447,7 +6281,7 @@ Person</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>XGE</TD></tr>
-<tr data-spell="元素武器Elemental Weapon" data-tags="变化 三环 德鲁伊 圣武士 特种 游侠 言语 姿势 专注 PHB24 自然 气尘 炼金 酸毒 烈火 雷电 寒冰">
+<tr data-spell="元素武器Elemental Weapon" data-tags="变化 三环 德鲁伊 圣武士 特种 游侠 言语 姿势 专注 PHB24 自然 炼金 酸毒 烈火 雷电 寒冰">
     <td><a>元素武器Elemental Weapon</A></TD>
     <td>三环</TD>
     <td>变化</TD>
@@ -6516,8 +6350,7 @@ Ability</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="变巨术/缩小术Enlarge/Reduce" data-tags="变化 二环 德鲁伊 法师 术士 吟游诗人 言语 姿势 材料 专注 PHB24">
-    <td><a 
-    >变巨术/缩小术Enlarge/Reduce</A></TD>
+    <td><a>变巨术/缩小术Enlarge/Reduce</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>诗 德 术 法</TD>
@@ -6528,8 +6361,7 @@ Ability</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="捕获打击Ensnaring Strike" data-tags="咒法 一环 游侠 言语 专注 PHB24 自然 深海">
-    <td><a>捕获打击Ensnaring 
-    Strike</A></TD>
+    <td><a>捕获打击Ensnaring Strike</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>软</TD>
@@ -6584,8 +6416,7 @@ Ability</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="艾伐黑触手Evard's Black Tentacles" data-tags="咒法 四环 法师 言语 姿势 材料 专注 PHB24 酸毒 深海">
-    <td><a>艾伐黑触手Evard's Black 
-      Tentacles</A></TD>
+    <td><a>艾伐黑触手Evard's Black Tentacles</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -6596,8 +6427,7 @@ Ability</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="脚底抹油Expeditious Retreat" data-tags="变化 一环 法师 魔契师 术士 言语 姿势 专注 PHB24">
-    <td><a>脚底抹油Expeditious 
-      Retreat</A></TD>
+    <td><a>脚底抹油Expeditious Retreat</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>术 法 锁</TD>
@@ -6718,8 +6548,7 @@ Ability</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="寻获高等坐骑Find Greater Steed" data-tags="咒法 四环 圣武士 言语 姿势 XGE 气尘 预知 幻象">
-    <td><a>寻获高等坐骑Find Greater 
-      Steed</A></TD>
+    <td><a>寻获高等坐骑Find Greater Steed</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>帕</TD>
@@ -6729,9 +6558,8 @@ Ability</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>XGE</TD></tr>
-<tr data-spell="寻获坐骑Find Steed"     data-tags="咒法 二环 圣武士 言语 姿势 PHB24">
-    <td><a>寻获坐骑Find 
-      Steed</A></TD>
+<tr data-spell="寻获坐骑Find Steed" data-tags="咒法 二环 圣武士 言语 姿势 PHB24">
+    <td><a>寻获坐骑Find Steed</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>帕</TD>
@@ -6741,7 +6569,7 @@ Ability</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="寻找陷阱Find traps" data-tags="预言 二环 德鲁伊 牧师 游侠 言语 姿势 PHB24">
+<tr data-spell="寻找陷阱Find traps" data-tags="预言 二环 德鲁伊 牧师 游侠 言语 姿势 PHB24 特种">
     <td><a>寻找陷阱Find traps</A></TD>
     <td>二环</TD>
     <td>预言</TD>
@@ -6820,8 +6648,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="费资本铂金盾Fizban's Platinum Shield" data-tags="防护 六环 法师 术士 言语 姿势 材料 专注 FTD 光芒 岩土 预知 寒冰 时空矢量 酷寒洪流 疗愈重塑 辉煌烈焰 价耗">
-    <td><a>费资本铂金盾Fizban's Platinum 
-      Shield</A></TD>
+    <td><a>费资本铂金盾Fizban's Platinum Shield</A></TD>
     <td>六环</TD>
     <td>防护</TD>
     <td>术 法</TD>
@@ -6887,8 +6714,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔宠群Flock of Familiars" data-tags="咒法 二环 法师 魔契师 言语 姿势 专注 模组">
-    <td><a>魔宠群Flock of 
-    Familiars</A></TD>
+    <td><a>魔宠群Flock of Familiars</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -6954,8 +6780,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="月光涌泉Fount of Moonlight" data-tags="塑能 四环 德鲁伊 吟游诗人 言语 姿势 专注 PHB24 自然 光芒">
-    <td><a>月光涌泉Fount of 
-    Moonlight</A></TD>
+    <td><a>月光涌泉Fount of Moonlight</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>诗 德</TD>
@@ -6966,8 +6791,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="行动自如Freedom of Movement" data-tags="防护 四环 德鲁伊 牧师 吟游诗人 游侠 言语 姿势 材料 PHB24 自然 气尘 深海 光芒 幻象">
-    <td><a>行动自如Freedom of 
-      Movement</A></TD>
+    <td><a>行动自如Freedom of Movement</A></TD>
     <td>四环</TD>
     <td>防护</TD>
     <td>诗 牧 德 软</TD>
@@ -7011,8 +6835,7 @@ Death</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="加德尔急速邮差Galder's Speedy Courier" data-tags="咒法 四环 法师 魔契师 言语 姿势 材料 价耗 模组">
-    <td><a>加德尔急速邮差Galder's Speedy 
-      Courier</A></TD>
+    <td><a>加德尔急速邮差Galder's Speedy Courier</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -7023,8 +6846,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="加德尔高塔术Galder's Tower" data-tags="咒法 三环 法师 言语 姿势 材料 模组">
-    <td><a>加德尔高塔术Galder's 
-    Tower</A></TD>
+    <td><a>加德尔高塔术Galder's Tower</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -7123,8 +6945,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="法术无效结界Globe of Invulnerability" data-tags="防护 六环 法师 术士 言语 姿势 材料 专注 PHB24 黯蚀 炼金 光芒 空间 时空矢量 酷寒洪流 疗愈重塑 酸毒侵蚀 辉煌烈焰">
-    <td><a>法术无效结界Globe of 
-      Invulnerability</A></TD>
+    <td><a>法术无效结界Globe of Invulnerability</A></TD>
     <td>六环</TD>
     <td>防护</TD>
     <td>术 法</TD>
@@ -7135,8 +6956,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="守卫刻纹Glyph of Warding" data-tags="防护 三环 法师 牧师 术师 吟游诗人 言语 姿势 材料 PHB24 预知 空间 价耗">
-    <td><a>守卫刻纹Glyph of 
-    Warding</A></TD>
+    <td><a>守卫刻纹Glyph of Warding</A></TD>
     <td>三环</TD>
     <td>防护</TD>
     <td>诗 牧 法</TD>
@@ -7168,9 +6988,8 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="油腻术Grease"     data-tags="咒法 一环 法师 术士 言语 姿势 材料 PHB24">
-    <td><a 
-      >油腻术Grease</A></TD>
+<tr data-spell="油腻术Grease" data-tags="咒法 一环 法师 术士 言语 姿势 材料 PHB24">
+    <td><a>油腻术Grease</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -7181,8 +7000,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="高等隐形术Greater Invisibility" data-tags="幻术 四环 法师 术士 吟游诗人 言语 姿势 专注 PHB24 气尘">
-    <td><a>高等隐形术Greater 
-      Invisibility</A></TD>
+    <td><a>高等隐形术Greater Invisibility</A></TD>
     <td>四环</TD>
     <td>幻术</TD>
     <td>诗 术 法</TD>
@@ -7193,8 +7011,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="高等复原术Greater Restoration" data-tags="防护 五环 德鲁伊 牧师 圣武士 吟游诗人 游侠 言语 姿势 材料 PHB24 自然 炼金 光芒 流水 价耗">
-    <td><a>高等复原术Greater 
-      Restoration</A></TD>
+    <td><a>高等复原术Greater Restoration</A></TD>
     <td>五环</TD>
     <td>防护</TD>
     <td>诗 牧 德 帕 软</TD>
@@ -7205,8 +7022,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="翠炎剑Green-Flame Blade" data-tags="塑能 戏法(零环) 法师 魔契师 奇械师 术士 姿势 材料 TCE 烈火 价耗">
-    <td><a>翠炎剑Green-Flame 
-    Blade</A></TD>
+    <td><a>翠炎剑Green-Flame Blade</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>奇 术 法 锁</TD>
@@ -7217,8 +7033,7 @@ Death</A></TD>
     <td>×</TD>
     <td>TCE</TD></tr>
 <tr data-spell="信仰守卫Guardian of Faith" data-tags="咒法 四环 牧师 言语 PHB24 心魂 预知 幻象">
-    <td><a>信仰守卫Guardian of 
-    Faith</A></TD>
+    <td><a>信仰守卫Guardian of Faith</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -7229,8 +7044,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="自然守卫Guardian of Nature" data-tags="变化 四环 德鲁伊 游侠 言语 专注 XGE">
-    <td><a>自然守卫Guardian of 
-    Nature</A></TD>
+    <td><a>自然守卫Guardian of Nature</A></TD>
     <td>四环</TD>
     <td>变化</TD>
     <td>德 软</TD>
@@ -7241,8 +7055,7 @@ Death</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="铜墙铁壁Guards and Wards" data-tags="防护 六环 法师 吟游诗人 言语 姿势 材料 PHB24 炼金">
-    <td><a>铜墙铁壁Guards and 
-    Wards</A></TD>
+    <td><a>铜墙铁壁Guards and Wards</A></TD>
     <td>六环</TD>
     <td>防护</TD>
     <td>诗 法</TD>
@@ -7319,8 +7132,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="幻景Hallucinatory Terrain" data-tags="幻术 四环 德鲁伊 法师 魔契师 吟游诗人 言语 姿势 材料 PHB24 自然 深海 岩土">
-    <td><a>幻景Hallucinatory 
-      Terrain</A></TD>
+    <td><a>幻景Hallucinatory Terrain</A></TD>
     <td>四环</TD>
     <td>幻术</TD>
     <td>诗 德 法 锁</TD>
@@ -7440,7 +7252,7 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="定身怪物Hold Monster" data-tags="惑控 五环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 专注 PHB24 黯蚀 心魂 酸毒 深海">
+<tr data-spell="定身怪物Hold Monster" data-tags="惑控 五环 法师 魔契师 术士 吟游诗人 言语 姿势 材料 专注 PHB24 黯蚀 寒冰 心魂 酸毒 深海">
     <td><a>定身怪物Hold Monster</A></TD>
     <td>五环</TD>
     <td>惑控</TD>
@@ -7451,7 +7263,7 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="定身类人Hold Person" data-tags="惑控 二环 德鲁伊 法师 辅助 魔契师 牧师 术士 特种 吟游诗人 言语 姿势 材料 专注 PHB24 黯蚀 心魂">
+<tr data-spell="定身类人Hold Person" data-tags="惑控 二环 德鲁伊 法师 辅助 魔契师 牧师 术士 特种 吟游诗人 言语 姿势 材料 专注 PHB24 黯蚀 寒冰 心魂 酸毒">
     <td><a>定身类人Hold Person</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
@@ -7508,8 +7320,7 @@ Hadar</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="催眠图纹Hypnotic Pattern" data-tags="幻术 三环 法师 魔契师 术士 吟游诗人 姿势 材料 专注 PHB24 心魂">
-    <td><a>催眠图纹Hypnotic 
-    Pattern</A></TD>
+    <td><a>催眠图纹Hypnotic Pattern</A></TD>
     <td>三环</TD>
     <td>幻术</TD>
     <td>诗 术 法 锁</TD>
@@ -7622,8 +7433,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>AI</TD></tr>
 <tr data-spell="地狱呼唤Infernal Calling" data-tags="咒法 五环 法师 魔契师 言语 姿势 材料 专注 XGE 价耗">
-    <td><a>地狱呼唤Infernal 
-    Calling</A></TD>
+    <td><a>地狱呼唤Infernal Calling</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -7667,8 +7477,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="智能壁垒Intellect Fortress" data-tags="防护 三环 法师 辅助 魔契师 奇械师 术士 吟游诗人 言语 专注 TCE 炼金">
-    <td><a>智能壁垒Intellect 
-    Fortress</A></TD>
+    <td><a>智能壁垒Intellect Fortress</A></TD>
     <td>三环</TD>
     <td>防护</TD>
     <td>奇 诗 术 法 锁</TD>
@@ -7679,8 +7488,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>TCE</TD></tr>
 <tr data-spell="炽焰赋权Investiture of Flame" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 XGE 烈火 辉煌烈焰">
-    <td><a>炽焰赋权Investiture of 
-      Flame</A></TD>
+    <td><a>炽焰赋权Investiture of Flame</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -7691,8 +7499,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="寒冰赋权Investiture of Ice" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 XGE 寒冰 酷寒洪流">
-    <td><a>寒冰赋权Investiture of 
-    Ice</A></TD>
+    <td><a>寒冰赋权Investiture of Ice</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -7703,8 +7510,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="磐石赋权Investiture of Stone" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 XGE 岩土 酷寒洪流">
-    <td><a>磐石赋权Investiture of 
-      Stone</A></TD>
+    <td><a>磐石赋权Investiture of Stone</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -7715,8 +7521,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="清风赋权Investiture of Wind" data-tags="变化 六环 德鲁伊 法师 魔契师 术士 言语 姿势 专注 XGE 气尘 风暴雷鸣">
-    <td><a>清风赋权Investiture of 
-      Wind</A></TD>
+    <td><a>清风赋权Investiture of Wind</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>德 术 法 锁</TD>
@@ -7749,8 +7554,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>AU</TD></tr>
 <tr data-spell="贾拉兹光辉风暴Jallarzi's Storm of Radiance" data-tags="塑能 五环 法师 魔契师 言语 姿势 材料 专注 PHB24 光芒">
-    <td><a>贾拉兹光辉风暴Jallarzi's Storm 
-      of Radiance</A></TD>
+    <td><a>贾拉兹光辉风暴Jallarzi's Storm of Radiance</A></TD>
     <td>五环</TD>
     <td>塑能</TD>
     <td>法 锁</TD>
@@ -7761,8 +7565,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="吉姆的发光硬币Jim's Glowing Coin" data-tags="惑控 二环 法师 姿势 材料 AI">
-    <td><a>吉姆的发光硬币Jim's Glowing 
-      Coin</A></TD>
+    <td><a>吉姆的发光硬币Jim's Glowing Coin</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>法</TD>
@@ -7773,8 +7576,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>AI</TD></tr>
 <tr data-spell="吉姆的魔法飞弹Jim's Magic Missile" data-tags="塑能 一环 法师 言语 姿势 AI">
-    <td><a>吉姆的魔法飞弹Jim's Magic 
-      Missile</A></TD>
+    <td><a>吉姆的魔法飞弹Jim's Magic Missile</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>法</TD>
@@ -7806,9 +7608,8 @@ Cloud</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>SCC</TD></tr>
-<tr data-spell="敲击术Knock"     data-tags="变化 二环 法师 术士 吟游诗人 言语 PHB24 空间">
-    <td><a 
-      >敲击术Knock</A></TD>
+<tr data-spell="敲击术Knock" data-tags="变化 二环 法师 术士 吟游诗人 言语 PHB24 空间">
+    <td><a>敲击术Knock</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>诗 术 法</TD>
@@ -7830,8 +7631,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="李欧蒙秘藏箱Leomund's Secret Chest" data-tags="咒法 四环 法师 言语 姿势 材料 PHB24 岩土 空间 价耗">
-    <td><a>李欧蒙秘藏箱Leomund's Secret 
-      Chest</A></TD>
+    <td><a>李欧蒙秘藏箱Leomund's Secret Chest</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -7842,8 +7642,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="李欧蒙小屋Leomund's Tiny Hut" data-tags="塑能 三环 法师 吟游诗人 言语 姿势 材料 仪式 PHB24">
-    <td><a>李欧蒙小屋Leomund's Tiny 
-      Hut</A></TD>
+    <td><a>李欧蒙小屋Leomund's Tiny Hut</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>诗 法</TD>
@@ -7854,8 +7653,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="次等复原术Lesser Restoration" data-tags="防护 二环 德鲁伊 辅助 牧师 圣武士 吟游诗人 游侠 言语 姿势 PHB24">
-    <td><a>次等复原术Lesser 
-      Restoration</A></TD>
+    <td><a>次等复原术Lesser Restoration</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>诗 牧 德 帕 软</TD>
@@ -7877,8 +7675,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="生命转换Life transference" data-tags="死灵 三环 法师 牧师 医疗 言语 姿势 XGE 黯蚀">
-    <td><a>生命转换Life 
-    transference</A></TD>
+    <td><a>生命转换Life transference</A></TD>
     <td>三环</TD>
     <td>死灵</TD>
     <td>牧 法</TD>
@@ -7900,8 +7697,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="闪电箭矢Lightning Arrows" data-tags="变化 三环 游侠 言语 姿势 PHB24 雷电">
-    <td><a>闪电箭矢Lightning 
-    Arrows</A></TD>
+    <td><a>闪电箭矢Lightning Arrows</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>软</TD>
@@ -7945,8 +7741,7 @@ Cloud</A></TD>
     <td>√</TD>
     <td>AU</TD></tr>
 <tr data-spell="动植物定位术Locate Animals or Plants" data-tags="预言 二环 德鲁伊 吟游诗人 游侠 言语 姿势 材料 仪式 PHB24 自然">
-    <td><a>动植物定位术Locate Animals or 
-      Plants</A></TD>
+    <td><a>动植物定位术Locate Animals or Plants</A></TD>
     <td>二环</TD>
     <td>预言</TD>
     <td>诗 德 软</TD>
@@ -8166,8 +7961,7 @@ Cloud</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="麦克斯米利安的地之攫Maximilian's Earthen Grasp" data-tags="变化 二环 法师 术士 言语 姿势 材料 专注 XGE 岩土">
-    <td><a>麦克斯米利安的地之攫Maximilian's 
-      Earthen Grasp</A></TD>
+    <td><a>麦克斯米利安的地之攫Maximilian's Earthen Grasp</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>术 法</TD>
@@ -8201,8 +7995,7 @@ Stone</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="马友夫强酸箭Melf's Acid Arrow" data-tags="塑能 二环 法师 言语 姿势 材料 PHB24 酸毒">
-    <td><a>马友夫强酸箭Melf's Acid 
-      Arrow</A></TD>
+    <td><a>马友夫强酸箭Melf's Acid Arrow</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>法</TD>
@@ -8213,8 +8006,7 @@ Stone</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="马友夫微流星Melf's Minute Meteors" data-tags="塑能 三环 法师 术士 言语 姿势 材料 专注 XGE 烈火">
-    <td><a>马友夫微流星Melf's Minute 
-      Meteors</A></TD>
+    <td><a>马友夫微流星Melf's Minute Meteors</A></TD>
     <td>三环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -8402,8 +8194,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔邓肯忠犬Mordenkainen's Faithful Hound" data-tags="咒法 四环 法师 言语 姿势 材料 PHB24">
-    <td><a>魔邓肯忠犬Mordenkainen's 
-      Faithful Hound</A></TD>
+    <td><a>魔邓肯忠犬Mordenkainen's Faithful Hound</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -8414,8 +8205,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔邓肯豪宅术Mordenkainen's Magnificent Mansion"   data-tags="咒法 七环 法师 吟游诗人 言语 姿势 材料 PHB24 价耗">
-    <td><a>魔邓肯豪宅术Mordenkainen's 
-      Magnificent Mansion</A></TD>
+    <td><a>魔邓肯豪宅术Mordenkainen's Magnificent Mansion</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>诗 法</TD>
@@ -8426,8 +8216,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔邓肯私人密室Mordenkainen's Private Sanctum" data-tags="防护 四环 法师 言语 姿势 材料 PHB24 空间">
-    <td><a>魔邓肯私人密室Mordenkainen's 
-      Private Sanctum</A></TD>
+    <td><a>魔邓肯私人密室Mordenkainen's Private Sanctum</A></TD>
     <td>四环</TD>
     <td>防护</TD>
     <td>法</TD>
@@ -8438,8 +8227,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔邓肯之剑Mordenkainen's Sword" data-tags="塑能 七环 法师 吟游诗人 言语 姿势 材料 专注 PHB24 价耗">
-    <td><a>魔邓肯之剑Mordenkainen's 
-      Sword</A></TD>
+    <td><a>魔邓肯之剑Mordenkainen's Sword</A></TD>
     <td>七环</TD>
     <td>塑能</TD>
     <td>诗 法</TD>
@@ -8450,8 +8238,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="励志演讲Motivational Speech" data-tags="惑控 三环 牧师 吟游诗人 言语 AI 心魂">
-    <td><a>励志演讲Motivational 
-      Speech</A></TD>
+    <td><a>励志演讲Motivational Speech</A></TD>
     <td>三环</TD>
     <td>惑控</TD>
     <td>诗 牧</TD>
@@ -8473,8 +8260,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="纳撒尔恶作剧Nathair's Mischief" data-tags="幻术 二环 法师 术士 吟游诗人 姿势 材料 专注 FTD">
-    <td><a>纳撒尔恶作剧Nathair's 
-      Mischief</A></TD>
+    <td><a>纳撒尔恶作剧Nathair's Mischief</A></TD>
     <td>二环</TD>
     <td>幻术</TD>
     <td>诗 术 法</TD>
@@ -8485,8 +8271,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="负能量洪流Negative Energy Flood" data-tags="死灵 五环 法师 魔契师 言语 材料 AU 黯蚀 酸毒">
-    <td><a>负能量洪流Negative Energy 
-      Flood</A></TD>
+    <td><a>负能量洪流Negative Energy Flood</A></TD>
     <td>五环</TD>
     <td>死灵</TD>
     <td>法 锁</TD>
@@ -8508,8 +8293,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="涅斯图魔法灵光Nystul's Magic Aura" data-tags="幻术 二环 法师 言语 姿势 材料 PHB24 预知 幻象">
-    <td><a>涅斯图魔法灵光Nystul's Magic 
-      Aura</A></TD>
+    <td><a>涅斯图魔法灵光Nystul's Magic Aura</A></TD>
     <td>二环</TD>
     <td>幻术</TD>
     <td>法</TD>
@@ -8520,8 +8304,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="欧提路克冰封法球Otiluke's Freezing Sphere" data-tags="塑能 六环 法师 术士 言语 姿势 材料 PHB24 寒冰 酷寒洪流">
-    <td><a>欧提路克冰封法球Otiluke's 
-      Freezing Sphere</A></TD>
+    <td><a>欧提路克冰封法球Otiluke's Freezing Sphere</A></TD>
     <td>六环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -8532,8 +8315,7 @@ Fortress</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="欧提路克弹力法球Otiluke's Resilient Sphere" data-tags="防护 四环 法师 言语 姿势 材料 专注 PHB24 炼金 空间">
-    <td><a>欧提路克弹力法球Otiluke's 
-      Resilient Sphere</A></TD>
+    <td><a>欧提路克弹力法球Otiluke's Resilient Sphere</A></TD>
     <td>四环</TD>
     <td>防护</TD>
     <td>法</TD>
@@ -8544,8 +8326,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="奥图迷舞Otto's Irresistible Dance" data-tags="惑控 六环 法师 吟游诗人 言语 专注 PHB24 心魂 光影心灵">
-    <td><a>奥图迷舞Otto's Irresistible 
-      Dance</A></TD>
+    <td><a>奥图迷舞Otto's Irresistible Dance</A></TD>
     <td>六环</TD>
     <td>惑控</TD>
     <td>诗 法</TD>
@@ -8610,9 +8391,8 @@ Fortress</A></TD>
     <td>√</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="异界誓盟Planar Ally"     data-tags="咒法 六环 牧师 言语 姿势 PHB24">
-    <td><a>异界誓盟Planar 
-      Ally</A></TD>
+<tr data-spell="异界誓盟Planar Ally" data-tags="咒法 六环 牧师 言语 姿势 PHB24">
+    <td><a>异界誓盟Planar Ally</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -8678,8 +8458,7 @@ Fortress</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="律令巩固Power Word Fortify" data-tags="惑控 七环 牧师 吟游诗人 言语 PHB24 疗愈重塑">
-    <td><a>律令巩固Power Word 
-    Fortify</A></TD>
+    <td><a>律令巩固Power Word Fortify</A></TD>
     <td>七环</TD>
     <td>惑控</TD>
     <td>诗 牧</TD>
@@ -8738,8 +8517,7 @@ Stun</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="治疗祷言Prayer of Healing" data-tags="防护 二环 辅助 牧师 圣武士 医疗 言语 PHB24">
-    <td><a>治疗祷言Prayer of 
-    Healing</A></TD>
+    <td><a>治疗祷言Prayer of Healing</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>牧 帕</TD>
@@ -8750,8 +8528,7 @@ Stun</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="魔法伎俩Prestidigitation" data-tags="变化 戏法(零环) 法师 魔契师 术士 吟游诗人 言语 姿势 PHB24">
-    <td><a 
-    >魔法伎俩Prestidigitation</A></TD>
+    <td><a>魔法伎俩Prestidigitation</A></TD>
     <td>戏法</TD>
     <td>变化</TD>
     <td>诗 术 法 锁</TD>
@@ -8819,8 +8596,7 @@ Spray</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="预置幻象Programmed Illusion" data-tags="幻术 六环 法师 吟游诗人 言语 姿势 材料 PHB24 流水 幻象 光影心灵 价耗">
-    <td><a>预置幻象Programmed 
-      Illusion</A></TD>
+    <td><a>预置幻象Programmed Illusion</A></TD>
     <td>六环</TD>
     <td>幻术</TD>
     <td>诗 法</TD>
@@ -8864,8 +8640,7 @@ Spray</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="防护毒素Protection from Poison" data-tags="防护 二环 德鲁伊 牧师 圣武士 医疗 游侠 言语 姿势 PHB24 自然 炼金 酸毒 流水">
-    <td><a>防护毒素Protection from 
-      Poison</A></TD>
+    <td><a>防护毒素Protection from Poison</A></TD>
     <td>二环</TD>
     <td>防护</TD>
     <td>牧 德 帕 软</TD>
@@ -8887,8 +8662,7 @@ Spray</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="净化饮食Purify Food and Drink" data-tags="变化 一环 德鲁伊 牧师 圣武士 医疗 言语 姿势 仪式 PHB24 自然">
-    <td><a>净化饮食Purify Food and 
-      Drink</A></TD>
+    <td><a>净化饮食Purify Food and Drink</A></TD>
     <td>一环</TD>
     <td>变化</TD>
     <td>牧 德 帕</TD>
@@ -8921,8 +8695,7 @@ Spray</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="拉瑞心灵联结Rary's Telepathic Bond" data-tags="预言 五环 法师 吟游诗人 言语 姿势 材料 仪式 PHB24">
-    <td><a>拉瑞心灵联结Rary's Telepathic 
-      Bond</A></TD>
+    <td><a>拉瑞心灵联结Rary's Telepathic Bond</A></TD>
     <td>五环</TD>
     <td>预言</TD>
     <td>诗 法</TD>
@@ -8933,8 +8706,7 @@ Spray</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="劳洛希姆心灵长枪Raulothim's Psychic Lance" data-tags="惑控 四环 法师 魔契师 术士 吟游诗人 言语 FTD 心魂 深海 预知 幻象">
-    <td><a>劳洛希姆心灵长枪Raulothim's 
-      Psychic Lance</A></TD>
+    <td><a>劳洛希姆心灵长枪Raulothim's Psychic Lance</A></TD>
     <td>四环</TD>
     <td>惑控</TD>
     <td>诗 术 法 锁</TD>
@@ -8945,8 +8717,7 @@ Spray</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="衰弱射线Ray of Enfeeblement" data-tags="死灵 二环 法师 魔契师 言语 姿势 专注 PHB24 黯蚀 深海">
-    <td><a>衰弱射线Ray of 
-      Enfeeblement</A></TD>
+    <td><a>衰弱射线Ray of Enfeeblement</A></TD>
     <td>二环</TD>
     <td>死灵</TD>
     <td>法 锁</TD>
@@ -9058,8 +8829,7 @@ Gravity</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="雾凇霜缚Rime's Binding Ice" data-tags="塑能 二环 法师 术士 姿势 材料 FTD 寒冰">
-    <td><a>雾凇霜缚Rime's Binding 
-    Ice</A></TD>
+    <td><a>雾凇霜缚Rime's Binding Ice</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -9069,9 +8839,8 @@ Gravity</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="魔绳术Rope trick"     data-tags="变化 二环 法师 言语 姿势 材料 PHB24">
-    <td><a>魔绳术Rope 
-      trick</A></TD>
+<tr data-spell="魔绳术Rope trick" data-tags="变化 二环 法师 言语 姿势 材料 PHB24">
+    <td><a>魔绳术Rope trick</A></TD>
     <td>二环</TD>
     <td>变化</TD>
     <td>法</TD>
@@ -9148,8 +8917,7 @@ Gravity</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="识破隐形See Invisibility" data-tags="预言 二环 法师 辅助 术士 吟游诗人 言语 姿势 材料 PHB24 预知">
-    <td><a>识破隐形See 
-    Invisibility</A></TD>
+    <td><a>识破隐形See Invisibility</A></TD>
     <td>二环</TD>
     <td>预言</TD>
     <td>诗 术 法</TD>
@@ -9247,9 +9015,8 @@ Gravity</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="护盾术Shield"     data-tags="防护 一环 法师 术士 术师 言语 姿势 PHB24 岩土">
-    <td><a 
-      >护盾术Shield</A></TD>
+<tr data-spell="护盾术Shield" data-tags="防护 一环 法师 术士 术师 言语 姿势 PHB24 岩土">
+    <td><a>护盾术Shield</A></TD>
     <td>一环</TD>
     <td>防护</TD>
     <td>术 法</TD>
@@ -9305,8 +9072,7 @@ Faith</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="致病辐射Sickening Radiance" data-tags="塑能 四环 法师 魔契师 术士 言语 姿势 专注 XGE 酸毒 光芒">
-    <td><a>致病辐射Sickening 
-    Radiance</A></TD>
+    <td><a>致病辐射Sickening Radiance</A></TD>
     <td>四环</TD>
     <td>塑能</TD>
     <td>术 法 锁</TD>
@@ -9361,8 +9127,7 @@ Faith</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="授予技能Skill Empowerment" data-tags="变化 五环 法师 奇械师 术士 吟游诗人 言语 姿势 专注 XGE 炼金">
-    <td><a>授予技能Skill 
-    Empowerment</A></TD>
+    <td><a>授予技能Skill Empowerment</A></TD>
     <td>五环</TD>
     <td>变化</TD>
     <td>奇 诗 术 法</TD>
@@ -9416,7 +9181,7 @@ Faith</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="圈套术Snare" data-tags="防护 一环 德鲁伊 法师 奇械师 游侠 姿势 材料 XGE 炼金 价耗">
+<tr data-spell="圈套术Snare" data-tags="防护 一环 德鲁伊 法师 奇械师 游侠 姿势 材料 XGE 特种 炼金 价耗">
     <td><a>圈套术Snare</A></TD>
     <td>一环</TD>
     <td>防护</TD>
@@ -9428,8 +9193,7 @@ Faith</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="史尼洛雪球群Snilloc's Snowball Swarm" data-tags="塑能 二环 法师 术士 言语 姿势 材料 XGE 寒冰">
-    <td><a>史尼洛雪球群Snilloc's Snowball 
-      Swarm</A></TD>
+    <td><a>史尼洛雪球群Snilloc's Snowball Swarm</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>术 法</TD>
@@ -9496,8 +9260,7 @@ Burst</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="植物交谈Speak with Plants" data-tags="变化 三环 德鲁伊 吟游诗人 游侠 言语 姿势 PHB24 自然">
-    <td><a>植物交谈Speak with 
-    Plants</A></TD>
+    <td><a>植物交谈Speak with Plants</A></TD>
     <td>三环</TD>
     <td>变化</TD>
     <td>诗 德 软</TD>
@@ -9530,8 +9293,7 @@ Burst</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="灵体卫士Spirit Guardians" data-tags="咒法 三环 辅助 牧师 医疗 言语 姿势 材料 专注 PHB24 心魂 光芒 预知 幻象">
-    <td><a>灵体卫士Spirit 
-    Guardians</A></TD>
+    <td><a>灵体卫士Spirit Guardians</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -9565,8 +9327,7 @@ Death</A></TD>
     <td>√</TD>
     <td>BMT</TD></tr>
 <tr data-spell="灵体武器Spiritual Weapon" data-tags="塑能 二环 牧师 言语 姿势 专注 PHB24 空间 幻象">
-    <td><a>灵体武器Spiritual 
-    Weapon</A></TD>
+    <td><a>灵体武器Spiritual Weapon</A></TD>
     <td>二环</TD>
     <td>塑能</TD>
     <td>牧</TD>
@@ -9610,8 +9371,7 @@ Death</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="钢风斩Steel Wind Strike" data-tags="咒法 五环 法师 游侠 姿势 材料 PHB24 气尘 价耗">
-    <td><a>钢风斩Steel Wind 
-    Strike</A></TD>
+    <td><a>钢风斩Steel Wind Strike</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>软 法</TD>
@@ -9688,8 +9448,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="异怪召唤术Summon Aberration" data-tags="咒法 四环 法师 魔契师 言语 姿势 材料 专注 PHB24 深海 价耗">
-    <td><a>异怪召唤术Summon 
-    Aberration</A></TD>
+    <td><a>异怪召唤术Summon Aberration</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -9699,7 +9458,7 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="野兽召唤术Summon Beast" data-tags="咒法 二环 德鲁伊 游侠 言语 姿势 材料 专注 PHB24 自然 价耗">
+<tr data-spell="野兽召唤术Summon Beast" data-tags="咒法 二环 德鲁伊 游侠 言语 姿势 材料 专注 PHB24 特种 自然 价耗">
     <td><a>野兽召唤术Summon Beast</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
@@ -9788,8 +9547,7 @@ Death</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="高阶恶魔召唤术Summon Greater Demon" data-tags="咒法 四环 法师 魔契师 言语 姿势 材料 专注 XGE">
-    <td><a>高阶恶魔召唤术Summon Greater 
-      Demon</A></TD>
+    <td><a>高阶恶魔召唤术Summon Greater Demon</A></TD>
     <td>四环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -9800,8 +9558,7 @@ Death</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="低阶恶魔召唤术Summon Lesser Demon" data-tags="咒法 三环 法师 魔契师 言语 姿势 材料 专注 XGE">
-    <td><a>低阶恶魔召唤术Summon Lesser 
-      Demon</A></TD>
+    <td><a>低阶恶魔召唤术Summon Lesser Demon</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -9812,8 +9569,7 @@ Death</A></TD>
     <td>√</TD>
     <td>XGE</TD></tr>
 <tr data-spell="暗影衍体召唤术Summon Shadowspawn" data-tags="咒法 三环 法师 魔契师 言语 姿势 材料 专注 TCE 价耗">
-    <td><a>暗影衍体召唤术Summon 
-      Shadowspawn</A></TD>
+    <td><a>暗影衍体召唤术Summon Shadowspawn</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -9823,7 +9579,7 @@ Death</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>TCE</TD></tr>
-<tr data-spell="亡灵召唤术Summon Undead" data-tags="死灵 三环 法师 魔契师 言语 姿势 材料 专注 PHB24 价耗">
+<tr data-spell="亡灵召唤术Summon Undead" data-tags="死灵 三环 法师 魔契师 言语 姿势 材料 专注 PHB24 价耗 黯蚀">
     <td><a>亡灵召唤术Summon Undead</A></TD>
     <td>三环</TD>
     <td>死灵</TD>
@@ -9902,8 +9658,7 @@ Static</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="塔莎泡泡坩埚Tasha's Bubbling Cauldron" data-tags="咒法 六环 法师 魔契师 言语 姿势 材料 PHB24 自然 炼金 酸毒 深海 流水 酷寒洪流 疗愈重塑 酸毒侵蚀 价耗">
-    <td><a>塔莎泡泡坩埚Tasha's Bubbling 
-      Cauldron</A></TD>
+    <td><a>塔莎泡泡坩埚Tasha's Bubbling Cauldron</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>法 锁</TD>
@@ -9914,8 +9669,7 @@ Static</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="塔莎酸蚀酿Tasha's Caustic Brew" data-tags="塑能 一环 法师 奇械师 术士 言语 姿势 材料 专注 TCE 酸毒">
-    <td><a>塔莎酸蚀酿Tasha's Caustic 
-      Brew</A></TD>
+    <td><a>塔莎酸蚀酿Tasha's Caustic Brew</A></TD>
     <td>一环</TD>
     <td>塑能</TD>
     <td>奇 术 法</TD>
@@ -9926,8 +9680,7 @@ Static</A></TD>
     <td>√</TD>
     <td>TCE</TD></tr>
 <tr data-spell="塔莎狂笑术Tasha's Hideous Laughter" data-tags="惑控 一环 法师 魔契师 吟游诗人 言语 姿势 材料 专注 PHB24 心魂">
-    <td><a>塔莎狂笑术Tasha's Hideous 
-      Laughter</A></TD>
+    <td><a>塔莎狂笑术Tasha's Hideous Laughter</A></TD>
     <td>一环</TD>
     <td>惑控</TD>
     <td>诗 法 锁</TD>
@@ -9938,8 +9691,7 @@ Static</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="塔莎心灵鞭Tasha's Mind Whip" data-tags="惑控 二环 法师 术士 言语 TCE 心魂 预知 幻象">
-    <td><a>塔莎心灵鞭Tasha's Mind 
-    Whip</A></TD>
+    <td><a>塔莎心灵鞭Tasha's Mind Whip</A></TD>
     <td>二环</TD>
     <td>惑控</TD>
     <td>术 法</TD>
@@ -9950,8 +9702,7 @@ Static</A></TD>
     <td>×</TD>
     <td>TCE</TD></tr>
 <tr data-spell="塔莎超凡形态Tasha's Otherworldly Guise" data-tags="变化 六环 法师 魔契师 术士 言语 姿势 材料 专注 TCE 黯蚀 自然 气尘 光芒 预知 时空矢量 疗愈重塑 酸毒侵蚀 辉煌烈焰 光影心灵 风暴雷鸣 价耗">
-    <td><a>塔莎超凡形态Tasha's 
-      Otherworldly Guise</A></TD>
+    <td><a>塔莎超凡形态Tasha's Otherworldly Guise</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>术 法 锁</TD>
@@ -9995,8 +9746,7 @@ Static</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="传送法阵Teleportation Circle" data-tags="咒法 五环 法师 魔契师 术士 吟游诗人 言语 材料 PHB24 空间 价耗">
-    <td><a>传送法阵Teleportation 
-      Circle</A></TD>
+    <td><a>传送法阵Teleportation Circle</A></TD>
     <td>五环</TD>
     <td>咒法</TD>
     <td>诗 术 法 锁</TD>
@@ -10007,8 +9757,7 @@ Static</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="神庙术Temple of the Gods" data-tags="咒法 七环 牧师 言语 姿势 材料 XGE 价耗">
-    <td><a>神庙术Temple of the 
-    Gods</A></TD>
+    <td><a>神庙术Temple of the Gods</A></TD>
     <td>七环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -10019,8 +9768,7 @@ Static</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="谭森浮碟术Tenser's Floating Disk" data-tags="咒法 一环 法师 言语 姿势 材料 仪式 PHB24 空间">
-    <td><a>谭森浮碟术Tenser's Floating 
-      Disk</A></TD>
+    <td><a>谭森浮碟术Tenser's Floating Disk</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
     <td>法</TD>
@@ -10031,8 +9779,7 @@ Static</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="谭森变形术Tenser's transformation" data-tags="变化 六环 法师 言语 姿势 材料 专注 XGE 自然 气尘 炼金 风暴雷鸣">
-    <td><a>谭森变形术Tenser's 
-      transformation</A></TD>
+    <td><a>谭森变形术Tenser's transformation</A></TD>
     <td>六环</TD>
     <td>变化</TD>
     <td>法</TD>
@@ -10176,8 +9923,7 @@ Smite</A></TD>
     <td>×</TD>
     <td>XGE</TD></tr>
 <tr data-spell="木遁术transport via Plants" data-tags="咒法 六环 德鲁伊 言语 姿势 PHB24 自然">
-    <td><a>木遁术transport via 
-      Plants</A></TD>
+    <td><a>木遁术transport via Plants</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>德</TD>
@@ -10211,8 +9957,7 @@ Polymorph</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="完全复生术true Resurrection" data-tags="死灵 九环 德鲁伊 牧师 言语 姿势 材料 PHB24 疗愈重塑 价耗">
-    <td><a>完全复生术true 
-    Resurrection</A></TD>
+    <td><a>完全复生术true Resurrection</A></TD>
     <td>九环</TD>
     <td>死灵</TD>
     <td>牧 德</TD>
@@ -10266,6 +10011,17 @@ Polymorph</A></TD>
     <td>×</td>
     <td>×</td>
     <td>VSS</td></tr>
+  <tr data-spell="黍的离离枯荣Shu's Flourishing Samsara" data-tags="变化 八环 牧师 德鲁伊 言语 姿势 ROH 疗愈重塑">
+    <td><A href="../第五章：施法规则/8环.html#黍的离离枯荣">黍的离离枯荣Shu's Flourishing Samsara</a></td>
+    <td>八环</td>
+    <td>变化</td>
+    <td>德 牧</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="隐形仆役Unseen Servant" data-tags="咒法 一环 法师 魔契师 吟游诗人 言语 姿势 材料 仪式 PHB24">
     <td><a>隐形仆役Unseen Servant</A></TD>
     <td>一环</TD>
@@ -10479,9 +10235,21 @@ Breathing</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>XGE</TD></tr>
-<tr data-spell="蛛网术Web"     data-tags="咒法 二环 法师 术士 言语 姿势 材料 专注 PHB24">
-    <td><a 
-      >蛛网术Web</A></TD>
+  <tr data-spell="黑键的荒芜回响Ebenholz's 
+Sound of Silence" data-tags="塑能 四环 吟游诗人 术士 法师 言语 姿势 ROH 心魂 雷电">
+    <td><A href="../第五章：施法规则/4环.html#黑键的荒芜回响">黑键的荒芜回响Ebenholz's 
+Sound of Silence</a></td>
+    <td>四环</td>
+    <td>塑能</td>
+    <td>诗 术 法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+<tr data-spell="蛛网术Web" data-tags="咒法 二环 法师 术士 言语 姿势 材料 专注 PHB24">
+    <td><a>蛛网术Web</A></TD>
     <td>二环</TD>
     <td>咒法</TD>
     <td>术 法</TD>
@@ -10513,6 +10281,28 @@ Breathing</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>XGE</TD></tr>
+  <tr data-spell="莫斯提马的锁与钥Mostima's Lock and Key" data-tags="变化 七环 法师 言语 姿势 材料 ROH 时空矢量">
+    <td><A href="../第五章：施法规则/7环.html#莫斯提马的锁与钥">莫斯提马的锁与钥Mostima's Lock and Key</a></td>
+    <td>七环</td>
+    <td>变化</td>
+    <td>法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="逻各斯的延异视阈Logos's Extended Acuity" data-tags="咒法 七环 术士 法师 言语 ROH 时空矢量">
+    <td><A href="../第五章：施法规则/7环.html#逻各斯的延异视阈">逻各斯的延异视阈Logos's Extended Acuity</a></td>
+    <td>七环</td>
+    <td>咒法</td>
+    <td>术 法</td>
+    <td>V</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="御风而行Wind Walk" data-tags="变化 六环 德鲁伊 言语 姿势 材料 PHB24 气尘 风暴雷鸣">
     <td><a>御风而行Wind Walk</A></TD>
     <td>六环</TD>
@@ -10535,6 +10325,28 @@ Breathing</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
+  <tr data-spell="妮芙的怵然震爆Nymph's Fear Blast" data-tags="惑控 三环 术士 魔契师 言语 姿势 ROH 心魂">
+    <td><A href="../第五章：施法规则/3环.html#妮芙的怵然震爆">妮芙的怵然震爆Nymph's Fear Blast</a></td>
+    <td>三环</td>
+    <td>惑控</td>
+    <td>术 锁</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="黍的化被草木Shu's Verdant Wisdom" data-tags="变化 三环 牧师 德鲁伊 言语 姿势 ROH 自然">
+    <td><A href="../第五章：施法规则/3环.html#黍的化被草木">黍的化被草木Shu's Verdant Wisdom</a></td>
+    <td>三环</td>
+    <td>变化</td>
+    <td>德 牧</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="祈愿术Wish" data-tags="咒法 九环 法师 术士 言语 PHB24 时空矢量 辉煌烈焰 光影心灵">
     <td><a>祈愿术Wish</A></TD>
     <td>九环</TD>
@@ -10579,6 +10391,28 @@ Breathing</A></TD>
     <td>×</td>
     <td>×</td>
     <td>AU</td></tr>
+  <tr data-spell="赫尔昏佐伦的巫术风暴Herkunftshorn's Arcane Storm" data-tags="塑能 九环 法师 言语 姿势 ROH 风暴雷鸣">
+    <td><A href="../第五章：施法规则/9环.html#赫尔昏佐伦的巫术风暴">赫尔昏佐伦的巫术风暴Herkunftshorn's Arcane Storm</a></td>
+    <td>九环</td>
+    <td>塑能</td>
+    <td>法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="塔露拉的日冕重烈Talulah's Solar Crown" data-tags="塑能 九环 术士 言语 姿势 ROH 辉煌烈焰">
+    <td><A href="../第五章：施法规则/9环.html#塔露拉的日冕重烈">塔露拉的日冕重烈Talulah's Solar Crown</a></td>
+    <td>九环</td>
+    <td>塑能</td>
+    <td>术</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 
 <tr data-spell="巫术箭Witch Bolt" data-tags="塑能 一环 法师 魔契师 术士 言语 姿势 材料 专注 PHB24 雷电">
     <td><a>巫术箭Witch Bolt</A></TD>
@@ -10592,8 +10426,7 @@ Breathing</A></TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="靡叶生华Wither and Bloom" data-tags="死灵 二环 德鲁伊 法师 术士 言语 姿势 材料 AU 黯蚀 自然 岩土">
-    <td><a>靡叶生华Wither and 
-    Bloom</A></TD>
+    <td><a>靡叶生华Wither and Bloom</A></TD>
     <td>二环</TD>
     <td>死灵</TD>
     <td>德 术 法</TD>
@@ -10604,8 +10437,7 @@ Breathing</A></TD>
     <td>×</TD>
     <td>AU</TD></tr>
 <tr data-spell="光耀祷词Word of Radiance" data-tags="塑能 戏法(零环) 牧师 医疗 言语 材料 PHB24 光芒">
-    <td><a>光耀祷词Word of 
-    Radiance</A></TD>
+    <td><a>光耀祷词Word of Radiance</A></TD>
     <td>戏法</TD>
     <td>塑能</TD>
     <td>牧</TD>
@@ -10615,9 +10447,8 @@ Breathing</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="回返真言Word of Recall"     data-tags="咒法 六环 牧师 言语 PHB24">
-    <td><a 
-      >回返真言Word of Recall</A></TD>
+<tr data-spell="回返真言Word of Recall" data-tags="咒法 六环 牧师 言语 PHB24">
+    <td><a>回返真言Word of Recall</A></TD>
     <td>六环</TD>
     <td>咒法</TD>
     <td>牧</TD>
@@ -10627,6 +10458,28 @@ Breathing</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
+  <tr data-spell="叶莲娜的霜冻新星Yelena's Frost Nova" data-tags="塑能 六环 德鲁伊 术士 言语 姿势 材料 ROH 寒冰">
+    <td><A href="../第五章：施法规则/6环.html#叶莲娜的霜冻新星">叶莲娜的霜冻新星Yelena's Frost Nova</a></td>
+    <td>六环</td>
+    <td>塑能</td>
+    <td>德 术</td>
+    <td>V</td>
+    <td>S</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="泥岩的土石塑像Mudrock's Construct Colossus" data-tags="咒法 六环 德鲁伊 法师 言语 姿势 材料 ROH 岩土">
+    <td><A href="../第五章：施法规则/6环.html#泥岩的土石塑像">泥岩的土石塑像Mudrock's Construct Colossus</a></td>
+    <td>六环</td>
+    <td>咒法</td>
+    <td>德 法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="自然之怒Wrath of Nature" data-tags="塑能 五环 德鲁伊 游侠 言语 姿势 专注 XGE 自然">
     <td><a>自然之怒Wrath of Nature</A></TD>
     <td>五环</TD>
@@ -10650,8 +10503,7 @@ Breathing</A></TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
 <tr data-spell="悠兰德王者威仪Yolande's Regal Presence" data-tags="惑控 五环 法师 吟游诗人 言语 姿势 材料 专注 PHB24 心魂 幻象">
-    <td><a>悠兰德王者威仪Yolande's Regal 
-      Presence</A></TD>
+    <td><a>悠兰德王者威仪Yolande's Regal Presence</A></TD>
     <td>五环</TD>
     <td>惑控</TD>
     <td>诗 法</TD>
@@ -10661,6 +10513,39 @@ Breathing</A></TD>
     <td>×</TD>
     <td>√</TD>
     <td>PHB24</TD></tr>
+  <tr data-spell="安洁莉娜的反演对称Angelina's Inverted Symmetry" data-tags="变化 五环 奇械师 法师 言语 姿势 材料 ROH 空间">
+    <td><A href="../第五章：施法规则/5环.html#安洁莉娜的反演对称">安洁莉娜的反演对称Angelina's Inverted Symmetry</a></td>
+    <td>五环</td>
+    <td>变化</td>
+    <td>奇 法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="艾利奥特的辉煌裂片Elliot's Glorious Shards" data-tags="塑能 五环 奇械师 法师 言语 姿势 ROH 雷电">
+    <td><A href="../第五章：施法规则/5环.html#艾利奥特的辉煌裂片">艾利奥特的辉煌裂片Elliot's Glorious Shards</a></td>
+    <td>五环</td>
+    <td>塑能</td>
+    <td>奇 法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>×</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
+  <tr data-spell="望的取势连星Wang's Anticipated Battleboard" data-tags="变化 五环 奇械师 法师 言语 姿势 材料 ROH 空间">
+    <td><A href="../第五章：施法规则/5环.html#望的取势连星">望的取势连星Wang's Anticipated Battleboard</a></td>
+    <td>五环</td>
+    <td>变化</td>
+    <td>奇 法</td>
+    <td>V</td>
+    <td>S</td>
+    <td>M</td>
+    <td>×</td>
+    <td>×</td>
+    <td>ROH</td></tr>
 <tr data-spell="西风打击Zephyr Strike" data-tags="变化 一环 特种 游侠 言语 专注 XGE 气尘">
     <td><a>西风打击Zephyr Strike</A></TD>
     <td>一环</TD>

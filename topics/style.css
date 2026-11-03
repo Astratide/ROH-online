@@ -20,8 +20,9 @@ h3 {
 /*列表聚拢*/
 UL,OL,BLOCKQUOTE{
 	margin-left: 32px;
-	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+	padding-top: 10px;
 }
 /*灰色注释*/
 .grey{

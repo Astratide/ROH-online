@@ -66,23 +66,23 @@ span.gradiant
 <body>
 <h2 class="line">战技精通 Battleskill Mastery</h2>
 <p><b>战技精通。</b>你可以通过【战技精通】专长来习得一项战技精通。你同时只能习得一个战技精通。你可以在此后每次升级时替换你所习得的精通特效为另一个。<br>
-<b>随时应用。</b>战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用已知的战技精通。<br>
+<b>随时应用。</b>当你发动战技时，你可以追加消耗1点技力，来为该战技应用战技精通效果。<br>
 <b>豁免难度。</b>任何战技精通特效的如果需要豁免，其豁免DC等同8+你熟练加值+你攻击所用属性调整值。</p>
 
 
 <br>
 <b class="effect-box" id="green">恢复 Restore</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
-<b>恢复。</b>你立即恢复1d10+你的职业等级点<b class="green">生命值</b>。</div>
+<span class="gradiant">战技精通（先决：等级3+）</span><br>
+战技发动时，你获得以下效应：<br>
+<b>恢复。</b>你立即恢复等同你熟练加值枚d10点<b class="green">生命值</b>。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">机动 Mobility</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+战技发动时，你获得以下效应：<br>
 <b>机动。</b>你能让自己在该回合的移动速度增加10尺并且忽略<b class="green">困难地形</b>。</div>
 <br>
 
@@ -90,15 +90,15 @@ span.gradiant
 <b class="effect-box" id="green">伤害 Damage</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
-<b>伤害。</b>你能让自己在该回合进行的一次伤害掷骰获得等同1d10+你<b class="green">熟练加值</b>的加值。</div>
+战技期间，你获得以下效应：<br>
+<b>伤害。</b>你能让自己在本回合进行的一次伤害掷骰获得+10加值。<br>此伤害在你职业等级达到11级起提升为20。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">晕眩 Stun</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>晕眩。</b>目标必须通过体质豁免，否则陷入<b class="green">失能</b>且移动速度降至0，直到你下回合开始。</div>
 <br>
 
@@ -106,7 +106,7 @@ span.gradiant
 <b class="effect-box" id="green">恐慌 Fear</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>恐慌。</b>目标必须通过感知豁免，否则将对你<b class="green">恐慌</b>直到你下回合开始。此外，其需要立即采取<b class="green">反应</b>来移动等同其移动速度的距离，以安全路径远离你。</div>
 <br>
 
@@ -114,7 +114,7 @@ span.gradiant
 <b class="effect-box" id="green">诱导 Charm</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>魅惑。</b>目标必须通过感知豁免，否则将被你<b class="green">魅惑</b>直到你下回合开始。此外，其需要立即采取<b class="green">反应</b>来移动等同其移动速度的距离，以安全路径靠近你。</div>
 <br>
 
@@ -122,7 +122,7 @@ span.gradiant
 <b class="effect-box" id="green">战栗 Shudder</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>战栗。</b>目标必须通过魅力豁免，否则无法进行攻击检定直到其下回合结束。免疫恐慌的生物也免疫此效果。</div>
 
 <br>
@@ -131,7 +131,7 @@ span.gradiant
 <b class="effect-box" id="green">沉睡 Sleep</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>沉睡。</b>目标必须通过感知豁免，否则将陷入 <b class="green">昏迷</b> 
 1分钟，或直到目标受到伤害，或其5尺内一个生物用动作将其摇醒。不需睡眠或免疫力竭状态的生物自动成功通过此豁免。</div>
 <br>
@@ -141,15 +141,14 @@ span.gradiant
 <b class="effect-box" id="green">束缚 Chain</b>
 <div class="effect-box">
 <span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<b></b> 战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>束缚。</b>目标必须通过力量豁免，否则遭到<b class="green">束缚</b>，直到你下回合开始。在豁免成功时改为移动速度减少10尺。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">冻结 Frozen</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>冻结。</b>目标必须通过体质豁免，否则将承受<b class="green">冻结</b>直到你下回合开始，并受到1d10点寒冷伤害。</div>
 <div class="syntax">
 <b>规则引用：冻结 Frozen*【危害】</b><br>
@@ -160,8 +159,7 @@ span.gradiant
 <br>
 <b class="effect-box" id="green">沉默 Silent</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>沉默。</b>目标必须通过魅力豁免，否则受到<b class="spell">沉默术</b>效应影响直到你下回合开始，并受到1d10点心灵伤害。</div>
 
 <br>
@@ -170,7 +168,8 @@ span.gradiant
 <b class="effect-box"  id="green">嘲讽 Taunt</b>
 <div class="effect-box">
 <span class="gradiant">战技特效-α（先决：等级5+，盾牌熟练）</span><br>
-此战技发动时，你可以为战技追加消耗1点技力来对其应用此效应。：<br>
+<b></b>
+战技发动时，你获得以下效应：<br>
 <b>嘲讽。</b>直到你下回合开始前，任何生物攻击你10尺内的你<b class="green">盟友</b>时都具有<b class="green">劣势</b>。</div>
 <br>
 
@@ -178,9 +177,7 @@ span.gradiant
 <br>
 <b class="effect-box" id="green">虚弱 Debility</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-<em></em> 
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong><em></em></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>虚弱。</b>目标必须通过魅力豁免，否则其造成的任何伤害减半，直到你下回合开始。</div>
 <br>
 
@@ -188,48 +185,42 @@ span.gradiant
 
 <b class="effect-box" id="green">破甲 Armour Breaking</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>破甲。</b>目标必须通过体质豁免，否则对其使用武器发动的攻击检定会具有<b class="green">优势</b>，且其失去一项你选择的伤害<b class="green">抗性</b>，直到你下回合开始。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">脆弱 Fragile</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>脆弱。</b>目标必须通过体质豁免，否则其将会对其接下来1分钟内下一次受到的伤害中的其中一个伤害类型具有<b class="green">易伤</b>。</div>
 
 <br>
 <br>
 <b class="effect-box" id="green">失衡 Topple</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>失衡。</b>目标必须通过力量豁免，否则将<b class="green">倒地</b>并受到1d10点钝击伤害。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">位移 Shift</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>位移。</b>目标必须通过力量豁免，否则将被直线推离或者拉近你30尺（由你选择），体型为大型或更大的一个生物改为20尺，然后受到1d10点钝击伤害。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">浮空 Levitation</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>浮空。</b>目标必须通过力量豁免，否则将被抛升30尺（巨型或更大目标改为20尺）。</div>
 <br>
 
 <br>
 <b class="effect-box" id="green">阻挡 Blocking</b>
 <div class="effect-box">
-<span class="gradiant">战技精通（先决：等级4+）</span><br>
-战技持续期间，当你使用你精通的武器命中了一个生物，或者对一个生物造成了你的精通伤害时，你就可以为战技追加消耗1点技力来对其应用此效应。<br>
+<span class="gradiant">战技精通（先决：等级4+）</span><br><strong></strong>战技期间仅一次，当你对一个生物造成伤害时，你可以造成以下效应：<br>
 <b>阻挡。</b>你立即对 1 名可触及的生物执行擒抱或推撞（无需动作，自动成功），此擒抱也无需占用你的空手。</div>
 <br>
 
