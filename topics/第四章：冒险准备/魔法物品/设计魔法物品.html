@@ -6,10 +6,7 @@
 <title>设计魔法物品</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=11">
-<link rel="stylesheet" href="../../style.css">
-
-
-<script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
+<link rel="stylesheet" href="../../style.css"><script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
 <link id="webhelpTopicStyles" rel="stylesheet" href="../../../assets/webhelp-topic.css">
 <link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../../../assets/content-enhance.css">
 <script id="webhelpContentEnhanceScript" src="../../../assets/content-enhance.js" defer></script>
@@ -40,7 +37,7 @@
 
 
 <h6>升级魔法物品 Upgrading Magic Items</h6>若你允许角色在你的战役中升级魔法物品，你可以让玩家在休整期委托合适的NPC工匠花费一定时间为自己的武器添加词条。添加词条很可能会导致物品的稀有度提升。<br>
-<b>普通。</b>每个玩家在开卡时有一次机会，为自己的物品添加一个普通词条而不影响其稀有度或价值。<br>
+<b>普通。</b>每个玩家在一场战役中仅有一次机会，为自己的物品添加一个普通词条而不影响其稀有度或价值。<br>
 <b>非普通。</b>工匠可以在<b class="green">普通</b>魔法物品上再添加一个普通词条，使其变为一件<b class="green">非普通</b>魔法物品。<br>
 <b>珍稀。</b>工匠可以在<b class="green">非普通</b>魔法物品上再添加一个非普通词条，使其变为一件<b class="green">珍稀</b>魔法物品。所添加的非普通词条也可以是多个更低阶的词条组成的，例如两个普通词条。<br>
 <b>极珍稀。</b>工匠可以在一个<b class="green">珍稀</b>魔法物品上再添加一个珍稀词条，使其变为一件<b class="green">极珍稀</b>魔法物品。所添加的珍稀词条也可以是多个更低阶的词条组成的，例如两个非普通或更低的词条。<br>
@@ -77,11 +74,11 @@
 
 <h6>绝对精准匕首 Absolute Accurate Dagger</h6>
 <span class="grey">武器（匕首），珍稀（需同调）</span><br>
-这把匕首被添加了<b class="item">绝对</b>和<b class="item">精准</b>两个非普通词条，另外还添加了一个不影响稀有度的普通词条<b class="item">隐秘</b>，最终被定义为珍稀魔法物品。由于其中隐秘词条需要同调，因此这把匕首也需要同调。<br>
+这把匕首被添加了<b class="item">绝对</b>和<b class="item">精准</b>两个非普通词条，另外还添加了一个不影响稀有度的普通词条<b class="item">秘藏</b>，最终被定义为珍稀魔法物品。由于其中隐秘词条需要同调，因此这把匕首也需要同调。<br>
 这把匕首拥有下述词条：<br>
 <b>绝对。</b>任何生物都无法应对此武器进行的攻击而作出<b class="green">反应</b>。<br>
 <b>精准。</b>每回合仅一次，用此武器发动的攻击可以额外造成1d4点武器伤害。<br>
-<b>隐秘。</b>这把武器可以被收纳或者解散。你使用<b class="green">附赠动作</b>使这把武器解散，直到你再次使用附赠动作将其召出于你的手上。期间你依然可以保持对此武器的同调。
+<b>秘藏。</b>这把武器可以被收纳或者解散。你使用<b class="green">附赠动作</b>使这把武器解散，直到你再次使用附赠动作将其召出于你的手上。期间你依然可以保持对此武器的同调。
 
 
 
@@ -109,7 +106,7 @@
 
 <h6>冷酷锋矢长弓 Longbow of the Callous Hunter</h6>
 <span class="grey">武器（长弓），极珍稀（需同调；冷酷核心）</span><br>
-这把长弓被添加了珍稀的核心词条<b class="item">冷酷</b>，以及非普通词条<b class="item">锋矢</b>，因此被定义为极珍稀魔法物品。另外，这把武器还添加了不影响稀有度的普通词条<b class="item">无限</b>。最后，由于其中的冷酷词条需要同调，因此这把长弓也需要同调。<br>
+这把长弓被添加了珍稀的核心词条<b class="item">冷酷</b>，以及非普通词条<b class="item">锋矢</b>，因此被定义为极珍稀魔法物品；由于是非顶格词条组合，其价格可以减半。另外，这把武器还添加了不影响稀有度的普通词条<b class="item">无限</b>。最后，由于其中的冷酷词条需要同调，因此这把长弓也需要同调。<br>
 这把长弓拥有下述词条：<br>
 <b>冷酷。</b>当你双手持握此武器时，你可以在自己回合内短暂同时维持两个法术的<b class="green">专注</b>。但当你的回合结束时，你必须结束其中一个。<br>
 当你专注于一道法术时，你使用这把武器发动的攻击额外造成1d10点力场伤害。<br>
@@ -154,8 +151,6 @@
 <b>增强。</b>你使用此武器进行的攻击检定和伤害掷骰获得+2加值。<br>
 <b>复仇。</b>持握此武器被距离你5尺内的生物发动的攻击命中时，你可以采取<b class="green">反应</b>，使用此武器向攻击者发动一次攻击作为反击。<br>
 <b>萃血。</b>使用此武器的攻击对生物造成伤害时，你可以让自己获得等同于此次伤害掷骰中所加入属性调整值的<b class="green">临时生命值</b>。此效应对构装或亡灵生物无效。
-
-<br><br>
 
 </body>
 </html>

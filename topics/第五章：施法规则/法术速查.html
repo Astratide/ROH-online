@@ -191,9 +191,6 @@ function toggleVisibility() {
 </script>
 
 
-
-
-
 <script id="webhelpPrepaint" src="../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
 <link id="webhelpTopicStyles" rel="stylesheet" href="../../assets/webhelp-topic.css">
 <link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../../assets/content-enhance.css">
@@ -208,15 +205,13 @@ function toggleVisibility() {
 <div style="margin: 20px;">
 <input id="input" placeholder="搜索..." name="q" value=""><button onclick="search()">搜索</button><button style="margin-left: 5px;" onclick="toggleVisibility()" id="toggleBtn">隐藏筛选</button></div>
 <div id="filterDiv" style="margin-left: 20px;">
-<b>特殊：</b>
-<input type="checkbox" id="sp0" name="special" value="专注"><label for="sp0">专注</label>
+<b>特殊：</b><input type="checkbox" id="sp0" name="special" value="专注"><label for="sp0">专注</label>
 <input type="checkbox" id="sp1" name="special" value="仪式"><label for="sp1">仪式</label>
 <input type="checkbox" id="sp2" name="special" value="言语"><label for="sp2">言语成分</label>
 <input type="checkbox" id="sp3" name="special" value="姿势"><label for="sp3">姿势成分</label>
 <input type="checkbox" id="sp4" name="special" value="材料"><label for="sp4">材料成分</label>
 <input type="checkbox" id="sp5" name="special" value="价耗"><label for="sp5">有价值/会消耗的材料成分</label>
-<br><b>环阶：</b>
-<button onclick="select_all('level')">全选</button>
+<br><b>环阶：</b><button onclick="select_all('level')">全选</button>
 <input type="checkbox" id="le0" name="level" value="戏法" checked=""><label for="le0">零</label>
 <input type="checkbox" id="le1" name="level" value="一环" checked=""><label for="le1">一</label>
 <input type="checkbox" id="le2" name="level" value="二环" checked=""><label for="le2">二</label>
@@ -227,8 +222,7 @@ function toggleVisibility() {
 <input type="checkbox" id="le7" name="level" value="七环" checked=""><label for="le7">七</label>
 <input type="checkbox" id="le8" name="level" value="八环" checked=""><label for="le8">八</label>
 <input type="checkbox" id="le9" name="level" value="九环" checked=""><label for="le9">九</label>
-<br><b>学派：</b>
-<button onclick="select_all('school')">全选</button>
+<br><b>学派：</b><button onclick="select_all('school')">全选</button>
 <input type="checkbox" id="sc1" name="school" value="防护" checked=""><label for="sc1">防护</label>
 <input type="checkbox" id="sc2" name="school" value="咒法" checked=""><label for="sc2">咒法</label>
 <input type="checkbox" id="sc3" name="school" value="预言" checked=""><label for="sc3">预言</label>
@@ -678,7 +672,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>ROH</TD></tr>
-<tr data-spell="空间操作Spatial Operation" data-tags="变化 戏法(零环) 法师 奇械师 言语 姿势 ROH 空间">
+<tr data-spell="空间操作Spatial Operation" data-tags="变化 戏法(零环) 法师 奇械师 言语 姿势 ROH 空间 炼金">
     <td><A href="../第五章：施法规则/戏法(0环).html#空间操作">空间操作Spatial Operation</a></td>
     <td>戏法</td>
     <td>变化</td>
@@ -843,7 +837,7 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>KGE</TD></tr>
-<tr data-spell="封锁术Lock Creature" data-tags="咒法 一环 辅助 奇械师 术师 言语 姿势 材料 专注 ROH 炼金 岩土">
+<tr data-spell="封锁术Lock Creature" data-tags="咒法 一环 辅助 奇械师 术师 言语 姿势 材料 专注 ROH 炼金 岩土 寒冰">
     <td><A href="../第五章：施法规则/1环.html#封锁术">封锁术Lock Creature</A></TD>
     <td>一环</TD>
     <td>咒法</TD>
@@ -1491,17 +1485,6 @@ function toggleVisibility() {
     <td>×</TD>
     <td>×</TD>
     <td>√</TD>
-    <td>KGE</TD></tr>
-<tr data-spell="元素龙潮Dragon Surge" data-tags="变化 二环 术士 魔契师 法师 言语 姿势 KGE 烈火 寒冰 雷电 酸毒 术师">
-    <td><A href="../第五章：施法规则/2环.html#元素龙潮">元素龙潮Dragon Surge</A></TD>
-    <td>二环</TD>
-    <td>变化</TD>
-    <td>术 法 锁</TD>
-    <td>V</TD>
-    <td>S</TD>
-    <td>×</TD>
-    <td>×</TD>
-    <td>×</TD>
     <td>KGE</TD></tr>
 <tr data-spell="尘土旋风Dust Cyclone" data-tags="咒法 二环 德鲁伊 法师 术士 游侠 言语 姿势 材料 专注 KGE 气尘">
     <td><A href="../第五章：施法规则/2环.html#尘土旋风">尘土旋风Dust Cyclone</A></TD>
@@ -4497,7 +4480,7 @@ Hand</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>FR</TD></tr>
-<tr data-spell="希伦的剧毒灵蛇SylunesViper" data-tags="咒法 三环 德鲁伊 法师 言语 姿势 材料 FR 黯蚀 自然 心魂 酸毒 深海">
+<tr data-spell="希伦的剧毒灵蛇SylunesViper" data-tags="咒法 三环 德鲁伊 法师 言语 姿势 材料 FR 黯蚀 自然 酸毒 深海">
     <td><a>希伦的剧毒灵蛇Sylune's Viper</A></TD>
     <td>三环</TD>
     <td>咒法</TD>
@@ -5339,7 +5322,7 @@ Death</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="原力法阵Circle of Power" data-tags="防护 五环 法师 牧师 圣武士 言语 专注 PHB24 自然 炼金 光芒 流水 预知">
+<tr data-spell="原力法阵Circle of Power" data-tags="防护 五环 法师 牧师 圣武士 言语 专注 PHB24 自然 炼金 光芒 流水 寒冰 岩土 雷电 预知">
     <td><a>原力法阵Circle of 
 Power</A></TD>
     <td>五环</TD>
@@ -5606,7 +5589,7 @@ Barrage</A></TD>
     <td>×</TD>
     <td>×</TD>
     <td>PHB24</TD></tr>
-<tr data-spell="触发术Contingency" data-tags="防护 六环 法师 言语 姿势 材料 PHB24 炼金 预知 时空矢量 光影心灵 价耗">
+<tr data-spell="触发术Contingency" data-tags="防护 六环 法师 言语 姿势 材料 PHB24 炼金 预知 空间 时空矢量 光影心灵 价耗">
     <td><a>触发术Contingency</A></TD>
     <td>六环</TD>
     <td>防护</TD>

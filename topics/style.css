@@ -2,6 +2,7 @@
 html,body {
 	font-family: Arial, Helvetica, sans-serif;
     line-height:160%;
+	margin-bottom: 32px;
 }
 /*标题颜色*/
 h1,h2,h3, .maroon{
@@ -17,11 +18,12 @@ h2 {
 h3 {
 	font-size: 120%;
 }
+
 /*列表聚拢*/
 UL,OL,BLOCKQUOTE{
 	margin-left: 32px;
-	margin-top: -10px;
-	margin-bottom: 15px;
+	margin-top: -6px;
+	margin-bottom: 12px;
 	padding-top: 10px;
 }
 /*灰色注释*/
@@ -40,7 +42,10 @@ b.spell{
 	color: #704CD9;
 	font-style: italic;
 	font-weight: bold;
-
+	padding-right: 2px;
+}
+h4.spell{
+	color: #704CD9;
 }
 /*魔法物品格式*/
 b.item{
@@ -64,19 +69,21 @@ b.red{
 /*法术页使用h4*/
 h4 {
     color: navy;
-    margin-bottom: -10px;
+    margin-bottom: 4px;
 	margin-top: 2em;
 	font-size: 140%;
 }
-/*怪物页使用h5*/
-div h5{
+/*职业特性使用h5*/
+h5{
 	color: #800000;
 	font-weight: bold;
-	font-size: 140%;
-	margin-top: 0px;
-	margin-bottom: 5px;
+	font-size: 100%;
+	margin: 16px 0px 0px 0px;
 }
-/*道具页使用h6*/
+div.syntax h5{
+	margin: 0px;
+}
+/*魔法物品使用h6*/
 h6 {
 	color: maroon;
     margin-bottom: 5px;
@@ -143,7 +150,11 @@ div.paper{
 	padding-bottom: 8px; 
 	margin-top: 24px; 
 	line-height: 120%;}
-
+.sub-line{
+	color: #808080;
+	font-style: italic;
+	MARGIN-TOP: -3px;
+}
 div.side-box
 {
     background: #d8d8d8;

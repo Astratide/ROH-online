@@ -5,20 +5,16 @@
 <html><head><meta charset="utf-8"><title>牧师</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=11">
-<link rel="stylesheet" href="../../style.css">
-
-
-<script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
+<link rel="stylesheet" href="../../style.css"><script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
 <link id="webhelpTopicStyles" rel="stylesheet" href="../../../assets/webhelp-topic.css">
 <link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../../../assets/content-enhance.css">
 <script id="webhelpContentEnhanceScript" src="../../../assets/content-enhance.js" defer></script>
 <script src="../../../webhelp-content-bridge.js"></script>
 </head>
-<body>
-<h1>牧师 Cleric</h1><b></b> 
-<ul><b>   </b>   
-  <p class="sum">神祝司祭，施行奇迹</p>
-</ul>
+<body> 
+<h1>牧师 Cleric</h1>
+<p class="sum">神祝司祭，施行奇迹</p>
+
 
 <div class="side-box">
   <p><b>牧师：</b>牧师职业在本节中获得了新的职业特性与子职业选项。</p>
@@ -26,17 +22,14 @@
 <h3>可选职业特性 Optional Class Features</h3>
 <p>你可以在达到特定等级时获得玩家手册中描述的职业特性。这一部分提供了一些你作为牧师的额外特性。与玩家手册中的特性不同的是，你不会自动获得这些特性。在你达到该部分描述的职业特性的需求等级且决定获得这些特性时，与你的DM先商量商量。</p> 
 <h3 class="line">牧师职业特性 Cleric Traits</h3>
-<p><b class="maroon">2级：精通伤害 Damage Mastery</b><br>
-你选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。你消耗技力的回合，可以将所施展的法术造成的伤害类型改为你的精通伤害。</p>
+<h5>2级：精通伤害 Damage Mastery</h5>
+你选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。你消耗法术位施法的回合，可以将所施展的法术造成的伤害类型改为你的精通伤害。
 
-<p><b class="maroon">2级：战技 Battleskill</b><br>
-你习得一种名为战技的特殊能力，可以用技力（SP）来发动。<br>
-特别地，习得此特性后，你不再拥有原来的引导神力使用次数。如果任何其他特性需要你消耗你的引导神力次数来使用，则消耗技力也可用于使用该特性。<br>
-<b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。5级起，你可以在获得牧师职业等级时，给你从牧师职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="../../%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%A7%92%E8%89%B2%E8%B5%84%E6%BA%90/%E6%88%98%E6%8A%80.html">战技</a>”），前提是战技的技力消耗必须低于你的熟练加值。<br>
-<b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点。<br>
-<b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。<br>
-作为牧师，你在第2级时习得下述战技。</p>
-
+<h5>3级：战技 Battleskill</h5>
+你习得一种名为战技的特殊能力，可以通过消耗引导神力次数来发动。<br>
+<b>等量代换。</b>当有生物要使你恢复技力时，改为使你恢复等量的引导神力次数。<br>
+<b>战技限制。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。<br>
+作为牧师，你习得下述战技。
 <div class="syntax">
 <table>
   
@@ -49,18 +42,22 @@
     <td>
       <b style="font-size: 120%;">神圣火花丨Divine Spark</b><br>
       <div class="cost">魔法动作</div>
-      <div class="trigger">消耗 1 技力</div>
+      <div class="trigger">消耗 1 引导神力</div>
       <div class="time">
-      <IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
+      <IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >      
       立即</div>
     </td>
   </tr>
 </table>
-你可以执行<b class="green">魔法</b>动作并消耗1点技力来发动此战技。你将你的圣徽指向30尺内一个你可见的其他生物，并将神圣能量凝聚于该生物。投掷1d8加上你的感知调整值，你为该生物恢复该数值的生命或迫使其进行一次体质豁免，失败则受到等同该数值的暗蚀或光耀伤害（由你选择），成功则伤害减半。<br>
-<b>消耗增强：</b>此战技每额外消耗1点技力，伤害量或恢复量就增加1d8。
+你可以执行<b class="green">魔法</b>动作并消耗1次引导神力次数来发动此战技。你将你的圣徽指向30尺内一个你可见的其他生物，并将神圣能量凝聚于该生物。投掷1d8加上你的感知调整值，你为该生物恢复该数值的生命或迫使其进行一次体质豁免，失败则受到等同该数值的暗蚀或光耀伤害（由你选择），成功则伤害减半。<br>
+<b>神圣精通：</b>你可以立即选择并应用一项符合条件的<a href="../../%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%A7%92%E8%89%B2%E8%B5%84%E6%BA%90/%E6%88%98%E6%8A%80/%E4%B8%93%E5%B1%9E%E6%88%98%E6%8A%80%E7%89%B9%E6%95%88.html">战技精通</a>效果。直到你完成长休前不可再使用其他战技精通效果。
 </div>
 
-<br><br>
+<h5>3级：神圣术使 Holy Caster</h5>
+你获得下述增益：<br>
+<b>专注解除。</b>当你施展下述法术时，其将无需专注：<b class="spell">侦测善恶</b>、<b class="spell">侦测魔法</b>、<b class="spell">侦测毒性与疾病</b>以及<b class="spell">灵体武器</b>。<br>
+<b>致伤回调。</b>当你施展<b class="spell">致伤术</b>时，你可以改为对目标进行近战法术攻击检定，并且此法术将额外造成1d10点同类型伤害，即一环施展时伤害为3d10。
+
 
 </body>
 </html>

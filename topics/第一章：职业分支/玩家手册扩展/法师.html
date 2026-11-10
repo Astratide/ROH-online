@@ -5,20 +5,15 @@
 <html><head><meta charset="utf-8"><title>法师</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=11">
-<link rel="stylesheet" href="../../style.css">
-
-
-<script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
+<link rel="stylesheet" href="../../style.css"><script id="webhelpPrepaint" src="../../../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
 <link id="webhelpTopicStyles" rel="stylesheet" href="../../../assets/webhelp-topic.css">
 <link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../../../assets/content-enhance.css">
 <script id="webhelpContentEnhanceScript" src="../../../assets/content-enhance.js" defer></script>
 <script src="../../../webhelp-content-bridge.js"></script>
 </head>
-<body>
+<body> 
 <h1>法师 Wizard</h1>
-<ul>
-  <p class="sum">学术派奥术施法者</p>
-</ul>
+<p class="sum">学术派奥术施法者</p>
 
 <div class="side-box">
   <p><b>法师：</b>法师职业在本节中获得了新的职业特性与子职业选项。</p>
@@ -27,16 +22,14 @@
 <p>你可以在达到特定等级时获得玩家手册中描述的职业特性。这一部分提供了一些你作为法师的额外特性。与玩家手册中的特性不同的是，你不会自动获得这些特性。在你达到该部分描述的职业特性的需求等级且决定获得这些特性时，与你的DM先商量商量。</p>
 <h3 class="line">法师职业特性 Wizard Traits</h3>
 
-<p><b class="maroon">2级：精通伤害 Damage Mastery</b><br>
-你选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。你消耗技力的回合，可以将所施展的法术造成的伤害类型改为你的精通伤害。</p>
+<h5>2级：精通伤害 Damage Mastery</h5>
+你选择一种伤害，该伤害视为你的<b class="green">精通伤害</b>。你消耗法术位施法的回合，可以将所施展的法术造成的伤害类型改为你的精通伤害。
 
-<p><b class="maroon">2级：战技 Battleskill</b><br>
-你习得一种名为战技的特殊能力，可以用技力（SP）来发动。<br>
-特别地，当你需要将一道法术抄写到法术书中时，你可以消耗技力来代替金币花费。每消耗1点技力就可以代替50GP。<br>
-<b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。5级起，你可以在每次获得法师职业等级时，给你从法师职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="../../%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%A7%92%E8%89%B2%E8%B5%84%E6%BA%90/%E6%88%98%E6%8A%80.html">战技</a>”），前提是战技的技力消耗必须低于你的熟练加值。<br>
-<b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点。<br>
-<b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。<br>
-作为法师，你在第2级时习得下述战技。</p>
+<h5>3级：战技 Battleskill</h5>
+你习得一种名为战技的特殊能力，可以通过消耗法术位来发动。<br>
+<b>等量代换。</b>当有生物要使你恢复技力时，改为使你恢复总环阶与恢复量相等的若干法术位。<br>
+<b>战技限制。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。<br>
+作为法师，你在第3级时习得下述战技。
 <div class="syntax">
   <table>
   
@@ -49,17 +42,15 @@
     <td>
       <b style="font-size: 120%;">迅捷仪式丨Swift Ritual</b><br>
       <div class="cost" id="red">施展法术</div>
-      <div class="trigger">消耗 1 技力</div>
+      <div class="trigger">消耗 1 法术位</div>
       <div class="time">
       <IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
       立即</div>
     </td>
   </tr>
-</table>你可以在施法时消耗1点技力来发动此战技。此法术若可以仪式施展则你可以使用正常施法时间而无需消耗法术位。<br>
-此法术如果迫使生物进行豁免，则你可以在其中一个生物豁免成功时要求重掷其豁免检定中的其中一枚D20。
+</table>你可以在施法时消耗1枚任意环阶法术位来发动此战技。此法术若可以仪式施展则你可以使用正常施法时间施展而无需消耗法术位。特别地，此战技一经发动直到你完成短休无法再次发动。<br>
+<b>奥术精通：</b>你可以选择并应用一项符合条件的<a href="../../%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%A7%92%E8%89%B2%E8%B5%84%E6%BA%90/%E6%88%98%E6%8A%80/%E4%B8%93%E5%B1%9E%E6%88%98%E6%8A%80%E7%89%B9%E6%95%88.html">战技精通</a>效果。直到你完成长休前不可再使用其他战技精通效果。<br>
 </div>
-
-<br><br>
 
 </body>
 </html>

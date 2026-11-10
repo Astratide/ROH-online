@@ -52,8 +52,7 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 </head>
 <body>
 [页面内容]
-<br><br>
-</body>
+<br></body>
 </html>
 ```
 
@@ -109,8 +108,9 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 <br>
 [强版本数据卡]
 
-<br>
+
 </body>
+</html>
 ```
 
 ---
@@ -226,7 +226,7 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 <div class="monster_container">
 <h1 class="line">[中文名]丨[Short English Name]</h1>
 
-<span class="grey"><i>[体型][生物类型]（[大类]；[家系]），[阵营]</i></span><br>
+<div class="sub-line">[体型][生物类型]（[大类]；[家系]），[阵营]</div>
 <table class="stat">
 <tr><td><b>AC</b> [AC]</td>
 <td width="40%"><b>先攻</b> [先攻调整]（[先攻值]）</td></tr>
@@ -270,9 +270,9 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 示例：
 
 ```html
-<span class="grey"><i>中型异怪（化物；墨魉），无阵营</i></span><br>
-<span class="grey"><i>大型异怪（化物；墨魉），无阵营</i></span><br>
-<span class="grey"><i>中型类人（萨卡兹），守序中立</i></span><br>
+<div class="sub-line">中型异怪（化物；墨魉），无阵营</div>
+<div class="sub-line">大型异怪（化物；墨魉），无阵营</div>
+<div class="sub-line">中型类人（萨卡兹），守序中立</div>
 ```
 
 家系名很重要：同一家系的怪物会共用一条以家系名开头的特性（见第八节）。
@@ -500,7 +500,7 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 同一家系的怪物共用一条特性，主语写**家系名**，不写「怪物」，也不写具体个体名：
 
 ```html
-<b>明晦相克 Light and Gloom。</b>墨魉对先攻比自己高的生物发动的攻击具有<b class="green">优势</b>，对先攻比自己低的生物发动的攻击具有<b class="green">劣势</b>。<br>
+<b>明晦相克 Light and Gloom。</b>墨魉对先攻值为奇数的生物发动的攻击具有<b class="green">优势</b>，对先攻值为偶数的生物发动的攻击具有<b class="green">劣势</b>。<br>
 ```
 
 - 这条特性在该家系每个个体的数据卡里都要重复出现，位置放在 Traits 第一条。
@@ -581,7 +581,7 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 **器伥／显出本体**（「将进酒」系列）。家系与材质合并成一条，材质三选一（木散 Splinter／瓷脆 Porcelain／金坚 Iron）：
 
 ```html
-<b>器伥·[材质] Waregeist·[Material]（[N]/日）。</b>当[怪物]因伤害使生命值降至0时，其可以改为将生命值降至1，并化作微型大小的[本体]。[怪物]生命值为1期间还会获得<b class="green">隐形</b>和<b class="green">失能</b>状态，且其移动不引发借机攻击。[材质句]当其在其他生物体内结束回合时，对其造成5（1d10）点力场伤害。<br>
+<b>器伥·[材质] Waregeist·[Material]（[N]/日）。</b>当[怪物]因伤害使生命值降至0时，其可以改为将生命值降至1，并化作微型大小的[本体]。[怪物]生命值为1期间还会获得<b class="green">隐形</b>和<b class="green">失能</b>状态，且其移动不引发借机攻击。[材质句]且当在其他生物体内结束回合时，对其造成5（1d10）点力场伤害。<br>
 ```
 
 材质句：
@@ -673,8 +673,9 @@ Boss 页面整体结构：
 [Boss数据卡]
 </div>
 
-<br><br>
+<br>
 </body>
+</html>
 ```
 
 Boss 的简介同样使用第三节的两行制。
@@ -706,7 +707,7 @@ Boss 数据卡一般使用：
 <div class="monster_container">
 <h1 class="line">[Boss数据卡名称]丨[English Name]</h1>
 
-<span class="grey"><i>[体型][生物类型]（[大类]；[家系]），[阵营]</i></span><br>
+<div class="sub-line">[体型][生物类型]（[大类]；[家系]），[阵营]</div>
 <table class="stat">
 <tr><td><b>AC</b> [AC]（[来源，可选]）</td>
 <td width="40%"><b>先攻</b> [先攻调整]（[先攻值]）</td></tr>
@@ -913,15 +914,7 @@ indent
 常见用法：
 
 ```html
-<b class="green">优势</b>
-<b class="green">劣势</b>
-<b class="green">燃烧</b>
-<b class="green">失能</b>
-<b class="green">隐形</b>
-<b class="green">浴血</b>
-<b class="red">深池逐火精锐战士</b>
-<b class="spell">法师护甲</b>
-```
+<b class="green">优势</b><b class="green">劣势</b><b class="green">燃烧</b><b class="green">失能</b><b class="green">隐形</b><b class="green">浴血</b><b class="red">深池逐火精锐战士</b><b class="spell">法师护甲</b>```
 
 不要随意新增 CSS class，除非用户明确要求。
 
@@ -934,8 +927,7 @@ indent
 `浴血` 是 5.5e 的战力阈值术语：**生命值为其上限的一半或更低**。它不是一种状态，所以不能写成「浴血状态」。
 
 ```html
-正确：<b class="green">浴血</b>期间具有<b class="green">优势</b>
-正确：若他处于<b class="green">浴血</b>，则额外造成9（2d8）火焰伤害
+正确：<b class="green">浴血</b>期间具有<b class="green">优势</b>正确：若他处于<b class="green">浴血</b>，则额外造成9（2d8）火焰伤害
 错误：陷入浴血状态 / 获得浴血
 ```
 
@@ -952,9 +944,7 @@ indent
 `燃烧` 是**危害（hazard）**，不是状态（condition）。因此不能写「陷入燃烧状态」。
 
 ```html
-正确：并陷入<b class="green">燃烧</b>
-正确：并开始<b class="green">燃烧</b>
-错误：陷入<b class="green">燃烧</b>状态
+正确：并陷入<b class="green">燃烧</b>正确：并开始<b class="green">燃烧</b>错误：陷入<b class="green">燃烧</b>状态
 ```
 
 需要限时的话，直接挂时长，不要挂「状态」：
@@ -1005,9 +995,7 @@ indent
 使用次数格式：
 
 ```html
-<b>[能力名称 English Name]（1/日）。</b>
-<b>[能力名称 English Name]（充能5~6）。</b>
-```
+<b>[能力名称 English Name]（1/日）。</b><b>[能力名称 English Name]（充能5~6）。</b>```
 
 **新增能力默认写 `（1/日）`**，理由见第八节第 4 条。
 

@@ -10,23 +10,41 @@ div.stat-block{
 	border:3px double #808080;
 	font-size: 100%;
 	margin-bottom:20px;
+	margin-right: -6px;
 }
+
 div.stat-block h5,div.stat-block h6{
 	color: #800000;
-	font-weight: bold;
 	border-bottom: 1px #800000 solid;
 }
+div.stat-block h5#spell,div.stat-block h6#spell{
+	color: navy;
+	border-bottom: 1px navy solid;
+}
+div.stat-block h5#item,div.stat-block h6#item{
+	color: #0000ff;
+	border-bottom: 1px #0000ff solid;
+}
+div.stat-block h5#bless,div.stat-block h6#bless{
+	color: rgb(69, 14, 117);
+	border-bottom: 1px rgb(69, 14, 117) solid;
+}
+
 div.stat-block h5{
 	font-size: 140%;
+	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 5px;
+	padding-bottom: 6px;
 }
 div.stat-block h6{
 	font-size: 115%;
+	font-weight: bold;
 	margin-top: 17px;
 	margin-bottom: -12px;
+	padding-bottom: 6px;
 }
-div.stat-block .sub-line{
+.sub-line{
 	color: #808080;
 	font-style: italic;
 	MARGIN-TOP: -3px;
@@ -141,8 +159,7 @@ P.sum{
 
 }
 UL,OL{
-	margin-left: 32px;
-	margin-top: -5px;
+	margin: 0px 0px 5px -5px;
 }
 
 
@@ -162,10 +179,61 @@ div.monster_container {
     box-sizing: border-box;
     background-color: #f8f8f6;
     line-height: 160%;
-    width: 537px;
+	min-width: 537px;
+	max-width: 600px;
+	width: auto;
 	margin-left: 32px;
 	margin-bottom:20px;
+	margin-right: 20px;
 }
+
+
+@media screen and (min-width: 1000px) {
+	div.monster_container {
+		min-width: 1000px;
+		max-width: 1200px;
+		width: auto;
+	}
+	div.stat-block {
+		min-width: 500px;
+		max-width: 600px;
+		width: auto;
+		display: inline-block;
+	}
+}
+
+/* 基础样式：窄屏时，文字只有一栏 */
+div.text-block {
+    column-count: 1;
+}
+
+/* 当页面宽度超过 1000px 时，变为左右两栏 */
+@media screen and (min-width: 1000px) {
+    div.text-block {
+        -webkit-column-count: 2; /* 兼容旧版 WebKit，虽 IE 用不到但无害 */
+        -moz-column-count: 2;    /* 兼容旧版 Firefox，虽 IE 用不到但无害 */
+        column-count: 2;
+        column-gap: 16px;        /* 可选：设置栏间距 */
+    }
+}
+
+/* 基础样式：窄屏时，文字只有一栏 */
+div.double-block {
+    column-count: 1;
+}
+
+/* 当页面宽度超过 1000px 时，变为左右两栏 */
+@media screen and (min-width: 1200px) {
+    div.double-block {
+        -webkit-column-count: 2; /* 兼容旧版 WebKit，虽 IE 用不到但无害 */
+        -moz-column-count: 2;    /* 兼容旧版 Firefox，虽 IE 用不到但无害 */
+        column-count: 2;
+        column-gap: 16px;        /* 可选：设置栏间距 */
+		width: 1180px;
+    }
+}
+
+/* 可选：下面是另一种怪物数据卡 */
 
 
 div.monster_container table {
@@ -176,22 +244,22 @@ div.monster_container table {
 	border-collapse: collapse;
 }
 
-div.monster_container .line {
-    border-bottom: 1px solid #642e25; 
-	padding-left: -2px;
-	text-indent: 2px;
-}
-
-div.monster_container h1 {
+div.monster_container h5 {
     color: #642e25;
     margin: 0px 0px 8px 0px;
 	font-size: 140%;
+    border-bottom: 1px solid #642e25; 
+	padding-left: -2px;
+	padding-bottom: 6px;
 }
 
-div.monster_container h2 {
+div.monster_container h6 {
     color: #642e25;
     margin: 12px 0px 8px 0px;
-	font-size: 120%;
+	font-size: 115%;
+    border-bottom: 1px solid #642e25; 
+	padding-left: -2px;
+	padding-bottom: 6px;
 }
 
 div.monster_container table.stat{
@@ -220,6 +288,4 @@ div.monster_container table.stat-abilities th{
 	color: #808080;
 	border-collapse: collapse;
 }
-div.monster_container ul{
-	margin: 0px 0px 5px -5px;
-}
+

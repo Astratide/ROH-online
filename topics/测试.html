@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <style>
+        /* 基础样式：窄屏时，文字只有一栏 */
+        .text-block {
+            /* 不需要特别设置，默认就是单栏 */
+        }
+
+        /* 当页面宽度超过 1000px 时，变为左右两栏 */
+        @media screen and (min-width: 1000px) {
+            .text-block {
+                -webkit-column-count: 2; /* 兼容旧版 WebKit，虽 IE 用不到但无害 */
+                -moz-column-count: 2;    /* 兼容旧版 Firefox，虽 IE 用不到但无害 */
+                column-count: 2;
+                column-gap: 20px;        /* 可选：设置栏间距 */
+            }
+        }
+    </style>
+<script id="webhelpPrepaint" src="../assets/webhelp-prepaint.js" data-webhelp-kind="topic"></script>
+<link id="webhelpTopicStyles" rel="stylesheet" href="../assets/webhelp-topic.css">
+<link id="webhelpContentEnhanceStyles" rel="stylesheet" href="../assets/content-enhance.css">
+<script id="webhelpContentEnhanceScript" src="../assets/content-enhance.js" defer></script>
+<script src="../webhelp-content-bridge.js"></script>
+</head>
+<body>
+    <div class="text-block">
+        这里是你的大量文字内容。当页面宽度不足 1000px 时，这段文字会保持单栏显示；
+        当页面宽度达到或超过 1000px 时，IE11 会尝试将这段文字均分为左右两栏。
+    </div>
+</body>
+</html>

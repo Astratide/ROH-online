@@ -100,8 +100,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 新写法：
 
 ```html
-<b>先锋核心特质Core Vanguard Traits</b>
-<table class="basic" id="render">
+<b>先锋核心特质Core Vanguard Traits</b><table class="basic" id="render">
 <tr><td width="300"><b>主要属性Primary Ability</b><td>力量或敏捷</td></tr>
 <tr><td width="300"><b>生命值骰Hit Point Die</b><td>每先锋等级D8</td></tr>
 <tr><td width="300"><b>豁免熟练Saving Throw Proficiencies</b><td>敏捷与感知</td></tr>
@@ -344,8 +343,6 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 ```html
 <p><b class="maroon">20级：陷阵旌旗 Unto The Breach</b><br>
 ……</p>
-<br><br>
-
 </body>
 </html>
 ```
@@ -375,8 +372,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
   <p><b>职业名：</b>一句话定位。</p>
 </div>
 
-<b>职业名核心特质Core Xxx Traits</b>
-<table class="basic" id="render">
+<b>职业名核心特质Core Xxx Traits</b><table class="basic" id="render">
 <tr><td width="300"><b>主要属性Primary Ability</b><td>…</td></tr>
 …
 </table>
@@ -420,8 +416,6 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 
 <p><b class="maroon">20级：特性名 English</b><br>
 正文</p>
-<br><br>
-
 </body>
 </html>
 ```
