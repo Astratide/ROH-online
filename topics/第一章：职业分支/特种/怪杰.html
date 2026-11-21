@@ -11,7 +11,7 @@
 <script id="webhelpContentEnhanceScript" src="../../../assets/content-enhance.js" defer></script>
 <script src="../../../webhelp-content-bridge.js"></script>
 </head>
-<body>
+<body> 
 <h1 class="line">怪杰 Geek<IMG class="text-img" alt="怪杰标志" src="../../图片资源/职业图标/子职/职业分支图标_怪杰.png"></h1>
 
 <div class="side-box">
@@ -22,14 +22,15 @@
 
 <h5>3级：怪杰把戏 Geek's Tricks</h5>
 作为一名怪杰，你习得下述特性：<br>
-<b>异质武器 Eccentric Weapon。</b>你选择一把没有双手属性的远程武器（可以是铳械），并获得其熟练和精通，可以在升级时重选。你使用精通的远程武器发动攻击时，可以使用你的施法属性调整值而非敏捷作为攻击与伤害属性。<br>
-<b>闪亮登场 Dramatic Entrance。</b>你可以将你的施法属性调整值加入先攻检定中。<br>
-<b>风险骰子 Risk Dice。</b>每回合仅一次，你要进行D20检定时，你可以使其具有<b class="green">优势</b>，不过你这么做时，需要投掷并消耗一枚生命骰并流失等同结果的生命值。而且如果仍检定失败，你需要在<b>狂野意外事件表</b>上掷骰以确定随机效应。
+<b>  异质武器。</b>你选择一把没有双手属性的远程武器（可以是铳械），并获得其熟练和精通，可以在升级时重选。你使用精通的远程武器发动攻击时，可以使用你的施法属性调整值而非敏捷作为攻击与伤害属性。<br>
+<b>  闪亮登场。</b>你可以将你的施法属性调整值加入先攻检定中。<br>
+<b>  风险骰子。</b>每回合仅一次，你要进行D20检定时，你可以使其具有<b class="green">优势</b>，不过你这么做时，需要投掷并消耗一枚生命骰并流失等同结果的生命值。而且如果仍检定失败，你需要在<b>狂野意外事件表</b>上掷骰以确定随机效应。
 
 <h5>3级：愚人之策 Fool's Gambit</h5>
 你深知：“代价和收获从不对等，等待未知的折磨才是赌徒快乐的源泉。”<br>
 <b>幸运附着。</b>你可以使用<b class="green">附赠动作</b>，消耗1d6+你等级的生命值，为自己或一名位于自己30尺内的自愿盟友带来意想不到的收获。此D6会决定其效果，参照<b>怪杰幸运表</b>。
-<b>怪杰幸运表</b><table class="basic" id="left">
+<h5>怪杰幸运表</h5>
+<table class="basic" id="left">   
   <colgroup>
   <col style="width: 5em;">
   <col style="width: 40em;">
@@ -56,8 +57,9 @@
     <td style="text-align: center;">6</td>
     <td>目标在<b>狂野意外事件表</b>上掷骰以确定额外随机效应</td></tr>
 </tbody></table><br>
-<p><b>厄运附着。</b>当你的攻击命中敌人时，你可以消耗1d6+你等级的生命值，为敌人带来意想不到的厄运。此D6会决定其效果，参照<b>怪杰厄运表</b>。</p>
-<b>怪杰厄运表</b><table class="basic" id="left">
+<p><b>厄运附着。</b>每回合仅一次，当你的攻击命中敌人时，你可以消耗1d6+你等级的生命值，为敌人带来意想不到的厄运。此D6会决定其效果，参照<b>怪杰厄运表</b>。</p>
+<h5>怪杰厄运表</h5>
+<table class="basic" id="left">   
   <colgroup>
   <col style="width: 5em;">
   <col style="width: 40em;">
@@ -102,7 +104,7 @@
       <div class="cost">魔法动作</div>
       <div class="trigger">消耗 1 技力</div>
       <div class="time">
-      <IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >
+      <IMG class="clock" src="../../图片资源/技能图标/图标时间.png" >      
       立即</div>
     </td>
   </tr>
@@ -132,7 +134,7 @@
     <td><b>效果</b></td></tr>
   <tr>
     <td style="text-align: center;">1</td>
-    <td>直到你下回合开始，你的所有D20检定具有<b class="green">劣势</b></td></tr>
+    <td>直到你下回合开始前，你的所有D20检定具有<b class="green">劣势</b></td></tr>
   <tr>
     <td style="text-align: center;">2</td>
     <td>一道闪电从天而降，你受到4d6闪电伤害，周围10尺内每个生物必须通过DC15敏捷豁免，否则受到等量伤害</td></tr>
@@ -141,31 +143,31 @@
     <td>你突然发现自己脚下是一颗未引爆的流弹，你和源自你20尺内所有生物受到8d6精通伤害（DC15敏捷豁免减半）</td></tr>
   <tr>
     <td style="text-align: center;">4</td>
-    <td>一股治疗能量爆发，你恢复3d10生命值，但20尺内所有其他生物损失等量生命值</td></tr>
+    <td>你周围20尺内所有其他生物受到1d10点暗蚀伤害，你恢复等于以此法造成的暗蚀伤害总和的生命值</td></tr>
   <tr>
     <td style="text-align: center;">5</td>
     <td>30尺内所有生物必须通过DC15力量豁免，否则被推离你20尺并<b class="green">倒地</b></td></tr>
   <tr>
     <td style="text-align: center;">6</td>
-    <td>直到你下回合开始，下次首个以你为目标的法术或攻击被折射给最近的生物。</td></tr>
+    <td>下1分钟内，首个以你为目标的法术或攻击被折射给最近的生物</td></tr>
   <tr>
     <td style="text-align: center;">7</td>
-    <td>直到你下回合开始，自己和60尺内盟友的攻击具有<b class="green">劣势</b>，但伤害掷骰获得+1d10加值</td></tr>
+    <td>直到你下回合开始前，自己和60尺内盟友的攻击具有<b class="green">劣势</b>，但伤害掷骰获得+1d10加值</td></tr>
   <tr>
     <td style="text-align: center;">8</td>
-    <td>本轮中，你20尺内所有生物移动速度减半，且进行力量与敏捷豁免时具有<b class="green">劣势</b></td></tr>
+    <td>直到你下回合开始前，你30尺内所有生物移动速度减半，且进行力量与敏捷豁免时具有<b class="green">劣势</b></td></tr>
   <tr>
     <td style="text-align: center;">9</td>
-    <td>本轮中，你的攻击造成的伤害最多只能将目标的HP降至1（不能致死）</td></tr>
+    <td>下1分钟内，你施展的下一道造成伤害的法术的伤害不进行伤害掷骰而是令所有伤害骰取满</td></tr>
   <tr>
     <td style="text-align: center;">10</td>
     <td>你获得<b class="green">临时生命值</b>，数值等于你等级的两倍</td></tr>
   <tr>
     <td style="text-align: center;">11</td>
-    <td>你的下一次攻击自动命中，且造成<b class="green">重击</b></td></tr>
+    <td>直到你下回合开始前，你下次命中的攻击视为造成<b class="green">重击</b></td></tr>
   <tr>
     <td style="text-align: center;">12</td>
-    <td>你被传送至60尺内一个随机可见位置（DM决定）</td></tr>
+    <td>你被传送至60尺内一个随机位置（DM决定）</td></tr>
   <tr>
     <td style="text-align: center;">13</td>
     <td>你陷入<b class="green">束缚</b>状态，直到你下回合开始</td></tr>
@@ -174,19 +176,19 @@
     <td>你与周围30尺内所有盟友恢复2d8生命值</td></tr>
   <tr>
     <td style="text-align: center;">15</td>
-    <td>你的所有攻击自动命中，直到本回合结束</td></tr>
+    <td>下1分钟内，你和位于你30尺内所有生物具有对穿刺伤害的易伤</td></tr>
   <tr>
     <td style="text-align: center;">16</td>
     <td>你需要通过DC15感知豁免，否则对最近可见生物<b class="green">恐慌</b>直到本轮结束</td></tr>
   <tr>
     <td style="text-align: center;">17</td>
-    <td>你的身体爆发出能量，所有60尺内敌人进行DC15体质豁免，失败受到6d6光耀伤害，并且<b class="green">目盲</b>1轮，成功减半。</td></tr>
+    <td>你的身体爆发出能量，所有60尺内敌人进行DC15体质豁免，失败受到6d6光耀伤害，并且<b class="green">目盲</b>直到你下回合开始，成功仅受半伤。</td></tr>
   <tr>
     <td style="text-align: center;">18</td>
     <td>你的所有技能熟练项临时变为专精，持续1分钟</td></tr>
   <tr>
     <td style="text-align: center;">19</td>
-    <td>你立即恢复所有消耗的技力点</td></tr>
+    <td>你立即恢复所有消耗的技力点和法术位</td></tr>
   <tr>
     <td style="text-align: center;">20</td>
     <td>重掷两次此表，若再次掷出此项则跳过</td></tr>
@@ -197,6 +199,8 @@
 <b>本章内容来源：</b>玩家投稿<br>
 <b> 参考作者：</b>...（3300629434）
 </div>
+
+
 
 </body>
 </html>
