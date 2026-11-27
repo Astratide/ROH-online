@@ -77,7 +77,7 @@ table.custom-table td:nth-child(4) {text-align: left;}
 
 <!-- 新 -->
 <div class="side-box">
-  <p><b>近卫：</b>你擅长在战斗中对地面敌人造成伤害。</p>
+<b>近卫：</b>你擅长在战斗中对地面敌人造成伤害。
 </div>
 ```
 
@@ -97,10 +97,28 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 <br>
 ```
 
+
+
+仿制奥喀斯之杖 The Replicated Staff of Orcus
+魔杖，珍稀（需同调）
+魔法武器Magic Weapon 。你可以将魔杖用作一把魔法硬头锤，用魔杖进行的攻击检定和伤害掷骰获得+1加值，魔杖命中时，额外造成1d8暗蚀伤害。
+防护Protection。持握魔杖时，你的护甲等级获得+1加值。
+法术Spells。魔杖具有3充能并在每日黎明时重获所有已消耗的充能。你可以从中施展下表中的法术（豁免DC18）。表中表明了你施展对应的法术需要消耗多少充能。
+法术 充能消耗
+死者交谈Speak with Dead 1
+活化死尸Animate Dead 2
+枯萎术Blight 2
+奥喀斯的信徒与魔杖维持同调期间，他们施展以上每个法术的无需消耗充能。
+唤起亡灵Call Undead 。持握魔杖期间，你能够以魔法动作咒唤1只丧尸或1具骷髅，亡灵将魔法性的自地面中升起或在你300尺内的未占据空间中生成，它们将服从你的命令，它们被摧毁或下个黎明时，它们会倒塌为一堆无生命的骨头和腐尸。该词条一经使用，直至下个黎明你都无法再次使用。
+
+
+
+
 新写法：
 
 ```html
-<b>先锋核心特质Core Vanguard Traits</b><table class="basic" id="render">
+<h3>先锋核心特质Core Vanguard Traits</b>
+<table class="basic" id="render">
 <tr><td width="300"><b>主要属性Primary Ability</b><td>力量或敏捷</td></tr>
 <tr><td width="300"><b>生命值骰Hit Point Die</b><td>每先锋等级D8</td></tr>
 <tr><td width="300"><b>豁免熟练Saving Throw Proficiencies</b><td>敏捷与感知</td></tr>
@@ -143,7 +161,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 <p>获得<b><font color="maroon">先锋核心特质表</font></b>里的全部能力。</p>
 <p>获得先锋的1级特性（见先锋特性表 ）</p>
 <p><b>作为兼职角色As a Multiclass Character</b> </p>
-<p>获得<font color="maroon"><b>先锋核心特质表</b></font>里的以下能力：</p>
+<p>获得<font color="maroon"><h3>先锋核心特质表</b></font>里的以下能力：</p>
 <p>生命骰、军用近战武器熟练和轻甲、中甲的护甲受训。</p>
 <p>获得先锋的1级特性（见先锋特性表 ）。</p>
 <br>
@@ -188,7 +206,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
     …
 
 <!-- 新 -->
-<h3>先锋特性表 Vanguard Traits</h3>
+<h3>先锋特性表 Vanguard Traits</b>
 <table class="basic" id="render" style="max-width: 520px;">
   <colgroup>
   <col style="width: 50px;">
@@ -230,7 +248,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 <br>
 
 <!-- 新 -->
-<h3 class="line">先锋职业特性 Vanguard Traits</h3>
+<h3 class="line">先锋职业特性 Vanguard Traits</b>
 ```
 
 ### 11. 每条职业特性：`h4 + 多个 p + br` → 单个 `p`
@@ -369,10 +387,11 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
   <p class="sum" style="text-align: right; margin-right: 100px;">――出处</p>
 </ul>
 <div class="side-box">
-  <p><b>职业名：</b>一句话定位。</p>
+<b>职业名：</b>一句话定位。
 </div>
 
-<b>职业名核心特质Core Xxx Traits</b><table class="basic" id="render">
+<b>职业名核心特质Core Xxx Traits</b>
+<table class="basic" id="render">
 <tr><td width="300"><b>主要属性Primary Ability</b><td>…</td></tr>
 …
 </table>
@@ -390,7 +409,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 <li><div>…</div></li>
 <li><div>…</div></li>
 </ul>
-<h3>职业名特性表 Xxx Traits</h3>
+<h3>职业名特性表 Xxx Traits</b>
 <table class="basic" id="render" style="max-width: 520px;">
   …等级列为纯数字…
 </tbody></table>
@@ -400,7 +419,7 @@ side-box 后**紧接**核心特质（中间空一行即可），不再放简介�
 </tbody></table>
 
 
-<h3 class="line">职业名职业特性 Xxx Traits</h3>
+<h3 class="line">职业名职业特性 Xxx Traits</b>
 
 <p><b class="maroon">1级：特性名 English</b><br>
 正文行 1<br>

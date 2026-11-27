@@ -1330,6 +1330,11 @@ html.webhelp-topic-document div.monster_container * {
   text-indent: 0 !important;
 }
 
+html.webhelp-topic-document div.side-box {
+   padding: 5px 0px 5px 5px !important;
+   margin: 5px 10px 5px 5px !important;
+}
+
 /* ================= 战技卡 div.syntax ================= */
 html.webhelp-topic-document div.syntax {
   background: #d8d8d8 !important;

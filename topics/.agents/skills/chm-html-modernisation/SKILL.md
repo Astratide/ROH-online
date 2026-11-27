@@ -31,7 +31,7 @@ description: 《罗德岛行动手册》CHM 项目通用 HTML 改版基准。把
   <p class="sum" style="text-align: right; margin-right: 100px;">――出处</p>
 </ul>
 <div class="side-box">
-  <p><b>标题：</b>一句话定位。</p>
+<b>标题：</b>一句话定位。
 </div>
 
 <p>正文段落，段内用 <br> 断句。</p>
