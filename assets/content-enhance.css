@@ -1469,7 +1469,7 @@ html.webhelp-topic-document div.monster_container img { max-width: none !importa
 /* ---- style.css 的标题色：h4=navy、h5/h6 补齐（h1~h3 由 --topic-accent=#800000 负责）---- */
 html.webhelp-topic-document h4 {
   color: navy !important;
-  margin-bottom: -10px !important;
+  margin: 1.2em 0 0 0 !important;
   font-size: 140% !important;
 }
 html.webhelp-topic-document div h5 {
